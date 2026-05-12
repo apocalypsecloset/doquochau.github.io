@@ -494,6 +494,7 @@
 
     ];
 
+    // 2. HÀM HIỂN THỊ RA MÀN HÌNH
     function renderAll() {
       const grid = document.getElementById('outfit-grid');
       grid.innerHTML = '';
@@ -503,6 +504,91 @@
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
         card.style.animationDelay = (i * 0.03) + 's';
+        
+        // CHUYỂN TRANG KHI CLICK
+        card.onclick = () => {
+          window.location.href = `outfit-detail.html?id=${outfit.id}`;
+        };
+
+        const img = document.createElement('img');
+        img.src = outfit.img;
+        img.alt = outfit.tag;
+        img.onload = () => card.classList.remove('shimmer');
+
+        const overlay = document.createElement('div');
+        overlay.className = 'outfit-overlay';
+        overlay.innerHTML = `
+          <span class="outfit-tag">XEM OUTFIT</span>
+          <div class="outfit-num">${outfit.tag}</div>
+        `;
+
+        card.appendChild(img);
+        card.appendChild(overlay);
+        grid.appendChild(card);
+      });
+    }
+
+    // 3. HÀM XÁO TRỘN VÀ LƯU VÀO "TRÍ NHỚ"
+    function randomize() {
+      // Xáo trộn mảng
+      outfits.sort(() => Math.random() - 0.5);
+      
+      // Lấy danh sách ID sau khi xáo trộn và lưu vào sessionStorage
+      const currentOrder = outfits.map(o => o.id);
+      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(currentOrder));
+      
+      renderAll();
+    }
+
+    // 4. HÀM KHỞI ĐỘNG KHI MỞ TRANG
+    function initGrid() {
+      // Kiểm tra xem có thứ tự cũ trong trí nhớ không?
+      const savedOrderStr = sessionStorage.getItem('savedOutfitOrder');
+      
+      if (savedOrderStr) {
+        // NẾU CÓ: Phục hồi lại đúng thứ tự cũ
+        const savedOrder = JSON.parse(savedOrderStr);
+        outfits.sort((a, b) => {
+          return savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id);
+        });
+        renderAll(); // Chỉ render lại chứ không random
+      } else {
+        // NẾU KHÔNG CÓ (Mới vào lần đầu): Xáo trộn mới
+        randomize();
+      }
+    }
+
+    // Các hàm phụ (Tìm kiếm, Dropdown)
+    function toggleSearch() {
+      const bar = document.getElementById('search-bar');
+      const input = document.getElementById('search-input');
+      if (bar.style.display === 'none' || bar.style.display === '') {
+        bar.style.display = 'block';
+        input.focus();
+      } else {
+        bar.style.display = 'none';
+      }
+    }
+
+    function toggleStyleMenu(event) {
+      event.stopPropagation();
+      document.getElementById("styleDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown .btn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i].classList.contains('show')) {
+            dropdowns[i].classList.remove('show');
+          }
+        }
+      }
+    }
+
+    // CHẠY HÀM KHỞI ĐỘNG THAY VÌ CHẠY HÀM RANDOM
+    initGrid();
+  </script>
         
         // THÊM SỰ KIỆN CLICK VÀO CARD ĐỂ CHUYỂN TRANG
         card.onclick = () => {
