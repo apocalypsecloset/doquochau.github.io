@@ -510,10 +510,14 @@
     </div>
   </div>
 <section class="about-section">
+    <div class="about-icon">✦</div>
     <h2 class="about-title">VỀ APOCALYPSE CLOSET</h2>
     <p class="about-desc">
-      Tuyên ngôn thời trang dành cho những tâm hồn nổi loạn. Không chỉ là quần áo, đây là bộ giáp của bạn. Chúng tôi mang đến những gợi ý phối đồ mang hơi hướng Dark Wear, Gothic và Bad Girl Aesthetic gai góc nhất. Chọn một outfit, và đạp đổ mọi định kiến.
+      Giữa một thế giới đang dần bão hòa bởi những khuôn mẫu nhàm chán, <span>Apocalypse Closet</span> ra đời như một thánh địa dành riêng cho những tâm hồn nổi loạn. Chúng tôi tin rằng thời trang không chỉ là những mảnh vải vô tri, mà là thứ vũ khí sắc bén, là lớp áo giáp gai góc để bạn sẵn sàng đối mặt với mọi rào cản.
+      <br><br>
+      Mang đậm âm hưởng của kỷ nguyên hậu tận thế, đan xen cùng nét sắc lạnh của <span>Dark Wear</span>, <span>Grunge</span> và <span>Bad Girl Aesthetic</span>. Mỗi trang phục tại đây không đơn thuần là một gợi ý phối đồ, mà là một lời tuyên ngôn độc bản: Hãy rực sáng, kiêu hãnh và sống trọn vẹn theo cách riêng của bạn.
     </p>
+    <div class="about-quote">"Dress like it's the end of the world"</div>
   </section>
   <footer>
     <span>© 2026 APOCALYPSE CLOSET</span>
@@ -641,6 +645,62 @@
 
     // CHẠY HÀM KHỞI ĐỘNG
     initGrid();
+    /* ABOUT SECTION */
+    .about-section {
+      padding: 80px 32px;
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-icon {
+      color: var(--red);
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .about-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--white);
+      letter-spacing: 0.2em;
+      margin-bottom: 24px;
+    }
+
+    .about-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+
+    /* Đổi màu trắng cho những từ khóa quan trọng */
+    .about-desc span {
+      color: var(--white);
+    }
+
+    /* Câu quote chốt hạ */
+    .about-quote {
+      margin-top: 32px;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      color: var(--red);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 12px 24px;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .about-section { padding: 56px 24px; }
+      .about-title { font-size: 28px; }
+      .about-quote { font-size: 9px; letter-spacing: 0.2em; padding: 10px 16px; }
+    }
   </script>
 </body>
 </html>
