@@ -305,6 +305,38 @@
       margin-top: 4px;
     }
 
+    /* NÚT TIM GÓC PHẢI TRÊN TỪNG ẢNH */
+    .btn-save-card {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 3;
+      background: rgba(10, 10, 10, 0.7);
+      backdrop-filter: blur(4px);
+      border: 1px solid #444;
+      color: var(--white);
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      opacity: 0; 
+      transform: translateY(-8px);
+      transition: all 0.3s;
+    }
+
+    .outfit-card:hover .btn-save-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .btn-save-card:hover {
+      background: var(--red);
+      border-color: var(--red);
+    }
+
     .shimmer {
       background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
       background-size: 200% 100%;
@@ -383,12 +415,22 @@
       .btn.btn-icon-only { width: 30px; padding: 0; }
       .text-hide { display: none; }
       
-      /* Fix vị trí icon Reload lệch trên điện thoại */
       .btn-reload .nav-icon {
         position: relative;
         top: -1.5px;
       }
       
+      /* Hiển thị luôn nút Tim trên Mobile thay vì cần hover */
+      .btn-save-card {
+        opacity: 1;
+        transform: translateY(0);
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+      }
+
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
       .hero { padding: 32px 16px 20px; }
@@ -473,7 +515,7 @@
     <span><a href="#">LIÊN HỆ</a> · <a href="#">CHÍNH SÁCH</a> · <a href="#">SHOPEE</a></span>
   </footer>
 
- <script>
+  <script>
     // 1. MẢNG DỮ LIỆU
     const outfits = [
       { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01" },
@@ -505,7 +547,7 @@
         card.className = 'outfit-card shimmer';
         card.style.animationDelay = (i * 0.03) + 's';
         
-        // CHUYỂN TRANG KHI CLICK
+        // CHUYỂN TRANG KHI CLICK VÀO CARD
         card.onclick = () => {
           window.location.href = `outfit-detail.html?id=${outfit.id}`;
         };
@@ -522,8 +564,20 @@
           <div class="outfit-num">${outfit.tag}</div>
         `;
 
+        // TẠO NÚT TIM
+        const saveBtn = document.createElement('button');
+        saveBtn.className = 'btn-save-card';
+        saveBtn.innerHTML = '♡';
+        
+        // SỰ KIỆN: BẤM VÀO TIM ĐỂ LƯU
+        saveBtn.onclick = (e) => {
+          e.stopPropagation(); // Ngăn click xuyên xuống card
+          window.location.href = 'login.html'; // Tạm thời chuyển sang trang login
+        };
+
         card.appendChild(img);
         card.appendChild(overlay);
+        card.appendChild(saveBtn); // Gắn nút tim vào card
         grid.appendChild(card);
       });
     }
@@ -570,7 +624,6 @@
       document.getElementById("styleDropdown").classList.toggle("show");
     }
 
-    // Đóng menu khi click ra ngoài
     window.onclick = function(event) {
       if (!event.target.matches('.dropdown .btn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -580,7 +633,7 @@
           }
         }
       }
-    } // <- Lỗi của bạn là thiếu cái ngoặc này nè
+    }
 
     // CHẠY HÀM KHỞI ĐỘNG
     initGrid();
