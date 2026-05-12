@@ -65,7 +65,8 @@
       font-family: 'Space Mono', monospace;
       font-size: 11px;
       letter-spacing: 0.12em;
-      padding: 9px 18px;
+      height: 36px; /* Thay padding dọc bằng height để các nút bằng nhau */
+      padding: 0 18px;
       border: 1px solid #333;
       background: transparent;
       color: var(--white);
@@ -75,6 +76,7 @@
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      justify-content: center; /* Đảm bảo mọi thứ bên trong căn giữa */
       gap: 6px;
     }
 
@@ -84,7 +86,8 @@
       border-color: var(--white);
     }
 
-    .btn-search { padding: 3px 13px; font-size: 20px; align-items: center; justify-content: center; }
+    /* Đặt width bằng height để nút thành hình vuông, icon auto căn giữa */
+    .btn-search { width: 36px; padding: 0; font-size: 20px; }
 
     .btn-reload { border-color: var(--red); color: var(--red); }
 
@@ -97,6 +100,7 @@
     .spin {
       display: inline-block;
       transition: transform 0.5s ease;
+      line-height: 1; /* Fix lệch nhẹ của icon */
     }
 
     .btn-reload:hover .spin { transform: rotate(360deg); }
@@ -326,8 +330,13 @@
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
       nav { gap: 4px; }
-      .btn { padding: 6px 8px; font-size: 9px; letter-spacing: 0.05em; }
-      .btn-search { font-size: 15px; padding: 2px 8px; }
+      
+      /* Cân bằng các nút trên Mobile */
+      .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
+      .btn-search { width: 30px; padding: 0; font-size: 18px; }
+      .btn-reload { width: 30px; padding: 0; } /* Trở thành nút vuông chứa mỗi icon */
+      .text-reload { display: none; } /* Ẩn chữ RELOAD */
+      
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
       .hero { padding: 32px 16px 20px; }
@@ -349,8 +358,9 @@
     </a>
     <nav>
       <button class="btn btn-search" onclick="toggleSearch()">⌕</button>
+      <!-- Bọc chữ RELOAD vào span để CSS mobile ẩn đi -->
       <button class="btn btn-reload" onclick="randomize()">
-        <span class="spin">↻</span>
+        <span class="spin">↻</span><span class="text-reload">RELOAD</span>
       </button>
       <a class="btn" href="#">MY CLOSET</a>
       <a class="btn" href="#">STYLE ↓</a>
