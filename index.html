@@ -13,14 +13,9 @@
       --grey: #1a1a1a;
       --muted: #444;
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
-.btn-search {
-  width: 38px;
-  padding: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
     body {
       background: var(--black);
       color: var(--white);
@@ -29,7 +24,6 @@
       cursor: crosshair;
     }
 
-    /* NOISE OVERLAY */
     body::before {
       content: '';
       position: fixed;
@@ -61,35 +55,6 @@
       text-decoration: none;
     }
 
-    .logo-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--red);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 20px;
-      color: var(--white);
-      flex-shrink: 0;
-    }
-
-    .logo-text {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 22px;
-      letter-spacing: 0.12em;
-      color: var(--white);
-      line-height: 1.1;
-    }
-
-    .logo-sub {
-      font-size: 9px;
-      letter-spacing: 0.3em;
-      color: var(--muted);
-      font-family: 'Space Mono', monospace;
-    }
-
     nav {
       display: flex;
       align-items: center;
@@ -108,6 +73,9 @@
       transition: all 0.15s;
       text-transform: uppercase;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .btn:hover {
@@ -116,13 +84,9 @@
       border-color: var(--white);
     }
 
-    .btn-reload {
-      border-color: var(--red);
-      color: var(--red);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+    .btn-search { padding: 9px 13px; font-size: 15px; }
+
+    .btn-reload { border-color: var(--red); color: var(--red); }
 
     .btn-reload:hover {
       background: var(--red);
@@ -130,16 +94,35 @@
       border-color: var(--red);
     }
 
-    .btn-reload .spin {
+    .spin {
       display: inline-block;
       transition: transform 0.5s ease;
     }
 
-    .btn-reload:hover .spin {
-      transform: rotate(360deg);
+    .btn-reload:hover .spin { transform: rotate(360deg); }
+
+    /* SEARCH */
+    #search-bar {
+      display: none;
+      padding: 14px 32px;
+      background: #111;
+      border-bottom: 1px solid #222;
     }
 
-    /* HERO TEXT */
+    #search-input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333;
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      padding: 8px 0;
+      outline: none;
+    }
+
+    /* HERO */
     .hero {
       padding: 48px 32px 24px;
       border-bottom: 1px solid #1a1a1a;
@@ -161,9 +144,7 @@
       color: var(--white);
     }
 
-    .hero-title span {
-      color: var(--red);
-    }
+    .hero-title span { color: var(--red); }
 
     .hero-sub {
       margin-top: 16px;
@@ -174,7 +155,7 @@
       line-height: 1.8;
     }
 
-    /* OUTFIT SECTION */
+    /* SECTION */
     .section-header {
       display: flex;
       align-items: center;
@@ -210,6 +191,8 @@
       aspect-ratio: 3/4;
       background: var(--grey);
       cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 0.4s ease forwards;
     }
 
     .outfit-card img {
@@ -235,9 +218,7 @@
       transition: opacity 0.3s;
     }
 
-    .outfit-card:hover::after {
-      opacity: 1;
-    }
+    .outfit-card:hover::after { opacity: 1; }
 
     .outfit-overlay {
       position: absolute;
@@ -272,11 +253,11 @@
       margin-top: 4px;
     }
 
-    /* SHIMMER LOADING */
     .shimmer {
       background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
       background-size: 200% 100%;
-      animation: shimmer 1.5s infinite;
+      animation: shimmer 1.5s infinite !important;
+      opacity: 1 !important;
     }
 
     @keyframes shimmer {
@@ -284,20 +265,10 @@
       100% { background-position: -200% 0; }
     }
 
-    /* RELOAD ANIMATION */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    .outfit-card {
-      animation: fadeIn 0.4s ease forwards;
-    }
-
-    .outfit-card:nth-child(1) { animation-delay: 0.05s; }
-    .outfit-card:nth-child(2) { animation-delay: 0.1s; }
-    .outfit-card:nth-child(3) { animation-delay: 0.15s; }
-    .outfit-card:nth-child(4) { animation-delay: 0.2s; }
 
     /* TICKER */
     .ticker {
@@ -323,9 +294,7 @@
       color: var(--muted);
     }
 
-    .ticker-item span {
-      color: var(--red);
-    }
+    .ticker-item span { color: var(--red); }
 
     @keyframes ticker {
       from { transform: translateX(0); }
@@ -355,60 +324,56 @@
 
     /* MOBILE */
     @media (max-width: 768px) {
-  header { padding: 14px 16px; }
-  nav { gap: 4px; }
-  .btn { padding: 6px 8px; font-size: 9px; letter-spacing: 0.05em; }
-  .btn-search { font-size: 14px; }
-  .logo-wrap img:first-child { height: 36px; }
-  .logo-wrap img:last-child { height: 22px; }
-  .hero { padding: 32px 16px 20px; }
-  .outfit-grid { grid-template-columns: repeat(2, 1fr); }
-  .section-header { padding: 20px 16px 12px; }
-  footer { flex-direction: column; gap: 12px; text-align: center; }
-}
+      header { padding: 14px 16px; }
+      nav { gap: 4px; }
+      .btn { padding: 6px 8px; font-size: 9px; letter-spacing: 0.05em; }
+      .btn-search { font-size: 14px; padding: 6px 10px; }
+      .logo-wrap img:first-child { height: 36px; }
+      .logo-wrap img:last-child { height: 22px; }
+      .hero { padding: 32px 16px 20px; }
+      .outfit-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-header { padding: 20px 16px 12px; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+      #search-bar { padding: 12px 16px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
-  <a class="logo-wrap" href="#">
-    <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png"
-      alt="icon" style="height:44px;width:auto;object-fit:contain;">
-    <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png"
-      alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
-  </a>
-  <nav>
-    <button class="btn btn-search" onclick="toggleSearch()">⌕</button>
-    <button class="btn btn-reload" onclick="randomize()">
-      <span class="spin">↻</span> <span class="btn-label">RELOAD</span>
-    </button>
-    <a class="btn" href="#"><span class="btn-label">MY CLOSET</span></a>
-    <a class="btn" href="#"><span class="btn-label">STYLE</span> ↓</a>
-  </nav>
-</header>
-<div id="search-bar" style="display:none;padding:14px 32px;background:#111;border-bottom:1px solid #222;">
-  <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE..."
-    style="width:100%;background:transparent;border:none;border-bottom:1px solid #333;
-    color:#f0ece4;font-family:'Space Mono',monospace;font-size:13px;
-    letter-spacing:0.1em;padding:8px 0;outline:none;">
-</div>
-  <!-- HERO -->
+    <a class="logo-wrap" href="#">
+      <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png"
+        alt="icon" style="height:44px;width:auto;object-fit:contain;">
+      <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png"
+        alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+    </a>
+    <nav>
+      <button class="btn btn-search" onclick="toggleSearch()">⌕</button>
+      <button class="btn btn-reload" onclick="randomize()">
+        <span class="spin">↻</span> RELOAD
+      </button>
+      <a class="btn" href="#">MY CLOSET</a>
+      <a class="btn" href="#">STYLE ↓</a>
+    </nav>
+  </header>
+
+  <div id="search-bar">
+    <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE...">
+  </div>
+
   <section class="hero">
     <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
     <h1 class="hero-title">DRESS<br>LIKE THE<br><span>END</span></h1>
-    <p class="hero-sub">Outfit ngẫu nhiên mỗi lần reload.<br>Bấm RELOAD để xem outfit mới.</p>
+    <p class="hero-sub">Outfit ngẫu nhiên mỗi lần reload.<br>Bấm RELOAD để xáo trộn thứ tự.</p>
   </section>
 
-  <!-- OUTFITS -->
   <div class="section-header">
-    <span class="section-label">Random Outfits</span>
-    <span class="section-count" id="counter">4 / 8 LOOKS</span>
+    <span class="section-label">All Outfits</span>
+    <span class="section-count" id="counter"></span>
   </div>
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
-  <!-- TICKER -->
   <div class="ticker">
     <div class="ticker-inner">
       <span class="ticker-item">APOCALYPSE CLOSET</span>
@@ -417,7 +382,6 @@
       <span class="ticker-item"><span>✦</span> SHOPEE LINKS</span>
       <span class="ticker-item">PHỐI ĐỒ NGẪU NHIÊN</span>
       <span class="ticker-item"><span>✦</span> DARK FASHION</span>
-      <!-- repeat -->
       <span class="ticker-item">APOCALYPSE CLOSET</span>
       <span class="ticker-item"><span>✦</span> BAD GIRL AESTHETIC</span>
       <span class="ticker-item">OUTFIT OF THE DAY</span>
@@ -427,73 +391,35 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <span>© 2026 APOCALYPSE CLOSET</span>
     <span><a href="#">LIÊN HỆ</a> · <a href="#">CHÍNH SÁCH</a> · <a href="#">SHOPEE</a></span>
   </footer>
 
   <script>
+    // ============================================
+    // THÊM OUTFIT: copy 1 dòng, thay link và số
+    // ============================================
     const outfits = [
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
-        tag: "LOOK #01"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg",
-        tag: "LOOK #02"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg",
-        tag: "LOOK #03"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg",
-        tag: "LOOK #04"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg",
-        tag: "LOOK #05"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg",
-        tag: "LOOK #06"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg",
-        tag: "LOOK #07"
-      },
-       {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg",
-        tag: "LOOK #08"
-      },
-      {
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg",
-        tag: "LOOK #09"
-      }
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #03" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #04" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #05" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #06" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #07" },
+      { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #08" },
     ];
-function toggleSearch() {
-  const bar = document.getElementById('search-bar');
-  const input = document.getElementById('search-input');
-  if (bar.style.display === 'none') {
-    bar.style.display = 'block';
-    input.focus();
-  } else {
-    bar.style.display = 'none';
-  }
-}
-    function randomize() {
+
+    function renderAll() {
       const grid = document.getElementById('outfit-grid');
       grid.innerHTML = '';
+      document.getElementById('counter').textContent = outfits.length + ' LOOKS';
 
-      const picked = [...outfits]
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 4);
-
-      picked.forEach((outfit, i) => {
+      outfits.forEach((outfit, i) => {
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
-        card.style.animationDelay = (i * 0.05) + 's';
+        card.style.animationDelay = (i * 0.03) + 's';
 
         const img = document.createElement('img');
         img.src = outfit.img;
@@ -513,8 +439,23 @@ function toggleSearch() {
       });
     }
 
-    // Load on start
-    randomize();
+    function randomize() {
+      outfits.sort(() => Math.random() - 0.5);
+      renderAll();
+    }
+
+    function toggleSearch() {
+      const bar = document.getElementById('search-bar');
+      const input = document.getElementById('search-input');
+      if (bar.style.display === 'none' || bar.style.display === '') {
+        bar.style.display = 'block';
+        input.focus();
+      } else {
+        bar.style.display = 'none';
+      }
+    }
+
+    renderAll();
   </script>
 
 </body>
