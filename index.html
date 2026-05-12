@@ -86,7 +86,6 @@
       border-color: var(--white);
     }
 
-    /* Ép 3 icon có cùng kích thước và nằm chính giữa */
     .nav-icon {
       font-size: 16px;
       display: inline-flex;
@@ -103,14 +102,56 @@
       color: var(--white);
       border-color: var(--red);
     }
-    .btn-reload .nav-icon {
-  position: relative;
-  top: -1.5px; /* Số âm sẽ kéo icon lên trên. Bạn có thể đổi thành -1px hoặc -2px cho vừa mắt nhất */
-}
+
     .spin {
       transition: transform 0.5s ease;
     }
     .btn-reload:hover .spin { transform: rotate(360deg); }
+
+    /* DROPDOWN MENU */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      margin-top: 10px;
+      background: rgba(10, 10, 10, 0.98);
+      backdrop-filter: blur(8px);
+      min-width: 200px;
+      border: 1px solid #333;
+      z-index: 200;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .dropdown-content.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown-content a {
+      color: var(--white);
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #222;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
 
     /* SEARCH */
     #search-bar {
@@ -339,12 +380,14 @@
       nav { gap: 4px; }
       
       .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
-      
-      /* Biến 3 nút đầu thành hình vuông chứa mỗi icon */
       .btn.btn-icon-only { width: 30px; padding: 0; }
-      
-      /* Ẩn chữ của 3 nút đầu, nhưng chừa lại chữ nút STYLE */
       .text-hide { display: none; }
+      
+      /* Fix vị trí icon Reload lệch trên điện thoại */
+      .btn-reload .nav-icon {
+        position: relative;
+        top: -1.5px;
+      }
       
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
@@ -366,23 +409,28 @@
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
     <nav>
-      <!-- Nút Search -->
       <button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
         <span class="nav-icon">⌕</span><span class="text-hide">SEARCH</span>
       </button>
 
-      <!-- Nút Reload -->
       <button class="btn btn-icon-only btn-reload" onclick="randomize()">
         <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
       </button>
 
-      <!-- Nút My Closet (Save) -->
       <a class="btn btn-icon-only btn-save" href="#">
         <span class="nav-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
 
-      <!-- Nút Style (Không có class ẩn chữ nên hiện bình thường) -->
-      <a class="btn" href="#">STYLE ↓</a>
+      <div class="dropdown">
+        <button class="btn" onclick="toggleStyleMenu(event)">STYLE ↓</button>
+        <div class="dropdown-content" id="styleDropdown">
+          <a href="#">Dark Feminine</a>
+          <a href="#">E-Girl / Alt Girl</a>
+          <a href="#">Goth / Gothic</a>
+          <a href="#">Baddie Streetwear</a>
+          <a href="#">Punk / Grunge</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -426,9 +474,6 @@
   </footer>
 
   <script>
-    // ============================================
-    // THÊM OUTFIT: copy 1 dòng, thay link và số
-    // ============================================
     const outfits = [
       { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01" },
       { img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02" },
@@ -481,6 +526,25 @@
         input.focus();
       } else {
         bar.style.display = 'none';
+      }
+    }
+
+    // TÍNH NĂNG ĐÓNG / MỞ MENU STYLE
+    function toggleStyleMenu(event) {
+      event.stopPropagation(); // Ngăn click lan ra ngoài
+      document.getElementById("styleDropdown").classList.toggle("show");
+    }
+
+    // Tự động đóng menu nếu click ra vùng trống trên trang
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown .btn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
       }
     }
 
