@@ -1,279 +1,369 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apocalypse Closet - Phong cách và thời trang Bad Girl</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Apocalypse Closet</title>
+
+  <!-- Google One Tap SDK -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+
   <style>
     :root {
-      --black: #0a0a0a;
-      --white: #f0ece4;
-      --red: #c0392b;
-      --grey: #1a1a1a;
-      --muted: #444;
-      --muted-light: #888;
+      --black:   #080808;
+      --white:   #f0ece4;
+      --red:     #c0392b;
+      --dim:     #1a1a1a;
+      --border:  #2a2a2a;
+      --muted:   #555;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: var(--black);
       color: var(--white);
       font-family: 'Space Mono', monospace;
       min-height: 100vh;
-      cursor: crosshair;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
+      overflow: hidden;
       position: relative;
     }
 
-    /* Hiệu ứng nhiễu hạt nền */
+    /* Noise texture overlay */
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
       pointer-events: none;
-      z-index: 999;
-      opacity: 0.4;
+      z-index: 0;
     }
 
-    /* Nút Back về trang chủ */
-    .btn-back {
-      position: absolute;
-      top: 32px;
-      left: 32px;
-      font-family: 'Space Mono', monospace;
+    /* Red bleed top-right */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -120px;
+      right: -120px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(192,57,43,0.18) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Back link */
+    .back {
+      position: fixed;
+      top: 24px;
+      left: 28px;
+      color: var(--muted);
+      text-decoration: none;
       font-size: 11px;
       letter-spacing: 0.12em;
-      padding: 8px 16px;
-      border: 1px solid #333;
-      background: transparent;
-      color: var(--white);
-      cursor: pointer;
       text-transform: uppercase;
-      text-decoration: none;
-      transition: all 0.15s;
-      z-index: 100;
-    }
-
-    .btn-back:hover {
-      background: var(--white);
-      color: var(--black);
-      border-color: var(--white);
-    }
-
-    /* Form Đăng nhập */
-    .login-container {
-      background: rgba(15, 15, 15, 0.8);
-      border: 1px solid #222;
-      padding: 48px 40px;
-      width: 100%;
-      max-width: 420px;
-      backdrop-filter: blur(10px);
+      transition: color 0.2s;
       z-index: 10;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+    .back:hover { color: var(--white); }
+
+    /* Card */
+    .card {
+      position: relative;
+      z-index: 1;
+      width: min(400px, 92vw);
+      padding: 48px 40px 44px;
+      border: 1px solid var(--border);
+      background: rgba(12,12,12,0.85);
+      backdrop-filter: blur(12px);
+      animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) both;
     }
 
-    .icon-heart {
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 16px;
-      color: var(--white);
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
-    .login-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 36px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      margin-bottom: 8px;
+    /* Corner accents */
+    .card::before,
+    .card::after {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-color: var(--red);
+      border-style: solid;
     }
+    .card::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+    .card::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
 
-    .login-sub {
-      font-size: 11px;
-      color: var(--muted-light);
-      text-align: center;
-      margin-bottom: 32px;
-      letter-spacing: 0.05em;
-    }
-
-    /* Các nút bấm chung */
-    .btn {
-      font-family: 'Space Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      width: 100%;
-      padding: 14px;
-      border: 1px solid;
-      cursor: pointer;
-      transition: all 0.2s;
-      text-transform: uppercase;
-      text-decoration: none;
+    /* Logo area */
+    .logo-wrap {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 12px;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .logo-wrap img.icon {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+    .logo-wrap img.wordmark {
+      height: 20px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
     }
 
-    .btn-social {
-      background: transparent;
-      border-color: #333;
+    /* Heading */
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 6px;
       color: var(--white);
     }
-
-    .btn-social:hover {
-      background: #222;
-      border-color: #555;
+    .sub {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 36px;
     }
 
-    /* Đường kẻ OR */
+    /* Divider */
     .divider {
       display: flex;
       align-items: center;
-      text-align: center;
-      margin: 24px 0;
+      gap: 12px;
+      margin-bottom: 28px;
       color: var(--muted);
-      font-size: 10px;
+      font-size: 9px;
       letter-spacing: 0.2em;
+      text-transform: uppercase;
     }
-
-    .divider::before, .divider::after {
+    .divider::before,
+    .divider::after {
       content: '';
       flex: 1;
-      border-bottom: 1px solid #222;
+      height: 1px;
+      background: var(--border);
     }
 
-    .divider:not(:empty)::before { margin-right: 12px; }
-    .divider:not(:empty)::after { margin-left: 12px; }
-
-    /* Input Fields */
-    .input-group {
-      margin-bottom: 20px;
-      text-align: left;
-    }
-
-    .input-group label {
-      display: block;
-      font-size: 10px;
-      color: var(--muted-light);
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .input-group input {
+    /* Custom Google button */
+    .btn-google {
       width: 100%;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 13px 20px;
+      background: var(--dim);
+      border: 1px solid var(--border);
       color: var(--white);
       font-family: 'Space Mono', monospace;
-      font-size: 13px;
-      padding: 8px 0;
-      outline: none;
-      transition: border-color 0.3s;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
     }
-
-    .input-group input:focus {
-      border-color: var(--red);
-    }
-
-    /* Nút Sign In chính */
-    .btn-primary {
-      background: var(--white);
-      color: var(--black);
+    .btn-google:hover {
       border-color: var(--white);
-      font-weight: bold;
-      margin-top: 10px;
+      background: #1f1f1f;
     }
+    .btn-google svg { flex-shrink: 0; }
 
-    .btn-primary:hover {
+    /* Footer note */
+    .note {
+      margin-top: 32px;
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 1.8;
+    }
+    .note a { color: var(--red); text-decoration: none; }
+    .note a:hover { text-decoration: underline; }
+
+    /* User info box (shown after login) */
+    #user-box { display: none; text-align: center; }
+    #user-box img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid var(--red);
+      margin-bottom: 14px;
+      object-fit: cover;
+    }
+    #user-box .user-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    #user-box .user-email {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      margin-bottom: 24px;
+    }
+    .btn-enter {
+      display: block;
+      width: 100%;
+      padding: 14px;
       background: var(--red);
       color: var(--white);
-      border-color: var(--red);
-    }
-
-    /* Footer / Đăng ký */
-    .login-footer {
-      text-align: center;
-      font-size: 10px;
-      color: var(--muted-light);
-      margin-top: 24px;
-      letter-spacing: 0.05em;
-    }
-
-    .login-footer a {
-      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.16em;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
       text-decoration: none;
-      border-bottom: 1px solid var(--red);
-      padding-bottom: 2px;
-      transition: color 0.2s;
+      text-align: center;
     }
+    .btn-enter:hover { opacity: 0.85; }
 
-    .login-footer a:hover {
-      color: var(--red);
+    .btn-signout {
+      margin-top: 12px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
     }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .login-container {
-        padding: 40px 24px;
-        border: none;
-        border-top: 1px solid #222;
-        border-bottom: 1px solid #222;
-        background: rgba(10, 10, 10, 0.95);
-      }
-      .btn-back {
-        top: 16px;
-        left: 16px;
-        padding: 6px 12px;
-        font-size: 9px;
-      }
-    }
+    .btn-signout:hover { color: var(--white); }
   </style>
 </head>
 <body>
 
-  <a href="index.html" class="btn-back">← BACK</a>
+  <a href="https://doquochau.github.io/index.html" class="back">← Back</a>
 
-  <div class="login-container">
-    <div style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 24px;">
-  <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png" alt="icon" style="height: 52px; width: auto; object-fit: contain;">
-  <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png" alt="Apocalypse Closet" style="height: 36px; width: auto; object-fit: contain; mix-blend-mode: screen;">
-</div>
-    <h1 class="login-title">WELCOME BACK</h1>
-    <p class="login-sub">Sign in to Apocalypse Closet</p>
-
-    <button class="btn btn-social">
-      <span>G</span> Continue with Google
-    </button>
-    <button class="btn btn-social">
-      <span>f</span> Continue with Facebook
-    </button>
-
-    <div class="divider">OR</div>
-
-    <div class="input-group">
-      <label>Email</label>
-      <input type="email" placeholder="you@example.com">
-    </div>
-
-    <div class="input-group">
-      <label>Password</label>
-      <input type="password" placeholder="••••••••">
-    </div>
-
-    <button class="btn btn-primary">SIGN IN</button>
-
-    <div class="login-footer">
-      Don't have an account? <a href="#">Sign up</a>
-    </div>
+  <!--
+    ★ BƯỚC DUY NHẤT BẠN CẦN LÀM:
+       Thay "PASTE_YOUR_CLIENT_ID_HERE" bằng Client ID lấy từ Google Cloud Console
+       Ví dụ: 123456789-abcdef.apps.googleusercontent.com
+  -->
+  <div
+    id="g_id_onload"
+    data-client_id="1022057009412-pnvkbpd7n6u7j017i70j632s3qm17cuq.apps.googleusercontent.com"
+    data-callback="handleCredentialResponse"
+    data-auto_prompt="true"
+    data-cancel_on_tap_outside="false"
+    data-context="signin"
+    data-itp_support="true">
   </div>
+
+  <div class="card">
+
+    <div class="logo-wrap">
+      <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png" alt="icon" style="height: 52px; width: auto; object-fit: contain;">
+      <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png" alt="Apocalypse Closet" style="height: 36px; width: auto; object-fit: contain; mix-blend-mode: screen;">
+    </div>
+
+    <!-- ── LOGIN STATE ── -->
+    <div id="login-box">
+      <h1>WELCOME<br>BACK</h1>
+      <p class="sub">Sign in to access your closet</p>
+
+      <div class="divider">Continue with</div>
+
+      <button class="btn-google" onclick="triggerOneTap()">
+        <!-- Google G logo -->
+        <svg width="18" height="18" viewBox="0 0 48 48">
+          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+        </svg>
+        CONTINUE WITH GOOGLE
+      </button>
+
+      <p class="note">
+        Bằng cách đăng nhập, bạn đồng ý với<br>
+        <a href="#">Terms of Service</a> &amp; <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+
+    <!-- ── LOGGED IN STATE ── -->
+    <div id="user-box">
+      <img id="user-avatar" src="" alt="avatar" />
+      <div class="user-name" id="user-name"></div>
+      <div class="user-email" id="user-email"></div>
+      <a href="https://doquochau.github.io/closet.html" class="btn-enter">ENTER MY CLOSET →</a>
+      <button class="btn-signout" onclick="signOut()">Sign out</button>
+    </div>
+
+  </div>
+
+  <script>
+    // ── Decode JWT payload từ Google credential ──────────────────
+    function parseJwt(token) {
+      const base64 = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+      return JSON.parse(atob(base64));
+    }
+
+    // ── Google gọi hàm này sau khi user chọn tài khoản ──────────
+    function handleCredentialResponse(response) {
+      const user = parseJwt(response.credential);
+
+      // Lưu vào sessionStorage — dùng được ở closet.html
+      sessionStorage.setItem('ac_user', JSON.stringify({
+        name:    user.name,
+        email:   user.email,
+        picture: user.picture,
+        sub:     user.sub   // ID duy nhất của user
+      }));
+
+      showUserBox(user);
+    }
+
+    // ── Hiện thông tin sau khi login ─────────────────────────────
+    function showUserBox(user) {
+      document.getElementById('login-box').style.display = 'none';
+      const box = document.getElementById('user-box');
+      box.style.display = 'block';
+      document.getElementById('user-avatar').src          = user.picture;
+      document.getElementById('user-name').textContent   = user.name;
+      document.getElementById('user-email').textContent  = user.email;
+    }
+
+    // ── Mở popup One Tap khi bấm nút ─────────────────────────────
+    function triggerOneTap() {
+      google.accounts.id.prompt();
+    }
+
+    // ── Sign out ──────────────────────────────────────────────────
+    function signOut() {
+      sessionStorage.removeItem('ac_user');
+      document.getElementById('user-box').style.display  = 'none';
+      document.getElementById('login-box').style.display = 'block';
+      google.accounts.id.disableAutoSelect();
+    }
+
+    // ── Nếu đã login rồi (quay lại trang) thì hiện thẳng user ───
+    window.addEventListener('load', () => {
+      const stored = sessionStorage.getItem('ac_user');
+      if (stored) showUserBox(JSON.parse(stored));
+    });
+  </script>
 
 </body>
 </html>
