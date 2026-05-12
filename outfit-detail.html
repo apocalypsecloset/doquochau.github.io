@@ -23,9 +23,10 @@
       color: var(--white);
       font-family: 'Space Mono', monospace;
       min-height: 100vh;
-      cursor: crosshair;
+      overflow-x: hidden;
     }
 
+    /* Hiệu ứng nhiễu nhẹ cho nền */
     body::before {
       content: '';
       position: fixed;
@@ -33,10 +34,9 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
       pointer-events: none;
       z-index: 999;
-      opacity: 0.4;
+      opacity: 0.3;
     }
 
-    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -75,7 +75,6 @@
       border-color: var(--white);
     }
 
-    /* BỐ CỤC CHÍNH */
     .detail-container {
       display: flex;
       padding: 48px 32px;
@@ -84,28 +83,38 @@
       margin: 0 auto;
     }
 
-    /* === CỘT TRÁI: SLIDER ẢNH === */
+    /* === FIX LỖI SLIDER TẠI ĐÂY === */
     .outfit-image-col {
-      flex: 1; /* Cân bằng lại tỷ lệ 2 cột */
+      flex: 1;
       position: relative;
-      display: flex;
-      align-items: flex-start; /* Cho ảnh bám lên mép trên cùng với nội dung bên phải */
-      justify-content: center;
     }
 
     .slider-wrapper {
       position: relative;
       width: 100%;
-      max-width: 420px; /* CHỐT CHẶN 1: Ngăn ảnh phình ngang quá to trên PC */
-      max-height: 75vh; /* CHỐT CHẶN 2: Ép chiều cao không vượt quá 75% màn hình */
-      aspect-ratio: 3/4; /* Giữ nguyên hình chữ nhật đứng thời trang */
+      max-width: 420px;
+      aspect-ratio: 3/4;
       overflow: hidden;
       border: 1px solid #222;
       background: var(--grey);
-      margin: 0 auto; /* Căn giữa khung ảnh */
+      margin: 0 auto;
     }
 
-    /* Nút trượt ảnh */
+    /* Cực kỳ quan trọng: Track phải có display flex để ảnh dàn hàng ngang */
+    .slider-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-track img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Để ảnh không bị méo */
+      flex-shrink: 0;
+    }
+
     .slider-btn {
       position: absolute;
       top: 50%;
@@ -115,26 +124,16 @@
       background: rgba(10,10,10,0.8);
       border: 1px solid #444;
       color: var(--white);
-      font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: all 0.2s;
       z-index: 10;
       border-radius: 50%;
     }
-
-    .slider-btn:hover {
-      background: var(--white);
-      color: var(--black);
-      border-color: var(--white);
-    }
-
     .btn-prev { left: 16px; }
     .btn-next { right: 16px; }
 
-    /* Dấu chấm chỉ báo số lượng ảnh (Dots) */
     .slider-dots {
       position: absolute;
       bottom: 16px;
@@ -142,36 +141,18 @@
       transform: translateX(-50%);
       display: flex;
       gap: 8px;
-      z-index: 10;
     }
+    .dot { width: 6px; height: 6px; background: rgba(255,255,255,0.3); border-radius: 50%; }
+    .dot.active { background: var(--white); transform: scale(1.5); }
 
-    .dot {
-      width: 6px;
-      height: 6px;
-      background: rgba(255,255,255,0.3);
-      border-radius: 50%;
-      transition: 0.3s;
-    }
-
-    .dot.active {
-      background: var(--white);
-      transform: scale(1.5);
-    }
-
-    /* === CỘT PHẢI: THÔNG TIN & DANH SÁCH ĐỒ === */
-    .outfit-info-col {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+    /* === INFO COLUMN === */
+    .outfit-info-col { flex: 1; }
 
     .outfit-title {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 48px;
-      letter-spacing: 0.05em;
-      line-height: 1;
-      margin-bottom: 8px;
       color: var(--red);
+      margin-bottom: 8px;
     }
 
     .outfit-desc {
@@ -183,21 +164,14 @@
 
     .section-title {
       font-size: 10px;
-      letter-spacing: 0.2em;
       color: var(--muted);
       text-transform: uppercase;
       margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
-    /* DANH SÁCH ITEM SHOPEE TỐI GIẢN (Giống style ảnh bạn đưa) */
-    .items-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+    .items-list { display: flex; flex-direction: column; gap: 12px; }
 
     .item-link {
       display: flex;
@@ -208,70 +182,23 @@
       border: 1px solid #222;
       text-decoration: none;
       color: var(--white);
-      transition: all 0.2s;
+      transition: 0.2s;
     }
 
     .item-link:hover {
       border-color: var(--muted-light);
       background: #1a1a1a;
-      transform: translateX(4px);
+      transform: translateX(5px);
     }
 
-    .item-left {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
+    .item-left { display: flex; align-items: center; gap: 16px; }
+    .item-icon { color: var(--red); }
+    .item-text h3 { font-size: 13px; font-weight: bold; }
+    .item-text p { font-size: 10px; color: var(--muted); text-transform: uppercase; }
 
-    .item-icon {
-      color: var(--red);
-      font-size: 18px;
-    }
-
-    .item-text h3 {
-      font-family: 'Space Mono', monospace;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .item-text p {
-      font-size: 10px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .item-arrow {
-      color: var(--muted-light);
-      font-size: 18px;
-      transition: color 0.2s;
-    }
-
-    .item-link:hover .item-arrow {
-      color: var(--white);
-    }
-
-    /* Báo lỗi */
-    .error-msg {
-      text-align: center;
-      width: 100%;
-      margin-top: 100px;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 40px;
-      color: var(--muted);
-    }
-
-    /* MOBILE */
     @media (max-width: 768px) {
-      .detail-container {
-        flex-direction: column;
-        padding: 16px;
-        gap: 32px;
-      }
-      header { padding: 14px 16px; }
-      .outfit-title { font-size: 40px; }
-      .slider-btn { width: 32px; height: 32px; font-size: 14px; }
+      .detail-container { flex-direction: column; padding: 16px; }
+      .outfit-title { font-size: 36px; }
     }
   </style>
 </head>
@@ -279,143 +206,89 @@
 
   <header>
     <a href="index.html" class="btn">← BACK</a>
-    <button class="btn" style="border-color: #333;" onclick="window.location.href='login.html'">♡ SAVE</button>
+    <button class="btn">♡ SAVE</button>
   </header>
 
   <main class="detail-container" id="main-content">
     </main>
 
   <script>
-    // ==========================================
-    // DATABASE CHỨA OUTFIT VÀ ĐỒ SHOPEE
-    // Lưu ý: Biến 'imgs' giờ là một mảng (có dấu ngoặc vuông []) chứa nhiều link ảnh
-    // ==========================================
     const outfitDatabase = {
       "look-01": {
         title: "DARK STREETWEAR",
         desc: "Phong cách đường phố tối màu, bụi bặm nhưng cực kỳ cuốn hút.",
         imgs: [
           "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
-          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", // Tạm dùng ảnh khác để test
-          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg"
-        ],
-        items: [
-          { name: "Áo Khoác Da Biker", type: "Áo", link: "https://shopee.vn/..." },
-          { name: "Quần Cargo Túi Hộp", type: "Quần", link: "https://shopee.vn/..." },
-          { name: "Quần (Tham khảo)", type: "Quần", link: "https://shopee.vn/..." },
-          { name: "Giày Boots Cổ Cao", type: "Giày", link: "https://shopee.vn/..." },
-          { name: "Kính Râm Y2K", type: "Phụ kiện", link: "https://shopee.vn/..." }
-        ]
-      },
-      "look-02": {
-        title: "GOTHIC VIBE",
-        desc: "Bí ẩn, quyến rũ với tone màu đen chủ đạo và phụ kiện kim loại.",
-        imgs: [
           "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg"
-          // Nếu bộ đồ chỉ có 1 ảnh, cứ để 1 link trong ngoặc vuông, Slider sẽ tự động giấu nút bấm đi!
         ],
+        // ĐÃ SỬA THÀNH DẠNG BASIC - Bạn chỉ cần thay Link Shopee
         items: [
-          { name: "Áo Croptop Lưới", type: "Áo", link: "https://shopee.vn/..." },
-          { name: "Chân Váy Xếp Ly", type: "Váy", link: "https://shopee.vn/..." },
-          { name: "Vòng Cổ Choker Gai", type: "Phụ kiện", link: "https://shopee.vn/..." }
+          { name: "ÁO", type: "Top Item", link: "#" },
+          { name: "QUẦN", type: "Bottom Item", link: "#" },
+          { name: "GIÀY", type: "Footwear", link: "#" },
+          { name: "PHỤ KIỆN 01", type: "Accessories", link: "#" },
+          { name: "PHỤ KIỆN 02", type: "Accessories", link: "#" }
         ]
       }
-      // Khai báo tiếp look-03, look-04 ở đây...
     };
 
-    // ==========================================
-    // LOGIC RENDER VÀ SLIDER TRƯỢT ẢNH
-    // ==========================================
     const urlParams = new URLSearchParams(window.location.search);
-    const outfitId = urlParams.get('id');
+    const outfitId = urlParams.get('id') || "look-01"; // Mặc định look-01 để bạn test
     const mainContent = document.getElementById('main-content');
+    let currentSlideIndex = 0;
 
-    let currentSlideIndex = 0; // Biến nhớ xem đang ở ảnh số mấy
-
-    // Hàm thực hiện trượt ảnh
     function moveSlide(direction) {
       const track = document.getElementById('slider-track');
       const dots = document.querySelectorAll('.dot');
       const totalSlides = dots.length;
-
-      currentSlideIndex += direction;
-
-      // Xử lý vòng lặp (Đến cuối thì quay lại đầu)
-      if (currentSlideIndex >= totalSlides) currentSlideIndex = 0;
-      if (currentSlideIndex < 0) currentSlideIndex = totalSlides - 1;
-
-      // Di chuyển băng chuyền ảnh
+      currentSlideIndex = (currentSlideIndex + direction + totalSlides) % totalSlides;
       track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-
-      // Cập nhật chấm sáng
-      dots.forEach(dot => dot.classList.remove('active'));
-      dots[currentSlideIndex].classList.add('active');
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlideIndex));
     }
 
-    if (outfitId && outfitDatabase[outfitId]) {
+    if (outfitDatabase[outfitId]) {
       const outfit = outfitDatabase[outfitId];
       
-      // 1. TẠO HTML CHO BĂNG CHUYỀN ẢNH (SLIDER)
-      let imagesHTML = '';
-      let dotsHTML = '';
-      outfit.imgs.forEach((imgLink, index) => {
-        imagesHTML += `<img src="${imgLink}" alt="Slide ${index + 1}">`;
-        dotsHTML += `<div class="dot ${index === 0 ? 'active' : ''}"></div>`;
-      });
-
-      // Nếu chỉ có 1 ảnh thì ẩn nút Next/Prev và chấm tròn đi
-      const showControls = outfit.imgs.length > 1;
-      const controlsHTML = showControls ? `
-        <button class="slider-btn btn-prev" onclick="moveSlide(-1)">❮</button>
-        <button class="slider-btn btn-next" onclick="moveSlide(1)">❯</button>
-        <div class="slider-dots">${dotsHTML}</div>
-      ` : '';
-
-      // 2. TẠO HTML CHO DANH SÁCH ĐỒ SHOPEE
-      let itemsHTML = '';
-      outfit.items.forEach(item => {
-        itemsHTML += `
-          <a href="${item.link}" target="_blank" class="item-link">
-            <div class="item-left">
-              <div class="item-icon">✦</div>
-              <div class="item-text">
-                <h3>${item.name}</h3>
-                <p>${item.type}</p>
-              </div>
+      let imagesHTML = outfit.imgs.map(img => `<img src="${img}" alt="outfit">`).join('');
+      let dotsHTML = outfit.imgs.map((_, i) => `<div class="dot ${i === 0 ? 'active' : ''}"></div>`).join('');
+      
+      let itemsHTML = outfit.items.map(item => `
+        <a href="${item.link}" target="_blank" class="item-link">
+          <div class="item-left">
+            <div class="item-icon">✦</div>
+            <div class="item-text">
+              <h3>${item.name}</h3>
+              <p>${item.type}</p>
             </div>
-            <div class="item-arrow">→</div>
-          </a>
-        `;
-      });
+          </div>
+          <div class="item-arrow">→</div>
+        </a>
+      `).join('');
 
-      // 3. ĐỔ TOÀN BỘ VÀO TRANG
       mainContent.innerHTML = `
         <div class="outfit-image-col">
           <div class="slider-wrapper">
-            <div class="slider-track" id="slider-track">
-              ${imagesHTML}
-            </div>
-            ${controlsHTML}
+            <div class="slider-track" id="slider-track">${imagesHTML}</div>
+            ${outfit.imgs.length > 1 ? `
+              <button class="slider-btn btn-prev" onclick="moveSlide(-1)">❮</button>
+              <button class="slider-btn btn-next" onclick="moveSlide(1)">❯</button>
+              <div class="slider-dots">${dotsHTML}</div>
+            ` : ''}
           </div>
         </div>
         <div class="outfit-info-col">
           <h1 class="outfit-title">${outfit.title}</h1>
           <p class="outfit-desc">${outfit.desc}</p>
-          
           <div class="section-title">
-            <span>Nơi mua phối đồ</span>
-            <span>${outfit.items.length} SẢN PHẨM</span>
+            <span>DANH SÁCH MUA ĐỒ</span>
+            <span>${outfit.items.length} MÓN</span>
           </div>
-          <div class="items-list">
-            ${itemsHTML}
-          </div>
+          <div class="items-list">${itemsHTML}</div>
         </div>
       `;
     } else {
-      // Nếu không tìm thấy ID
-      mainContent.innerHTML = `<div class="error-msg">OUTFIT NOT FOUND.<br><span style="font-size:20px; font-family:'Space Mono';">Lỗi 404 - Dữ liệu đã bị hủy diệt.</span></div>`;
+      mainContent.innerHTML = `<div style="text-align:center; width:100%; padding-top:100px;"><h1>OUTFIT NOT FOUND</h1></div>`;
     }
   </script>
-
 </body>
 </html>
