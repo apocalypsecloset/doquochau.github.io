@@ -13,9 +13,14 @@
       --grey: #1a1a1a;
       --muted: #444;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
+.btn-search {
+  width: 38px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
     body {
       background: var(--black);
       color: var(--white);
@@ -466,7 +471,16 @@
         tag: "LOOK #08"
       }
     ];
-
+function toggleSearch() {
+  const bar = document.getElementById('search-bar');
+  const input = document.getElementById('search-input');
+  if (bar.style.display === 'none') {
+    bar.style.display = 'block';
+    input.focus();
+  } else {
+    bar.style.display = 'none';
+  }
+}
     function randomize() {
       const grid = document.getElementById('outfit-grid');
       grid.innerHTML = '';
