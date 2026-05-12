@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apocalypse Closet - Phong cách và thời trang Bad Girl</title>
+  <title>Outfit Detail - Apocalypse Closet</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
@@ -13,6 +13,7 @@
       --red: #c0392b;
       --grey: #1a1a1a;
       --muted: #444;
+      --muted-light: #888;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,7 +26,6 @@
       cursor: crosshair;
     }
 
-    /* Hiệu ứng nhiễu */
     body::before {
       content: '';
       position: fixed;
@@ -36,7 +36,7 @@
       opacity: 0.4;
     }
 
-    /* HEADER TỐI GIẢN */
+    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -66,6 +66,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
     }
 
     .btn:hover {
@@ -74,32 +75,100 @@
       border-color: var(--white);
     }
 
-    /* BỐ CỤC TRANG CHI TIẾT */
+    /* BỐ CỤC CHÍNH */
     .detail-container {
       display: flex;
-      padding: 32px;
-      gap: 48px;
+      padding: 48px 32px;
+      gap: 64px;
       max-width: 1200px;
       margin: 0 auto;
-      min-height: calc(100vh - 73px);
     }
 
-    /* Cột Trái: Ảnh lớn */
+    /* === CỘT TRÁI: SLIDER ẢNH === */
     .outfit-image-col {
-      flex: 1;
+      flex: 1.2;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .outfit-image-col img {
+    .slider-wrapper {
+      position: relative;
       width: 100%;
-      height: 100%;
-      max-height: 80vh;
-      object-fit: cover;
+      aspect-ratio: 3/4; /* Tỷ lệ khung ảnh */
+      overflow: hidden;
       border: 1px solid #222;
+      background: var(--grey);
+    }
+
+    .slider-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .slider-track img {
+      min-width: 100%;
+      height: 100%;
+      object-fit: cover;
       filter: saturate(0.9);
     }
 
-    /* Cột Phải: Thông tin & Đồ Shopee */
+    /* Nút trượt ảnh */
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: rgba(10,10,10,0.8);
+      border: 1px solid #444;
+      color: var(--white);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      z-index: 10;
+      border-radius: 50%;
+    }
+
+    .slider-btn:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+    }
+
+    .btn-prev { left: 16px; }
+    .btn-next { right: 16px; }
+
+    /* Dấu chấm chỉ báo số lượng ảnh (Dots) */
+    .slider-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .dot.active {
+      background: var(--white);
+      transform: scale(1.5);
+    }
+
+    /* === CỘT PHẢI: THÔNG TIN & DANH SÁCH ĐỒ === */
     .outfit-info-col {
       flex: 1;
       display: flex;
@@ -117,62 +186,83 @@
 
     .outfit-desc {
       font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 32px;
+      color: var(--muted-light);
+      margin-bottom: 40px;
       line-height: 1.6;
     }
 
-    /* Lưới Item Shopee */
-    .items-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
+    .section-title {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .item-card {
+    /* DANH SÁCH ITEM SHOPEE TỐI GIẢN (Giống style ảnh bạn đưa) */
+    .items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .item-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 16px;
       background: #111;
       border: 1px solid #222;
-      padding: 16px;
-      transition: border-color 0.2s;
+      text-decoration: none;
+      color: var(--white);
+      transition: all 0.2s;
     }
 
-    .item-card:hover {
-      border-color: #444;
+    .item-link:hover {
+      border-color: var(--muted-light);
+      background: #1a1a1a;
+      transform: translateX(4px);
     }
 
-    .item-info h3 {
+    .item-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .item-icon {
+      color: var(--red);
+      font-size: 18px;
+    }
+
+    .item-text h3 {
+      font-family: 'Space Mono', monospace;
       font-size: 13px;
-      font-weight: normal;
+      font-weight: bold;
       margin-bottom: 4px;
     }
 
-    .item-info p {
-      font-size: 11px;
-      color: var(--muted);
-      font-family: 'Space Mono', monospace;
-    }
-
-    .btn-shopee {
-      background: var(--red);
-      color: var(--white);
-      border: none;
-      padding: 8px 16px;
+    .item-text p {
       font-size: 10px;
-      font-weight: bold;
-      letter-spacing: 0.1em;
+      color: var(--muted);
       text-transform: uppercase;
-      text-decoration: none;
-      transition: background 0.2s;
+      letter-spacing: 0.1em;
     }
 
-    .btn-shopee:hover {
-      background: #a93226;
+    .item-arrow {
+      color: var(--muted-light);
+      font-size: 18px;
+      transition: color 0.2s;
     }
 
-    /* Báo lỗi nếu không tìm thấy ID */
+    .item-link:hover .item-arrow {
+      color: var(--white);
+    }
+
+    /* Báo lỗi */
     .error-msg {
       text-align: center;
       width: 100%;
@@ -187,11 +277,11 @@
       .detail-container {
         flex-direction: column;
         padding: 16px;
-        gap: 24px;
+        gap: 32px;
       }
-      .outfit-image-col img { max-height: 60vh; }
-      .outfit-title { font-size: 36px; }
       header { padding: 14px 16px; }
+      .outfit-title { font-size: 40px; }
+      .slider-btn { width: 32px; height: 32px; font-size: 14px; }
     }
   </style>
 </head>
@@ -199,7 +289,7 @@
 
   <header>
     <a href="index.html" class="btn">← BACK</a>
-    <button class="btn" style="border-color: #333;" onclick="alert('Đã lưu vào My Closet!')">♡ SAVE</button>
+    <button class="btn" style="border-color: #333;" onclick="window.location.href='login.html'">♡ SAVE</button>
   </header>
 
   <main class="detail-container" id="main-content">
@@ -207,76 +297,132 @@
 
   <script>
     // ==========================================
-    // DATABASE CHỨA TOÀN BỘ OUTFIT VÀ ĐỒ SHOPEE
-    // Tương lai bạn sẽ chép đè link thật của bạn vào đây
+    // DATABASE CHỨA OUTFIT VÀ ĐỒ SHOPEE
+    // Lưu ý: Biến 'imgs' giờ là một mảng (có dấu ngoặc vuông []) chứa nhiều link ảnh
     // ==========================================
     const outfitDatabase = {
       "look-01": {
         title: "DARK STREETWEAR",
         desc: "Phong cách đường phố tối màu, bụi bặm nhưng cực kỳ cuốn hút.",
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
+        imgs: [
+          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
+          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", // Tạm dùng ảnh khác để test
+          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg"
+        ],
         items: [
-          { name: "Áo Khoác Da Biker", price: "350.000đ", link: "https://shopee.vn/..." },
-          { name: "Quần Cargo Túi Hộp Đen", price: "220.000đ", link: "https://shopee.vn/..." },
-          { name: "Giày Boots Cổ Cao", price: "450.000đ", link: "https://shopee.vn/..." }
+          { name: "Áo Khoác Da Biker", type: "Áo", link: "https://shopee.vn/..." },
+          { name: "Quần Cargo Túi Hộp", type: "Quần", link: "https://shopee.vn/..." },
+          { name: "Quần (Tham khảo)", type: "Quần", link: "https://shopee.vn/..." },
+          { name: "Giày Boots Cổ Cao", type: "Giày", link: "https://shopee.vn/..." },
+          { name: "Kính Râm Y2K", type: "Phụ kiện", link: "https://shopee.vn/..." }
         ]
       },
       "look-02": {
         title: "GOTHIC VIBE",
         desc: "Bí ẩn, quyến rũ với tone màu đen chủ đạo và phụ kiện kim loại.",
-        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg",
+        imgs: [
+          "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg"
+          // Nếu bộ đồ chỉ có 1 ảnh, cứ để 1 link trong ngoặc vuông, Slider sẽ tự động giấu nút bấm đi!
+        ],
         items: [
-          { name: "Áo Croptop Lưới", price: "150.000đ", link: "https://shopee.vn/..." },
-          { name: "Chân Váy Xếp Ly Đen", price: "180.000đ", link: "https://shopee.vn/..." },
-          { name: "Vòng Cổ Choker Gai", price: "45.000đ", link: "https://shopee.vn/..." }
+          { name: "Áo Croptop Lưới", type: "Áo", link: "https://shopee.vn/..." },
+          { name: "Chân Váy Xếp Ly", type: "Váy", link: "https://shopee.vn/..." },
+          { name: "Vòng Cổ Choker Gai", type: "Phụ kiện", link: "https://shopee.vn/..." }
         ]
       }
-      // Bạn copy thêm look-03, look-04... tương tự ở đây nhé
+      // Khai báo tiếp look-03, look-04 ở đây...
     };
 
     // ==========================================
-    // LOGIC ĐỌC ID TỪ URL VÀ HIỂN THỊ
+    // LOGIC RENDER VÀ SLIDER TRƯỢT ẢNH
     // ==========================================
-    
-    // 1. Lấy cái ID trên thanh địa chỉ (Ví dụ: outfit-detail.html?id=look-01)
     const urlParams = new URLSearchParams(window.location.search);
     const outfitId = urlParams.get('id');
-
     const mainContent = document.getElementById('main-content');
 
-    // 2. Kiểm tra xem ID có tồn tại trong Database không
+    let currentSlideIndex = 0; // Biến nhớ xem đang ở ảnh số mấy
+
+    // Hàm thực hiện trượt ảnh
+    function moveSlide(direction) {
+      const track = document.getElementById('slider-track');
+      const dots = document.querySelectorAll('.dot');
+      const totalSlides = dots.length;
+
+      currentSlideIndex += direction;
+
+      // Xử lý vòng lặp (Đến cuối thì quay lại đầu)
+      if (currentSlideIndex >= totalSlides) currentSlideIndex = 0;
+      if (currentSlideIndex < 0) currentSlideIndex = totalSlides - 1;
+
+      // Di chuyển băng chuyền ảnh
+      track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+
+      // Cập nhật chấm sáng
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[currentSlideIndex].classList.add('active');
+    }
+
     if (outfitId && outfitDatabase[outfitId]) {
       const outfit = outfitDatabase[outfitId];
       
-      // Tạo HTML cho danh sách món đồ Shopee
+      // 1. TẠO HTML CHO BĂNG CHUYỀN ẢNH (SLIDER)
+      let imagesHTML = '';
+      let dotsHTML = '';
+      outfit.imgs.forEach((imgLink, index) => {
+        imagesHTML += `<img src="${imgLink}" alt="Slide ${index + 1}">`;
+        dotsHTML += `<div class="dot ${index === 0 ? 'active' : ''}"></div>`;
+      });
+
+      // Nếu chỉ có 1 ảnh thì ẩn nút Next/Prev và chấm tròn đi
+      const showControls = outfit.imgs.length > 1;
+      const controlsHTML = showControls ? `
+        <button class="slider-btn btn-prev" onclick="moveSlide(-1)">❮</button>
+        <button class="slider-btn btn-next" onclick="moveSlide(1)">❯</button>
+        <div class="slider-dots">${dotsHTML}</div>
+      ` : '';
+
+      // 2. TẠO HTML CHO DANH SÁCH ĐỒ SHOPEE
       let itemsHTML = '';
       outfit.items.forEach(item => {
         itemsHTML += `
-          <div class="item-card">
-            <div class="item-info">
-              <h3>${item.name}</h3>
-              <p>${item.price}</p>
+          <a href="${item.link}" target="_blank" class="item-link">
+            <div class="item-left">
+              <div class="item-icon">✦</div>
+              <div class="item-text">
+                <h3>${item.name}</h3>
+                <p>${item.type}</p>
+              </div>
             </div>
-            <a href="${item.link}" target="_blank" class="btn-shopee">MUA TRÊN SHOPEE</a>
-          </div>
+            <div class="item-arrow">→</div>
+          </a>
         `;
       });
 
-      // Bơm toàn bộ Giao diện vào trang
+      // 3. ĐỔ TOÀN BỘ VÀO TRANG
       mainContent.innerHTML = `
         <div class="outfit-image-col">
-          <img src="${outfit.img}" alt="${outfit.title}">
+          <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+              ${imagesHTML}
+            </div>
+            ${controlsHTML}
+          </div>
         </div>
         <div class="outfit-info-col">
           <h1 class="outfit-title">${outfit.title}</h1>
           <p class="outfit-desc">${outfit.desc}</p>
-          <div class="items-grid">
+          
+          <div class="section-title">
+            <span>Nơi mua phối đồ</span>
+            <span>${outfit.items.length} SẢN PHẨM</span>
+          </div>
+          <div class="items-list">
             ${itemsHTML}
           </div>
         </div>
       `;
     } else {
-      // Nếu nhập sai link hoặc ko có ID
+      // Nếu không tìm thấy ID
       mainContent.innerHTML = `<div class="error-msg">OUTFIT NOT FOUND.<br><span style="font-size:20px; font-family:'Space Mono';">Lỗi 404 - Dữ liệu đã bị hủy diệt.</span></div>`;
     }
   </script>
