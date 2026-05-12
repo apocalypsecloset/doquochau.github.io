@@ -6,7 +6,7 @@
   <title>Login — Apocalypse Closet</title>
 
   <!-- Google One Tap SDK -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://accounts.google.com/gsi/client"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -247,18 +247,13 @@
   <a href="https://doquochau.github.io/index.html" class="back">← Back</a>
 
   <!--
-    ★ BƯỚC DUY NHẤT BẠN CẦN LÀM:
-       Thay "PASTE_YOUR_CLIENT_ID_HERE" bằng Client ID lấy từ Google Cloud Console
-       Ví dụ: 123456789-abcdef.apps.googleusercontent.com
+    ★ Client ID của Apocalypse Closet
   -->
-  <div
-    id="g_id_onload"
+  <div id="g_id_onload"
     data-client_id="1022057009412-pnvkbpd7n6u7j017i70j632s3qm17cuq.apps.googleusercontent.com"
     data-callback="handleCredentialResponse"
-    data-auto_prompt="true"
-    data-cancel_on_tap_outside="false"
-    data-context="signin"
-    data-itp_support="true">
+    data-auto_select="false"
+    data-cancel_on_tap_outside="false">
   </div>
 
   <div class="card">
@@ -275,16 +270,8 @@
 
       <div class="divider">Continue with</div>
 
-      <button class="btn-google" onclick="triggerOneTap()">
-        <!-- Google G logo -->
-        <svg width="18" height="18" viewBox="0 0 48 48">
-          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-        </svg>
-        CONTINUE WITH GOOGLE
-      </button>
+      <!-- Google tự render nút vào đây -->
+      <div id="google-btn-wrap" style="display:flex; justify-content:center;"></div>
 
       <p class="note">
         Bằng cách đăng nhập, bạn đồng ý với<br>
@@ -304,7 +291,9 @@
   </div>
 
   <script>
-    // ── Decode JWT payload từ Google credential ──────────────────
+    const CLIENT_ID = '1022057009412-pnvkbpd7n6u7j017i70j632s3qm17cuq.apps.googleusercontent.com';
+
+    // ── Decode JWT UTF-8 ─────────────────────────────────────────
     function parseJwt(token) {
       const base64 = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
       const jsonPayload = decodeURIComponent(
@@ -315,37 +304,28 @@
       return JSON.parse(jsonPayload);
     }
 
-    // ── Google gọi hàm này sau khi user chọn tài khoản ──────────
+    // ── Callback sau khi chọn tài khoản ─────────────────────────
     function handleCredentialResponse(response) {
       const user = parseJwt(response.credential);
-
-      // Lưu vào sessionStorage — dùng được ở closet.html
       sessionStorage.setItem('ac_user', JSON.stringify({
         name:    user.name,
         email:   user.email,
         picture: user.picture,
-        sub:     user.sub   // ID duy nhất của user
+        sub:     user.sub
       }));
-
       showUserBox(user);
     }
 
-    // ── Hiện thông tin sau khi login ─────────────────────────────
+    // ── Hiện thông tin user ──────────────────────────────────────
     function showUserBox(user) {
       document.getElementById('login-box').style.display = 'none';
-      const box = document.getElementById('user-box');
-      box.style.display = 'block';
-      document.getElementById('user-avatar').src          = user.picture;
+      document.getElementById('user-box').style.display  = 'block';
+      document.getElementById('user-avatar').src         = user.picture;
       document.getElementById('user-name').textContent   = user.name;
       document.getElementById('user-email').textContent  = user.email;
     }
 
-    // ── Mở popup One Tap khi bấm nút ─────────────────────────────
-    function triggerOneTap() {
-      google.accounts.id.prompt();
-    }
-
-    // ── Sign out ──────────────────────────────────────────────────
+    // ── Sign out ─────────────────────────────────────────────────
     function signOut() {
       sessionStorage.removeItem('ac_user');
       document.getElementById('user-box').style.display  = 'none';
@@ -353,10 +333,38 @@
       google.accounts.id.disableAutoSelect();
     }
 
-    // ── Nếu đã login rồi (quay lại trang) thì hiện thẳng user ───
+    // ── Khởi tạo khi trang load xong ────────────────────────────
     window.addEventListener('load', () => {
+      // Nếu đã login rồi thì hiện thẳng
       const stored = sessionStorage.getItem('ac_user');
-      if (stored) showUserBox(JSON.parse(stored));
+      if (stored) {
+        showUserBox(JSON.parse(stored));
+        return;
+      }
+
+      // Khởi tạo Google Identity Services
+      google.accounts.id.initialize({
+        client_id: CLIENT_ID,
+        callback:  handleCredentialResponse,
+        auto_select: false,
+        cancel_on_tap_outside: false,
+      });
+
+      // Render nút Google chuẩn vào #google-btn-wrap
+      google.accounts.id.renderButton(
+        document.getElementById('google-btn-wrap'),
+        {
+          theme: 'filled_black',
+          size:  'large',
+          width: 320,
+          text:  'continue_with',
+          shape: 'rectangular',
+          logo_alignment: 'left',
+        }
+      );
+
+      // Hiện popup One Tap (nếu browser cho phép)
+      google.accounts.id.prompt();
     });
   </script>
 
