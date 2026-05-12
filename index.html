@@ -372,15 +372,25 @@
   alt="Apocalypse Closet" 
   style="height:44px;width:auto;object-fit:contain;mix-blend-mode:screen;">
 </a>
-    <nav>
-      <button class="btn btn-reload" onclick="randomize()">
-        <span class="spin">↻</span> RELOAD
-      </button>
-      <a class="btn" href="#">MY CLOSET</a>
-      <a class="btn" href="#">STYLE ↓</a>
-    </nav>
+<nav>
+  <button class="btn btn-search" onclick="toggleSearch()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+  </button>
+  <button class="btn btn-reload" onclick="randomize()">
+    <span class="spin">↻</span> RELOAD
+  </button>
+  <a class="btn" href="#">MY CLOSET</a>
+  <a class="btn" href="#">STYLE ↓</a>
+</nav>
   </header>
-
+<div id="search-bar" style="display:none;padding:14px 32px;background:#111;border-bottom:1px solid #222;">
+  <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE..."
+    style="width:100%;background:transparent;border:none;border-bottom:1px solid #333;
+    color:#f0ece4;font-family:'Space Mono',monospace;font-size:13px;
+    letter-spacing:0.1em;padding:8px 0;outline:none;">
+</div>
   <!-- HERO -->
   <section class="hero">
     <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
