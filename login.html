@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Apocalypse Closet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
+      --muted-light: #888;
+    }
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Hiệu ứng nhiễu hạt nền */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* Nút Back về trang chủ */
+    .btn-back {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      padding: 8px 16px;
+      border: 1px solid #333;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.15s;
+      z-index: 100;
+    }
+
+    .btn-back:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+    }
+
+    /* Form Đăng nhập */
+    .login-container {
+      background: rgba(15, 15, 15, 0.8);
+      border: 1px solid #222;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 420px;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .icon-heart {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .login-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .login-sub {
+      font-size: 11px;
+      color: var(--muted-light);
+      text-align: center;
+      margin-bottom: 32px;
+      letter-spacing: 0.05em;
+    }
+
+    /* Các nút bấm chung */
+    .btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      width: 100%;
+      padding: 14px;
+      border: 1px solid;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .btn-social {
+      background: transparent;
+      border-color: #333;
+      color: var(--white);
+    }
+
+    .btn-social:hover {
+      background: #222;
+      border-color: #555;
+    }
+
+    /* Đường kẻ OR */
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 24px 0;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+    }
+
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #222;
+    }
+
+    .divider:not(:empty)::before { margin-right: 12px; }
+    .divider:not(:empty)::after { margin-left: 12px; }
+
+    /* Input Fields */
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 10px;
+      color: var(--muted-light);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .input-group input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333;
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      padding: 8px 0;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: var(--red);
+    }
+
+    /* Nút Sign In chính */
+    .btn-primary {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+      background: var(--red);
+      color: var(--white);
+      border-color: var(--red);
+    }
+
+    /* Footer / Đăng ký */
+    .login-footer {
+      text-align: center;
+      font-size: 10px;
+      color: var(--muted-light);
+      margin-top: 24px;
+      letter-spacing: 0.05em;
+    }
+
+    .login-footer a {
+      color: var(--white);
+      text-decoration: none;
+      border-bottom: 1px solid var(--red);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+
+    .login-footer a:hover {
+      color: var(--red);
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .login-container {
+        padding: 40px 24px;
+        border: none;
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #222;
+        background: rgba(10, 10, 10, 0.95);
+      }
+      .btn-back {
+        top: 16px;
+        left: 16px;
+        padding: 6px 12px;
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="btn-back">← BACK</a>
+
+  <div class="login-container">
+    <div class="icon-heart">♡</div>
+    <h1 class="login-title">WELCOME BACK</h1>
+    <p class="login-sub">Sign in to Apocalypse Closet</p>
+
+    <button class="btn btn-social">
+      <span>G</span> Continue with Google
+    </button>
+    <button class="btn btn-social">
+      <span>f</span> Continue with Facebook
+    </button>
+
+    <div class="divider">OR</div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" placeholder="••••••••">
+    </div>
+
+    <button class="btn btn-primary">SIGN IN</button>
+
+    <div class="login-footer">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+</body>
+</html>
