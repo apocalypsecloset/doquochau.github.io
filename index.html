@@ -61,6 +61,7 @@
       align-items: center;
       gap: 8px;
     }
+    
     .btn {
       font-family: 'Space Mono', monospace;
       font-size: 11px;
@@ -108,7 +109,7 @@
     }
     .btn-reload:hover .spin { transform: rotate(360deg); }
 
-    /* DROPDOWN MENU */
+    /* DROPDOWN MENU - HOVER EFFECT */
     .dropdown {
       position: relative;
       display: inline-block;
@@ -118,8 +119,7 @@
       display: none;
       position: absolute;
       right: 0;
-      top: 100%;
-      margin-top: 10px;
+      top: calc(100% + 10px); /* Cách xuống 10px */
       background: rgba(10, 10, 10, 0.98);
       backdrop-filter: blur(8px);
       min-width: 200px;
@@ -128,7 +128,19 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
 
-    .dropdown-content.show {
+    /* Tạo một khoảng đệm trong suốt nối giữa nút và menu, giúp chuột không bị mất hover khi rê qua khoảng trống */
+    .dropdown-content::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: transparent;
+    }
+
+    /* Khi rê chuột vào class .dropdown, tự động xổ menu xuống */
+    .dropdown:hover .dropdown-content {
       display: flex;
       flex-direction: column;
     }
@@ -444,7 +456,7 @@
       letter-spacing: 0.2em;
     }
 
-    /* MUSIC PLAYER CSS (MỚI THÊM) */
+    /* MUSIC PLAYER CSS */
     .player-container {
       position: fixed;
       bottom: 24px;
@@ -550,7 +562,7 @@
       </a>
 
       <div class="dropdown">
-        <button class="btn" onclick="toggleStyleMenu(event)">STYLE ↓</button>
+        <button class="btn">STYLE ↓</button>
         <div class="dropdown-content" id="styleDropdown">
           <a href="#">Dark Feminine</a>
           <a href="#">E-Girl / Alt Girl</a>
@@ -600,7 +612,7 @@
     <div class="about-icon">✦</div>
     <h2 class="about-title">APOCALYPSE CLOSET</h2>
     <p class="about-desc">
-      Giữa một thế giới đang dần bão hòa bởi những khuôn mẫu nhàm chán và những xu hướng rập khuôn, <span>Apocalypse Closet</span> ra đời như một thánh địa dành riêng cho những tâm hồn nổi loạn. Chúng tôi tin rằng thời trang không chỉ là những mảnh vải vô tri, mà là thứ vũ khí sắc bén, là lớp áo giáp gai góc để bạn sẵn sàng đối mặt với mọi rào cản.
+      Giữa một thế giới đang dần bão hòa bởi những khuôn mẫu nhàm chán, <span>Apocalypse Closet</span> ra đời như một thánh địa dành riêng cho những tâm hồn nổi loạn. Chúng tôi tin rằng thời trang không chỉ là những mảnh vải vô tri, mà là thứ vũ khí sắc bén, là lớp áo giáp gai góc để bạn sẵn sàng đối mặt với mọi rào cản.
       <br><br>
       Mang đậm âm hưởng của kỷ nguyên hậu tận thế, đan xen cùng nét sắc lạnh của <span>Dark Wear</span>, <span>Grunge</span> và <span>Bad Girl Aesthetic</span>. Mỗi trang phục tại đây không đơn thuần là một gợi ý phối đồ, mà là một lời tuyên ngôn độc bản: Hãy rực sáng, kiêu hãnh và sống trọn vẹn theo cách riêng của bạn.
     </p>
@@ -611,19 +623,15 @@
     © 2026 APOCALYPSE CLOSET
   </footer>
 
-  <!-- TRÌNH PHÁT NHẠC (MỚI THÊM) -->
   <div id="music-player" class="player-container" title="Phát nhạc Apocalypse">
-    <!-- SVG Icon Đĩa than tiệp màu với theme -->
     <svg id="record-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="48" fill="#0a0a0a"/> <!-- Vỏ đĩa màu nền -->
-      <circle cx="50" cy="50" r="18" fill="#c0392b"/> <!-- Tem đĩa màu đỏ chủ đạo -->
-      <circle cx="50" cy="50" r="5" fill="#f0ece4"/>  <!-- Lỗ giữa đĩa -->
-      <!-- Rãnh đĩa -->
+      <circle cx="50" cy="50" r="48" fill="#0a0a0a"/>
+      <circle cx="50" cy="50" r="18" fill="#c0392b"/>
+      <circle cx="50" cy="50" r="5" fill="#f0ece4"/>
       <circle cx="50" cy="50" r="38" fill="none" stroke="#222" stroke-width="1"/>
       <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
     </svg>
     
-    <!-- Audio ẩn -->
     <audio id="apocalypse-audio" loop>
       <source src="apocalypse.mp3" type="audio/mpeg">
     </audio>
@@ -718,7 +726,7 @@
       }
     }
 
-    // 5. CÁC HÀM PHỤ (Tìm kiếm, Dropdown)
+    // 5. CÁC HÀM PHỤ (Tìm kiếm)
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -730,23 +738,7 @@
       }
     }
 
-    function toggleStyleMenu(event) {
-      event.stopPropagation();
-      document.getElementById("styleDropdown").classList.toggle("show");
-    }
-
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropdown .btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          if (dropdowns[i].classList.contains('show')) {
-            dropdowns[i].classList.remove('show');
-          }
-        }
-      }
-    }
-
-    // 6. SCRIPT TRÌNH PHÁT NHẠC (MỚI THÊM)
+    // 6. SCRIPT TRÌNH PHÁT NHẠC
     const playerContainer = document.getElementById('music-player');
     const recordIcon = document.getElementById('record-icon');
     const audio = document.getElementById('apocalypse-audio');
