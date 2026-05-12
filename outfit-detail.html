@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit Detail - Apocalypse Closet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
+    }
+
+    /* Hiệu ứng nhiễu */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* HEADER TỐI GIẢN */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    .btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      height: 36px;
+      padding: 0 16px;
+      border: 1px solid #333;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+    }
+
+    /* BỐ CỤC TRANG CHI TIẾT */
+    .detail-container {
+      display: flex;
+      padding: 32px;
+      gap: 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: calc(100vh - 73px);
+    }
+
+    /* Cột Trái: Ảnh lớn */
+    .outfit-image-col {
+      flex: 1;
+      position: relative;
+    }
+
+    .outfit-image-col img {
+      width: 100%;
+      height: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+      border: 1px solid #222;
+      filter: saturate(0.9);
+    }
+
+    /* Cột Phải: Thông tin & Đồ Shopee */
+    .outfit-info-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .outfit-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      letter-spacing: 0.05em;
+      line-height: 1;
+      margin-bottom: 8px;
+      color: var(--red);
+    }
+
+    .outfit-desc {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    /* Lưới Item Shopee */
+    .items-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .item-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #111;
+      border: 1px solid #222;
+      padding: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .item-card:hover {
+      border-color: #444;
+    }
+
+    .item-info h3 {
+      font-size: 13px;
+      font-weight: normal;
+      margin-bottom: 4px;
+    }
+
+    .item-info p {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .btn-shopee {
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      padding: 8px 16px;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-shopee:hover {
+      background: #a93226;
+    }
+
+    /* Báo lỗi nếu không tìm thấy ID */
+    .error-msg {
+      text-align: center;
+      width: 100%;
+      margin-top: 100px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 40px;
+      color: var(--muted);
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .detail-container {
+        flex-direction: column;
+        padding: 16px;
+        gap: 24px;
+      }
+      .outfit-image-col img { max-height: 60vh; }
+      .outfit-title { font-size: 36px; }
+      header { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="btn">← BACK</a>
+    <button class="btn" style="border-color: #333;" onclick="alert('Đã lưu vào My Closet!')">♡ SAVE</button>
+  </header>
+
+  <main class="detail-container" id="main-content">
+    </main>
+
+  <script>
+    // ==========================================
+    // DATABASE CHỨA TOÀN BỘ OUTFIT VÀ ĐỒ SHOPEE
+    // Tương lai bạn sẽ chép đè link thật của bạn vào đây
+    // ==========================================
+    const outfitDatabase = {
+      "look-01": {
+        title: "DARK STREETWEAR",
+        desc: "Phong cách đường phố tối màu, bụi bặm nhưng cực kỳ cuốn hút.",
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
+        items: [
+          { name: "Áo Khoác Da Biker", price: "350.000đ", link: "https://shopee.vn/..." },
+          { name: "Quần Cargo Túi Hộp Đen", price: "220.000đ", link: "https://shopee.vn/..." },
+          { name: "Giày Boots Cổ Cao", price: "450.000đ", link: "https://shopee.vn/..." }
+        ]
+      },
+      "look-02": {
+        title: "GOTHIC VIBE",
+        desc: "Bí ẩn, quyến rũ với tone màu đen chủ đạo và phụ kiện kim loại.",
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg",
+        items: [
+          { name: "Áo Croptop Lưới", price: "150.000đ", link: "https://shopee.vn/..." },
+          { name: "Chân Váy Xếp Ly Đen", price: "180.000đ", link: "https://shopee.vn/..." },
+          { name: "Vòng Cổ Choker Gai", price: "45.000đ", link: "https://shopee.vn/..." }
+        ]
+      }
+      // Bạn copy thêm look-03, look-04... tương tự ở đây nhé
+    };
+
+    // ==========================================
+    // LOGIC ĐỌC ID TỪ URL VÀ HIỂN THỊ
+    // ==========================================
+    
+    // 1. Lấy cái ID trên thanh địa chỉ (Ví dụ: outfit-detail.html?id=look-01)
+    const urlParams = new URLSearchParams(window.location.search);
+    const outfitId = urlParams.get('id');
+
+    const mainContent = document.getElementById('main-content');
+
+    // 2. Kiểm tra xem ID có tồn tại trong Database không
+    if (outfitId && outfitDatabase[outfitId]) {
+      const outfit = outfitDatabase[outfitId];
+      
+      // Tạo HTML cho danh sách món đồ Shopee
+      let itemsHTML = '';
+      outfit.items.forEach(item => {
+        itemsHTML += `
+          <div class="item-card">
+            <div class="item-info">
+              <h3>${item.name}</h3>
+              <p>${item.price}</p>
+            </div>
+            <a href="${item.link}" target="_blank" class="btn-shopee">MUA TRÊN SHOPEE</a>
+          </div>
+        `;
+      });
+
+      // Bơm toàn bộ Giao diện vào trang
+      mainContent.innerHTML = `
+        <div class="outfit-image-col">
+          <img src="${outfit.img}" alt="${outfit.title}">
+        </div>
+        <div class="outfit-info-col">
+          <h1 class="outfit-title">${outfit.title}</h1>
+          <p class="outfit-desc">${outfit.desc}</p>
+          <div class="items-grid">
+            ${itemsHTML}
+          </div>
+        </div>
+      `;
+    } else {
+      // Nếu nhập sai link hoặc ko có ID
+      mainContent.innerHTML = `<div class="error-msg">OUTFIT NOT FOUND.<br><span style="font-size:20px; font-family:'Space Mono';">Lỗi 404 - Dữ liệu đã bị hủy diệt.</span></div>`;
+    }
+  </script>
+
+</body>
+</html>
