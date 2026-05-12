@@ -105,24 +105,12 @@
     .card::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
     .card::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
 
-    /* Logo area */
     .logo-wrap {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       margin-bottom: 32px;
-    }
-    .logo-wrap img.icon {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-    }
-    .logo-wrap img.wordmark {
-      height: 20px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
     }
 
     /* Heading */
@@ -133,6 +121,7 @@
       line-height: 1;
       margin-bottom: 6px;
       color: var(--white);
+      text-align: center;
     }
     .sub {
       font-size: 10px;
@@ -140,6 +129,7 @@
       color: var(--muted);
       text-transform: uppercase;
       margin-bottom: 36px;
+      text-align: center;
     }
 
     /* Divider */
@@ -317,7 +307,12 @@
     // ── Decode JWT payload từ Google credential ──────────────────
     function parseJwt(token) {
       const base64 = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-      return JSON.parse(atob(base64));
+      const jsonPayload = decodeURIComponent(
+        atob(base64).split('').map(c =>
+          '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+        ).join('')
+      );
+      return JSON.parse(jsonPayload);
     }
 
     // ── Google gọi hàm này sau khi user chọn tài khoản ──────────
