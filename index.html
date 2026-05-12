@@ -65,8 +65,8 @@
       font-family: 'Space Mono', monospace;
       font-size: 11px;
       letter-spacing: 0.12em;
-      height: 36px; /* Thay padding dọc bằng height để các nút bằng nhau */
-      padding: 0 18px;
+      height: 36px;
+      padding: 0 16px;
       border: 1px solid #333;
       background: transparent;
       color: var(--white);
@@ -76,7 +76,7 @@
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      justify-content: center; /* Đảm bảo mọi thứ bên trong căn giữa */
+      justify-content: center;
       gap: 6px;
     }
 
@@ -86,11 +86,18 @@
       border-color: var(--white);
     }
 
-    /* Đặt width bằng height để nút thành hình vuông, icon auto căn giữa */
-    .btn-search { width: 36px; padding: 0; font-size: 20px; }
+    /* Ép 3 icon có cùng kích thước và nằm chính giữa */
+    .nav-icon {
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      line-height: 1;
+    }
 
     .btn-reload { border-color: var(--red); color: var(--red); }
-
     .btn-reload:hover {
       background: var(--red);
       color: var(--white);
@@ -98,11 +105,8 @@
     }
 
     .spin {
-      display: inline-block;
       transition: transform 0.5s ease;
-      line-height: 1; /* Fix lệch nhẹ của icon */
     }
-
     .btn-reload:hover .spin { transform: rotate(360deg); }
 
     /* SEARCH */
@@ -331,11 +335,13 @@
       header { padding: 14px 16px; }
       nav { gap: 4px; }
       
-      /* Cân bằng các nút trên Mobile */
       .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
-      .btn-search { width: 30px; padding: 0; font-size: 18px; }
-      .btn-reload { width: 30px; padding: 0; } /* Trở thành nút vuông chứa mỗi icon */
-      .text-reload { display: none; } /* Ẩn chữ RELOAD */
+      
+      /* Biến 3 nút đầu thành hình vuông chứa mỗi icon */
+      .btn.btn-icon-only { width: 30px; padding: 0; }
+      
+      /* Ẩn chữ của 3 nút đầu, nhưng chừa lại chữ nút STYLE */
+      .text-hide { display: none; }
       
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
@@ -357,12 +363,22 @@
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
     <nav>
-      <button class="btn btn-search" onclick="toggleSearch()">🔎</button>
-      <!-- Bọc chữ RELOAD vào span để CSS mobile ẩn đi -->
-      <button class="btn btn-reload" onclick="randomize()">
-        <span class="spin">↻</span><span class="text-reload">RELOAD</span>
+      <!-- Nút Search -->
+      <button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
+        <span class="nav-icon">⌕</span><span class="text-hide">SEARCH</span>
       </button>
-      <a class="btn" href="#">MY CLOSET</a>
+
+      <!-- Nút Reload -->
+      <button class="btn btn-icon-only btn-reload" onclick="randomize()">
+        <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
+      </button>
+
+      <!-- Nút My Closet (Save) -->
+      <a class="btn btn-icon-only btn-save" href="#">
+        <span class="nav-icon">♡</span><span class="text-hide">CLOSET</span>
+      </a>
+
+      <!-- Nút Style (Không có class ẩn chữ nên hiện bình thường) -->
       <a class="btn" href="#">STYLE ↓</a>
     </nav>
   </header>
