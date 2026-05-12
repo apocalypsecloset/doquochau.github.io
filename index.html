@@ -385,26 +385,64 @@
       to { transform: translateX(-50%); }
     }
 
-    /* FOOTER */
+    /* ABOUT SECTION */
+    .about-section {
+      padding: 80px 32px;
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-icon {
+      color: var(--red);
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .about-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--white);
+      letter-spacing: 0.2em;
+      margin-bottom: 24px;
+    }
+
+    .about-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+
+    .about-desc span {
+      color: var(--white);
+    }
+
+    .about-quote {
+      margin-top: 32px;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      color: var(--red);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 12px 24px;
+      display: inline-block;
+    }
+
+    /* FOOTER TỐI GIẢN */
     footer {
       padding: 32px;
       border-top: 1px solid #1a1a1a;
-      margin-top: 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: center;
       font-size: 10px;
       color: var(--muted);
       letter-spacing: 0.2em;
     }
-
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    footer a:hover { color: var(--red); }
 
     /* MOBILE */
     @media (max-width: 768px) {
@@ -420,7 +458,6 @@
         top: -1.5px;
       }
       
-      /* Hiển thị luôn nút Tim trên Mobile thay vì cần hover */
       .btn-save-card {
         opacity: 1;
         transform: translateY(0);
@@ -436,8 +473,11 @@
       .hero { padding: 32px 16px 20px; }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
       .section-header { padding: 20px 16px 12px; }
-      footer { flex-direction: column; gap: 12px; text-align: center; }
       #search-bar { padding: 12px 16px; }
+      
+      .about-section { padding: 56px 24px; }
+      .about-title { font-size: 28px; }
+      .about-quote { font-size: 9px; letter-spacing: 0.2em; padding: 10px 16px; }
     }
   </style>
 </head>
@@ -509,7 +549,8 @@
       <span class="ticker-item"><span>✦</span> DARK FASHION</span>
     </div>
   </div>
-<section class="about-section">
+
+  <section class="about-section">
     <div class="about-icon">✦</div>
     <h2 class="about-title">VỀ APOCALYPSE CLOSET</h2>
     <p class="about-desc">
@@ -519,8 +560,9 @@
     </p>
     <div class="about-quote">"Dress like it's the end of the world"</div>
   </section>
+
   <footer>
-    <span>© 2026 APOCALYPSE CLOSET</span>
+    © 2026 APOCALYPSE CLOSET
   </footer>
 
   <script>
@@ -555,7 +597,6 @@
         card.className = 'outfit-card shimmer';
         card.style.animationDelay = (i * 0.03) + 's';
         
-        // CHUYỂN TRANG KHI CLICK VÀO CARD
         card.onclick = () => {
           window.location.href = `outfit-detail.html?id=${outfit.id}`;
         };
@@ -572,20 +613,18 @@
           <div class="outfit-num">${outfit.tag}</div>
         `;
 
-        // TẠO NÚT TIM
         const saveBtn = document.createElement('button');
         saveBtn.className = 'btn-save-card';
         saveBtn.innerHTML = '♡';
         
-        // SỰ KIỆN: BẤM VÀO TIM ĐỂ LƯU
         saveBtn.onclick = (e) => {
-          e.stopPropagation(); // Ngăn click xuyên xuống card
-          window.location.href = 'login.html'; // Tạm thời chuyển sang trang login
+          e.stopPropagation(); 
+          window.location.href = 'login.html'; 
         };
 
         card.appendChild(img);
         card.appendChild(overlay);
-        card.appendChild(saveBtn); // Gắn nút tim vào card
+        card.appendChild(saveBtn);
         grid.appendChild(card);
       });
     }
@@ -645,62 +684,6 @@
 
     // CHẠY HÀM KHỞI ĐỘNG
     initGrid();
-    /* ABOUT SECTION */
-    .about-section {
-      padding: 80px 32px;
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .about-icon {
-      color: var(--red);
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
-
-    .about-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 32px;
-      color: var(--white);
-      letter-spacing: 0.2em;
-      margin-bottom: 24px;
-    }
-
-    .about-desc {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 2;
-      letter-spacing: 0.05em;
-    }
-
-    /* Đổi màu trắng cho những từ khóa quan trọng */
-    .about-desc span {
-      color: var(--white);
-    }
-
-    /* Câu quote chốt hạ */
-    .about-quote {
-      margin-top: 32px;
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      color: var(--red);
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-      padding: 12px 24px;
-      display: inline-block;
-    }
-
-    @media (max-width: 768px) {
-      .about-section { padding: 56px 24px; }
-      .about-title { font-size: 28px; }
-      .about-quote { font-size: 9px; letter-spacing: 0.2em; padding: 10px 16px; }
-    }
   </script>
 </body>
 </html>
