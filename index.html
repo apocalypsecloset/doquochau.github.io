@@ -1,68 +1,496 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
-<title>Đi Nhậu</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap" rel="stylesheet"> 
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apocalypse Closet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
+    }
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
+    }
+
+    /* NOISE OVERLAY */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.12em;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .logo-sub {
+      font-size: 9px;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      padding: 9px 18px;
+      border: 1px solid #333;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+    }
+
+    .btn-reload {
+      border-color: var(--red);
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-reload:hover {
+      background: var(--red);
+      color: var(--white);
+      border-color: var(--red);
+    }
+
+    .btn-reload .spin {
+      display: inline-block;
+      transition: transform 0.5s ease;
+    }
+
+    .btn-reload:hover .spin {
+      transform: rotate(360deg);
+    }
+
+    /* HERO TEXT */
+    .hero {
+      padding: 48px 32px 24px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .hero-label {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 8vw, 100px);
+      line-height: 0.92;
+      letter-spacing: -0.01em;
+      color: var(--white);
+    }
+
+    .hero-title span {
+      color: var(--red);
+    }
+
+    .hero-sub {
+      margin-top: 16px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      max-width: 340px;
+      line-height: 1.8;
+    }
+
+    /* OUTFIT SECTION */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 32px 16px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .section-count {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      color: var(--red);
+      letter-spacing: 0.1em;
+    }
+
+    /* GRID */
+    .outfit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      padding: 0 2px 2px;
+    }
+
+    .outfit-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: var(--grey);
+      cursor: pointer;
+    }
+
+    .outfit-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.3s;
+      filter: saturate(0.85);
+    }
+
+    .outfit-card:hover img {
+      transform: scale(1.06);
+      filter: saturate(1.1);
+    }
+
+    .outfit-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .outfit-card:hover::after {
+      opacity: 1;
+    }
+
+    .outfit-overlay {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 2;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 0.3s;
+    }
+
+    .outfit-card:hover .outfit-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .outfit-tag {
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--red);
+      padding: 4px 10px;
+      display: inline-block;
+    }
+
+    .outfit-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      color: var(--white);
+      line-height: 1;
+      margin-top: 4px;
+    }
+
+    /* SHIMMER LOADING */
+    .shimmer {
+      background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* RELOAD ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .outfit-card {
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    .outfit-card:nth-child(1) { animation-delay: 0.05s; }
+    .outfit-card:nth-child(2) { animation-delay: 0.1s; }
+    .outfit-card:nth-child(3) { animation-delay: 0.15s; }
+    .outfit-card:nth-child(4) { animation-delay: 0.2s; }
+
+    /* TICKER */
+    .ticker {
+      overflow: hidden;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      padding: 10px 0;
+      margin: 32px 0 0;
+      background: var(--grey);
+    }
+
+    .ticker-inner {
+      display: flex;
+      gap: 48px;
+      animation: ticker 20s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-item {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+    }
+
+    .ticker-item span {
+      color: var(--red);
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--red); }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      header { padding: 14px 16px; }
+      .logo-text { font-size: 16px; }
+      nav { gap: 4px; }
+      .btn { padding: 7px 12px; font-size: 10px; }
+      .hero { padding: 32px 16px 20px; }
+      .outfit-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-header { padding: 20px 16px 12px; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
 <body>
-<div id="outer">
-	<div id="mot">
-	 <div id="motmot">
-		<div id="motmotmot">
-		<img src="Phone_Icon_clip_art_hight.png" alt="Smiley face" >
-		<p>1900 666 888</p>
-			</div>
-		<div id="motmothai">
-		 <p1><a href="#">Về FastDirect</a></p1>
-		 <p2><a href="#">Tuyển Dụng</a></p2>
-		 </div>
-		</div>
-	 <div id="mothai">
-		<div id="mothaimot">
-			<img src="Untitled-1.png" alt="Smiley face" width="200">
-       </div>
-		<div id="mothaihai">
-		 <ul>
-			 <li><a href="#">TRANG CHỦ</a></li>
-			 <li><a href="#">DỊCH VỤ</a></li>
-			 <li><a href="#">TIN TỨC</a></li>
-			 <li><a href="#">THÊM THÔNG TIN</a></li>
-			 
-		</ul>
-		 </div>
-		<div id="mothaiba">
-		 <ul><li><a  href="#">ĐĂNG KÝ DỊCH VỤ</a></li></ul>
-	   </div>
-		<div id="mothaibon">
-		 <form>
-        <input type="text" name="search" placeholder="Search..">
-</form>
-		 </div>
-		</div>
-	</div>
-	<div id="hai">
-	 <div id="haimot">
-		<img src="baner ngang-01.png">
-		</div>
-	 <div id="haihai">
-		  <ul>
-			 <li><a href="#">Cùng FastDirect phòng chống dịch bệnh do virus nCoV</a></li>
-			 <li><a href="#">Quy trình giao hàng không thanh toán tiền mặt</a></li>
-			 <li><a href="#">Dịch vụ giao hàng thương mại điện tử</a></li>
-			 <li><a href="#">Dịch vụ vận tải cho doanh nghiệp</a></li>
-			  <li><a href="#">Dịch vụ kho và xử lý đơn hàng</a></li>
-		</ul>
-		 
-		
-		</div>
-	</div>
-	<div id="ba">
-	<a1>GiAO HÀNG NHANH HƠN 6 TIẾNG</a1>
-		<a2>FastDirect giúp bạn giao hàng đến người nhận nhanh hơn 6 tiếng so với các đơn vị vận chuyển khác.</a2>
-	</div>
-</div>
+
+  <!-- HEADER -->
+  <header>
+    <a class="logo-wrap" href="#">
+      <div class="logo-icon">AC</div>
+      <div>
+        <div class="logo-text">APOCALYPSE CLOSET</div>
+        <div class="logo-sub">BAD GIRL AESTHETIC</div>
+      </div>
+    </a>
+    <nav>
+      <button class="btn btn-reload" onclick="randomize()">
+        <span class="spin">↻</span> RELOAD
+      </button>
+      <a class="btn" href="#">MY CLOSET</a>
+      <a class="btn" href="#">STYLE ↓</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
+    <h1 class="hero-title">DRESS<br>LIKE THE<br><span>END</span></h1>
+    <p class="hero-sub">Outfit ngẫu nhiên mỗi lần reload.<br>Bấm RELOAD để xem outfit mới.</p>
+  </section>
+
+  <!-- OUTFITS -->
+  <div class="section-header">
+    <span class="section-label">Random Outfits</span>
+    <span class="section-count" id="counter">4 / 8 LOOKS</span>
+  </div>
+
+  <div class="outfit-grid" id="outfit-grid"></div>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">APOCALYPSE CLOSET</span>
+      <span class="ticker-item"><span>✦</span> BAD GIRL AESTHETIC</span>
+      <span class="ticker-item">OUTFIT OF THE DAY</span>
+      <span class="ticker-item"><span>✦</span> SHOPEE LINKS</span>
+      <span class="ticker-item">PHỐI ĐỒ NGẪU NHIÊN</span>
+      <span class="ticker-item"><span>✦</span> DARK FASHION</span>
+      <!-- repeat -->
+      <span class="ticker-item">APOCALYPSE CLOSET</span>
+      <span class="ticker-item"><span>✦</span> BAD GIRL AESTHETIC</span>
+      <span class="ticker-item">OUTFIT OF THE DAY</span>
+      <span class="ticker-item"><span>✦</span> SHOPEE LINKS</span>
+      <span class="ticker-item">PHỐI ĐỒ NGẪU NHIÊN</span>
+      <span class="ticker-item"><span>✦</span> DARK FASHION</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 APOCALYPSE CLOSET</span>
+    <span><a href="#">LIÊN HỆ</a> · <a href="#">CHÍNH SÁCH</a> · <a href="#">SHOPEE</a></span>
+  </footer>
+
+  <script>
+    const outfits = [
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg",
+        tag: "LOOK #01"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg",
+        tag: "LOOK #02"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg",
+        tag: "LOOK #03"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg",
+        tag: "LOOK #04"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg",
+        tag: "LOOK #05"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg",
+        tag: "LOOK #06"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg",
+        tag: "LOOK #07"
+      },
+      {
+        img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg",
+        tag: "LOOK #08"
+      }
+    ];
+
+    function randomize() {
+      const grid = document.getElementById('outfit-grid');
+      grid.innerHTML = '';
+
+      const picked = [...outfits]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 4);
+
+      picked.forEach((outfit, i) => {
+        const card = document.createElement('div');
+        card.className = 'outfit-card shimmer';
+        card.style.animationDelay = (i * 0.05) + 's';
+
+        const img = document.createElement('img');
+        img.src = outfit.img;
+        img.alt = outfit.tag;
+        img.onload = () => card.classList.remove('shimmer');
+
+        const overlay = document.createElement('div');
+        overlay.className = 'outfit-overlay';
+        overlay.innerHTML = `
+          <span class="outfit-tag">XEM OUTFIT</span>
+          <div class="outfit-num">${outfit.tag}</div>
+        `;
+
+        card.appendChild(img);
+        card.appendChild(overlay);
+        grid.appendChild(card);
+      });
+    }
+
+    // Load on start
+    randomize();
+  </script>
+
 </body>
 </html>
