@@ -444,6 +444,45 @@
       letter-spacing: 0.2em;
     }
 
+    /* MUSIC PLAYER CSS (MỚI THÊM) */
+    .player-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 9999;
+      transition: transform 0.3s ease;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+      background: var(--grey);
+      padding: 2px;
+      border: 1px solid #333;
+    }
+
+    .player-container:hover {
+      transform: scale(1.1);
+      border-color: var(--red);
+    }
+
+    #record-icon {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+      animation-play-state: paused; 
+    }
+
+    #record-icon.playing {
+      animation-play-state: running;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     /* MOBILE */
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
@@ -478,6 +517,13 @@
       .about-section { padding: 56px 24px; }
       .about-title { font-size: 28px; }
       .about-quote { font-size: 9px; letter-spacing: 0.2em; padding: 10px 16px; }
+
+      .player-container {
+        bottom: 16px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+      }
     }
   </style>
 </head>
@@ -564,6 +610,24 @@
   <footer>
     © 2026 APOCALYPSE CLOSET
   </footer>
+
+  <!-- TRÌNH PHÁT NHẠC (MỚI THÊM) -->
+  <div id="music-player" class="player-container" title="Phát nhạc Apocalypse">
+    <!-- SVG Icon Đĩa than tiệp màu với theme -->
+    <svg id="record-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="48" fill="#0a0a0a"/> <!-- Vỏ đĩa màu nền -->
+      <circle cx="50" cy="50" r="18" fill="#c0392b"/> <!-- Tem đĩa màu đỏ chủ đạo -->
+      <circle cx="50" cy="50" r="5" fill="#f0ece4"/>  <!-- Lỗ giữa đĩa -->
+      <!-- Rãnh đĩa -->
+      <circle cx="50" cy="50" r="38" fill="none" stroke="#222" stroke-width="1"/>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
+    </svg>
+    
+    <!-- Audio ẩn -->
+    <audio id="apocalypse-audio" loop>
+      <source src="apocalypse.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
   <script>
     // 1. MẢNG DỮ LIỆU
@@ -681,6 +745,21 @@
         }
       }
     }
+
+    // 6. SCRIPT TRÌNH PHÁT NHẠC (MỚI THÊM)
+    const playerContainer = document.getElementById('music-player');
+    const recordIcon = document.getElementById('record-icon');
+    const audio = document.getElementById('apocalypse-audio');
+
+    playerContainer.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        recordIcon.classList.add('playing');
+      } else {
+        audio.pause();
+        recordIcon.classList.remove('playing');
+      }
+    });
 
     // CHẠY HÀM KHỞI ĐỘNG
     initGrid();
