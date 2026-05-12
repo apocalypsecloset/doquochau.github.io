@@ -473,7 +473,8 @@
     <span><a href="#">LIÊN HỆ</a> · <a href="#">CHÍNH SÁCH</a> · <a href="#">SHOPEE</a></span>
   </footer>
 
-  <script>
+ <script>
+    // 1. MẢNG DỮ LIỆU
     const outfits = [
       { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01" },
       { id: "look-02", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02" },
@@ -491,7 +492,6 @@
       { id: "look-14", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #14" },
       { id: "look-15", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #15" },
       { id: "look-16", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #16" },
-
     ];
 
     // 2. HÀM HIỂN THỊ RA MÀN HÌNH
@@ -530,10 +530,8 @@
 
     // 3. HÀM XÁO TRỘN VÀ LƯU VÀO "TRÍ NHỚ"
     function randomize() {
-      // Xáo trộn mảng
       outfits.sort(() => Math.random() - 0.5);
       
-      // Lấy danh sách ID sau khi xáo trộn và lưu vào sessionStorage
       const currentOrder = outfits.map(o => o.id);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(currentOrder));
       
@@ -542,23 +540,20 @@
 
     // 4. HÀM KHỞI ĐỘNG KHI MỞ TRANG
     function initGrid() {
-      // Kiểm tra xem có thứ tự cũ trong trí nhớ không?
       const savedOrderStr = sessionStorage.getItem('savedOutfitOrder');
       
       if (savedOrderStr) {
-        // NẾU CÓ: Phục hồi lại đúng thứ tự cũ
         const savedOrder = JSON.parse(savedOrderStr);
         outfits.sort((a, b) => {
           return savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id);
         });
-        renderAll(); // Chỉ render lại chứ không random
+        renderAll(); 
       } else {
-        // NẾU KHÔNG CÓ (Mới vào lần đầu): Xáo trộn mới
         randomize();
       }
     }
 
-    // Các hàm phụ (Tìm kiếm, Dropdown)
+    // 5. CÁC HÀM PHỤ (Tìm kiếm, Dropdown)
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -575,6 +570,7 @@
       document.getElementById("styleDropdown").classList.toggle("show");
     }
 
+    // Đóng menu khi click ra ngoài
     window.onclick = function(event) {
       if (!event.target.matches('.dropdown .btn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -584,71 +580,10 @@
           }
         }
       }
+    } // <- Lỗi của bạn là thiếu cái ngoặc này nè
 
-    // CHẠY HÀM KHỞI ĐỘNG THAY VÌ CHẠY HÀM RANDOM
+    // CHẠY HÀM KHỞI ĐỘNG
     initGrid();
   </script>
-        
-        // THÊM SỰ KIỆN CLICK VÀO CARD ĐỂ CHUYỂN TRANG
-        card.onclick = () => {
-          window.location.href = `outfit-detail.html?id=${outfit.id}`;
-        };
-
-        const img = document.createElement('img');
-        img.src = outfit.img;
-        img.alt = outfit.tag;
-        img.onload = () => card.classList.remove('shimmer');
-
-        const overlay = document.createElement('div');
-        overlay.className = 'outfit-overlay';
-        overlay.innerHTML = `
-          <span class="outfit-tag">XEM OUTFIT</span>
-          <div class="outfit-num">${outfit.tag}</div>
-        `;
-
-        card.appendChild(img);
-        card.appendChild(overlay);
-        grid.appendChild(card);
-      });
-    }
-
-    function randomize() {
-      outfits.sort(() => Math.random() - 0.5);
-      renderAll();
-    }
-
-    function toggleSearch() {
-      const bar = document.getElementById('search-bar');
-      const input = document.getElementById('search-input');
-      if (bar.style.display === 'none' || bar.style.display === '') {
-        bar.style.display = 'block';
-        input.focus();
-      } else {
-        bar.style.display = 'none';
-      }
-    }
-
-    // TÍNH NĂNG ĐÓNG / MỞ MENU STYLE
-    function toggleStyleMenu(event) {
-      event.stopPropagation(); // Ngăn click lan ra ngoài
-      document.getElementById("styleDropdown").classList.toggle("show");
-    }
-
-    // Tự động đóng menu nếu click ra vùng trống trên trang
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropdown .btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-
-    randomize();
-  </script>
-
 </body>
 </html>
