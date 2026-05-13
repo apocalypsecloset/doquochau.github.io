@@ -659,9 +659,9 @@
     ];
 
     // ── 2. CLOSET HELPERS ─────────────────────────────────────────
-    function getUser() {
-      try { return JSON.parse(sessionStorage.getItem('ac_user')); } catch { return null; }
-    }
+   function getUser() {
+  try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
+}
 
     function getClosetKey() {
       const user = getUser();
