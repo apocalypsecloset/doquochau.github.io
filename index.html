@@ -343,18 +343,18 @@
       <button class="btn btn-icon-only btn-reload" onclick="randomize()">
         <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
       </button>
-      <!-- CLOSET btn — JS sẽ tự đổi href & icon tuỳ login -->
       <a class="btn btn-icon-only" id="nav-closet-btn" href="login.html">
         <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
       <div class="dropdown">
         <button class="btn">STYLE ↓</button>
+        <!-- ▼▼▼ DROPDOWN LINKS ĐÃ UPDATE — trỏ sang style.html?cat= ▼▼▼ -->
         <div class="dropdown-content">
-          <a href="#">Dark Feminine</a>
-          <a href="#">E-Girl / Alt Girl</a>
-          <a href="#">Goth / Gothic</a>
-          <a href="#">Baddie Streetwear</a>
-          <a href="#">Punk / Grunge</a>
+          <a href="style.html?cat=dark-feminine">Dark Feminine</a>
+          <a href="style.html?cat=e-girl">E-Girl / Alt Girl</a>
+          <a href="style.html?cat=goth">Goth / Gothic</a>
+          <a href="style.html?cat=baddie">Baddie Streetwear</a>
+          <a href="style.html?cat=punk">Punk / Grunge</a>
         </div>
       </div>
     </nav>
@@ -420,27 +420,10 @@
     </audio>
   </div>
 
-  <script>
-    // ── 1. DATA ───────────────────────────────────────────────────
-    const outfits = [
-      { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01", title: "Look 01", category: "Dark Feminine" },
-      { id: "look-02", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02", title: "Look 02", category: "E-Girl" },
-      { id: "look-03", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #03", title: "Look 03", category: "Goth" },
-      { id: "look-04", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #04", title: "Look 04", category: "Baddie Streetwear" },
-      { id: "look-05", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #05", title: "Look 05", category: "Punk" },
-      { id: "look-06", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #06", title: "Look 06", category: "Dark Feminine" },
-      { id: "look-07", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #07", title: "Look 07", category: "E-Girl" },
-      { id: "look-08", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #08", title: "Look 08", category: "Goth" },
-      { id: "look-09", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #09", title: "Look 09", category: "Baddie Streetwear" },
-      { id: "look-10", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #10", title: "Look 10", category: "Punk" },
-      { id: "look-11", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #11", title: "Look 11", category: "Dark Feminine" },
-      { id: "look-12", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #12", title: "Look 12", category: "E-Girl" },
-      { id: "look-13", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #13", title: "Look 13", category: "Goth" },
-      { id: "look-14", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #14", title: "Look 14", category: "Baddie Streetwear" },
-      { id: "look-15", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #15", title: "Look 15", category: "Punk" },
-      { id: "look-16", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #16", title: "Look 16", category: "Dark Feminine" },
-    ];
+  <!-- ▼▼▼ LOAD DATA TỪ outfits.js — THÊM TRƯỚC SCRIPT CHÍNH ▼▼▼ -->
+  <script src="outfits.js"></script>
 
+  <script>
     // ── 2. AUTH ───────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
@@ -548,7 +531,6 @@
     }
 
     // ── 8. NAV CLOSET BUTTON ──────────────────────────────────────
-    // Đã login → đổi thành ♥ đỏ + link thẳng vào closet
     const _u = getUser();
     if (_u) {
       const btn = document.getElementById('nav-closet-btn');
