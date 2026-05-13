@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Closet — Apocalypse Closet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black:  #080808;
+      --white:  #f0ece4;
+      --red:    #c0392b;
+      --dim:    #111;
+      --border: #2a2a2a;
+      --muted:  #555;
+      --card:   #0f0f0f;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+    }
+
+    /* ── NAVBAR ──────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 60px;
+      background: rgba(8,8,8,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo img { height: 32px; width: auto; object-fit: contain; }
+    .nav-logo img.wordmark { mix-blend-mode: screen; }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+    .nav-user img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      object-fit: cover;
+    }
+    .btn-signout {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-signout:hover { border-color: var(--white); color: var(--white); }
+
+    /* ── HEADER ──────────────────────────────────────────── */
+    .page-header {
+      padding: 52px 32px 32px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .page-header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(42px, 7vw, 80px);
+      letter-spacing: 0.04em;
+      line-height: 1;
+    }
+    .page-header h1 span { color: var(--red); }
+
+    .outfit-count {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+      padding-bottom: 8px;
+    }
+
+    /* ── GRID ────────────────────────────────────────────── */
+    .grid-wrap {
+      padding: 40px 32px 80px;
+    }
+
+    .outfit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 2px;
+    }
+
+    /* ── OUTFIT CARD ─────────────────────────────────────── */
+    .outfit-card {
+      position: relative;
+      background: var(--card);
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 3/4;
+    }
+
+    .outfit-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .outfit-card:hover img { transform: scale(1.04); }
+
+    /* Overlay */
+    .outfit-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 16px 16px;
+    }
+    .outfit-card:hover .overlay { opacity: 1; }
+
+    .overlay-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    .overlay-cat {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* Remove button */
+    .btn-remove {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 32px;
+      height: 32px;
+      background: rgba(0,0,0,0.75);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s, background 0.2s;
+      font-size: 14px;
+      z-index: 2;
+    }
+    .outfit-card:hover .btn-remove { opacity: 1; }
+    .btn-remove:hover { background: var(--red); border-color: var(--red); }
+
+    /* Saved date badge */
+    .saved-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 8px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      background: rgba(0,0,0,0.7);
+      padding: 3px 7px;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .outfit-card:hover .saved-badge { opacity: 1; }
+
+    /* ── EMPTY STATE ─────────────────────────────────────── */
+    .empty-state {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 32px;
+      text-align: center;
+    }
+    .empty-state.visible { display: flex; }
+
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 24px;
+      opacity: 0.2;
+    }
+    .empty-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .empty-sub {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      line-height: 1.8;
+    }
+    .btn-browse {
+      display: inline-block;
+      padding: 13px 32px;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-browse:hover { opacity: 0.85; }
+
+    /* ── TOAST ───────────────────────────────────────────── */
+    .toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--dim);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 999;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ── MOBILE ──────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .page-header { padding: 32px 16px 24px; }
+      .grid-wrap { padding: 24px 16px 60px; }
+      .outfit-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+      .nav-user span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav>
+    <a href="https://doquochau.github.io/index.html" class="nav-logo">
+      <img src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png" alt="icon">
+      <img class="wordmark" src="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png" alt="Apocalypse Closet">
+    </a>
+    <div class="nav-right">
+      <div class="nav-user">
+        <img id="nav-avatar" src="" alt="avatar">
+        <span id="nav-name"></span>
+      </div>
+      <button class="btn-signout" onclick="signOut()">Sign out</button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <h1>MY<br><span>CLOSET</span></h1>
+    <div class="outfit-count" id="outfit-count">0 OUTFITS SAVED</div>
+  </div>
+
+  <!-- ── GRID ── -->
+  <div class="grid-wrap">
+    <div class="outfit-grid" id="outfit-grid"></div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">🖤</div>
+      <div class="empty-title">Your closet is empty</div>
+      <div class="empty-sub">Chưa có outfit nào được lưu.<br>Vào trang chủ và bấm ♡ để lưu.</div>
+      <a href="https://doquochau.github.io/index.html" class="btn-browse">BROWSE OUTFITS →</a>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ── Auth guard ────────────────────────────────────────────────
+    const stored = sessionStorage.getItem('ac_user');
+    if (!stored) {
+      window.location.href = 'https://doquochau.github.io/login.html';
+    }
+    const user = JSON.parse(stored || '{}');
+
+    // ── Điền thông tin user vào navbar ───────────────────────────
+    document.getElementById('nav-avatar').src  = user.picture || '';
+    document.getElementById('nav-name').textContent = user.name || '';
+
+    // ── localStorage key ─────────────────────────────────────────
+    // Mỗi user có key riêng theo sub (Google ID)
+    const STORAGE_KEY = `ac_closet_${user.sub}`;
+
+    // ── Load outfits từ localStorage ─────────────────────────────
+    function loadOutfits() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      } catch { return []; }
+    }
+
+    // ── Lưu lại vào localStorage ─────────────────────────────────
+    function saveOutfits(outfits) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(outfits));
+    }
+
+    // ── Xoá outfit khỏi closet ───────────────────────────────────
+    function removeOutfit(id) {
+      const outfits = loadOutfits().filter(o => o.id !== id);
+      saveOutfits(outfits);
+      renderGrid();
+      showToast('Đã xoá khỏi closet');
+    }
+
+    // ── Format ngày lưu ──────────────────────────────────────────
+    function fmtDate(ts) {
+      return new Date(ts).toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit' });
+    }
+
+    // ── Render grid ──────────────────────────────────────────────
+    function renderGrid() {
+      const outfits = loadOutfits();
+      const grid    = document.getElementById('outfit-grid');
+      const empty   = document.getElementById('empty-state');
+      const count   = document.getElementById('outfit-count');
+
+      count.textContent = `${outfits.length} OUTFIT${outfits.length !== 1 ? 'S' : ''} SAVED`;
+
+      if (outfits.length === 0) {
+        grid.innerHTML = '';
+        empty.classList.add('visible');
+        return;
+      }
+      empty.classList.remove('visible');
+
+      // Sắp xếp mới nhất lên đầu
+      const sorted = [...outfits].sort((a, b) => b.savedAt - a.savedAt);
+
+      grid.innerHTML = sorted.map(o => `
+        <div class="outfit-card" onclick="openOutfit('${o.id}')">
+          <img src="${o.image}" alt="${o.title}" loading="lazy" />
+          <div class="overlay">
+            <div class="overlay-title">${o.title}</div>
+            <div class="overlay-cat">${o.category}</div>
+          </div>
+          <div class="saved-badge">Saved ${fmtDate(o.savedAt)}</div>
+          <button class="btn-remove" onclick="event.stopPropagation(); removeOutfit('${o.id}')" title="Xoá">✕</button>
+        </div>
+      `).join('');
+    }
+
+    // ── Mở outfit detail ─────────────────────────────────────────
+    function openOutfit(id) {
+      window.location.href = `https://doquochau.github.io/outfit-detail.html?id=${id}`;
+    }
+
+    // ── Toast notification ───────────────────────────────────────
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+
+    // ── Sign out ─────────────────────────────────────────────────
+    function signOut() {
+      sessionStorage.removeItem('ac_user');
+      window.location.href = 'https://doquochau.github.io/login.html';
+    }
+
+    // ── Init ─────────────────────────────────────────────────────
+    renderGrid();
+
+
+    // ════════════════════════════════════════════════════════════
+    // HÀM NÀY DÙNG Ở index.html ĐỂ SAVE OUTFIT VÀO CLOSET
+    // Copy đoạn này sang index.html:
+    //
+    // function saveToCloset(outfit) {
+    //   const user = JSON.parse(sessionStorage.getItem('ac_user'));
+    //   if (!user) { window.location.href = '/login.html'; return; }
+    //   const key = `ac_closet_${user.sub}`;
+    //   const list = JSON.parse(localStorage.getItem(key)) || [];
+    //   if (list.find(o => o.id === outfit.id)) {
+    //     // Đã lưu rồi → bỏ lưu
+    //     localStorage.setItem(key, JSON.stringify(list.filter(o => o.id !== outfit.id)));
+    //   } else {
+    //     list.push({ ...outfit, savedAt: Date.now() });
+    //     localStorage.setItem(key, JSON.stringify(list));
+    //   }
+    // }
+    //
+    // outfit object cần có: { id, title, image, category }
+    // ════════════════════════════════════════════════════════════
+  </script>
+</body>
+</html>
