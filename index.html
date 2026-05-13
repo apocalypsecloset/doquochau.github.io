@@ -638,29 +638,113 @@
   </div>
 
   <script>
-    // 1. MẢNG DỮ LIỆU
+    // ── 1. DỮ LIỆU OUTFIT (thêm title + category cho closet hiển thị) ──
     const outfits = [
-      { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01" },
-      { id: "look-02", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02" },
-      { id: "look-03", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #03" },
-      { id: "look-04", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #04" },
-      { id: "look-05", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #05" },
-      { id: "look-06", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #06" },
-      { id: "look-07", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #07" },
-      { id: "look-08", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #08" },      
-      { id: "look-09", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #09" },
-      { id: "look-10", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #10" },
-      { id: "look-11", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #11" },
-      { id: "look-12", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #12" },
-      { id: "look-13", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #13" },
-      { id: "look-14", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #14" },
-      { id: "look-15", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #15" },
-      { id: "look-16", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #16" },
+      { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01", title: "Look 01", category: "Dark Feminine" },
+      { id: "look-02", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02", title: "Look 02", category: "E-Girl" },
+      { id: "look-03", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #03", title: "Look 03", category: "Goth" },
+      { id: "look-04", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #04", title: "Look 04", category: "Baddie Streetwear" },
+      { id: "look-05", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #05", title: "Look 05", category: "Punk" },
+      { id: "look-06", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #06", title: "Look 06", category: "Dark Feminine" },
+      { id: "look-07", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #07", title: "Look 07", category: "E-Girl" },
+      { id: "look-08", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #08", title: "Look 08", category: "Goth" },
+      { id: "look-09", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #09", title: "Look 09", category: "Baddie Streetwear" },
+      { id: "look-10", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/dc85743deb2e3b3f679adf3bc4f6b01a.jpg", tag: "LOOK #10", title: "Look 10", category: "Punk" },
+      { id: "look-11", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/daeb0c6ccef2d622c9c101b098161d73.jpg", tag: "LOOK #11", title: "Look 11", category: "Dark Feminine" },
+      { id: "look-12", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/c34945641cab31289a679b2c6e464a9d.jpg", tag: "LOOK #12", title: "Look 12", category: "E-Girl" },
+      { id: "look-13", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/553c2ed0cec607f7a0f9da74cadd99a6.jpg", tag: "LOOK #13", title: "Look 13", category: "Goth" },
+      { id: "look-14", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/93c6f18c5d84d6b0c0e7339e0a255f60.jpg", tag: "LOOK #14", title: "Look 14", category: "Baddie Streetwear" },
+      { id: "look-15", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #15", title: "Look 15", category: "Punk" },
+      { id: "look-16", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #16", title: "Look 16", category: "Dark Feminine" },
     ];
 
-    // 2. HÀM HIỂN THỊ RA MÀN HÌNH
+    // ── 2. CLOSET HELPERS ─────────────────────────────────────────
+    function getUser() {
+      try { return JSON.parse(sessionStorage.getItem('ac_user')); } catch { return null; }
+    }
+
+    function getClosetKey() {
+      const user = getUser();
+      return user ? `ac_closet_${user.sub}` : null;
+    }
+
+    function getSavedIds() {
+      const key = getClosetKey();
+      if (!key) return new Set();
+      try { return new Set((JSON.parse(localStorage.getItem(key)) || []).map(o => o.id)); }
+      catch { return new Set(); }
+    }
+
+    function toggleSave(outfit, btn) {
+      const user = getUser();
+
+      // Chưa login → chuyển sang trang login
+      if (!user) {
+        window.location.href = 'login.html';
+        return;
+      }
+
+      const key  = getClosetKey();
+      let list   = [];
+      try { list = JSON.parse(localStorage.getItem(key)) || []; } catch {}
+
+      const idx = list.findIndex(o => o.id === outfit.id);
+
+      if (idx === -1) {
+        // Chưa lưu → lưu vào
+        list.push({
+          id:       outfit.id,
+          title:    outfit.title,
+          image:    outfit.img,
+          category: outfit.category,
+          savedAt:  Date.now()
+        });
+        btn.innerHTML  = '♥';
+        btn.style.color = '#c0392b';
+        btn.style.borderColor = '#c0392b';
+        showToast('Đã lưu vào closet 🖤');
+      } else {
+        // Đã lưu → bỏ lưu
+        list.splice(idx, 1);
+        btn.innerHTML  = '♡';
+        btn.style.color = '';
+        btn.style.borderColor = '';
+        showToast('Đã xoá khỏi closet');
+      }
+
+      localStorage.setItem(key, JSON.stringify(list));
+    }
+
+    // ── 3. TOAST ──────────────────────────────────────────────────
+    function showToast(msg) {
+      let toast = document.getElementById('ac-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'ac-toast';
+        toast.style.cssText = `
+          position:fixed; bottom:32px; left:50%; transform:translateX(-50%) translateY(20px);
+          background:#111; border:1px solid #333; color:#f0ece4;
+          font-family:'Space Mono',monospace; font-size:10px; letter-spacing:0.14em;
+          text-transform:uppercase; padding:12px 24px; opacity:0;
+          transition:opacity 0.3s, transform 0.3s; pointer-events:none;
+          white-space:nowrap; z-index:9998;
+        `;
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(-50%) translateY(20px)';
+      }, 2200);
+    }
+
+    // ── 4. RENDER GRID ────────────────────────────────────────────
     function renderAll() {
-      const grid = document.getElementById('outfit-grid');
+      const grid    = document.getElementById('outfit-grid');
+      const savedIds = getSavedIds();
       grid.innerHTML = '';
       document.getElementById('counter').textContent = outfits.length + ' LOOKS';
 
@@ -668,10 +752,7 @@
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
         card.style.animationDelay = (i * 0.03) + 's';
-        
-        card.onclick = () => {
-          window.location.href = `outfit-detail.html?id=${outfit.id}`;
-        };
+        card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
 
         const img = document.createElement('img');
         img.src = outfit.img;
@@ -685,13 +766,20 @@
           <div class="outfit-num">${outfit.tag}</div>
         `;
 
+        // Nút tim — hiện trạng thái đã lưu hay chưa
         const saveBtn = document.createElement('button');
         saveBtn.className = 'btn-save-card';
-        saveBtn.innerHTML = '♡';
-        
+        const isSaved = savedIds.has(outfit.id);
+        saveBtn.innerHTML = isSaved ? '♥' : '♡';
+        if (isSaved) {
+          saveBtn.style.color       = '#c0392b';
+          saveBtn.style.borderColor = '#c0392b';
+          saveBtn.style.opacity     = '1'; // Luôn hiện nếu đã save
+        }
+
         saveBtn.onclick = (e) => {
-          e.stopPropagation(); 
-          window.location.href = 'login.html'; 
+          e.stopPropagation();
+          toggleSave(outfit, saveBtn);
         };
 
         card.appendChild(img);
@@ -701,59 +789,46 @@
       });
     }
 
-    // 3. HÀM XÁO TRỘN VÀ LƯU VÀO "TRÍ NHỚ"
+    // ── 5. RANDOMIZE ──────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
-      
-      const currentOrder = outfits.map(o => o.id);
-      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(currentOrder));
-      
+      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // 4. HÀM KHỞI ĐỘNG KHI MỞ TRANG
+    // ── 6. INIT ───────────────────────────────────────────────────
     function initGrid() {
       const savedOrderStr = sessionStorage.getItem('savedOutfitOrder');
-      
       if (savedOrderStr) {
         const savedOrder = JSON.parse(savedOrderStr);
-        outfits.sort((a, b) => {
-          return savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id);
-        });
-        renderAll(); 
+        outfits.sort((a, b) => savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id));
+        renderAll();
       } else {
         randomize();
       }
     }
 
-    // 5. CÁC HÀM PHỤ (Tìm kiếm)
+    // ── 7. SEARCH ─────────────────────────────────────────────────
     function toggleSearch() {
-      const bar = document.getElementById('search-bar');
+      const bar   = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
       if (bar.style.display === 'none' || bar.style.display === '') {
-        bar.style.display = 'block';
-        input.focus();
+        bar.style.display = 'block'; input.focus();
       } else {
         bar.style.display = 'none';
       }
     }
 
-    // 6. SCRIPT TRÌNH PHÁT NHẠC
+    // ── 8. MUSIC ──────────────────────────────────────────────────
     const playerContainer = document.getElementById('music-player');
-    const recordIcon = document.getElementById('record-icon');
-    const audio = document.getElementById('apocalypse-audio');
-
-    playerContainer.addEventListener('click', function() {
-      if (audio.paused) {
-        audio.play();
-        recordIcon.classList.add('playing');
-      } else {
-        audio.pause();
-        recordIcon.classList.remove('playing');
-      }
+    const recordIcon      = document.getElementById('record-icon');
+    const audio           = document.getElementById('apocalypse-audio');
+    playerContainer.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); recordIcon.classList.add('playing'); }
+      else              { audio.pause(); recordIcon.classList.remove('playing'); }
     });
 
-    // CHẠY HÀM KHỞI ĐỘNG
+    // CHẠY
     initGrid();
   </script>
 </body>
