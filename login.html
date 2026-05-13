@@ -308,7 +308,7 @@
     // ── Callback sau khi chọn tài khoản ─────────────────────────
     function handleCredentialResponse(response) {
       const user = parseJwt(response.credential);
-      sessionStorage.setItem('ac_user', JSON.stringify({
+      localStorage.setItem('ac_user', JSON.stringify({
         name:    user.name,
         email:   user.email,
         picture: user.picture,
@@ -328,7 +328,7 @@
 
     // ── Sign out ─────────────────────────────────────────────────
     function signOut() {
-      sessionStorage.removeItem('ac_user');
+      localStorage.removeItem('ac_user');
       document.getElementById('user-box').style.display  = 'none';
       document.getElementById('login-box').style.display = 'block';
       google.accounts.id.disableAutoSelect();
@@ -337,7 +337,7 @@
     // ── Khởi tạo khi trang load xong ────────────────────────────
     window.addEventListener('load', () => {
       // Nếu đã login rồi thì hiện thẳng
-      const stored = sessionStorage.getItem('ac_user');
+      const stored = localStorage.getItem('ac_user');
       if (stored) {
         showUserBox(JSON.parse(stored));
         return;
