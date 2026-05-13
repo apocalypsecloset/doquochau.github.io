@@ -35,7 +35,6 @@
       opacity: 0.4;
     }
 
-    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -61,7 +60,7 @@
       align-items: center;
       gap: 8px;
     }
-    
+
     .btn {
       font-family: 'Space Mono', monospace;
       font-size: 11px;
@@ -80,12 +79,7 @@
       justify-content: center;
       gap: 6px;
     }
-
-    .btn:hover {
-      background: var(--white);
-      color: var(--black);
-      border-color: var(--white);
-    }
+    .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
 
     .nav-icon {
       font-size: 16px;
@@ -98,53 +92,31 @@
     }
 
     .btn-reload { border-color: var(--red); color: var(--red); }
-    .btn-reload:hover {
-      background: var(--red);
-      color: var(--white);
-      border-color: var(--red);
-    }
-
-    .spin {
-      transition: transform 0.5s ease;
-    }
+    .btn-reload:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+    .spin { transition: transform 0.5s ease; }
     .btn-reload:hover .spin { transform: rotate(360deg); }
 
-    /* DROPDOWN MENU - HOVER EFFECT */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
+    .dropdown { position: relative; display: inline-block; }
     .dropdown-content {
       display: none;
       position: absolute;
       right: 0;
-      top: calc(100% + 10px); /* Cách xuống 10px */
-      background: rgba(10, 10, 10, 0.98);
+      top: calc(100% + 10px);
+      background: rgba(10,10,10,0.98);
       backdrop-filter: blur(8px);
       min-width: 200px;
       border: 1px solid #333;
       z-index: 200;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
-
-    /* Tạo một khoảng đệm trong suốt nối giữa nút và menu, giúp chuột không bị mất hover khi rê qua khoảng trống */
     .dropdown-content::before {
       content: "";
       position: absolute;
-      top: -10px;
-      left: 0;
-      right: 0;
+      top: -10px; left: 0; right: 0;
       height: 10px;
       background: transparent;
     }
-
-    /* Khi rê chuột vào class .dropdown, tự động xổ menu xuống */
-    .dropdown:hover .dropdown-content {
-      display: flex;
-      flex-direction: column;
-    }
-
+    .dropdown:hover .dropdown-content { display: flex; flex-direction: column; }
     .dropdown-content a {
       color: var(--white);
       padding: 14px 16px;
@@ -155,24 +127,15 @@
       border-bottom: 1px solid #222;
       transition: background 0.2s, color 0.2s;
     }
+    .dropdown-content a:last-child { border-bottom: none; }
+    .dropdown-content a:hover { background-color: var(--white); color: var(--black); }
 
-    .dropdown-content a:last-child {
-      border-bottom: none;
-    }
-
-    .dropdown-content a:hover {
-      background-color: var(--white);
-      color: var(--black);
-    }
-
-    /* SEARCH */
     #search-bar {
       display: none;
       padding: 14px 32px;
       background: #111;
       border-bottom: 1px solid #222;
     }
-
     #search-input {
       width: 100%;
       background: transparent;
@@ -186,12 +149,10 @@
       outline: none;
     }
 
-    /* HERO */
     .hero {
       padding: 48px 32px 24px;
       border-bottom: 1px solid #1a1a1a;
     }
-
     .hero-label {
       font-size: 10px;
       letter-spacing: 0.4em;
@@ -199,17 +160,13 @@
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-
     .hero-title {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(52px, 8vw, 100px);
       line-height: 0.92;
       letter-spacing: -0.01em;
-      color: var(--white);
     }
-
     .hero-title span { color: var(--red); }
-
     .hero-sub {
       margin-top: 16px;
       font-size: 11px;
@@ -219,29 +176,15 @@
       line-height: 1.8;
     }
 
-    /* SECTION */
     .section-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 28px 32px 16px;
     }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
 
-    .section-label {
-      font-size: 10px;
-      letter-spacing: 0.4em;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-
-    .section-count {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 13px;
-      color: var(--red);
-      letter-spacing: 0.1em;
-    }
-
-    /* GRID */
     .outfit-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -258,21 +201,13 @@
       opacity: 0;
       animation: fadeIn 0.4s ease forwards;
     }
-
     .outfit-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.3s;
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
       filter: saturate(0.85);
     }
-
-    .outfit-card:hover img {
-      transform: scale(1.06);
-      filter: saturate(1.1);
-    }
-
+    .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
     .outfit-card::after {
       content: '';
       position: absolute;
@@ -281,73 +216,42 @@
       opacity: 0;
       transition: opacity 0.3s;
     }
-
     .outfit-card:hover::after { opacity: 1; }
 
     .outfit-overlay {
       position: absolute;
-      bottom: 16px;
-      left: 16px;
+      bottom: 16px; left: 16px;
       z-index: 2;
       opacity: 0;
       transform: translateY(8px);
       transition: all 0.3s;
     }
-
-    .outfit-card:hover .outfit-overlay {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
+    .outfit-card:hover .outfit-overlay { opacity: 1; transform: translateY(0); }
     .outfit-tag {
-      font-size: 9px;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: var(--red);
-      padding: 4px 10px;
-      display: inline-block;
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
+    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
 
-    .outfit-num {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 28px;
-      color: var(--white);
-      line-height: 1;
-      margin-top: 4px;
-    }
-
-    /* NÚT TIM GÓC PHẢI TRÊN TỪNG ẢNH */
     .btn-save-card {
       position: absolute;
-      top: 16px;
-      right: 16px;
+      top: 16px; right: 16px;
       z-index: 3;
-      background: rgba(10, 10, 10, 0.7);
+      background: rgba(10,10,10,0.7);
       backdrop-filter: blur(4px);
       border: 1px solid #444;
       color: var(--white);
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
       font-size: 14px;
       cursor: pointer;
-      opacity: 0; 
+      opacity: 0;
       transform: translateY(-8px);
       transition: all 0.3s;
     }
-
-    .outfit-card:hover .btn-save-card {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .btn-save-card:hover {
-      background: var(--red);
-      border-color: var(--red);
-    }
+    .outfit-card:hover .btn-save-card { opacity: 1; transform: translateY(0); }
+    .btn-save-card:hover { background: var(--red); border-color: var(--red); }
+    .btn-save-card.saved { opacity: 1; transform: translateY(0); color: var(--red); border-color: var(--red); }
 
     .shimmer {
       background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
@@ -355,187 +259,71 @@
       animation: shimmer 1.5s infinite !important;
       opacity: 1 !important;
     }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
-    @keyframes shimmer {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* TICKER */
     .ticker {
       overflow: hidden;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-      padding: 10px 0;
-      margin: 32px 0 0;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      padding: 10px 0; margin: 32px 0 0;
       background: var(--grey);
     }
-
-    .ticker-inner {
-      display: flex;
-      gap: 48px;
-      animation: ticker 20s linear infinite;
-      white-space: nowrap;
-    }
-
-    .ticker-item {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 13px;
-      letter-spacing: 0.3em;
-      color: var(--muted);
-    }
-
+    .ticker-inner { display: flex; gap: 48px; animation: ticker 20s linear infinite; white-space: nowrap; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
     .ticker-item span { color: var(--red); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    /* ABOUT SECTION */
     .about-section {
       padding: 80px 32px;
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center; max-width: 680px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center;
     }
-
-    .about-icon {
-      color: var(--red);
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
-
-    .about-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 32px;
-      color: var(--white);
-      letter-spacing: 0.2em;
-      margin-bottom: 24px;
-    }
-
-    .about-desc {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 2;
-      letter-spacing: 0.05em;
-    }
-
-    .about-desc span {
-      color: var(--white);
-    }
-
+    .about-icon { color: var(--red); font-size: 20px; margin-bottom: 16px; }
+    .about-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--white); letter-spacing: 0.2em; margin-bottom: 24px; }
+    .about-desc { font-size: 12px; color: var(--muted); line-height: 2; letter-spacing: 0.05em; }
+    .about-desc span { color: var(--white); }
     .about-quote {
       margin-top: 32px;
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      color: var(--red);
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-      padding: 12px 24px;
-      display: inline-block;
+      font-family: 'Space Mono', monospace; font-size: 10px; color: var(--red);
+      letter-spacing: 0.3em; text-transform: uppercase;
+      border-top: 1px solid #222; border-bottom: 1px solid #222;
+      padding: 12px 24px; display: inline-block;
     }
 
-    /* FOOTER TỐI GIẢN */
-    footer {
-      padding: 32px;
-      border-top: 1px solid #1a1a1a;
-      text-align: center;
-      font-size: 10px;
-      color: var(--muted);
-      letter-spacing: 0.2em;
-    }
+    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
 
-    /* MUSIC PLAYER CSS */
     .player-container {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
-      z-index: 9999;
+      position: fixed; bottom: 24px; right: 24px;
+      width: 50px; height: 50px;
+      cursor: pointer; z-index: 9999;
       transition: transform 0.3s ease;
       border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-      background: var(--grey);
-      padding: 2px;
-      border: 1px solid #333;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+      background: var(--grey); padding: 2px; border: 1px solid #333;
     }
+    .player-container:hover { transform: scale(1.1); border-color: var(--red); }
+    #record-icon { width: 100%; height: 100%; border-radius: 50%; animation: spin 4s linear infinite; animation-play-state: paused; }
+    #record-icon.playing { animation-play-state: running; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-    .player-container:hover {
-      transform: scale(1.1);
-      border-color: var(--red);
-    }
-
-    #record-icon {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      animation: spin 4s linear infinite;
-      animation-play-state: paused; 
-    }
-
-    #record-icon.playing {
-      animation-play-state: running;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* MOBILE */
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
       nav { gap: 4px; }
-      
       .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
       .btn.btn-icon-only { width: 30px; padding: 0; }
       .text-hide { display: none; }
-      
-      .btn-reload .nav-icon {
-        position: relative;
-        top: -1.5px;
-      }
-      
-      .btn-save-card {
-        opacity: 1;
-        transform: translateY(0);
-        top: 8px;
-        right: 8px;
-        width: 28px;
-        height: 28px;
-        font-size: 12px;
-      }
-
+      .btn-reload .nav-icon { position: relative; top: -1.5px; }
+      .btn-save-card { opacity: 1; transform: translateY(0); top: 8px; right: 8px; width: 28px; height: 28px; font-size: 12px; }
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
       .hero { padding: 32px 16px 20px; }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
       .section-header { padding: 20px 16px 12px; }
       #search-bar { padding: 12px 16px; }
-      
       .about-section { padding: 56px 24px; }
       .about-title { font-size: 28px; }
       .about-quote { font-size: 9px; letter-spacing: 0.2em; padding: 10px 16px; }
-
-      .player-container {
-        bottom: 16px;
-        right: 16px;
-        width: 44px;
-        height: 44px;
-      }
+      .player-container { bottom: 16px; right: 16px; width: 44px; height: 44px; }
     }
   </style>
 </head>
@@ -552,18 +340,16 @@
       <button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
         <span class="nav-icon">⌕</span><span class="text-hide">SEARCH</span>
       </button>
-
       <button class="btn btn-icon-only btn-reload" onclick="randomize()">
         <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
       </button>
-
-      <a class="btn btn-icon-only btn-save" href="login.html">
-        <span class="nav-icon">♡</span><span class="text-hide">CLOSET</span>
+      <!-- CLOSET btn — JS sẽ tự đổi href & icon tuỳ login -->
+      <a class="btn btn-icon-only" id="nav-closet-btn" href="login.html">
+        <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
-
       <div class="dropdown">
         <button class="btn">STYLE ↓</button>
-        <div class="dropdown-content" id="styleDropdown">
+        <div class="dropdown-content">
           <a href="#">Dark Feminine</a>
           <a href="#">E-Girl / Alt Girl</a>
           <a href="#">Goth / Gothic</a>
@@ -619,9 +405,7 @@
     <div class="about-quote">"Dress like it's the end of the world"</div>
   </section>
 
-  <footer>
-    © 2026 APOCALYPSE CLOSET
-  </footer>
+  <footer>© 2026 APOCALYPSE CLOSET</footer>
 
   <div id="music-player" class="player-container" title="Phát nhạc Apocalypse">
     <svg id="record-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -631,14 +415,13 @@
       <circle cx="50" cy="50" r="38" fill="none" stroke="#222" stroke-width="1"/>
       <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
     </svg>
-    
     <audio id="apocalypse-audio" loop>
       <source src="apocalypse.mp3" type="audio/mpeg">
     </audio>
   </div>
 
   <script>
-    // ── 1. DỮ LIỆU OUTFIT (thêm title + category cho closet hiển thị) ──
+    // ── 1. DATA ───────────────────────────────────────────────────
     const outfits = [
       { id: "look-01", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/ee1ee67b6b076a4b62ceca86663dbec1.jpg", tag: "LOOK #01", title: "Look 01", category: "Dark Feminine" },
       { id: "look-02", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/eccacee3e4312af2ca62887a8953ffcb.jpg", tag: "LOOK #02", title: "Look 02", category: "E-Girl" },
@@ -658,16 +441,14 @@
       { id: "look-16", img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/8e06a9da32cba298045bf6355b390710.jpg", tag: "LOOK #16", title: "Look 16", category: "Dark Feminine" },
     ];
 
-    // ── 2. CLOSET HELPERS ─────────────────────────────────────────
-   function getUser() {
-  try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
-}
-
-    function getClosetKey() {
-      const user = getUser();
-      return user ? `ac_closet_${user.sub}` : null;
+    // ── 2. AUTH ───────────────────────────────────────────────────
+    function getUser() {
+      try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
-
+    function getClosetKey() {
+      const u = getUser();
+      return u ? `ac_closet_${u.sub}` : null;
+    }
     function getSavedIds() {
       const key = getClosetKey();
       if (!key) return new Set();
@@ -675,75 +456,46 @@
       catch { return new Set(); }
     }
 
+    // ── 3. SAVE / UNSAVE ──────────────────────────────────────────
     function toggleSave(outfit, btn) {
-      const user = getUser();
-
-      // Chưa login → chuyển sang trang login
-      if (!user) {
-        window.location.href = 'login.html';
-        return;
-      }
-
-      const key  = getClosetKey();
-      let list   = [];
+      if (!getUser()) { window.location.href = 'login.html'; return; }
+      const key = getClosetKey();
+      let list = [];
       try { list = JSON.parse(localStorage.getItem(key)) || []; } catch {}
-
       const idx = list.findIndex(o => o.id === outfit.id);
-
       if (idx === -1) {
-        // Chưa lưu → lưu vào
-        list.push({
-          id:       outfit.id,
-          title:    outfit.title,
-          image:    outfit.img,
-          category: outfit.category,
-          savedAt:  Date.now()
-        });
-        btn.innerHTML  = '♥';
-        btn.style.color = '#c0392b';
-        btn.style.borderColor = '#c0392b';
+        list.push({ id: outfit.id, title: outfit.title, image: outfit.img, category: outfit.category, savedAt: Date.now() });
+        btn.innerHTML = '♥';
+        btn.classList.add('saved');
         showToast('Đã lưu vào closet 🖤');
       } else {
-        // Đã lưu → bỏ lưu
         list.splice(idx, 1);
-        btn.innerHTML  = '♡';
-        btn.style.color = '';
-        btn.style.borderColor = '';
+        btn.innerHTML = '♡';
+        btn.classList.remove('saved');
         showToast('Đã xoá khỏi closet');
       }
-
       localStorage.setItem(key, JSON.stringify(list));
     }
 
-    // ── 3. TOAST ──────────────────────────────────────────────────
+    // ── 4. TOAST ──────────────────────────────────────────────────
     function showToast(msg) {
-      let toast = document.getElementById('ac-toast');
-      if (!toast) {
-        toast = document.createElement('div');
-        toast.id = 'ac-toast';
-        toast.style.cssText = `
-          position:fixed; bottom:32px; left:50%; transform:translateX(-50%) translateY(20px);
-          background:#111; border:1px solid #333; color:#f0ece4;
-          font-family:'Space Mono',monospace; font-size:10px; letter-spacing:0.14em;
-          text-transform:uppercase; padding:12px 24px; opacity:0;
-          transition:opacity 0.3s, transform 0.3s; pointer-events:none;
-          white-space:nowrap; z-index:9998;
-        `;
-        document.body.appendChild(toast);
+      let t = document.getElementById('ac-toast');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'ac-toast';
+        t.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:#111;border:1px solid #333;color:#f0ece4;font-family:Space Mono,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;padding:12px 24px;opacity:0;transition:opacity 0.3s,transform 0.3s;pointer-events:none;white-space:nowrap;z-index:9998;';
+        document.body.appendChild(t);
       }
-      toast.textContent = msg;
-      toast.style.opacity = '1';
-      toast.style.transform = 'translateX(-50%) translateY(0)';
-      clearTimeout(toast._timer);
-      toast._timer = setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(20px)';
-      }, 2200);
+      t.textContent = msg;
+      t.style.opacity = '1';
+      t.style.transform = 'translateX(-50%) translateY(0)';
+      clearTimeout(t._t);
+      t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 4. RENDER GRID ────────────────────────────────────────────
+    // ── 5. RENDER ─────────────────────────────────────────────────
     function renderAll() {
-      const grid    = document.getElementById('outfit-grid');
+      const grid = document.getElementById('outfit-grid');
       const savedIds = getSavedIds();
       grid.innerHTML = '';
       document.getElementById('counter').textContent = outfits.length + ' LOOKS';
@@ -761,26 +513,13 @@
 
         const overlay = document.createElement('div');
         overlay.className = 'outfit-overlay';
-        overlay.innerHTML = `
-          <span class="outfit-tag">XEM OUTFIT</span>
-          <div class="outfit-num">${outfit.tag}</div>
-        `;
+        overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
 
-        // Nút tim — hiện trạng thái đã lưu hay chưa
         const saveBtn = document.createElement('button');
-        saveBtn.className = 'btn-save-card';
         const isSaved = savedIds.has(outfit.id);
+        saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
         saveBtn.innerHTML = isSaved ? '♥' : '♡';
-        if (isSaved) {
-          saveBtn.style.color       = '#c0392b';
-          saveBtn.style.borderColor = '#c0392b';
-          saveBtn.style.opacity     = '1'; // Luôn hiện nếu đã save
-        }
-
-        saveBtn.onclick = (e) => {
-          e.stopPropagation();
-          toggleSave(outfit, saveBtn);
-        };
+        saveBtn.onclick = (e) => { e.stopPropagation(); toggleSave(outfit, saveBtn); };
 
         card.appendChild(img);
         card.appendChild(overlay);
@@ -789,46 +528,52 @@
       });
     }
 
-    // ── 5. RANDOMIZE ──────────────────────────────────────────────
+    // ── 6. RANDOM ─────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // ── 6. INIT ───────────────────────────────────────────────────
+    // ── 7. INIT ───────────────────────────────────────────────────
     function initGrid() {
-      const savedOrderStr = sessionStorage.getItem('savedOutfitOrder');
-      if (savedOrderStr) {
-        const savedOrder = JSON.parse(savedOrderStr);
-        outfits.sort((a, b) => savedOrder.indexOf(a.id) - savedOrder.indexOf(b.id));
+      const saved = sessionStorage.getItem('savedOutfitOrder');
+      if (saved) {
+        const order = JSON.parse(saved);
+        outfits.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
         renderAll();
       } else {
         randomize();
       }
     }
 
-    // ── 7. SEARCH ─────────────────────────────────────────────────
-    function toggleSearch() {
-      const bar   = document.getElementById('search-bar');
-      const input = document.getElementById('search-input');
-      if (bar.style.display === 'none' || bar.style.display === '') {
-        bar.style.display = 'block'; input.focus();
-      } else {
-        bar.style.display = 'none';
-      }
+    // ── 8. NAV CLOSET BUTTON ──────────────────────────────────────
+    // Đã login → đổi thành ♥ đỏ + link thẳng vào closet
+    const _u = getUser();
+    if (_u) {
+      const btn = document.getElementById('nav-closet-btn');
+      btn.href = 'closet.html';
+      document.getElementById('nav-closet-icon').innerHTML = '♥';
+      btn.style.color = '#c0392b';
+      btn.style.borderColor = '#c0392b';
     }
 
-    // ── 8. MUSIC ──────────────────────────────────────────────────
-    const playerContainer = document.getElementById('music-player');
-    const recordIcon      = document.getElementById('record-icon');
-    const audio           = document.getElementById('apocalypse-audio');
-    playerContainer.addEventListener('click', () => {
-      if (audio.paused) { audio.play(); recordIcon.classList.add('playing'); }
-      else              { audio.pause(); recordIcon.classList.remove('playing'); }
+    // ── 9. SEARCH ─────────────────────────────────────────────────
+    function toggleSearch() {
+      const bar = document.getElementById('search-bar');
+      const input = document.getElementById('search-input');
+      bar.style.display = (bar.style.display === 'block') ? 'none' : 'block';
+      if (bar.style.display === 'block') input.focus();
+    }
+
+    // ── 10. MUSIC ─────────────────────────────────────────────────
+    const audio = document.getElementById('apocalypse-audio');
+    const rec   = document.getElementById('record-icon');
+    document.getElementById('music-player').addEventListener('click', () => {
+      if (audio.paused) { audio.play(); rec.classList.add('playing'); }
+      else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // CHẠY
     initGrid();
   </script>
 </body>
