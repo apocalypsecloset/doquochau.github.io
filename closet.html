@@ -327,7 +327,7 @@
 
   <script>
     // ── Auth guard ────────────────────────────────────────────────
-    const stored = sessionStorage.getItem('ac_user');
+    const stored = localStorage.getItem('ac_user');
     if (!stored) {
       window.location.href = 'https://doquochau.github.io/login.html';
     }
@@ -413,7 +413,7 @@
 
     // ── Sign out ─────────────────────────────────────────────────
     function signOut() {
-      sessionStorage.removeItem('ac_user');
+      localStorage.removeItem('ac_user');
       window.location.href = 'https://doquochau.github.io/login.html';
     }
 
@@ -426,7 +426,7 @@
     // Copy đoạn này sang index.html:
     //
     // function saveToCloset(outfit) {
-    //   const user = JSON.parse(sessionStorage.getItem('ac_user'));
+    //   const user = JSON.parse(localStorage.getItem('ac_user'));
     //   if (!user) { window.location.href = '/login.html'; return; }
     //   const key = `ac_closet_${user.sub}`;
     //   const list = JSON.parse(localStorage.getItem(key)) || [];
