@@ -348,7 +348,6 @@
       </a>
       <div class="dropdown">
         <button class="btn">STYLE ↓</button>
-        <!-- ▼▼▼ DROPDOWN LINKS ĐÃ UPDATE — trỏ sang style.html?cat= ▼▼▼ -->
         <div class="dropdown-content">
           <a href="style.html?cat=dark-feminine">Dark Feminine</a>
           <a href="style.html?cat=e-girl">E-Girl / Alt Girl</a>
@@ -420,7 +419,6 @@
     </audio>
   </div>
 
-  <!-- ▼▼▼ LOAD DATA TỪ outfits.js — THÊM TRƯỚC SCRIPT CHÍNH ▼▼▼ -->
   <script src="outfits.js"></script>
 
   <script>
@@ -476,14 +474,19 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 5. RENDER ─────────────────────────────────────────────────
-    function renderAll() {
+    // ── 5. RENDER (Đã cập nhật để hỗ trợ Search) ──────────────────
+    function renderAll(data = outfits) {
       const grid = document.getElementById('outfit-grid');
       const savedIds = getSavedIds();
       grid.innerHTML = '';
-      document.getElementById('counter').textContent = outfits.length + ' LOOKS';
+      document.getElementById('counter').textContent = data.length + ' LOOKS';
 
-      outfits.forEach((outfit, i) => {
+      if (data.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 60px 20px; text-align: center; color: var(--muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
+        return;
+      }
+
+      data.forEach((outfit, i) => {
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
         card.style.animationDelay = (i * 0.03) + 's';
@@ -540,7 +543,7 @@
       btn.style.borderColor = '#c0392b';
     }
 
-    // ── 9. SEARCH ─────────────────────────────────────────────────
+    // ── 9. SEARCH TOGGLE ──────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -554,6 +557,17 @@
     document.getElementById('music-player').addEventListener('click', () => {
       if (audio.paused) { audio.play(); rec.classList.add('playing'); }
       else              { audio.pause(); rec.classList.remove('playing'); }
+    });
+
+    // ── 11. XỬ LÝ TÌM KIẾM (SEARCH) ───────────────────────────────
+    document.getElementById('search-input').addEventListener('input', function(e) {
+      const keyword = e.target.value.toLowerCase().trim();
+      const filtered = outfits.filter(o => 
+        o.title.toLowerCase().includes(keyword) ||
+        o.tag.toLowerCase().includes(keyword) ||
+        o.category.toLowerCase().includes(keyword)
+      );
+      renderAll(filtered);
     });
 
     initGrid();
