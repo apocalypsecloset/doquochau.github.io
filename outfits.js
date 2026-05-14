@@ -10,73 +10,19 @@
 
 const outfits = [
 
-  // ═══════════════════════════════════════════════════════════════════
-  //  🖤 DARK FEMININE
-  // ═══════════════════════════════════════════════════════════════════
+  // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-01",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-1-1.png",
     tag: "LOOK #01",
     title: "Look 01",
-    category: "Dark Feminine",
+    category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #1",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-1-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-06",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-6-1.png",
-    tag: "LOOK #06",
-    title: "Look 06",
-    category: "Dark Feminine",
-    detail: {
-      title: "OUTFIT DETAILS #6",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-6-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-11",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-11-1.png",
-    tag: "LOOK #11",
-    title: "Look 11",
-    category: "Dark Feminine",
-    detail: {
-      title: "OUTFIT DETAILS #11",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-11-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-16",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-16-1.png",
-    tag: "LOOK #16",
-    title: "Look 16",
-    category: "Dark Feminine",
-    detail: {
-      title: "OUTFIT DETAILS #16",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-16-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-1-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -86,73 +32,19 @@ const outfits = [
     }
   },
 
-  // ═══════════════════════════════════════════════════════════════════
-  //  🎮 E-GIRL
-  // ═══════════════════════════════════════════════════════════════════
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-02",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-2-1.png",
     tag: "LOOK #02",
     title: "Look 02",
-    category: "E-Girl",
+    category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #2",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-2-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-07",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-7-1.png",
-    tag: "LOOK #07",
-    title: "Look 07",
-    category: "E-Girl",
-    detail: {
-      title: "OUTFIT DETAILS #7",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-7-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-12",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-12-1.png",
-    tag: "LOOK #12",
-    title: "Look 12",
-    category: "E-Girl",
-    detail: {
-      title: "OUTFIT DETAILS #12",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-12-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-17",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-17.png",
-    tag: "LOOK #17",
-    title: "Look 17",
-    category: "E-Girl",
-    detail: {
-      title: "OUTFIT DETAILS #17",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-17.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-2-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -162,73 +54,19 @@ const outfits = [
     }
   },
 
-  // ═══════════════════════════════════════════════════════════════════
-  //  🦇 GOTH
-  // ═══════════════════════════════════════════════════════════════════
+  // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-03",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-3-1.png",
     tag: "LOOK #03",
     title: "Look 03",
-    category: "Goth",
+    category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #3",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-3-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-08",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-8-1.png",
-    tag: "LOOK #08",
-    title: "Look 08",
-    category: "Goth",
-    detail: {
-      title: "OUTFIT DETAILS #8",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-8-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-13",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-13-1.png",
-    tag: "LOOK #13",
-    title: "Look 13",
-    category: "Goth",
-    detail: {
-      title: "OUTFIT DETAILS #13",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-13-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-18",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-18-1.png",
-    tag: "LOOK #18",
-    title: "Look 18",
-    category: "Goth",
-    detail: {
-      title: "OUTFIT DETAILS #18",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-18-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-3-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -238,73 +76,19 @@ const outfits = [
     }
   },
 
-  // ═══════════════════════════════════════════════════════════════════
-  //  🔥 BADDIE STREETWEAR
-  // ═══════════════════════════════════════════════════════════════════
+  // ── DARK FEMININE ─────────────────────────────────────────────
   {
     id: "look-04",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-4-1.png",
     tag: "LOOK #04",
     title: "Look 04",
-    category: "Baddie Streetwear",
+    category: "Dark Feminine",
     detail: {
       title: "OUTFIT DETAILS #4",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-4-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-09",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-9-1.png",
-    tag: "LOOK #09",
-    title: "Look 09",
-    category: "Baddie Streetwear",
-    detail: {
-      title: "OUTFIT DETAILS #9",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-9-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-14",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-14-1.png",
-    tag: "LOOK #14",
-    title: "Look 14",
-    category: "Baddie Streetwear",
-    detail: {
-      title: "OUTFIT DETAILS #14",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-14-1.png"],
-      items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
-      ]
-    }
-  },
-  {
-    id: "look-19",
-    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-19-1.png",
-    tag: "LOOK #19",
-    title: "Look 19",
-    category: "Baddie Streetwear",
-    detail: {
-      title: "OUTFIT DETAILS #19",
-      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-19-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-4-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -314,19 +98,19 @@ const outfits = [
     }
   },
 
-  // ═══════════════════════════════════════════════════════════════════
-  //  🎸 PUNK
-  // ═══════════════════════════════════════════════════════════════════
+  // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-05",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-5-1.png",
     tag: "LOOK #05",
     title: "Look 05",
-    category: "Punk",
+    category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #5",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-5-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-5-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -335,6 +119,96 @@ const outfits = [
       ]
     }
   },
+
+  // ── PUNK ──────────────────────────────────────────────────────
+  {
+    id: "look-06",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-6-1.png",
+    tag: "LOOK #06",
+    title: "Look 06",
+    category: "Punk",
+    detail: {
+      title: "OUTFIT DETAILS #6",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-6-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────
+  {
+    id: "look-07",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-7-1.png",
+    tag: "LOOK #07",
+    title: "Look 07",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #7",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-7-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── E-GIRL ────────────────────────────────────────────────────
+  {
+    id: "look-08",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-8-1.png",
+    tag: "LOOK #08",
+    title: "Look 08",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #8",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-8-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── GOTH ──────────────────────────────────────────────────────
+  {
+    id: "look-09",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-9-1.png",
+    tag: "LOOK #09",
+    title: "Look 09",
+    category: "Goth",
+    detail: {
+      title: "OUTFIT DETAILS #9",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-9-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-10",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-10-1.png",
@@ -344,7 +218,9 @@ const outfits = [
     detail: {
       title: "OUTFIT DETAILS #10",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-10-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-10-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -353,16 +229,108 @@ const outfits = [
       ]
     }
   },
+
+  // ── E-GIRL ────────────────────────────────────────────────────
+  {
+    id: "look-11",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-11-1.png",
+    tag: "LOOK #11",
+    title: "Look 11",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #11",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-11-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── PUNK ──────────────────────────────────────────────────────
+  {
+    id: "look-12",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-12-1.png",
+    tag: "LOOK #12",
+    title: "Look 12",
+    category: "Punk",
+    detail: {
+      title: "OUTFIT DETAILS #12",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-12-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── E-GIRL ────────────────────────────────────────────────────
+  {
+    id: "look-13",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-13-1.png",
+    tag: "LOOK #13",
+    title: "Look 13",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #13",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-13-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────
+  {
+    id: "look-14",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-14-1.png",
+    tag: "LOOK #14",
+    title: "Look 14",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #14",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-14-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
   {
     id: "look-15",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-15-1.png",
     tag: "LOOK #15",
     title: "Look 15",
-    category: "Punk",
+    category: "Dark Feminine",
     detail: {
       title: "OUTFIT DETAILS #15",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-15-1.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-15-1.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -371,16 +339,108 @@ const outfits = [
       ]
     }
   },
+
+  // ── GOTH ──────────────────────────────────────────────────────
+  {
+    id: "look-16",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-16-1.png",
+    tag: "LOOK #16",
+    title: "Look 16",
+    category: "Goth",
+    detail: {
+      title: "OUTFIT DETAILS #16",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-16-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────
+  {
+    id: "look-17",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-17.png",
+    tag: "LOOK #17",
+    title: "Look 17",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #17",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-17.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-18",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-18-1.png",
+    tag: "LOOK #18",
+    title: "Look 18",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #18",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-18-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── PUNK ──────────────────────────────────────────────────────
+  {
+    id: "look-19",
+    img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-19-1.png",
+    tag: "LOOK #19",
+    title: "Look 19",
+    category: "Punk",
+    detail: {
+      title: "OUTFIT DETAILS #19",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-19-1.png"
+      ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "#" },
+        { name: "QUẦN",     type: "Bottom Item", link: "#" },
+        { name: "GIÀY",     type: "Footwear",    link: "#" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-20",
     img: "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-20-2.png",
     tag: "LOOK #20",
     title: "Look 20",
-    category: "Punk",
+    category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #20",
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
-      imgs: ["https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-20-2.png"],
+      imgs: [
+        "https://apocalypsecloset.wordpress.com/wp-content/uploads/2026/05/apocalypse-badgirl-20-2.png"
+      ],
       items: [
         { name: "ÁO",       type: "Top Item",    link: "#" },
         { name: "QUẦN",     type: "Bottom Item", link: "#" },
@@ -403,9 +463,7 @@ const outfits = [
   //   detail: {
   //     title: "OUTFIT DETAILS #21",
   //     desc: "Mô tả ngắn về look này.",
-  //     imgs: [
-  //       "URL_ẢNH_1",
-  //     ],
+  //     imgs: [ "URL_ẢNH_1" ],
   //     items: [
   //       { name: "ÁO",       type: "Top Item",    link: "LINK_SHOPEE" },
   //       { name: "QUẦN",     type: "Bottom Item", link: "LINK_SHOPEE" },
