@@ -202,7 +202,7 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "https://s.shopee.vn/1Lcc5qkJgJ"
+          "link": "https://s.shopee.vn/70GysF5r8y"
         },
         {
           "name": "QUẦN",
