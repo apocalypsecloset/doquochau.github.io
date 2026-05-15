@@ -22,22 +22,22 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/5L8kqv2cYU"
         },
         {
           "name": "QUẦN",
           "type": "Bottom Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/7KtpB6lXBE"
         },
         {
           "name": "GIÀY",
           "type": "Footwear",
-          "link": "#"
+          "link": "https://s.shopee.vn/1qYsgUvT14"
         },
         {
           "name": "PHỤ KIỆN",
           "type": "Accessories",
-          "link": "#"
+          "link": "https://s.shopee.vn/3Vh6fZe3wj"
         }
       ]
     }
@@ -94,22 +94,22 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/8V5mcrsUPh?lp=aff"
         },
         {
           "name": "QUẦN",
           "type": "Bottom Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/3Vh6fgqDnP"
         },
         {
           "name": "GIÀY",
           "type": "Footwear",
-          "link": "#"
+          "link": "https://s.shopee.vn/8KmMQaKM7U"
         },
         {
           "name": "PHỤ KIỆN",
           "type": "Accessories",
-          "link": "#"
+          "link": "https://s.shopee.vn/60OReIw2jE"
         }
       ]
     }
@@ -130,22 +130,22 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/8V5mcw7r05"
         },
         {
           "name": "QUẦN",
           "type": "Bottom Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/2g7zgEMETK"
         },
         {
           "name": "GIÀY",
           "type": "Footwear",
-          "link": "#"
+          "link": "https://s.shopee.vn/9023DsWZ05"
         },
         {
           "name": "PHỤ KIỆN",
           "type": "Accessories",
-          "link": "#"
+          "link": "https://s.shopee.vn/8fPCpH1o0K"
         }
       ]
     }
@@ -166,22 +166,22 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/7pq5pkwORf"
         },
         {
           "name": "QUẦN",
           "type": "Bottom Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/2g7zgHJmcL"
         },
         {
           "name": "GIÀY",
           "type": "Footwear",
-          "link": "#"
+          "link": "https://s.shopee.vn/9zuaPkE8Ab"
         },
         {
           "name": "PHỤ KIỆN",
           "type": "Accessories",
-          "link": "#"
+          "link": "https://s.shopee.vn/9UyJoqOZEZ"
         }
       ]
     }
@@ -202,22 +202,22 @@ const outfits = [
         {
           "name": "ÁO",
           "type": "Top Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/1Lcc5qkJgJ"
         },
         {
           "name": "QUẦN",
           "type": "Bottom Item",
-          "link": "#"
+          "link": "https://s.shopee.vn/BQehiyWob"
         },
         {
           "name": "GIÀY",
           "type": "Footwear",
-          "link": "#"
+          "link": "https://s.shopee.vn/8fPCpKtS82"
         },
         {
           "name": "PHỤ KIỆN",
           "type": "Accessories",
-          "link": "#"
+          "link": "https://s.shopee.vn/6VKiFMzZvL"
         }
       ]
     }
@@ -727,3 +727,5 @@ const outfits = [
     }
   }
 ];
+
+export default outfits;
