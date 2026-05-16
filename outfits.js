@@ -8,7 +8,7 @@
 //    "Dark Feminine" | "E-Girl" | "Goth" | "Baddie Streetwear" | "Punk"
 // ═══════════════════════════════════════════════════════════════════
 
-const D = id => `https://drive.google.com/uc?export=view&id=${id}`;
+const D = id => `https://lh3.googleusercontent.com/d/${id}`;
 
 const outfits = [
 
