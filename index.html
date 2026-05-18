@@ -270,6 +270,7 @@
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite !important;
       opacity: 1 !important;
+      contain: strict; /* tránh reflow lan ra ngoài card */
     }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
@@ -392,7 +393,19 @@
     <span class="section-count" id="counter"></span>
   </div>
 
-  <div class="outfit-grid" id="outfit-grid"></div>
+  <div class="outfit-grid" id="outfit-grid">
+    <!-- Skeleton cards: giữ chỗ cho grid trước khi JS render, tránh CLS -->
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+  </div>
 
   <div class="ticker" data-nosnippet>
     <div class="ticker-inner">
