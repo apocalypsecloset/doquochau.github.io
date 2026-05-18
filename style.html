@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apocalypse Closet — Style</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -409,7 +412,7 @@
       <circle cx="50" cy="50" r="38" fill="none" stroke="#222" stroke-width="1"/>
       <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
     </svg>
-    <audio id="apocalypse-audio" loop>
+    <audio id="apocalypse-audio" loop preload="none">
       <source src="apocalypse.mp3" type="audio/mpeg">
     </audio>
   </div>
@@ -543,6 +546,8 @@
         return;
       }
 
+      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w600' : url;
+
       filtered.forEach((outfit, i) => {
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
@@ -550,9 +555,17 @@
         card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
 
         const img = document.createElement('img');
-        img.src = outfit.img;
         img.alt = outfit.tag;
+        img.decoding = 'async';
         img.onload = () => card.classList.remove('shimmer');
+        img.onerror = () => card.classList.remove('shimmer');
+        if (i < 4) {
+          img.src = thumbUrl(outfit.img);
+          img.fetchPriority = 'high';
+        } else {
+          img.loading = 'lazy';
+          img.src = thumbUrl(outfit.img);
+        }
 
         const overlay = document.createElement('div');
         overlay.className = 'outfit-overlay';

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outfit Detail - Apocalypse Closet</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -369,8 +372,15 @@
       document.title = `${d.title} — Apocalypse Closet`;
       document.getElementById('cat-badge').textContent = outfit.category;
 
-      // build slider images
-      const imagesHTML = d.imgs.map(img => `<img src="${img}" alt="${d.title}">`).join('');
+      // Helper: thêm size param cho Google Drive URLs
+      const imgUrl = (url, size) => url.includes('googleusercontent.com') ? url + size : url;
+
+      // build slider images — ảnh đầu load ngay (LCP), các ảnh sau lazy
+      const imagesHTML = d.imgs.map((img, i) =>
+        i === 0
+          ? `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" fetchpriority="high" decoding="async">`
+          : `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" loading="lazy" decoding="async">`
+      ).join('');
 
       // build dots
       const dotsHTML = d.imgs.length > 1
@@ -425,7 +435,7 @@
       if (related.length > 0) {
         const relHTML = related.map(o => `
           <div class="related-card" onclick="window.location.href='outfit-detail.html?id=${o.id}'">
-            <img src="${o.img}" alt="${o.tag}">
+            <img src="${imgUrl(o.img, '=w600')}" alt="${o.tag}" loading="lazy" decoding="async">
             <div class="related-card-tag">${o.tag}</div>
           </div>
         `).join('');

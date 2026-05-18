@@ -10,6 +10,10 @@
   
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/Logo%20Apocalypse%20Closet.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
+  <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -425,7 +429,7 @@
       <circle cx="50" cy="50" r="38" fill="none" stroke="#222" stroke-width="1"/>
       <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
     </svg>
-    <audio id="apocalypse-audio" loop>
+    <audio id="apocalypse-audio" loop preload="none">
       <source src="apocalypse.mp3" type="audio/mpeg">
     </audio>
   </div>
@@ -485,7 +489,21 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 5. RENDER (Đã cập nhật để hỗ trợ Search) ──────────────────
+    // ── 5. RENDER (Tối ưu: lazy load + thumbnail size) ────────────
+    // IntersectionObserver: chỉ load ảnh khi card vào viewport
+    const imgObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            imgObserver.unobserve(img);
+          }
+        }
+      });
+    }, { rootMargin: '200px' }); // Bắt đầu load trước 200px
+
     function renderAll(data = outfits) {
       const grid = document.getElementById('outfit-grid');
       const savedIds = getSavedIds();
@@ -497,6 +515,9 @@
         return;
       }
 
+      // Thêm thumbnail size param cho Google Drive (tiết kiệm ~60-80% bandwidth)
+      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w600' : url;
+
       data.forEach((outfit, i) => {
         const card = document.createElement('div');
         card.className = 'outfit-card shimmer';
@@ -504,9 +525,21 @@
         card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
 
         const img = document.createElement('img');
-        img.src = outfit.img;
         img.alt = outfit.tag;
+        img.decoding = 'async';
         img.onload = () => card.classList.remove('shimmer');
+        img.onerror = () => card.classList.remove('shimmer');
+
+        if (i < 8) {
+          // 8 ảnh đầu (above-the-fold): load ngay với priority cao
+          img.src = thumbUrl(outfit.img);
+          if (i < 4) img.fetchPriority = 'high';
+        } else {
+          // Các ảnh còn lại: lazy load qua IntersectionObserver
+          img.dataset.src = thumbUrl(outfit.img);
+          img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E'; // placeholder 1x1
+          imgObserver.observe(img);
+        }
 
         const overlay = document.createElement('div');
         overlay.className = 'outfit-overlay';
