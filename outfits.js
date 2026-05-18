@@ -204,10 +204,10 @@ const outfits = [
         D("1ZcH06A757H2mrUhw8tUYxAYraQcDbNmm")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/7AaU1mc6qg" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/70H3pTckBf" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/7VDKQOaqAm" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/7KtuE5bTVl" }
       ]
     }
   },
@@ -229,10 +229,10 @@ const outfits = [
         D("1PcxAd-gUJDkhGKTjdJJMPBgwwsDzOZlr")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/7pqAp0ZZUs" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/7fWkchaCpr" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/8AT1DcYIoy" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/809b1JYw9x" }
       ]
     }
   },
@@ -254,10 +254,10 @@ const outfits = [
         D("1NFVW4xd4hTmLolPTAhS3KZm5Xj9CCHSA")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/8V5rcEX294" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/8KmRPvXfU3" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/8pii0qVlTA" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/8fPHoXWOo9" }
       ]
     }
   },
@@ -279,10 +279,10 @@ const outfits = [
         D("15nP2Ruh0GOeydiek8PIlR16_OMMdYc5R")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/9ALYPSUUnG" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/9028D9V88F" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/9UyOo4TE7M" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/9KeyblTrSL" }
       ]
     }
   },
@@ -304,10 +304,10 @@ const outfits = [
         D("1YuLRfCleRdi7xnedZU5vteR2nMBE3nFx")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/9pbFCgRxRS" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/9fHp0NSamR" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/AAE5bIQglY" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/9zufOzRK6X" }
       ]
     }
   },
@@ -329,10 +329,10 @@ const outfits = [
         D("1Pohze_RqnPHKZ_tVmzCbE5zsU-GJKHXz")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/AUqvzuPQ5e" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/AKXVnbQ3Qd" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/BQjgv2l3g" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/17JUc3OOf" }
       ]
     }
   },
@@ -354,10 +354,10 @@ const outfits = [
         D("1zQcHpD7tWacO_ASZZbcfL1HzDYWHH384")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/W3a5X1UNm" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/Lk9tE27il" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/qgQU90Dhs" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/gN0Hq0r2r" }
       ]
     }
   },
@@ -379,10 +379,10 @@ const outfits = [
         D("1WJSgO7F3kSRzXnipVbNhOnzefxHIgCRX")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/1BJGskyx1y" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/10zqgRzaMx" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/1Vw7HMxgM4" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/1Lch53yJh3" }
       ]
     }
   },
@@ -404,10 +404,10 @@ const outfits = [
         D("1cXPPzbSQ0p2cChCh7u5pPYCTGNL-DwYJ")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/1qYxfywPgA" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/1gFXTfx319" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/2BBo4av90G" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/20sNsHvmLF" }
       ]
     }
   },
@@ -429,10 +429,10 @@ const outfits = [
         D("152Uav02TavoRCHNLpsOBIYH1Yw0IYsoA")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/2VoeTCtsKM" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/2LVEGtuVfL" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/2qRUrosbeS" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/2g84fVtEzR" }
       ]
     }
   },
@@ -454,10 +454,10 @@ const outfits = [
         D("1-BTRuOfzHDBiRl_eL2oMD8C18khJ6qev")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/3B4LGQrKyY" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/30kv47ryJX" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/3VhBf2q4Ie" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/3LNlSjqhdd" }
       ]
     }
   },
@@ -479,10 +479,10 @@ const outfits = [
         D("1QmW-wYJYIAI4RThs957KUCrzqbWDPHx9")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/3qK23eonck" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/3g0brLpQxj" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/4AwsSGnWwq" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/40dSFxoAHp" }
       ]
     }
   },
@@ -504,10 +504,10 @@ const outfits = [
         D("1dZB3_jQ-Lw1DQ4pB_joFVJO4c_3cDiiZ")
       ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/4VZiqsmGGw" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/4LGIeZmtbv" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/4qCZFUkzb2" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/4ft93Blcw1" }
       ]
     }
   },
