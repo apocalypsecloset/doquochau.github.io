@@ -12,12 +12,17 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=optional" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js">
+  <!-- Preload 4 ảnh outfit đầu tiên để cải thiện LCP -->
+  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1VXZnkNvF-KdVU2YKctOJjQZeQ3VIKP-A=w200" fetchpriority="high">
+  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1iVEb6hWXHFWs9WsJidwNBXxt4orojgHf=w200">
+  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/18tRZdre37xEmngFQZgjZy8fC0csEsx0t=w200">
+  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1l1UCbDPOxVWZP3ydWuxVD_v_ylP2JbZ7=w200">
   <style>
     :root {
       --black: #0a0a0a;
@@ -532,7 +537,7 @@
       }
 
       // Thêm thumbnail size param cho Google Drive (tiết kiệm ~60-80% bandwidth)
-      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w300' : url;
+      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w200' : url;
 
       data.forEach((outfit, i) => {
         const card = document.createElement('div');
