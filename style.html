@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apocalypse Closet — Style</title>
-  <link rel="icon" type="image/png" href="Logo%20Apocalypse%20Closet.png">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -338,9 +338,9 @@
 
   <header>
     <a class="logo-wrap" href="index.html">
-      <img src="Logo%20Apocalypse%20Closet.png" fetchpriority="high"
+      <img src="Logo-Apocalypse-Closet.webp" fetchpriority="high"
         alt="icon" style="height:44px;width:auto;object-fit:contain;">
-      <img src="Gemini_Generated_Image_rcfzltrcfzltrcfz-removebg-preview.png"
+      <img src="wordmark.webp"
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
     <nav>
@@ -547,7 +547,7 @@
         return;
       }
 
-      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w600' : url;
+      const thumbUrl = url => url.includes('googleusercontent.com') ? url + '=w300' : url;
 
       filtered.forEach((outfit, i) => {
         const card = document.createElement('div');
