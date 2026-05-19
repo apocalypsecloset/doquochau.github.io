@@ -658,7 +658,7 @@
     });
 
     // ── 10. SEARCH ────────────────────────────────────────────────
-    document. document.getElementById('search-input').addEventListener('input', function(e) {
+    document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
       const filtered = outfits.filter(o =>
         o.title.toLowerCase().includes(keyword) ||
