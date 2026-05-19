@@ -17,7 +17,7 @@
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -46,8 +46,8 @@
     }
     .back-link:hover { color: var(--white); }
     .nav-badge {
-      font-family: 'Oswald', sans-serif; font-size: 16px;
-      letter-spacing: 0.15em; color: var(--white); text-transform: uppercase;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 18px; letter-spacing: 0.15em; color: var(--white); text-transform: uppercase;
     }
 
     /* ── ARTICLE HERO ── */
@@ -65,8 +65,9 @@
       width: 4px; height: 4px; background: var(--muted); border-radius: 50%;
     }
     .article-title {
-      font-family: 'Oswald', sans-serif; font-size: clamp(40px, 6vw, 80px);
-      line-height: 1.05; letter-spacing: 0.02em; text-transform: uppercase;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: clamp(40px, 6vw, 80px);
+      line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase;
       margin-bottom: 32px; width: 100%;
     }
     .article-author {
@@ -94,22 +95,28 @@
       font-size: 14px; line-height: 2.2; color: #d0d0d0; text-align: justify;
     }
     .article-content > p:first-of-type::first-letter {
-      font-family: 'Oswald', sans-serif; font-size: 4.5em; color: var(--red);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 4.5em; color: var(--red);
       float: left; line-height: 0.8; margin: 8px 12px 0 0;
     }
     .article-content p { margin-bottom: 28px; }
     .article-content h2 {
-      font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 28px; color: var(--white);
       text-transform: uppercase; letter-spacing: 0.05em;
+      line-height: 1.3;
       margin: 56px 0 24px; padding-bottom: 12px;
       border-bottom: 1px solid var(--border); text-align: left;
     }
     .article-content h3 {
-      font-family: 'Oswald', sans-serif; font-size: 20px; color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 20px; color: var(--white);
       margin: 32px 0 16px; text-transform: uppercase; text-align: left;
+      line-height: 1.3;
     }
     .article-content blockquote {
-      font-family: 'Oswald', sans-serif; font-size: 26px; color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 26px; color: var(--white);
       border-left: 4px solid var(--red); padding-left: 32px;
       margin: 56px 0; line-height: 1.4; text-transform: uppercase;
       text-align: left; letter-spacing: 0.02em;
@@ -155,8 +162,8 @@
       text-transform: uppercase; margin-bottom: 8px;
     }
     .article-nav .nav-title {
-      font-family: 'Oswald', sans-serif; font-size: 16px;
-      color: var(--white); text-transform: uppercase; line-height: 1.3;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 16px; color: var(--white); text-transform: uppercase; line-height: 1.3;
     }
     .article-nav a.next { text-align: right; }
 
@@ -218,14 +225,10 @@
   <footer>© 2026 APOCALYPSE CLOSET</footer>
 
   <script>
-    // ─────────────────────────────────────────────
-    // Đọc ?slug= từ URL
-    // ─────────────────────────────────────────────
     const params = new URLSearchParams(window.location.search);
     const slug = params.get('slug');
 
     if (!slug) {
-      // Không có slug → redirect về trang blog index
       window.location.href = 'blog.html';
     } else {
       loadPost(slug);
@@ -256,9 +259,6 @@
       }
     }
 
-    // ─────────────────────────────────────────────
-    // Render HTML từ post object
-    // ─────────────────────────────────────────────
     function renderPost(post, prev, next) {
       const bodyHTML = post.content.map(block => {
         switch (block.type) {
@@ -326,9 +326,6 @@
       document.title = `${post.title} — Apocalypse Closet`;
     }
 
-    // ─────────────────────────────────────────────
-    // Cập nhật SEO meta tags
-    // ─────────────────────────────────────────────
     function updateSEO(post) {
       const url = `https://apocalypsecloset.com/journal.html?slug=${post.slug}`;
       setMeta('description', post.description);
@@ -345,9 +342,6 @@
       if (el) el.setAttribute('content', content);
     }
 
-    // ─────────────────────────────────────────────
-    // Error state
-    // ─────────────────────────────────────────────
     function showError(msg) {
       document.getElementById('main-content').innerHTML = `
         <div class="state-screen">
@@ -357,7 +351,6 @@
       `;
     }
 
-    // Tránh XSS: escape HTML trước khi render
     function escapeHTML(str) {
       return String(str)
         .replace(/&/g, '&amp;')
