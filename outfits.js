@@ -8,7 +8,7 @@
 //    "Dark Feminine" | "E-Girl" | "Goth" | "Baddie Streetwear" | "Punk"
 // ═══════════════════════════════════════════════════════════════════
 
-const BASE = "https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/image";
+const BASE = "/image";
 const G = (look, idx) => `${BASE}/apocalypse-badgirl-${look}-${idx}_result.webp`;
 
 const outfits = [
