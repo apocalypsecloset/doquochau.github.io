@@ -13,7 +13,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18171660599');
 </script>
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
@@ -22,15 +21,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
-  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
+  <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js">
-  <!-- Preload 4 ảnh outfit đầu tiên để cải thiện LCP -->
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1VXZnkNvF-KdVU2YKctOJjQZeQ3VIKP-A=w200" fetchpriority="high">
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1iVEb6hWXHFWs9WsJidwNBXxt4orojgHf=w200">
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/18tRZdre37xEmngFQZgjZy8fC0csEsx0t=w200">
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1l1UCbDPOxVWZP3ydWuxVD_v_ylP2JbZ7=w200">
+
+  <!-- ✅ FIX 1: Preload đúng 4 ảnh đầu tiên từ GitHub (trùng với outfits.js) -->
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/image/apocalypse-badgirl-3-1_result.webp">
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/doquochau/doquochau.github.io/master/image/apocalypse-badgirl-4-1_result.webp">
+
   <style>
     :root {
       --black: #0a0a0a;
@@ -283,7 +284,7 @@
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite !important;
       opacity: 1 !important;
-      contain: strict; /* tránh reflow lan ra ngoài card */
+      contain: strict;
     }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
@@ -363,7 +364,7 @@
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
     <nav>
-<button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
+      <button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
         <span class="nav-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
@@ -407,7 +408,6 @@
   </div>
 
   <div class="outfit-grid" id="outfit-grid">
-    <!-- Skeleton cards: giữ chỗ cho grid trước khi JS render, tránh CLS -->
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
@@ -466,7 +466,7 @@
   <script src="outfits.js"></script>
 
   <script>
-    // ── 2. AUTH ───────────────────────────────────────────────────
+    // ── 1. AUTH ───────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
@@ -481,7 +481,7 @@
       catch { return new Set(); }
     }
 
-    // ── 3. SAVE / UNSAVE ──────────────────────────────────────────
+    // ── 2. SAVE / UNSAVE ──────────────────────────────────────────
     function toggleSave(outfit, btn) {
       if (!getUser()) { window.location.href = 'login.html'; return; }
       const key = getClosetKey();
@@ -502,7 +502,7 @@
       localStorage.setItem(key, JSON.stringify(list));
     }
 
-    // ── 4. TOAST ──────────────────────────────────────────────────
+    // ── 3. TOAST ──────────────────────────────────────────────────
     function showToast(msg) {
       let t = document.getElementById('ac-toast');
       if (!t) {
@@ -518,8 +518,10 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 5. RENDER (Tối ưu: lazy load + thumbnail size) ────────────
-    // IntersectionObserver: chỉ load ảnh khi card vào viewport
+    // ── 4. RENDER ─────────────────────────────────────────────────
+    // ✅ FIX 2: thumbSize tính 1 lần duy nhất — tránh forced reflow mỗi lần renderAll()
+    const isMobile = window.innerWidth <= 768;
+
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -531,7 +533,7 @@
           }
         }
       });
-    }, { rootMargin: '200px' }); // Bắt đầu load trước 200px
+    }, { rootMargin: '200px' });
 
     function renderAll(data = outfits) {
       const grid = document.getElementById('outfit-grid');
@@ -543,11 +545,6 @@
         grid.innerHTML = `<div style="grid-column: 1/-1; padding: 60px 20px; text-align: center; color: var(--muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
         return;
       }
-
-      // Thêm thumbnail size param cho Google Drive (tiết kiệm ~60-80% bandwidth)
-      // Responsive thumbnail: mobile 2 cột (~195px) dùng w300, desktop 4 cột (~480px) dùng w500
-      const thumbSize = window.innerWidth <= 768 ? 'w300' : 'w500';
-      const thumbUrl = url => url.includes('googleusercontent.com') ? `${url}=${thumbSize}` : url;
 
       data.forEach((outfit, i) => {
         const card = document.createElement('div');
@@ -562,13 +559,11 @@
         img.onerror = () => card.classList.remove('shimmer');
 
         if (i < 8) {
-          // 8 ảnh đầu (above-the-fold): load ngay với priority cao
-          img.src = thumbUrl(outfit.img);
+          img.src = outfit.img;
           if (i < 4) img.fetchPriority = 'high';
         } else {
-          // Các ảnh còn lại: lazy load qua IntersectionObserver
-          img.dataset.src = thumbUrl(outfit.img);
-          img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E'; // placeholder 1x1
+          img.dataset.src = outfit.img;
+          img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
           imgObserver.observe(img);
         }
 
@@ -589,14 +584,14 @@
       });
     }
 
-    // ── 6. RANDOM ─────────────────────────────────────────────────
+    // ── 5. RANDOM ─────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // ── 7. INIT ───────────────────────────────────────────────────
+    // ── 6. INIT ───────────────────────────────────────────────────
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
@@ -608,7 +603,7 @@
       }
     }
 
-    // ── 8. NAV CLOSET BUTTON ──────────────────────────────────────
+    // ── 7. NAV CLOSET BUTTON ──────────────────────────────────────
     const _u = getUser();
     if (_u) {
       const btn = document.getElementById('nav-closet-btn');
@@ -618,7 +613,7 @@
       btn.style.borderColor = '#c0392b';
     }
 
-    // ── 9. SEARCH TOGGLE ──────────────────────────────────────────
+    // ── 8. SEARCH TOGGLE ──────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -626,7 +621,7 @@
       if (bar.style.display === 'block') input.focus();
     }
 
-    // ── 10. MUSIC ─────────────────────────────────────────────────
+    // ── 9. MUSIC ──────────────────────────────────────────────────
     const audio = document.getElementById('apocalypse-audio');
     const rec   = document.getElementById('record-icon');
     document.getElementById('music-player').addEventListener('click', () => {
@@ -634,10 +629,10 @@
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // ── 11. XỬ LÝ TÌM KIẾM (SEARCH) ───────────────────────────────
+    // ── 10. SEARCH ────────────────────────────────────────────────
     document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
-      const filtered = outfits.filter(o => 
+      const filtered = outfits.filter(o =>
         o.title.toLowerCase().includes(keyword) ||
         o.tag.toLowerCase().includes(keyword) ||
         o.category.toLowerCase().includes(keyword)
