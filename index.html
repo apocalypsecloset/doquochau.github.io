@@ -5,8 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apocalypse Closet - Phong Cách Và Thời Trang Bad Girl</title>
+  
+  <!-- ✅ FIX 4: Thẻ Canonical chống ăn thịt từ khóa -->
+  <link rel="canonical" href="https://apocalypsecloset.com/" />
+  
   <meta name="p:domain_verify" content="9f119494f51e0fb3070c74a60326a6da"/>
   <meta name="description" content="Giữa một thế giới đang dần bão hòa bởi những khuôn mẫu nhàm chán và những xu hướng rập khuôn, Apocalypse Closet ra đời như một thánh địa dành riêng cho những tâm hồn nổi loạn.">
+  
+  <!-- ✅ FIX 2: Thêm bộ thẻ SEO Social (Open Graph) -->
+  <meta property="og:title" content="Apocalypse Closet - Phong Cách Và Thời Trang Bad Girl" />
+  <meta property="og:description" content="Thánh địa dành riêng cho những tâm hồn nổi loạn. Dark Wear, Grunge và Bad Girl Aesthetic." />
+  <meta property="og:image" content="https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp" />
+  <meta property="og:url" content="https://apocalypsecloset.com/" />
+  <meta property="og:type" content="website" />
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18171660599"></script>
 <script>
@@ -19,8 +31,8 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
@@ -187,7 +199,7 @@
       margin-bottom: 10px;
     }
     .hero-title {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Oswald', sans-serif;
       font-size: clamp(52px, 8vw, 100px);
       line-height: 0.92;
       letter-spacing: -0.01em;
@@ -209,7 +221,7 @@
       padding: 28px 32px 16px;
     }
     .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
-    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
+    .section-count { font-family: 'Oswald', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
 
     .outfit-grid {
       display: grid;
@@ -257,7 +269,7 @@
       font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
       color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+    .outfit-num { font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
 
     .btn-save-card {
       position: absolute;
@@ -296,7 +308,7 @@
       background: var(--grey);
     }
     .ticker-inner { display: flex; gap: 48px; animation: ticker 20s linear infinite; white-space: nowrap; }
-    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
+    .ticker-item { font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
     .ticker-item span { color: var(--red); }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
@@ -306,7 +318,7 @@
       display: flex; flex-direction: column; align-items: center;
     }
     .about-icon { color: var(--red); font-size: 20px; margin-bottom: 16px; }
-    .about-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--white); letter-spacing: 0.2em; margin-bottom: 24px; }
+    .about-title { font-family: 'Oswald', sans-serif; font-size: 32px; color: var(--white); letter-spacing: 0.2em; margin-bottom: 24px; }
     .about-desc { font-size: 12px; color: var(--muted); line-height: 2; letter-spacing: 0.05em; }
     .about-desc span { color: var(--white); }
     .about-quote {
@@ -364,7 +376,8 @@
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
     <nav>
-      <button class="btn btn-icon-only btn-search" onclick="toggleSearch()">
+      <!-- ✅ FIX 5: Thêm aria-label cho các nút icon-only -->
+      <button class="btn btn-icon-only btn-search" aria-label="Tìm kiếm outfit" onclick="toggleSearch()">
         <span class="nav-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
@@ -373,10 +386,10 @@
         </span>
         <span class="text-hide">SEARCH</span>
       </button>
-      <button class="btn btn-icon-only btn-reload" onclick="randomize()">
+      <button class="btn btn-icon-only btn-reload" aria-label="Tải lại outfit ngẫu nhiên" onclick="randomize()">
         <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
       </button>
-      <a class="btn btn-icon-only" id="nav-closet-btn" href="login.html">
+      <a class="btn btn-icon-only" id="nav-closet-btn" aria-label="Đến Closet của bạn" href="login.html">
         <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
       <div class="dropdown">
@@ -557,7 +570,10 @@
         card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
 
         const img = document.createElement('img');
-        img.alt = outfit.tag;
+        
+        // ✅ FIX 3: Tối ưu Alt Text cho mảng SEO Hình ảnh
+        img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
+        
         img.decoding = 'async';
         img.onload = () => card.classList.remove('shimmer');
         img.onerror = () => card.classList.remove('shimmer');
@@ -642,7 +658,7 @@
     });
 
     // ── 10. SEARCH ────────────────────────────────────────────────
-    document.getElementById('search-input').addEventListener('input', function(e) {
+    document. document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
       const filtered = outfits.filter(o =>
         o.title.toLowerCase().includes(keyword) ||
