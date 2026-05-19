@@ -8,289 +8,192 @@
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #040408;
-      --bg2: #0a0812;
-      --purple: #2a0845;
-      --purple-mid: #4a1570;
-      --purple-light: #8b2fc9;
-      --bone: #ddd8cc;
-      --bone-dim: #7a7268;
-      --red: #6b0000;
-      --red-bright: #990000;
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: var(--bg);
-      color: var(--bone);
-      font-family: 'Crimson Text', serif;
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
       overflow-x: hidden;
     }
-
-    /* ATMOSPHERIC PURPLE GLOW */
     body::before {
       content: '';
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background:
-        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(74,21,112,0.2) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(107,0,0,0.12) 0%, transparent 60%);
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 999; opacity: 0.4;
     }
 
-    /* ORNAMENTAL HEADER */
     header {
-      padding: 0 40px;
-      border-bottom: 1px solid rgba(139,47,201,0.2);
-      position: sticky; top: 0;
-      background: rgba(4,4,8,0.97);
-      backdrop-filter: blur(20px);
-      z-index: 200;
-    }
-    .header-inner {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 0;
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
+      position: sticky; top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
     .back-link {
-      font-family: 'Crimson Text', serif; font-style: italic; font-size: 13px;
-      color: var(--bone-dim); text-decoration: none; letter-spacing: 0.1em;
-      transition: color 0.3s;
+      font-family: 'Space Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .back-link:hover { color: var(--purple-light); }
-    .nav-center {
-      display: flex; flex-direction: column; align-items: center; gap: 4px;
-    }
-    .nav-ornament { font-size: 11px; color: rgba(139,47,201,0.4); letter-spacing: 0.8em; }
+    .back-link:hover { color: var(--white); }
     .nav-badge {
-      font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700;
-      letter-spacing: 0.6em; color: var(--purple-light); text-transform: uppercase;
+      font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 0.25em;
+      color: var(--white);
     }
-    .nav-sub { font-family: 'Crimson Text', serif; font-style: italic; font-size: 10px; color: var(--bone-dim); letter-spacing: 0.3em; }
+    .nav-issue { font-size: 10px; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; }
 
-    /* HERO */
+    /* HERO — centered editorial */
     .hero {
-      min-height: 88vh; display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      padding: 60px 40px; text-align: center; position: relative;
+      padding: 80px 32px 60px;
+      border-bottom: 1px solid #1a1a1a;
+      text-align: center;
+      display: flex; flex-direction: column; align-items: center;
     }
-
-    /* Ornamental borders */
-    .hero::before {
-      content: '';
-      position: absolute; inset: 20px;
-      border: 1px solid rgba(139,47,201,0.12);
-      pointer-events: none;
+    .hero-label {
+      font-size: 10px; letter-spacing: 0.4em; color: var(--red);
+      text-transform: uppercase; margin-bottom: 20px;
     }
-    .hero-corner {
-      position: absolute; width: 40px; height: 40px;
-      border-color: rgba(139,47,201,0.4);
-      border-style: solid;
-      pointer-events: none;
-    }
-    .hero-corner.tl { top: 20px; left: 20px; border-width: 2px 0 0 2px; }
-    .hero-corner.tr { top: 20px; right: 20px; border-width: 2px 2px 0 0; }
-    .hero-corner.bl { bottom: 20px; left: 20px; border-width: 0 0 2px 2px; }
-    .hero-corner.br { bottom: 20px; right: 20px; border-width: 0 2px 2px 0; }
-
-    .hero-eyebrow {
-      font-family: 'Crimson Text', serif; font-style: italic; font-size: 14px;
-      letter-spacing: 0.5em; color: var(--bone-dim); margin-bottom: 32px;
-    }
-
     .hero-title {
-      font-family: 'Cinzel Decorative', serif; font-weight: 700;
-      font-size: clamp(44px, 8vw, 100px); line-height: 1;
-      letter-spacing: 0.08em; margin-bottom: 20px;
-      color: var(--bone);
-      text-shadow: 0 0 80px rgba(139,47,201,0.4);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(80px, 14vw, 160px);
+      line-height: 0.88; letter-spacing: 0.02em;
     }
-    .hero-title .alt {
-      display: block; font-size: 0.45em; font-weight: 400;
-      letter-spacing: 0.5em; color: var(--purple-light);
-      margin-bottom: 8px; text-shadow: 0 0 40px rgba(139,47,201,0.6);
+    .hero-title span { color: var(--red); }
+    .hero-sub {
+      margin-top: 24px; font-size: 11px; color: var(--muted);
+      letter-spacing: 0.06em; line-height: 2; max-width: 440px; font-style: italic;
     }
-
-    .hero-ornamental-divider {
-      font-family: 'Cinzel', serif; font-size: 18px;
-      color: rgba(139,47,201,0.4); letter-spacing: 0.4em;
-      margin: 28px 0;
-    }
-
-    .hero-desc {
-      font-family: 'Crimson Text', serif; font-style: italic; font-size: 17px;
-      color: var(--bone-dim); line-height: 1.8; max-width: 520px;
-      letter-spacing: 0.03em;
-    }
-
     .hero-tags {
-      display: flex; gap: 24px; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+      display: flex; gap: 2px; margin-top: 36px; flex-wrap: wrap; justify-content: center;
     }
     .hero-tag {
-      font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.5em;
-      color: var(--bone-dim); text-transform: uppercase;
-      padding: 8px 16px; border: 1px solid rgba(139,47,201,0.25);
-      transition: all 0.4s;
+      font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.2em;
+      color: var(--muted); background: var(--grey);
+      padding: 8px 20px; transition: all 0.2s; cursor: default;
     }
-    .hero-tag:hover {
-      color: var(--purple-light); border-color: rgba(139,47,201,0.6);
-      background: rgba(42,8,69,0.4);
-    }
+    .hero-tag:hover { background: var(--red); color: var(--white); }
 
-    /* BLOOD DRIP SEPARATOR */
-    .separator {
-      position: relative; height: 2px; overflow: visible;
-      background: linear-gradient(90deg, transparent, var(--red-bright), transparent);
-      margin: 0;
+    /* TICKER */
+    .ticker {
+      overflow: hidden;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      padding: 10px 0; background: var(--grey);
     }
+    .ticker-inner { display: flex; gap: 48px; animation: ticker 22s linear infinite; white-space: nowrap; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
+    .ticker-item span { color: var(--red); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* TENETS SECTION */
-    .tenets-header {
-      text-align: center; padding: 48px 40px 32px;
+    /* CODEX (tenets) */
+    .pillars-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 20px;
     }
-    .tenets-title {
-      font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.8em;
-      color: var(--bone-dim); text-transform: uppercase;
-    }
+    .pillars-title { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
 
-    .tenets { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .tenet {
-      padding: 36px 28px;
-      border-right: 1px solid rgba(139,47,201,0.12);
-      text-align: center; position: relative; transition: all 0.5s;
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #1a1a1a; }
+    .pillar {
+      padding: 32px 24px; border-right: 1px solid #1a1a1a;
+      transition: background 0.2s; text-align: center;
     }
-    .tenet:last-child { border-right: none; }
-    .tenet:hover { background: rgba(42,8,69,0.25); }
-    .tenet-glyph {
-      font-family: 'Cinzel Decorative', serif; font-size: 28px;
-      color: var(--purple-light); margin-bottom: 16px; display: block;
-      text-shadow: 0 0 20px rgba(139,47,201,0.5);
+    .pillar:last-child { border-right: none; }
+    .pillar:hover { background: var(--grey); }
+    .pillar-glyph {
+      font-size: 28px; color: var(--red); margin-bottom: 16px; display: block;
     }
-    .tenet-name {
-      font-family: 'Cinzel', serif; font-size: 12px; font-weight: 700;
-      letter-spacing: 0.3em; color: var(--bone); margin-bottom: 10px;
-      text-transform: uppercase;
+    .pillar-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 0.08em;
+      color: var(--white); margin-bottom: 10px; text-transform: uppercase;
     }
-    .tenet-desc { font-style: italic; font-size: 12px; color: var(--bone-dim); line-height: 2; }
+    .pillar-desc { font-size: 10px; color: var(--muted); line-height: 2; letter-spacing: 0.04em; font-style: italic; }
 
     /* SECTION HEADER */
     .section-header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 32px 40px;
-      border-top: 1px solid rgba(139,47,201,0.12);
-      border-bottom: 1px solid rgba(139,47,201,0.12);
+      padding: 28px 32px 16px; border-top: 1px solid #1a1a1a;
     }
-    .section-label {
-      font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.4em;
-      color: var(--bone); text-transform: uppercase;
-    }
-    .section-count {
-      font-family: 'Crimson Text', serif; font-style: italic; font-size: 14px;
-      color: var(--purple-light); letter-spacing: 0.2em;
-    }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
 
     /* OUTFIT GRID */
-    .outfit-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 1px; background: rgba(139,47,201,0.08);
-    }
+    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 0 2px 2px; }
     .outfit-card {
-      position: relative; overflow: hidden; aspect-ratio: 2/3;
-      background: var(--bg2); cursor: pointer;
+      position: relative; overflow: hidden; aspect-ratio: 3/4;
+      background: var(--grey); cursor: pointer;
+      opacity: 0; animation: fadeIn 0.4s ease forwards;
     }
     .outfit-card img {
       width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.8s, filter 0.5s;
-      filter: saturate(0.5) brightness(0.85) contrast(1.05);
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
+      filter: saturate(0.85);
     }
-    .outfit-card:hover img {
-      transform: scale(1.04);
-      filter: saturate(0.65) brightness(0.95) contrast(1.1);
-    }
+    .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
     .outfit-card::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(4,4,8,0.95) 0%, rgba(42,8,69,0.2) 40%, transparent 65%);
-      opacity: 0.7; transition: opacity 0.5s;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
     }
-    .outfit-card:hover::after { opacity: 0.85; }
-    /* Ornamental hover frame */
-    .outfit-card::before {
-      content: ''; position: absolute; inset: 12px; z-index: 2;
-      border: 1px solid rgba(139,47,201,0.4);
-      opacity: 0; transition: opacity 0.4s;
-    }
-    .outfit-card:hover::before { opacity: 1; }
+    .outfit-card:hover::after { opacity: 1; }
     .outfit-overlay {
-      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
-      padding: 24px 20px; text-align: center;
+      position: absolute; bottom: 16px; left: 16px; z-index: 2;
+      opacity: 0; transform: translateY(8px); transition: all 0.3s;
     }
-    .outfit-num {
-      font-family: 'Cinzel Decorative', serif; font-size: 16px;
-      color: var(--bone); display: block; letter-spacing: 0.2em;
-      text-shadow: 0 0 20px rgba(139,47,201,0.5);
+    .outfit-card:hover .outfit-overlay { opacity: 1; transform: translateY(0); }
+    .outfit-tag {
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-    .outfit-cta {
-      font-family: 'Crimson Text', serif; font-style: italic; font-size: 11px;
-      color: var(--purple-light); letter-spacing: 0.3em; display: block;
-      margin-top: 4px; opacity: 0; transform: translateY(6px); transition: all 0.4s 0.1s;
-    }
-    .outfit-card:hover .outfit-cta { opacity: 1; transform: translateY(0); }
+    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* FOOTER */
     footer {
-      padding: 36px 40px; text-align: center;
-      border-top: 1px solid rgba(139,47,201,0.2);
-      background: rgba(42,8,69,0.05);
+      padding: 32px; border-top: 1px solid #1a1a1a;
+      display: flex; align-items: center; justify-content: space-between;
     }
-    .footer-ornament {
-      font-family: 'Cinzel', serif; font-size: 16px;
-      color: rgba(139,47,201,0.3); letter-spacing: 0.8em; margin-bottom: 20px;
-    }
-    footer p { font-style: italic; font-size: 11px; color: var(--bone-dim); margin-bottom: 16px; letter-spacing: 0.2em; }
-    .footer-links { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    footer p { font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+    .footer-links { display: flex; gap: 24px; }
     .footer-links a {
-      font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.4em;
-      color: var(--bone-dim); text-decoration: none; transition: color 0.3s;
-      text-transform: uppercase;
+      font-size: 10px; letter-spacing: 0.15em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .footer-links a:hover { color: var(--purple-light); }
+    .footer-links a:hover { color: var(--white); }
 
     @media (max-width: 768px) {
-      header { padding: 0 16px; }
-      .hero { padding: 48px 20px; }
-      .tenets { grid-template-columns: repeat(2, 1fr); }
+      header { padding: 14px 16px; }
+      .hero { padding: 48px 16px 36px; }
+      .hero-tags { gap: 4px; }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
-      .section-header { padding: 24px 20px; }
-      footer { padding: 28px 20px; }
+      .section-header { padding: 20px 16px 12px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <a class="back-link" href="index.html">← Return</a>
-      <div class="nav-center">
-        <div class="nav-ornament">✦ ✦ ✦</div>
-        <div class="nav-badge">Goth</div>
-        <div class="nav-sub">Style Collection III</div>
-      </div>
-      <span style="font-family:'Crimson Text',serif;font-style:italic;font-size:12px;color:var(--bone-dim)">2026</span>
-    </div>
+    <a class="back-link" href="index.html">← Return</a>
+    <span class="nav-badge">Goth</span>
+    <span class="nav-issue">No. 03</span>
   </header>
 
   <section class="hero">
-    <div class="hero-corner tl"></div>
-    <div class="hero-corner tr"></div>
-    <div class="hero-corner bl"></div>
-    <div class="hero-corner br"></div>
-
-    <div class="hero-eyebrow">— Những kẻ yêu bóng tối —</div>
-    <h1 class="hero-title">
-      <span class="alt">✦ the ✦</span>
-      GOTH
-    </h1>
-    <div class="hero-ornamental-divider">— ✦ ✦ ✦ —</div>
-    <p class="hero-desc">
-      Không phải buồn bã. Không phải chán đời. Goth là sự tôn thờ cái đẹp trong bóng tối — thẩm mỹ của những ai nhìn thấy sự kỳ diệu nơi người khác sợ hãi.
+    <div class="hero-label">// Style Collection 03 — Eternal Night</div>
+    <h1 class="hero-title">THE<br><span>GOTH</span></h1>
+    <p class="hero-sub">
+      Không phải buồn bã. Không phải chán đời.<br>
+      Goth là sự tôn thờ cái đẹp trong bóng tối.
     </p>
     <div class="hero-tags">
       <div class="hero-tag">Victorian</div>
@@ -300,49 +203,63 @@
     </div>
   </section>
 
-  <div class="separator"></div>
-
-  <div class="tenets-header">
-    <div class="tenets-title">✦ &nbsp; The Goth Codex &nbsp; ✦</div>
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">GOTH AESTHETIC</span>
+      <span class="ticker-item"><span>✦</span> ETERNAL NIGHT</span>
+      <span class="ticker-item">ALL BLACK EVERYTHING</span>
+      <span class="ticker-item"><span>✦</span> VICTORIAN LACE</span>
+      <span class="ticker-item">PLATFORM BOOTS</span>
+      <span class="ticker-item"><span>✦</span> DARKWAVE SOUL</span>
+      <span class="ticker-item">GOTH AESTHETIC</span>
+      <span class="ticker-item"><span>✦</span> ETERNAL NIGHT</span>
+      <span class="ticker-item">ALL BLACK EVERYTHING</span>
+      <span class="ticker-item"><span>✦</span> VICTORIAN LACE</span>
+      <span class="ticker-item">PLATFORM BOOTS</span>
+      <span class="ticker-item"><span>✦</span> DARKWAVE SOUL</span>
+    </div>
   </div>
 
-  <div class="tenets">
-    <div class="tenet">
-      <span class="tenet-glyph">☽</span>
-      <div class="tenet-name">Đêm Vĩnh Cửu</div>
-      <div class="tenet-desc">Bóng tối không đáng sợ — đó là nơi trú ẩn của những tâm hồn nhạy cảm nhất</div>
+  <div class="pillars-header">
+    <span class="pillars-title">// The Goth Codex</span>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <span class="pillar-glyph">☽</span>
+      <div class="pillar-name">Đêm Vĩnh Cửu</div>
+      <div class="pillar-desc">Bóng tối không đáng sợ — đó là nơi trú ẩn của những tâm hồn nhạy cảm nhất</div>
     </div>
-    <div class="tenet">
-      <span class="tenet-glyph">⚰</span>
-      <div class="tenet-name">Vẻ Đẹp Cổ Xưa</div>
-      <div class="tenet-desc">Victorian lace, baroque detail, thẩm mỹ của những thế kỷ đã qua nhưng không bao giờ lỗi thời</div>
+    <div class="pillar">
+      <span class="pillar-glyph">⚰</span>
+      <div class="pillar-name">Vẻ Đẹp Cổ Xưa</div>
+      <div class="pillar-desc">Victorian lace, baroque detail — thẩm mỹ của những thế kỷ đã qua nhưng không bao giờ lỗi thời</div>
     </div>
-    <div class="tenet">
-      <span class="tenet-glyph">🕸</span>
-      <div class="tenet-name">Hoàn Toàn Đen</div>
-      <div class="tenet-desc">Từ đầu đến chân. Không thỏa hiệp. Đen là màu của sự hoàn hảo tuyệt đối</div>
+    <div class="pillar">
+      <span class="pillar-glyph">🕸</span>
+      <div class="pillar-name">Hoàn Toàn Đen</div>
+      <div class="pillar-desc">Từ đầu đến chân. Không thỏa hiệp. Đen là màu của sự hoàn hảo tuyệt đối</div>
     </div>
-    <div class="tenet">
-      <span class="tenet-glyph">✠</span>
-      <div class="tenet-name">Phi Thường</div>
-      <div class="tenet-desc">Platform boots, corset, cape — mỗi outfit là một tác phẩm nghệ thuật sống</div>
+    <div class="pillar">
+      <span class="pillar-glyph">✠</span>
+      <div class="pillar-name">Phi Thường</div>
+      <div class="pillar-desc">Platform boots, corset, cape — mỗi outfit là một tác phẩm nghệ thuật sống</div>
     </div>
   </div>
 
   <div class="section-header">
-    <span class="section-label">✦ The Looks ✦</span>
-    <span class="section-count" id="counter">— looks</span>
+    <span class="section-label">The Looks</span>
+    <span class="section-count" id="counter"></span>
   </div>
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
   <footer>
-    <div class="footer-ornament">— ✦ ✦ ✦ —</div>
-    <p>© 2026 Apocalypse Closet — apocalypsecloset.com</p>
+    <p>© 2026 APOCALYPSE CLOSET</p>
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="egirl.html">E-Girl</a>
-      <a href="dark-feminine.html">Dark Feminine</a>
+      <a href="dark-feminine.html">Dark Fem</a>
       <a href="punk.html">Punk</a>
       <a href="baddie-streetwear.html">Baddie</a>
     </div>
@@ -351,18 +268,21 @@
   <script src="outfits.js"></script>
   <script>
     const filtered = outfits.filter(o => o.category === 'Goth');
-    document.getElementById('counter').textContent = filtered.length + ' looks';
+    document.getElementById('counter').textContent = filtered.length + ' LOOKS';
     const grid = document.getElementById('outfit-grid');
     filtered.forEach((outfit, i) => {
       const card = document.createElement('div');
       card.className = 'outfit-card';
+      card.style.animationDelay = (i * 0.03) + 's';
       card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       card.innerHTML = `
-        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
+          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.tag}"
+          loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
         <div class="outfit-overlay">
-          <span class="outfit-num">${outfit.tag}</span>
-          <span class="outfit-cta">Explore this look</span>
+          <span class="outfit-tag">XEM OUTFIT</span>
+          <div class="outfit-num">${outfit.tag}</div>
         </div>`;
       grid.appendChild(card);
     });

@@ -8,244 +8,192 @@
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #08060a;
-      --bg2: #100b14;
-      --wine: #7a1833;
-      --wine-bright: #b5294e;
-      --gold: #c9a96e;
-      --gold-light: #e8c98a;
-      --cream: #e8e0d4;
-      --cream-dim: #a09898;
-      --rule: rgba(201,169,110,0.25);
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
-      background: var(--bg);
-      color: var(--cream);
-      font-family: 'Lora', serif;
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
       overflow-x: hidden;
-      cursor: default;
     }
-
-    /* SUBTLE VIGNETTE */
     body::before {
       content: '';
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.6) 100%);
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 999; opacity: 0.4;
     }
 
     /* HEADER */
     header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid var(--rule);
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
       position: sticky; top: 0;
-      background: rgba(8,6,10,0.95);
-      backdrop-filter: blur(16px);
-      z-index: 200;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
     .back-link {
-      font-family: 'Lora', serif; font-style: italic;
-      color: var(--cream-dim); font-size: 12px; letter-spacing: 0.15em;
-      text-decoration: none; transition: color 0.3s;
+      font-family: 'Space Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .back-link:hover { color: var(--gold); }
+    .back-link:hover { color: var(--white); }
     .nav-badge {
-      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
-      font-size: 13px; letter-spacing: 0.4em; color: var(--gold);
-      text-transform: uppercase;
+      font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 0.25em;
+      color: var(--white);
     }
-    .nav-issue {
-      font-family: 'Lora', serif; font-size: 10px;
-      color: var(--cream-dim); letter-spacing: 0.2em;
-    }
+    .nav-issue { font-size: 10px; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; }
 
-    /* HERO — editorial magazine split */
+    /* HERO */
     .hero {
-      display: grid; grid-template-columns: 55% 45%;
-      min-height: 90vh; position: relative;
+      padding: 56px 32px 40px;
+      border-bottom: 1px solid #1a1a1a;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end;
     }
-    .hero-left {
-      padding: 80px 60px 80px 40px;
-      display: flex; flex-direction: column; justify-content: space-between;
-      border-right: 1px solid var(--rule); position: relative; z-index: 1;
+    .hero-left {}
+    .hero-label {
+      font-size: 10px; letter-spacing: 0.4em; color: var(--red);
+      text-transform: uppercase; margin-bottom: 12px;
     }
-    .hero-vol {
-      font-family: 'Lora', serif; font-style: italic; font-size: 10px;
-      letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase;
-    }
-    .hero-rule { width: 60px; height: 1px; background: var(--gold); margin: 16px 0; }
-
     .hero-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300; font-style: italic;
-      font-size: clamp(56px, 8vw, 110px);
-      line-height: 0.92; letter-spacing: -0.01em;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(60px, 9vw, 120px);
+      line-height: 0.9; letter-spacing: -0.01em;
     }
-    .hero-title .dark { color: var(--cream); display: block; }
-    .hero-title .fem {
-      color: transparent;
-      -webkit-text-stroke: 1px var(--gold);
-      display: block; padding-left: 40px;
+    .hero-title span { color: var(--red); }
+    .hero-sub {
+      margin-top: 20px; font-size: 11px; color: var(--muted);
+      letter-spacing: 0.06em; line-height: 2; max-width: 380px;
     }
-
-    .hero-quote {
-      font-family: 'Cormorant Garamond', serif; font-style: italic;
-      font-size: 16px; line-height: 1.8; color: var(--cream-dim);
-      max-width: 380px; margin-top: 40px;
-      padding-left: 20px;
-      border-left: 1px solid var(--wine-bright);
-    }
-
-    .hero-bottom {
-      display: flex; align-items: center; gap: 32px; margin-top: 48px;
-    }
-    .hero-stat-num {
-      font-family: 'Cormorant Garamond', serif; font-weight: 600;
-      font-size: 52px; color: var(--gold); line-height: 1;
-    }
-    .hero-stat-label { font-size: 9px; letter-spacing: 0.3em; color: var(--cream-dim); text-transform: uppercase; margin-top: 4px; }
-    .hero-divider { width: 1px; height: 48px; background: var(--rule); }
-
     .hero-right {
-      padding: 60px 40px;
-      display: flex; flex-direction: column; justify-content: center;
-      align-items: flex-start; gap: 32px;
-      background: linear-gradient(135deg, var(--bg2) 0%, rgba(122,24,51,0.08) 100%);
-      position: relative; z-index: 1;
+      display: flex; flex-direction: column; gap: 24px;
+      padding-left: 40px; border-left: 1px solid #222;
     }
-    .hero-desc-block {
-      font-size: 11px; line-height: 2.2; color: var(--cream-dim);
-      letter-spacing: 0.05em; max-width: 320px;
+    .hero-quote {
+      font-size: 12px; color: var(--muted); font-style: italic;
+      letter-spacing: 0.04em; line-height: 2;
+      border-left: 2px solid var(--red); padding-left: 16px;
     }
-    .hero-desc-block strong { color: var(--gold); font-weight: 400; font-style: italic; }
-
-    .hero-ornament {
-      width: 100%; text-align: center; color: var(--rule);
-      font-family: 'Cormorant Garamond', serif; font-size: 32px;
-      letter-spacing: 0.5em; user-select: none;
-    }
-
-    .hero-keywords {
-      display: flex; flex-direction: column; gap: 8px;
-    }
+    .hero-keywords { display: flex; flex-direction: column; gap: 0; }
     .keyword {
-      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
-      font-size: 22px; letter-spacing: 0.1em; color: var(--cream-dim);
-      padding: 8px 0; border-bottom: 1px solid rgba(201,169,110,0.1);
-      transition: all 0.4s; cursor: default;
+      font-family: 'Bebas Neue', sans-serif; font-size: 22px;
+      letter-spacing: 0.1em; color: var(--muted);
+      padding: 10px 0; border-bottom: 1px solid #1a1a1a;
+      transition: color 0.2s; cursor: default;
     }
-    .keyword:hover { color: var(--gold); padding-left: 12px; }
+    .keyword:hover { color: var(--white); }
+    .keyword:last-child { border-bottom: none; }
 
-    /* GOLD RULE DIVIDER */
-    .gold-divider {
-      display: flex; align-items: center; gap: 20px;
-      padding: 20px 40px;
+    /* TICKER */
+    .ticker {
+      overflow: hidden;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      padding: 10px 0; background: var(--grey);
     }
-    .gold-divider-line { flex: 1; height: 1px; background: var(--rule); }
-    .gold-divider-center {
-      font-family: 'Cormorant Garamond', serif; font-style: italic;
-      font-size: 14px; letter-spacing: 0.5em; color: var(--gold); white-space: nowrap;
-    }
+    .ticker-inner { display: flex; gap: 48px; animation: ticker 22s linear infinite; white-space: nowrap; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
+    .ticker-item span { color: var(--red); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* PILLARS */
-    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .pillar {
-      padding: 36px 28px;
-      border-right: 1px solid var(--rule);
-      position: relative; transition: background 0.5s;
+    .pillars-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 20px;
     }
-    .pillar:hover { background: rgba(122,24,51,0.08); }
+    .pillars-title { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #1a1a1a; }
+    .pillar {
+      padding: 32px 24px; border-right: 1px solid #1a1a1a;
+      transition: background 0.2s;
+    }
     .pillar:last-child { border-right: none; }
-    .pillar-roman {
-      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12px;
-      color: var(--gold); letter-spacing: 0.3em; margin-bottom: 16px;
+    .pillar:hover { background: var(--grey); }
+    .pillar-num {
+      font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--red);
+      line-height: 1; margin-bottom: 12px;
     }
     .pillar-name {
-      font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 18px;
-      color: var(--cream); margin-bottom: 10px; letter-spacing: 0.05em;
+      font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 0.08em;
+      color: var(--white); margin-bottom: 10px; text-transform: uppercase;
     }
-    .pillar-desc { font-size: 10px; color: var(--cream-dim); line-height: 2; font-style: italic; }
+    .pillar-desc { font-size: 10px; color: var(--muted); line-height: 2; letter-spacing: 0.04em; }
 
     /* SECTION HEADER */
     .section-header {
-      padding: 32px 40px; display: flex; align-items: center;
-      justify-content: space-between; border-bottom: 1px solid var(--rule);
-      border-top: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 16px;
+      border-top: 1px solid #1a1a1a;
     }
-    .section-label {
-      font-family: 'Cormorant Garamond', serif; font-style: italic;
-      font-size: 28px; font-weight: 300; color: var(--cream); letter-spacing: 0.05em;
-    }
-    .section-count {
-      font-family: 'Lora', serif; font-style: italic;
-      font-size: 11px; color: var(--gold); letter-spacing: 0.3em;
-    }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
 
-    /* OUTFIT GRID — editorial feel */
-    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--rule); }
+    /* OUTFIT GRID */
+    .outfit-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 2px; padding: 0 2px 2px;
+    }
     .outfit-card {
-      position: relative; overflow: hidden; aspect-ratio: 2/3;
-      background: var(--bg2); cursor: pointer;
+      position: relative; overflow: hidden; aspect-ratio: 3/4;
+      background: var(--grey); cursor: pointer;
+      opacity: 0; animation: fadeIn 0.4s ease forwards;
     }
     .outfit-card img {
       width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s;
-      filter: saturate(0.7) brightness(0.9);
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
+      filter: saturate(0.85);
     }
-    .outfit-card:hover img {
-      transform: scale(1.05);
-      filter: saturate(0.85) brightness(1);
-    }
+    .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
     .outfit-card::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(8,6,10,0.9) 0%, rgba(122,24,51,0.3) 40%, transparent 70%);
-      opacity: 0.6; transition: opacity 0.5s;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
     }
-    .outfit-card:hover::after { opacity: 0.9; }
+    .outfit-card:hover::after { opacity: 1; }
     .outfit-overlay {
-      position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
-      padding: 24px 20px;
+      position: absolute; bottom: 16px; left: 16px; z-index: 2;
+      opacity: 0; transform: translateY(8px); transition: all 0.3s;
     }
-    .outfit-num {
-      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
-      font-size: 36px; color: var(--cream); line-height: 1; display: block;
+    .outfit-card:hover .outfit-overlay { opacity: 1; transform: translateY(0); }
+    .outfit-tag {
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-    .outfit-cta {
-      font-size: 9px; letter-spacing: 0.4em; color: var(--gold);
-      text-transform: uppercase; margin-top: 6px; display: block;
-      opacity: 0; transform: translateY(8px); transition: all 0.4s 0.1s;
-    }
-    .outfit-card:hover .outfit-cta { opacity: 1; transform: translateY(0); }
+    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
     /* FOOTER */
     footer {
-      padding: 36px 40px; border-top: 1px solid var(--rule);
+      padding: 32px; border-top: 1px solid #1a1a1a;
       display: flex; align-items: center; justify-content: space-between;
     }
-    .footer-left { display: flex; flex-direction: column; gap: 6px; }
-    footer p { font-family: 'Lora', serif; font-style: italic; font-size: 11px; color: var(--cream-dim); }
-    footer small { font-size: 9px; letter-spacing: 0.2em; color: rgba(160,152,152,0.4); }
-    .footer-links { display: flex; gap: 28px; }
+    footer p { font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+    .footer-links { display: flex; gap: 24px; }
     .footer-links a {
-      font-family: 'Lora', serif; font-style: italic; font-size: 11px;
-      color: var(--cream-dim); text-decoration: none; transition: color 0.3s;
+      font-size: 10px; letter-spacing: 0.15em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .footer-links a:hover { color: var(--gold); }
+    .footer-links a:hover { color: var(--white); }
 
     @media (max-width: 768px) {
-      header { padding: 16px 20px; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 48px 24px; border-right: none; border-bottom: 1px solid var(--rule); }
-      .hero-right { padding: 36px 24px; }
+      header { padding: 14px 16px; }
+      .hero { grid-template-columns: 1fr; gap: 32px; padding: 36px 16px 28px; }
+      .hero-right { padding-left: 0; border-left: none; border-top: 1px solid #222; padding-top: 24px; }
       .pillars { grid-template-columns: repeat(2, 1fr); }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
-      .section-header { padding: 24px 20px; }
-      footer { flex-direction: column; gap: 20px; text-align: center; }
+      .section-header { padding: 20px 16px 12px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
     }
   </style>
 </head>
@@ -258,75 +206,66 @@
 
   <section class="hero">
     <div class="hero-left">
-      <div>
-        <div class="hero-vol">Vol. I — The Shadow Collection</div>
-        <div class="hero-rule"></div>
-        <h1 class="hero-title">
-          <span class="dark">DARK</span>
-          <span class="fem">FEMININE</span>
-        </h1>
-      </div>
-      <blockquote class="hero-quote">
-        "Quyền lực không cần ánh sáng để tỏa sáng. Bóng tối là nơi nữ tính thực sự ngự trị."
-      </blockquote>
-      <div class="hero-bottom">
-        <div>
-          <div class="hero-stat-num">∞</div>
-          <div class="hero-stat-label">Sức mạnh</div>
-        </div>
-        <div class="hero-divider"></div>
-        <div>
-          <div class="hero-stat-num">I</div>
-          <div class="hero-stat-label">Collection</div>
-        </div>
-        <div class="hero-divider"></div>
-        <div style="max-width:180px">
-          <div style="font-family:'Lora',serif;font-style:italic;font-size:10px;color:var(--cream-dim);line-height:1.8">
-            Bí ẩn. Quyến rũ. Không thể đoán trước.
-          </div>
-        </div>
-      </div>
+      <div class="hero-label">// Style Collection 04 — Shadow Edition</div>
+      <h1 class="hero-title">DARK<br><span>FEMI</span>NINE</h1>
+      <p class="hero-sub">
+        Quyền lực không cần ánh sáng để tỏa sáng.<br>
+        Bí ẩn. Quyến rũ. Không thể đoán trước.
+      </p>
     </div>
-
     <div class="hero-right">
-      <div class="hero-ornament">— ✦ —</div>
-      <div class="hero-desc-block">
-        Dark Feminine không phải là buồn bã — đó là <strong>quyền năng</strong> ẩn sau màn đêm. Mỗi outfit là một tuyên ngôn về sự bí ẩn, sự quyến rũ, và sức mạnh nội tâm không ai có thể chạm tới.
-      </div>
+      <blockquote class="hero-quote">
+        "Quyền lực không cần ánh sáng để tỏa sáng.<br>
+        Bóng tối là nơi nữ tính thực sự ngự trị."
+      </blockquote>
       <div class="hero-keywords">
-        <div class="keyword">Bí ẩn & Quyến rũ</div>
-        <div class="keyword">Tối tăm & Sang trọng</div>
-        <div class="keyword">Mạnh mẽ & Nữ tính</div>
-        <div class="keyword">Không thể đoán trước</div>
+        <div class="keyword">Bí Ẩn & Quyến Rũ</div>
+        <div class="keyword">Tối Tăm & Sang Trọng</div>
+        <div class="keyword">Mạnh Mẽ & Nữ Tính</div>
+        <div class="keyword">Không Thể Đoán Trước</div>
       </div>
-      <div class="hero-ornament" style="font-size:18px;margin-top:8px">✦ ✦ ✦</div>
     </div>
   </section>
 
-  <div class="gold-divider">
-    <div class="gold-divider-line"></div>
-    <div class="gold-divider-center">✦ The Four Pillars ✦</div>
-    <div class="gold-divider-line"></div>
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">DARK FEMININE</span>
+      <span class="ticker-item"><span>✦</span> SHADOW POWER</span>
+      <span class="ticker-item">BÍ ẨN & QUYẾN RŨ</span>
+      <span class="ticker-item"><span>✦</span> VELVET & LACE</span>
+      <span class="ticker-item">CORSET QUEEN</span>
+      <span class="ticker-item"><span>✦</span> FEMME FATALE</span>
+      <span class="ticker-item">DARK FEMININE</span>
+      <span class="ticker-item"><span>✦</span> SHADOW POWER</span>
+      <span class="ticker-item">BÍ ẨN & QUYẾN RŨ</span>
+      <span class="ticker-item"><span>✦</span> VELVET & LACE</span>
+      <span class="ticker-item">CORSET QUEEN</span>
+      <span class="ticker-item"><span>✦</span> FEMME FATALE</span>
+    </div>
+  </div>
+
+  <div class="pillars-header">
+    <span class="pillars-title">// The Four Pillars</span>
   </div>
 
   <div class="pillars">
     <div class="pillar">
-      <div class="pillar-roman">I.</div>
+      <div class="pillar-num">I</div>
       <div class="pillar-name">Bí Ẩn</div>
       <div class="pillar-desc">Tối, sâu thẳm như đêm không trăng — kéo người khác vào mà không cần cố gắng</div>
     </div>
     <div class="pillar">
-      <div class="pillar-roman">II.</div>
+      <div class="pillar-num">II</div>
       <div class="pillar-name">Quyền Năng</div>
       <div class="pillar-desc">Không cần nói to. Sự hiện diện đã nói tất cả. Bodycon, corset, lace — vũ khí của nữ thần bóng tối</div>
     </div>
     <div class="pillar">
-      <div class="pillar-roman">III.</div>
+      <div class="pillar-num">III</div>
       <div class="pillar-name">Sang Trọng</div>
       <div class="pillar-desc">Velvet đen, satin đỏ rượu, chi tiết vàng — sự xa hoa của bóng đêm</div>
     </div>
     <div class="pillar">
-      <div class="pillar-roman">IV.</div>
+      <div class="pillar-num">IV</div>
       <div class="pillar-name">Bất Khuất</div>
       <div class="pillar-desc">Không theo xu hướng. Không xin phép. Đây là aesthetic của những người tự làm chủ bóng tối</div>
     </div>
@@ -334,18 +273,15 @@
 
   <div class="section-header">
     <span class="section-label">The Collection</span>
-    <span class="section-count" id="counter">— looks</span>
+    <span class="section-count" id="counter"></span>
   </div>
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
   <footer>
-    <div class="footer-left">
-      <p>© 2026 Apocalypse Closet</p>
-      <small>APOCALYPSECLOSET.COM</small>
-    </div>
+    <p>© 2026 APOCALYPSE CLOSET</p>
     <div class="footer-links">
-      <a href="index.html">Trang chủ</a>
+      <a href="index.html">Home</a>
       <a href="egirl.html">E-Girl</a>
       <a href="goth.html">Goth</a>
       <a href="punk.html">Punk</a>
@@ -356,18 +292,21 @@
   <script src="outfits.js"></script>
   <script>
     const filtered = outfits.filter(o => o.category === 'Dark Feminine');
-    document.getElementById('counter').textContent = filtered.length + ' looks';
+    document.getElementById('counter').textContent = filtered.length + ' LOOKS';
     const grid = document.getElementById('outfit-grid');
     filtered.forEach((outfit, i) => {
       const card = document.createElement('div');
       card.className = 'outfit-card';
+      card.style.animationDelay = (i * 0.03) + 's';
       card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       card.innerHTML = `
-        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
+          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.tag}"
+          loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
         <div class="outfit-overlay">
-          <span class="outfit-num">${outfit.tag}</span>
-          <span class="outfit-cta">Khám phá look này →</span>
+          <span class="outfit-tag">XEM OUTFIT</span>
+          <div class="outfit-num">${outfit.tag}</div>
         </div>`;
       grid.appendChild(card);
     });

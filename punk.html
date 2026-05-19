@@ -8,332 +8,251 @@
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Special+Elite&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0c0c0c;
-      --yellow: #f5f500;
-      --red: #d10000;
-      --white: #f2efea;
-      --gray: #2a2a2a;
-      --muted: #666;
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: var(--bg);
+      background: var(--black);
       color: var(--white);
-      font-family: 'Special Elite', cursive;
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
       overflow-x: hidden;
     }
-
-    /* NOISE GRAIN */
-    body::after {
+    body::before {
       content: '';
-      position: fixed; inset: 0; z-index: 9999;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-      pointer-events: none; opacity: 0.5; mix-blend-mode: overlay;
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 999; opacity: 0.4;
     }
 
-    /* HEADER */
     header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 12px 28px;
-      background: var(--yellow);
-      border-bottom: 4px solid var(--bg);
-      position: sticky; top: 0; z-index: 200;
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
+      position: sticky; top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
     .back-link {
-      font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700;
-      letter-spacing: 0.15em; color: var(--bg); text-decoration: none;
-      text-transform: uppercase; transition: opacity 0.2s;
+      font-family: 'Space Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .back-link:hover { opacity: 0.6; }
+    .back-link:hover { color: var(--white); }
+    .nav-badge {
+      font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 0.25em;
+      color: var(--white);
+    }
     .nav-stamp {
-      font-family: 'Staatliches', sans-serif; font-size: 26px; letter-spacing: 0.3em;
-      color: var(--bg); text-transform: uppercase;
-      background: var(--red); padding: 2px 16px;
-      transform: rotate(-1deg); display: inline-block;
-    }
-    .nav-right {
-      font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700;
-      color: var(--bg); letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.6;
+      font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.2em;
+      color: var(--red); border: 1px solid var(--red); padding: 4px 12px;
     }
 
-    /* HERO */
+    /* HERO — split layout */
     .hero {
-      padding: 0; position: relative; overflow: hidden;
-      border-bottom: 4px solid var(--yellow);
+      display: grid; grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid #1a1a1a; min-height: 60vh;
     }
-
-    /* Torn paper top edge */
-    .hero-tear {
-      width: 100%; overflow: hidden; line-height: 0; background: var(--yellow);
-    }
-    .hero-tear svg { display: block; width: 100%; height: 32px; }
-
-    .hero-inner {
-      padding: 48px 40px 56px; display: grid;
-      grid-template-columns: 1fr 1fr; gap: 0;
-    }
-    .hero-left { padding-right: 40px; border-right: 3px solid var(--yellow); }
-
-    .hero-issue {
-      font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700;
-      letter-spacing: 0.4em; color: var(--yellow); text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .hero-title {
-      font-family: 'Staatliches', sans-serif;
-      font-size: clamp(80px, 14vw, 180px);
-      line-height: 0.82; letter-spacing: 0.04em; color: var(--white);
-      text-transform: uppercase;
-      text-shadow: 6px 6px 0 var(--red), 12px 12px 0 rgba(213,0,0,0.3);
-    }
-    .hero-title .y { color: var(--yellow); }
-
-    /* Rotated "NOT DEAD" stamp */
-    .hero-stamp {
-      display: inline-block; margin-top: 28px;
-      font-family: 'Staatliches', sans-serif; font-size: 28px; letter-spacing: 0.3em;
-      color: var(--red); border: 4px solid var(--red);
-      padding: 6px 20px; transform: rotate(2deg);
-      text-transform: uppercase; opacity: 0.9;
-    }
-
-    .hero-right {
-      padding-left: 40px;
+    .hero-left {
+      padding: 56px 40px 56px 32px;
+      border-right: 1px solid #1a1a1a;
       display: flex; flex-direction: column; justify-content: space-between;
     }
-
-    .hero-manifesto {
-      font-family: 'IBM Plex Mono', monospace; font-size: 11px;
-      line-height: 2; color: var(--muted); letter-spacing: 0.05em;
+    .hero-label {
+      font-size: 10px; letter-spacing: 0.4em; color: var(--red);
+      text-transform: uppercase; margin-bottom: 16px;
     }
-    .hero-manifesto .em { color: var(--yellow); font-weight: 700; }
-    .hero-manifesto .red { color: var(--red); font-weight: 700; }
-
-    .hero-rules { margin-top: 32px; }
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(80px, 14vw, 180px);
+      line-height: 0.82; letter-spacing: 0.04em;
+      text-shadow: 4px 4px 0 var(--red);
+    }
+    .hero-stamp {
+      display: inline-block; margin-top: 24px;
+      font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.3em;
+      color: var(--red); border: 3px solid var(--red);
+      padding: 6px 18px; transform: rotate(2deg);
+      text-transform: uppercase;
+    }
+    .hero-right {
+      padding: 56px 32px 56px 40px;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .hero-manifesto {
+      font-size: 11px; line-height: 2.2; color: var(--muted); letter-spacing: 0.06em;
+    }
+    .hero-manifesto .em { color: var(--white); font-weight: 700; }
+    .hero-manifesto .accent { color: var(--red); font-weight: 700; }
+    .hero-rules { display: flex; flex-direction: column; gap: 0; margin-top: 32px; }
     .rule {
-      display: flex; align-items: baseline; gap: 12px;
-      padding: 10px 0; border-bottom: 1px solid var(--gray);
+      display: flex; align-items: baseline; gap: 16px;
+      padding: 12px 0; border-bottom: 1px solid #1a1a1a;
     }
     .rule:last-child { border-bottom: none; }
     .rule-num {
-      font-family: 'Staatliches', sans-serif; font-size: 28px; color: var(--yellow);
-      line-height: 1; min-width: 32px;
+      font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--red);
+      line-height: 1; min-width: 28px;
     }
-    .rule-text {
-      font-family: 'IBM Plex Mono', monospace; font-size: 10px;
-      color: var(--white); letter-spacing: 0.05em; line-height: 1.6;
-    }
+    .rule-text { font-size: 10px; color: var(--muted); letter-spacing: 0.06em; line-height: 1.8; }
 
-    /* CHAOS TICKER — alternating direction */
-    .ticker-wrap { overflow: hidden; border-top: 2px solid var(--red); border-bottom: 2px solid var(--red); }
-    .ticker-row { overflow: hidden; background: var(--red); padding: 8px 0; }
-    .ticker-row.inv { background: var(--bg); border-top: 1px solid var(--gray); }
+    /* TWO-ROW TICKER (chaos) */
+    .ticker-wrap { overflow: hidden; border-top: 1px solid var(--red); border-bottom: 1px solid var(--red); }
+    .ticker-row { overflow: hidden; padding: 9px 0; background: var(--grey); }
+    .ticker-row.inv { background: var(--black); border-top: 1px solid #1a1a1a; }
     .ticker-inner { display: flex; gap: 48px; white-space: nowrap; }
     .ticker-inner.fw { animation: ticker-fwd 16s linear infinite; }
     .ticker-inner.rv { animation: ticker-rev 20s linear infinite; }
-    .ticker-item {
-      font-family: 'Staatliches', sans-serif; font-size: 18px; letter-spacing: 0.4em;
-      color: var(--bg); text-transform: uppercase;
-    }
-    .ticker-row.inv .ticker-item { color: var(--yellow); }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
+    .ticker-row.inv .ticker-item { color: #333; }
+    .ticker-item span { color: var(--red); }
     @keyframes ticker-fwd { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     @keyframes ticker-rev { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 
     /* CREED */
-    .creed-header {
-      padding: 32px 40px 0;
-      display: flex; align-items: center; gap: 20px;
+    .pillars-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 20px;
     }
-    .creed-line { flex: 1; height: 2px; background: var(--gray); }
-    .creed-title {
-      font-family: 'Staatliches', sans-serif; font-size: 20px; letter-spacing: 0.4em;
-      color: var(--yellow); text-transform: uppercase; white-space: nowrap;
-    }
+    .pillars-title { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
 
-    .creed { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0 0 0; }
-    .creed-item {
-      padding: 28px 24px 32px;
-      border-right: 2px solid var(--gray);
-      position: relative; transition: all 0.3s; overflow: hidden;
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #1a1a1a; }
+    .pillar {
+      padding: 32px 24px; border-right: 1px solid #1a1a1a;
+      transition: background 0.2s; position: relative; overflow: hidden;
     }
-    .creed-item:last-child { border-right: none; }
-    .creed-item:hover { background: rgba(245,245,0,0.03); }
-    .creed-item::before {
-      content: '';
-      position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
-      background: var(--yellow); transform: scaleX(0); transform-origin: left;
-      transition: transform 0.4s;
+    .pillar:last-child { border-right: none; }
+    .pillar:hover { background: var(--grey); }
+    .pillar::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+      background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
     }
-    .creed-item:hover::before { transform: scaleX(1); }
-    .creed-icon {
-      font-family: 'Staatliches', sans-serif; font-size: 36px; color: var(--red);
-      margin-bottom: 12px; display: block; line-height: 1;
+    .pillar:hover::after { transform: scaleX(1); }
+    .pillar-icon {
+      font-size: 28px; color: var(--red); margin-bottom: 12px; display: block; line-height: 1;
     }
-    .creed-name {
-      font-family: 'Staatliches', sans-serif; font-size: 22px; letter-spacing: 0.1em;
-      color: var(--yellow); margin-bottom: 8px; text-transform: uppercase;
+    .pillar-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.1em;
+      color: var(--white); margin-bottom: 10px; text-transform: uppercase;
     }
-    .creed-desc {
-      font-family: 'IBM Plex Mono', monospace; font-size: 9px;
-      color: var(--muted); line-height: 2; letter-spacing: 0.04em;
-    }
+    .pillar-desc { font-size: 10px; color: var(--muted); line-height: 2; letter-spacing: 0.04em; }
 
-    /* SECTION HEADER — zine style */
+    /* SECTION HEADER */
     .section-header {
-      display: flex; align-items: center;
-      padding: 0;
-      border-top: 3px solid var(--gray);
-      border-bottom: 3px solid var(--yellow);
+      display: flex; align-items: stretch; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
     }
     .section-label-block {
-      flex: 1; padding: 18px 40px; background: var(--bg);
-      font-family: 'Staatliches', sans-serif; font-size: 24px; letter-spacing: 0.2em;
-      color: var(--white); text-transform: uppercase;
+      flex: 1; padding: 20px 32px; display: flex; align-items: center;
     }
-    .section-count-block {
-      background: var(--yellow); padding: 18px 28px;
-      font-family: 'Staatliches', sans-serif; font-size: 24px; letter-spacing: 0.2em;
-      color: var(--bg); text-transform: uppercase;
-    }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+    .section-count-block { background: var(--red); padding: 20px 28px; display: flex; align-items: center; }
+    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--white); letter-spacing: 0.1em; }
 
     /* OUTFIT GRID */
-    .outfit-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 3px; background: var(--gray);
-    }
+    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 0 2px 2px; }
     .outfit-card {
       position: relative; overflow: hidden; aspect-ratio: 3/4;
-      background: #111; cursor: pointer;
+      background: var(--grey); cursor: pointer;
+      opacity: 0; animation: fadeIn 0.4s ease forwards;
     }
     .outfit-card img {
       width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.5s, filter 0.3s;
-      filter: saturate(0.7) contrast(1.1);
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
+      filter: saturate(0.85);
     }
-    .outfit-card:hover img {
-      transform: scale(1.05);
-      filter: saturate(1) contrast(1.15) brightness(0.95);
-    }
+    .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
     .outfit-card::after {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(12,12,12,0.9) 0%, rgba(209,0,0,0.15) 40%, transparent 60%);
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
       opacity: 0; transition: opacity 0.3s;
     }
     .outfit-card:hover::after { opacity: 1; }
-    /* Yellow top border on hover */
-    .outfit-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0;
-      height: 5px; background: var(--yellow); z-index: 3;
-      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
-    }
-    .outfit-card:hover::before { transform: scaleX(1); }
     .outfit-overlay {
-      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
-      padding: 14px 16px;
-      transform: translateY(100%); transition: transform 0.3s;
+      position: absolute; bottom: 16px; left: 16px; z-index: 2;
+      opacity: 0; transform: translateY(8px); transition: all 0.3s;
     }
-    .outfit-card:hover .outfit-overlay { transform: translateY(0); }
-    .outfit-num {
-      font-family: 'Staatliches', sans-serif; font-size: 28px; color: var(--yellow);
-      display: block; letter-spacing: 0.1em; line-height: 1;
+    .outfit-card:hover .outfit-overlay { opacity: 1; transform: translateY(0); }
+    .outfit-tag {
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-    .outfit-cta {
-      font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700;
-      letter-spacing: 0.25em; color: var(--white); text-transform: uppercase;
-      display: block; margin-top: 4px;
-    }
+    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
     /* FOOTER */
     footer {
-      background: var(--yellow); padding: 0;
-      border-top: 4px solid var(--bg);
+      padding: 32px; border-top: 1px solid #1a1a1a;
+      display: flex; align-items: center; justify-content: space-between;
     }
-    .footer-inner {
-      display: flex; align-items: stretch; flex-wrap: wrap;
-    }
-    .footer-brand {
-      flex: 1; padding: 24px 40px; border-right: 3px solid var(--bg);
-      display: flex; align-items: center;
-    }
-    .footer-brand p {
-      font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700;
-      letter-spacing: 0.2em; color: var(--bg); text-transform: uppercase;
-    }
-    .footer-links-block { padding: 24px 40px; display: flex; align-items: center; }
-    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    footer p { font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+    .footer-links { display: flex; gap: 24px; }
     .footer-links a {
-      font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700;
-      letter-spacing: 0.2em; color: var(--bg); text-decoration: none;
-      text-transform: uppercase; transition: opacity 0.2s;
+      font-size: 10px; letter-spacing: 0.15em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .footer-links a:hover { opacity: 0.5; text-decoration: line-through; }
-    .footer-anarchy {
-      font-family: 'Staatliches', sans-serif; font-size: 48px; color: var(--red);
-      padding: 8px 28px; border-left: 3px solid var(--bg);
-      display: flex; align-items: center;
-    }
+    .footer-links a:hover { color: var(--white); }
 
     @media (max-width: 768px) {
-      header { padding: 10px 16px; }
-      .hero-inner { grid-template-columns: 1fr; gap: 32px; }
-      .hero-left { padding-right: 0; border-right: none; border-bottom: 3px solid var(--yellow); padding-bottom: 28px; }
-      .hero-right { padding-left: 0; }
-      .creed { grid-template-columns: repeat(2, 1fr); }
+      header { padding: 14px 16px; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 36px 16px 28px; border-right: none; border-bottom: 1px solid #1a1a1a; }
+      .hero-right { padding: 28px 16px; }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-inner { flex-direction: column; }
-      .footer-brand { border-right: none; border-bottom: 3px solid var(--bg); }
-      .footer-anarchy { border-left: none; border-top: 3px solid var(--bg); justify-content: center; }
+      .section-header { flex-direction: column; }
+      footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
     }
   </style>
 </head>
 <body>
   <header>
     <a class="back-link" href="index.html">← Back to AC</a>
-    <div class="nav-stamp">PUNK</div>
-    <div class="nav-right">Zine Vol.04</div>
+    <span class="nav-badge">Punk / Grunge</span>
+    <span class="nav-stamp">NOT DEAD</span>
   </header>
 
   <section class="hero">
-    <div class="hero-tear">
-      <svg viewBox="0 0 1440 32" preserveAspectRatio="none" fill="#f5f500">
-        <path d="M0,0 L60,8 L120,2 L180,10 L240,4 L300,12 L360,3 L420,9 L480,1 L540,11 L600,5 L660,13 L720,2 L780,10 L840,4 L900,12 L960,6 L1020,14 L1080,3 L1140,11 L1200,5 L1260,9 L1320,2 L1380,8 L1440,0 L1440,32 L0,32 Z"/>
-      </svg>
-    </div>
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="hero-issue">// ISSUE NO.04 — APOCALYPSE CLOSET ZINE</div>
-        <h1 class="hero-title">P<span class="y">U</span>NK</h1>
+    <div class="hero-left">
+      <div>
+        <div class="hero-label">// Issue No.04 — Apocalypse Closet Zine</div>
+        <h1 class="hero-title">PUNK</h1>
         <div class="hero-stamp">NOT DEAD</div>
       </div>
-      <div class="hero-right">
-        <p class="hero-manifesto">
-          Punk không phải là âm nhạc.<br>
-          Punk không phải là quần áo.<br>
-          Punk là <span class="em">thái độ</span>.<br><br>
-          Là nói <span class="red">KHÔNG</span> khi cả thế giới nói có.<br>
-          Là mặc những gì bạn muốn mặc — không cần ai cho phép.<br>
-          Là <span class="em">phá vỡ</span> quy tắc vì quy tắc xứng đáng bị phá.
-        </p>
-        <div class="hero-rules">
-          <div class="rule">
-            <span class="rule-num">1.</span>
-            <span class="rule-text">Không có quy tắc. (Trừ rule này.)</span>
-          </div>
-          <div class="rule">
-            <span class="rule-num">2.</span>
-            <span class="rule-text">DIY hoặc chết. Tự làm, tự sống, tự thở.</span>
-          </div>
-          <div class="rule">
-            <span class="rule-num">3.</span>
-            <span class="rule-text">Chains, studs, safety pins — vũ khí thẩm mỹ.</span>
-          </div>
-          <div class="rule">
-            <span class="rule-num">4.</span>
-            <span class="rule-text">Đen + vàng + đỏ. Màu của sự nổi loạn.</span>
-          </div>
+    </div>
+    <div class="hero-right">
+      <p class="hero-manifesto">
+        Punk không phải là âm nhạc.<br>
+        Punk không phải là quần áo.<br>
+        Punk là <span class="em">thái độ</span>.<br><br>
+        Là nói <span class="accent">KHÔNG</span> khi cả thế giới nói có.<br>
+        Là mặc những gì bạn muốn — không cần ai cho phép.<br>
+        Là <span class="em">phá vỡ</span> quy tắc vì quy tắc xứng đáng bị phá.
+      </p>
+      <div class="hero-rules">
+        <div class="rule">
+          <span class="rule-num">1.</span>
+          <span class="rule-text">Không có quy tắc. (Trừ rule này.)</span>
+        </div>
+        <div class="rule">
+          <span class="rule-num">2.</span>
+          <span class="rule-text">DIY hoặc chết. Tự làm, tự sống, tự thở.</span>
+        </div>
+        <div class="rule">
+          <span class="rule-num">3.</span>
+          <span class="rule-text">Chains, studs, safety pins — vũ khí thẩm mỹ.</span>
+        </div>
+        <div class="rule">
+          <span class="rule-num">4.</span>
+          <span class="rule-text">Không xin lỗi. Không giải thích. Bao giờ hết.</span>
         </div>
       </div>
     </div>
@@ -343,84 +262,79 @@
     <div class="ticker-row">
       <div class="ticker-inner fw">
         <span class="ticker-item">PUNK NOT DEAD</span>
-        <span class="ticker-item">★ ANARCHY FASHION</span>
+        <span class="ticker-item"><span>★</span> ANARCHY FASHION</span>
         <span class="ticker-item">DIY OR DIE</span>
-        <span class="ticker-item">★ REBEL STYLE</span>
+        <span class="ticker-item"><span>★</span> REBEL STYLE</span>
         <span class="ticker-item">NO RULES</span>
-        <span class="ticker-item">★ SPIKE & CHAINS</span>
+        <span class="ticker-item"><span>★</span> SPIKE & CHAINS</span>
         <span class="ticker-item">PUNK NOT DEAD</span>
-        <span class="ticker-item">★ ANARCHY FASHION</span>
+        <span class="ticker-item"><span>★</span> ANARCHY FASHION</span>
         <span class="ticker-item">DIY OR DIE</span>
-        <span class="ticker-item">★ REBEL STYLE</span>
+        <span class="ticker-item"><span>★</span> REBEL STYLE</span>
       </div>
     </div>
     <div class="ticker-row inv">
       <div class="ticker-inner rv">
         <span class="ticker-item">DESTROY</span>
-        <span class="ticker-item">✦ RESIST</span>
+        <span class="ticker-item">RESIST</span>
         <span class="ticker-item">REFUSE</span>
-        <span class="ticker-item">✦ RECLAIM</span>
+        <span class="ticker-item">RECLAIM</span>
         <span class="ticker-item">REVOLT</span>
-        <span class="ticker-item">✦ REBEL</span>
+        <span class="ticker-item">REBEL</span>
         <span class="ticker-item">DESTROY</span>
-        <span class="ticker-item">✦ RESIST</span>
+        <span class="ticker-item">RESIST</span>
         <span class="ticker-item">REFUSE</span>
-        <span class="ticker-item">✦ RECLAIM</span>
+        <span class="ticker-item">RECLAIM</span>
       </div>
     </div>
   </div>
 
-  <div class="creed-header">
-    <div class="creed-line"></div>
-    <div class="creed-title">// THE PUNK CREED //</div>
-    <div class="creed-line"></div>
+  <div class="pillars-header">
+    <span class="pillars-title">// The Punk Creed</span>
   </div>
 
-  <div class="creed">
-    <div class="creed-item">
-      <span class="creed-icon">⚡</span>
-      <div class="creed-name">DIY Forever</div>
-      <div class="creed-desc">Tự distress, tự vá, tự paint. Mỗi outfit là tác phẩm duy nhất trên đời</div>
+  <div class="pillars">
+    <div class="pillar">
+      <span class="pillar-icon">⚡</span>
+      <div class="pillar-name">DIY Forever</div>
+      <div class="pillar-desc">Tự distress, tự vá, tự paint. Mỗi outfit là tác phẩm duy nhất trên đời</div>
     </div>
-    <div class="creed-item">
-      <span class="creed-icon">⛓</span>
-      <div class="creed-name">Hardware &amp; Edge</div>
-      <div class="creed-desc">Safety pins, studs, spike chokers — phụ kiện của những người không chịu im lặng</div>
+    <div class="pillar">
+      <span class="pillar-icon">⛓</span>
+      <div class="pillar-name">Hardware & Edge</div>
+      <div class="pillar-desc">Safety pins, studs, spike chokers — phụ kiện của những người không chịu im lặng</div>
     </div>
-    <div class="creed-item">
-      <span class="creed-icon">✂</span>
-      <div class="creed-name">Ripped &amp; Raw</div>
-      <div class="creed-desc">Jeans rách, áo torn, boots cũ — vẻ đẹp của sự không hoàn hảo có chủ đích</div>
+    <div class="pillar">
+      <span class="pillar-icon">✂</span>
+      <div class="pillar-name">Ripped & Raw</div>
+      <div class="pillar-desc">Jeans rách, áo torn, boots cũ — vẻ đẹp của sự không hoàn hảo có chủ đích</div>
     </div>
-    <div class="creed-item">
-      <span class="creed-icon">🖤</span>
-      <div class="creed-name">No Apologies</div>
-      <div class="creed-desc">Không giải thích. Không xin lỗi. Không cần sự chấp thuận của ai</div>
+    <div class="pillar">
+      <span class="pillar-icon">🖤</span>
+      <div class="pillar-name">No Apologies</div>
+      <div class="pillar-desc">Không giải thích. Không xin lỗi. Không cần sự chấp thuận của ai</div>
     </div>
   </div>
 
   <div class="section-header">
-    <div class="section-label-block">// PUNK LOOKS</div>
-    <div class="section-count-block" id="counter">— LOOKS</div>
+    <div class="section-label-block">
+      <span class="section-label">// Punk Looks</span>
+    </div>
+    <div class="section-count-block">
+      <span class="section-count" id="counter"></span>
+    </div>
   </div>
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
   <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p>© 2026 APOCALYPSE CLOSET — APOCALYPSECLOSET.COM</p>
-      </div>
-      <div class="footer-links-block">
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="egirl.html">E-Girl</a>
-          <a href="dark-feminine.html">Dark Fem</a>
-          <a href="goth.html">Goth</a>
-          <a href="baddie-streetwear.html">Baddie</a>
-        </div>
-      </div>
-      <div class="footer-anarchy">Ⓐ</div>
+    <p>© 2026 APOCALYPSE CLOSET</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="egirl.html">E-Girl</a>
+      <a href="dark-feminine.html">Dark Fem</a>
+      <a href="goth.html">Goth</a>
+      <a href="baddie-streetwear.html">Baddie</a>
     </div>
   </footer>
 
@@ -432,13 +346,16 @@
     filtered.forEach((outfit, i) => {
       const card = document.createElement('div');
       card.className = 'outfit-card';
+      card.style.animationDelay = (i * 0.03) + 's';
       card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       card.innerHTML = `
-        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
+          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.tag}"
+          loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
         <div class="outfit-overlay">
-          <span class="outfit-num">${outfit.tag}</span>
-          <span class="outfit-cta">// Xem outfit →</span>
+          <span class="outfit-tag">XEM OUTFIT</span>
+          <div class="outfit-num">${outfit.tag}</div>
         </div>`;
       grid.appendChild(card);
     });

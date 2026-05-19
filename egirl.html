@@ -4,327 +4,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Girl / Alt Girl — Apocalypse Closet</title>
-  <meta name="description" content="E-Girl aesthetic — internet culture, alt fashion, bold và unapologetic.">
+  <meta name="description" content="E-Girl aesthetic — internet culture, alt fashion, bold và unapologetic. Apocalypse Closet.">
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #050509;
-      --pink: #ff1f6e;
-      --cyan: #00e5ff;
-      --yellow: #ffe500;
+      --black: #0a0a0a;
       --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
       --muted: #444;
-      --glow-pink: 0 0 20px rgba(255,31,110,0.6), 0 0 60px rgba(255,31,110,0.2);
-      --glow-cyan: 0 0 20px rgba(0,229,255,0.6), 0 0 60px rgba(0,229,255,0.2);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
-      background: var(--bg);
+      background: var(--black);
       color: var(--white);
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
       cursor: crosshair;
       overflow-x: hidden;
     }
-
-    /* SCANLINES OVERLAY */
     body::before {
       content: '';
-      position: fixed; inset: 0; z-index: 9999;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
-      pointer-events: none;
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 999; opacity: 0.4;
     }
 
-    /* NOISE TEXTURE */
-    body::after {
-      content: '';
-      position: fixed; inset: 0; z-index: 9998;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none; opacity: 0.4;
-    }
-
-    /* HEADER */
     header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 14px 28px;
-      border-bottom: 1px solid rgba(255,31,110,0.3);
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
       position: sticky; top: 0;
-      background: rgba(5,5,9,0.92);
-      backdrop-filter: blur(12px);
-      z-index: 200;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
     }
     .back-link {
-      color: var(--muted); font-size: 10px; letter-spacing: 0.25em;
-      text-decoration: none; text-transform: uppercase; transition: all 0.2s;
+      font-family: 'Space Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .back-link:hover { color: var(--pink); text-shadow: var(--glow-pink); }
+    .back-link:hover { color: var(--white); }
     .nav-badge {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 9px; font-weight: 700; letter-spacing: 0.3em;
-      color: var(--pink); border: 1px solid var(--pink);
-      padding: 5px 14px; text-transform: uppercase;
-      text-shadow: var(--glow-pink);
-      box-shadow: inset 0 0 12px rgba(255,31,110,0.1), var(--glow-pink);
-      animation: pulse-border 2s ease-in-out infinite;
+      font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 0.25em;
+      color: var(--white);
     }
-    @keyframes pulse-border {
-      0%, 100% { border-color: var(--pink); box-shadow: inset 0 0 12px rgba(255,31,110,0.1), 0 0 10px rgba(255,31,110,0.3); }
-      50% { border-color: var(--cyan); box-shadow: inset 0 0 12px rgba(0,229,255,0.1), 0 0 10px rgba(0,229,255,0.3); }
-    }
+    .nav-issue { font-size: 10px; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; }
 
-    /* HERO */
+    /* HERO — left-aligned with grid bg feel */
     .hero {
-      min-height: 92vh;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 60px 40px;
+      padding: 56px 32px 40px;
+      border-bottom: 1px solid #1a1a1a;
       position: relative; overflow: hidden;
     }
-    .hero-bg-grid {
+    /* subtle grid bg */
+    .hero::before {
+      content: '';
       position: absolute; inset: 0;
       background-image:
-        linear-gradient(rgba(255,31,110,0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,31,110,0.05) 1px, transparent 1px);
+        linear-gradient(rgba(192,57,43,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(192,57,43,0.04) 1px, transparent 1px);
       background-size: 60px 60px;
-      animation: grid-move 20s linear infinite;
+      pointer-events: none;
     }
-    @keyframes grid-move { from { transform: translateY(0); } to { transform: translateY(60px); } }
-
-    .hero-glow-orb {
-      position: absolute; width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,31,110,0.12) 0%, transparent 70%);
-      top: -100px; right: -100px; pointer-events: none;
-      animation: orb-float 6s ease-in-out infinite;
+    .hero-label {
+      font-size: 10px; letter-spacing: 0.4em; color: var(--red);
+      text-transform: uppercase; margin-bottom: 12px; position: relative;
     }
-    .hero-glow-orb2 {
-      position: absolute; width: 400px; height: 400px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,229,255,0.08) 0%, transparent 70%);
-      bottom: 0; left: -100px; pointer-events: none;
-      animation: orb-float 8s ease-in-out infinite reverse;
-    }
-    @keyframes orb-float {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(20px, -20px); }
-    }
-
-    .hero-eyebrow {
-      font-size: 10px; letter-spacing: 0.6em; color: var(--cyan);
-      text-transform: uppercase; margin-bottom: 20px;
-      text-shadow: var(--glow-cyan);
-    }
-
     .hero-title {
-      font-family: 'Orbitron', sans-serif;
-      font-size: clamp(52px, 9vw, 120px);
-      font-weight: 900; line-height: 0.88;
-      margin-bottom: 32px; position: relative; z-index: 1;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(64px, 10vw, 130px);
+      line-height: 0.88; letter-spacing: -0.01em;
+      position: relative;
     }
-    .glitch {
-      position: relative; display: inline-block;
-      color: var(--pink);
-      text-shadow: var(--glow-pink);
-      animation: glitch-main 4s infinite;
-    }
-    .glitch::before {
-      content: attr(data-text);
-      position: absolute; top: 0; left: 0;
-      color: var(--cyan); clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-      transform: translate(-3px, 0);
-      animation: glitch-top 4s infinite;
-      text-shadow: var(--glow-cyan);
-    }
-    .glitch::after {
-      content: attr(data-text);
-      position: absolute; top: 0; left: 0;
-      color: var(--yellow); clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
-      transform: translate(3px, 0);
-      animation: glitch-bottom 4s infinite;
-    }
-    @keyframes glitch-main {
-      0%, 90%, 100% { transform: none; }
-      91% { transform: skewX(-2deg); }
-      93% { transform: skewX(2deg); }
-    }
-    @keyframes glitch-top {
-      0%, 88%, 100% { transform: translate(-3px, 0); opacity: 0; }
-      89% { opacity: 1; transform: translate(-6px, -2px); }
-      91% { opacity: 1; transform: translate(6px, 2px); }
-      93% { opacity: 0; }
-    }
-    @keyframes glitch-bottom {
-      0%, 88%, 100% { transform: translate(3px, 0); opacity: 0; }
-      90% { opacity: 1; transform: translate(6px, 2px); }
-      92% { opacity: 1; transform: translate(-4px, -2px); }
-      93% { opacity: 0; }
-    }
-    .hero-title .line2 { color: var(--cyan); text-shadow: var(--glow-cyan); display: block; }
-    .hero-title .line3 { color: var(--white); display: block; }
-
+    .hero-title span { color: var(--red); }
     .hero-bottom {
-      display: flex; align-items: flex-end; gap: 60px; margin-top: 20px; z-index: 1;
+      display: flex; align-items: flex-end; gap: 60px; margin-top: 24px; position: relative;
     }
-    .hero-desc {
-      font-size: 10px; color: var(--muted); letter-spacing: 0.08em;
-      line-height: 2.2; max-width: 360px;
+    .hero-sub {
+      font-size: 11px; color: var(--muted); letter-spacing: 0.06em; line-height: 2; max-width: 360px;
     }
-    .hero-desc span { color: var(--pink); }
-
-    .hero-stats { display: flex; gap: 32px; }
-    .stat-block { text-align: center; }
+    .hero-sub span { color: var(--white); }
+    .hero-stats { display: flex; gap: 0; }
+    .stat-block {
+      text-align: center; padding: 0 28px; border-right: 1px solid #222;
+    }
+    .stat-block:first-child { padding-left: 0; }
+    .stat-block:last-child { border-right: none; }
     .stat-num {
-      font-family: 'Orbitron', sans-serif; font-size: 40px; font-weight: 900;
-      color: var(--pink); text-shadow: var(--glow-pink); line-height: 1;
+      font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--red); line-height: 1;
     }
-    .stat-num.c { color: var(--cyan); text-shadow: var(--glow-cyan); }
-    .stat-label { font-size: 8px; letter-spacing: 0.3em; color: var(--muted); margin-top: 6px; text-transform: uppercase; }
+    .stat-label { font-size: 9px; letter-spacing: 0.3em; color: var(--muted); margin-top: 4px; text-transform: uppercase; }
 
     /* TICKER */
     .ticker {
-      overflow: hidden; padding: 12px 0;
-      border-top: 1px solid rgba(255,31,110,0.4);
-      border-bottom: 1px solid rgba(255,31,110,0.4);
-      background: linear-gradient(90deg, transparent, rgba(255,31,110,0.06), transparent);
+      overflow: hidden;
+      border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      padding: 10px 0; background: var(--grey);
     }
-    .ticker-inner { display: flex; gap: 56px; animation: ticker 22s linear infinite; white-space: nowrap; }
-    .ticker-item {
-      font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
-      letter-spacing: 0.4em; color: var(--pink); text-transform: uppercase;
-      text-shadow: var(--glow-pink);
-    }
-    .ticker-item.c { color: var(--cyan); text-shadow: var(--glow-cyan); }
+    .ticker-inner { display: flex; gap: 48px; animation: ticker 20s linear infinite; white-space: nowrap; }
+    .ticker-item { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
+    .ticker-item span { color: var(--red); }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* VIBES BAR */
-    .vibes {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+    /* VIBES */
+    .pillars-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 20px;
     }
-    .vibe {
-      padding: 28px 20px; border-right: 1px solid rgba(255,255,255,0.05);
-      position: relative; transition: background 0.3s;
+    .pillars-title { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #1a1a1a; }
+    .pillar {
+      padding: 32px 24px; border-right: 1px solid #1a1a1a;
+      transition: background 0.2s;
     }
-    .vibe:hover { background: rgba(255,31,110,0.04); }
-    .vibe:last-child { border-right: none; }
-    .vibe-num {
-      font-family: 'Orbitron', sans-serif; font-size: 9px;
-      color: var(--muted); letter-spacing: 0.3em; margin-bottom: 12px;
+    .pillar:last-child { border-right: none; }
+    .pillar:hover { background: var(--grey); }
+    .pillar-num {
+      font-family: 'Space Mono', monospace; font-size: 11px; color: var(--red);
+      letter-spacing: 0.2em; margin-bottom: 12px;
     }
-    .vibe-name {
-      font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
-      margin-bottom: 8px; letter-spacing: 0.1em;
+    .pillar-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.08em;
+      color: var(--white); margin-bottom: 10px; text-transform: uppercase;
     }
-    .vibe-desc { font-size: 9px; color: var(--muted); line-height: 1.9; letter-spacing: 0.04em; }
-    .vibe:nth-child(1) .vibe-name { color: var(--pink); }
-    .vibe:nth-child(2) .vibe-name { color: var(--cyan); }
-    .vibe:nth-child(3) .vibe-name { color: var(--yellow); }
-    .vibe:nth-child(4) .vibe-name { color: var(--white); }
+    .pillar-desc { font-size: 10px; color: var(--muted); line-height: 2; letter-spacing: 0.04em; }
 
     /* SECTION HEADER */
     .section-header {
-      padding: 24px 32px; display: flex; align-items: center;
-      justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 32px 16px; border-top: 1px solid #1a1a1a;
     }
-    .section-label { font-size: 9px; letter-spacing: 0.5em; color: var(--muted); text-transform: uppercase; }
-    .section-count {
-      font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
-      color: var(--pink); text-shadow: var(--glow-pink);
-    }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
+    .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
 
     /* OUTFIT GRID */
-    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; padding: 3px; }
+    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 0 2px 2px; }
     .outfit-card {
       position: relative; overflow: hidden; aspect-ratio: 3/4;
-      background: #0d0d12; cursor: pointer;
+      background: var(--grey); cursor: pointer;
+      opacity: 0; animation: fadeIn 0.4s ease forwards;
     }
     .outfit-card img {
       width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.6s, filter 0.4s;
-      filter: saturate(0.8) brightness(0.95);
+      transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
+      filter: saturate(0.85);
     }
-    .outfit-card:hover img {
-      transform: scale(1.07);
-      filter: saturate(1.4) brightness(1.05) hue-rotate(10deg);
-    }
-    .outfit-card::before {
-      content: ''; position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(to top, rgba(255,31,110,0.7) 0%, rgba(0,229,255,0.1) 40%, transparent 65%);
-      opacity: 0; transition: opacity 0.4s;
-    }
-    .outfit-card:hover::before { opacity: 1; }
-    /* RGB split on hover */
+    .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
     .outfit-card::after {
-      content: ''; position: absolute; inset: 0; z-index: 2;
-      mix-blend-mode: screen; opacity: 0;
-      background: linear-gradient(45deg, rgba(255,0,100,0.15), rgba(0,229,255,0.15));
-      transition: opacity 0.4s;
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
     }
     .outfit-card:hover::after { opacity: 1; }
     .outfit-overlay {
-      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
-      padding: 16px; background: linear-gradient(to top, rgba(5,5,9,0.95), transparent);
-      transform: translateY(100%); transition: transform 0.3s ease;
+      position: absolute; bottom: 16px; left: 16px; z-index: 2;
+      opacity: 0; transform: translateY(8px); transition: all 0.3s;
     }
-    .outfit-card:hover .outfit-overlay { transform: translateY(0); }
+    .outfit-card:hover .outfit-overlay { opacity: 1; transform: translateY(0); }
     .outfit-tag {
-      font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase;
-      color: var(--pink); font-weight: 700; text-shadow: var(--glow-pink);
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-    .outfit-num {
-      font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: 900;
-      color: var(--white); line-height: 1.2; margin-top: 4px;
-    }
+    .outfit-num { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* FOOTER */
     footer {
-      padding: 28px 32px; border-top: 1px solid rgba(255,31,110,0.3);
+      padding: 32px; border-top: 1px solid #1a1a1a;
       display: flex; align-items: center; justify-content: space-between;
-      background: rgba(255,31,110,0.02);
     }
-    footer p { font-size: 9px; color: var(--muted); letter-spacing: 0.2em; }
+    footer p { font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
     .footer-links { display: flex; gap: 24px; }
     .footer-links a {
-      font-size: 9px; letter-spacing: 0.2em; color: var(--muted);
-      text-decoration: none; transition: all 0.2s; text-transform: uppercase;
+      font-size: 10px; letter-spacing: 0.15em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase; transition: color 0.15s;
     }
-    .footer-links a:hover { color: var(--pink); text-shadow: var(--glow-pink); }
+    .footer-links a:hover { color: var(--white); }
 
     @media (max-width: 768px) {
-      header { padding: 12px 16px; }
-      .hero { padding: 40px 20px; min-height: auto; }
+      header { padding: 14px 16px; }
+      .hero { padding: 36px 16px 28px; }
       .hero-bottom { flex-direction: column; gap: 24px; }
-      .vibes { grid-template-columns: repeat(2, 1fr); }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
-      footer { flex-direction: column; gap: 16px; text-align: center; }
+      .section-header { padding: 20px 16px 12px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <a class="back-link" href="index.html">← apocalypse closet</a>
-    <div class="nav-badge">E-GIRL / ALT GIRL</div>
+    <a class="back-link" href="index.html">← Apocalypse Closet</a>
+    <span class="nav-badge">E-Girl / Alt Girl</span>
+    <span class="nav-issue">No. 02</span>
   </header>
 
   <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow-orb"></div>
-    <div class="hero-glow-orb2"></div>
-    <div class="hero-eyebrow">// STYLE COLLECTION 02 — DIGITAL NATIVE //</div>
-    <h1 class="hero-title">
-      <span class="glitch" data-text="ALT">ALT</span>
-      <span class="line2">GIRL</span>
-      <span class="line3">ERA_</span>
-    </h1>
+    <div class="hero-label">// Style Collection 02 — Digital Native</div>
+    <h1 class="hero-title">ALT<br><span>GIRL</span><br>ERA_</h1>
     <div class="hero-bottom">
-      <p class="hero-desc">Internet-born. Reality-breaking.<br>E-Girl không phải xu hướng — đây là cuộc cách mạng aesthetic của thế hệ <span>digital native</span>. Không xin lỗi. Không giải thích.</p>
+      <p class="hero-sub">
+        Internet-born. Reality-breaking.<br>
+        E-Girl không phải xu hướng — đây là cuộc cách mạng aesthetic của thế hệ <span>digital native</span>. Không xin lỗi. Không giải thích.
+      </p>
       <div class="hero-stats">
         <div class="stat-block">
           <div class="stat-num">∞</div>
           <div class="stat-label">Mix không giới hạn</div>
         </div>
         <div class="stat-block">
-          <div class="stat-num c">24/7</div>
+          <div class="stat-num">24/7</div>
           <div class="stat-label">Luôn online</div>
         </div>
       </div>
@@ -334,56 +227,56 @@
   <div class="ticker">
     <div class="ticker-inner">
       <span class="ticker-item">E-GIRL ERA</span>
-      <span class="ticker-item c">✦ ALT FASHION</span>
+      <span class="ticker-item"><span>✦</span> ALT FASHION</span>
       <span class="ticker-item">INTERNET BADDIE</span>
-      <span class="ticker-item c">✦ Y2K REVIVAL</span>
+      <span class="ticker-item"><span>✦</span> Y2K REVIVAL</span>
       <span class="ticker-item">DIGITAL NATIVE</span>
-      <span class="ticker-item c">✦ GAMER GIRL</span>
-      <span class="ticker-item">ALT AESTHETIC</span>
-      <span class="ticker-item c">✦ BOLD COLORS</span>
+      <span class="ticker-item"><span>✦</span> GAMER GIRL</span>
       <span class="ticker-item">E-GIRL ERA</span>
-      <span class="ticker-item c">✦ ALT FASHION</span>
+      <span class="ticker-item"><span>✦</span> ALT FASHION</span>
       <span class="ticker-item">INTERNET BADDIE</span>
-      <span class="ticker-item c">✦ Y2K REVIVAL</span>
+      <span class="ticker-item"><span>✦</span> Y2K REVIVAL</span>
       <span class="ticker-item">DIGITAL NATIVE</span>
-      <span class="ticker-item c">✦ GAMER GIRL</span>
-      <span class="ticker-item">ALT AESTHETIC</span>
-      <span class="ticker-item c">✦ BOLD COLORS</span>
+      <span class="ticker-item"><span>✦</span> GAMER GIRL</span>
     </div>
   </div>
 
-  <div class="vibes">
-    <div class="vibe">
-      <div class="vibe-num">01/</div>
-      <div class="vibe-name">BOLD COLORS</div>
-      <div class="vibe-desc">Hot pink, electric blue, neon yellow — màu sắc không xin lỗi ai</div>
+  <div class="pillars-header">
+    <span class="pillars-title">// The E-Girl Vibes</span>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-num">01/</div>
+      <div class="pillar-name">Bold Colors</div>
+      <div class="pillar-desc">Hot pink, electric blue, neon yellow — màu sắc không xin lỗi ai</div>
     </div>
-    <div class="vibe">
-      <div class="vibe-num">02/</div>
-      <div class="vibe-name">GAMER GIRL</div>
-      <div class="vibe-desc">Aesthetic lấy cảm hứng từ gaming culture và anime world</div>
+    <div class="pillar">
+      <div class="pillar-num">02/</div>
+      <div class="pillar-name">Gamer Girl</div>
+      <div class="pillar-desc">Aesthetic lấy cảm hứng từ gaming culture và anime world</div>
     </div>
-    <div class="vibe">
-      <div class="vibe-num">03/</div>
-      <div class="vibe-name">ALT EDGE</div>
-      <div class="vibe-desc">Chains, fishnet, platform boots — không hề giả tạo</div>
+    <div class="pillar">
+      <div class="pillar-num">03/</div>
+      <div class="pillar-name">Alt Edge</div>
+      <div class="pillar-desc">Chains, fishnet, platform boots — không hề giả tạo</div>
     </div>
-    <div class="vibe">
-      <div class="vibe-num">04/</div>
-      <div class="vibe-name">MAKE-UP ART</div>
-      <div class="vibe-desc">Blush, graphic liner, doll lips — mặt là canvas</div>
+    <div class="pillar">
+      <div class="pillar-num">04/</div>
+      <div class="pillar-name">Make-Up Art</div>
+      <div class="pillar-desc">Blush, graphic liner, doll lips — mặt là canvas</div>
     </div>
   </div>
 
   <div class="section-header">
     <span class="section-label">// E-Girl Looks</span>
-    <span class="section-count" id="counter">— LOOKS</span>
+    <span class="section-count" id="counter"></span>
   </div>
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
   <footer>
-    <p>© 2026 APOCALYPSE CLOSET — apocalypsecloset.com</p>
+    <p>© 2026 APOCALYPSE CLOSET</p>
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="dark-feminine.html">Dark Feminine</a>
@@ -401,12 +294,15 @@
     filtered.forEach((outfit, i) => {
       const card = document.createElement('div');
       card.className = 'outfit-card';
+      card.style.animationDelay = (i * 0.03) + 's';
       card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       card.innerHTML = `
-        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
+          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.tag}"
+          loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
         <div class="outfit-overlay">
-          <div class="outfit-tag">→ Xem outfit</div>
+          <span class="outfit-tag">XEM OUTFIT</span>
           <div class="outfit-num">${outfit.tag}</div>
         </div>`;
       grid.appendChild(card);
