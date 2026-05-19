@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Feminine — Apocalypse Closet</title>
+  <meta name="description" content="Dark Feminine — quyền lực trong bóng tối. Apocalypse Closet.">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08060a;
+      --bg2: #100b14;
+      --wine: #7a1833;
+      --wine-bright: #b5294e;
+      --gold: #c9a96e;
+      --gold-light: #e8c98a;
+      --cream: #e8e0d4;
+      --cream-dim: #a09898;
+      --rule: rgba(201,169,110,0.25);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Lora', serif;
+      overflow-x: hidden;
+      cursor: default;
+    }
+
+    /* SUBTLE VIGNETTE */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.6) 100%);
+    }
+
+    /* HEADER */
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--rule);
+      position: sticky; top: 0;
+      background: rgba(8,6,10,0.95);
+      backdrop-filter: blur(16px);
+      z-index: 200;
+    }
+    .back-link {
+      font-family: 'Lora', serif; font-style: italic;
+      color: var(--cream-dim); font-size: 12px; letter-spacing: 0.15em;
+      text-decoration: none; transition: color 0.3s;
+    }
+    .back-link:hover { color: var(--gold); }
+    .nav-badge {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+      font-size: 13px; letter-spacing: 0.4em; color: var(--gold);
+      text-transform: uppercase;
+    }
+    .nav-issue {
+      font-family: 'Lora', serif; font-size: 10px;
+      color: var(--cream-dim); letter-spacing: 0.2em;
+    }
+
+    /* HERO — editorial magazine split */
+    .hero {
+      display: grid; grid-template-columns: 55% 45%;
+      min-height: 90vh; position: relative;
+    }
+    .hero-left {
+      padding: 80px 60px 80px 40px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      border-right: 1px solid var(--rule); position: relative; z-index: 1;
+    }
+    .hero-vol {
+      font-family: 'Lora', serif; font-style: italic; font-size: 10px;
+      letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase;
+    }
+    .hero-rule { width: 60px; height: 1px; background: var(--gold); margin: 16px 0; }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300; font-style: italic;
+      font-size: clamp(56px, 8vw, 110px);
+      line-height: 0.92; letter-spacing: -0.01em;
+    }
+    .hero-title .dark { color: var(--cream); display: block; }
+    .hero-title .fem {
+      color: transparent;
+      -webkit-text-stroke: 1px var(--gold);
+      display: block; padding-left: 40px;
+    }
+
+    .hero-quote {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 16px; line-height: 1.8; color: var(--cream-dim);
+      max-width: 380px; margin-top: 40px;
+      padding-left: 20px;
+      border-left: 1px solid var(--wine-bright);
+    }
+
+    .hero-bottom {
+      display: flex; align-items: center; gap: 32px; margin-top: 48px;
+    }
+    .hero-stat-num {
+      font-family: 'Cormorant Garamond', serif; font-weight: 600;
+      font-size: 52px; color: var(--gold); line-height: 1;
+    }
+    .hero-stat-label { font-size: 9px; letter-spacing: 0.3em; color: var(--cream-dim); text-transform: uppercase; margin-top: 4px; }
+    .hero-divider { width: 1px; height: 48px; background: var(--rule); }
+
+    .hero-right {
+      padding: 60px 40px;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: flex-start; gap: 32px;
+      background: linear-gradient(135deg, var(--bg2) 0%, rgba(122,24,51,0.08) 100%);
+      position: relative; z-index: 1;
+    }
+    .hero-desc-block {
+      font-size: 11px; line-height: 2.2; color: var(--cream-dim);
+      letter-spacing: 0.05em; max-width: 320px;
+    }
+    .hero-desc-block strong { color: var(--gold); font-weight: 400; font-style: italic; }
+
+    .hero-ornament {
+      width: 100%; text-align: center; color: var(--rule);
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      letter-spacing: 0.5em; user-select: none;
+    }
+
+    .hero-keywords {
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .keyword {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+      font-size: 22px; letter-spacing: 0.1em; color: var(--cream-dim);
+      padding: 8px 0; border-bottom: 1px solid rgba(201,169,110,0.1);
+      transition: all 0.4s; cursor: default;
+    }
+    .keyword:hover { color: var(--gold); padding-left: 12px; }
+
+    /* GOLD RULE DIVIDER */
+    .gold-divider {
+      display: flex; align-items: center; gap: 20px;
+      padding: 20px 40px;
+    }
+    .gold-divider-line { flex: 1; height: 1px; background: var(--rule); }
+    .gold-divider-center {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 14px; letter-spacing: 0.5em; color: var(--gold); white-space: nowrap;
+    }
+
+    /* PILLARS */
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .pillar {
+      padding: 36px 28px;
+      border-right: 1px solid var(--rule);
+      position: relative; transition: background 0.5s;
+    }
+    .pillar:hover { background: rgba(122,24,51,0.08); }
+    .pillar:last-child { border-right: none; }
+    .pillar-roman {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12px;
+      color: var(--gold); letter-spacing: 0.3em; margin-bottom: 16px;
+    }
+    .pillar-name {
+      font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 18px;
+      color: var(--cream); margin-bottom: 10px; letter-spacing: 0.05em;
+    }
+    .pillar-desc { font-size: 10px; color: var(--cream-dim); line-height: 2; font-style: italic; }
+
+    /* SECTION HEADER */
+    .section-header {
+      padding: 32px 40px; display: flex; align-items: center;
+      justify-content: space-between; border-bottom: 1px solid var(--rule);
+      border-top: 1px solid var(--rule);
+    }
+    .section-label {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 28px; font-weight: 300; color: var(--cream); letter-spacing: 0.05em;
+    }
+    .section-count {
+      font-family: 'Lora', serif; font-style: italic;
+      font-size: 11px; color: var(--gold); letter-spacing: 0.3em;
+    }
+
+    /* OUTFIT GRID — editorial feel */
+    .outfit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--rule); }
+    .outfit-card {
+      position: relative; overflow: hidden; aspect-ratio: 2/3;
+      background: var(--bg2); cursor: pointer;
+    }
+    .outfit-card img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s;
+      filter: saturate(0.7) brightness(0.9);
+    }
+    .outfit-card:hover img {
+      transform: scale(1.05);
+      filter: saturate(0.85) brightness(1);
+    }
+    .outfit-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(8,6,10,0.9) 0%, rgba(122,24,51,0.3) 40%, transparent 70%);
+      opacity: 0.6; transition: opacity 0.5s;
+    }
+    .outfit-card:hover::after { opacity: 0.9; }
+    .outfit-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+      padding: 24px 20px;
+    }
+    .outfit-num {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+      font-size: 36px; color: var(--cream); line-height: 1; display: block;
+    }
+    .outfit-cta {
+      font-size: 9px; letter-spacing: 0.4em; color: var(--gold);
+      text-transform: uppercase; margin-top: 6px; display: block;
+      opacity: 0; transform: translateY(8px); transition: all 0.4s 0.1s;
+    }
+    .outfit-card:hover .outfit-cta { opacity: 1; transform: translateY(0); }
+
+    /* FOOTER */
+    footer {
+      padding: 36px 40px; border-top: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-left { display: flex; flex-direction: column; gap: 6px; }
+    footer p { font-family: 'Lora', serif; font-style: italic; font-size: 11px; color: var(--cream-dim); }
+    footer small { font-size: 9px; letter-spacing: 0.2em; color: rgba(160,152,152,0.4); }
+    .footer-links { display: flex; gap: 28px; }
+    .footer-links a {
+      font-family: 'Lora', serif; font-style: italic; font-size: 11px;
+      color: var(--cream-dim); text-decoration: none; transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+
+    @media (max-width: 768px) {
+      header { padding: 16px 20px; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 48px 24px; border-right: none; border-bottom: 1px solid var(--rule); }
+      .hero-right { padding: 36px 24px; }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
+      .outfit-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-header { padding: 24px 20px; }
+      footer { flex-direction: column; gap: 20px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-link" href="index.html">← Apocalypse Closet</a>
+    <span class="nav-badge">Dark Feminine</span>
+    <span class="nav-issue">No. 04</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div>
+        <div class="hero-vol">Vol. I — The Shadow Collection</div>
+        <div class="hero-rule"></div>
+        <h1 class="hero-title">
+          <span class="dark">DARK</span>
+          <span class="fem">FEMININE</span>
+        </h1>
+      </div>
+      <blockquote class="hero-quote">
+        "Quyền lực không cần ánh sáng để tỏa sáng. Bóng tối là nơi nữ tính thực sự ngự trị."
+      </blockquote>
+      <div class="hero-bottom">
+        <div>
+          <div class="hero-stat-num">∞</div>
+          <div class="hero-stat-label">Sức mạnh</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div>
+          <div class="hero-stat-num">I</div>
+          <div class="hero-stat-label">Collection</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div style="max-width:180px">
+          <div style="font-family:'Lora',serif;font-style:italic;font-size:10px;color:var(--cream-dim);line-height:1.8">
+            Bí ẩn. Quyến rũ. Không thể đoán trước.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-ornament">— ✦ —</div>
+      <div class="hero-desc-block">
+        Dark Feminine không phải là buồn bã — đó là <strong>quyền năng</strong> ẩn sau màn đêm. Mỗi outfit là một tuyên ngôn về sự bí ẩn, sự quyến rũ, và sức mạnh nội tâm không ai có thể chạm tới.
+      </div>
+      <div class="hero-keywords">
+        <div class="keyword">Bí ẩn & Quyến rũ</div>
+        <div class="keyword">Tối tăm & Sang trọng</div>
+        <div class="keyword">Mạnh mẽ & Nữ tính</div>
+        <div class="keyword">Không thể đoán trước</div>
+      </div>
+      <div class="hero-ornament" style="font-size:18px;margin-top:8px">✦ ✦ ✦</div>
+    </div>
+  </section>
+
+  <div class="gold-divider">
+    <div class="gold-divider-line"></div>
+    <div class="gold-divider-center">✦ The Four Pillars ✦</div>
+    <div class="gold-divider-line"></div>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-roman">I.</div>
+      <div class="pillar-name">Bí Ẩn</div>
+      <div class="pillar-desc">Tối, sâu thẳm như đêm không trăng — kéo người khác vào mà không cần cố gắng</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-roman">II.</div>
+      <div class="pillar-name">Quyền Năng</div>
+      <div class="pillar-desc">Không cần nói to. Sự hiện diện đã nói tất cả. Bodycon, corset, lace — vũ khí của nữ thần bóng tối</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-roman">III.</div>
+      <div class="pillar-name">Sang Trọng</div>
+      <div class="pillar-desc">Velvet đen, satin đỏ rượu, chi tiết vàng — sự xa hoa của bóng đêm</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-roman">IV.</div>
+      <div class="pillar-name">Bất Khuất</div>
+      <div class="pillar-desc">Không theo xu hướng. Không xin phép. Đây là aesthetic của những người tự làm chủ bóng tối</div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-label">The Collection</span>
+    <span class="section-count" id="counter">— looks</span>
+  </div>
+
+  <div class="outfit-grid" id="outfit-grid"></div>
+
+  <footer>
+    <div class="footer-left">
+      <p>© 2026 Apocalypse Closet</p>
+      <small>APOCALYPSECLOSET.COM</small>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="egirl.html">E-Girl</a>
+      <a href="goth.html">Goth</a>
+      <a href="punk.html">Punk</a>
+      <a href="baddie-streetwear.html">Baddie</a>
+    </div>
+  </footer>
+
+  <script src="outfits.js"></script>
+  <script>
+    const filtered = outfits.filter(o => o.category === 'Dark Feminine');
+    document.getElementById('counter').textContent = filtered.length + ' looks';
+    const grid = document.getElementById('outfit-grid');
+    filtered.forEach((outfit, i) => {
+      const card = document.createElement('div');
+      card.className = 'outfit-card';
+      card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
+      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
+      card.innerHTML = `
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <div class="outfit-overlay">
+          <span class="outfit-num">${outfit.tag}</span>
+          <span class="outfit-cta">Khám phá look này →</span>
+        </div>`;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goth — Apocalypse Closet</title>
+  <meta name="description" content="Goth aesthetic — bóng tối cổ điển, mãi mãi không phai. Apocalypse Closet.">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #040408;
+      --bg2: #0a0812;
+      --purple: #2a0845;
+      --purple-mid: #4a1570;
+      --purple-light: #8b2fc9;
+      --bone: #ddd8cc;
+      --bone-dim: #7a7268;
+      --red: #6b0000;
+      --red-bright: #990000;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--bone);
+      font-family: 'Crimson Text', serif;
+      overflow-x: hidden;
+    }
+
+    /* ATMOSPHERIC PURPLE GLOW */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(74,21,112,0.2) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(107,0,0,0.12) 0%, transparent 60%);
+    }
+
+    /* ORNAMENTAL HEADER */
+    header {
+      padding: 0 40px;
+      border-bottom: 1px solid rgba(139,47,201,0.2);
+      position: sticky; top: 0;
+      background: rgba(4,4,8,0.97);
+      backdrop-filter: blur(20px);
+      z-index: 200;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0;
+    }
+    .back-link {
+      font-family: 'Crimson Text', serif; font-style: italic; font-size: 13px;
+      color: var(--bone-dim); text-decoration: none; letter-spacing: 0.1em;
+      transition: color 0.3s;
+    }
+    .back-link:hover { color: var(--purple-light); }
+    .nav-center {
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+    }
+    .nav-ornament { font-size: 11px; color: rgba(139,47,201,0.4); letter-spacing: 0.8em; }
+    .nav-badge {
+      font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.6em; color: var(--purple-light); text-transform: uppercase;
+    }
+    .nav-sub { font-family: 'Crimson Text', serif; font-style: italic; font-size: 10px; color: var(--bone-dim); letter-spacing: 0.3em; }
+
+    /* HERO */
+    .hero {
+      min-height: 88vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 60px 40px; text-align: center; position: relative;
+    }
+
+    /* Ornamental borders */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 20px;
+      border: 1px solid rgba(139,47,201,0.12);
+      pointer-events: none;
+    }
+    .hero-corner {
+      position: absolute; width: 40px; height: 40px;
+      border-color: rgba(139,47,201,0.4);
+      border-style: solid;
+      pointer-events: none;
+    }
+    .hero-corner.tl { top: 20px; left: 20px; border-width: 2px 0 0 2px; }
+    .hero-corner.tr { top: 20px; right: 20px; border-width: 2px 2px 0 0; }
+    .hero-corner.bl { bottom: 20px; left: 20px; border-width: 0 0 2px 2px; }
+    .hero-corner.br { bottom: 20px; right: 20px; border-width: 0 2px 2px 0; }
+
+    .hero-eyebrow {
+      font-family: 'Crimson Text', serif; font-style: italic; font-size: 14px;
+      letter-spacing: 0.5em; color: var(--bone-dim); margin-bottom: 32px;
+    }
+
+    .hero-title {
+      font-family: 'Cinzel Decorative', serif; font-weight: 700;
+      font-size: clamp(44px, 8vw, 100px); line-height: 1;
+      letter-spacing: 0.08em; margin-bottom: 20px;
+      color: var(--bone);
+      text-shadow: 0 0 80px rgba(139,47,201,0.4);
+    }
+    .hero-title .alt {
+      display: block; font-size: 0.45em; font-weight: 400;
+      letter-spacing: 0.5em; color: var(--purple-light);
+      margin-bottom: 8px; text-shadow: 0 0 40px rgba(139,47,201,0.6);
+    }
+
+    .hero-ornamental-divider {
+      font-family: 'Cinzel', serif; font-size: 18px;
+      color: rgba(139,47,201,0.4); letter-spacing: 0.4em;
+      margin: 28px 0;
+    }
+
+    .hero-desc {
+      font-family: 'Crimson Text', serif; font-style: italic; font-size: 17px;
+      color: var(--bone-dim); line-height: 1.8; max-width: 520px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-tags {
+      display: flex; gap: 24px; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+    }
+    .hero-tag {
+      font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.5em;
+      color: var(--bone-dim); text-transform: uppercase;
+      padding: 8px 16px; border: 1px solid rgba(139,47,201,0.25);
+      transition: all 0.4s;
+    }
+    .hero-tag:hover {
+      color: var(--purple-light); border-color: rgba(139,47,201,0.6);
+      background: rgba(42,8,69,0.4);
+    }
+
+    /* BLOOD DRIP SEPARATOR */
+    .separator {
+      position: relative; height: 2px; overflow: visible;
+      background: linear-gradient(90deg, transparent, var(--red-bright), transparent);
+      margin: 0;
+    }
+
+    /* TENETS SECTION */
+    .tenets-header {
+      text-align: center; padding: 48px 40px 32px;
+    }
+    .tenets-title {
+      font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.8em;
+      color: var(--bone-dim); text-transform: uppercase;
+    }
+
+    .tenets { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .tenet {
+      padding: 36px 28px;
+      border-right: 1px solid rgba(139,47,201,0.12);
+      text-align: center; position: relative; transition: all 0.5s;
+    }
+    .tenet:last-child { border-right: none; }
+    .tenet:hover { background: rgba(42,8,69,0.25); }
+    .tenet-glyph {
+      font-family: 'Cinzel Decorative', serif; font-size: 28px;
+      color: var(--purple-light); margin-bottom: 16px; display: block;
+      text-shadow: 0 0 20px rgba(139,47,201,0.5);
+    }
+    .tenet-name {
+      font-family: 'Cinzel', serif; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.3em; color: var(--bone); margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .tenet-desc { font-style: italic; font-size: 12px; color: var(--bone-dim); line-height: 2; }
+
+    /* SECTION HEADER */
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 32px 40px;
+      border-top: 1px solid rgba(139,47,201,0.12);
+      border-bottom: 1px solid rgba(139,47,201,0.12);
+    }
+    .section-label {
+      font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.4em;
+      color: var(--bone); text-transform: uppercase;
+    }
+    .section-count {
+      font-family: 'Crimson Text', serif; font-style: italic; font-size: 14px;
+      color: var(--purple-light); letter-spacing: 0.2em;
+    }
+
+    /* OUTFIT GRID */
+    .outfit-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: rgba(139,47,201,0.08);
+    }
+    .outfit-card {
+      position: relative; overflow: hidden; aspect-ratio: 2/3;
+      background: var(--bg2); cursor: pointer;
+    }
+    .outfit-card img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.8s, filter 0.5s;
+      filter: saturate(0.5) brightness(0.85) contrast(1.05);
+    }
+    .outfit-card:hover img {
+      transform: scale(1.04);
+      filter: saturate(0.65) brightness(0.95) contrast(1.1);
+    }
+    .outfit-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(4,4,8,0.95) 0%, rgba(42,8,69,0.2) 40%, transparent 65%);
+      opacity: 0.7; transition: opacity 0.5s;
+    }
+    .outfit-card:hover::after { opacity: 0.85; }
+    /* Ornamental hover frame */
+    .outfit-card::before {
+      content: ''; position: absolute; inset: 12px; z-index: 2;
+      border: 1px solid rgba(139,47,201,0.4);
+      opacity: 0; transition: opacity 0.4s;
+    }
+    .outfit-card:hover::before { opacity: 1; }
+    .outfit-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
+      padding: 24px 20px; text-align: center;
+    }
+    .outfit-num {
+      font-family: 'Cinzel Decorative', serif; font-size: 16px;
+      color: var(--bone); display: block; letter-spacing: 0.2em;
+      text-shadow: 0 0 20px rgba(139,47,201,0.5);
+    }
+    .outfit-cta {
+      font-family: 'Crimson Text', serif; font-style: italic; font-size: 11px;
+      color: var(--purple-light); letter-spacing: 0.3em; display: block;
+      margin-top: 4px; opacity: 0; transform: translateY(6px); transition: all 0.4s 0.1s;
+    }
+    .outfit-card:hover .outfit-cta { opacity: 1; transform: translateY(0); }
+
+    /* FOOTER */
+    footer {
+      padding: 36px 40px; text-align: center;
+      border-top: 1px solid rgba(139,47,201,0.2);
+      background: rgba(42,8,69,0.05);
+    }
+    .footer-ornament {
+      font-family: 'Cinzel', serif; font-size: 16px;
+      color: rgba(139,47,201,0.3); letter-spacing: 0.8em; margin-bottom: 20px;
+    }
+    footer p { font-style: italic; font-size: 11px; color: var(--bone-dim); margin-bottom: 16px; letter-spacing: 0.2em; }
+    .footer-links { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    .footer-links a {
+      font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.4em;
+      color: var(--bone-dim); text-decoration: none; transition: color 0.3s;
+      text-transform: uppercase;
+    }
+    .footer-links a:hover { color: var(--purple-light); }
+
+    @media (max-width: 768px) {
+      header { padding: 0 16px; }
+      .hero { padding: 48px 20px; }
+      .tenets { grid-template-columns: repeat(2, 1fr); }
+      .outfit-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-header { padding: 24px 20px; }
+      footer { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="back-link" href="index.html">← Return</a>
+      <div class="nav-center">
+        <div class="nav-ornament">✦ ✦ ✦</div>
+        <div class="nav-badge">Goth</div>
+        <div class="nav-sub">Style Collection III</div>
+      </div>
+      <span style="font-family:'Crimson Text',serif;font-style:italic;font-size:12px;color:var(--bone-dim)">2026</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-corner tl"></div>
+    <div class="hero-corner tr"></div>
+    <div class="hero-corner bl"></div>
+    <div class="hero-corner br"></div>
+
+    <div class="hero-eyebrow">— Những kẻ yêu bóng tối —</div>
+    <h1 class="hero-title">
+      <span class="alt">✦ the ✦</span>
+      GOTH
+    </h1>
+    <div class="hero-ornamental-divider">— ✦ ✦ ✦ —</div>
+    <p class="hero-desc">
+      Không phải buồn bã. Không phải chán đời. Goth là sự tôn thờ cái đẹp trong bóng tối — thẩm mỹ của những ai nhìn thấy sự kỳ diệu nơi người khác sợ hãi.
+    </p>
+    <div class="hero-tags">
+      <div class="hero-tag">Victorian</div>
+      <div class="hero-tag">Darkwave</div>
+      <div class="hero-tag">Lace & Velvet</div>
+      <div class="hero-tag">Eternal Night</div>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <div class="tenets-header">
+    <div class="tenets-title">✦ &nbsp; The Goth Codex &nbsp; ✦</div>
+  </div>
+
+  <div class="tenets">
+    <div class="tenet">
+      <span class="tenet-glyph">☽</span>
+      <div class="tenet-name">Đêm Vĩnh Cửu</div>
+      <div class="tenet-desc">Bóng tối không đáng sợ — đó là nơi trú ẩn của những tâm hồn nhạy cảm nhất</div>
+    </div>
+    <div class="tenet">
+      <span class="tenet-glyph">⚰</span>
+      <div class="tenet-name">Vẻ Đẹp Cổ Xưa</div>
+      <div class="tenet-desc">Victorian lace, baroque detail, thẩm mỹ của những thế kỷ đã qua nhưng không bao giờ lỗi thời</div>
+    </div>
+    <div class="tenet">
+      <span class="tenet-glyph">🕸</span>
+      <div class="tenet-name">Hoàn Toàn Đen</div>
+      <div class="tenet-desc">Từ đầu đến chân. Không thỏa hiệp. Đen là màu của sự hoàn hảo tuyệt đối</div>
+    </div>
+    <div class="tenet">
+      <span class="tenet-glyph">✠</span>
+      <div class="tenet-name">Phi Thường</div>
+      <div class="tenet-desc">Platform boots, corset, cape — mỗi outfit là một tác phẩm nghệ thuật sống</div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-label">✦ The Looks ✦</span>
+    <span class="section-count" id="counter">— looks</span>
+  </div>
+
+  <div class="outfit-grid" id="outfit-grid"></div>
+
+  <footer>
+    <div class="footer-ornament">— ✦ ✦ ✦ —</div>
+    <p>© 2026 Apocalypse Closet — apocalypsecloset.com</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="egirl.html">E-Girl</a>
+      <a href="dark-feminine.html">Dark Feminine</a>
+      <a href="punk.html">Punk</a>
+      <a href="baddie-streetwear.html">Baddie</a>
+    </div>
+  </footer>
+
+  <script src="outfits.js"></script>
+  <script>
+    const filtered = outfits.filter(o => o.category === 'Goth');
+    document.getElementById('counter').textContent = filtered.length + ' looks';
+    const grid = document.getElementById('outfit-grid');
+    filtered.forEach((outfit, i) => {
+      const card = document.createElement('div');
+      card.className = 'outfit-card';
+      card.onclick = () => window.location.href = `outfit-detail.html?id=${outfit.id}`;
+      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
+      card.innerHTML = `
+        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w" sizes="(max-width:768px) 50vw, 25vw" alt="${outfit.tag}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+        <div class="outfit-overlay">
+          <span class="outfit-num">${outfit.tag}</span>
+          <span class="outfit-cta">Explore this look</span>
+        </div>`;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
