@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Burning Out — Apocalypse Closet</title>
-  
-  <meta name="description" content="Khi thế giới ép bạn phải luôn rực rỡ, kiệt sức không phải là sự thất bại. Nghệ thuật sụp đổ để tái sinh trong kỷ nguyên hậu tận thế.">
-  <link rel="canonical" href="https://apocalypsecloset.com/the-art-of-burning-out.html" />
-  
-  <meta property="og:title" content="The Art of Burning Out: Nghệ Thuật Sụp Đổ Để Tái Sinh" />
-  <meta property="og:description" content="Khi thế giới ép bạn phải luôn rực rỡ, kiệt sức không phải là sự thất bại." />
-  <meta property="og:image" content="https://apocalypsecloset.com/image/apocalypse-badgirl-1-1_result.webp" />
-  <meta property="og:url" content="https://apocalypsecloset.com/the-art-of-burning-out.html" />
-  <meta property="og:type" content="article" />
+
+  <!-- SEO tags: được JS điền vào sau khi fetch xong -->
+  <title>The Journal — Apocalypse Closet</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="article">
 
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  
+
   <style>
     :root {
       --black: #0a0a0a; --white: #f0ece4; --red: #c0392b;
       --grey: #141414; --muted: #777; --border: #222;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    
+
     body {
-      background: var(--black); 
+      background: var(--black);
       color: var(--white);
-      font-family: 'Space Mono', monospace; 
+      font-family: 'Space Mono', monospace;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
-    /* === HEADER (Đã gỡ bỏ sticky để không bị lướt theo) === */
+    /* ── HEADER ── */
     header {
       display: flex; align-items: center; justify-content: space-between;
       padding: 18px 32px; border-bottom: 1px solid var(--border);
@@ -50,9 +50,9 @@
       letter-spacing: 0.15em; color: var(--white); text-transform: uppercase;
     }
 
-    /* === ARTICLE HERO (Đã khóa layout cột dọc) === */
+    /* ── ARTICLE HERO ── */
     .article-hero {
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      display: flex; flex-direction: column; align-items: center;
       padding: 80px 32px 48px; text-align: center;
       max-width: 900px; margin: 0 auto;
     }
@@ -75,10 +75,9 @@
     }
     .article-author span { color: var(--white); }
 
-    /* === COVER IMAGE === */
+    /* ── COVER ── */
     .article-cover {
-      width: 100%; max-width: 1200px; margin: 0 auto 80px;
-      padding: 0 32px;
+      width: 100%; max-width: 1200px; margin: 0 auto 80px; padding: 0 32px;
     }
     .article-cover-inner {
       width: 100%; aspect-ratio: 21/9; overflow: hidden;
@@ -89,53 +88,43 @@
       filter: grayscale(0.8) contrast(1.1);
     }
 
-    /* === ARTICLE CONTENT (BODY) === */
+    /* ── ARTICLE BODY ── */
     .article-content {
       max-width: 720px; margin: 0 auto; padding: 0 32px 80px;
-      font-size: 14px; line-height: 2.2; color: #d0d0d0;
-      text-align: justify; 
+      font-size: 14px; line-height: 2.2; color: #d0d0d0; text-align: justify;
     }
-    
     .article-content > p:first-of-type::first-letter {
-      font-family: 'Oswald', sans-serif;
-      font-size: 4.5em; color: var(--red);
-      float: left; line-height: 0.8;
-      margin: 8px 12px 0 0;
+      font-family: 'Oswald', sans-serif; font-size: 4.5em; color: var(--red);
+      float: left; line-height: 0.8; margin: 8px 12px 0 0;
     }
-
     .article-content p { margin-bottom: 28px; }
-    
     .article-content h2 {
       font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--white);
       text-transform: uppercase; letter-spacing: 0.05em;
       margin: 56px 0 24px; padding-bottom: 12px;
       border-bottom: 1px solid var(--border); text-align: left;
     }
-    
     .article-content h3 {
       font-family: 'Oswald', sans-serif; font-size: 20px; color: var(--white);
       margin: 32px 0 16px; text-transform: uppercase; text-align: left;
     }
-    
     .article-content blockquote {
       font-family: 'Oswald', sans-serif; font-size: 26px; color: var(--white);
       border-left: 4px solid var(--red); padding-left: 32px;
       margin: 56px 0; line-height: 1.4; text-transform: uppercase;
       text-align: left; letter-spacing: 0.02em;
     }
-
     .article-content img {
       width: 100%; height: auto; border: 1px solid var(--border);
       margin: 40px 0; display: block;
     }
-    
     .article-content strong { color: var(--white); }
 
-    /* === ARTICLE FOOTER === */
+    /* ── ARTICLE FOOTER ── */
     .article-bottom {
-      max-width: 720px; margin: 0 auto; padding: 0 32px 80px;
+      max-width: 720px; margin: 0 auto; padding: 40px 32px 80px;
       display: flex; justify-content: space-between; align-items: center;
-      border-top: 1px solid var(--border); padding-top: 40px;
+      border-top: 1px solid var(--border);
     }
     .article-tags { display: flex; gap: 8px; flex-wrap: wrap; }
     .tag {
@@ -144,92 +133,238 @@
       text-decoration: none; transition: all 0.2s;
     }
     .tag:hover { color: var(--white); border-color: var(--white); }
-    
-    .article-share { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; display: flex; gap: 16px; align-items: center; }
+    .article-share {
+      font-size: 11px; color: var(--muted); letter-spacing: 0.1em;
+      text-transform: uppercase; display: flex; gap: 16px; align-items: center;
+    }
     .article-share a { color: var(--white); text-decoration: none; transition: color 0.2s; }
     .article-share a:hover { color: var(--red); }
 
-    /* === FOOTER === */
-    footer { padding: 48px 32px; border-top: 1px solid var(--border); text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+    /* ── NEXT/PREV ── */
+    .article-nav {
+      max-width: 720px; margin: 0 auto; padding: 0 32px 80px;
+      display: flex; justify-content: space-between; gap: 16px;
+    }
+    .article-nav a {
+      flex: 1; display: block; border: 1px solid var(--border);
+      padding: 20px 24px; text-decoration: none; transition: border-color 0.2s;
+    }
+    .article-nav a:hover { border-color: var(--white); }
+    .article-nav .nav-dir {
+      font-size: 10px; color: var(--muted); letter-spacing: 0.2em;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+    .article-nav .nav-title {
+      font-family: 'Oswald', sans-serif; font-size: 16px;
+      color: var(--white); text-transform: uppercase; line-height: 1.3;
+    }
+    .article-nav a.next { text-align: right; }
 
-    /* === RESPONSIVE FIXES === */
+    /* ── LOADING / ERROR ── */
+    .state-screen {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; min-height: 60vh; gap: 20px;
+    }
+    .state-screen p {
+      font-size: 12px; letter-spacing: 0.2em; color: var(--muted);
+      text-transform: uppercase;
+    }
+    .state-screen a {
+      font-size: 11px; letter-spacing: 0.15em; color: var(--red);
+      text-transform: uppercase; text-decoration: none;
+    }
+    .spinner {
+      width: 32px; height: 32px; border: 1px solid var(--border);
+      border-top-color: var(--red); border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer {
+      padding: 48px 32px; border-top: 1px solid var(--border);
+      text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em;
+    }
+
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
       .article-hero { padding: 48px 16px 32px; }
-      .article-title { margin-bottom: 24px; }
       .article-cover { padding: 0 16px; margin-bottom: 48px; }
       .article-cover-inner { aspect-ratio: 16/10; }
       .article-content { padding: 0 20px 56px; font-size: 13px; line-height: 2; }
       .article-content h2 { font-size: 24px; margin: 40px 0 20px; }
       .article-content blockquote { font-size: 20px; padding-left: 20px; margin: 40px 0; }
       .article-bottom { padding: 32px 20px 64px; flex-direction: column; gap: 24px; align-items: flex-start; }
+      .article-nav { flex-direction: column; }
+      .article-nav a.next { text-align: left; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a class="back-link" href="index.html">← Back to Manifesto</a>
-    <span class="nav-badge">The Journal</span>
+    <a class="back-link" href="blog.html">← The Journal</a>
+    <span class="nav-badge">Apocalypse Closet</span>
     <div style="width: 80px;"></div>
   </header>
 
-  <main>
-    <header class="article-hero">
-      <div class="article-meta-top">
-        <span>Tâm Lý Học</span>
-        <span class="dot"></span>
-        <span>18 May 2026</span>
-      </div>
-      <h1 class="article-title">The Art of Burning Out: Nghệ Thuật Sụp Đổ Để Tái Sinh</h1>
-      <div class="article-author">Written by <span>Apocalypse Closet</span></div>
-    </header>
-
-    <div class="article-cover">
-      <div class="article-cover-inner">
-        <img src="/image/apocalypse-badgirl-1-1_result.webp" alt="Cô gái trong trang phục Dark Wear phong cách baddie">
-      </div>
+  <!-- JS điền vào đây -->
+  <main id="main-content">
+    <div class="state-screen">
+      <div class="spinner"></div>
+      <p>Loading...</p>
     </div>
-
-    <article class="article-content">
-      
-      <p>Khi thế giới ép bạn phải luôn rực rỡ và chạy đua không ngừng nghỉ, cảm giác kiệt sức (burnout) không phải là sự thất bại. Đừng vội vã chạy trốn nó. Đó là một hệ thống tự ngắt mạch thông minh của linh hồn khi bị quá tải bởi những chuẩn mực mệt mỏi của xã hội.</p>
-
-      <h2>1. Chấp nhận sự trống rỗng</h2>
-      <p>Chúng ta được dạy rằng phải luôn "productive", luôn có giá trị trong mắt người khác. Nhưng trong vũ trụ của Apocalypse Closet, bóng tối cũng mang sức mạnh tương đương ánh sáng. Hãy học cách chấp nhận sự trống rỗng, khoác lên mình lớp áo đen nhám của sự tĩnh lặng và cho phép cơ thể được đình công.</p>
-
-      <blockquote>
-        "Burnout không phải là điểm kết thúc. Đó là tiếng chuông báo hiệu lớp vỏ cũ đã quá chật chội, cần phải đập bỏ để phát triển."
-      </blockquote>
-
-      <p>Thay vì cố gắng khoác lên những màu sắc rực rỡ giả tạo, đây là lúc để trở về với những item cơ bản nhất: Một chiếc áo thun oversized sờn rách, một chiếc quần túi hộp đen form rộng. Sự thoải mái tuyệt đối của cơ thể chính là bước đầu tiên để xoa dịu một tâm trí đang vỡ nát.</p>
-
-      <h2>2. Trang bị lại lớp Giáp Gai</h2>
-      <p>Sau khi đã để bản thân "sập nguồn" đủ lâu, quá trình tái sinh sẽ bắt đầu. Đây là lúc bạn xây dựng lại các ranh giới. Những mối quan hệ độc hại, những thói quen tiêu cực sẽ bị loại bỏ không thương tiếc, giống như cách bạn thanh lý một chiếc áo không còn vừa vặn.</p>
-      
-      <img src="/image/apocalypse-badgirl-2-1_result.webp" alt="Outfit Dark Feminine" loading="lazy">
-
-      <p>Hãy nhớ rằng, sau mỗi lần sụp đổ, bạn không yếu đi. Bạn đang tôi luyện lại bản thân bằng một thứ kim loại cứng hơn, lạnh hơn và <strong>không thể bị phá vỡ</strong>. Đã đến lúc mix lại một set đồ mới và bước ra đường như thể hôm nay là ngày tận thế.</p>
-
-    </article>
-
-    <div class="article-bottom">
-      <div class="article-tags">
-        <a href="#" class="tag">#Psychology</a>
-        <a href="#" class="tag">#Burnout</a>
-        <a href="#" class="tag">#DarkAesthetic</a>
-      </div>
-      <div class="article-share">
-        Share: 
-        <a href="#">FB</a>
-        <a href="#">IG</a>
-        <a href="#">X</a>
-      </div>
-    </div>
-    
   </main>
 
   <footer>© 2026 APOCALYPSE CLOSET</footer>
 
+  <script>
+    // ─────────────────────────────────────────────
+    // Đọc ?slug= từ URL
+    // ─────────────────────────────────────────────
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('slug');
+
+    if (!slug) {
+      // Không có slug → redirect về trang blog index
+      window.location.href = 'blog.html';
+    } else {
+      loadPost(slug);
+    }
+
+    async function loadPost(slug) {
+      try {
+        const res = await fetch('posts.json');
+        if (!res.ok) throw new Error('Không tải được posts.json');
+
+        const posts = await res.json();
+        const postIndex = posts.findIndex(p => p.slug === slug);
+
+        if (postIndex === -1) {
+          showError('Không tìm thấy bài này.');
+          return;
+        }
+
+        const post = posts[postIndex];
+        const prev = postIndex > 0 ? posts[postIndex - 1] : null;
+        const next = postIndex < posts.length - 1 ? posts[postIndex + 1] : null;
+
+        renderPost(post, prev, next);
+        updateSEO(post);
+
+      } catch (err) {
+        showError(err.message);
+      }
+    }
+
+    // ─────────────────────────────────────────────
+    // Render HTML từ post object
+    // ─────────────────────────────────────────────
+    function renderPost(post, prev, next) {
+      const bodyHTML = post.content.map(block => {
+        switch (block.type) {
+          case 'p':          return `<p>${block.text}</p>`;
+          case 'h2':         return `<h2>${escapeHTML(block.text)}</h2>`;
+          case 'h3':         return `<h3>${escapeHTML(block.text)}</h3>`;
+          case 'blockquote': return `<blockquote>${escapeHTML(block.text)}</blockquote>`;
+          case 'img':        return `<img src="${block.src}" alt="${escapeHTML(block.alt || '')}" loading="lazy">`;
+          default:           return '';
+        }
+      }).join('\n');
+
+      const tagsHTML = post.tags
+        .map(t => `<a href="blog.html?tag=${encodeURIComponent(t)}" class="tag">${escapeHTML(t)}</a>`)
+        .join('');
+
+      const shareURL = encodeURIComponent(`https://apocalypsecloset.com/journal.html?slug=${post.slug}`);
+      const shareTitle = encodeURIComponent(post.title);
+
+      const prevHTML = prev
+        ? `<a href="journal.html?slug=${prev.slug}">
+            <div class="nav-dir">← Bài trước</div>
+            <div class="nav-title">${escapeHTML(prev.shortTitle || prev.title)}</div>
+           </a>`
+        : `<div></div>`;
+
+      const nextHTML = next
+        ? `<a href="journal.html?slug=${next.slug}" class="next">
+            <div class="nav-dir">Bài tiếp theo →</div>
+            <div class="nav-title">${escapeHTML(next.shortTitle || next.title)}</div>
+           </a>`
+        : `<div></div>`;
+
+      document.getElementById('main-content').innerHTML = `
+        <header class="article-hero">
+          <div class="article-meta-top">
+            <span>${escapeHTML(post.category)}</span>
+            <span class="dot"></span>
+            <span>${escapeHTML(post.date)}</span>
+          </div>
+          <h1 class="article-title">${escapeHTML(post.title)}</h1>
+          <div class="article-author">Written by <span>Apocalypse Closet</span></div>
+        </header>
+
+        <div class="article-cover">
+          <div class="article-cover-inner">
+            <img src="${post.cover}" alt="${escapeHTML(post.coverAlt || '')}" fetchpriority="high">
+          </div>
+        </div>
+
+        <article class="article-content">${bodyHTML}</article>
+
+        <div class="article-bottom">
+          <div class="article-tags">${tagsHTML}</div>
+          <div class="article-share">
+            Share:
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${shareURL}" target="_blank" rel="noopener">FB</a>
+            <a href="https://twitter.com/intent/tweet?url=${shareURL}&text=${shareTitle}" target="_blank" rel="noopener">X</a>
+          </div>
+        </div>
+
+        <nav class="article-nav">${prevHTML}${nextHTML}</nav>
+      `;
+
+      document.title = `${post.title} — Apocalypse Closet`;
+    }
+
+    // ─────────────────────────────────────────────
+    // Cập nhật SEO meta tags
+    // ─────────────────────────────────────────────
+    function updateSEO(post) {
+      const url = `https://apocalypsecloset.com/journal.html?slug=${post.slug}`;
+      setMeta('description', post.description);
+      setMeta('og:title', post.title, true);
+      setMeta('og:description', post.description, true);
+      setMeta('og:image', `https://apocalypsecloset.com${post.cover}`, true);
+      setMeta('og:url', url, true);
+      document.querySelector('link[rel="canonical"]').setAttribute('href', url);
+    }
+
+    function setMeta(name, content, isOG = false) {
+      const sel = isOG ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      const el = document.querySelector(sel);
+      if (el) el.setAttribute('content', content);
+    }
+
+    // ─────────────────────────────────────────────
+    // Error state
+    // ─────────────────────────────────────────────
+    function showError(msg) {
+      document.getElementById('main-content').innerHTML = `
+        <div class="state-screen">
+          <p>${escapeHTML(msg)}</p>
+          <a href="blog.html">← Về trang Journal</a>
+        </div>
+      `;
+    }
+
+    // Tránh XSS: escape HTML trước khi render
+    function escapeHTML(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+  </script>
 </body>
 </html>
