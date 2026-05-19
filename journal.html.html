@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Manifesto — Apocalypse Closet</title>
+  <meta name="description" content="Nơi lưu trữ những tuyên ngôn độc bản, những câu chuyện chữa lành và triết lý thời trang của kỷ nguyên hậu tận thế.">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #141414;
+      --muted: #555;
+      --border: #222;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
+      overflow-x: hidden;
+    }
+
+    /* Hiệu ứng nhiễu hạt bụi mờ */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 999; opacity: 0.4;
+    }
+
+    /* HEADER ĐỒNG BỘ */
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 32px;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    nav { display: flex; align-items: center; gap: 8px; }
+    .btn { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.12em; height: 36px; padding: 0 16px; border: 1px solid #333; background: transparent; color: var(--white); cursor: pointer; transition: all 0.15s; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+    .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+    .nav-icon { font-size: 16px; display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; line-height: 1; }
+    
+    .dropdown { position: relative; display: inline-block; }
+    .dropdown-content { display: none; position: absolute; right: 0; top: calc(100% + 10px); background: rgba(10,10,10,0.98); backdrop-filter: blur(8px); min-width: 200px; border: 1px solid #333; z-index: 200; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+    .dropdown-content::before { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; background: transparent; }
+    .dropdown:hover .dropdown-content { display: flex; flex-direction: column; }
+    .dropdown-content a { color: var(--white); padding: 14px 16px; text-decoration: none; font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.05em; border-bottom: 1px solid #222; transition: background 0.2s, color 0.2s; }
+    .dropdown-content a:last-child { border-bottom: none; }
+    .dropdown-content a:hover { background-color: var(--white); color: var(--black); }
+
+    /* JOURNAL HERO */
+    .journal-hero {
+      padding: 80px 32px 48px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .hero-label {
+      font-size: 10px; letter-spacing: 0.5em; color: var(--red);
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(48px, 10vw, 110px);
+      line-height: 0.9; letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .hero-title span {
+      color: transparent;
+      -webkit-text-stroke: 1px var(--white);
+    }
+    .hero-sub {
+      margin: 24px auto 0; font-size: 12px; color: var(--muted);
+      letter-spacing: 0.08em; line-height: 2; max-width: 500px;
+    }
+
+    /* ARTICLES LAYOUT (Asymmetrical Editorial Grid) */
+    .journal-container {
+      max-width: 1200px; margin: 0 auto; padding: 64px 32px;
+      display: flex; flex-direction: column; gap: 120px;
+    }
+
+    .article-card {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px;
+      align-items: center;
+    }
+    .article-card:nth-child(even) {
+      grid-template-columns: 1fr 1.2fr;
+    </div>
+    .article-card:nth-child(even) .article-img-wrap {
+      grid-column: 2;
+    }
+    .article-card:nth-child(even) .article-info {
+      grid-column: 1; grid-row: 1;
+    }
+
+    .article-img-wrap {
+      position: relative; overflow: hidden; aspect-ratio: 16/10;
+      background: var(--grey); border: 1px solid var(--border);
+    }
+    .article-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(1) contrast(1.1) saturate(0.9);
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.6s;
+    }
+    .article-card:hover .article-img-wrap img {
+      transform: scale(1.03); filter: grayscale(0.3) contrast(1);
+    }
+
+    .article-meta {
+      display: flex; align-items: center; gap: 16px;
+      font-size: 10px; color: var(--red); letter-spacing: 0.15em;
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .article-meta .line { flex: 1; height: 1px; background: var(--border); }
+    
+    .article-title {
+      font-family: 'Oswald', sans-serif; font-size: clamp(24px, 4vw, 36px);
+      line-height: 1.2; letter-spacing: 0.05em; text-transform: uppercase;
+      margin-bottom: 20px; transition: color 0.2s;
+    }
+    .article-card:hover .article-title { color: var(--red); }
+
+    .article-excerpt {
+      font-size: 12px; color: #a0a0a0; line-height: 2;
+      letter-spacing: 0.04em; margin-bottom: 28px;
+    }
+
+    .read-more {
+      font-size: 11px; letter-spacing: 0.2em; color: var(--white);
+      text-decoration: none; text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding-bottom: 4px; border-bottom: 1px solid var(--red);
+      transition: all 0.2s;
+    }
+    .read-more:hover { color: var(--red); padding-left: 6px; }
+
+    /* FOOTER */
+    footer { padding: 48px 32px; border-top: 1px solid var(--border); text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header { padding: 14px 16px; }
+      .btn { height: 30px; padding: 0 10px; font-size: 9px; }
+      .text-hide { display: none; }
+      .logo-wrap img:first-child { height: 36px; }
+      .logo-wrap img:last-child { height: 22px; }
+      
+      .journal-hero { padding: 56px 16px 32px; }
+      .journal-container { padding: 40px 16px; gap: 64px; }
+      .article-card, .article-card:nth-child(even) {
+        grid-template-columns: 1fr; gap: 24px;
+      }
+      .article-card:nth-child(even) .article-img-wrap { grid-column: 1; }
+      .article-card:nth-child(even) .article-info { grid-column: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo-wrap" href="index.html">
+      <img src="Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high" alt="icon" style="height:44px;width:auto;object-fit:contain;">
+      <img src="wordmark.webp" width="70" height="32" alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+    </a>
+    <nav>
+      <a class="btn btn-icon-only" id="nav-closet-btn" aria-label="Đến Closet của bạn" href="login.html">
+        <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
+      </a>
+      <div class="dropdown">
+        <button class="btn">STYLE ↓</button>
+        <div class="dropdown-content">
+          <a href="dark-feminine.html">Dark Feminine</a>
+          <a href="egirl.html">E-Girl / Alt Girl</a>
+          <a href="goth.html">Goth / Gothic</a>
+          <a href="baddie-streetwear.html">Baddie Streetwear</a>
+          <a href="punk.html">Punk / Grunge</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="journal-hero">
+    <div class="hero-label">// Apocalypse Zine</div>
+    <h1 class="hero-title">The <span>Manifesto</span></h1>
+    <p class="hero-sub">Nơi ngôn từ biến thành giáp gai. Những ghi chép vụn vỡ về tâm lý, phong cách và nghệ thuật sinh tồn trong một thế giới bão hòa.</p>
+  </section>
+
+  <main class="journal-container">
+    
+    <article class="article-card">
+      <div class="article-img-wrap">
+        <img src="/image/apocalypse-badgirl-1-1_result.webp" alt="The Art of Burning Out">
+      </div>
+      <div class="article-info">
+        <div class="article-meta">
+          <span>Vol. 01 // Tâm Lý Học</span>
+          <div class="line"></div>
+          <span>May 2026</span>
+        </div>
+        <h2 class="article-title">The Art of Burning Out: Nghệ Thuật Sụp Đổ Để Tái Sinh</h2>
+        <p class="article-excerpt">
+          Khi thế giới ép bạn phải luôn rực rỡ, kiệt sức (burnout) không phải là sự thất bại — đó là một hệ thống tự ngắt mạch thông minh của linh hồn. Hãy học cách chấp nhận sự trống rỗng, khoác lên mình lớp áo đen nhám của sự tĩnh lặng, và chuẩn bị cho một chương hồi gắt hơn thế nữa.
+        </p>
+        <a href="#" class="read-more">Đọc Tuyên Ngôn →</a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-img-wrap">
+        <img src="/image/apocalypse-badgirl-2-1_result.webp" alt="Highly Sensitive Soul">
+      </div>
+      <div class="article-info">
+        <div class="article-meta">
+          <span>Vol. 02 // Thẩm Mỹ</span>
+          <div class="line"></div>
+          <span>May 2026</span>
+        </div>
+        <h2 class="article-title">Highly Sensitive Soul: Khi Sự Nhạy Cảm Được Trang Bị Giáp Gai</h2>
+        <p class="article-excerpt">
+          Nhạy cảm quá mức với thế giới xung quanh không biến bạn thành kẻ yếu đuối. Trong kỷ nguyên hậu tận thế này, những tâm hồn nhạy cảm nhất lại chính là những kẻ có bản năng sinh tồn cao nhất. Thời trang của chúng tôi là lớp giáp bọc ngoài bảo vệ sự nguyên bản sâu thẳm bên trong bạn.
+        </p>
+        <a href="#" class="read-more">Đọc Tuyên Ngôn →</a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-img-wrap">
+        <img src="/image/apocalypse-badgirl-3-1_result.webp" alt="Apocalypse Cleanse">
+      </div>
+      <div class="article-info">
+        <div class="article-meta">
+          <span>Vol. 03 // Độc Bản</span>
+          <div class="line"></div>
+          <span>May 2026</span>
+        </div>
+        <h2 class="article-title">Apocalypse Cleanse: Tuyệt Tuyệt Đối Với Những Mối Quan Hệ Độc Hại</h2>
+        <p class="article-excerpt">
+          Làm sạch tủ đồ là bước đầu tiên, làm sạch các mối quan hệ xung quanh mới là bước quyết định để sống sót qua "tận thế". Đã đến lúc cắt bỏ những liên kết hút cạn năng lượng của bạn một cách lạnh lùng như cách bạn từ chối một bộ trang phục lỗi thời.
+        </p>
+        <a href="#" class="read-more">Đọc Tuyên Ngôn →</a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>© 2026 APOCALYPSE CLOSET</footer>
+
+  <script>
+    // Kiểm tra login để đồng bộ icon closet giống trang chủ
+    try {
+      const user = JSON.parse(localStorage.getItem('ac_user'));
+      if (user) {
+        const btn = document.getElementById('nav-closet-btn');
+        btn.href = 'closet.html';
+        document.getElementById('nav-closet-icon').innerHTML = '♥';
+        btn.style.color = '#c0392b';
+        btn.style.borderColor = '#c0392b';
+      }
+    } catch(e) {}
+  </script>
+</body>
+</html>
