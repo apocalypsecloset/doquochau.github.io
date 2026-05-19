@@ -565,7 +565,8 @@
         // URL ảnh mobile (thư mục /image-mobile/)
         const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
         img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
-        img.sizes = '(max-width: 768px) 50vw, 25vw';
+        // mobile 2 cột → 50vw; desktop 4 cột → 700px để browser chọn ảnh 1086w thay vì 600w
+        img.sizes = '(max-width: 768px) 50vw, 700px';
 
         if (i < 8) {
           img.src = outfit.img;
