@@ -395,6 +395,47 @@
       .player-container { bottom: 16px; right: 16px; width: 44px; height: 44px; }
     }
   </style>
+
+  <!-- ✅ SCHEMA: WebSite (kích hoạt Sitelinks Search Box trên Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Apocalypse Closet",
+    "url": "https://apocalypsecloset.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://apocalypsecloset.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ✅ SCHEMA: Organization (khai báo thương hiệu + social chính thức) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Apocalypse Closet",
+    "url": "https://apocalypsecloset.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp"
+    },
+    "description": "Thánh địa dành riêng cho những tâm hồn nổi loạn. Dark Wear, Grunge và Bad Girl Aesthetic.",
+    "sameAs": [
+      "https://www.facebook.com/apocalypsecloset",
+      "https://www.instagram.com/apocalypse.closet",
+      "https://www.tiktok.com/@apocalypse.closet",
+      "https://www.pinterest.com/apocalypsecloset",
+      "https://www.threads.com/@apocalypse.closet",
+      "https://www.youtube.com/@apocalypsecloset"
+    ]
+  }
+  </script>
 </head>
 <body>
 

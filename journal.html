@@ -334,6 +334,47 @@
       setMeta('og:image', `https://apocalypsecloset.com${post.cover}`, true);
       setMeta('og:url', url, true);
       document.querySelector('link[rel="canonical"]').setAttribute('href', url);
+
+      // ✅ SCHEMA: BlogPosting — inject động theo bài viết
+      const existingSchema = document.getElementById('schema-blogposting');
+      if (existingSchema) existingSchema.remove();
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.description,
+        "image": `https://apocalypsecloset.com${post.cover}`,
+        "datePublished": post.date || new Date().toISOString().split('T')[0],
+        "dateModified": post.dateModified || post.date || new Date().toISOString().split('T')[0],
+        "inLanguage": "vi",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": url },
+        "author": {
+          "@type": "Organization",
+          "name": "Apocalypse Closet",
+          "url": "https://apocalypsecloset.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Apocalypse Closet",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://apocalypsecloset.com" },
+            { "@type": "ListItem", "position": 2, "name": "The Journal", "item": "https://apocalypsecloset.com/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": post.shortTitle || post.title, "item": url }
+          ]
+        }
+      };
+      const el = document.createElement('script');
+      el.type = 'application/ld+json';
+      el.id = 'schema-blogposting';
+      el.textContent = JSON.stringify(schema);
+      document.head.appendChild(el);
     }
 
     function setMeta(name, content, isOG = false) {
