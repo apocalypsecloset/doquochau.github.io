@@ -272,7 +272,7 @@
         return;
       }
       grid.innerHTML = filtered.map((post, i) => `
-        <a class="post-card" href="journal.html?slug=${post.slug}">
+        <a class="post-card" href="${post.slug}.html">
           <div class="card-cover">
             <img src="${post.cover}" alt="${escapeHTML(post.coverAlt || '')}"
                  loading="${i < 4 ? 'eager' : 'lazy'}">
