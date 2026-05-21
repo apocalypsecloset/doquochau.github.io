@@ -373,6 +373,77 @@
       document.title = `${d.title} — Apocalypse Closet`;
       document.getElementById('cat-badge').textContent = outfit.category;
 
+      // ── SEO: inject meta + schema dynamically ──────────────────
+      const pageUrl = `https://apocalypsecloset.com/outfit-detail.html?id=${outfit.id}`;
+
+      function setMeta(nameOrProp, content, isLink = false) {
+        if (isLink) {
+          let el = document.querySelector(`link[rel="${nameOrProp}"]`);
+          if (!el) { el = document.createElement('link'); el.rel = nameOrProp; document.head.appendChild(el); }
+          el.href = content;
+        } else {
+          const isOg = nameOrProp.startsWith('og:') || nameOrProp.startsWith('twitter:');
+          const attr = isOg ? 'property' : 'name';
+          let el = document.querySelector(`meta[${attr}="${nameOrProp}"]`);
+          if (!el) { el = document.createElement('meta'); el.setAttribute(attr, nameOrProp); document.head.appendChild(el); }
+          el.content = content;
+        }
+      }
+
+      function injectSchema(obj) {
+        const el = document.createElement('script');
+        el.type = 'application/ld+json';
+        el.textContent = JSON.stringify(obj);
+        document.head.appendChild(el);
+      }
+
+      // Canonical
+      setMeta('canonical', pageUrl, true);
+
+      // Meta description
+      setMeta('description', d.desc);
+
+      // Open Graph
+      setMeta('og:title', `${d.title} — Apocalypse Closet`);
+      setMeta('og:description', d.desc);
+      setMeta('og:image', `https://apocalypsecloset.com${d.imgs[0]}`);
+      setMeta('og:url', pageUrl);
+      setMeta('og:type', 'website');
+
+      // Twitter Card
+      setMeta('twitter:card', 'summary_large_image');
+      setMeta('twitter:title', `${d.title} — Apocalypse Closet`);
+      setMeta('twitter:description', d.desc);
+      setMeta('twitter:image', `https://apocalypsecloset.com${d.imgs[0]}`);
+
+      // Schema: ItemList (outfit + shopping links)
+      injectSchema({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": d.title,
+        "description": d.desc,
+        "url": pageUrl,
+        "image": `https://apocalypsecloset.com${d.imgs[0]}`,
+        "numberOfItems": d.items.length,
+        "itemListElement": d.items.map((item, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "name": item.name,
+          "url": item.link && item.link !== '#' ? item.link : pageUrl
+        }))
+      });
+
+      // Schema: BreadcrumbList
+      injectSchema({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://apocalypsecloset.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Outfits", "item": "https://apocalypsecloset.com/outfits.html" },
+          { "@type": "ListItem", "position": 3, "name": d.title, "item": pageUrl }
+        ]
+      });
+
       // Helper: thêm size param cho Google Drive URLs
       const imgUrl = (url, size) => url.includes('googleusercontent.com') ? url + size : url;
 
