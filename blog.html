@@ -212,33 +212,112 @@
     <button class="filter-btn active" data-tag="all" onclick="filterPosts('all')">All</button>
   </div>
 
-  <div class="post-grid" id="post-grid">
-    <div class="state-screen">
-      <div class="spinner"></div>
-      <p>Loading...</p>
-    </div>
-  </div>
+  <div class="post-grid" id="post-grid"></div>
 
   <footer>© 2026 APOCALYPSE CLOSET</footer>
 
-  <script>
-    let allPosts = [];
+<script>
+    const POSTS = [
+      {
+        slug: 'phong-cach-bad-girl',
+        shortTitle: 'Phong Cách Bad Girl',
+        category: 'Style Guide',
+        date: '21 May 2026',
+        tags: ['#BadGirl','#StyleGuide','#AltFashion'],
+        cover: '/image/apocalypse-badgirl-5-1_result.webp',
+        coverAlt: 'Phong cách bad girl outfit — áo đen, boots cao cổ, cá tính mạnh',
+        description: 'Phong cách bad girl không phải về việc hư hỏng — đó là tuyên ngôn về sự tự do. Định nghĩa thật sự, 4 style con, key pieces và cách phối đồ thực chiến.'
+      },
+      {
+        slug: 'the-art-of-burning-out',
+        shortTitle: 'The Art of Burning Out',
+        category: 'Tâm Lý Học',
+        date: '18 May 2026',
+        tags: ['#Psychology','#Burnout','#DarkAesthetic'],
+        cover: '/image/apocalypse-badgirl-1-1_result.webp',
+        coverAlt: 'Cô gái trong trang phục Dark Wear phong cách baddie',
+        description: 'Khi thế giới ép bạn phải luôn rực rỡ, kiệt sức không phải là sự thất bại. Nghệ thuật sụp đổ để tái sinh trong kỷ nguyên hậu tận thế.'
+      },
+      {
+        slug: 'dark-feminine-is-not-a-trend',
+        shortTitle: 'Dark Feminine Is Not a Trend',
+        category: 'Aesthetic',
+        date: '20 May 2026',
+        tags: ['#DarkFeminine','#Aesthetic','#Identity'],
+        cover: '/image/apocalypse-badgirl-3-1_result.webp',
+        coverAlt: 'Trang phục Dark Feminine phong cách mạnh mẽ',
+        description: 'Dark Feminine không phải là một trend trên TikTok. Đó là một triết học về sức mạnh, bản sắc và vẻ đẹp không cần sự cho phép của ai.'
+      },
+      {
+        slug: 'phong-cach-egirl-la-gi',
+        shortTitle: 'Phong Cách Egirl Là Gì',
+        category: 'Style Guide',
+        date: '21 May 2026',
+        tags: ['#Egirl','#AltFashion','#StyleGuide'],
+        cover: '/image/apocalypse-badgirl-8-1_result.webp',
+        coverAlt: 'Phong cách egirl với outfit striped long sleeve, plaid skirt và platform boots',
+        description: 'Phong cách egirl không phải filter TikTok — đó là toàn bộ ngôn ngữ thời trang của thế hệ lớn lên trên internet. Hướng dẫn build egirl wardrobe từ gốc rễ.'
+      },
+      {
+        slug: 'soft-grunge-aesthetic-la-gi',
+        shortTitle: 'Soft Grunge Aesthetic Là Gì',
+        category: 'Style Guide',
+        date: '22 May 2026',
+        tags: ['#SoftGrunge','#Aesthetic','#StyleGuide'],
+        cover: '/image/apocalypse-badgirl-10-1_result.webp',
+        coverAlt: 'Outfit soft grunge với band tee, layered necklaces và combat boots',
+        description: 'Soft grunge không chết cùng Tumblr. Nó tiến hóa. Hướng dẫn build soft grunge wardrobe năm 2026 — không nostalgia, không costume, chỉ là phong cách.'
+      },
+      {
+        slug: 'goth-aesthetic-huong-dan-day-du',
+        shortTitle: 'Goth Aesthetic 2026',
+        category: 'Style Guide',
+        date: '23 May 2026',
+        tags: ['#Goth','#DarkAesthetic','#StyleGuide'],
+        cover: '/image/apocalypse-badgirl-12-1_result.webp',
+        coverAlt: 'Goth outfit với lace dress, platform boots và dramatic eye makeup',
+        description: 'Goth không phải phase. Đó là một subculture với lịch sử 40 năm và ngôn ngữ thời trang riêng. Hướng dẫn goth aesthetic từ trad goth đến nu-goth cho người mới bắt đầu.'
+      },
+      {
+        slug: 'y2k-dark-aesthetic-khac-gi-y2k-thuong',
+        shortTitle: 'Dark Y2K Aesthetic',
+        category: 'Aesthetic',
+        date: '24 May 2026',
+        tags: ['#Y2K','#DarkAesthetic','#AltFashion'],
+        cover: '/image/apocalypse-badgirl-14-1_result.webp',
+        coverAlt: 'Dark Y2K outfit với metallic fabric, butterfly clips và platform boots đen',
+        description: 'Y2K đang quay lại — nhưng phiên bản tối hơn, sắc bén hơn và ít Instagram-friendly hơn. Dark Y2K aesthetic là gì và cách build wardrobe không bị trùng với mọi người.'
+      },
+      {
+        slug: 'cach-phoi-do-den-khong-nham-chan',
+        shortTitle: 'Cách Phối Đồ Đen Không Nhàm Chán',
+        category: 'Style Guide',
+        date: '25 May 2026',
+        tags: ['#AllBlack','#StyleGuide','#OOTD'],
+        cover: '/image/apocalypse-badgirl-16-1_result.webp',
+        coverAlt: 'All-black outfit với texture layering và statement accessories',
+        description: 'All-black không phải lazy dressing — đó là kỷ luật thẩm mỹ cao nhất. 7 công thức phối đồ đen không nhàm chán từ góc nhìn của dark fashion.'
+      },
+      {
+        slug: 'alt-fashion-la-gi-va-tai-sao-no-quan-trong',
+        shortTitle: 'Alt Fashion Là Gì',
+        category: 'Tâm Lý Học',
+        date: '26 May 2026',
+        tags: ['#AltFashion','#Identity','#Subculture'],
+        cover: '/image/apocalypse-badgirl-18-1_result.webp',
+        coverAlt: 'Alt fashion outfit với mixed aesthetics và statement accessories',
+        description: 'Alt fashion không phải rebellion trẻ con. Đó là cách một số người từ chối để hệ thống quyết định họ trông như thế nào — và tại sao điều đó có ý nghĩa chính trị thật sự.'
+      }
+    ];
+
+    let allPosts = POSTS;
     let activeTag = 'all';
 
     const urlTag = new URLSearchParams(window.location.search).get('tag');
     if (urlTag) activeTag = urlTag;
 
-    fetch('posts.json')
-      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-      .then(data => {
-        allPosts = data;
-        buildFilterBar();
-        renderGrid(activeTag);
-      })
-      .catch(() => {
-        document.getElementById('post-grid').innerHTML =
-          '<div class="state-screen"><p>Không tải được bài viết.</p></div>';
-      });
+    buildFilterBar();
+    renderGrid(activeTag);
 
     function buildFilterBar() {
       const bar = document.getElementById('filter-bar');
@@ -283,7 +362,7 @@
               <span class="dot"></span>
               <span>${escapeHTML(post.date)}</span>
             </div>
-            <h2 class="card-title">${escapeHTML(post.shortTitle || post.title)}</h2>
+            <h2 class="card-title">${escapeHTML(post.shortTitle)}</h2>
             <p class="card-desc">${escapeHTML(post.description)}</p>
             <span class="card-link">Read more →</span>
           </div>
@@ -298,4 +377,3 @@
     }
   </script>
 </body>
-</html>
