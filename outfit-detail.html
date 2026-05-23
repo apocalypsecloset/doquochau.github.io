@@ -76,7 +76,6 @@
     }
     .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
 
-    /* category tag in header */
     .cat-badge {
       font-size: 9px;
       letter-spacing: 0.2em;
@@ -87,12 +86,10 @@
       opacity: 0.8;
     }
 
-    /* save button states */
     #btn-save { border-color: #333; color: var(--white); }
     #btn-save.saved { border-color: var(--red); color: var(--red); }
     #btn-save:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
-    /* ── MAIN LAYOUT ── */
     .detail-container {
       display: flex;
       padding: 48px 32px;
@@ -101,7 +98,6 @@
       margin: 0 auto;
     }
 
-    /* ── SLIDER ── */
     .outfit-image-col { flex: 1; position: relative; }
 
     .slider-wrapper {
@@ -161,7 +157,6 @@
     .dot { width: 6px; height: 6px; background: rgba(255,255,255,0.3); border-radius: 50%; transition: all 0.2s; cursor: pointer; }
     .dot.active { background: var(--white); transform: scale(1.5); }
 
-    /* ── INFO COLUMN ── */
     .outfit-info-col { flex: 1; }
 
     .outfit-title {
@@ -211,7 +206,6 @@
     .item-text p { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 2px; }
     .item-arrow { font-size: 14px; color: var(--muted); }
 
-    /* ── RELATED ── */
     .related-section {
       padding: 40px 32px 48px;
       border-top: 1px solid #1a1a1a;
@@ -266,7 +260,6 @@
     }
     .related-card:hover .related-card-tag { opacity: 1; }
 
-    /* ── NOT FOUND ── */
     .not-found {
       text-align: center;
       padding: 120px 32px;
@@ -301,76 +294,7 @@
 
   <footer>© 2026 APOCALYPSE CLOSET</footer>
 
-  <!-- Load shared data -->
   <script src="outfits.js"></script>
-
-  <!-- Firebase + Firestore cho save button -->
-  <script type="module">
-    import { initializeApp }   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getAuth, onAuthStateChanged }
-                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-    import { getFirestore, doc, setDoc, deleteDoc, getDoc }
-                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-    const firebaseConfig = {
-      apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
-      authDomain:        "apocalypse-closet.firebaseapp.com",
-      projectId:         "apocalypse-closet",
-      storageBucket:     "apocalypse-closet.firebasestorage.app",
-      messagingSenderId: "493697340280",
-      appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
-    };
-
-    const app  = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const db   = getFirestore(app);
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const outfitId  = urlParams.get('id');
-    const outfit    = (typeof outfits !== 'undefined') ? outfits.find(o => o.id === outfitId) : null;
-
-    onAuthStateChanged(auth, async user => {
-      const btn = document.getElementById('btn-save');
-      if (!btn || !outfit) return;
-
-      if (!user) {
-        btn.onclick = () => { window.location.href = 'login.html'; };
-        return;
-      }
-
-      // Cập nhật localStorage để các trang khác nhận uid
-      localStorage.setItem('ac_user', JSON.stringify({
-        name: user.displayName || '', email: user.email,
-        picture: user.photoURL || '', sub: user.uid
-      }));
-
-      const ref = doc(db, 'users', user.uid, 'closet', outfit.id);
-
-      // Kiểm tra đã lưu chưa
-      const snap = await getDoc(ref);
-      let isSaved = snap.exists();
-      btn.innerHTML = isSaved ? '♥ SAVED' : '♡ SAVE';
-      if (isSaved) btn.classList.add('saved');
-
-      btn.onclick = async () => {
-        if (isSaved) {
-          await deleteDoc(ref);
-          isSaved = false;
-          btn.innerHTML = '♡ SAVE';
-          btn.classList.remove('saved');
-        } else {
-          await setDoc(ref, {
-            id: outfit.id, title: outfit.detail?.title || outfit.title,
-            image: outfit.img, category: outfit.category,
-            savedAt: Date.now()
-          });
-          isSaved = true;
-          btn.innerHTML = '♥ SAVED';
-          btn.classList.add('saved');
-        }
-      };
-    });
-  </script>
 
   <script>
     // ── FIND OUTFIT ───────────────────────────────────────────────
@@ -380,7 +304,7 @@
     const mainEl    = document.getElementById('main-content');
     let currentSlide = 0;
 
-    // ── SLIDER LOGIC ──────────────────────────────────────────────
+    // ── SLIDER ────────────────────────────────────────────────────
     function moveSlide(dir) {
       const track = document.getElementById('slider-track');
       const dots  = document.querySelectorAll('.dot');
@@ -398,18 +322,14 @@
       dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
     }
 
-    // initSaveBtn giờ được xử lý bởi Firebase module ở trên
-    function initSaveBtn() { /* no-op */ }
-
     // ── RENDER DETAIL ─────────────────────────────────────────────
     if (outfit && outfit.detail) {
       const d = outfit.detail;
 
-      // update page title + category badge
       document.title = `${d.title} — Apocalypse Closet`;
       document.getElementById('cat-badge').textContent = outfit.category;
 
-      // ── SEO: inject meta + schema dynamically ──────────────────
+      // SEO meta + schema
       const pageUrl = `https://apocalypsecloset.com/outfit-detail.html?id=${outfit.id}`;
 
       function setMeta(nameOrProp, content, isLink = false) {
@@ -433,26 +353,18 @@
         document.head.appendChild(el);
       }
 
-      // Canonical
       setMeta('canonical', pageUrl, true);
-
-      // Meta description
       setMeta('description', d.desc);
-
-      // Open Graph
       setMeta('og:title', `${d.title} — Apocalypse Closet`);
       setMeta('og:description', d.desc);
       setMeta('og:image', `https://apocalypsecloset.com${d.imgs[0]}`);
       setMeta('og:url', pageUrl);
       setMeta('og:type', 'website');
-
-      // Twitter Card
       setMeta('twitter:card', 'summary_large_image');
       setMeta('twitter:title', `${d.title} — Apocalypse Closet`);
       setMeta('twitter:description', d.desc);
       setMeta('twitter:image', `https://apocalypsecloset.com${d.imgs[0]}`);
 
-      // Schema: ItemList (outfit + shopping links)
       injectSchema({
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -469,7 +381,6 @@
         }))
       });
 
-      // Schema: BreadcrumbList
       injectSchema({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -480,22 +391,18 @@
         ]
       });
 
-      // Helper: thêm size param cho Google Drive URLs
       const imgUrl = (url, size) => url.includes('googleusercontent.com') ? url + size : url;
 
-      // build slider images — ảnh đầu load ngay (LCP), các ảnh sau lazy
       const imagesHTML = d.imgs.map((img, i) =>
         i === 0
           ? `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" fetchpriority="high" decoding="async">`
           : `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" loading="lazy" decoding="async">`
       ).join('');
 
-      // build dots
       const dotsHTML = d.imgs.length > 1
         ? d.imgs.map((_, i) => `<div class="dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`).join('')
         : '';
 
-      // build items list
       const itemsHTML = d.items.map(item => {
         const hasLink = item.link && item.link !== '#';
         return `
@@ -535,7 +442,7 @@
         </div>
       `;
 
-      // ── RELATED OUTFITS (same category, excluding current) ─────
+      // Related outfits
       const related = outfits
         .filter(o => o.category === outfit.category && o.id !== outfit.id)
         .slice(0, 4);
@@ -556,10 +463,7 @@
         `;
       }
 
-      initSaveBtn();
-
     } else {
-      // outfit not found
       mainEl.innerHTML = `
         <div class="not-found">
           <h1>OUTFIT NOT FOUND</h1>
@@ -567,5 +471,81 @@
         </div>`;
     }
   </script>
+
+  <!-- ✅ Firebase defer sau khi trang render xong — không chặn LCP -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const fbScript = document.createElement('script');
+        fbScript.type = 'module';
+        fbScript.innerHTML = `
+          import { initializeApp }   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+          import { getAuth, onAuthStateChanged }
+                                     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+          import { getFirestore, doc, setDoc, deleteDoc, getDoc }
+                                     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+          const firebaseConfig = {
+            apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+            authDomain:        "apocalypse-closet.firebaseapp.com",
+            projectId:         "apocalypse-closet",
+            storageBucket:     "apocalypse-closet.firebasestorage.app",
+            messagingSenderId: "493697340280",
+            appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
+          };
+
+          const app  = initializeApp(firebaseConfig);
+          const auth = getAuth(app);
+          const db   = getFirestore(app);
+
+          // Tìm lại outfit từ URL (module scope riêng, không share var với script bên ngoài)
+          const _urlParams = new URLSearchParams(window.location.search);
+          const _outfitId  = _urlParams.get('id');
+          const _outfit    = (typeof outfits !== 'undefined') ? outfits.find(o => o.id === _outfitId) : null;
+
+          onAuthStateChanged(auth, async user => {
+            const btn = document.getElementById('btn-save');
+            if (!btn || !_outfit) return;
+
+            if (!user) {
+              btn.onclick = () => { window.location.href = 'login.html'; };
+              return;
+            }
+
+            localStorage.setItem('ac_user', JSON.stringify({
+              name: user.displayName || '', email: user.email,
+              picture: user.photoURL || '', sub: user.uid
+            }));
+
+            const ref = doc(db, 'users', user.uid, 'closet', _outfit.id);
+            const snap = await getDoc(ref);
+            let isSaved = snap.exists();
+            btn.innerHTML = isSaved ? '♥ SAVED' : '♡ SAVE';
+            if (isSaved) btn.classList.add('saved');
+
+            btn.onclick = async () => {
+              if (isSaved) {
+                await deleteDoc(ref);
+                isSaved = false;
+                btn.innerHTML = '♡ SAVE';
+                btn.classList.remove('saved');
+              } else {
+                await setDoc(ref, {
+                  id: _outfit.id, title: _outfit.detail?.title || _outfit.title,
+                  image: _outfit.img, category: _outfit.category,
+                  savedAt: Date.now()
+                });
+                isSaved = true;
+                btn.innerHTML = '♥ SAVED';
+                btn.classList.add('saved');
+              }
+            };
+          });
+        `;
+        document.body.appendChild(fbScript);
+      }, 1500);
+    });
+  </script>
+
 </body>
 </html>

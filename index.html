@@ -542,7 +542,7 @@
   <script src="outfits.js"></script>
 
   <script>
-    // Placeholder trước khi Firebase load xong
+    // ── FIREBASE (defer 2s để không chặn LCP) ────────────────────
     window.getSavedIds = () => new Set();
 
     window.addEventListener('load', () => {
@@ -566,7 +566,7 @@
           const app  = initializeApp(firebaseConfig);
           const auth = getAuth(app);
           const db   = getFirestore(app);
-          
+
           let currentUid = null;
           let savedIdsSet = new Set();
 
@@ -606,14 +606,13 @@
                 btn.style.color = '#e05444';
                 btn.style.borderColor = '#c0392b';
               }
-              
+
               const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
               savedIdsSet = new Set();
               snap.forEach(d => savedIdsSet.add(d.id));
-              
               window.getSavedIds = () => savedIdsSet;
 
-              // ✅ FIX: Chỉ cập nhật trạng thái nút, KHÔNG render lại grid
+              // ✅ Chỉ update nút, KHÔNG render lại grid
               if (window._renderAllReady && typeof window.updateSaveButtons === 'function') {
                 window.updateSaveButtons();
               }
@@ -630,7 +629,7 @@
   </script>
 
   <script>
-    // ── 1. AUTH ───────────────────────────────────────────────────
+    // ── AUTH ──────────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
@@ -642,7 +641,7 @@
       return new Set();
     }
 
-    // ── 2. TOAST ──────────────────────────────────────────────────
+    // ── TOAST ─────────────────────────────────────────────────────
     window.showToast = function(msg) {
       let t = document.getElementById('ac-toast');
       if (!t) {
@@ -658,9 +657,7 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 3. RENDER ─────────────────────────────────────────────────
-    const isMobile = window.innerWidth <= 768;
-
+    // ── INTERSECTION OBSERVER (lazy load) ────────────────────────
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -678,68 +675,96 @@
       });
     }, { rootMargin: '200px' });
 
+    // ── BUILD CARD (tách ra để dùng cho cả renderAll và batch) ───
+    function buildCard(outfit, i, savedIds) {
+      const card = document.createElement('div');
+      card.className = 'outfit-card shimmer';
+      card.style.animationDelay = (i * 0.03) + 's';
+      card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
+
+      const img = document.createElement('img');
+      img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
+      img.decoding = 'async';
+      img.onload = () => card.classList.remove('shimmer');
+      img.onerror = () => card.classList.remove('shimmer');
+
+      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
+      img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
+      img.sizes = '(max-width: 768px) 50vw, 700px';
+
+      if (i < 8) {
+        img.src = outfit.img;
+        if (i < 4) img.fetchPriority = 'high';
+      } else {
+        img.dataset.src = outfit.img;
+        img.dataset.srcset = img.srcset;
+        img.srcset = '';
+        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
+        imgObserver.observe(img);
+      }
+
+      const overlay = document.createElement('div');
+      overlay.className = 'outfit-overlay';
+      overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
+
+      const saveBtn = document.createElement('button');
+      const isSaved = savedIds.has(outfit.id);
+      saveBtn.dataset.outfitId = outfit.id;
+      saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
+      saveBtn.innerHTML = isSaved ? '♥' : '♡';
+      saveBtn.onclick = (e) => {
+        e.stopPropagation();
+        if (window.toggleSave) window.toggleSave(outfit, saveBtn);
+      };
+
+      card.appendChild(img);
+      card.appendChild(overlay);
+      card.appendChild(saveBtn);
+      return card;
+    }
+
+    // ── RENDER ALL — batch để giảm TBT ───────────────────────────
+    // FIRST_BATCH card đầu render đồng bộ (above fold),
+    // phần còn lại render sau qua requestIdleCallback / setTimeout
+    const FIRST_BATCH = 8;
+
     window.renderAll = function(data = outfits) {
       const grid = document.getElementById('outfit-grid');
       const savedIds = getSafeSavedIds();
-      
+
       grid.innerHTML = '';
       document.getElementById('counter').textContent = data.length + ' LOOKS';
 
       if (data.length === 0) {
-        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 60px 20px; text-align: center; color: var(--muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
+        grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
         return;
       }
 
-      data.forEach((outfit, i) => {
-        const card = document.createElement('div');
-        card.className = 'outfit-card shimmer';
-        card.style.animationDelay = (i * 0.03) + 's';
-        card.onclick = () => { window.location.href = `outfit-detail.html?id=${outfit.id}`; };
+      // Batch 1 — render ngay (above fold, quan trọng cho LCP/CLS)
+      const firstSlice = data.slice(0, FIRST_BATCH);
+      const frag1 = document.createDocumentFragment();
+      firstSlice.forEach((outfit, i) => frag1.appendChild(buildCard(outfit, i, savedIds)));
+      grid.appendChild(frag1);
 
-        const img = document.createElement('img');
-        img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
-        img.decoding = 'async';
-        img.onload = () => card.classList.remove('shimmer');
-        img.onerror = () => card.classList.remove('shimmer');
-
-        const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
-        img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
-        img.sizes = '(max-width: 768px) 50vw, 700px';
-
-        if (i < 8) {
-          img.src = outfit.img;
-          if (i < 4) img.fetchPriority = 'high';
-        } else {
-          img.dataset.src = outfit.img;
-          img.dataset.srcset = img.srcset;
-          img.srcset = '';
-          img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
-          imgObserver.observe(img);
-        }
-
-        const overlay = document.createElement('div');
-        overlay.className = 'outfit-overlay';
-        overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
-
-        const saveBtn = document.createElement('button');
-        const isSaved = savedIds.has(outfit.id);
-        // ✅ FIX: Gắn data-outfit-id để updateSaveButtons tìm đúng nút
-        saveBtn.dataset.outfitId = outfit.id;
-        saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
-        saveBtn.innerHTML = isSaved ? '♥' : '♡';
-        saveBtn.onclick = (e) => {
-          e.stopPropagation();
-          if (window.toggleSave) window.toggleSave(outfit, saveBtn);
+      // Batch 2 — render sau khi browser rảnh, không chặn main thread
+      if (data.length > FIRST_BATCH) {
+        const rest = data.slice(FIRST_BATCH);
+        const renderRest = () => {
+          const frag2 = document.createDocumentFragment();
+          rest.forEach((outfit, i) => frag2.appendChild(buildCard(outfit, i + FIRST_BATCH, savedIds)));
+          grid.appendChild(frag2);
         };
 
-        card.appendChild(img);
-        card.appendChild(overlay);
-        card.appendChild(saveBtn);
-        grid.appendChild(card);
-      });
-    }
+        // requestIdleCallback nếu browser hỗ trợ, fallback setTimeout
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(renderRest, { timeout: 500 });
+        } else {
+          setTimeout(renderRest, 50);
+        }
+      }
+    };
 
-    // ✅ FIX: Hàm mới — chỉ cập nhật trạng thái nút lưu, không đụng vào grid/ảnh
+    // ── UPDATE SAVE BUTTONS (không render lại grid) ───────────────
     window.updateSaveButtons = function() {
       const savedIds = getSafeSavedIds();
       document.querySelectorAll('.btn-save-card').forEach(btn => {
@@ -751,14 +776,14 @@
       });
     };
 
-    // ── 4. RANDOM ─────────────────────────────────────────────────
+    // ── RANDOM ────────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // ── 5. INIT ───────────────────────────────────────────────────
+    // ── INIT ──────────────────────────────────────────────────────
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
@@ -770,7 +795,7 @@
       }
     }
 
-    // ── 6. SEARCH TOGGLE ──────────────────────────────────────────
+    // ── SEARCH TOGGLE ─────────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -778,7 +803,7 @@
       if (bar.style.display === 'block') input.focus();
     }
 
-    // ── 7. MUSIC ──────────────────────────────────────────────────
+    // ── MUSIC ─────────────────────────────────────────────────────
     const audio = document.getElementById('apocalypse-audio');
     const rec   = document.getElementById('record-icon');
     document.getElementById('music-player').addEventListener('click', () => {
@@ -786,7 +811,7 @@
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // ── 8. SEARCH ────────────────────────────────────────────────
+    // ── SEARCH ────────────────────────────────────────────────────
     document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
       const filtered = outfits.filter(o =>
