@@ -679,9 +679,12 @@ function getSafeSavedIds() {
     }, { rootMargin: '200px' });
 
     function renderAll(data = outfits) {
-      const grid = document.getElementById('outfit-grid');
-      const savedIds = getSavedIds();
-      grid.innerHTML = '';
+  const grid = document.getElementById('outfit-grid');
+  
+  // Đã sửa dòng này
+  const savedIds = getSafeSavedIds(); 
+  
+  grid.innerHTML = '';
       document.getElementById('counter').textContent = data.length + ' LOOKS';
 
       if (data.length === 0) {
