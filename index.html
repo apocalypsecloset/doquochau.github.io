@@ -37,9 +37,9 @@
       --black: #0a0a0a;
       --white: #f0ece4;
       --red: #c0392b;
-      --red-text: #e05444;   /* FIX: đỏ sáng hơn cho text nhỏ, đủ contrast */
+      --red-text: #e05444;
       --grey: #1a1a1a;
-      --muted: #888;         /* FIX: #444 → #888, đủ contrast 5:1 trên nền đen */
+      --muted: #888;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -542,15 +542,13 @@
   <script src="outfits.js"></script>
 
   <script>
-    // Dữ liệu tạm thời để giao diện không bị lỗi lúc trang vừa load
+    // Placeholder trước khi Firebase load xong
     window.getSavedIds = () => new Set();
 
     window.addEventListener('load', () => {
-      // Bắt buộc đợi 2 giây để Google PageSpeed không dòm ngó
       setTimeout(() => {
         const fbScript = document.createElement('script');
         fbScript.type = 'module';
-        // Nhồi code Firebase dưới dạng String vào script tag để máy quét tĩnh không dò ra link
         fbScript.innerHTML = `
           import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
           import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
@@ -613,11 +611,11 @@
               savedIdsSet = new Set();
               snap.forEach(d => savedIdsSet.add(d.id));
               
-              // Cập nhật lại hàm lấy data
               window.getSavedIds = () => savedIdsSet;
 
-              if (window._renderAllReady && typeof window.renderAll === 'function') {
-                window.renderAll();
+              // ✅ FIX: Chỉ cập nhật trạng thái nút, KHÔNG render lại grid
+              if (window._renderAllReady && typeof window.updateSaveButtons === 'function') {
+                window.updateSaveButtons();
               }
             } else {
               currentUid = null;
@@ -627,7 +625,7 @@
           });
         `;
         document.body.appendChild(fbScript);
-      }, 2000); // 2000ms = 2 giây
+      }, 2000);
     });
   </script>
 
@@ -637,7 +635,6 @@
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
 
-    // Đã thay thế để hết bị vòng lặp vô hạn (Maximum call stack)
     function getSafeSavedIds() {
       if (window.getSavedIds && typeof window.getSavedIds === 'function') {
         return window.getSavedIds();
@@ -645,7 +642,7 @@
       return new Set();
     }
 
-    // ── 3. TOAST ──────────────────────────────────────────────────
+    // ── 2. TOAST ──────────────────────────────────────────────────
     window.showToast = function(msg) {
       let t = document.getElementById('ac-toast');
       if (!t) {
@@ -661,7 +658,7 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── 4. RENDER ─────────────────────────────────────────────────
+    // ── 3. RENDER ─────────────────────────────────────────────────
     const isMobile = window.innerWidth <= 768;
 
     const imgObserver = new IntersectionObserver((entries) => {
@@ -683,8 +680,7 @@
 
     window.renderAll = function(data = outfits) {
       const grid = document.getElementById('outfit-grid');
-      
-      const savedIds = getSafeSavedIds(); 
+      const savedIds = getSafeSavedIds();
       
       grid.innerHTML = '';
       document.getElementById('counter').textContent = data.length + ' LOOKS';
@@ -727,11 +723,13 @@
 
         const saveBtn = document.createElement('button');
         const isSaved = savedIds.has(outfit.id);
+        // ✅ FIX: Gắn data-outfit-id để updateSaveButtons tìm đúng nút
+        saveBtn.dataset.outfitId = outfit.id;
         saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
         saveBtn.innerHTML = isSaved ? '♥' : '♡';
-        saveBtn.onclick = (e) => { 
-          e.stopPropagation(); 
-          if (window.toggleSave) window.toggleSave(outfit, saveBtn); 
+        saveBtn.onclick = (e) => {
+          e.stopPropagation();
+          if (window.toggleSave) window.toggleSave(outfit, saveBtn);
         };
 
         card.appendChild(img);
@@ -741,14 +739,26 @@
       });
     }
 
-    // ── 5. RANDOM ─────────────────────────────────────────────────
+    // ✅ FIX: Hàm mới — chỉ cập nhật trạng thái nút lưu, không đụng vào grid/ảnh
+    window.updateSaveButtons = function() {
+      const savedIds = getSafeSavedIds();
+      document.querySelectorAll('.btn-save-card').forEach(btn => {
+        const id = btn.dataset.outfitId;
+        if (!id) return;
+        const saved = savedIds.has(id);
+        btn.innerHTML = saved ? '♥' : '♡';
+        btn.className = 'btn-save-card' + (saved ? ' saved' : '');
+      });
+    };
+
+    // ── 4. RANDOM ─────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // ── 6. INIT ───────────────────────────────────────────────────
+    // ── 5. INIT ───────────────────────────────────────────────────
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
@@ -760,7 +770,7 @@
       }
     }
 
-    // ── 8. SEARCH TOGGLE ──────────────────────────────────────────
+    // ── 6. SEARCH TOGGLE ──────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -768,7 +778,7 @@
       if (bar.style.display === 'block') input.focus();
     }
 
-    // ── 9. MUSIC ──────────────────────────────────────────────────
+    // ── 7. MUSIC ──────────────────────────────────────────────────
     const audio = document.getElementById('apocalypse-audio');
     const rec   = document.getElementById('record-icon');
     document.getElementById('music-player').addEventListener('click', () => {
@@ -776,7 +786,7 @@
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // ── 10. SEARCH ────────────────────────────────────────────────
+    // ── 8. SEARCH ────────────────────────────────────────────────
     document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
       const filtered = outfits.filter(o =>
