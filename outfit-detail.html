@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outfit Detail - Apocalypse Closet</title>
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="canonical" href="https://apocalypsecloset.com/outfit-detail.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -464,7 +465,7 @@
         const hasLink = item.link && item.link !== '#';
         return `
           <a href="${hasLink ? item.link : '#'}"
-             ${hasLink ? 'target="_blank"' : ''}
+             ${hasLink ? 'target="_blank" rel="nofollow noopener"' : ''}
              class="item-link${hasLink ? '' : ' no-link'}">
             <div class="item-left">
               <div class="item-icon">✦</div>
