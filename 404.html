@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Apocalypse Closet</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f0ece4;
+      --red: #c0392b;
+      --grey: #1a1a1a;
+      --muted: #444;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      cursor: crosshair;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+      border-bottom: 1px solid #222;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      height: 36px;
+      padding: 0 16px;
+      border: 1px solid #333;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Big 404 background text */
+    .bg-text {
+      position: absolute;
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(200px, 35vw, 420px);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px #1e1e1e;
+      letter-spacing: -0.04em;
+      user-select: none;
+      pointer-events: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      animation: glitch-bg 8s infinite;
+    }
+
+    @keyframes glitch-bg {
+      0%, 92%, 100% { opacity: 1; transform: translate(-50%, -50%); }
+      93% { opacity: 0.6; transform: translate(-50.5%, -50%); clip-path: inset(10% 0 60% 0); }
+      94% { opacity: 0.8; transform: translate(-49.5%, -50%); }
+      95% { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .error-label {
+      font-size: 10px;
+      letter-spacing: 0.5em;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .error-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(56px, 10vw, 110px);
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      animation: fadeUp 0.6s ease 0.1s both;
+    }
+
+    .error-title span { color: var(--red); }
+
+    .glitch-line {
+      width: 60px;
+      height: 2px;
+      background: var(--red);
+      margin: 24px auto;
+      animation: fadeUp 0.6s ease 0.2s both, glitch-line 4s infinite 1s;
+    }
+
+    @keyframes glitch-line {
+      0%, 90%, 100% { width: 60px; opacity: 1; }
+      92% { width: 120px; opacity: 0.5; }
+      94% { width: 30px; opacity: 1; }
+      96% { width: 60px; }
+    }
+
+    .error-desc {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      line-height: 1.9;
+      max-width: 320px;
+      margin-bottom: 8px;
+      animation: fadeUp 0.6s ease 0.3s both;
+    }
+
+    .error-desc span { color: var(--white); }
+
+    .error-quote {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      color: var(--red);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 10px 20px;
+      margin: 24px 0 32px;
+      animation: fadeUp 0.6s ease 0.4s both;
+    }
+
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid var(--red);
+      padding: 14px 32px;
+      transition: all 0.3s ease;
+      background: rgba(192, 57, 43, 0.05);
+      animation: fadeUp 0.6s ease 0.5s both;
+    }
+
+    .home-btn:hover {
+      background: var(--red);
+      color: var(--white);
+      box-shadow: 0 0 24px rgba(192, 57, 43, 0.35);
+    }
+
+    .home-btn .arrow {
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .home-btn:hover .arrow { transform: translateX(4px); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* TICKER */
+    .ticker {
+      overflow: hidden;
+      border-top: 1px solid #1a1a1a;
+      padding: 10px 0;
+      background: var(--grey);
+    }
+    .ticker-inner {
+      display: flex;
+      gap: 48px;
+      animation: ticker 20s linear infinite;
+      white-space: nowrap;
+    }
+    .ticker-item {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+    }
+    .ticker-item span { color: var(--red); }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* FOOTER */
+    footer {
+      padding: 24px 32px;
+      border-top: 1px solid #1a1a1a;
+      text-align: center;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 14px 16px; }
+      .btn { height: 30px; padding: 0 12px; font-size: 9px; }
+      main { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo-wrap" href="/">
+      <img src="Logo-Apocalypse-Closet.webp" width="44" height="44"
+        alt="Apocalypse Closet" style="height:44px;width:auto;object-fit:contain;">
+      <img src="wordmark.webp" width="70" height="32"
+        alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+    </a>
+    <a class="btn" href="/">← VỀ TRANG CHỦ</a>
+  </header>
+
+  <main>
+    <div class="bg-text">404</div>
+    <div class="content">
+      <div class="error-label">// Error 404 — Page not found</div>
+      <h1 class="error-title">LOST IN THE<br><span>APOCALYPSE</span></h1>
+      <div class="glitch-line"></div>
+      <p class="error-desc">
+        Trang này không tồn tại hoặc đã bị xoá.<br>
+        Có thể <span>URL sai</span> hoặc outfit này<br>
+        đã về với hư vô.
+      </p>
+      <div class="error-quote">"Dress like it's the end of the world"</div>
+      <a href="/" class="home-btn">
+        VỀ TRANG CHỦ <span class="arrow">→</span>
+      </a>
+    </div>
+  </main>
+
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">APOCALYPSE CLOSET</span>
+      <span class="ticker-item"><span>✦</span> BAD GIRL AESTHETIC</span>
+      <span class="ticker-item">OUTFIT OF THE DAY</span>
+      <span class="ticker-item"><span>✦</span> DARK FASHION</span>
+      <span class="ticker-item">CLOSET BAD GIRL</span>
+      <span class="ticker-item"><span>✦</span> PAGE NOT FOUND</span>
+      <span class="ticker-item">APOCALYPSE CLOSET</span>
+      <span class="ticker-item"><span>✦</span> BAD GIRL AESTHETIC</span>
+      <span class="ticker-item">OUTFIT OF THE DAY</span>
+      <span class="ticker-item"><span>✦</span> DARK FASHION</span>
+      <span class="ticker-item">CLOSET BAD GIRL</span>
+      <span class="ticker-item"><span>✦</span> PAGE NOT FOUND</span>
+    </div>
+  </div>
+
+  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="/" style="color:inherit;text-decoration:none;opacity:0.6;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.6">Trang chủ</a></footer>
+
+</body>
+</html>
