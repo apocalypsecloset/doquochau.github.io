@@ -628,13 +628,19 @@
 
   <script>
     // ── 1. AUTH ───────────────────────────────────────────────────
-    function getUser() {
-      try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
-    }
-    // getSavedIds: fallback khi Firebase module chưa load xong
-    function getSavedIds() {
-      return window.getSavedIds ? window.getSavedIds() : new Set();
-    }
+function getUser() {
+  try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
+}
+
+// FIX: Đổi tên hàm thành getSafeSavedIds để tránh trùng tên và gây vòng lặp vô hạn
+function getSafeSavedIds() {
+  // Nếu Firebase đã load xong và gán window.getSavedIds là một function, thì chạy nó
+  if (window.getSavedIds && typeof window.getSavedIds === 'function') {
+    return window.getSavedIds();
+  }
+  // Nếu chưa load xong Firebase, trả về một Set rỗng an toàn
+  return new Set();
+}
 
     // ── 3. TOAST ──────────────────────────────────────────────────
     function showToast(msg) {
