@@ -33,14 +33,20 @@
       pointer-events: none; z-index: 999; opacity: 0.4;
     }
 
-    header {
-      display: flex; align-items: center; justify-content: space-between;
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      width: 100%;
+      min-height: 80px;
       padding: 18px 32px;
       border-bottom: 1px solid #222;
-      position: sticky; top: 0;
+      position: sticky;
+      top: 0;
       background: rgba(10,10,10,0.95);
       backdrop-filter: blur(8px);
-      z-index: 100;
+      z-index: 1000;
     }
 
     /* HERO — split with stat blocks */
@@ -173,7 +179,7 @@
     }
 
     @media (max-width: 768px) {
-      header { padding: 14px 16px; }
+      .site-header { padding: 14px 16px; min-height: 64px; }
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-left { padding: 36px 16px 28px; border-right: none; border-bottom: 1px solid #1a1a1a; }
       .hero-right { grid-template-columns: 1fr 1fr; grid-template-rows: auto; min-height: 200px; }
@@ -183,27 +189,118 @@
       footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
     }
 
-    /* MENU CSS TỪ TRANG CHỦ */
-    .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    nav { display: flex; align-items: center; gap: 8px; }
-    .btn { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.12em; height: 36px; padding: 0 16px; border: 1px solid #333; background: transparent; color: var(--white); cursor: pointer; transition: all 0.15s; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
-    .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
-    .nav-icon { font-size: 16px; display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; line-height: 1; }
-    .dropdown { position: relative; display: inline-block; }
-    .dropdown-content { display: none; position: absolute; right: 0; top: calc(100% + 10px); background: rgba(10,10,10,0.98); backdrop-filter: blur(8px); min-width: 200px; border: 1px solid #333; z-index: 200; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
-    .dropdown-content::before { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; background: transparent; }
-    .dropdown:hover .dropdown-content { display: flex; flex-direction: column; }
-    .dropdown-content a { color: var(--white); padding: 14px 16px; text-decoration: none; font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.05em; border-bottom: 1px solid #222; transition: background 0.2s, color 0.2s; }
-    .dropdown-content a:last-child { border-bottom: none; }
-    .dropdown-content a:hover { background-color: var(--white); color: var(--black); }
+    /* MENU CSS TỪ TRANG CHỦ — scoped để không bị CSS trang khác đè */
+    .site-header .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex: 0 0 auto;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
+
+    .site-header .btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      height: 36px;
+      padding: 0 16px;
+      border: 1px solid #333;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .site-header .btn:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--white);
+    }
+
+    .site-header .nav-icon {
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      line-height: 1;
+    }
+
+    .site-header .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .site-header .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 10px);
+      background: rgba(10,10,10,0.98);
+      backdrop-filter: blur(8px);
+      min-width: 200px;
+      border: 1px solid #333;
+      z-index: 2000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .site-header .dropdown-content::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: transparent;
+    }
+
+    .site-header .dropdown:hover .dropdown-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .site-header .dropdown-content a {
+      color: var(--white);
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #222;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .site-header .dropdown-content a:last-child { border-bottom: none; }
+
+    .site-header .dropdown-content a:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
 
     @media (max-width: 768px) {
-      nav { gap: 4px; }
-      .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
-      .btn.btn-icon-only { width: 30px; padding: 0; }
-      .text-hide { display: none; }
-      .logo-wrap img:first-child { height: 36px; }
-      .logo-wrap img:last-child { height: 22px; }
+      .site-nav { gap: 4px; }
+      .site-header .btn { height: 30px; padding: 0 10px; font-size: 9px; letter-spacing: 0.05em; }
+      .site-header .btn.btn-icon-only { width: 30px; padding: 0; }
+      .site-header .text-hide { display: none; }
+      .site-header .logo-wrap img:first-child { height: 36px; }
+      .site-header .logo-wrap img:last-child { height: 22px; }
     }
 
   </style>
@@ -246,19 +343,19 @@
   </script>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <a class="logo-wrap" href="index.html">
       <img src="Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high"
         alt="icon" style="height:44px;width:auto;object-fit:contain;">
       <img src="wordmark.webp" width="70" height="32"
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
-    <nav>
+    <nav class="site-nav" aria-label="Primary navigation">
       <a class="btn btn-icon-only" id="nav-closet-btn" href="login.html">
         <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
       <div class="dropdown">
-        <button class="btn">STYLE ↓</button>
+        <button class="btn" type="button">STYLE ↓</button>
         <div class="dropdown-content">
           <a href="dark-feminine.html">Dark Feminine</a>
           <a href="egirl.html">E-Girl / Alt Girl</a>
