@@ -543,41 +543,93 @@
 
   <script src="outfits.js"></script>
 
-  <script>
-    // ── 1. AUTH ───────────────────────────────────────────────────
-    function getUser() {
-      try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
-    }
-    function getClosetKey() {
-      const u = getUser();
-      return u ? `ac_closet_${u.sub}` : null;
-    }
-    function getSavedIds() {
-      const key = getClosetKey();
-      if (!key) return new Set();
-      try { return new Set((JSON.parse(localStorage.getItem(key)) || []).map(o => o.id)); }
-      catch { return new Set(); }
+  <!-- Firebase + Firestore cho save/unsave outfit -->
+  <script type="module">
+    import { initializeApp }   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged }
+                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    import { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }
+                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+      authDomain:        "apocalypse-closet.firebaseapp.com",
+      projectId:         "apocalypse-closet",
+      storageBucket:     "apocalypse-closet.firebasestorage.app",
+      messagingSenderId: "493697340280",
+      appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
+    };
+
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db   = getFirestore(app);
+
+    let currentUid  = null;
+    let savedIdsSet = new Set(); // cache IDs đã lưu để render nhanh
+
+    // ── Load danh sách đã lưu từ Firestore ───────────────────────
+    async function loadSavedIds(uid) {
+      const snap = await getDocs(collection(db, 'users', uid, 'closet'));
+      savedIdsSet = new Set();
+      snap.forEach(d => savedIdsSet.add(d.id));
     }
 
-    // ── 2. SAVE / UNSAVE ──────────────────────────────────────────
-    function toggleSave(outfit, btn) {
-      if (!getUser()) { window.location.href = 'login.html'; return; }
-      const key = getClosetKey();
-      let list = [];
-      try { list = JSON.parse(localStorage.getItem(key)) || []; } catch {}
-      const idx = list.findIndex(o => o.id === outfit.id);
-      if (idx === -1) {
-        list.push({ id: outfit.id, title: outfit.title, image: outfit.img, category: outfit.category, savedAt: Date.now() });
-        btn.innerHTML = '♥';
-        btn.classList.add('saved');
-        showToast('Đã lưu vào closet 🖤');
-      } else {
-        list.splice(idx, 1);
+    // ── Toggle save / unsave ──────────────────────────────────────
+    window.toggleSave = async function(outfit, btn) {
+      if (!currentUid) { window.location.href = 'login.html'; return; }
+      const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
+      if (savedIdsSet.has(outfit.id)) {
+        await deleteDoc(ref);
+        savedIdsSet.delete(outfit.id);
         btn.innerHTML = '♡';
         btn.classList.remove('saved');
         showToast('Đã xoá khỏi closet');
+      } else {
+        await setDoc(ref, {
+          id: outfit.id, title: outfit.title,
+          image: outfit.img, category: outfit.category,
+          savedAt: Date.now()
+        });
+        savedIdsSet.add(outfit.id);
+        btn.innerHTML = '♥';
+        btn.classList.add('saved');
+        showToast('Đã lưu vào closet 🖤');
       }
-      localStorage.setItem(key, JSON.stringify(list));
+    };
+
+    // ── Trả về Set IDs đã lưu (dùng khi renderAll) ───────────────
+    window.getSavedIds = () => savedIdsSet;
+
+    // ── Auth state ────────────────────────────────────────────────
+    onAuthStateChanged(auth, async user => {
+      if (user) {
+        currentUid = user.uid;
+        localStorage.setItem('ac_user', JSON.stringify({
+          name: user.displayName || '', email: user.email,
+          picture: user.photoURL || '', sub: user.uid
+        }));
+        // Cập nhật nav closet button
+        const btn = document.getElementById('nav-closet-btn');
+        if (btn) {
+          btn.href = 'closet.html';
+          document.getElementById('nav-closet-icon').innerHTML = '♥';
+          btn.style.color = '#e05444';
+          btn.style.borderColor = '#c0392b';
+        }
+        await loadSavedIds(user.uid);
+        // Re-render để cập nhật trạng thái ♥/♡
+        if (window._renderAllReady) renderAll();
+      } else {
+        currentUid = null;
+        savedIdsSet = new Set();
+      }
+    });
+  </script>
+
+  <script>
+    // ── 1. AUTH (legacy — giữ để tương thích) ────────────────────
+    function getUser() {
+      try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
 
     // ── 3. TOAST ──────────────────────────────────────────────────
@@ -691,14 +743,7 @@
     }
 
     // ── 7. NAV CLOSET BUTTON ──────────────────────────────────────
-    const _u = getUser();
-    if (_u) {
-      const btn = document.getElementById('nav-closet-btn');
-      btn.href = 'closet.html';
-      document.getElementById('nav-closet-icon').innerHTML = '♥';
-      btn.style.color = '#e05444';
-      btn.style.borderColor = '#c0392b';
-    }
+    // (Handled by Firebase onAuthStateChanged above)
 
     // ── 8. SEARCH TOGGLE ──────────────────────────────────────────
     function toggleSearch() {
@@ -727,6 +772,7 @@
       renderAll(filtered);
     });
 
+    window._renderAllReady = true;
     initGrid();
   </script>
 </body>

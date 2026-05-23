@@ -328,53 +328,80 @@
   <!-- Toast -->
   <div class="toast" id="toast"></div>
 
-  <script>
-    // ── Auth guard ────────────────────────────────────────────────
-    const stored = localStorage.getItem('ac_user');
-    if (!stored) {
-      window.location.href = 'https://doquochau.github.io/login.html';
-    }
-    const user = JSON.parse(stored || '{}');
+  <script type="module">
+    import { initializeApp }            from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut as fbSignOut }
+                                        from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    import { getFirestore, collection, getDocs, doc, deleteDoc }
+                                        from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-    // ── Điền thông tin user vào navbar ───────────────────────────
-    document.getElementById('nav-avatar').src  = user.picture || '';
-    document.getElementById('nav-name').textContent = user.name || '';
+    const firebaseConfig = {
+      apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+      authDomain:        "apocalypse-closet.firebaseapp.com",
+      projectId:         "apocalypse-closet",
+      storageBucket:     "apocalypse-closet.firebasestorage.app",
+      messagingSenderId: "493697340280",
+      appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
+    };
 
-    // ── localStorage key ─────────────────────────────────────────
-    // Mỗi user có key riêng theo sub (Google ID)
-    const STORAGE_KEY = `ac_closet_${user.sub}`;
-
-    // ── Load outfits từ localStorage ─────────────────────────────
-    function loadOutfits() {
-      try {
-        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-      } catch { return []; }
-    }
-
-    // ── Lưu lại vào localStorage ─────────────────────────────────
-    function saveOutfits(outfits) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(outfits));
-    }
-
-    // ── Xoá outfit khỏi closet ───────────────────────────────────
-    function removeOutfit(id) {
-      const outfits = loadOutfits().filter(o => o.id !== id);
-      saveOutfits(outfits);
-      renderGrid();
-      showToast('Đã xoá khỏi closet');
-    }
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db   = getFirestore(app);
 
     // ── Format ngày lưu ──────────────────────────────────────────
     function fmtDate(ts) {
       return new Date(ts).toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit' });
     }
 
-    // ── Render grid ──────────────────────────────────────────────
-    function renderGrid() {
-      const outfits = loadOutfits();
-      const grid    = document.getElementById('outfit-grid');
-      const empty   = document.getElementById('empty-state');
-      const count   = document.getElementById('outfit-count');
+    // ── Toast notification ────────────────────────────────────────
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+
+    // ── Mở outfit detail ──────────────────────────────────────────
+    window.openOutfit = (id) => {
+      window.location.href = `outfit-detail.html?id=${id}`;
+    };
+
+    // ── Xoá outfit khỏi Firestore ─────────────────────────────────
+    window.removeOutfit = async (uid, outfitId) => {
+      try {
+        await deleteDoc(doc(db, 'users', uid, 'closet', outfitId));
+        // Xoá card khỏi DOM ngay, không cần fetch lại
+        const card = document.getElementById(`card-${outfitId}`);
+        if (card) card.remove();
+        // Cập nhật count
+        const grid  = document.getElementById('outfit-grid');
+        const count = grid.querySelectorAll('.outfit-card').length;
+        document.getElementById('outfit-count').textContent =
+          `${count} OUTFIT${count !== 1 ? 'S' : ''} SAVED`;
+        if (count === 0) document.getElementById('empty-state').classList.add('visible');
+        showToast('Đã xoá khỏi closet');
+      } catch (e) {
+        showToast('Lỗi khi xoá. Thử lại nhé!');
+      }
+    };
+
+    // ── Render grid từ Firestore ──────────────────────────────────
+    async function renderGrid(uid) {
+      const grid  = document.getElementById('outfit-grid');
+      const empty = document.getElementById('empty-state');
+      const count = document.getElementById('outfit-count');
+
+      // Loading skeleton
+      grid.innerHTML = `
+        <div class="outfit-card" style="background:#111;animation:none;"></div>
+        <div class="outfit-card" style="background:#111;animation:none;"></div>
+        <div class="outfit-card" style="background:#111;animation:none;"></div>
+        <div class="outfit-card" style="background:#111;animation:none;"></div>
+      `;
+
+      const snap = await getDocs(collection(db, 'users', uid, 'closet'));
+      const outfits = [];
+      snap.forEach(d => outfits.push(d.data()));
 
       count.textContent = `${outfits.length} OUTFIT${outfits.length !== 1 ? 'S' : ''} SAVED`;
 
@@ -385,65 +412,46 @@
       }
       empty.classList.remove('visible');
 
-      // Sắp xếp mới nhất lên đầu
       const sorted = [...outfits].sort((a, b) => b.savedAt - a.savedAt);
 
       grid.innerHTML = sorted.map(o => `
-        <div class="outfit-card" onclick="openOutfit('${o.id}')">
+        <div class="outfit-card" id="card-${o.id}" onclick="openOutfit('${o.id}')">
           <img src="${o.image}" alt="${o.title}" loading="lazy" />
           <div class="overlay">
             <div class="overlay-title">${o.title}</div>
             <div class="overlay-cat">${o.category}</div>
           </div>
           <div class="saved-badge">Saved ${fmtDate(o.savedAt)}</div>
-          <button class="btn-remove" onclick="event.stopPropagation(); removeOutfit('${o.id}')" title="Xoá">✕</button>
+          <button class="btn-remove"
+            onclick="event.stopPropagation(); removeOutfit('${uid}','${o.id}')"
+            title="Xoá">✕</button>
         </div>
       `).join('');
     }
 
-    // ── Mở outfit detail ─────────────────────────────────────────
-    function openOutfit(id) {
-      window.location.href = `https://doquochau.github.io/outfit-detail.html?id=${id}`;
-    }
-
-    // ── Toast notification ───────────────────────────────────────
-    function showToast(msg) {
-      const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 2200);
-    }
-
-    // ── Sign out ─────────────────────────────────────────────────
-    function signOut() {
+    // ── Sign out ───────────────────────────────────────────────────
+    window.signOut = async () => {
+      await fbSignOut(auth);
       localStorage.removeItem('ac_user');
-      window.location.href = 'https://doquochau.github.io/login.html';
-    }
+      window.location.href = 'login.html';
+    };
 
-    // ── Init ─────────────────────────────────────────────────────
-    renderGrid();
-
-
-    // ════════════════════════════════════════════════════════════
-    // HÀM NÀY DÙNG Ở index.html ĐỂ SAVE OUTFIT VÀO CLOSET
-    // Copy đoạn này sang index.html:
-    //
-    // function saveToCloset(outfit) {
-    //   const user = JSON.parse(localStorage.getItem('ac_user'));
-    //   if (!user) { window.location.href = '/login.html'; return; }
-    //   const key = `ac_closet_${user.sub}`;
-    //   const list = JSON.parse(localStorage.getItem(key)) || [];
-    //   if (list.find(o => o.id === outfit.id)) {
-    //     // Đã lưu rồi → bỏ lưu
-    //     localStorage.setItem(key, JSON.stringify(list.filter(o => o.id !== outfit.id)));
-    //   } else {
-    //     list.push({ ...outfit, savedAt: Date.now() });
-    //     localStorage.setItem(key, JSON.stringify(list));
-    //   }
-    // }
-    //
-    // outfit object cần có: { id, title, image, category }
-    // ════════════════════════════════════════════════════════════
+    // ── Auth guard + init ──────────────────────────────────────────
+    onAuthStateChanged(auth, user => {
+      if (!user) {
+        window.location.href = 'login.html';
+        return;
+      }
+      // Điền navbar
+      document.getElementById('nav-avatar').src        = user.photoURL || '';
+      document.getElementById('nav-name').textContent  = user.displayName || '';
+      // Cập nhật localStorage để các trang khác vẫn nhận được uid
+      localStorage.setItem('ac_user', JSON.stringify({
+        name: user.displayName || '', email: user.email,
+        picture: user.photoURL || '', sub: user.uid
+      }));
+      renderGrid(user.uid);
+    });
   </script>
 </body>
 </html>
