@@ -545,36 +545,31 @@
 
   <!-- Firebase + Firestore cho save/unsave outfit -->
   <script type="module">
-    import { initializeApp }   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getAuth, onAuthStateChanged }
-                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-    import { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }
-                               from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  let currentUid  = null;
+  let savedIdsSet = new Set();
+  let db = null;
+  let auth = null;
 
-    const firebaseConfig = {
-      apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
-      authDomain:        "apocalypse-closet.firebaseapp.com",
-      projectId:         "apocalypse-closet",
-      storageBucket:     "apocalypse-closet.firebasestorage.app",
-      messagingSenderId: "493697340280",
-      appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
-    };
+  const firebaseConfig = {
+    apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+    authDomain:        "apocalypse-closet.firebaseapp.com",
+    projectId:         "apocalypse-closet",
+    storageBucket:     "apocalypse-closet.firebasestorage.app",
+    messagingSenderId: "493697340280",
+    appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
+  };
+
+  // Hàm Dynamic Import để trì hoãn việc tải file js
+  async function initFirebaseLazy() {
+    const { initializeApp } = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js");
+    const { getAuth, onAuthStateChanged } = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
+    const { getFirestore, doc, setDoc, deleteDoc, getDocs, collection } = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
 
     const app  = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const db   = getFirestore(app);
+    auth = getAuth(app);
+    db   = getFirestore(app);
 
-    let currentUid  = null;
-    let savedIdsSet = new Set(); // cache IDs đã lưu để render nhanh
-
-    // ── Load danh sách đã lưu từ Firestore ───────────────────────
-    async function loadSavedIds(uid) {
-      const snap = await getDocs(collection(db, 'users', uid, 'closet'));
-      savedIdsSet = new Set();
-      snap.forEach(d => savedIdsSet.add(d.id));
-    }
-
-    // ── Toggle save / unsave ──────────────────────────────────────
+    // Gán hàm toggleSave vào window sau khi các thư viện Firestore đã sẵn sàng
     window.toggleSave = async function(outfit, btn) {
       if (!currentUid) { window.location.href = 'login.html'; return; }
       const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
@@ -597,10 +592,7 @@
       }
     };
 
-    // ── Trả về Set IDs đã lưu (dùng khi renderAll) ───────────────
-    window.getSavedIds = () => savedIdsSet;
-
-    // ── Auth state ────────────────────────────────────────────────
+    // Lắng nghe trạng thái Auth
     onAuthStateChanged(auth, async user => {
       if (user) {
         currentUid = user.uid;
@@ -608,7 +600,6 @@
           name: user.displayName || '', email: user.email,
           picture: user.photoURL || '', sub: user.uid
         }));
-        // Cập nhật nav closet button
         const btn = document.getElementById('nav-closet-btn');
         if (btn) {
           btn.href = 'closet.html';
@@ -616,15 +607,34 @@
           btn.style.color = '#e05444';
           btn.style.borderColor = '#c0392b';
         }
-        await loadSavedIds(user.uid);
-        // Re-render để cập nhật trạng thái ♥/♡
-        if (window._renderAllReady) renderAll();
+        
+        // Tải danh sách ID đã lưu
+        const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
+        savedIdsSet = new Set();
+        snap.forEach(d => savedIdsSet.add(d.id));
+
+        // Re-render để chuyển icon ♡ thành ♥ ngay khi load xong dữ liệu closet
+        if (window._renderAllReady && typeof window.renderAll === 'function') {
+          window.renderAll();
+        }
       } else {
         currentUid = null;
         savedIdsSet = new Set();
       }
     });
-  </script>
+  }
+
+  // Cung cấp dữ liệu cache tạm thời cho hàm renderAll ban đầu
+  window.getSavedIds = () => savedIdsSet;
+
+  // CHÌA KHÓA: Chỉ bắt đầu tải file Firebase sau khi toàn bộ UI của trang web đã hiển thị xong hoàn toàn
+  window.addEventListener('load', () => {
+    // Trì hoãn nhẹ 1 giây để dồn toàn bộ tài nguyên cho việc hiển thị layout/hình ảnh trước
+    setTimeout(() => {
+      initFirebaseLazy().catch(err => console.error("Lỗi khi tải Firebase chậm:", err));
+    }, 1000);
+  });
+</script>
 
   <script>
     // ── 1. AUTH ───────────────────────────────────────────────────
