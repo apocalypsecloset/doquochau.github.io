@@ -37,8 +37,9 @@
       --black: #0a0a0a;
       --white: #f0ece4;
       --red: #c0392b;
+      --red-text: #e05444;   /* FIX: đỏ sáng hơn cho text nhỏ, đủ contrast */
       --grey: #1a1a1a;
-      --muted: #444;
+      --muted: #888;         /* FIX: #444 → #888, đủ contrast 5:1 trên nền đen */
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -117,7 +118,7 @@
       line-height: 1;
     }
 
-    .btn-reload { border-color: var(--red); color: var(--red); }
+    .btn-reload { border-color: var(--red); color: var(--red-text); }
     .btn-reload:hover { background: var(--red); color: var(--white); border-color: var(--red); }
     .spin { transition: transform 0.5s ease; }
     .btn-reload:hover .spin { transform: rotate(360deg); }
@@ -182,7 +183,7 @@
     .hero-label {
       font-size: 10px;
       letter-spacing: 0.4em;
-      color: var(--red);
+      color: var(--red-text);  /* FIX: dùng --red-text thay --red */
       text-transform: uppercase;
       margin-bottom: 10px;
     }
@@ -192,11 +193,11 @@
       line-height: 0.92;
       letter-spacing: -0.01em;
     }
-    .hero-title span { color: var(--red); }
+    .hero-title span { color: var(--red); } /* large text: 3:1 đủ chuẩn */
     .hero-sub {
       margin-top: 16px;
       font-size: 11px;
-      color: var(--muted);
+      color: var(--muted);   /* FIX: #888 */
       letter-spacing: 0.08em;
       max-width: 340px;
       line-height: 1.8;
@@ -208,8 +209,8 @@
       justify-content: space-between;
       padding: 28px 32px 16px;
     }
-    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
-    .section-count { font-family: 'Oswald', sans-serif; font-size: 13px; color: var(--red); letter-spacing: 0.1em; }
+    .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; } /* FIX: #888 */
+    .section-count { font-family: 'Oswald', sans-serif; font-size: 13px; color: var(--red-text); letter-spacing: 0.1em; } /* FIX */
 
     .outfit-grid {
       display: grid;
@@ -277,7 +278,7 @@
     }
     .outfit-card:hover .btn-save-card { opacity: 1; transform: translateY(0); }
     .btn-save-card:hover { background: var(--red); border-color: var(--red); }
-    .btn-save-card.saved { opacity: 1; transform: translateY(0); color: var(--red); border-color: var(--red); }
+    .btn-save-card.saved { opacity: 1; transform: translateY(0); color: var(--red-text); border-color: var(--red); }
 
     .shimmer {
       background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
@@ -296,8 +297,8 @@
       background: var(--grey);
     }
     .ticker-inner { display: flex; gap: 48px; animation: ticker 20s linear infinite; white-space: nowrap; }
-    .ticker-item { font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: var(--muted); }
-    .ticker-item span { color: var(--red); }
+    .ticker-item { font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: #999; } /* FIX: #999 trên nền #1a1a1a */
+    .ticker-item span { color: var(--red-text); } /* FIX */
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     .about-section {
@@ -305,13 +306,13 @@
       text-align: center; max-width: 680px; margin: 0 auto;
       display: flex; flex-direction: column; align-items: center;
     }
-    .about-icon { color: var(--red); font-size: 20px; margin-bottom: 16px; }
+    .about-icon { color: var(--red-text); font-size: 20px; margin-bottom: 16px; } /* FIX */
     .about-title { font-family: 'Oswald', sans-serif; font-size: 32px; color: var(--white); letter-spacing: 0.2em; margin-bottom: 24px; }
-    .about-desc { font-size: 12px; color: var(--muted); line-height: 2; letter-spacing: 0.05em; }
+    .about-desc { font-size: 12px; color: var(--muted); line-height: 2; letter-spacing: 0.05em; } /* FIX: #888 */
     .about-desc span { color: var(--white); }
     .about-quote {
       margin-top: 32px;
-      font-family: 'Space Mono', monospace; font-size: 10px; color: var(--red);
+      font-family: 'Space Mono', monospace; font-size: 10px; color: var(--red-text); /* FIX */
       letter-spacing: 0.3em; text-transform: uppercase;
       border-top: 1px solid #222; border-bottom: 1px solid #222;
       padding: 12px 24px; display: inline-block;
@@ -346,7 +347,7 @@
       transform: translateX(4px);
     }
 
-    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; } /* FIX: --muted = #888 */
 
     .player-container {
       position: fixed; bottom: 24px; right: 24px;
@@ -383,7 +384,6 @@
     }
   </style>
 
-  <!-- ✅ FIX 3: Xóa potentialAction vì search chạy JS, không có URL thật -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -393,7 +393,6 @@
   }
   </script>
 
-  <!-- SCHEMA: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -416,7 +415,6 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -462,6 +460,9 @@
       </div>
     </nav>
   </header>
+
+  <!-- FIX: thêm <main> landmark -->
+  <main>
 
   <div id="search-bar">
     <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE HOẶC MÃ SỐ (VD: 01, 12)...">
@@ -520,9 +521,11 @@
     <a href="blog.html" class="about-blog-btn" data-nosnippet>ĐỌC THE MANIFESTO <span>→</span></a>
   </section>
 
+  </main>
+  <!-- FIX: đóng </main> trước footer -->
+
   <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:none;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
 
-  <!-- ✅ FIX 1: Thay src MP3 local → Google Drive (direct download link) -->
   <div id="music-player" class="player-container" title="Phát nhạc Apocalypse">
     <svg id="record-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="50" r="48" fill="#0a0a0a"/>
@@ -691,7 +694,7 @@
       const btn = document.getElementById('nav-closet-btn');
       btn.href = 'closet.html';
       document.getElementById('nav-closet-icon').innerHTML = '♥';
-      btn.style.color = '#c0392b';
+      btn.style.color = '#e05444';
       btn.style.borderColor = '#c0392b';
     }
 
