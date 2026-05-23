@@ -627,9 +627,13 @@
   </script>
 
   <script>
-    // ── 1. AUTH (legacy — giữ để tương thích) ────────────────────
+    // ── 1. AUTH ───────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
+    }
+    // getSavedIds: fallback khi Firebase module chưa load xong
+    function getSavedIds() {
+      return window.getSavedIds ? window.getSavedIds() : new Set();
     }
 
     // ── 3. TOAST ──────────────────────────────────────────────────
