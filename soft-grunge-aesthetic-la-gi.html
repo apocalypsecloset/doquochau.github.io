@@ -16,9 +16,11 @@
   <meta name="twitter:description" content="Soft grunge không chết cùng Tumblr. Nó tiến hóa. Hướng dẫn build soft grunge wardrobe năm 2026 — không nostalgia, không costume, chỉ là phong cách.">
   <meta name="twitter:image" content="https://apocalypsecloset.com/image/apocalypse-badgirl-10-1_result.webp">
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,11 +58,11 @@
     header{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid var(--border);background:var(--black);}
     .back-link{font-size:11px;letter-spacing:.12em;color:var(--muted);text-decoration:none;text-transform:uppercase;transition:color .15s;}
     .back-link:hover{color:var(--white);}
-    .nav-badge{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.15em;color:var(--white);text-transform:uppercase;}
+    .nav-badge{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;letter-spacing:.15em;color:var(--white);text-transform:uppercase;}
     .article-hero{display:flex;flex-direction:column;align-items:center;padding:80px 32px 48px;text-align:center;max-width:900px;margin:0 auto;}
     .article-meta-top{font-size:10px;letter-spacing:.3em;color:var(--red);text-transform:uppercase;margin-bottom:24px;display:flex;justify-content:center;gap:16px;align-items:center;}
     .article-meta-top span.dot{width:4px;height:4px;background:var(--muted);border-radius:50%;}
-    .article-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(40px,6vw,80px);line-height:1.2;letter-spacing:.02em;text-transform:uppercase;margin-bottom:32px;width:100%;}
+    .article-title{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(40px,6vw,80px);line-height:1.2;letter-spacing:.02em;text-transform:uppercase;margin-bottom:32px;width:100%;}
     .article-author{font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
     .article-author span{color:var(--white);}
     .article-cover{width:100%;max-width:1200px;margin:0 auto 80px;padding:0 32px;}
@@ -69,9 +71,9 @@
     .article-content{max-width:720px;margin:0 auto;padding:0 32px 80px;font-size:14px;line-height:2.2;color:#d0d0d0;text-align:justify;}
     .article-content>p:first-of-type::first-letter{color:var(--red);font-weight:700;}
     .article-content p{margin-bottom:28px;}
-    .article-content h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;color:var(--white);text-transform:uppercase;letter-spacing:.05em;line-height:1.3;margin:56px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--border);text-align:left;}
-    .article-content h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:var(--white);margin:32px 0 16px;text-transform:uppercase;text-align:left;line-height:1.3;}
-    .article-content blockquote{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:var(--white);border-left:4px solid var(--red);padding-left:32px;margin:56px 0;line-height:1.4;text-transform:uppercase;text-align:left;letter-spacing:.02em;}
+    .article-content h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:28px;color:var(--white);text-transform:uppercase;letter-spacing:.05em;line-height:1.3;margin:56px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--border);text-align:left;}
+    .article-content h3{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;color:var(--white);margin:32px 0 16px;text-transform:uppercase;text-align:left;line-height:1.3;}
+    .article-content blockquote{font-family:'Oswald',sans-serif;font-weight:700;font-size:26px;color:var(--white);border-left:4px solid var(--red);padding-left:32px;margin:56px 0;line-height:1.4;text-transform:uppercase;text-align:left;letter-spacing:.02em;}
     .article-content img{width:100%;height:auto;border:1px solid var(--border);margin:40px 0;display:block;}
     .article-content strong{color:var(--white);}
     .article-bottom{max-width:720px;margin:0 auto;padding:40px 32px 80px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);}
@@ -85,7 +87,7 @@
     .article-nav a{flex:1;display:block;border:1px solid var(--border);padding:20px 24px;text-decoration:none;transition:border-color .2s;}
     .article-nav a:hover{border-color:var(--white);}
     .article-nav .nav-dir{font-size:10px;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;}
-    .article-nav .nav-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:var(--white);text-transform:uppercase;line-height:1.3;}
+    .article-nav .nav-title{font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:var(--white);text-transform:uppercase;line-height:1.3;}
     .article-nav a.next{text-align:right;}
     footer{padding:48px 32px;border-top:1px solid var(--border);text-align:center;font-size:10px;color:var(--muted);letter-spacing:.2em;}
     @media(max-width:768px){header{padding:14px 16px;}.article-hero{padding:48px 16px 32px;}.article-cover{padding:0 16px;margin-bottom:48px;}.article-content{padding:0 20px 56px;font-size:13px;line-height:2;}.article-content h2{font-size:24px;margin:40px 0 20px;}.article-content blockquote{font-size:20px;padding-left:20px;margin:40px 0;}.article-bottom{padding:32px 20px 64px;flex-direction:column;gap:24px;align-items:flex-start;}.article-nav{flex-direction:column;}.article-nav a.next{text-align:left;}}
