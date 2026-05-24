@@ -6,6 +6,9 @@
 //
 //  CATEGORY hợp lệ:
 //    "Dark Feminine" | "E-Girl" | "Goth" | "Baddie Streetwear" | "Punk"
+//
+//  SLUG: dùng cho URL tĩnh /outfits/{slug}.html
+//    Format: look-{XX}-{category-kebab}
 // ═══════════════════════════════════════════════════════════════════
 
 const BASE = "/image";
@@ -16,6 +19,7 @@ const outfits = [
   // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-01",
+    slug: "look-01-egirl",
     img: G(1, 1),
     tag: "LOOK #01",
     title: "Look 01",
@@ -36,6 +40,7 @@ const outfits = [
   // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-02",
+    slug: "look-02-baddie-streetwear",
     img: G(2, 1),
     tag: "LOOK #02",
     title: "Look 02",
@@ -56,6 +61,7 @@ const outfits = [
   // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-03",
+    slug: "look-03-punk",
     img: G(3, 1),
     tag: "LOOK #03",
     title: "Look 03",
@@ -76,6 +82,7 @@ const outfits = [
   // ── DARK FEMININE ─────────────────────────────────────────────
   {
     id: "look-04",
+    slug: "look-04-dark-feminine",
     img: G(4, 1),
     tag: "LOOK #04",
     title: "Look 04",
@@ -96,6 +103,7 @@ const outfits = [
   // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-05",
+    slug: "look-05-egirl",
     img: G(5, 1),
     tag: "LOOK #05",
     title: "Look 05",
@@ -116,6 +124,7 @@ const outfits = [
   // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-06",
+    slug: "look-06-punk",
     img: G(6, 1),
     tag: "LOOK #06",
     title: "Look 06",
@@ -136,6 +145,7 @@ const outfits = [
   // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-07",
+    slug: "look-07-baddie-streetwear",
     img: G(7, 1),
     tag: "LOOK #07",
     title: "Look 07",
@@ -156,6 +166,7 @@ const outfits = [
   // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-08",
+    slug: "look-08-egirl",
     img: G(8, 1),
     tag: "LOOK #08",
     title: "Look 08",
@@ -176,6 +187,7 @@ const outfits = [
   // ── GOTH ──────────────────────────────────────────────────────
   {
     id: "look-09",
+    slug: "look-09-goth",
     img: G(9, 1),
     tag: "LOOK #09",
     title: "Look 09",
@@ -196,6 +208,7 @@ const outfits = [
   // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-10",
+    slug: "look-10-punk",
     img: G(10, 1),
     tag: "LOOK #10",
     title: "Look 10",
@@ -216,6 +229,7 @@ const outfits = [
   // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-11",
+    slug: "look-11-egirl",
     img: G(11, 1),
     tag: "LOOK #11",
     title: "Look 11",
@@ -236,6 +250,7 @@ const outfits = [
   // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-12",
+    slug: "look-12-punk",
     img: G(12, 1),
     tag: "LOOK #12",
     title: "Look 12",
@@ -256,6 +271,7 @@ const outfits = [
   // ── E-GIRL ────────────────────────────────────────────────────
   {
     id: "look-13",
+    slug: "look-13-egirl",
     img: G(13, 1),
     tag: "LOOK #13",
     title: "Look 13",
@@ -276,6 +292,7 @@ const outfits = [
   // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-14",
+    slug: "look-14-baddie-streetwear",
     img: G(14, 1),
     tag: "LOOK #14",
     title: "Look 14",
@@ -296,6 +313,7 @@ const outfits = [
   // ── DARK FEMININE ─────────────────────────────────────────────
   {
     id: "look-15",
+    slug: "look-15-dark-feminine",
     img: G(15, 1),
     tag: "LOOK #15",
     title: "Look 15",
@@ -316,6 +334,7 @@ const outfits = [
   // ── GOTH ──────────────────────────────────────────────────────
   {
     id: "look-16",
+    slug: "look-16-goth",
     img: G(16, 1),
     tag: "LOOK #16",
     title: "Look 16",
@@ -336,6 +355,7 @@ const outfits = [
   // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-17",
+    slug: "look-17-baddie-streetwear",
     img: G(17, 1),
     tag: "LOOK #17",
     title: "Look 17",
@@ -356,6 +376,7 @@ const outfits = [
   // ── DARK FEMININE ─────────────────────────────────────────────
   {
     id: "look-18",
+    slug: "look-18-dark-feminine",
     img: G(18, 1),
     tag: "LOOK #18",
     title: "Look 18",
@@ -376,6 +397,7 @@ const outfits = [
   // ── PUNK ──────────────────────────────────────────────────────
   {
     id: "look-19",
+    slug: "look-19-punk",
     img: G(19, 1),
     tag: "LOOK #19",
     title: "Look 19",
@@ -396,6 +418,7 @@ const outfits = [
   // ── BADDIE STREETWEAR ─────────────────────────────────────────
   {
     id: "look-20",
+    slug: "look-20-baddie-streetwear",
     img: G(20, 1),
     tag: "LOOK #20",
     title: "Look 20",
@@ -419,6 +442,7 @@ const outfits = [
   //
   // {
   //   id: "look-21",
+  //   slug: "look-21-dark-feminine",       // ← thêm dòng này
   //   img: G(21, 1),
   //   tag: "LOOK #21",
   //   title: "Look 21",

@@ -364,7 +364,7 @@
 
     // ── Mở outfit detail ──────────────────────────────────────────
     window.openOutfit = (id) => {
-      window.location.href = `outfit-detail.html?id=${id}`;
+      window.location.href = `/outfits/${outfits.find(o=>o.id===id)?.slug}.html`;
     };
 
     // ── Xoá outfit khỏi Firestore ─────────────────────────────────
