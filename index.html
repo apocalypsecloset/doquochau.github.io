@@ -25,22 +25,22 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- FIX 1: Dùng media trick thay vì onload — không block render, hoạt động ngay cả khi JS tắt -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js">
 
-  <!-- 8 ảnh đầu preload với fetchpriority=high — đủ cho cả desktop (4 cột) và mobile (2 cột = hàng 1+2) -->
+  <!-- FIX 2: Giảm preload từ 8 xuống 4 — trên 4G chậm, ít resource tranh nhau = mỗi cái tải nhanh hơn -->
+  <!-- Chỉ preload 4 ảnh đầu tiên, đủ cho màn hình đầu tiên (2 cột mobile, hàng 1+2) -->
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 600w, /image/apocalypse-badgirl-1-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 600w, /image/apocalypse-badgirl-2-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 600w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 600w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-5-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-5-1_result.webp 600w, /image/apocalypse-badgirl-5-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-6-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-6-1_result.webp 600w, /image/apocalypse-badgirl-6-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-7-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-7-1_result.webp 600w, /image/apocalypse-badgirl-7-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-8-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-8-1_result.webp 600w, /image/apocalypse-badgirl-8-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
 
   <style>
     :root {
@@ -430,12 +430,18 @@
   }
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
+  <!-- FIX 3: Load GTM sau khi trang load xong — tránh forced reflow 38ms làm chậm render -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-452MPHT894');
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-452MPHT894';
+      s.async = true;
+      document.head.appendChild(s);
+    });
   </script>
 </head>
 <body>
@@ -701,7 +707,8 @@
       img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
       img.sizes = '(max-width: 768px) 50vw, 700px';
 
-      if (i < 8) {
+      if (i < 4) {
+        // FIX 4: Giảm first batch từ 8 xuống 4 — đồng bộ với số preload ở trên
         img.src = outfit.img;
         img.fetchPriority = 'high';
       } else {
@@ -733,9 +740,7 @@
     }
 
     // ── RENDER ALL — batch để giảm TBT ───────────────────────────
-    // FIRST_BATCH card đầu render đồng bộ (above fold),
-    // phần còn lại render sau qua requestIdleCallback / setTimeout
-    const FIRST_BATCH = 8;
+    const FIRST_BATCH = 4; // FIX 4: Giảm từ 8 → 4, đồng bộ với preload
 
     window.renderAll = function(data = outfits) {
       const grid = document.getElementById('outfit-grid');
@@ -764,7 +769,6 @@
           grid.appendChild(frag2);
         };
 
-        // requestIdleCallback nếu browser hỗ trợ, fallback setTimeout
         if ('requestIdleCallback' in window) {
           requestIdleCallback(renderRest, { timeout: 500 });
         } else {
@@ -830,17 +834,18 @@
       );
       renderAll(filtered);
     });
-// ── NAV ICON từ localStorage (không cần chờ Firebase) ────────
-const cachedUser = getUser();
-if (cachedUser) {
-  const navBtn = document.getElementById('nav-closet-btn');
-  if (navBtn) {
-    navBtn.href = 'closet.html';
-    document.getElementById('nav-closet-icon').innerHTML = '♥';
-    navBtn.style.color = '#e05444';
-    navBtn.style.borderColor = '#c0392b';
-  }
-}
+
+    // ── NAV ICON từ localStorage (không cần chờ Firebase) ────────
+    const cachedUser = getUser();
+    if (cachedUser) {
+      const navBtn = document.getElementById('nav-closet-btn');
+      if (navBtn) {
+        navBtn.href = 'closet.html';
+        document.getElementById('nav-closet-icon').innerHTML = '♥';
+        navBtn.style.color = '#e05444';
+        navBtn.style.borderColor = '#c0392b';
+      }
+    }
     window._renderAllReady = true;
     initGrid();
   </script>
