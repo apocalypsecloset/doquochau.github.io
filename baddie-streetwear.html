@@ -236,6 +236,26 @@
     @media (max-width: 768px) {
       .breadcrumb { padding: 10px 16px; }
     }
+
+    .btn-save-card {
+      position: absolute;
+      top: 16px; right: 16px;
+      z-index: 3;
+      background: rgba(10,10,10,0.7);
+      backdrop-filter: blur(4px);
+      border: 1px solid #444;
+      color: var(--white);
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: all 0.3s;
+    }
+    .outfit-card:hover .btn-save-card { opacity: 1; transform: translateY(0); }
+    .btn-save-card:hover { background: var(--red); border-color: var(--red); }
+    .btn-save-card.saved { opacity: 1; transform: translateY(0); color: var(--red-text); border-color: var(--red); }
   </style>
 
   <script type="application/ld+json">
@@ -271,6 +291,13 @@
       { "@type": "ListItem", "position": 2, "name": "Baddie Streetwear", "item": "https://apocalypsecloset.com/baddie-streetwear.html" }
     ]
   }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-452MPHT894');
   </script>
 </head>
 <body>
@@ -412,22 +439,98 @@
     const filtered = outfits.filter(o => o.category === 'Baddie Streetwear');
     document.getElementById('counter').textContent = filtered.length + ' LOOKS';
     const grid = document.getElementById('outfit-grid');
-    filtered.forEach((outfit, i) => {
-      const card = document.createElement('div');
-      card.className = 'outfit-card';
-      card.style.animationDelay = (i * 0.03) + 's';
-      card.onclick = () => window.location.href = `/outfits/${outfit.slug}.html`;
-      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
-      card.innerHTML = `
-        <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
-          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.category} outfit ${outfit.tag} - Apocalypse Closet"
-          loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
-        <div class="outfit-overlay">
-          <span class="outfit-tag">XEM OUTFIT</span>
-          <div class="outfit-num">${outfit.tag}</div>
-        </div>`;
-      grid.appendChild(card);
-    });
+    let savedIds = new Set();
+    try {
+      // Preload saved IDs from localStorage as a fallback before Firebase loads
+      const raw = localStorage.getItem('ac_saved_ids');
+      if (raw) savedIds = new Set(JSON.parse(raw));
+    } catch(e) {}
+
+    function renderCards(ids) {
+      grid.innerHTML = '';
+      filtered.forEach((outfit, i) => {
+        const card = document.createElement('div');
+        card.className = 'outfit-card';
+        card.style.animationDelay = (i * 0.03) + 's';
+        card.onclick = () => window.location.href = `/outfits/${outfit.slug}.html`;
+        const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
+        const isSaved = ids.has(outfit.id);
+        card.innerHTML = `
+          <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
+            sizes="(max-width:768px) 50vw, 700px" alt="${outfit.category} outfit ${outfit.tag} - Apocalypse Closet"
+            loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
+          <div class="outfit-overlay">
+            <span class="outfit-tag">XEM OUTFIT</span>
+            <div class="outfit-num">${outfit.tag}</div>
+          </div>
+          <button class="btn-save-card${isSaved ? ' saved' : ''}" data-outfit-id="${outfit.id}">${isSaved ? '&#9829;' : '&#9825;'}</button>`;
+
+        card.querySelector('.btn-save-card').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+          btn.style.opacity = '0.4';
+          const { db, doc, setDoc, deleteDoc, currentUid } = await loadFirebase();
+          btn.style.opacity = '';
+          if (!currentUid) { window.location.href = 'login.html'; return; }
+          const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
+          if (savedIds.has(outfit.id)) {
+            await deleteDoc(ref);
+            savedIds.delete(outfit.id);
+            btn.innerHTML = '&#9825;';
+            btn.classList.remove('saved');
+          } else {
+            await setDoc(ref, { id: outfit.id, title: outfit.title, image: outfit.img, category: outfit.category, slug: outfit.slug, savedAt: Date.now() });
+            savedIds.add(outfit.id);
+            btn.innerHTML = '&#9829;';
+            btn.classList.add('saved');
+          }
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    renderCards(savedIds);
+
+    // Firebase lazy-load to get real saved IDs
+    let _fbCache = null;
+    let _currentUid = null;
+    function loadFirebase() {
+      if (_fbCache) return _fbCache;
+      _fbCache = Promise.all([
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"),
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"),
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"),
+      ]).then(async ([{ initializeApp }, { getAuth, onAuthStateChanged }, { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }]) => {
+        const app = initializeApp({ apiKey:"AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco", authDomain:"apocalypse-closet.firebaseapp.com", projectId:"apocalypse-closet", storageBucket:"apocalypse-closet.firebasestorage.app", messagingSenderId:"493697340280", appId:"1:493697340280:web:9db33f9844c77d95232e8d" });
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        await new Promise(resolve => {
+          const unsub = onAuthStateChanged(auth, async user => {
+            unsub();
+            if (user) {
+              _currentUid = user.uid;
+              const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
+              savedIds = new Set();
+              snap.forEach(d => savedIds.add(d.id));
+              try { localStorage.setItem('ac_saved_ids', JSON.stringify([...savedIds])); } catch(e) {}
+              // Re-render with accurate data
+              renderCards(savedIds);
+            }
+            resolve();
+          });
+        });
+        return { db, doc, setDoc, deleteDoc, currentUid: _currentUid };
+      });
+      return _fbCache;
+    }
+
+    // Load Firebase after page is interactive
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => loadFirebase(), { timeout: 2000 });
+    } else {
+      setTimeout(() => loadFirebase(), 500);
+    }
 
     try {
       const user = JSON.parse(localStorage.getItem('ac_user'));
