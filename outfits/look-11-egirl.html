@@ -4,36 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ═══ SEO TĨNH — hardcode cho từng outfit ═══════════════════ -->
+  <!-- ═══ SEO TĨNH ══════════════════════════════════════════════ -->
   <title>OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet</title>
-  <meta name="description" content="Xem chi tiết outfit OUTFIT DETAILS #11 phong cách E-Girl từ Apocalypse Closet. Bao gồm áo, quần, giày và phụ kiện với link mua trực tiếp.">
+  <meta name="description" content="Outfit phong cách E-Girl số 11 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.">
   <link rel="canonical" href="https://apocalypsecloset.com/outfits/look-11-egirl.html">
 
   <!-- Open Graph -->
-  <meta property="og:type"        content="website">
+  <meta property="og:type"        content="product">
   <meta property="og:url"         content="https://apocalypsecloset.com/outfits/look-11-egirl.html">
   <meta property="og:title"       content="OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet">
-  <meta property="og:description" content="Xem chi tiết outfit OUTFIT DETAILS #11 phong cách E-Girl từ Apocalypse Closet.">
+  <meta property="og:description" content="Outfit phong cách E-Girl số 11 từ Apocalypse Closet.">
   <meta property="og:image"       content="https://apocalypsecloset.com/image/apocalypse-badgirl-11-1_result.webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet">
-  <meta name="twitter:description" content="Xem chi tiết outfit OUTFIT DETAILS #11 phong cách E-Girl từ Apocalypse Closet.">
+  <meta name="twitter:description" content="Outfit phong cách E-Girl số 11 từ Apocalypse Closet.">
   <meta name="twitter:image"       content="https://apocalypsecloset.com/image/apocalypse-badgirl-11-1_result.webp">
 
-  <!-- Schema: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://apocalypsecloset.com/"},
-      {"@type":"ListItem","position":2,"name":"E-Girl","item":"https://apocalypsecloset.com/egirl.html"},
-      {"@type":"ListItem","position":3,"name":"OUTFIT DETAILS #11","item":"https://apocalypsecloset.com/outfits/look-11-egirl.html"}
-    ]
+  <!-- Schema: Product -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet",
+  "description": "Outfit phong cách E-Girl số 11 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trên Shopee.",
+  "image": "https://apocalypsecloset.com/image/apocalypse-badgirl-11-1_result.webp",
+  "brand": {
+    "@type": "Brand",
+    "name": "Apocalypse Closet"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "VND",
+    "availability": "https://schema.org/InStock"
   }
-  </script>
+}</script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://apocalypsecloset.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "E-Girl",
+      "item": "https://apocalypsecloset.com/egirl.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OUTFIT DETAILS #11",
+      "item": "https://apocalypsecloset.com/outfits/look-11-egirl.html"
+    }
+  ]
+}</script>
 
   <link rel="icon" type="image/webp" href="../Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,16 +151,72 @@
     #btn-save.saved { border-color: var(--red); color: var(--red); }
     #btn-save:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
-    .detail-container {
+    .breadcrumb {
+      padding: 10px 32px;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
       display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--white); }
+    .breadcrumb span { color: var(--white); text-transform: uppercase; }
+    .breadcrumb .sep { color: #333; }
+
+    /* ── STATIC CONTENT (SEO) — ẩn bằng CSS, JS sẽ replace ─── */
+    .seo-static {
+      padding: 48px 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .seo-static h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+    .seo-static img {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 24px;
+      border: 1px solid #222;
+    }
+    .seo-static ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .seo-static ul li {
+      padding: 12px 16px;
+      background: #111;
+      border: 1px solid #222;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+    .seo-static ul li a { color: var(--red); text-decoration: none; }
+    .seo-static ul li a:hover { text-decoration: underline; }
+
+    /* ── JS-rendered content ─────────────────────────────────── */
+    .detail-container {
+      display: none; /* JS sẽ bật lên sau khi render */
       padding: 48px 32px;
       gap: 64px;
       max-width: 1200px;
       margin: 0 auto;
     }
+    .detail-container.ready {
+      display: flex;
+    }
 
     .outfit-image-col { flex: 1; position: relative; }
-
     .slider-wrapper {
       position: relative;
       width: 100%;
@@ -140,21 +227,18 @@
       background: var(--grey);
       margin: 0 auto;
     }
-
     .slider-track {
       display: flex;
       width: 100%;
       height: 100%;
       transition: transform 0.5s ease-in-out;
     }
-
     .slider-track img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       flex-shrink: 0;
     }
-
     .slider-btn {
       position: absolute;
       top: 50%;
@@ -175,7 +259,6 @@
     .slider-btn:hover { border-color: var(--white); }
     .btn-prev { left: 12px; }
     .btn-next { right: 12px; }
-
     .slider-dots {
       position: absolute;
       bottom: 14px;
@@ -188,21 +271,13 @@
     .dot.active { background: var(--white); transform: scale(1.5); }
 
     .outfit-info-col { flex: 1; }
-
     .outfit-title {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 48px;
       color: var(--red);
       margin-bottom: 8px;
     }
-
-    .outfit-desc {
-      font-size: 12px;
-      color: var(--muted-light);
-      margin-bottom: 40px;
-      line-height: 1.7;
-    }
-
+    .outfit-desc { font-size: 12px; color: var(--muted-light); margin-bottom: 40px; line-height: 1.7; }
     .section-title {
       font-size: 10px;
       color: var(--muted);
@@ -212,9 +287,7 @@
       display: flex;
       justify-content: space-between;
     }
-
     .items-list { display: flex; flex-direction: column; gap: 10px; }
-
     .item-link {
       display: flex;
       align-items: center;
@@ -229,7 +302,6 @@
     .item-link:hover { border-color: var(--muted-light); background: #1a1a1a; transform: translateX(5px); }
     .item-link.no-link { cursor: default; opacity: 0.5; }
     .item-link.no-link:hover { transform: none; border-color: #222; background: #111; }
-
     .item-left { display: flex; align-items: center; gap: 16px; }
     .item-icon { color: var(--red); font-size: 12px; }
     .item-text h3 { font-size: 13px; font-weight: bold; letter-spacing: 0.05em; }
@@ -242,85 +314,26 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    .related-label {
-      font-size: 10px;
-      letter-spacing: 0.4em;
-      color: var(--muted);
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .related-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-    }
-    .related-card {
-      aspect-ratio: 3/4;
-      overflow: hidden;
-      background: var(--grey);
-      cursor: pointer;
-      position: relative;
-    }
-    .related-card img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease, filter 0.3s;
-      filter: saturate(0.8);
-    }
+    .related-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; margin-bottom: 20px; }
+    .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    .related-card { aspect-ratio: 3/4; overflow: hidden; background: var(--grey); cursor: pointer; position: relative; }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease, filter 0.3s; filter: saturate(0.8); }
     .related-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
-    .related-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+    .related-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; }
     .related-card:hover::after { opacity: 1; }
-    .related-card-tag {
-      position: absolute;
-      bottom: 12px; left: 12px;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 16px;
-      color: var(--white);
-      z-index: 2;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+    .related-card-tag { position: absolute; bottom: 12px; left: 12px; font-family: 'Bebas Neue', sans-serif; font-size: 16px; color: var(--white); z-index: 2; opacity: 0; transition: opacity 0.3s; }
     .related-card:hover .related-card-tag { opacity: 1; }
 
     footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
 
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
+      .breadcrumb { padding: 10px 16px; }
       .detail-container { flex-direction: column; padding: 20px 16px; gap: 32px; }
+      .seo-static { padding: 24px 16px; }
       .outfit-title { font-size: 36px; }
       .related-grid { grid-template-columns: repeat(2, 1fr); }
       .related-section { padding: 32px 16px; }
-    }
-
-    /* ── BREADCRUMB ─────────────────────────────────────────────── */
-    .breadcrumb {
-      padding: 10px 32px;
-      border-bottom: 1px solid #1a1a1a;
-      font-size: 10px;
-      letter-spacing: 0.15em;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .breadcrumb a {
-      color: var(--muted);
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color 0.15s;
-    }
-    .breadcrumb a:hover { color: var(--white); }
-    .breadcrumb span { color: var(--white); text-transform: uppercase; }
-    .breadcrumb .sep { color: #333; }
-    @media (max-width: 768px) {
-      .breadcrumb { padding: 10px 16px; }
     }
   </style>
 </head>
@@ -333,6 +346,7 @@
     </div>
     <button class="btn" id="btn-save">&#9825; SAVE</button>
   </header>
+
   <nav class="breadcrumb" aria-label="breadcrumb">
     <a href="../index.html">HOME</a>
     <span class="sep">›</span>
@@ -341,20 +355,40 @@
     <span>LOOK #11</span>
   </nav>
 
+  <!-- ══ NỘI DUNG TĨNH CHO GOOGLE CRAWL ════════════════════════ -->
+  <div class="seo-static" id="seo-static">
+    <h1>OUTFIT DETAILS #11 – E-Girl</h1>
+    <img
+      src="/image/apocalypse-badgirl-11-1_result.webp"
+      alt="OUTFIT DETAILS #11 phong cách E-Girl - Apocalypse Closet"
+      width="420" height="560"
+      fetchpriority="high"
+    >
+    <p style="font-size:12px;color:#888;margin-bottom:16px;line-height:1.8;">
+      Outfit phong cách E-Girl số 11 từ Apocalypse Closet.
+      Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.
+    </p>
+    <ul>
+        <li><strong>ÁO</strong> — Top Item <a href="https://s.shopee.vn/9ALYPSUUnG" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
+        <li><strong>QUẦN</strong> — Bottom Item <a href="https://s.shopee.vn/9028D9V88F" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
+        <li><strong>GIÀY</strong> — Footwear <a href="https://s.shopee.vn/9UyOo4TE7M" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
+        <li><strong>PHỤ KIỆN</strong> — Accessories <a href="https://s.shopee.vn/9KeyblTrSL" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
+    </ul>
+  </div>
 
+  <!-- ══ JS-RENDERED — đầy đủ tính năng ════════════════════════ -->
   <main class="detail-container" id="main-content"></main>
   <div id="related-wrap"></div>
 
   <footer>&#169; 2026 APOCALYPSE CLOSET</footer>
 
-  <!-- outfits.js từ root (../) -->
   <script src="../outfits.js"></script>
 
   <script>
-    // ID được hardcode — không cần đọc ?id= từ URL
     const OUTFIT_ID = "look-11";
     const outfit    = outfits.find(o => o.id === OUTFIT_ID);
     const mainEl    = document.getElementById('main-content');
+    const staticEl  = document.getElementById('seo-static');
     let currentSlide = 0;
 
     function moveSlide(dir) {
@@ -377,12 +411,10 @@
     if (outfit && outfit.detail) {
       const d = outfit.detail;
 
-      const imgUrl = (url, size) => url.includes('googleusercontent.com') ? url + size : url;
-
       const imagesHTML = d.imgs.map((img, i) =>
         i === 0
-          ? `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" fetchpriority="high" decoding="async">`
-          : `<img src="${imgUrl(img, '=w900')}" alt="${d.title}" loading="lazy" decoding="async">`
+          ? `<img src="${img}" alt="${d.title}" fetchpriority="high" decoding="async">`
+          : `<img src="${img}" alt="${d.title}" loading="lazy" decoding="async">`
       ).join('');
 
       const dotsHTML = d.imgs.length > 1
@@ -428,7 +460,11 @@
         </div>
       `;
 
-      // Related outfits — dùng slug cho href
+      // Ẩn static, hiện JS version
+      staticEl.style.display = 'none';
+      mainEl.classList.add('ready');
+
+      // Related outfits
       const related = outfits
         .filter(o => o.category === outfit.category && o.id !== outfit.id)
         .slice(0, 4);
@@ -436,7 +472,7 @@
       if (related.length > 0) {
         const relHTML = related.map(o => `
           <div class="related-card" onclick="window.location.href='/outfits/${o.slug}.html'">
-            <img src="${imgUrl(o.img, '=w600')}" alt="${o.tag}" loading="lazy" decoding="async">
+            <img src="${o.img}" alt="${o.tag}" loading="lazy" decoding="async">
             <div class="related-card-tag">${o.tag}</div>
           </div>
         `).join('');
