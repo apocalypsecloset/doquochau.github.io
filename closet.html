@@ -330,6 +330,15 @@
   <!-- Toast -->
   <div class="toast" id="toast"></div>
 
+  <script src="/outfits.js"></script>
+  <script>
+    // Bridge: expose slug lookup for module scripts
+    window.__getSlug = function(id) {
+      if (typeof outfits === 'undefined') return null;
+      var o = outfits.find(function(x) { return x.id === id; });
+      return o ? o.slug : null;
+    };
+  </script>
   <script type="module">
     import { initializeApp }            from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
     import { getAuth, onAuthStateChanged, signOut as fbSignOut }
@@ -368,12 +377,11 @@
 
     // ── Mở outfit detail ──────────────────────────────────────────
     window.openOutfit = (id) => {
-      const o = closetOutfits.find(x => x.id === id);
-      if (o?.slug) {
-        window.location.href = `/outfits/${o.slug}.html`;
-      } else {
-        // fallback nếu slug chưa có trong Firestore (data cũ)
-        window.location.href = `/outfits/${id}.html`;
+      // Ưu tiên slug từ Firestore (data mới), fallback sang outfits.js (data cũ)
+      const fromFirestore = closetOutfits.find(x => x.id === id);
+      const slug = fromFirestore?.slug || window.__getSlug?.(id);
+      if (slug) {
+        window.location.href = `/outfits/${slug}.html`;
       }
     };
 
