@@ -29,7 +29,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":"https://apocalypsecloset.com/"},
-      {"@type":"ListItem","position":2,"name":"Outfits","item":"https://apocalypsecloset.com/#outfits"},
+      {"@type":"ListItem","position":2,"name":"E-Girl","item":"https://apocalypsecloset.com/egirl.html"},
       {"@type":"ListItem","position":3,"name":"OUTFIT DETAILS #8","item":"https://apocalypsecloset.com/outfits/look-08-egirl.html"}
     ]
   }
@@ -507,7 +507,7 @@
               } else {
                 await setDoc(ref, {
                   id: _outfit.id, title: _outfit.detail?.title || _outfit.title,
-                  image: _outfit.img, category: _outfit.category, slug: _outfit.slug,
+                  image: _outfit.img, category: _outfit.category,
                   savedAt: Date.now()
                 });
                 isSaved = true;
