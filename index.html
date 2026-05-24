@@ -534,98 +534,92 @@
       <circle cx="50" cy="50" r="28" fill="none" stroke="#222" stroke-width="1"/>
     </svg>
     <audio id="apocalypse-audio" loop preload="none">
-      <source src="https://drive.google.com/uc?export=download&id=17PdwdY4Sh7hq5-yMZJc5d8OrDn7JdEvX" type="audio/mpeg">
+      <source src="https://res.cloudinary.com/dazjcjufd/video/upload/v1779505038/apocalypse_hu44u2.mp3" type="audio/mpeg">
     </audio>
   </div>
 
   <script src="outfits.js"></script>
 
-  <script>
-    // ── FIREBASE (defer 2s để không chặn LCP) ────────────────────
-    window.getSavedIds = () => new Set();
+ <script type="module">
+  let _fbCache = null;
+  let currentUid = null;
+  let savedIdsSet = new Set();
+  window.getSavedIds = () => savedIdsSet;
 
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const fbScript = document.createElement('script');
-        fbScript.type = 'module';
-        fbScript.innerHTML = `
-          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-          import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-          import { getFirestore, doc, setDoc, deleteDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  function loadFirebase() {
+    if (_fbCache) return _fbCache;
+    _fbCache = Promise.all([
+      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"),
+      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"),
+      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"),
+    ]).then(async ([
+      { initializeApp },
+      { getAuth, onAuthStateChanged },
+      { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }
+    ]) => {
+      const app = initializeApp({
+        apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+        authDomain:        "apocalypse-closet.firebaseapp.com",
+        projectId:         "apocalypse-closet",
+        storageBucket:     "apocalypse-closet.firebasestorage.app",
+        messagingSenderId: "493697340280",
+        appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
+      });
+      const auth = getAuth(app);
+      const db   = getFirestore(app);
 
-          const firebaseConfig = {
-            apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
-            authDomain:        "apocalypse-closet.firebaseapp.com",
-            projectId:         "apocalypse-closet",
-            storageBucket:     "apocalypse-closet.firebasestorage.app",
-            messagingSenderId: "493697340280",
-            appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
-          };
+      await new Promise(resolve => {
+        const unsub = onAuthStateChanged(auth, async user => {
+          unsub();
+          if (user) {
+            currentUid = user.uid;
+            localStorage.setItem('ac_user', JSON.stringify({
+              name: user.displayName || '', email: user.email,
+              picture: user.photoURL || '', sub: user.uid
+            }));
+            const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
+            savedIdsSet = new Set();
+            snap.forEach(d => savedIdsSet.add(d.id));
+            window.getSavedIds = () => savedIdsSet;
+            if (typeof window.updateSaveButtons === 'function') window.updateSaveButtons();
+          } else {
+            currentUid = null;
+            savedIdsSet = new Set();
+          }
+          resolve();
+        });
+      });
 
-          const app  = initializeApp(firebaseConfig);
-          const auth = getAuth(app);
-          const db   = getFirestore(app);
-
-          let currentUid = null;
-          let savedIdsSet = new Set();
-
-          window.toggleSave = async function(outfit, btn) {
-            if (!currentUid) { window.location.href = 'login.html'; return; }
-            const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
-            if (savedIdsSet.has(outfit.id)) {
-              await deleteDoc(ref);
-              savedIdsSet.delete(outfit.id);
-              btn.innerHTML = '♡';
-              btn.classList.remove('saved');
-              if (window.showToast) window.showToast('Đã xoá khỏi closet');
-            } else {
-              await setDoc(ref, {
-                id: outfit.id, title: outfit.title,
-                image: outfit.img, category: outfit.category,
-                savedAt: Date.now()
-              });
-              savedIdsSet.add(outfit.id);
-              btn.innerHTML = '♥';
-              btn.classList.add('saved');
-              if (window.showToast) window.showToast('Đã lưu vào closet 🖤');
-            }
-          };
-
-          onAuthStateChanged(auth, async user => {
-            if (user) {
-              currentUid = user.uid;
-              localStorage.setItem('ac_user', JSON.stringify({
-                name: user.displayName || '', email: user.email,
-                picture: user.photoURL || '', sub: user.uid
-              }));
-              const btn = document.getElementById('nav-closet-btn');
-              if (btn) {
-                btn.href = 'closet.html';
-                document.getElementById('nav-closet-icon').innerHTML = '♥';
-                btn.style.color = '#e05444';
-                btn.style.borderColor = '#c0392b';
-              }
-
-              const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
-              savedIdsSet = new Set();
-              snap.forEach(d => savedIdsSet.add(d.id));
-              window.getSavedIds = () => savedIdsSet;
-
-              // ✅ Chỉ update nút, KHÔNG render lại grid
-              if (window._renderAllReady && typeof window.updateSaveButtons === 'function') {
-                window.updateSaveButtons();
-              }
-            } else {
-              currentUid = null;
-              savedIdsSet = new Set();
-              window.getSavedIds = () => savedIdsSet;
-            }
-          });
-        `;
-        document.body.appendChild(fbScript);
-      }, 2000);
+      return { db, doc, setDoc, deleteDoc };
     });
-  </script>
+    return _fbCache;
+  }
+
+  window.toggleSave = async function(outfit, btn) {
+    btn.style.opacity = '0.4';
+    const { db, doc, setDoc, deleteDoc } = await loadFirebase();
+    btn.style.opacity = '';
+    if (!currentUid) { window.location.href = 'login.html'; return; }
+    const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
+    if (savedIdsSet.has(outfit.id)) {
+      await deleteDoc(ref);
+      savedIdsSet.delete(outfit.id);
+      btn.innerHTML = '♡';
+      btn.classList.remove('saved');
+      if (window.showToast) window.showToast('Đã xoá khỏi closet');
+    } else {
+      await setDoc(ref, {
+        id: outfit.id, title: outfit.title,
+        image: outfit.img, category: outfit.category,
+        savedAt: Date.now()
+      });
+      savedIdsSet.add(outfit.id);
+      btn.innerHTML = '♥';
+      btn.classList.add('saved');
+      if (window.showToast) window.showToast('Đã lưu vào closet 🖤');
+    }
+  };
+</script>
 
   <script>
     // ── AUTH ──────────────────────────────────────────────────────
@@ -820,7 +814,17 @@
       );
       renderAll(filtered);
     });
-
+// ── NAV ICON từ localStorage (không cần chờ Firebase) ────────
+const cachedUser = getUser();
+if (cachedUser) {
+  const navBtn = document.getElementById('nav-closet-btn');
+  if (navBtn) {
+    navBtn.href = 'closet.html';
+    document.getElementById('nav-closet-icon').innerHTML = '♥';
+    navBtn.style.color = '#e05444';
+    navBtn.style.borderColor = '#c0392b';
+  }
+}
     window._renderAllReady = true;
     initGrid();
   </script>
