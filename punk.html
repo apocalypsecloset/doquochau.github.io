@@ -215,6 +215,30 @@
       .logo-wrap img:last-child { height: 22px; }
     }
 
+
+    /* ── BREADCRUMB ─────────────────────────────────────────────── */
+    .breadcrumb {
+      padding: 10px 32px;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.15s;
+    }
+    .breadcrumb a:hover { color: var(--white); }
+    .breadcrumb span { color: var(--white); text-transform: uppercase; }
+    .breadcrumb .sep { color: #333; }
+    @media (max-width: 768px) {
+      .breadcrumb { padding: 10px 16px; }
+    }
   </style>
 
   <!-- ✅ SCHEMA: CollectionPage (style category) -->
@@ -278,6 +302,12 @@
       </div>
     </nav>
   </header>
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="index.html">HOME</a>
+    <span class="sep">›</span>
+    <span>PUNK</span>
+  </nav>
+
 
   <section class="hero">
     <div class="hero-left">
