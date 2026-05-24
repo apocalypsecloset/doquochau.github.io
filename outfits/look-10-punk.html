@@ -507,7 +507,7 @@
               } else {
                 await setDoc(ref, {
                   id: _outfit.id, title: _outfit.detail?.title || _outfit.title,
-                  image: _outfit.img, category: _outfit.category,
+                  image: _outfit.img, category: _outfit.category, slug: _outfit.slug,
                   savedAt: Date.now()
                 });
                 isSaved = true;

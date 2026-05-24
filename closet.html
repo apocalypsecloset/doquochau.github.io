@@ -363,9 +363,18 @@
       setTimeout(() => t.classList.remove('show'), 2200);
     }
 
+    // ── Module-level cache of Firestore closet data ─────────────
+    let closetOutfits = [];
+
     // ── Mở outfit detail ──────────────────────────────────────────
     window.openOutfit = (id) => {
-      window.location.href = `/outfits/${outfits.find(o=>o.id===id)?.slug}.html`;
+      const o = closetOutfits.find(x => x.id === id);
+      if (o?.slug) {
+        window.location.href = `/outfits/${o.slug}.html`;
+      } else {
+        // fallback nếu slug chưa có trong Firestore (data cũ)
+        window.location.href = `/outfits/${id}.html`;
+      }
     };
 
     // ── Xoá outfit khỏi Firestore ─────────────────────────────────
@@ -402,8 +411,9 @@
       `;
 
       const snap = await getDocs(collection(db, 'users', uid, 'closet'));
-      const outfits = [];
-      snap.forEach(d => outfits.push(d.data()));
+      closetOutfits = [];
+      snap.forEach(d => closetOutfits.push(d.data()));
+      const outfits = closetOutfits;
 
       count.textContent = `${outfits.length} OUTFIT${outfits.length !== 1 ? 'S' : ''} SAVED`;
 

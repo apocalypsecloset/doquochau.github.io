@@ -610,7 +610,7 @@
     } else {
       await setDoc(ref, {
         id: outfit.id, title: outfit.title,
-        image: outfit.img, category: outfit.category,
+        image: outfit.img, category: outfit.category, slug: outfit.slug,
         savedAt: Date.now()
       });
       savedIdsSet.add(outfit.id);
