@@ -25,17 +25,24 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+  <!-- Oswald dùng cho hero title (LCP desktop) — load blocking để tránh FOUT làm delay LCP -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js">
 
+  <!-- 8 ảnh đầu preload với fetchpriority=high — đủ cho cả desktop (4 cột) và mobile (2 cột = hàng 1+2) -->
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 600w, /image/apocalypse-badgirl-1-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
   <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 600w, /image/apocalypse-badgirl-2-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 600w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 600w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 600w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 600w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-5-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-5-1_result.webp 600w, /image/apocalypse-badgirl-5-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-6-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-6-1_result.webp 600w, /image/apocalypse-badgirl-6-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-7-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-7-1_result.webp 600w, /image/apocalypse-badgirl-7-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-8-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-8-1_result.webp 600w, /image/apocalypse-badgirl-8-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
 
   <style>
     :root {
@@ -698,7 +705,7 @@
 
       if (i < 8) {
         img.src = outfit.img;
-        if (i < 4) img.fetchPriority = 'high';
+        img.fetchPriority = 'high';
       } else {
         img.dataset.src = outfit.img;
         img.dataset.srcset = img.srcset;
