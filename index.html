@@ -569,9 +569,9 @@
     </audio>
   </div>
 
-  <script src="outfits.js"></script>
+  <script src="outfits.js" defer></script>
 
- <script type="module">
+ <script type="module" defer>
   let _fbCache = null;
   let currentUid = null;
   let savedIdsSet = new Set();
@@ -714,7 +714,7 @@
 
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
-      img.sizes = '(max-width: 768px) 50vw, 700px';
+      img.sizes = '(max-width: 768px) 50vw, 25vw';
 
       if (i < 4) {
         // FIX 4: Giảm first batch từ 8 xuống 4 — đồng bộ với số preload ở trên
@@ -856,7 +856,11 @@
       }
     }
     window._renderAllReady = true;
-    initGrid();
+    if (typeof outfits !== 'undefined') {
+      initGrid();
+    } else {
+      document.addEventListener('DOMContentLoaded', initGrid);
+    }
   </script>
 </body>
 </html>
