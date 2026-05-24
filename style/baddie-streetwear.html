@@ -471,7 +471,7 @@
           btn.style.opacity = '0.4';
           const { db, doc, setDoc, deleteDoc, currentUid } = await loadFirebase();
           btn.style.opacity = '';
-          if (!currentUid) { window.location.href = 'login.html'; return; }
+          if (!currentUid) { window.location.href = '../login.html'; return; }
           const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
           if (savedIds.has(outfit.id)) {
             await deleteDoc(ref);
