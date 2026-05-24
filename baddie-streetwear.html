@@ -275,7 +275,7 @@
   <header>
     <a class="logo-wrap" href="index.html">
       <img src="Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high"
-        alt="icon" style="height:44px;width:auto;object-fit:contain;">
+        alt="Apocalypse Closet logo" style="height:44px;width:auto;object-fit:contain;">
       <img src="wordmark.webp" width="70" height="32"
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
@@ -418,7 +418,7 @@
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
       card.innerHTML = `
         <img src="${outfit.img}" srcset="${mobileUrl} 600w, ${outfit.img} 1086w"
-          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.tag}"
+          sizes="(max-width:768px) 50vw, 700px" alt="${outfit.category} outfit ${outfit.tag} - Apocalypse Closet"
           loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async">
         <div class="outfit-overlay">
           <span class="outfit-tag">XEM OUTFIT</span>
