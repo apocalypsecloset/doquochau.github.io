@@ -402,7 +402,7 @@
     "url": "https://apocalypsecloset.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://apocalypsecloset.com/?q={search_term_string}",
+      "target": "https://apocalypsecloset.com/search.html?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -482,9 +482,9 @@
 
   <main>
 
-  <div id="search-bar">
-    <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE HOẶC MÃ SỐ (VD: 01, 12)...">
-  </div>
+  <form id="search-bar" action="/search.html" method="get" role="search" aria-label="Tìm kiếm Apocalypse Closet">
+    <input id="search-input" name="q" type="search" placeholder="TÌM OUTFIT, STYLE HOẶC MÃ SỐ (VD: 01, 12)...">
+  </form>
 
   <section class="hero" data-nosnippet>
     <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
@@ -822,6 +822,11 @@
         o.category.toLowerCase().includes(keyword)
       );
       renderAll(filtered);
+    });
+
+    document.getElementById('search-bar').addEventListener('submit', function(e) {
+      const q = document.getElementById('search-input').value.trim();
+      if (!q) e.preventDefault();
     });
 
     const cachedUser = getUser();
