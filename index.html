@@ -692,7 +692,7 @@
 
       const img = document.createElement('img');
       img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
-      img.decoding = 'async';
+img.decoding = i < 4 ? 'sync' : 'async';
       img.onload = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
 
