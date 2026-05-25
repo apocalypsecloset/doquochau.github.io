@@ -25,7 +25,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
-
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
@@ -33,14 +32,21 @@
   <link rel="preload" as="script" href="outfits.js">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
-  <!-- Preload 4 ảnh đầu — luôn dùng ảnh full để đảm bảo nét trên mọi màn hình -->
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high">
+  <!-- PC: preload full image | Mobile: srcset sẽ tự chọn ảnh nhỏ hơn qua JS -->
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high"
+    imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 480w, /image/apocalypse-badgirl-1-1_result.webp 1086w"
+    imagesizes="(max-width: 768px) 50vw, 1200px">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high"
+    imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 480w, /image/apocalypse-badgirl-2-1_result.webp 1086w"
+    imagesizes="(max-width: 768px) 50vw, 1200px">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high"
+    imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 480w, /image/apocalypse-badgirl-3-1_result.webp 1086w"
+    imagesizes="(max-width: 768px) 50vw, 1200px">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high"
+    imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 480w, /image/apocalypse-badgirl-4-1_result.webp 1086w"
+    imagesizes="(max-width: 768px) 50vw, 1200px">
 
   <style>
-
     :root {
       --black: #0a0a0a;
       --white: #f0ece4;
@@ -235,7 +241,6 @@
       cursor: pointer;
       opacity: 0;
       animation: fadeIn 0.4s ease forwards;
-      /* FIX 1: will-change thay vì translateZ(0) — tránh subpixel blur trên mobile WebKit */
       will-change: transform;
     }
 
@@ -243,7 +248,6 @@
       width: 100%; height: 100%;
       object-fit: cover; display: block;
       transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
-      /* FIX 1: Bỏ backface-visibility và saturate — không cần, gây GPU rounding blur */
     }
     .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
 
@@ -270,7 +274,8 @@
       font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
       color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
-.outfit-num { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 700; color: var(--white); line-height: 1; margin-top: 4px; }
+    .outfit-num { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 700; color: var(--white); line-height: 1; margin-top: 4px; }
+
     .btn-save-card {
       position: absolute;
       top: 16px; right: 16px;
@@ -299,8 +304,6 @@
       contain: strict;
     }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-
-    /* FIX 2: Bỏ translateZ(0) khỏi keyframe — tránh force compositing layer liên tục */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -350,11 +353,7 @@
       transition: all 0.3s ease;
       background: rgba(192, 57, 43, 0.05);
     }
-.about-blog-btn span {
-  font-size: 14px;
-  line-height: 1;
-  transition: transform 0.3s ease;
-}
+    .about-blog-btn span { font-size: 14px; line-height: 1; transition: transform 0.3s ease; }
     .about-blog-btn:hover { background: var(--red); color: var(--white); box-shadow: 0 0 20px rgba(192, 57, 43, 0.4); }
     .about-blog-btn:hover span { transform: translateX(4px); }
 
@@ -643,19 +642,15 @@
   </script>
 
   <script>
-    // ── AUTH ──────────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
 
     function getSafeSavedIds() {
-      if (window.getSavedIds && typeof window.getSavedIds === 'function') {
-        return window.getSavedIds();
-      }
+      if (window.getSavedIds && typeof window.getSavedIds === 'function') return window.getSavedIds();
       return new Set();
     }
 
-    // ── TOAST ─────────────────────────────────────────────────────
     window.showToast = function(msg) {
       let t = document.getElementById('ac-toast');
       if (!t) {
@@ -671,13 +666,19 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    // ── INTERSECTION OBSERVER (lazy load) ────────────────────────
+    // ── INTERSECTION OBSERVER ─────────────────────────────────────
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const img = entry.target;
           if (img.dataset.src) {
-            // Lazy load: set src trực tiếp ảnh full
+            // Set srcset trước để browser chọn đúng ảnh trước khi load
+            if (img.dataset.srcset) {
+              img.srcset = img.dataset.srcset;
+              img.sizes  = img.dataset.sizes || '';
+              img.removeAttribute('data-srcset');
+              img.removeAttribute('data-sizes');
+            }
             img.src = img.dataset.src;
             img.removeAttribute('data-src');
             imgObserver.unobserve(img);
@@ -695,16 +696,28 @@
 
       const img = document.createElement('img');
       img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
-img.decoding = i < 4 ? 'sync' : 'async';
-      img.onload = () => card.classList.remove('shimmer');
+      // LCP images: sync decode để paint ngay, còn lại async
+      img.decoding = i < 4 ? 'sync' : 'async';
+      img.onload  = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
 
-      // Luôn dùng ảnh full — không srcset để tránh browser chọn nhầm ảnh mobile trên desktop
+      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
+      // sizes = 1200px trên desktop → browser "cần" 1200px → chỉ 1086w đủ → load ảnh full
+      // sizes = 50vw trên mobile (~200px) → 480w là đủ → load ảnh mobile nhẹ hơn
+      const srcset = `${mobileUrl} 480w, ${outfit.img} 1086w`;
+      const sizes  = '(max-width: 768px) 50vw, 1200px';
+
       if (i < 4) {
-        img.src = outfit.img;
+        // Ảnh đầu: load thẳng, không lazy
+        img.srcset = srcset;
+        img.sizes  = sizes;
+        img.src    = outfit.img;
         img.fetchPriority = 'high';
       } else {
-        img.dataset.src = outfit.img;
+        // Ảnh còn lại: lazy load, lưu srcset vào data-* để restore khi vào viewport
+        img.dataset.src    = outfit.img;
+        img.dataset.srcset = srcset;
+        img.dataset.sizes  = sizes;
         img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
         imgObserver.observe(img);
       }
@@ -744,28 +757,21 @@ img.decoding = i < 4 ? 'sync' : 'async';
         return;
       }
 
-      const firstSlice = data.slice(0, FIRST_BATCH);
       const frag1 = document.createDocumentFragment();
-      firstSlice.forEach((outfit, i) => frag1.appendChild(buildCard(outfit, i, savedIds)));
+      data.slice(0, FIRST_BATCH).forEach((outfit, i) => frag1.appendChild(buildCard(outfit, i, savedIds)));
       grid.appendChild(frag1);
 
       if (data.length > FIRST_BATCH) {
-        const rest = data.slice(FIRST_BATCH);
         const renderRest = () => {
           const frag2 = document.createDocumentFragment();
-          rest.forEach((outfit, i) => frag2.appendChild(buildCard(outfit, i + FIRST_BATCH, savedIds)));
+          data.slice(FIRST_BATCH).forEach((outfit, i) => frag2.appendChild(buildCard(outfit, i + FIRST_BATCH, savedIds)));
           grid.appendChild(frag2);
         };
-
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(renderRest, { timeout: 500 });
-        } else {
-          setTimeout(renderRest, 50);
-        }
+        if ('requestIdleCallback' in window) requestIdleCallback(renderRest, { timeout: 500 });
+        else setTimeout(renderRest, 50);
       }
     };
 
-    // ── UPDATE SAVE BUTTONS ───────────────────────────────────────
     window.updateSaveButtons = function() {
       const savedIds = getSafeSavedIds();
       document.querySelectorAll('.btn-save-card').forEach(btn => {
@@ -777,14 +783,12 @@ img.decoding = i < 4 ? 'sync' : 'async';
       });
     };
 
-    // ── RANDOM ────────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
 
-    // ── INIT ──────────────────────────────────────────────────────
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
@@ -796,7 +800,6 @@ img.decoding = i < 4 ? 'sync' : 'async';
       }
     }
 
-    // ── SEARCH TOGGLE ─────────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
       const input = document.getElementById('search-input');
@@ -804,7 +807,6 @@ img.decoding = i < 4 ? 'sync' : 'async';
       if (bar.style.display === 'block') input.focus();
     }
 
-    // ── MUSIC ─────────────────────────────────────────────────────
     const audio = document.getElementById('apocalypse-audio');
     const rec   = document.getElementById('record-icon');
     document.getElementById('music-player').addEventListener('click', () => {
@@ -812,7 +814,6 @@ img.decoding = i < 4 ? 'sync' : 'async';
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // ── SEARCH ────────────────────────────────────────────────────
     document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
       const filtered = outfits.filter(o =>
@@ -823,7 +824,6 @@ img.decoding = i < 4 ? 'sync' : 'async';
       renderAll(filtered);
     });
 
-    // ── NAV ICON từ localStorage ──────────────────────────────────
     const cachedUser = getUser();
     if (cachedUser) {
       const navBtn = document.getElementById('nav-closet-btn');
@@ -836,11 +836,8 @@ img.decoding = i < 4 ? 'sync' : 'async';
     }
 
     window._renderAllReady = true;
-    if (typeof outfits !== 'undefined') {
-      initGrid();
-    } else {
-      document.addEventListener('DOMContentLoaded', initGrid);
-    }
+    if (typeof outfits !== 'undefined') initGrid();
+    else document.addEventListener('DOMContentLoaded', initGrid);
   </script>
 </body>
 </html>
