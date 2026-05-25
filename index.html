@@ -32,11 +32,11 @@
   <link rel="preload" as="script" href="outfits.js">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
-  <!-- FIX 3 & 4: Đổi 600w → 480w để desktop không chọn nhầm ảnh mobile -->
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 480w, /image/apocalypse-badgirl-1-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 480w, /image/apocalypse-badgirl-2-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 480w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 480w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <!-- Preload 4 ảnh đầu — luôn dùng ảnh full để đảm bảo nét trên mọi màn hình -->
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high">
 
   <style>
     @font-face {
@@ -680,11 +680,7 @@
         if (entry.isIntersecting) {
           const img = entry.target;
           if (img.dataset.src) {
-            // FIX 3: Set srcset TRƯỚC src — browser biết options trước khi trigger load
-            if (img.dataset.srcset) {
-              img.srcset = img.dataset.srcset;
-              img.removeAttribute('data-srcset');
-            }
+            // Lazy load: set src trực tiếp ảnh full
             img.src = img.dataset.src;
             img.removeAttribute('data-src');
             imgObserver.unobserve(img);
@@ -706,18 +702,12 @@
       img.onload = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
 
-      const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
-      // FIX 4: Đổi 600w → 480w — desktop 25vw ~360px sẽ không chọn nhầm ảnh mobile
-      img.srcset = `${mobileUrl} 480w, ${outfit.img} 1086w`;
-      img.sizes = '(max-width: 768px) 50vw, 25vw';
-
+      // Luôn dùng ảnh full — không srcset để tránh browser chọn nhầm ảnh mobile trên desktop
       if (i < 4) {
         img.src = outfit.img;
         img.fetchPriority = 'high';
       } else {
         img.dataset.src = outfit.img;
-        img.dataset.srcset = img.srcset;
-        img.srcset = '';
         img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
         imgObserver.observe(img);
       }
