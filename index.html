@@ -31,19 +31,22 @@
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 600w, /image/apocalypse-badgirl-1-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 600w, /image/apocalypse-badgirl-2-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 600w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
-  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 600w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+
+  <!-- FIX 3 & 4: Đổi 600w → 480w để desktop không chọn nhầm ảnh mobile -->
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-1-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-1-1_result.webp 480w, /image/apocalypse-badgirl-1-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-2-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-2-1_result.webp 480w, /image/apocalypse-badgirl-2-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-3-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-3-1_result.webp 480w, /image/apocalypse-badgirl-3-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+  <link rel="preload" as="image" href="/image/apocalypse-badgirl-4-1_result.webp" fetchpriority="high" imagesrcset="/image-mobile/apocalypse-badgirl-4-1_result.webp 480w, /image/apocalypse-badgirl-4-1_result.webp 1086w" imagesizes="(max-width: 768px) 50vw, 25vw">
+
   <style>
-    /* ── FONT FIX: Dùng file oswald.woff2 thay vì base64 embed (~18KB nhỏ hơn, cacheable) ── */
     @font-face {
       font-family: 'Oswald';
       src: url('oswald.woff2') format('woff2');
       font-weight: 400 700;
       font-style: normal;
-      font-display: block;
+      font-display: swap;
     }
+
     :root {
       --black: #0a0a0a;
       --white: #f0ece4;
@@ -52,7 +55,9 @@
       --grey: #1a1a1a;
       --muted: #888;
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       background: var(--black);
       color: var(--white);
@@ -60,6 +65,7 @@
       min-height: 100vh;
       cursor: crosshair;
     }
+
     body::before {
       content: '';
       position: fixed;
@@ -69,6 +75,7 @@
       z-index: 999;
       opacity: 0.4;
     }
+
     header {
       display: flex;
       align-items: center;
@@ -81,17 +88,20 @@
       backdrop-filter: blur(8px);
       z-index: 100;
     }
+
     .logo-wrap {
       display: flex;
       align-items: center;
       gap: 12px;
       text-decoration: none;
     }
+
     nav {
       display: flex;
       align-items: center;
       gap: 8px;
     }
+
     .btn {
       font-family: 'Space Mono', monospace;
       font-size: 11px;
@@ -111,6 +121,7 @@
       gap: 6px;
     }
     .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+
     .nav-icon {
       font-size: 16px;
       display: inline-flex;
@@ -120,10 +131,12 @@
       height: 16px;
       line-height: 1;
     }
+
     .btn-reload { border-color: var(--red); color: var(--red-text); }
     .btn-reload:hover { background: var(--red); color: var(--white); border-color: var(--red); }
     .spin { transition: transform 0.5s ease; }
     .btn-reload:hover .spin { transform: rotate(360deg); }
+
     .dropdown { position: relative; display: inline-block; }
     .dropdown-content {
       display: none;
@@ -157,6 +170,7 @@
     }
     .dropdown-content a:last-child { border-bottom: none; }
     .dropdown-content a:hover { background-color: var(--white); color: var(--black); }
+
     #search-bar {
       display: none;
       padding: 14px 32px;
@@ -175,6 +189,7 @@
       padding: 8px 0;
       outline: none;
     }
+
     .hero {
       padding: 48px 32px 24px;
       border-bottom: 1px solid #1a1a1a;
@@ -201,6 +216,7 @@
       max-width: 340px;
       line-height: 1.8;
     }
+
     .section-header {
       display: flex;
       align-items: center;
@@ -209,12 +225,14 @@
     }
     .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
     .section-count { font-family: 'Oswald', sans-serif; font-size: 13px; color: var(--red-text); letter-spacing: 0.1em; }
+
     .outfit-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2px;
       padding: 0 2px 2px;
     }
+
     .outfit-card {
       position: relative;
       overflow: hidden;
@@ -223,20 +241,18 @@
       cursor: pointer;
       opacity: 0;
       animation: fadeIn 0.4s ease forwards;
-      /* FIX ảnh mờ: tạo compositing layer ngay từ đầu thay vì promote lazily khi hover */
-      transform: translateZ(0);
-      -webkit-transform: translateZ(0);
+      /* FIX 1: will-change thay vì translateZ(0) — tránh subpixel blur trên mobile WebKit */
+      will-change: transform;
     }
+
     .outfit-card img {
       width: 100%; height: 100%;
       object-fit: cover; display: block;
       transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.3s;
-      /* FIX ảnh mờ: bỏ filter: saturate(0.85) — CSS filter ép browser tạo GPU texture
-         riêng cho từng ảnh, trên mobile dễ bị downscale → mờ. Chỉ dùng filter khi hover */
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
+      /* FIX 1: Bỏ backface-visibility và saturate — không cần, gây GPU rounding blur */
     }
     .outfit-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
+
     .outfit-card::after {
       content: '';
       position: absolute;
@@ -246,6 +262,7 @@
       transition: opacity 0.3s;
     }
     .outfit-card:hover::after { opacity: 1; }
+
     .outfit-overlay {
       position: absolute;
       bottom: 16px; left: 16px;
@@ -260,6 +277,7 @@
       color: var(--white); background: var(--red); padding: 4px 10px; display: inline-block;
     }
     .outfit-num { font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
+
     .btn-save-card {
       position: absolute;
       top: 16px; right: 16px;
@@ -279,6 +297,7 @@
     .outfit-card:hover .btn-save-card { opacity: 1; transform: translateY(0); }
     .btn-save-card:hover { background: var(--red); border-color: var(--red); }
     .btn-save-card.saved { opacity: 1; transform: translateY(0); color: var(--red-text); border-color: var(--red); }
+
     .shimmer {
       background: linear-gradient(90deg, #111 25%, #1e1e1e 50%, #111 75%);
       background-size: 200% 100%;
@@ -287,7 +306,13 @@
       contain: strict;
     }
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-    @keyframes fadeIn { from { opacity: 0; transform: translateZ(0) translateY(12px); } to { opacity: 1; transform: translateZ(0) translateY(0); } }
+
+    /* FIX 2: Bỏ translateZ(0) khỏi keyframe — tránh force compositing layer liên tục */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
     .ticker {
       overflow: hidden;
       border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
@@ -298,6 +323,7 @@
     .ticker-item { font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 0.3em; color: #999; }
     .ticker-item span { color: var(--red-text); }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
     .about-section {
       padding: 80px 32px;
       text-align: center; max-width: 680px; margin: 0 auto;
@@ -314,6 +340,7 @@
       border-top: 1px solid #222; border-bottom: 1px solid #222;
       padding: 12px 24px; display: inline-block;
     }
+
     .about-blog-btn {
       margin-top: 36px;
       display: inline-flex;
@@ -330,19 +357,12 @@
       transition: all 0.3s ease;
       background: rgba(192, 57, 43, 0.05);
     }
-    .about-blog-btn span {
-      font-size: 14px;
-      transition: transform 0.3s ease;
-    }
-    .about-blog-btn:hover {
-      background: var(--red);
-      color: var(--white);
-      box-shadow: 0 0 20px rgba(192, 57, 43, 0.4);
-    }
-    .about-blog-btn:hover span {
-      transform: translateX(4px);
-    }
+    .about-blog-btn span { font-size: 14px; transition: transform 0.3s ease; }
+    .about-blog-btn:hover { background: var(--red); color: var(--white); box-shadow: 0 0 20px rgba(192, 57, 43, 0.4); }
+    .about-blog-btn:hover span { transform: translateX(4px); }
+
     footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+
     .player-container {
       position: fixed; bottom: 24px; right: 24px;
       width: 50px; height: 50px;
@@ -356,6 +376,7 @@
     #record-icon { width: 100%; height: 100%; border-radius: 50%; animation: spin 4s linear infinite; animation-play-state: paused; }
     #record-icon.playing { animation-play-state: running; }
     @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
       nav { gap: 4px; }
@@ -376,6 +397,7 @@
       .player-container { bottom: 16px; right: 16px; width: 44px; height: 44px; }
     }
   </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -410,6 +432,7 @@
     ]
   }
   </script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -424,6 +447,7 @@
   </script>
 </head>
 <body>
+
   <header>
     <a class="logo-wrap" href="/">
       <img src="Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high"
@@ -459,19 +483,24 @@
       </div>
     </nav>
   </header>
+
   <main>
+
   <div id="search-bar">
     <input id="search-input" type="text" placeholder="TÌM OUTFIT, STYLE HOẶC MÃ SỐ (VD: 01, 12)...">
   </div>
+
   <section class="hero" data-nosnippet>
     <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
     <h1 class="hero-title">DRESS<br>LIKE THE<br><span>END</span></h1>
     <p class="hero-sub">Outfit ngẫu nhiên mỗi lần reload.<br>Bấm RELOAD để xáo trộn thứ tự.</p>
   </section>
+
   <div class="section-header" data-nosnippet>
     <span class="section-label">All Outfits</span>
     <span class="section-count" id="counter"></span>
   </div>
+
   <div class="outfit-grid" id="outfit-grid">
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
@@ -484,6 +513,7 @@
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
   </div>
+
   <div class="ticker" data-nosnippet>
     <div class="ticker-inner">
       <span class="ticker-item">APOCALYPSE CLOSET</span>
@@ -500,6 +530,7 @@
       <span class="ticker-item"><span>✦</span> DARK FASHION</span>
     </div>
   </div>
+
   <section class="about-section">
     <div class="about-icon">✦</div>
     <h2 class="about-title" data-nosnippet>APOCALYPSE CLOSET</h2>
@@ -511,10 +542,13 @@
     <div class="about-quote">"Dress like it's the end of the world"</div>
     <a href="blog.html" class="about-blog-btn" data-nosnippet>ĐỌC THE MANIFESTO <span>→</span></a>
   </section>
+
   </main>
-  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" 
-   onmouseover="this.style.color='#f0ece4'" 
+
+  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;"
+   onmouseover="this.style.color='#f0ece4'"
    onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
+
   <div id="music-player" class="player-container" title="Phát nhạc Apocalypse">
     <svg id="record-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="50" r="48" fill="#0a0a0a"/>
@@ -527,94 +561,103 @@
       <source src="https://res.cloudinary.com/dazjcjufd/video/upload/v1779505038/apocalypse_hu44u2.mp3" type="audio/mpeg">
     </audio>
   </div>
+
   <script src="outfits.js" defer></script>
- <script type="module" defer>
-  let _fbCache = null;
-  let currentUid = null;
-  let savedIdsSet = new Set();
-  window.getSavedIds = () => savedIdsSet;
-  function loadFirebase() {
-    if (_fbCache) return _fbCache;
-    _fbCache = Promise.all([
-      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"),
-      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"),
-      import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"),
-    ]).then(async ([
-      { initializeApp },
-      { getAuth, onAuthStateChanged },
-      { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }
-    ]) => {
-      const app = initializeApp({
-        apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
-        authDomain:        "apocalypse-closet.firebaseapp.com",
-        projectId:         "apocalypse-closet",
-        storageBucket:     "apocalypse-closet.firebasestorage.app",
-        messagingSenderId: "493697340280",
-        appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
-      });
-      const auth = getAuth(app);
-      const db   = getFirestore(app);
-      await new Promise(resolve => {
-        const unsub = onAuthStateChanged(auth, async user => {
-          unsub();
-          if (user) {
-            currentUid = user.uid;
-            localStorage.setItem('ac_user', JSON.stringify({
-              name: user.displayName || '', email: user.email,
-              picture: user.photoURL || '', sub: user.uid
-            }));
-            const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
-            savedIdsSet = new Set();
-            snap.forEach(d => savedIdsSet.add(d.id));
-            window.getSavedIds = () => savedIdsSet;
-            if (typeof window.updateSaveButtons === 'function') window.updateSaveButtons();
-          } else {
-            currentUid = null;
-            savedIdsSet = new Set();
-          }
-          resolve();
+
+  <script type="module" defer>
+    let _fbCache = null;
+    let currentUid = null;
+    let savedIdsSet = new Set();
+    window.getSavedIds = () => savedIdsSet;
+
+    function loadFirebase() {
+      if (_fbCache) return _fbCache;
+      _fbCache = Promise.all([
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"),
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"),
+        import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"),
+      ]).then(async ([
+        { initializeApp },
+        { getAuth, onAuthStateChanged },
+        { getFirestore, doc, setDoc, deleteDoc, getDocs, collection }
+      ]) => {
+        const app = initializeApp({
+          apiKey:            "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+          authDomain:        "apocalypse-closet.firebaseapp.com",
+          projectId:         "apocalypse-closet",
+          storageBucket:     "apocalypse-closet.firebasestorage.app",
+          messagingSenderId: "493697340280",
+          appId:             "1:493697340280:web:9db33f9844c77d95232e8d"
         });
+        const auth = getAuth(app);
+        const db   = getFirestore(app);
+
+        await new Promise(resolve => {
+          const unsub = onAuthStateChanged(auth, async user => {
+            unsub();
+            if (user) {
+              currentUid = user.uid;
+              localStorage.setItem('ac_user', JSON.stringify({
+                name: user.displayName || '', email: user.email,
+                picture: user.photoURL || '', sub: user.uid
+              }));
+              const snap = await getDocs(collection(db, 'users', user.uid, 'closet'));
+              savedIdsSet = new Set();
+              snap.forEach(d => savedIdsSet.add(d.id));
+              window.getSavedIds = () => savedIdsSet;
+              if (typeof window.updateSaveButtons === 'function') window.updateSaveButtons();
+            } else {
+              currentUid = null;
+              savedIdsSet = new Set();
+            }
+            resolve();
+          });
+        });
+
+        return { db, doc, setDoc, deleteDoc };
       });
-      return { db, doc, setDoc, deleteDoc };
-    });
-    return _fbCache;
-  }
-  window.toggleSave = async function(outfit, btn) {
-    btn.style.opacity = '0.4';
-    const { db, doc, setDoc, deleteDoc } = await loadFirebase();
-    btn.style.opacity = '';
-    if (!currentUid) { window.location.href = 'login.html'; return; }
-    const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
-    if (savedIdsSet.has(outfit.id)) {
-      await deleteDoc(ref);
-      savedIdsSet.delete(outfit.id);
-      btn.innerHTML = '♡';
-      btn.classList.remove('saved');
-      if (window.showToast) window.showToast('Đã xoá khỏi closet');
-    } else {
-      await setDoc(ref, {
-        id: outfit.id, title: outfit.title,
-        image: outfit.img, category: outfit.category, slug: outfit.slug,
-        savedAt: Date.now()
-      });
-      savedIdsSet.add(outfit.id);
-      btn.innerHTML = '♥';
-      btn.classList.add('saved');
-      if (window.showToast) window.showToast('Đã lưu vào closet 🖤');
+      return _fbCache;
     }
-  };
-</script>
+
+    window.toggleSave = async function(outfit, btn) {
+      btn.style.opacity = '0.4';
+      const { db, doc, setDoc, deleteDoc } = await loadFirebase();
+      btn.style.opacity = '';
+      if (!currentUid) { window.location.href = 'login.html'; return; }
+      const ref = doc(db, 'users', currentUid, 'closet', outfit.id);
+      if (savedIdsSet.has(outfit.id)) {
+        await deleteDoc(ref);
+        savedIdsSet.delete(outfit.id);
+        btn.innerHTML = '♡';
+        btn.classList.remove('saved');
+        if (window.showToast) window.showToast('Đã xoá khỏi closet');
+      } else {
+        await setDoc(ref, {
+          id: outfit.id, title: outfit.title,
+          image: outfit.img, category: outfit.category, slug: outfit.slug,
+          savedAt: Date.now()
+        });
+        savedIdsSet.add(outfit.id);
+        btn.innerHTML = '♥';
+        btn.classList.add('saved');
+        if (window.showToast) window.showToast('Đã lưu vào closet 🖤');
+      }
+    };
+  </script>
+
   <script>
     // ── AUTH ──────────────────────────────────────────────────────
     function getUser() {
       try { return JSON.parse(localStorage.getItem('ac_user')); } catch { return null; }
     }
+
     function getSafeSavedIds() {
       if (window.getSavedIds && typeof window.getSavedIds === 'function') {
         return window.getSavedIds();
       }
       return new Set();
     }
+
     // ── TOAST ─────────────────────────────────────────────────────
     window.showToast = function(msg) {
       let t = document.getElementById('ac-toast');
@@ -630,37 +673,44 @@
       clearTimeout(t._t);
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
+
     // ── INTERSECTION OBSERVER (lazy load) ────────────────────────
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const img = entry.target;
           if (img.dataset.src) {
-            img.src = img.dataset.src;
+            // FIX 3: Set srcset TRƯỚC src — browser biết options trước khi trigger load
             if (img.dataset.srcset) {
               img.srcset = img.dataset.srcset;
               img.removeAttribute('data-srcset');
             }
+            img.src = img.dataset.src;
             img.removeAttribute('data-src');
             imgObserver.unobserve(img);
           }
         }
       });
     }, { rootMargin: '200px' });
+
     // ── BUILD CARD ───────────────────────────────────────────────
     function buildCard(outfit, i, savedIds) {
       const card = document.createElement('div');
       card.className = 'outfit-card shimmer';
       card.style.animationDelay = (i * 0.03) + 's';
       card.onclick = () => { window.location.href = `/outfits/${outfit.slug}.html`; };
+
       const img = document.createElement('img');
       img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
       img.decoding = 'async';
       img.onload = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
+
       const mobileUrl = outfit.img.replace('/image/', '/image-mobile/');
-      img.srcset = `${mobileUrl} 600w, ${outfit.img} 1086w`;
+      // FIX 4: Đổi 600w → 480w — desktop 25vw ~360px sẽ không chọn nhầm ảnh mobile
+      img.srcset = `${mobileUrl} 480w, ${outfit.img} 1086w`;
       img.sizes = '(max-width: 768px) 50vw, 25vw';
+
       if (i < 4) {
         img.src = outfit.img;
         img.fetchPriority = 'high';
@@ -671,9 +721,11 @@
         img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
         imgObserver.observe(img);
       }
+
       const overlay = document.createElement('div');
       overlay.className = 'outfit-overlay';
       overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
+
       const saveBtn = document.createElement('button');
       const isSaved = savedIds.has(outfit.id);
       saveBtn.dataset.outfitId = outfit.id;
@@ -683,26 +735,33 @@
         e.stopPropagation();
         if (window.toggleSave) window.toggleSave(outfit, saveBtn);
       };
+
       card.appendChild(img);
       card.appendChild(overlay);
       card.appendChild(saveBtn);
       return card;
     }
+
     // ── RENDER ALL ───────────────────────────────────────────────
     const FIRST_BATCH = 4;
+
     window.renderAll = function(data = outfits) {
       const grid = document.getElementById('outfit-grid');
       const savedIds = getSafeSavedIds();
+
       grid.innerHTML = '';
       document.getElementById('counter').textContent = data.length + ' LOOKS';
+
       if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
         return;
       }
+
       const firstSlice = data.slice(0, FIRST_BATCH);
       const frag1 = document.createDocumentFragment();
       firstSlice.forEach((outfit, i) => frag1.appendChild(buildCard(outfit, i, savedIds)));
       grid.appendChild(frag1);
+
       if (data.length > FIRST_BATCH) {
         const rest = data.slice(FIRST_BATCH);
         const renderRest = () => {
@@ -710,6 +769,7 @@
           rest.forEach((outfit, i) => frag2.appendChild(buildCard(outfit, i + FIRST_BATCH, savedIds)));
           grid.appendChild(frag2);
         };
+
         if ('requestIdleCallback' in window) {
           requestIdleCallback(renderRest, { timeout: 500 });
         } else {
@@ -717,6 +777,7 @@
         }
       }
     };
+
     // ── UPDATE SAVE BUTTONS ───────────────────────────────────────
     window.updateSaveButtons = function() {
       const savedIds = getSafeSavedIds();
@@ -728,12 +789,14 @@
         btn.className = 'btn-save-card' + (saved ? ' saved' : '');
       });
     };
+
     // ── RANDOM ────────────────────────────────────────────────────
     function randomize() {
       outfits.sort(() => Math.random() - 0.5);
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
       renderAll();
     }
+
     // ── INIT ──────────────────────────────────────────────────────
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
@@ -745,6 +808,7 @@
         randomize();
       }
     }
+
     // ── SEARCH TOGGLE ─────────────────────────────────────────────
     function toggleSearch() {
       const bar = document.getElementById('search-bar');
@@ -752,6 +816,7 @@
       bar.style.display = (bar.style.display === 'block') ? 'none' : 'block';
       if (bar.style.display === 'block') input.focus();
     }
+
     // ── MUSIC ─────────────────────────────────────────────────────
     const audio = document.getElementById('apocalypse-audio');
     const rec   = document.getElementById('record-icon');
@@ -759,6 +824,7 @@
       if (audio.paused) { audio.play(); rec.classList.add('playing'); }
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
+
     // ── SEARCH ────────────────────────────────────────────────────
     document.getElementById('search-input').addEventListener('input', function(e) {
       const keyword = e.target.value.toLowerCase().trim();
@@ -769,6 +835,7 @@
       );
       renderAll(filtered);
     });
+
     // ── NAV ICON từ localStorage ──────────────────────────────────
     const cachedUser = getUser();
     if (cachedUser) {
@@ -780,6 +847,7 @@
         navBtn.style.borderColor = '#c0392b';
       }
     }
+
     window._renderAllReady = true;
     if (typeof outfits !== 'undefined') {
       initGrid();
