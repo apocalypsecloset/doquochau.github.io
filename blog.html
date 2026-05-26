@@ -23,7 +23,7 @@
   <style>
     :root {
       --black: #0a0a0a; --white: #f0ece4; --red: #c0392b;
-      --grey: #141414; --muted: #777; --border: #222;
+      --grey: #141414; --muted: #888; --border: #222;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -150,10 +150,7 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    footer {
-      padding: 48px 32px; border-top: 1px solid var(--border);
-      text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em;
-    }
+    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
 
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
@@ -225,7 +222,7 @@
 
   <div class="post-grid" id="post-grid"></div>
 
-  <footer>© 2026 APOCALYPSE CLOSET</footer>
+  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
 
 <script>
     const POSTS = [

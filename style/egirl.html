@@ -19,7 +19,7 @@
       --white: #f0ece4;
       --red: #c0392b;
       --grey: #1a1a1a;
-      --muted: #444;
+      --muted: #888;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -166,10 +166,7 @@
     .outfit-num { font-family: 'Oswald', sans-serif; font-size: 28px; color: var(--white); line-height: 1; margin-top: 4px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
-    footer {
-      padding: 32px; border-top: 1px solid #1a1a1a;
-      display: flex; align-items: center; justify-content: space-between;
-    }
+    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
 
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
@@ -178,7 +175,7 @@
       .pillars { grid-template-columns: repeat(2, 1fr); }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
       .section-header { padding: 20px 16px 12px; }
-      footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
+      footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
     }
 
     /* MENU CSS TỪ TRANG CHỦ */
@@ -409,9 +406,7 @@
 
   <div class="outfit-grid" id="outfit-grid"></div>
 
-  <footer>
-    <p style="text-align: center; width: 100%;">© 2026 APOCALYPSE CLOSET</p>
-  </footer>
+  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="../privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
 
   <script src="../outfits.js"></script>
   <script>
