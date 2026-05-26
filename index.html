@@ -224,7 +224,55 @@
       padding: 28px 32px 16px;
     }
     .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
-    .section-count { font-family: 'Oswald', sans-serif; font-size: 13px; color: var(--red-text); letter-spacing: 0.1em; }
+    .section-count {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      color: var(--red-text);
+      letter-spacing: 0.1em;
+      position: relative;
+      animation: glitch-flicker 6s infinite;
+    }
+    .section-count::before,
+    .section-count::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .section-count::before {
+      color: #ff2a2a;
+      clip-path: polygon(0 20%, 100% 20%, 100% 40%, 0 40%);
+      animation: glitch-top 6s infinite;
+    }
+    .section-count::after {
+      color: #00e5ff;
+      clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0 80%);
+      animation: glitch-bot 6s infinite;
+    }
+    @keyframes glitch-flicker {
+      0%, 89%  { transform: none; opacity: 1; }
+      90%      { transform: skewX(-1deg); opacity: 0.9; }
+      91%      { transform: skewX(1.5deg) translateX(-2px); opacity: 1; }
+      92%      { transform: none; opacity: 1; }
+      96%      { transform: translateX(1px); opacity: 0.95; }
+      97%      { transform: none; opacity: 1; }
+    }
+    @keyframes glitch-top {
+      0%, 89%  { opacity: 0; transform: none; }
+      90%      { opacity: 0.7; transform: translateX(-3px); }
+      91%      { opacity: 0; }
+      96%      { opacity: 0.5; transform: translateX(2px); }
+      97%      { opacity: 0; }
+    }
+    @keyframes glitch-bot {
+      0%, 90%  { opacity: 0; transform: none; }
+      91%      { opacity: 0.6; transform: translateX(3px); }
+      92%      { opacity: 0; }
+      96%      { opacity: 0.4; transform: translateX(-2px); }
+      97%      { opacity: 0; }
+    }
 
     .outfit-grid {
       display: grid;
@@ -742,7 +790,10 @@
       const savedIds = getSafeSavedIds();
 
       grid.innerHTML = '';
-      document.getElementById('counter').textContent = data.length + ' LOOKS';
+      const counterEl = document.getElementById('counter');
+      const counterText = '100+ LOOKS · MỖI LẦN RELOAD LÀ MỘT BỘ MỚI';
+      counterEl.textContent = counterText;
+      counterEl.setAttribute('data-text', counterText);
 
       if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
