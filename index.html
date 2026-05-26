@@ -24,8 +24,8 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
@@ -191,6 +191,7 @@
     }
     .hero-title {
       font-family: 'Oswald', sans-serif;
+      font-weight: 700;
       font-size: clamp(52px, 8vw, 100px);
       line-height: 0.92;
       letter-spacing: 0.01em;
