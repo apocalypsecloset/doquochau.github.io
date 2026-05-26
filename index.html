@@ -447,7 +447,7 @@
   <header>
     <a class="logo-wrap" href="/">
       <img src="Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high"
-        alt="Apocalypse Closet logo" style="height:44px;width:auto;object-fit:contain;">
+        alt="Apocalypse Closet — Badgirl Aesthetic & Dark Fashion" style="height:44px;width:auto;object-fit:contain;">
       <img src="wordmark.webp" width="70" height="32"
         alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
     </a>
@@ -530,6 +530,7 @@
   <section class="about-section">
     <div class="about-icon">✦</div>
     <h2 class="about-title" data-nosnippet>APOCALYPSE CLOSET</h2>
+    <h2 style="font-family:'Oswald',sans-serif;font-size:16px;letter-spacing:0.25em;color:var(--red-text);margin-bottom:20px;margin-top:-16px;font-weight:400;">Badgirl Aesthetic — Tủ Đồ Của Những Tâm Hồn Nổi Loạn</h2>
     <p class="about-desc">
       Thánh địa <span>Badgirl</span> chính hiệu — nơi những tâm hồn nổi loạn tìm thấy ngôn ngữ thời trang của riêng mình. Chúng tôi tin rằng thời trang không chỉ là những mảnh vải vô tri, mà là thứ vũ khí sắc bén, là lớp áo giáp gai góc để bạn sẵn sàng đối mặt với mọi rào cản.
       <br><br>
@@ -692,7 +693,7 @@
       card.onclick = () => { window.location.href = `/outfits/${outfit.slug}.html`; };
 
       const img = document.createElement('img');
-      img.alt = `${outfit.category} - ${outfit.title} - ${outfit.tag}`;
+      img.alt = `Badgirl outfit ${outfit.tag} — ${outfit.title} (${outfit.category})`;
       img.decoding = i < 4 ? 'sync' : 'async';
       img.onload  = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
