@@ -241,46 +241,46 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .section-count::before {
   color: #ff2a2a;
-  animation: glitch-top 1.8s infinite;
-  opacity: 0.6;
+  animation: glitch-top 3.5s infinite;
+  opacity: 0.25;
 }
 
 .section-count::after {
   color: #00e5ff;
-  animation: glitch-bot 2.2s infinite;
-  opacity: 0.5;
+  animation: glitch-bot 4s infinite;
+  opacity: 0.18;
 }
 
 @keyframes glitch-top {
-  0%, 100% {
+  0%, 92%, 100% {
     transform: translateX(0);
-    clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
+    clip-path: polygon(0 18%, 100% 18%, 100% 32%, 0 32%);
   }
-  33% {
-    transform: translateX(-4px);
+  94% {
+    transform: translateX(-1.5px);
   }
-  66% {
-    transform: translateX(3px);
+  96% {
+    transform: translateX(1px);
   }
 }
 
 @keyframes glitch-bot {
-  0%, 100% {
+  0%, 92%, 100% {
     transform: translateX(0);
-    clip-path: polygon(0 65%, 100% 65%, 100% 85%, 0 85%);
+    clip-path: polygon(0 68%, 100% 68%, 100% 82%, 0 82%);
   }
-  33% {
-    transform: translateX(4px);
+  94% {
+    transform: translateX(1.5px);
   }
-  66% {
-    transform: translateX(-3px);
+  96% {
+    transform: translateX(-1px);
   }
 }
-
     .outfit-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
