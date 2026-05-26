@@ -11,8 +11,10 @@
 //    Format: look-{XX}-{category-kebab}
 // ═══════════════════════════════════════════════════════════════════
 
-const BASE = "/image";
-const G = (look, idx) => `${BASE}/apocalypse-badgirl-${look}-${idx}_result.webp`;
+const BASE = "/images/badgirl-outfits";
+const STYLE_BY_LOOK = { 1: "e-girl", 2: "baddie-streetwear", 3: "punk", 4: "dark-feminine", 5: "e-girl", 6: "punk", 7: "baddie-streetwear", 8: "e-girl", 9: "goth", 10: "punk", 11: "e-girl", 12: "punk", 13: "e-girl", 14: "baddie-streetwear", 15: "dark-feminine", 16: "goth", 17: "baddie-streetwear", 18: "dark-feminine", 19: "punk", 20: "baddie-streetwear", 21: "dark-feminine" };
+const IMG_PART_BY_INDEX = { 1: "full-outfit", 2: "top", 3: "bottom", 4: "shoes-accessories" };
+const G = (look, idx) => `${BASE}/badgirl-${STYLE_BY_LOOK[look]}-look-${String(look).padStart(2, '0')}-${IMG_PART_BY_INDEX[idx]}.webp`;
 
 const outfits = [
 

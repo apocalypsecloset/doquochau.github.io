@@ -20,7 +20,7 @@
       --red:    #c0392b;
       --dim:    #1a1a1a;
       --border: #2a2a2a;
-      --muted:  #555;
+      --muted: #888;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -169,11 +169,13 @@
     .forgot {
       text-align: right; margin-top: -8px; margin-bottom: 16px;
     }
-    .forgot a {
+    .forgot button {
       font-size: 9px; letter-spacing: 0.1em; color: var(--muted);
       text-decoration: none; text-transform: uppercase;
+      background: none; border: 0; padding: 0; cursor: pointer;
+      font-family: inherit;
     }
-    .forgot a:hover { color: var(--red); }
+    .forgot button:hover { color: var(--red); }
 
     .note {
       margin-top: 28px; font-size: 9px; color: var(--muted);
@@ -275,7 +277,7 @@
           <label>Mật khẩu</label>
           <input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password" />
         </div>
-        <div class="forgot"><a href="#" onclick="forgotPassword()">Quên mật khẩu?</a></div>
+        <div class="forgot"><button type="button" onclick="forgotPassword()">Quên mật khẩu?</button></div>
         <button class="btn-submit" id="btn-login" onclick="loginEmail()">ĐĂNG NHẬP</button>
       </div>
 
@@ -283,7 +285,7 @@
       <div id="form-register" style="display:none;">
         <div class="field">
           <label>Tên hiển thị</label>
-          <input type="text" id="reg-name" placeholder="Bad Girl" autocomplete="name" />
+          <input type="text" id="reg-name" placeholder="Badgirl" autocomplete="name" />
         </div>
         <div class="field">
           <label>Email</label>
@@ -300,7 +302,7 @@
 
       <p class="note">
         Bằng cách đăng nhập, bạn đồng ý với<br>
-        <a href="#">Terms of Service</a> &amp; <a href="#">Privacy Policy</a>
+        <a href="/privacy.html#terms-of-service">Terms of Service</a> &amp; <a href="/privacy.html">Privacy Policy</a>
       </p>
     </div>
 
@@ -348,11 +350,11 @@
       document.getElementById('login-box').style.display = 'none';
       document.getElementById('user-box').style.display  = 'block';
       document.getElementById('user-avatar').src         = user.photoURL || 'Logo-Apocalypse-Closet.webp';
-      document.getElementById('user-name').textContent   = user.displayName || 'Bad Girl';
+      document.getElementById('user-name').textContent   = user.displayName || 'Badgirl';
       document.getElementById('user-email').textContent  = user.email;
       // Lưu vào localStorage để các trang khác dùng
       localStorage.setItem('ac_user', JSON.stringify({
-        name:    user.displayName || 'Bad Girl',
+        name:    user.displayName || 'Badgirl',
         email:   user.email,
         picture: user.photoURL || '',
         sub:     user.uid
