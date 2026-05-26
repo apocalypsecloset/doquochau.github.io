@@ -283,7 +283,7 @@
       <div id="form-register" style="display:none;">
         <div class="field">
           <label>Tên hiển thị</label>
-          <input type="text" id="reg-name" placeholder="Bad Girl" autocomplete="name" />
+          <input type="text" id="reg-name" placeholder="Badgirl" autocomplete="name" />
         </div>
         <div class="field">
           <label>Email</label>
@@ -348,11 +348,11 @@
       document.getElementById('login-box').style.display = 'none';
       document.getElementById('user-box').style.display  = 'block';
       document.getElementById('user-avatar').src         = user.photoURL || 'Logo-Apocalypse-Closet.webp';
-      document.getElementById('user-name').textContent   = user.displayName || 'Bad Girl';
+      document.getElementById('user-name').textContent   = user.displayName || 'Badgirl';
       document.getElementById('user-email').textContent  = user.email;
       // Lưu vào localStorage để các trang khác dùng
       localStorage.setItem('ac_user', JSON.stringify({
-        name:    user.displayName || 'Bad Girl',
+        name:    user.displayName || 'Badgirl',
         email:   user.email,
         picture: user.photoURL || '',
         sub:     user.uid
