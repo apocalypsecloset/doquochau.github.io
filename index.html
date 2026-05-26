@@ -826,21 +826,44 @@
       });
     };
 
+    const PAGE_SIZE = 20;
+
     function randomize() {
-      outfits.sort(() => Math.random() - 0.5);
-      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(outfits.map(o => o.id)));
-      renderAll();
+      const allIds = outfits.map(o => o.id);
+
+      // Load pool còn lại (những look chưa được show)
+      let pool;
+      try { pool = JSON.parse(sessionStorage.getItem('ac_pool') || 'null'); } catch { pool = null; }
+
+      // Nếu pool không đủ PAGE_SIZE → refill, tránh lặp lại batch vừa xem
+      if (!Array.isArray(pool) || pool.length < PAGE_SIZE) {
+        let lastBatch;
+        try { lastBatch = new Set(JSON.parse(sessionStorage.getItem('ac_last_batch') || '[]')); } catch { lastBatch = new Set(); }
+        pool = allIds.filter(id => !lastBatch.has(id));
+        if (pool.length < PAGE_SIZE) pool = [...allIds]; // fallback nếu tổng look < PAGE_SIZE
+      }
+
+      // Shuffle pool → lấy PAGE_SIZE looks → lưu phần còn lại
+      pool.sort(() => Math.random() - 0.5);
+      const batch = pool.splice(0, PAGE_SIZE);
+      sessionStorage.setItem('ac_pool', JSON.stringify(pool));
+      sessionStorage.setItem('ac_last_batch', JSON.stringify(batch));
+      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(batch));
+
+      const batchOutfits = batch.map(id => outfits.find(o => o.id === id)).filter(Boolean);
+      renderAll(batchOutfits);
     }
 
     function initGrid() {
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
-        const order = JSON.parse(saved);
-        outfits.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
-        renderAll();
-      } else {
-        randomize();
+        try {
+          const order = JSON.parse(saved);
+          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean);
+          if (batch.length > 0) { renderAll(batch); return; }
+        } catch {}
       }
+      randomize();
     }
 
     function toggleSearch() {
