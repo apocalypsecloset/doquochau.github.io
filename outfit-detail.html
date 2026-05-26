@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit Detail Fallback | Apocalypse Closet</title>
+  <meta name="description" content="Trang chuyển hướng outfit detail của Apocalypse Closet. Các outfit chính đã có URL tĩnh để SEO tốt hơn và tránh trùng lặp nội dung.">
+  <!-- Trang này chỉ dùng để redirect ?id= → /outfits/{slug}.html -->
+  <!-- Không index trang redirect này -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
+  <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #f0ece4;
+      font-family: 'Space Mono', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+  </style>
+  <link rel="canonical" href="https://apocalypsecloset.com/outfit-detail.html">
+</head>
+<body>
+  <h1 class="sr-only">Outfit Detail Fallback</h1>
+  <p>Redirecting…</p>
+
+  <script src="outfits.js"></script>
+  <script>
+    // Đọc ?id= từ URL cũ → tìm slug mới → redirect
+    const id     = new URLSearchParams(window.location.search).get('id');
+    const outfit = id ? outfits.find(o => o.id === id) : null;
+
+    if (outfit && outfit.slug) {
+      // Redirect vĩnh viễn về URL tĩnh mới
+      window.location.replace('/outfits/' + outfit.slug + '.html');
+    } else {
+      // Không tìm thấy → về trang chủ
+      window.location.replace('/');
+    }
+  </script>
+</body>
+</html>

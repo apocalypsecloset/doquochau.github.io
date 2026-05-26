@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://apocalypsecloset.com/login.html">
+  <title>Login — Apocalypse Closet</title>
+  <meta name="description" content="Đăng nhập vào Apocalypse Closet để lưu outfit yêu thích vào closet cá nhân.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
+
+  <style>
+    :root {
+      --black:  #080808;
+      --white:  #f0ece4;
+      --red:    #c0392b;
+      --dim:    #1a1a1a;
+      --border: #2a2a2a;
+      --muted: #888;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed; top: -120px; right: -120px;
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, rgba(192,57,43,0.18) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+
+    .back {
+      position: fixed; top: 24px; left: 28px;
+      color: var(--muted); text-decoration: none;
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      transition: color 0.2s; z-index: 10;
+    }
+    .back:hover { color: var(--white); }
+
+    .card {
+      position: relative; z-index: 1;
+      width: min(420px, 92vw);
+      padding: 48px 40px 44px;
+      border: 1px solid var(--border);
+      background: rgba(12,12,12,0.85);
+      backdrop-filter: blur(12px);
+      animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .card::before, .card::after {
+      content: ''; position: absolute;
+      width: 14px; height: 14px;
+      border-color: var(--red); border-style: solid;
+    }
+    .card::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+    .card::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+    .logo-wrap {
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px; margin-bottom: 32px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px; letter-spacing: 0.04em; line-height: 1;
+      margin-bottom: 6px; color: var(--white); text-align: center;
+    }
+    .sub {
+      font-size: 10px; letter-spacing: 0.2em; color: var(--muted);
+      text-transform: uppercase; margin-bottom: 32px; text-align: center;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex; gap: 0; margin-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tab-btn {
+      flex: 1; background: none; border: none;
+      color: var(--muted); font-family: 'Space Mono', monospace;
+      font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 10px 0; cursor: pointer; transition: color 0.2s;
+      border-bottom: 2px solid transparent; margin-bottom: -1px;
+    }
+    .tab-btn.active { color: var(--white); border-bottom-color: var(--red); }
+
+    /* Social buttons */
+    .btn-social {
+      width: 100%; display: flex; align-items: center; justify-content: center;
+      gap: 12px; padding: 13px 20px; margin-bottom: 10px;
+      background: var(--dim); border: 1px solid var(--border);
+      color: var(--white); font-family: 'Space Mono', monospace;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      cursor: pointer; transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-social:hover { border-color: var(--white); background: #1f1f1f; }
+    .btn-social svg { flex-shrink: 0; }
+
+    /* Divider */
+    .divider {
+      display: flex; align-items: center; gap: 12px;
+      margin: 20px 0; color: var(--muted);
+      font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+
+    /* Form fields */
+    .field { margin-bottom: 16px; }
+    .field label {
+      display: block; font-size: 9px; letter-spacing: 0.2em;
+      color: var(--muted); text-transform: uppercase; margin-bottom: 8px;
+    }
+    .field input {
+      width: 100%; background: var(--dim); border: 1px solid var(--border);
+      color: var(--white); font-family: 'Space Mono', monospace;
+      font-size: 12px; padding: 12px 14px; outline: none;
+      transition: border-color 0.2s;
+    }
+    .field input:focus { border-color: var(--red); }
+    .field input::placeholder { color: var(--muted); }
+
+    /* Submit button */
+    .btn-submit {
+      width: 100%; padding: 14px;
+      background: var(--red); color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px; letter-spacing: 0.16em;
+      border: none; cursor: pointer;
+      transition: opacity 0.2s; margin-top: 8px;
+    }
+    .btn-submit:hover { opacity: 0.85; }
+    .btn-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* Error / success msg */
+    .msg {
+      font-size: 10px; letter-spacing: 0.1em; text-align: center;
+      padding: 10px; margin-top: 12px; display: none;
+    }
+    .msg.error { color: #e74c3c; border: 1px solid #e74c3c22; background: #e74c3c11; }
+    .msg.success { color: #2ecc71; border: 1px solid #2ecc7122; background: #2ecc7111; }
+
+    /* Forgot password */
+    .forgot {
+      text-align: right; margin-top: -8px; margin-bottom: 16px;
+    }
+    .forgot button {
+      font-size: 9px; letter-spacing: 0.1em; color: var(--muted);
+      text-decoration: none; text-transform: uppercase;
+      background: none; border: 0; padding: 0; cursor: pointer;
+      font-family: inherit;
+    }
+    .forgot button:hover { color: var(--red); }
+
+    .note {
+      margin-top: 28px; font-size: 9px; color: var(--muted);
+      letter-spacing: 0.1em; text-align: center; line-height: 1.8;
+    }
+    .note a { color: var(--red); text-decoration: none; }
+    .note a:hover { text-decoration: underline; }
+
+    /* Logged-in state */
+    #user-box { display: none; text-align: center; }
+    #user-box img {
+      width: 64px; height: 64px; border-radius: 50%;
+      border: 2px solid var(--red); margin-bottom: 14px; object-fit: cover;
+    }
+    .user-name {
+      font-family: 'Space Mono', monospace; font-size: 18px;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;
+    }
+    .user-email {
+      font-size: 10px; color: var(--muted);
+      letter-spacing: 0.12em; margin-bottom: 24px;
+    }
+    .btn-enter {
+      display: block; width: 100%; padding: 14px;
+      background: var(--red); color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px; letter-spacing: 0.16em;
+      border: none; cursor: pointer; transition: opacity 0.2s;
+      text-decoration: none; text-align: center;
+    }
+    .btn-enter:hover { opacity: 0.85; }
+    .btn-signout {
+      margin-top: 12px; background: none; border: none;
+      color: var(--muted); font-family: 'Space Mono', monospace;
+      font-size: 10px; letter-spacing: 0.12em; cursor: pointer;
+      width: 100%; text-align: center; text-transform: uppercase;
+    }
+    .btn-signout:hover { color: var(--white); }
+
+    /* Loading spinner */
+    .spinner {
+      display: inline-block; width: 14px; height: 14px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-top-color: var(--white); border-radius: 50%;
+      animation: spin 0.7s linear infinite; vertical-align: middle;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-452MPHT894');
+  </script>
+</head>
+<body>
+
+  <a href="index.html" class="back">← Back</a>
+
+  <div class="card">
+
+    <div class="logo-wrap">
+      <img src="Logo-Apocalypse-Closet.webp" width="52" height="52" fetchpriority="high" alt="Apocalypse Closet logo" style="height:52px;width:auto;object-fit:contain;">
+      <img src="wordmark.webp" width="79" height="36" alt="Apocalypse Closet" style="height:36px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+    </div>
+
+    <!-- ── LOGIN STATE ── -->
+    <div id="login-box">
+      <h1>WELCOME<br>BACK</h1>
+      <p class="sub">Sign in to access your closet</p>
+
+      <!-- Google -->
+      <button class="btn-social" id="btn-google">
+        <svg width="18" height="18" viewBox="0 0 48 48">
+          <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
+          <path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/>
+          <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/>
+          <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/>
+        </svg>
+        CONTINUE WITH GOOGLE
+      </button>
+
+      <div class="divider">hoặc</div>
+
+      <!-- Tabs: Đăng nhập / Đăng ký -->
+      <div class="tabs">
+        <button class="tab-btn active" id="tab-login" onclick="switchTab('login')">Đăng nhập</button>
+        <button class="tab-btn" id="tab-register" onclick="switchTab('register')">Đăng ký</button>
+      </div>
+
+      <!-- Form đăng nhập -->
+      <div id="form-login">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="login-email" placeholder="your@email.com" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label>Mật khẩu</label>
+          <input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <div class="forgot"><button type="button" onclick="forgotPassword()">Quên mật khẩu?</button></div>
+        <button class="btn-submit" id="btn-login" onclick="loginEmail()">ĐĂNG NHẬP</button>
+      </div>
+
+      <!-- Form đăng ký -->
+      <div id="form-register" style="display:none;">
+        <div class="field">
+          <label>Tên hiển thị</label>
+          <input type="text" id="reg-name" placeholder="Badgirl" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="reg-email" placeholder="your@email.com" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label>Mật khẩu</label>
+          <input type="password" id="reg-password" placeholder="Tối thiểu 6 ký tự" autocomplete="new-password" />
+        </div>
+        <button class="btn-submit" id="btn-register" onclick="registerEmail()">TẠO TÀI KHOẢN</button>
+      </div>
+
+      <div class="msg" id="msg"></div>
+
+      <p class="note">
+        Bằng cách đăng nhập, bạn đồng ý với<br>
+        <a href="/privacy.html#terms-of-service">Terms of Service</a> &amp; <a href="/privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+
+    <!-- ── LOGGED IN STATE ── -->
+    <div id="user-box">
+      <img id="user-avatar" src="" alt="avatar" />
+      <div class="user-name" id="user-name"></div>
+      <div class="user-email" id="user-email"></div>
+      <a href="closet.html" class="btn-enter">ENTER MY CLOSET →</a>
+      <button class="btn-signout" onclick="signOut()">Sign out</button>
+    </div>
+
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import {
+      getAuth,
+      signInWithPopup,
+      GoogleAuthProvider,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      sendPasswordResetEmail,
+      updateProfile,
+      onAuthStateChanged,
+      signOut as fbSignOut
+    } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD6S4HYT_QzltQSJjGbLe-vJljQixxpDco",
+      authDomain: "apocalypse-closet.firebaseapp.com",
+      projectId: "apocalypse-closet",
+      storageBucket: "apocalypse-closet.firebasestorage.app",
+      messagingSenderId: "493697340280",
+      appId: "1:493697340280:web:9db33f9844c77d95232e8d",
+      measurementId: "G-G2DW7R3BBW"
+    };
+
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // ── Hiện user đã login ────────────────────────────────────────
+    function showUserBox(user) {
+      document.getElementById('login-box').style.display = 'none';
+      document.getElementById('user-box').style.display  = 'block';
+      document.getElementById('user-avatar').src         = user.photoURL || 'Logo-Apocalypse-Closet.webp';
+      document.getElementById('user-name').textContent   = user.displayName || 'Badgirl';
+      document.getElementById('user-email').textContent  = user.email;
+      // Lưu vào localStorage để các trang khác dùng
+      localStorage.setItem('ac_user', JSON.stringify({
+        name:    user.displayName || 'Badgirl',
+        email:   user.email,
+        picture: user.photoURL || '',
+        sub:     user.uid
+      }));
+    }
+
+    // ── Theo dõi trạng thái auth ──────────────────────────────────
+    onAuthStateChanged(auth, user => {
+      if (user) showUserBox(user);
+    });
+
+    // ── Hiện thông báo ────────────────────────────────────────────
+    function showMsg(text, type = 'error') {
+      const el = document.getElementById('msg');
+      el.textContent = text;
+      el.className = 'msg ' + type;
+      el.style.display = 'block';
+    }
+
+    function setLoading(btnId, loading) {
+      const btn = document.getElementById(btnId);
+      if (loading) { btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>'; }
+      else { btn.disabled = false; }
+    }
+
+    // ── Google Login ──────────────────────────────────────────────
+    window.loginGoogle = async function() {
+      const btn = document.getElementById('btn-google');
+      btn.disabled = true;
+      try {
+        const provider = new GoogleAuthProvider();
+        await signInWithPopup(auth, provider);
+        // onAuthStateChanged sẽ tự xử lý
+      } catch (e) {
+        showMsg('Đăng nhập Google thất bại. Thử lại nhé!');
+        btn.disabled = false;
+      }
+    };
+
+    document.getElementById('btn-google').addEventListener('click', window.loginGoogle);
+
+    // ── Email Login ───────────────────────────────────────────────
+    window.loginEmail = async function() {
+      const email = document.getElementById('login-email').value.trim();
+      const pass  = document.getElementById('login-password').value;
+      if (!email || !pass) { showMsg('Vui lòng nhập đầy đủ email và mật khẩu.'); return; }
+      setLoading('btn-login', true);
+      try {
+        await signInWithEmailAndPassword(auth, email, pass);
+      } catch (e) {
+        const map = {
+          'auth/user-not-found':  'Email chưa đăng ký.',
+          'auth/wrong-password':  'Mật khẩu không đúng.',
+          'auth/invalid-email':   'Email không hợp lệ.',
+          'auth/too-many-requests': 'Quá nhiều lần thử. Thử lại sau.',
+        };
+        showMsg(map[e.code] || 'Đăng nhập thất bại. Thử lại nhé!');
+        document.getElementById('btn-login').disabled = false;
+        document.getElementById('btn-login').textContent = 'ĐĂNG NHẬP';
+      }
+    };
+
+    // ── Email Register ────────────────────────────────────────────
+    window.registerEmail = async function() {
+      const name  = document.getElementById('reg-name').value.trim();
+      const email = document.getElementById('reg-email').value.trim();
+      const pass  = document.getElementById('reg-password').value;
+      if (!name || !email || !pass) { showMsg('Vui lòng điền đầy đủ thông tin.'); return; }
+      if (pass.length < 6) { showMsg('Mật khẩu phải có ít nhất 6 ký tự.'); return; }
+      setLoading('btn-register', true);
+      try {
+        const cred = await createUserWithEmailAndPassword(auth, email, pass);
+        await updateProfile(cred.user, { displayName: name });
+        showMsg('Tạo tài khoản thành công! 🖤', 'success');
+        setTimeout(() => showUserBox(cred.user), 1000);
+      } catch (e) {
+        const map = {
+          'auth/email-already-in-use': 'Email này đã được đăng ký rồi.',
+          'auth/invalid-email':        'Email không hợp lệ.',
+          'auth/weak-password':        'Mật khẩu quá yếu (ít nhất 6 ký tự).',
+        };
+        showMsg(map[e.code] || 'Đăng ký thất bại. Thử lại nhé!');
+        document.getElementById('btn-register').disabled = false;
+        document.getElementById('btn-register').textContent = 'TẠO TÀI KHOẢN';
+      }
+    };
+
+    // ── Quên mật khẩu ────────────────────────────────────────────
+    window.forgotPassword = async function() {
+      const email = document.getElementById('login-email').value.trim();
+      if (!email) { showMsg('Nhập email vào trước rồi bấm Quên mật khẩu nhé.'); return; }
+      try {
+        await sendPasswordResetEmail(auth, email);
+        showMsg('Đã gửi link đặt lại mật khẩu vào email!', 'success');
+      } catch (e) {
+        showMsg('Email không tồn tại hoặc không hợp lệ.');
+      }
+    };
+
+    // ── Sign out ──────────────────────────────────────────────────
+    window.signOut = async function() {
+      await fbSignOut(auth);
+      localStorage.removeItem('ac_user');
+      document.getElementById('user-box').style.display  = 'none';
+      document.getElementById('login-box').style.display = 'block';
+    };
+
+    // ── Switch Tab ────────────────────────────────────────────────
+    window.switchTab = function(tab) {
+      document.getElementById('msg').style.display = 'none';
+      if (tab === 'login') {
+        document.getElementById('form-login').style.display    = 'block';
+        document.getElementById('form-register').style.display = 'none';
+        document.getElementById('tab-login').classList.add('active');
+        document.getElementById('tab-register').classList.remove('active');
+      } else {
+        document.getElementById('form-login').style.display    = 'none';
+        document.getElementById('form-register').style.display = 'block';
+        document.getElementById('tab-login').classList.remove('active');
+        document.getElementById('tab-register').classList.add('active');
+      }
+    };
+
+    // Enter key submit
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'Enter') return;
+      const isLogin = document.getElementById('form-login').style.display !== 'none';
+      if (isLogin) window.loginEmail();
+      else window.registerEmail();
+    });
+  </script>
+
+</body>
+</html>
