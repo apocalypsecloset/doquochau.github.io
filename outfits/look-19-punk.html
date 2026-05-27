@@ -18,6 +18,8 @@
   <meta property="og:title" content="Badgirl Outfit #19 – Punk | Apocalypse Closet">
   <meta property="og:description" content="Outfit phong cách Punk số 19 từ Apocalypse Closet.">
   <meta property="og:image"       content="https://apocalypsecloset.com/images/badgirl-outfits/badgirl-punk-look-19-full-outfit.webp">
+  <meta property="og:image:width" content="1086">
+  <meta property="og:image:height" content="1448">
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
@@ -25,7 +27,27 @@
   <meta name="twitter:description" content="Outfit phong cách Punk số 19 từ Apocalypse Closet.">
   <meta name="twitter:image"       content="https://apocalypsecloset.com/images/badgirl-outfits/badgirl-punk-look-19-full-outfit.webp">
 
-  <!-- Schema: Product -->
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Badgirl Punk Outfit #19 | Apocalypse Closet",
+    "description": "Outfit số 19 phong cách Punk từ Apocalypse Closet — badgirl aesthetic nổi loạn, gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "image": "https://apocalypsecloset.com/images/badgirl-outfits/badgirl-punk-look-19-full-outfit.webp",
+    "brand": {
+      "@type": "Brand",
+      "name": "Apocalypse Closet"
+    },
+    "url": "https://apocalypsecloset.com/outfits/look-19-punk.html",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "VND",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Apocalypse Closet"
+      }
+    }
+  }</script>
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">{
@@ -408,8 +430,8 @@
 
       const imagesHTML = d.imgs.map((img, i) =>
         i === 0
-          ? `<img src="${img}" alt="${d.title}" fetchpriority="high" decoding="async">`
-          : `<img src="${img}" alt="${d.title}" loading="lazy" decoding="async">`
+          ? `<img src="${img}" alt="${outfit.category} Badgirl Outfit #${outfit.id.replace('look-','')} — ${outfit.category} dark aesthetic | Apocalypse Closet" fetchpriority="high" decoding="async">`
+          : `<img src="${img}" alt="${outfit.category} Badgirl Outfit #${outfit.id.replace('look-','')} — ${outfit.category} dark aesthetic | Apocalypse Closet" loading="lazy" decoding="async">`
       ).join('');
 
       const dotsHTML = d.imgs.length > 1
@@ -467,7 +489,7 @@
       if (related.length > 0) {
         const relHTML = related.map(o => `
           <div class="related-card" onclick="window.location.href='/outfits/${o.slug}.html'">
-            <img src="${o.img}" alt="${o.tag}" loading="lazy" decoding="async">
+            <img src="${o.img}" alt="${o.category} Badgirl Look ${o.tag.replace('LOOK ','')} — Apocalypse Closet" loading="lazy" decoding="async">
             <div class="related-card-tag">${o.tag}</div>
           </div>
         `).join('');

@@ -24,7 +24,7 @@ const outfits = [
     slug: "look-01-egirl",
     img: G(1, 1),
     tag: "LOOK #01",
-    title: "Look 01",
+    title: "E-Girl Badgirl Look #01",
     category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #1",
@@ -45,7 +45,7 @@ const outfits = [
     slug: "look-02-baddie-streetwear",
     img: G(2, 1),
     tag: "LOOK #02",
-    title: "Look 02",
+    title: "Baddie Streetwear Badgirl Look #02",
     category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #2",
@@ -66,7 +66,7 @@ const outfits = [
     slug: "look-03-punk",
     img: G(3, 1),
     tag: "LOOK #03",
-    title: "Look 03",
+    title: "Punk Badgirl Look #03",
     category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #3",
@@ -87,7 +87,7 @@ const outfits = [
     slug: "look-04-dark-feminine",
     img: G(4, 1),
     tag: "LOOK #04",
-    title: "Look 04",
+    title: "Dark Feminine Badgirl Look #04",
     category: "Dark Feminine",
     detail: {
       title: "OUTFIT DETAILS #4",
@@ -108,7 +108,7 @@ const outfits = [
     slug: "look-05-egirl",
     img: G(5, 1),
     tag: "LOOK #05",
-    title: "Look 05",
+    title: "E-Girl Badgirl Look #05",
     category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #5",
@@ -129,7 +129,7 @@ const outfits = [
     slug: "look-06-punk",
     img: G(6, 1),
     tag: "LOOK #06",
-    title: "Look 06",
+    title: "Punk Badgirl Look #06",
     category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #6",
@@ -150,7 +150,7 @@ const outfits = [
     slug: "look-07-baddie-streetwear",
     img: G(7, 1),
     tag: "LOOK #07",
-    title: "Look 07",
+    title: "Baddie Streetwear Badgirl Look #07",
     category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #7",
@@ -171,7 +171,7 @@ const outfits = [
     slug: "look-08-egirl",
     img: G(8, 1),
     tag: "LOOK #08",
-    title: "Look 08",
+    title: "E-Girl Badgirl Look #08",
     category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #8",
@@ -192,7 +192,7 @@ const outfits = [
     slug: "look-09-goth",
     img: G(9, 1),
     tag: "LOOK #09",
-    title: "Look 09",
+    title: "Goth Badgirl Look #09",
     category: "Goth",
     detail: {
       title: "OUTFIT DETAILS #9",
@@ -213,7 +213,7 @@ const outfits = [
     slug: "look-10-punk",
     img: G(10, 1),
     tag: "LOOK #10",
-    title: "Look 10",
+    title: "Punk Badgirl Look #10",
     category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #10",
@@ -234,7 +234,7 @@ const outfits = [
     slug: "look-11-egirl",
     img: G(11, 1),
     tag: "LOOK #11",
-    title: "Look 11",
+    title: "E-Girl Badgirl Look #11",
     category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #11",
@@ -255,7 +255,7 @@ const outfits = [
     slug: "look-12-punk",
     img: G(12, 1),
     tag: "LOOK #12",
-    title: "Look 12",
+    title: "Punk Badgirl Look #12",
     category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #12",
@@ -276,7 +276,7 @@ const outfits = [
     slug: "look-13-egirl",
     img: G(13, 1),
     tag: "LOOK #13",
-    title: "Look 13",
+    title: "E-Girl Badgirl Look #13",
     category: "E-Girl",
     detail: {
       title: "OUTFIT DETAILS #13",
@@ -297,7 +297,7 @@ const outfits = [
     slug: "look-14-baddie-streetwear",
     img: G(14, 1),
     tag: "LOOK #14",
-    title: "Look 14",
+    title: "Baddie Streetwear Badgirl Look #14",
     category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #14",
@@ -318,7 +318,7 @@ const outfits = [
     slug: "look-15-dark-feminine",
     img: G(15, 1),
     tag: "LOOK #15",
-    title: "Look 15",
+    title: "Dark Feminine Badgirl Look #15",
     category: "Dark Feminine",
     detail: {
       title: "OUTFIT DETAILS #15",
@@ -339,7 +339,7 @@ const outfits = [
     slug: "look-16-goth",
     img: G(16, 1),
     tag: "LOOK #16",
-    title: "Look 16",
+    title: "Goth Badgirl Look #16",
     category: "Goth",
     detail: {
       title: "OUTFIT DETAILS #16",
@@ -360,7 +360,7 @@ const outfits = [
     slug: "look-17-baddie-streetwear",
     img: G(17, 1),
     tag: "LOOK #17",
-    title: "Look 17",
+    title: "Baddie Streetwear Badgirl Look #17",
     category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #17",
@@ -381,7 +381,7 @@ const outfits = [
     slug: "look-18-dark-feminine",
     img: G(18, 1),
     tag: "LOOK #18",
-    title: "Look 18",
+    title: "Dark Feminine Badgirl Look #18",
     category: "Dark Feminine",
     detail: {
       title: "OUTFIT DETAILS #18",
@@ -402,7 +402,7 @@ const outfits = [
     slug: "look-19-punk",
     img: G(19, 1),
     tag: "LOOK #19",
-    title: "Look 19",
+    title: "Punk Badgirl Look #19",
     category: "Punk",
     detail: {
       title: "OUTFIT DETAILS #19",
@@ -423,7 +423,7 @@ const outfits = [
     slug: "look-20-baddie-streetwear",
     img: G(20, 1),
     tag: "LOOK #20",
-    title: "Look 20",
+    title: "Baddie Streetwear Badgirl Look #20",
     category: "Baddie Streetwear",
     detail: {
       title: "OUTFIT DETAILS #20",
