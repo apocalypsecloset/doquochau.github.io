@@ -94,6 +94,15 @@
     .article-nav .nav-title{font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:var(--white);text-transform:uppercase;line-height:1.3;}
     .article-nav a.next{text-align:right;}
     footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
+        @media(max-width:768px){
+      header{padding:14px 16px;}
+      nav{gap:4px;}
+      .btn{height:30px;padding:0 10px;font-size:9px;letter-spacing:.05em;}
+      .btn.btn-icon-only{width:30px;padding:0;}
+      .text-hide{display:none;}
+      .logo-wrap img:first-child{height:36px;}
+      .logo-wrap img:last-child{height:22px;}
+    }
     @media(max-width:768px){header{padding:14px 16px;}.article-hero{padding:48px 16px 32px;}.article-cover{padding:0 16px;margin-bottom:48px;}.article-content{padding:0 20px 56px;font-size:13px;line-height:2;}.article-content h2{font-size:24px;margin:40px 0 20px;}.article-content blockquote{font-size:20px;padding-left:20px;margin:40px 0;}.article-bottom{padding:32px 20px 64px;flex-direction:column;gap:24px;align-items:flex-start;}.article-nav{flex-direction:column;}.article-nav a.next{text-align:left;}}
 </style>
 <!-- ✅ SCHEMA: BreadcrumbList -->
@@ -131,9 +140,28 @@
 </head>
 <body>
 <header>
-<a class="back-link" href="../blog.html">← Blog</a>
-<span class="nav-badge">Apocalypse Closet</span>
-<div style="width:80px;"></div>
+  <a class="logo-wrap" href="../index.html">
+    <img src="../Logo-Apocalypse-Closet.webp" width="44" height="44" fetchpriority="high"
+      alt="Apocalypse Closet — Badgirl Aesthetic & Dark Fashion" style="height:44px;width:auto;object-fit:contain;">
+    <img src="../wordmark.webp" width="70" height="32"
+      alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+  </a>
+  <nav>
+    <a class="btn" href="../blog.html">← BLOG</a>
+    <a class="btn btn-icon-only" id="nav-closet-btn" href="../login.html">
+      <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
+    </a>
+    <div class="dropdown">
+      <button class="btn">STYLE ↓</button>
+      <div class="dropdown-content">
+        <a href="../style/dark-feminine.html">Dark Feminine</a>
+        <a href="../style/egirl.html">E-Girl / Alt Girl</a>
+        <a href="../style/goth.html">Goth / Gothic</a>
+        <a href="../style/baddie-streetwear.html">Baddie Streetwear</a>
+        <a href="../style/punk.html">Punk / Grunge</a>
+      </div>
+    </div>
+  </nav>
 </header>
 <main>
 <div class="article-hero">
@@ -188,5 +216,18 @@
 </nav>
 </main>
 <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="../privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
+
+  <script>
+    try {
+      const user = JSON.parse(localStorage.getItem('ac_user'));
+      if (user) {
+        const btn = document.getElementById('nav-closet-btn');
+        btn.href = '../closet.html';
+        document.getElementById('nav-closet-icon').innerHTML = '\u2665';
+        btn.style.color = '#c0392b';
+        btn.style.borderColor = '#c0392b';
+      }
+    } catch(e) {}
+  </script>
 </body>
 </html>
