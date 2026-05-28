@@ -12,7 +12,7 @@
 // ═══════════════════════════════════════════════════════════════════
 
 const BASE = "/images/badgirl-outfits";
-const STYLE_BY_LOOK = { 1: "e-girl", 2: "baddie-streetwear", 3: "punk", 4: "dark-feminine", 5: "e-girl", 6: "punk", 7: "baddie-streetwear", 8: "e-girl", 9: "goth", 10: "punk", 11: "e-girl", 12: "punk", 13: "e-girl", 14: "baddie-streetwear", 15: "dark-feminine", 16: "goth", 17: "baddie-streetwear", 18: "dark-feminine", 19: "punk", 20: "baddie-streetwear", 21: "dark-feminine" };
+const STYLE_BY_LOOK = { 1: "e-girl", 2: "baddie-streetwear", 3: "punk", 4: "dark-feminine", 5: "e-girl", 6: "punk", 7: "baddie-streetwear", 8: "e-girl", 9: "goth", 10: "punk", 11: "e-girl", 12: "punk", 13: "e-girl", 14: "baddie-streetwear", 15: "dark-feminine", 16: "goth", 17: "baddie-streetwear", 18: "dark-feminine", 19: "punk", 20: "baddie-streetwear", 21: "baddie-streetwear", 22: "dark-feminine", 23: "baddie-streetwear", 24: "goth", 25: "goth", 26: "baddie-streetwear", 27: "baddie-streetwear", 28: "baddie-streetwear", 29: "dark-feminine", 30: "dark-feminine", 31: "e-girl", 32: "goth", 33: "e-girl", 34: "baddie-streetwear", 35: "e-girl", 36: "dark-feminine", 37: "baddie-streetwear", 38: "punk", 39: "baddie-streetwear", 40: "dark-feminine" };
 const IMG_PART_BY_INDEX = { 1: "full-outfit", 2: "top", 3: "bottom", 4: "shoes-accessories" };
 const G = (look, idx) => `${BASE}/badgirl-${STYLE_BY_LOOK[look]}-look-${String(look).padStart(2, '0')}-${IMG_PART_BY_INDEX[idx]}.webp`;
 
@@ -434,6 +434,427 @@ const outfits = [
         { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/4LGIeZmtbv" },
         { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/4qCZFUkzb2" },
         { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/4ft93Blcw1" }
+      ]
+    }
+  },
+
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-21",
+    slug: "look-21-baddie-streetwear",
+    img: G(21, 1),
+    tag: "LOOK #21",
+    title: "Baddie Streetwear Badgirl Look #21",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #21",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(21,1), G(21,2), G(21,3), G(21,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/20sdZXBm96" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/2BC3lqB8o9" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/2LVTy9AVTC" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/6VL2vnue1P" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-22",
+    slug: "look-22-dark-feminine",
+    img: G(22, 1),
+    tag: "LOOK #22",
+    title: "Dark Feminine Badgirl Look #22",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #22",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(22,1), G(22,2), G(22,3), G(22,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/2g8KMl9EnI" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/2qRkZ48bSL" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/30lAlN7y7O" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/3B4axg7KmR" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-23",
+    slug: "look-23-baddie-streetwear",
+    img: G(23, 1),
+    tag: "LOOK #23",
+    title: "Baddie Streetwear Badgirl Look #23",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #23",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(23,1), G(23,2), G(23,3), G(23,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/3LO19z6hRU" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/3VhRMI646X" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/3g0rYb5Qla" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/3qKHku4nQd" }
+      ]
+    }
+  },
+
+  // ── GOTH ─────────────────────────────────────────────
+  {
+    id: "look-24",
+    slug: "look-24-goth",
+    img: G(24, 1),
+    tag: "LOOK #24",
+    title: "Goth Badgirl Look #24",
+    category: "Goth",
+    detail: {
+      title: "OUTFIT DETAILS #24",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(24,1), G(24,2), G(24,3), G(24,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/40dhxD4A5g" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/4Ax89W3Wkj" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/4LGYLp2tPm" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/4VZyY82G4p" }
+      ]
+    }
+  },
+
+  // ── GOTH ─────────────────────────────────────────────
+  {
+    id: "look-25",
+    slug: "look-25-goth",
+    img: G(25, 1),
+    tag: "LOOK #25",
+    title: "Goth Badgirl Look #25",
+    category: "Goth",
+    detail: {
+      title: "OUTFIT DETAILS #25",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(25,1), G(25,2), G(25,3), G(25,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/4ftOkR1cjs" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/4qCowk0zOv" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/50WF930M3y" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/5ApfLLzij1" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-26",
+    slug: "look-26-baddie-streetwear",
+    img: G(26, 1),
+    tag: "LOOK #26",
+    title: "Baddie Streetwear Badgirl Look #26",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #26",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(26,1), G(26,2), G(26,3), G(26,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/5L95Xez5O4" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/5VSVjxyS37" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/5flvwGxoiA" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/5q5M8ZxBND" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-27",
+    slug: "look-27-baddie-streetwear",
+    img: G(27, 1),
+    tag: "LOOK #27",
+    title: "Baddie Streetwear Badgirl Look #27",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #27",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(27,1), G(27,2), G(27,3), G(27,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/60OmKswY2G" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/6AiCXBvuhJ" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/6L1cjUvHMM" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/6VL2vnue1P" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-28",
+    slug: "look-28-baddie-streetwear",
+    img: G(28, 1),
+    tag: "LOOK #28",
+    title: "Baddie Streetwear Badgirl Look #28",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #28",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(28,1), G(28,2), G(28,3), G(28,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/6feT86u0gS" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/6pxtKPtNLV" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/70HJWisk0Y" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/7Aajj1s6fb" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-29",
+    slug: "look-29-dark-feminine",
+    img: G(29, 1),
+    tag: "LOOK #29",
+    title: "Dark Feminine Badgirl Look #29",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #29",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(29,1), G(29,2), G(29,3), G(29,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/7Ku9vKrTKe" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/7VDa7dqpzh" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/7fX0JwqCek" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/7pqQWFpZJn" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-30",
+    slug: "look-30-dark-feminine",
+    img: G(30, 1),
+    tag: "LOOK #30",
+    title: "Dark Feminine Badgirl Look #30",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #30",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(30,1), G(30,2), G(30,3), G(30,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/809qiYovyq" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/8ATGuroIdt" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/8Kmh7AnfIw" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/8V67JTn1xz" }
+      ]
+    }
+  },
+
+  // ── E-GIRL ─────────────────────────────────────────────
+  {
+    id: "look-31",
+    slug: "look-31-egirl",
+    img: G(31, 1),
+    tag: "LOOK #31",
+    title: "E-Girl Badgirl Look #31",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #31",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(31,1), G(31,2), G(31,3), G(31,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/8fPXVmmOd2" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/8pixi5llI5" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/902NuOl7x8" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/9ALo6hkUcB" }
+      ]
+    }
+  },
+
+  // ── GOTH ─────────────────────────────────────────────
+  {
+    id: "look-32",
+    slug: "look-32-goth",
+    img: G(32, 1),
+    tag: "LOOK #32",
+    title: "Goth Badgirl Look #32",
+    category: "Goth",
+    detail: {
+      title: "OUTFIT DETAILS #32",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(32,1), G(32,2), G(32,3), G(32,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/9KfEJ0jrHE" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/9UyeVJjDwH" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/9fI4hciabK" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/9pbUtvhxGN" }
+      ]
+    }
+  },
+
+  // ── E-GIRL ─────────────────────────────────────────────
+  {
+    id: "look-33",
+    slug: "look-33-egirl",
+    img: G(33, 1),
+    tag: "LOOK #33",
+    title: "E-Girl Badgirl Look #33",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #33",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(33,1), G(33,2), G(33,3), G(33,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/9zuv6EhJvQ" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/AAELIXggaT" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/AKXlUqg3FW" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/AUrBh9fPuZ" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-34",
+    slug: "look-34-baddie-streetwear",
+    img: G(34, 1),
+    tag: "LOOK #34",
+    title: "Baddie Streetwear Badgirl Look #34",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #34",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(34,1), G(34,2), G(34,3), G(34,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/BQzOAIksa" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/17ZBrJODZ" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/W3pmmHUCg" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/LkPaTI7Xf" }
+      ]
+    }
+  },
+
+  // ── E-GIRL ─────────────────────────────────────────────
+  {
+    id: "look-35",
+    slug: "look-35-egirl",
+    img: G(35, 1),
+    tag: "LOOK #35",
+    title: "E-Girl Badgirl Look #35",
+    category: "E-Girl",
+    detail: {
+      title: "OUTFIT DETAILS #35",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(35,1), G(35,2), G(35,3), G(35,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/qggBOGDWm" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/gNFz5Gqrl" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/1BJWa0Ewqs" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/1106NhFaBr" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-36",
+    slug: "look-36-dark-feminine",
+    img: G(36, 1),
+    tag: "LOOK #36",
+    title: "Dark Feminine Badgirl Look #36",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #36",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(36,1), G(36,2), G(36,3), G(36,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/1VwMycDgAy" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/1LcwmJEJVx" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/1qZDNECPV4" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/1gFnAvD2q3" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-37",
+    slug: "look-37-baddie-streetwear",
+    img: G(37, 1),
+    tag: "LOOK #37",
+    title: "Baddie Streetwear Badgirl Look #37",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #37",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(37,1), G(37,2), G(37,3), G(37,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/2BC3lqB8pA" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/20sdZXBmA9" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/2VouAS9s9G" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/2LVTy9AVUF" }
+      ]
+    }
+  },
+
+  // ── PUNK ─────────────────────────────────────────────
+  {
+    id: "look-38",
+    slug: "look-38-punk",
+    img: G(38, 1),
+    tag: "LOOK #38",
+    title: "Punk Badgirl Look #38",
+    category: "Punk",
+    detail: {
+      title: "OUTFIT DETAILS #38",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(38,1), G(38,2), G(38,3), G(38,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/2qRkZ48bTM" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/2g8KMl9EoL" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/3B4axg7KnS" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/30lAlN7y8R" }
+      ]
+    }
+  },
+
+  // ── BADDIE STREETWEAR ─────────────────────────────────────────────
+  {
+    id: "look-39",
+    slug: "look-39-baddie-streetwear",
+    img: G(39, 1),
+    tag: "LOOK #39",
+    title: "Baddie Streetwear Badgirl Look #39",
+    category: "Baddie Streetwear",
+    detail: {
+      title: "OUTFIT DETAILS #39",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(39,1), G(39,2), G(39,3), G(39,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/3VhRMI647Y" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/3LO19z6hSX" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/3qKHku4nRe" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/3g0rYb5Qmd" }
+      ]
+    }
+  },
+
+  // ── DARK FEMININE ─────────────────────────────────────────────
+  {
+    id: "look-40",
+    slug: "look-40-dark-feminine",
+    img: G(40, 1),
+    tag: "LOOK #40",
+    title: "Dark Feminine Badgirl Look #40",
+    category: "Dark Feminine",
+    detail: {
+      title: "OUTFIT DETAILS #40",
+      desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
+      imgs: [ G(40,1), G(40,2), G(40,3), G(40,4) ],
+      items: [
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/4Ax89W3Wlk" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/40dhxD4A6j" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/4VZyY82G5q" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/4LGYLp2tQp" }
       ]
     }
   },
