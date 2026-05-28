@@ -31,7 +31,7 @@
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js">
+  <link rel="preload" as="script" href="outfits.js?v=20260528-40-v2">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
   
@@ -605,7 +605,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js" defer></script>
+  <script src="outfits.js?v=20260528-40-v2" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -781,6 +781,16 @@
       return card;
     }
 
+    const DATA_VERSION = 'outfits-40-20260528-v2';
+    try {
+      if (sessionStorage.getItem('ac_data_version') !== DATA_VERSION) {
+        sessionStorage.removeItem('ac_pool');
+        sessionStorage.removeItem('ac_last_batch');
+        sessionStorage.removeItem('savedOutfitOrder');
+        sessionStorage.setItem('ac_data_version', DATA_VERSION);
+      }
+    } catch {}
+
     const FIRST_BATCH = 4;
 
     window.renderAll = function(data = outfits) {
@@ -789,7 +799,7 @@
 
       grid.innerHTML = '';
       const counterEl = document.getElementById('counter');
-      const counterText = '100+ LOOKS · MỖI LẦN RELOAD MỘT BỘ MỚI';
+      const counterText = `${outfits.length} LOOKS · RELOAD ĐỂ XÁO TRỘN THỨ TỰ`;
       counterEl.textContent = counterText;
       counterEl.setAttribute('data-text', counterText);
 
@@ -824,7 +834,7 @@
       });
     };
 
-    const PAGE_SIZE = 16;
+    const PAGE_SIZE = outfits.length;
 
     function randomize() {
       const allIds = outfits.map(o => o.id);
