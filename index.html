@@ -35,7 +35,7 @@
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260528-40-v3">
+  <link rel="preload" as="script" href="outfits.js?v=20260528-40-home16-v4">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
   
@@ -609,7 +609,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260528-40-v3" defer></script>
+  <script src="outfits.js?v=20260528-40-home16-v4" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -785,7 +785,7 @@
       return card;
     }
 
-    const DATA_VERSION = 'outfits-40-20260528-v2';
+    const DATA_VERSION = 'outfits-40-home16-20260528-v4';
     try {
       if (sessionStorage.getItem('ac_data_version') !== DATA_VERSION) {
         sessionStorage.removeItem('ac_pool');
@@ -803,7 +803,7 @@
 
       grid.innerHTML = '';
       const counterEl = document.getElementById('counter');
-      const counterText = `${outfits.length} LOOKS · RELOAD ĐỂ XÁO TRỘN THỨ TỰ`;
+      const counterText = '+100 LOOKS - MỖI LẦN RELOAD MỘT BỘ MỚI';
       counterEl.textContent = counterText;
       counterEl.setAttribute('data-text', counterText);
 
@@ -838,8 +838,12 @@
       });
     };
 
+    function getPageSize() {
+      return Math.min(16, Array.isArray(outfits) ? outfits.length : 16);
+    }
+
     function randomize() {
-      const PAGE_SIZE = outfits.length;
+      const PAGE_SIZE = getPageSize();
       const allIds = outfits.map(o => o.id);
 
       // Load pool còn lại (những look chưa được show)
@@ -870,8 +874,9 @@
       if (saved) {
         try {
           const order = JSON.parse(saved);
-          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean);
-          if (batch.length > 0) { renderAll(batch); return; }
+          const PAGE_SIZE = getPageSize();
+          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean).slice(0, PAGE_SIZE);
+          if (batch.length === PAGE_SIZE) { renderAll(batch); return; }
         } catch {}
       }
       randomize();
