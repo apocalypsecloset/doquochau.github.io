@@ -1,12 +1,12 @@
 window.searchIndex = [
-{
-  "title": "Badgirl Outfit Đi Cafe: 7 Công Thức Cá Tính",
-  "url": "/blog/badgirl-outfit-di-cafe.html",
-  "type": "Journal",
-  "description": "7 công thức badgirl outfit đi cafe cho nữ: crop top, cargo pants, boots, all-black, dark feminine và baddie streetwear kèm cụm outfit liên quan.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
-  "keywords": "Badgirl Outfit Đi Cafe: 7 Công Thức Cá Tính | Apocalypse Closet ← BLOG ♡ CLOSET STYLE ↓ Dark Feminine E-Girl / Alt Girl Goth / Gothic Baddie Streetwear Punk / Grunge Style Guide 28 May 2026 Apocalypse Closet Badgirl Outfit Đi Cafe: 7 Công Thức Lên Đồ Cá Tính Nhưng Vẫn Dễ Mặc Không cần mặc quá gắt để có khí chất badgirl. Đây là 7 công thức outfit đi cafe vừa dễ mặc, vừa lên ảnh đẹp, vừa kéo link sang cụm outfit baddie, egirl và dark feminine. Nếu bạn đang tìm một badgirl outfit đi cafe , lỗi dễ gặp nhất là phối quá nặng: quá nhiều da, quá nhiều xích, quá nhiều chi tiết đến mức outfit nhìn giống đi club hơn là đi ngồi cafe. Một outfit đi cafe đẹp cần đủ cá tính để người ta nhớ, nhưng vẫn đủ thoải mái để bạn ngồi lâu, chụp ảnh đẹp và di chuyển bình thường. Bài này gom một cụm outfit dễ áp dụng cho nữ Việt Nam: baddie streetwear, dark feminine nhẹ, egirl tối màu và all-black casual. Keyword chính là badgirl outfit đi cafe , nhưng mục tiêu thật sự là giúp bạn có công thức mặc ngay, không phải chỉ đọc cho vui. Badgirl Outfit Đi Cafe Cần Có Gì? Đi cafe không giống đi party. Ánh sáng thường rõ hơn, không gian nhỏ hơn, người nhìn outfit ở khoảng cách gần hơn. Vì vậy, badgirl outfit đi cafe nên dựa trên 3 điểm: silhouette rõ, màu sắc kiểm soát và một điểm nhấn mạnh. Silhouette rõ: hoặc trên ôm dưới rộng, hoặc trên rộng dưới gọn. Đừng để cả outfit bị lùng bùng nếu không có chủ ý. Palette tối: đen, xám than, nâu đậm, trắng bẩn, đỏ rượu hoặc bạc metallic. Không cần quá nhiều màu. Một điểm nhấn: boots platform, chain belt, kính đen, túi bạc, áo khoác da hoặc quần cargo thật rộng. Badgirl đi cafe không cần mặc quá gắt. Chỉ cần một chi tiết đủ sắc, phần còn lại phải biết im lặng. 1. Crop Top Đen + Cargo Pants Rộng + Chunky Sneakers Đây là công thức dễ mặc nhất cho người mới bắt đầu. Crop top tạo tỷ lệ cơ thể, cargo pants tạo chất streetwear, chunky sneakers làm outfit bớt “điệu” và thực tế hơn. Nếu bạn muốn vibe baddie rõ hơn, thêm một chiếc túi nhỏ đeo vai hoặc kính đen narrow frame. Outfit này hợp với cafe ban ngày, cafe ngoài trời, quán có background xi măng, gỗ tối hoặc ánh sáng tự nhiên. Nếu crop top quá basic, chọn áo có cut-out nhẹ, logo nhỏ hoặc chất liệu ribbed để outfit không bị nhạt. 2. Baby Tee + Jeans Rộng + Thắt Lưng Đinh Tán Nếu bạn thích vibe Y2K badgirl nhưng không muốn nhìn quá costume, hãy bắt đầu từ baby tee và jeans rộng. Công thức này hợp với dáng người nhỏ vì phần áo ngắn giúp kéo chân dài hơn, còn jeans rộng tạo cảm giác effortless. Điểm quyết định nằm ở thắt lưng. Một chiếc belt đinh tán, belt bạc hoặc chain belt có thể biến một set đồ rất cơ bản thành outfit có thái độ. Giày nên là platform sneakers hoặc boots đế cao, tránh giày quá mềm vì sẽ làm outfit mất lực. 3. Áo Khoác Da Mỏng + Tank Top + Quần Đen Suông Đây là công thức cho buổi cafe chiều hoặc tối. Áo khoác da không nhất thiết phải dày; với thời tiết Việt Nam, một chiếc faux leather mỏng hoặc bomber đen có bề mặt bóng nhẹ là đủ. Bên trong mặc tank top hoặc crop top trắng/đen để tạo lớp. Quần đen suông giúp outfit trưởng thành hơn cargo pants. Nếu bạn muốn nghiêng về dark feminine , đổi sneakers thành ankle boots mũi nhọn và thêm son màu đất hoặc đỏ trầm. 4. Váy Đen Ngắn + Boots Cao Cổ + Áo Khoác Oversized Công thức này dành cho người muốn feminine hơn nhưng vẫn giữ edge. Váy đen ngắn một mình có thể hơi basic, nhưng khi đi cùng boots cao cổ và áo khoác oversized, tổng thể sẽ bớt “cute” và nhiều attitude hơn. Đi cafe với outfit này nên chọn quán có background tối, gương lớn hoặc ánh sáng vàng dịu. Khi chụp ảnh, đứng hơi lệch một bên, để áo khoác rơi tự nhiên trên vai hoặc một tay giữ túi. Đừng pose quá nhiều; outfit này đẹp nhất khi nhìn như bạn không cố. 5. All Black Nhưng Phải Có Texture All-black là lựa chọn an toàn nhất cho badgirl outfit đi cafe, nhưng cũng dễ nhàm nhất nếu bạn mặc toàn vải cotton phẳng. Muốn all-black đẹp, hãy trộn texture: áo ribbed, quần da hoặc denim washed black, túi bạc, boots da bóng, jewelry kim loại. Nếu outfit có quá nhiều đen, phụ kiện bạc là điểm sáng quan trọng. Chain necklace, vòng tay kim loại, nhẫn nhiều ngón hoặc túi có hardware bạc sẽ giúp tổng thể có chiều sâu hơn. Bạn có thể xem thêm bài cách phối đồ đen không nhàm chán để mở rộng công thức này. 6. Hoodie Oversized + Mini Skirt + Platform Boots Đây là công thức cân bằng giữa lười và có gu. Hoodie oversized giúp outfit thoải mái, mini skirt tạo độ nữ tính, platform boots kéo lại toàn bộ vibe badgirl. Nếu bạn sợ hở quá nhiều, thêm tất đen cao cổ hoặc quần short bảo hộ bên trong. Công thức này hợp với cafe tối, đi xem phim sau đó, hoặc những ngày bạn muốn mặc gì đó dễ chịu nhưng vẫn có ảnh đẹp. Tóc buộc cao, eyeliner sắc và một chiếc túi nhỏ là đủ. 7. Corset Top + Quần Rộng + Áo Khoác Ngoài Corset top có thể rất đẹp khi đi cafe, nhưng phải tiết chế. Đừng phối corset với váy quá ôm nếu bạn muốn outfit có tính ứng dụng. Hãy mặc corset với quần rộng hoặc cargo pants để giảm cảm giác “đi sự kiện”. Khoác ngoài bằng sơ mi đen, blazer oversized hoặc jacket mỏng. Đây là công thức phù hợp khi bạn muốn outfit có điểm nhấn rõ ở phần thân trên. Với ảnh ngồi cafe, corset lên hình rất tốt vì phần eo và vai được định hình. Nhưng nếu quán đông hoặc cần di chuyển nhiều, hãy chọn corset vải mềm thay vì corset quá cứng. Cụm Outfit Liên Quan Nên Gắn Vào Bài Này Để bài không chỉ là nội dung đọc mà còn kéo traffic sang trang outfit, bạn nên gắn một cụm outfit liên quan ngay trong bài. Cụm này nên xoay quanh baddie streetwear, egirl tối màu và dark feminine nhẹ: Look #02 — Baddie Streetwear: hợp với công thức crop top, cargo pants và chunky sneakers. Look #07 — Baddie Streetwear: hợp với cafe ban ngày, streetwear mạnh và dễ chụp full body. Look #14 — Dark Y2K/Baddie: hợp với keyword dark Y2K outfit, đi cafe tối hoặc cafe gương. Look #04 — Dark Feminine: hợp với corset, boots và outfit trưởng thành hơn. Look #05 — E-Girl: hợp với outfit váy ngắn, boots cao cổ và vibe alt girl. Checklist Nhanh Trước Khi Ra Khỏi Nhà Trước khi chốt badgirl outfit đi cafe, soi gương và hỏi 5 câu này: Outfit có một điểm nhấn chính chưa, hay mọi thứ đang tranh nhau? Giày có đủ mạnh để giữ vibe badgirl không? Phụ kiện bạc/đen đã đủ làm outfit có chiều sâu chưa? Ngồi xuống có bị khó chịu, quá ngắn hoặc quá cứng không? Ảnh full body có thấy rõ tỷ lệ người không? Nếu câu trả lời ổn, outfit đã đủ dùng. Badgirl outfit đi cafe không cần phải cực đoan. Nó chỉ cần khiến bạn bước vào quán với cảm giác: mình biết mình đang mặc gì, và mình không cần ai phê duyệt. Câu Hỏi Thường Gặp Badgirl outfit đi cafe nên mặc gì? Nên chọn crop top đen, cargo pants hoặc jeans rộng, chunky sneakers hoặc platform boots, thêm phụ kiện bạc như chain necklace, belt đinh tán hoặc túi nhỏ. Công thức này đủ cá tính nhưng vẫn thoải mái để ngồi cafe lâu. Đi cafe có nên mặc all-black không? Có. All-black rất hợp badgirl aesthetic, nhưng nên mix nhiều texture như denim, da bóng, ribbed cotton và phụ kiện kim loại để outfit không bị phẳng hoặc nhàm chán. Badgirl outfit đi cafe khác outfit đi club như thế nào? Outfit đi cafe nên nhẹ hơn, thực tế hơn và thoải mái hơn. Giữ một điểm nhấn mạnh như boots, chain belt hoặc áo khoác da; tránh phối quá nhiều chi tiết gắt cùng lúc. Nữ thấp có mặc badgirl outfit đi cafe đẹp không? Có. Hãy ưu tiên crop top, quần cạp cao, boots hoặc sneakers đế cao. Tránh áo quá dài che mất eo vì sẽ làm tỷ lệ cơ thể bị thấp hơn khi chụp ảnh full body. Đọc Thêm Về Outfit Liên Quan Style Guide Badgirl Aesthetic Style Guide Phối Đồ Đen Không Nhàm Chán Aesthetic Dark Y2K Aesthetic Style Guide Phong Cách Egirl Là Gì © 2026 APOCALYPSE CLOSET · Privacy Policy badgirl outfit đi cafe outfit đi cafe nữ cá tính baddie outfit đi cafe dark feminine outfit đi cafe phối đồ đi cafe cá tính"
-},
+  {
+    "title": "Badgirl Outfit Đi Cafe: 7 Công Thức Cá Tính",
+    "url": "/blog/badgirl-outfit-di-cafe.html",
+    "type": "Journal",
+    "description": "7 công thức badgirl outfit đi cafe cho nữ: crop top, cargo pants, boots, all-black, dark feminine và baddie streetwear kèm cụm outfit liên quan.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
+    "keywords": "Badgirl Outfit Đi Cafe: 7 Công Thức Cá Tính | Apocalypse Closet ← BLOG ♡ CLOSET STYLE ↓ Dark Feminine E-Girl / Alt Girl Goth / Gothic Baddie Streetwear Punk / Grunge Style Guide 28 May 2026 Apocalypse Closet Badgirl Outfit Đi Cafe: 7 Công Thức Lên Đồ Cá Tính Nhưng Vẫn Dễ Mặc Không cần mặc quá gắt để có khí chất badgirl. Đây là 7 công thức outfit đi cafe vừa dễ mặc, vừa lên ảnh đẹp, vừa kéo link sang cụm outfit baddie, egirl và dark feminine. Nếu bạn đang tìm một badgirl outfit đi cafe , lỗi dễ gặp nhất là phối quá nặng: quá nhiều da, quá nhiều xích, quá nhiều chi tiết đến mức outfit nhìn giống đi club hơn là đi ngồi cafe. Một outfit đi cafe đẹp cần đủ cá tính để người ta nhớ, nhưng vẫn đủ thoải mái để bạn ngồi lâu, chụp ảnh đẹp và di chuyển bình thường. Bài này gom một cụm outfit dễ áp dụng cho nữ Việt Nam: baddie streetwear, dark feminine nhẹ, egirl tối màu và all-black casual. Keyword chính là badgirl outfit đi cafe , nhưng mục tiêu thật sự là giúp bạn có công thức mặc ngay, không phải chỉ đọc cho vui. Badgirl Outfit Đi Cafe Cần Có Gì? Đi cafe không giống đi party. Ánh sáng thường rõ hơn, không gian nhỏ hơn, người nhìn outfit ở khoảng cách gần hơn. Vì vậy, badgirl outfit đi cafe nên dựa trên 3 điểm: silhouette rõ, màu sắc kiểm soát và một điểm nhấn mạnh. Silhouette rõ: hoặc trên ôm dưới rộng, hoặc trên rộng dưới gọn. Đừng để cả outfit bị lùng bùng nếu không có chủ ý. Palette tối: đen, xám than, nâu đậm, trắng bẩn, đỏ rượu hoặc bạc metallic. Không cần quá nhiều màu. Một điểm nhấn: boots platform, chain belt, kính đen, túi bạc, áo khoác da hoặc quần cargo thật rộng. Badgirl đi cafe không cần mặc quá gắt. Chỉ cần một chi tiết đủ sắc, phần còn lại phải biết im lặng. 1. Crop Top Đen + Cargo Pants Rộng + Chunky Sneakers Đây là công thức dễ mặc nhất cho người mới bắt đầu. Crop top tạo tỷ lệ cơ thể, cargo pants tạo chất streetwear, chunky sneakers làm outfit bớt “điệu” và thực tế hơn. Nếu bạn muốn vibe baddie rõ hơn, thêm một chiếc túi nhỏ đeo vai hoặc kính đen narrow frame. Outfit này hợp với cafe ban ngày, cafe ngoài trời, quán có background xi măng, gỗ tối hoặc ánh sáng tự nhiên. Nếu crop top quá basic, chọn áo có cut-out nhẹ, logo nhỏ hoặc chất liệu ribbed để outfit không bị nhạt. 2. Baby Tee + Jeans Rộng + Thắt Lưng Đinh Tán Nếu bạn thích vibe Y2K badgirl nhưng không muốn nhìn quá costume, hãy bắt đầu từ baby tee và jeans rộng. Công thức này hợp với dáng người nhỏ vì phần áo ngắn giúp kéo chân dài hơn, còn jeans rộng tạo cảm giác effortless. Điểm quyết định nằm ở thắt lưng. Một chiếc belt đinh tán, belt bạc hoặc chain belt có thể biến một set đồ rất cơ bản thành outfit có thái độ. Giày nên là platform sneakers hoặc boots đế cao, tránh giày quá mềm vì sẽ làm outfit mất lực. 3. Áo Khoác Da Mỏng + Tank Top + Quần Đen Suông Đây là công thức cho buổi cafe chiều hoặc tối. Áo khoác da không nhất thiết phải dày; với thời tiết Việt Nam, một chiếc faux leather mỏng hoặc bomber đen có bề mặt bóng nhẹ là đủ. Bên trong mặc tank top hoặc crop top trắng/đen để tạo lớp. Quần đen suông giúp outfit trưởng thành hơn cargo pants. Nếu bạn muốn nghiêng về dark feminine , đổi sneakers thành ankle boots mũi nhọn và thêm son màu đất hoặc đỏ trầm. 4. Váy Đen Ngắn + Boots Cao Cổ + Áo Khoác Oversized Công thức này dành cho người muốn feminine hơn nhưng vẫn giữ edge. Váy đen ngắn một mình có thể hơi basic, nhưng khi đi cùng boots cao cổ và áo khoác oversized, tổng thể sẽ bớt “cute” và nhiều attitude hơn. Đi cafe với outfit này nên chọn quán có background tối, gương lớn hoặc ánh sáng vàng dịu. Khi chụp ảnh, đứng hơi lệch một bên, để áo khoác rơi tự nhiên trên vai hoặc một tay giữ túi. Đừng pose quá nhiều; outfit này đẹp nhất khi nhìn như bạn không cố. 5. All Black Nhưng Phải Có Texture All-black là lựa chọn an toàn nhất cho badgirl outfit đi cafe, nhưng cũng dễ nhàm nhất nếu bạn mặc toàn vải cotton phẳng. Muốn all-black đẹp, hãy trộn texture: áo ribbed, quần da hoặc denim washed black, túi bạc, boots da bóng, jewelry kim loại. Nếu outfit có quá nhiều đen, phụ kiện bạc là điểm sáng quan trọng. Chain necklace, vòng tay kim loại, nhẫn nhiều ngón hoặc túi có hardware bạc sẽ giúp tổng thể có chiều sâu hơn. Bạn có thể xem thêm bài cách phối đồ đen không nhàm chán để mở rộng công thức này. 6. Hoodie Oversized + Mini Skirt + Platform Boots Đây là công thức cân bằng giữa lười và có gu. Hoodie oversized giúp outfit thoải mái, mini skirt tạo độ nữ tính, platform boots kéo lại toàn bộ vibe badgirl. Nếu bạn sợ hở quá nhiều, thêm tất đen cao cổ hoặc quần short bảo hộ bên trong. Công thức này hợp với cafe tối, đi xem phim sau đó, hoặc những ngày bạn muốn mặc gì đó dễ chịu nhưng vẫn có ảnh đẹp. Tóc buộc cao, eyeliner sắc và một chiếc túi nhỏ là đủ. 7. Corset Top + Quần Rộng + Áo Khoác Ngoài Corset top có thể rất đẹp khi đi cafe, nhưng phải tiết chế. Đừng phối corset với váy quá ôm nếu bạn muốn outfit có tính ứng dụng. Hãy mặc corset với quần rộng hoặc cargo pants để giảm cảm giác “đi sự kiện”. Khoác ngoài bằng sơ mi đen, blazer oversized hoặc jacket mỏng. Đây là công thức phù hợp khi bạn muốn outfit có điểm nhấn rõ ở phần thân trên. Với ảnh ngồi cafe, corset lên hình rất tốt vì phần eo và vai được định hình. Nhưng nếu quán đông hoặc cần di chuyển nhiều, hãy chọn corset vải mềm thay vì corset quá cứng. Cụm Outfit Liên Quan Nên Gắn Vào Bài Này Để bài không chỉ là nội dung đọc mà còn kéo traffic sang trang outfit, bạn nên gắn một cụm outfit liên quan ngay trong bài. Cụm này nên xoay quanh baddie streetwear, egirl tối màu và dark feminine nhẹ: Look #02 — Baddie Streetwear: hợp với công thức crop top, cargo pants và chunky sneakers. Look #07 — Baddie Streetwear: hợp với cafe ban ngày, streetwear mạnh và dễ chụp full body. Look #14 — Dark Y2K/Baddie: hợp với keyword dark Y2K outfit, đi cafe tối hoặc cafe gương. Look #04 — Dark Feminine: hợp với corset, boots và outfit trưởng thành hơn. Look #05 — E-Girl: hợp với outfit váy ngắn, boots cao cổ và vibe alt girl. Checklist Nhanh Trước Khi Ra Khỏi Nhà Trước khi chốt badgirl outfit đi cafe, soi gương và hỏi 5 câu này: Outfit có một điểm nhấn chính chưa, hay mọi thứ đang tranh nhau? Giày có đủ mạnh để giữ vibe badgirl không? Phụ kiện bạc/đen đã đủ làm outfit có chiều sâu chưa? Ngồi xuống có bị khó chịu, quá ngắn hoặc quá cứng không? Ảnh full body có thấy rõ tỷ lệ người không? Nếu câu trả lời ổn, outfit đã đủ dùng. Badgirl outfit đi cafe không cần phải cực đoan. Nó chỉ cần khiến bạn bước vào quán với cảm giác: mình biết mình đang mặc gì, và mình không cần ai phê duyệt. Câu Hỏi Thường Gặp Badgirl outfit đi cafe nên mặc gì? Nên chọn crop top đen, cargo pants hoặc jeans rộng, chunky sneakers hoặc platform boots, thêm phụ kiện bạc như chain necklace, belt đinh tán hoặc túi nhỏ. Công thức này đủ cá tính nhưng vẫn thoải mái để ngồi cafe lâu. Đi cafe có nên mặc all-black không? Có. All-black rất hợp badgirl aesthetic, nhưng nên mix nhiều texture như denim, da bóng, ribbed cotton và phụ kiện kim loại để outfit không bị phẳng hoặc nhàm chán. Badgirl outfit đi cafe khác outfit đi club như thế nào? Outfit đi cafe nên nhẹ hơn, thực tế hơn và thoải mái hơn. Giữ một điểm nhấn mạnh như boots, chain belt hoặc áo khoác da; tránh phối quá nhiều chi tiết gắt cùng lúc. Nữ thấp có mặc badgirl outfit đi cafe đẹp không? Có. Hãy ưu tiên crop top, quần cạp cao, boots hoặc sneakers đế cao. Tránh áo quá dài che mất eo vì sẽ làm tỷ lệ cơ thể bị thấp hơn khi chụp ảnh full body. Đọc Thêm Về Outfit Liên Quan Style Guide Badgirl Aesthetic Style Guide Phối Đồ Đen Không Nhàm Chán Aesthetic Dark Y2K Aesthetic Style Guide Phong Cách Egirl Là Gì © 2026 APOCALYPSE CLOSET · Privacy Policy badgirl outfit đi cafe outfit đi cafe nữ cá tính baddie outfit đi cafe dark feminine outfit đi cafe phối đồ đi cafe cá tính"
+  },
   {
     "title": "Alt Fashion Là Gì Và Tại Sao Nó Quan Trọng Hơn Bạn Nghĩ",
     "url": "/blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html",
@@ -99,161 +99,161 @@ window.searchIndex = [
     "title": "OUTFIT DETAILS #1 – E-Girl",
     "url": "/outfits/look-01-egirl.html",
     "type": "Outfit",
-    "description": "Outfit phong cách E-Girl số 01 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit E-Girl #01: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #1 – E-Girl | Apocalypse Closet Outfit phong cách E-Girl số 01 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #1 – E-Girl OUTFIT DETAILS #1 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #01 OUTFIT DETAILS #1 – E-Girl Outfit phong cách E-Girl số 01 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
+    "keywords": "OUTFIT DETAILS #1 – E-Girl | Apocalypse Closet Outfit E-Girl #01: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #1 – E-Girl OUTFIT DETAILS #1 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #01 OUTFIT DETAILS #1 – E-Girl Outfit E-Girl #01: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
   },
   {
     "title": "OUTFIT DETAILS #2 – Baddie Streetwear",
     "url": "/outfits/look-02-baddie-streetwear.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Baddie Streetwear số 02 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Baddie Streetwear #02: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #2 – Baddie Streetwear | Apocalypse Closet Outfit phong cách Baddie Streetwear số 02 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #2 – Baddie Streetwear OUTFIT DETAILS #2 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #02 OUTFIT DETAILS #2 – Baddie Streetwear Outfit phong cách Baddie Streetwear số 02 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
+    "keywords": "OUTFIT DETAILS #2 – Baddie Streetwear | Apocalypse Closet Outfit Baddie Streetwear #02: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #2 – Baddie Streetwear OUTFIT DETAILS #2 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #02 OUTFIT DETAILS #2 – Baddie Streetwear Outfit Baddie Streetwear #02: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
   },
   {
     "title": "OUTFIT DETAILS #3 – Punk",
     "url": "/outfits/look-03-punk.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Punk số 03 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Punk #03: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #3 – Punk | Apocalypse Closet Outfit phong cách Punk số 03 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #3 – Punk OUTFIT DETAILS #3 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #03 OUTFIT DETAILS #3 – Punk Outfit phong cách Punk số 03 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
+    "keywords": "OUTFIT DETAILS #3 – Punk | Apocalypse Closet Outfit Punk #03: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #3 – Punk OUTFIT DETAILS #3 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #03 OUTFIT DETAILS #3 – Punk Outfit Punk #03: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
   {
     "title": "OUTFIT DETAILS #4 – Dark Feminine",
     "url": "/outfits/look-04-dark-feminine.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Dark Feminine số 04 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Dark Feminine #04: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #4 – Dark Feminine | Apocalypse Closet Outfit phong cách Dark Feminine số 04 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #4 – Dark Feminine OUTFIT DETAILS #4 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #04 OUTFIT DETAILS #4 – Dark Feminine Outfit phong cách Dark Feminine số 04 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
+    "keywords": "OUTFIT DETAILS #4 – Dark Feminine | Apocalypse Closet Outfit Dark Feminine #04: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #4 – Dark Feminine OUTFIT DETAILS #4 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #04 OUTFIT DETAILS #4 – Dark Feminine Outfit Dark Feminine #04: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
   },
   {
     "title": "OUTFIT DETAILS #5 – E-Girl",
     "url": "/outfits/look-05-egirl.html",
     "type": "Outfit",
-    "description": "Outfit phong cách E-Girl số 05 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit E-Girl #05: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-e-girl-look-05-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #5 – E-Girl | Apocalypse Closet Outfit phong cách E-Girl số 05 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #5 – E-Girl OUTFIT DETAILS #5 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #05 OUTFIT DETAILS #5 – E-Girl Outfit phong cách E-Girl số 05 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
+    "keywords": "OUTFIT DETAILS #5 – E-Girl | Apocalypse Closet Outfit E-Girl #05: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #5 – E-Girl OUTFIT DETAILS #5 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #05 OUTFIT DETAILS #5 – E-Girl Outfit E-Girl #05: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
   },
   {
     "title": "OUTFIT DETAILS #6 – Punk",
     "url": "/outfits/look-06-punk.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Punk số 06 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Punk #06: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-punk-look-06-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #6 – Punk | Apocalypse Closet Outfit phong cách Punk số 06 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #6 – Punk OUTFIT DETAILS #6 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #06 OUTFIT DETAILS #6 – Punk Outfit phong cách Punk số 06 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
+    "keywords": "OUTFIT DETAILS #6 – Punk | Apocalypse Closet Outfit Punk #06: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #6 – Punk OUTFIT DETAILS #6 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #06 OUTFIT DETAILS #6 – Punk Outfit Punk #06: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
   {
     "title": "OUTFIT DETAILS #7 – Baddie Streetwear",
     "url": "/outfits/look-07-baddie-streetwear.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Baddie Streetwear số 07 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Baddie Streetwear #07: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-07-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #7 – Baddie Streetwear | Apocalypse Closet Outfit phong cách Baddie Streetwear số 07 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #7 – Baddie Streetwear OUTFIT DETAILS #7 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #07 OUTFIT DETAILS #7 – Baddie Streetwear Outfit phong cách Baddie Streetwear số 07 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item (coming soon) QUẦN — Bottom Item (coming soon) GIÀY — Footwear (coming soon) PHỤ KIỆN — Accessories (coming soon) © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
+    "keywords": "OUTFIT DETAILS #7 – Baddie Streetwear | Apocalypse Closet Outfit Baddie Streetwear #07: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #7 – Baddie Streetwear OUTFIT DETAILS #7 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #07 OUTFIT DETAILS #7 – Baddie Streetwear Outfit Baddie Streetwear #07: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item (coming soon) QUẦN — Bottom Item (coming soon) GIÀY — Footwear (coming soon) PHỤ KIỆN — Accessories (coming soon) © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
   },
   {
     "title": "OUTFIT DETAILS #8 – E-Girl",
     "url": "/outfits/look-08-egirl.html",
     "type": "Outfit",
-    "description": "Outfit phong cách E-Girl số 08 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit E-Girl #08: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-e-girl-look-08-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #8 – E-Girl | Apocalypse Closet Outfit phong cách E-Girl số 08 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #8 – E-Girl OUTFIT DETAILS #8 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #08 OUTFIT DETAILS #8 – E-Girl Outfit phong cách E-Girl số 08 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
+    "keywords": "OUTFIT DETAILS #8 – E-Girl | Apocalypse Closet Outfit E-Girl #08: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #8 – E-Girl OUTFIT DETAILS #8 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #08 OUTFIT DETAILS #8 – E-Girl Outfit E-Girl #08: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
   },
   {
     "title": "OUTFIT DETAILS #9 – Goth",
     "url": "/outfits/look-09-goth.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Goth số 09 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Goth #09: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-goth-look-09-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #9 – Goth | Apocalypse Closet Outfit phong cách Goth số 09 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #9 – Goth OUTFIT DETAILS #9 – Goth | Apocalypse Closet ← BACK Goth ♡ SAVE HOME › GOTH › LOOK #09 OUTFIT DETAILS #9 – Goth Outfit phong cách Goth số 09 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET goth gothic dark aesthetic"
+    "keywords": "OUTFIT DETAILS #9 – Goth | Apocalypse Closet Outfit Goth #09: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #9 – Goth OUTFIT DETAILS #9 – Goth | Apocalypse Closet ← BACK Goth ♡ SAVE HOME › GOTH › LOOK #09 OUTFIT DETAILS #9 – Goth Outfit Goth #09: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET goth gothic dark aesthetic"
   },
   {
     "title": "OUTFIT DETAILS #10 – Punk",
     "url": "/outfits/look-10-punk.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Punk số 10 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Punk #10: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-punk-look-10-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #10 – Punk | Apocalypse Closet Outfit phong cách Punk số 10 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #10 – Punk OUTFIT DETAILS #10 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #10 OUTFIT DETAILS #10 – Punk Outfit phong cách Punk số 10 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
+    "keywords": "OUTFIT DETAILS #10 – Punk | Apocalypse Closet Outfit Punk #10: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #10 – Punk OUTFIT DETAILS #10 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #10 OUTFIT DETAILS #10 – Punk Outfit Punk #10: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
   {
     "title": "OUTFIT DETAILS #11 – E-Girl",
     "url": "/outfits/look-11-egirl.html",
     "type": "Outfit",
-    "description": "Outfit phong cách E-Girl số 11 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit E-Girl #11: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-e-girl-look-11-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet Outfit phong cách E-Girl số 11 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #11 – E-Girl OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #11 OUTFIT DETAILS #11 – E-Girl Outfit phong cách E-Girl số 11 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
+    "keywords": "OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet Outfit E-Girl #11: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #11 – E-Girl OUTFIT DETAILS #11 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #11 OUTFIT DETAILS #11 – E-Girl Outfit E-Girl #11: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
   },
   {
     "title": "OUTFIT DETAILS #12 – Punk",
     "url": "/outfits/look-12-punk.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Punk số 12 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Punk #12: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-punk-look-12-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #12 – Punk | Apocalypse Closet Outfit phong cách Punk số 12 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #12 – Punk OUTFIT DETAILS #12 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #12 OUTFIT DETAILS #12 – Punk Outfit phong cách Punk số 12 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
+    "keywords": "OUTFIT DETAILS #12 – Punk | Apocalypse Closet Outfit Punk #12: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #12 – Punk OUTFIT DETAILS #12 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #12 OUTFIT DETAILS #12 – Punk Outfit Punk #12: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
   {
     "title": "OUTFIT DETAILS #13 – E-Girl",
     "url": "/outfits/look-13-egirl.html",
     "type": "Outfit",
-    "description": "Outfit phong cách E-Girl số 13 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit E-Girl #13: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-e-girl-look-13-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #13 – E-Girl | Apocalypse Closet Outfit phong cách E-Girl số 13 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #13 – E-Girl OUTFIT DETAILS #13 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #13 OUTFIT DETAILS #13 – E-Girl Outfit phong cách E-Girl số 13 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
+    "keywords": "OUTFIT DETAILS #13 – E-Girl | Apocalypse Closet Outfit E-Girl #13: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #13 – E-Girl OUTFIT DETAILS #13 – E-Girl | Apocalypse Closet ← BACK E-Girl ♡ SAVE HOME › E-GIRL › LOOK #13 OUTFIT DETAILS #13 – E-Girl Outfit E-Girl #13: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET egirl e girl e-girl alt girl alternative girl phong cach egirl"
   },
   {
     "title": "OUTFIT DETAILS #14 – Baddie Streetwear",
     "url": "/outfits/look-14-baddie-streetwear.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Baddie Streetwear số 14 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Baddie Streetwear #14: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-14-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #14 – Baddie Streetwear | Apocalypse Closet Outfit phong cách Baddie Streetwear số 14 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #14 – Baddie Streetwear OUTFIT DETAILS #14 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #14 OUTFIT DETAILS #14 – Baddie Streetwear Outfit phong cách Baddie Streetwear số 14 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
+    "keywords": "OUTFIT DETAILS #14 – Baddie Streetwear | Apocalypse Closet Outfit Baddie Streetwear #14: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #14 – Baddie Streetwear OUTFIT DETAILS #14 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #14 OUTFIT DETAILS #14 – Baddie Streetwear Outfit Baddie Streetwear #14: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
   },
   {
     "title": "OUTFIT DETAILS #15 – Dark Feminine",
     "url": "/outfits/look-15-dark-feminine.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Dark Feminine số 15 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Dark Feminine #15: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-15-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #15 – Dark Feminine | Apocalypse Closet Outfit phong cách Dark Feminine số 15 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #15 – Dark Feminine OUTFIT DETAILS #15 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #15 OUTFIT DETAILS #15 – Dark Feminine Outfit phong cách Dark Feminine số 15 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
+    "keywords": "OUTFIT DETAILS #15 – Dark Feminine | Apocalypse Closet Outfit Dark Feminine #15: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #15 – Dark Feminine OUTFIT DETAILS #15 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #15 OUTFIT DETAILS #15 – Dark Feminine Outfit Dark Feminine #15: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
   },
   {
     "title": "OUTFIT DETAILS #16 – Goth",
     "url": "/outfits/look-16-goth.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Goth số 16 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Goth #16: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-goth-look-16-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #16 – Goth | Apocalypse Closet Outfit phong cách Goth số 16 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #16 – Goth OUTFIT DETAILS #16 – Goth | Apocalypse Closet ← BACK Goth ♡ SAVE HOME › GOTH › LOOK #16 OUTFIT DETAILS #16 – Goth Outfit phong cách Goth số 16 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET goth gothic dark aesthetic"
+    "keywords": "OUTFIT DETAILS #16 – Goth | Apocalypse Closet Outfit Goth #16: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #16 – Goth OUTFIT DETAILS #16 – Goth | Apocalypse Closet ← BACK Goth ♡ SAVE HOME › GOTH › LOOK #16 OUTFIT DETAILS #16 – Goth Outfit Goth #16: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET goth gothic dark aesthetic"
   },
   {
     "title": "OUTFIT DETAILS #17 – Baddie Streetwear",
     "url": "/outfits/look-17-baddie-streetwear.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Baddie Streetwear số 17 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Baddie Streetwear #17: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-17-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #17 – Baddie Streetwear | Apocalypse Closet Outfit phong cách Baddie Streetwear số 17 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #17 – Baddie Streetwear OUTFIT DETAILS #17 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #17 OUTFIT DETAILS #17 – Baddie Streetwear Outfit phong cách Baddie Streetwear số 17 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
+    "keywords": "OUTFIT DETAILS #17 – Baddie Streetwear | Apocalypse Closet Outfit Baddie Streetwear #17: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #17 – Baddie Streetwear OUTFIT DETAILS #17 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #17 OUTFIT DETAILS #17 – Baddie Streetwear Outfit Baddie Streetwear #17: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
   },
   {
     "title": "OUTFIT DETAILS #18 – Dark Feminine",
     "url": "/outfits/look-18-dark-feminine.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Dark Feminine số 18 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Dark Feminine #18: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-18-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #18 – Dark Feminine | Apocalypse Closet Outfit phong cách Dark Feminine số 18 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #18 – Dark Feminine OUTFIT DETAILS #18 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #18 OUTFIT DETAILS #18 – Dark Feminine Outfit phong cách Dark Feminine số 18 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
+    "keywords": "OUTFIT DETAILS #18 – Dark Feminine | Apocalypse Closet Outfit Dark Feminine #18: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #18 – Dark Feminine OUTFIT DETAILS #18 – Dark Feminine | Apocalypse Closet ← BACK Dark Feminine ♡ SAVE HOME › DARK FEMININE › LOOK #18 OUTFIT DETAILS #18 – Dark Feminine Outfit Dark Feminine #18: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET dark feminine dark femme nu tinh bong toi"
   },
   {
     "title": "OUTFIT DETAILS #19 – Punk",
     "url": "/outfits/look-19-punk.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Punk số 19 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Punk #19: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-punk-look-19-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #19 – Punk | Apocalypse Closet Outfit phong cách Punk số 19 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #19 – Punk OUTFIT DETAILS #19 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #19 OUTFIT DETAILS #19 – Punk Outfit phong cách Punk số 19 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
+    "keywords": "OUTFIT DETAILS #19 – Punk | Apocalypse Closet Outfit Punk #19: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #19 – Punk OUTFIT DETAILS #19 – Punk | Apocalypse Closet ← BACK Punk ♡ SAVE HOME › PUNK › LOOK #19 OUTFIT DETAILS #19 – Punk Outfit Punk #19: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
   {
     "title": "OUTFIT DETAILS #20 – Baddie Streetwear",
     "url": "/outfits/look-20-baddie-streetwear.html",
     "type": "Outfit",
-    "description": "Outfit phong cách Baddie Streetwear số 20 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
+    "description": "Outfit Baddie Streetwear #20: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-20-full-outfit.webp",
-    "keywords": "OUTFIT DETAILS #20 – Baddie Streetwear | Apocalypse Closet Outfit phong cách Baddie Streetwear số 20 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. OUTFIT DETAILS #20 – Baddie Streetwear OUTFIT DETAILS #20 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #20 OUTFIT DETAILS #20 – Baddie Streetwear Outfit phong cách Baddie Streetwear số 20 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
+    "keywords": "OUTFIT DETAILS #20 – Baddie Streetwear | Apocalypse Closet Outfit Baddie Streetwear #20: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #20 – Baddie Streetwear OUTFIT DETAILS #20 – Baddie Streetwear | Apocalypse Closet ← BACK Baddie Streetwear ♡ SAVE HOME › BADDIE STREETWEAR › LOOK #20 OUTFIT DETAILS #20 – Baddie Streetwear Outfit Baddie Streetwear #20: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. ÁO — Top Item [Xem sản phẩm] QUẦN — Bottom Item [Xem sản phẩm] GIÀY — Footwear [Xem sản phẩm] PHỤ KIỆN — Accessories [Xem sản phẩm] © 2026 APOCALYPSE CLOSET baddie streetwear badgirl phong cach badgirl"
   },
   {
     "title": "Baddie Streetwear",
@@ -295,164 +295,164 @@ window.searchIndex = [
     "image": "/images/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp",
     "keywords": "PUNK — Apocalypse Closet PUNK — chống lại tất cả. Không xin lỗi, không giải thích. Apocalypse Closet. PUNK PUNK — Apocalypse Closet ♡ CLOSET STYLE ↓ Dark Feminine E-Girl / Alt Girl Goth / Gothic Baddie Streetwear Punk / Grunge HOME › PUNK // Issue No.04 — Apocalypse Closet Zine PUNK NOT DEAD Punk không phải là âm nhạc. Punk không phải là quần áo. Punk là thái độ . Là nói KHÔNG khi cả thế giới nói có. Là mặc những gì bạn muốn — không cần ai cho phép. Là phá vỡ quy tắc vì quy tắc xứng đáng bị phá. 1. Không có quy tắc. (Trừ rule này.) 2. DIY hoặc chết. Tự làm, tự sống, tự thở. 3. Chains, studs, safety pins — vũ khí thẩm mỹ. 4. Không xin lỗi. Không giải thích. Bao giờ hết. PUNK NOT DEAD ★ ANARCHY FASHION DIY OR DIE ★ REBEL STYLE NO RULES ★ SPIKE & CHAINS PUNK NOT DEAD ★ ANARCHY FASHION DIY OR DIE ★ REBEL STYLE DESTROY RESIST REFUSE RECLAIM REVOLT REBEL DESTROY RESIST REFUSE RECLAIM // The Punk Creed ⚡ DIY Forever Tự distress, tự vá, tự paint. Mỗi outfit là tác phẩm duy nhất trên đời ⛓ Hardware & Edge Safety pins, studs, spike chokers — phụ kiện của những người không chịu im lặng ✂ Ripped & Raw Jeans rách, áo torn, boots cũ — vẻ đẹp của sự không hoàn hảo có chủ đích 🖤 No Apologies Không giải thích. Không xin lỗi. Không cần sự chấp thuận của ai // Punk Looks © 2026 APOCALYPSE CLOSET punk grunge soft grunge"
   },
-{
-  "title": "OUTFIT DETAILS #21 – Baddie Streetwear",
-  "url": "/outfits/look-21-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 21 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-21-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #21 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 21 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 21 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #22 – Dark Feminine",
-  "url": "/outfits/look-22-dark-feminine.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Dark Feminine số 22 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-22-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #22 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 22 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 22 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #23 – Baddie Streetwear",
-  "url": "/outfits/look-23-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 23 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-23-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #23 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 23 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 23 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #24 – Goth",
-  "url": "/outfits/look-24-goth.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Goth số 24 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-goth-look-24-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #24 – Goth | Apocalypse Closet outfit phong cách Goth số 24 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 24 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #25 – Goth",
-  "url": "/outfits/look-25-goth.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Goth số 25 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-goth-look-25-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #25 – Goth | Apocalypse Closet outfit phong cách Goth số 25 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 25 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #26 – Baddie Streetwear",
-  "url": "/outfits/look-26-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 26 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-26-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #26 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 26 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 26 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #27 – Baddie Streetwear",
-  "url": "/outfits/look-27-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 27 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #27 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 27 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 27 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #28 – Baddie Streetwear",
-  "url": "/outfits/look-28-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 28 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #28 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 28 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 28 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #29 – Dark Feminine",
-  "url": "/outfits/look-29-dark-feminine.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Dark Feminine số 29 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #29 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 29 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 29 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #30 – Dark Feminine",
-  "url": "/outfits/look-30-dark-feminine.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Dark Feminine số 30 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #30 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 30 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 30 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #31 – E-Girl",
-  "url": "/outfits/look-31-egirl.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách E-Girl số 31 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-e-girl-look-31-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #31 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 31 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 31 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #32 – Goth",
-  "url": "/outfits/look-32-goth.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Goth số 32 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-goth-look-32-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #32 – Goth | Apocalypse Closet outfit phong cách Goth số 32 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 32 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #33 – E-Girl",
-  "url": "/outfits/look-33-egirl.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách E-Girl số 33 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-e-girl-look-33-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #33 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 33 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 33 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #34 – Baddie Streetwear",
-  "url": "/outfits/look-34-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 34 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-34-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #34 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 34 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 34 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #35 – E-Girl",
-  "url": "/outfits/look-35-egirl.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách E-Girl số 35 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-e-girl-look-35-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #35 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 35 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 35 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #36 – Dark Feminine",
-  "url": "/outfits/look-36-dark-feminine.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Dark Feminine số 36 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-36-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #36 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 36 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 36 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #37 – Baddie Streetwear",
-  "url": "/outfits/look-37-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 37 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #37 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 37 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 37 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #38 – Punk",
-  "url": "/outfits/look-38-punk.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Punk số 38 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-punk-look-38-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #38 – Punk | Apocalypse Closet outfit phong cách Punk số 38 áo quần giày phụ kiện shopee punk grunge soft grunge rebel outfit alt fashion look 38 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #39 – Baddie Streetwear",
-  "url": "/outfits/look-39-baddie-streetwear.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Baddie Streetwear số 39 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-39-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #39 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 39 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 39 badgirl aesthetic"
-},
-{
-  "title": "OUTFIT DETAILS #40 – Dark Feminine",
-  "url": "/outfits/look-40-dark-feminine.html",
-  "type": "Outfit",
-  "description": "Outfit phong cách Dark Feminine số 40 từ Apocalypse Closet. Gồm áo, quần, giày và phụ kiện với link mua trực tiếp trên Shopee.",
-  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-40-full-outfit.webp",
-  "keywords": "OUTFIT DETAILS #40 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 40 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 40 badgirl aesthetic"
-}
+  {
+    "title": "OUTFIT DETAILS #21 – Baddie Streetwear",
+    "url": "/outfits/look-21-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #21: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-21-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #21 – Baddie Streetwear Outfit Baddie Streetwear #21: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #21 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 21 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 21 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #22 – Dark Feminine",
+    "url": "/outfits/look-22-dark-feminine.html",
+    "type": "Outfit",
+    "description": "Outfit Dark Feminine #22: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-22-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #22 – Dark Feminine Outfit Dark Feminine #22: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #22 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 22 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 22 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #23 – Baddie Streetwear",
+    "url": "/outfits/look-23-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #23: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-23-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #23 – Baddie Streetwear Outfit Baddie Streetwear #23: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #23 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 23 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 23 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #24 – Goth",
+    "url": "/outfits/look-24-goth.html",
+    "type": "Outfit",
+    "description": "Outfit Goth #24: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-goth-look-24-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #24 – Goth Outfit Goth #24: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #24 – Goth | Apocalypse Closet outfit phong cách Goth số 24 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 24 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #25 – Goth",
+    "url": "/outfits/look-25-goth.html",
+    "type": "Outfit",
+    "description": "Outfit Goth #25: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-goth-look-25-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #25 – Goth Outfit Goth #25: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #25 – Goth | Apocalypse Closet outfit phong cách Goth số 25 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 25 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #26 – Baddie Streetwear",
+    "url": "/outfits/look-26-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #26: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-26-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #26 – Baddie Streetwear Outfit Baddie Streetwear #26: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #26 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 26 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 26 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #27 – Baddie Streetwear",
+    "url": "/outfits/look-27-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #27: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #27 – Baddie Streetwear Outfit Baddie Streetwear #27: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #27 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 27 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 27 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #28 – Baddie Streetwear",
+    "url": "/outfits/look-28-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #28: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #28 – Baddie Streetwear Outfit Baddie Streetwear #28: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #28 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 28 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 28 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #29 – Dark Feminine",
+    "url": "/outfits/look-29-dark-feminine.html",
+    "type": "Outfit",
+    "description": "Outfit Dark Feminine #29: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #29 – Dark Feminine Outfit Dark Feminine #29: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #29 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 29 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 29 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #30 – Dark Feminine",
+    "url": "/outfits/look-30-dark-feminine.html",
+    "type": "Outfit",
+    "description": "Outfit Dark Feminine #30: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #30 – Dark Feminine Outfit Dark Feminine #30: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #30 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 30 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 30 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #31 – E-Girl",
+    "url": "/outfits/look-31-egirl.html",
+    "type": "Outfit",
+    "description": "Outfit E-Girl #31: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-31-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #31 – E-Girl Outfit E-Girl #31: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #31 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 31 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 31 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #32 – Goth",
+    "url": "/outfits/look-32-goth.html",
+    "type": "Outfit",
+    "description": "Outfit Goth #32: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-goth-look-32-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #32 – Goth Outfit Goth #32: look đen cá tính với áo, quần, giày và phụ kiện dark aesthetic — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #32 – Goth | Apocalypse Closet outfit phong cách Goth số 32 áo quần giày phụ kiện shopee goth gothic dark aesthetic all black gothic outfit look 32 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #33 – E-Girl",
+    "url": "/outfits/look-33-egirl.html",
+    "type": "Outfit",
+    "description": "Outfit E-Girl #33: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-33-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #33 – E-Girl Outfit E-Girl #33: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #33 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 33 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 33 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #34 – Baddie Streetwear",
+    "url": "/outfits/look-34-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #34: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-34-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #34 – Baddie Streetwear Outfit Baddie Streetwear #34: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #34 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 34 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 34 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #35 – E-Girl",
+    "url": "/outfits/look-35-egirl.html",
+    "type": "Outfit",
+    "description": "Outfit E-Girl #35: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-35-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #35 – E-Girl Outfit E-Girl #35: vibe alt girl với áo, quần, giày và phụ kiện statement — xem full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #35 – E-Girl | Apocalypse Closet outfit phong cách E-Girl số 35 áo quần giày phụ kiện shopee egirl e girl e-girl alt girl alternative girl phong cach egirl y2k look 35 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #36 – Dark Feminine",
+    "url": "/outfits/look-36-dark-feminine.html",
+    "type": "Outfit",
+    "description": "Outfit Dark Feminine #36: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-36-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #36 – Dark Feminine Outfit Dark Feminine #36: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #36 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 36 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 36 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #37 – Baddie Streetwear",
+    "url": "/outfits/look-37-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #37: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #37 – Baddie Streetwear Outfit Baddie Streetwear #37: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #37 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 37 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 37 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #38 – Punk",
+    "url": "/outfits/look-38-punk.html",
+    "type": "Outfit",
+    "description": "Outfit Punk #38: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-punk-look-38-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #38 – Punk Outfit Punk #38: phối đồ cá tính với áo, quần, giày và phụ kiện edgy — xem ảnh full set + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #38 – Punk | Apocalypse Closet outfit phong cách Punk số 38 áo quần giày phụ kiện shopee punk grunge soft grunge rebel outfit alt fashion look 38 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #39 – Baddie Streetwear",
+    "url": "/outfits/look-39-baddie-streetwear.html",
+    "type": "Outfit",
+    "description": "Outfit Baddie Streetwear #39: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-39-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #39 – Baddie Streetwear Outfit Baddie Streetwear #39: set streetwear cá tính với áo, quần, giày và phụ kiện nổi bật — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #39 – Baddie Streetwear | Apocalypse Closet outfit phong cách Baddie Streetwear số 39 áo quần giày phụ kiện shopee baddie streetwear badgirl phong cach badgirl streetwear outfit y2k look 39 badgirl aesthetic"
+  },
+  {
+    "title": "OUTFIT DETAILS #40 – Dark Feminine",
+    "url": "/outfits/look-40-dark-feminine.html",
+    "type": "Outfit",
+    "description": "Outfit Dark Feminine #40: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-40-full-outfit.webp",
+    "keywords": "OUTFIT DETAILS #40 – Dark Feminine Outfit Dark Feminine #40: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #40 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 40 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 40 badgirl aesthetic"
+  }
 ];
