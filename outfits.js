@@ -157,10 +157,12 @@ const outfits = [
       desc: "Nhấn vào từng mục để xem chi tiết sản phẩm.",
       imgs: [ G(7,1), G(7,2), G(7,3), G(7,4) ],
       items: [
-        { name: "ÁO",       type: "Top Item",    link: "#" },
-        { name: "QUẦN",     type: "Bottom Item", link: "#" },
-        { name: "GIÀY",     type: "Footwear",    link: "#" },
-        { name: "PHỤ KIỆN", type: "Accessories", link: "#" }
+        
+        { name: "ÁO",       type: "Top Item",    link: "https://s.shopee.vn/20sdZXBm96" },
+        { name: "QUẦN",     type: "Bottom Item", link: "https://s.shopee.vn/2BC3lqB8o9" },
+        { name: "GIÀY",     type: "Footwear",    link: "https://s.shopee.vn/2LVTy9AVTC" },
+        { name: "PHỤ KIỆN", type: "Accessories", link: "https://s.shopee.vn/2VouAS9s8F" }
+      
       ]
     }
   },
