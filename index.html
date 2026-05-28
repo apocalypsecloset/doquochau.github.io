@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet</title>
   <link rel="canonical" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="vi" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="vi-VN" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://apocalypsecloset.com/" />
   
   <meta name="p:domain_verify" content="9f119494f51e0fb3070c74a60326a6da"/>
   <meta name="description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn.">
   
+  <meta property="og:locale" content="vi_VN" />
   <meta property="og:title" content="Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet" />
   <meta property="og:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn." />
   <meta property="og:image" content="https://apocalypsecloset.com/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp" />
@@ -31,7 +35,7 @@
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260528-40-v2">
+  <link rel="preload" as="script" href="outfits.js?v=20260528-40-v3">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
   
@@ -605,7 +609,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260528-40-v2" defer></script>
+  <script src="outfits.js?v=20260528-40-v3" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -834,9 +838,8 @@
       });
     };
 
-    const PAGE_SIZE = outfits.length;
-
     function randomize() {
+      const PAGE_SIZE = outfits.length;
       const allIds = outfits.map(o => o.id);
 
       // Load pool còn lại (những look chưa được show)
@@ -915,8 +918,17 @@
     }
 
     window._renderAllReady = true;
-    if (typeof outfits !== 'undefined') initGrid();
-    else document.addEventListener('DOMContentLoaded', initGrid);
+    if (typeof outfits !== 'undefined') {
+      initGrid();
+    } else {
+      window.addEventListener('load', () => {
+        if (typeof outfits !== 'undefined') initGrid();
+        else {
+          const grid = document.getElementById('outfit-grid');
+          if (grid) grid.innerHTML = '<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tải được dữ liệu outfit. Vui lòng refresh lại trang.</div>';
+        }
+      }, { once: true });
+    }
   </script>
 </body>
 </html>
