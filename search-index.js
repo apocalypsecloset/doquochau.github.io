@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "Phối Đồ Với Quần Jeans Ống Rộng Nữ: 7 Công Thức Dark Y2K & Badgirl",
+    "url": "/blog/phoi-do-voi-quan-jeans-ong-rong-nu.html",
+    "type": "Journal",
+    "description": "7 cách phối đồ với quần jeans ống rộng nữ theo vibe dark Y2K, e-girl và badgirl: áo ôm, baby tee, corset, mesh layer, boots và phụ kiện bạc.",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-31-full-outfit.webp",
+    "keywords": "Phối Đồ Với Quần Jeans Ống Rộng Nữ: 7 Công Thức Dark Y2K & Badgirl 7 cách phối đồ với quần jeans ống rộng nữ theo vibe dark Y2K, e-girl và badgirl: áo ôm, baby tee, corset, mesh layer, boots và phụ kiện bạc. phối đồ với quần jeans ống rộng nữ, quần jeans ống rộng nữ mặc với áo gì, dark y2k outfit, e-girl outfit, badgirl outfit, jeans ống rộng Look #31 E-Girl quần jeans ống rộng xám bạc áo đen ôm thắt lưng trắng dark y2k e-girl baddie streetwear"
+  },
+  {
     "title": "Badgirl Outfit Đi Cafe: 7 Công Thức Cá Tính",
     "url": "/blog/badgirl-outfit-di-cafe.html",
     "type": "Journal",
