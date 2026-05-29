@@ -630,7 +630,14 @@
     const PAGE_SEO_TITLE = "Look #29 Dark Feminine Outfit: Set Tông Tối, Silhouette Quyến Rũ & Phụ Kiện Statement";
     const PAGE_SEO_DESC  = "Look #29 là dark feminine outfit với vibe tông tối, quyến rũ và cá tính. Set này hợp đi cafe, đi chơi buổi tối hoặc chụp ảnh badgirl aesthetic.";
     const PAGE_IMG_ALT   = "Look 29 dark feminine outfit với áo, quần, giày và phụ kiện badgirl street style";
-    const PAGE_ITEMS     = [{"name": "Áo tông tối phong cách dark feminine", "type": "Top item tạo vibe quyến rũ nhưng vẫn cá tính"}, {"name": "Quần hoặc chân váy tông tối", "type": "Bottom item giúp outfit giữ silhouette gọn và mạnh"}, {"name": "Giày / boots phối dark feminine", "type": "Footwear tông tối giúp tổng thể sắc hơn"}, {"name": "Phụ kiện statement tông dark", "type": "Túi, belt hoặc trang sức làm điểm nhấn"}];
+    const UI_TITLE     = "OUTFIT DETAILS #29 – Dark Feminine";
+    const UI_DESC      = "Nhấn vào từng mục để xem chi tiết sản phẩm.";
+    const UI_ITEMS     = [
+      { name: "ÁO", type: "Top Item" },
+      { name: "QUẦN", type: "Bottom Item" },
+      { name: "GIÀY", type: "Footwear" },
+      { name: "PHỤ KIỆN", type: "Accessories" }
+    ];
     const outfitsData = window.outfits || (typeof outfits !== 'undefined' ? outfits : []);
     if (!window.outfits && outfitsData.length) window.outfits = outfitsData;
     const outfit     = outfitsData.find(o => o.id === OUTFIT_ID);
@@ -669,10 +676,9 @@
             `<div class="dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`
           ).join('')
         : '';
-
-      const itemsHTML = d.items.map((item, i) => {
+      const itemsHTML = d.items.map((item, idx) => {
+        const ui = UI_ITEMS[idx] || { name: item.name, type: item.type };
         const hasLink = item.link && item.link !== '#';
-        const seoItem = PAGE_ITEMS[i] || { name: item.name, type: item.type };
         return `
           <a href="${hasLink ? item.link : '#'}"
              ${hasLink ? 'target="_blank" rel="nofollow noopener"' : ''}
@@ -680,8 +686,8 @@
             <div class="item-left">
               <div class="item-icon">&#10022;</div>
               <div class="item-text">
-                <h3>${seoItem.name}</h3>
-                <p>${seoItem.type}${hasLink ? '' : ' — COMING SOON'}</p>
+                <h3>${ui.name}</h3>
+                <p>${ui.type}${hasLink ? '' : ' — COMING SOON'}</p>
               </div>
             </div>
             <div class="item-arrow">${hasLink ? '&#8594;' : '&#8212;'}</div>
@@ -714,8 +720,8 @@
           </div>
         </div>
         <div class="outfit-info-col">
-          <h1 class="outfit-title">${PAGE_SEO_TITLE}</h1>
-          <p class="outfit-desc">${PAGE_SEO_DESC}</p>
+          <h1 class="outfit-title">${UI_TITLE}</h1>
+          <p class="outfit-desc">${UI_DESC}</p>
           <div class="section-title">
             <span>DANH SÁCH MUA ĐỒ</span>
             <span>${d.items.length} MÓN</span>

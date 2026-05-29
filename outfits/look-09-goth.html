@@ -629,7 +629,14 @@
     const PAGE_SEO_TITLE = "Look #09 Goth Outfit: Tông Đen Gothic, Layer Cá Tính & Phụ Kiện Dark";
     const PAGE_SEO_DESC  = "Look #09 là goth outfit với tông đen, layer cá tính và phụ kiện dark aesthetic. Set này hợp chụp ảnh street style, đi chơi hoặc phối theo vibe gothic hằng ngày.";
     const PAGE_IMG_ALT   = "Look 09 goth outfit với áo, quần, giày và phụ kiện badgirl street style";
-    const PAGE_ITEMS     = [{"name": "Áo đen / layer gothic", "type": "Top item tạo nền dark aesthetic rõ ràng"}, {"name": "Quần hoặc chân váy phong cách goth", "type": "Bottom item giữ tổng thể tông đen và sắc nét"}, {"name": "Giày / boots gothic", "type": "Footwear giúp outfit nặng vibe hơn"}, {"name": "Phụ kiện gothic dark", "type": "Dây chuyền, belt, túi hoặc trang sức statement"}];
+    const UI_TITLE     = "OUTFIT DETAILS #9 – Goth";
+    const UI_DESC      = "Nhấn vào từng mục để xem chi tiết sản phẩm.";
+    const UI_ITEMS     = [
+      { name: "ÁO", type: "Top Item" },
+      { name: "QUẦN", type: "Bottom Item" },
+      { name: "GIÀY", type: "Footwear" },
+      { name: "PHỤ KIỆN", type: "Accessories" }
+    ];
     const outfitsData = window.outfits || (typeof outfits !== 'undefined' ? outfits : []);
     if (!window.outfits && outfitsData.length) window.outfits = outfitsData;
     const outfit     = outfitsData.find(o => o.id === OUTFIT_ID);
@@ -668,10 +675,9 @@
             `<div class="dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`
           ).join('')
         : '';
-
-      const itemsHTML = d.items.map((item, i) => {
+      const itemsHTML = d.items.map((item, idx) => {
+        const ui = UI_ITEMS[idx] || { name: item.name, type: item.type };
         const hasLink = item.link && item.link !== '#';
-        const seoItem = PAGE_ITEMS[i] || { name: item.name, type: item.type };
         return `
           <a href="${hasLink ? item.link : '#'}"
              ${hasLink ? 'target="_blank" rel="nofollow noopener"' : ''}
@@ -679,8 +685,8 @@
             <div class="item-left">
               <div class="item-icon">&#10022;</div>
               <div class="item-text">
-                <h3>${seoItem.name}</h3>
-                <p>${seoItem.type}${hasLink ? '' : ' — COMING SOON'}</p>
+                <h3>${ui.name}</h3>
+                <p>${ui.type}${hasLink ? '' : ' — COMING SOON'}</p>
               </div>
             </div>
             <div class="item-arrow">${hasLink ? '&#8594;' : '&#8212;'}</div>
@@ -712,8 +718,8 @@
           </div>
         </div>
         <div class="outfit-info-col">
-          <h1 class="outfit-title">${PAGE_SEO_TITLE}</h1>
-          <p class="outfit-desc">${PAGE_SEO_DESC}</p>
+          <h1 class="outfit-title">${UI_TITLE}</h1>
+          <p class="outfit-desc">${UI_DESC}</p>
           <div class="section-title">
             <span>DANH SÁCH MUA ĐỒ</span>
             <span>${d.items.length} MÓN</span>
