@@ -597,8 +597,9 @@
   <script src="../outfits.js?v=20260528-40-v2"></script>
 
   <script>
-    const OUTFIT_ID  = "look-31";
-    const outfit     = outfits.find(o => o.id === OUTFIT_ID);
+    const OUTFIT_ID   = "look-31";
+    const outfitsData = window.outfits || (typeof outfits !== 'undefined' ? outfits : []);
+    const outfit      = outfitsData.find(o => o.id === OUTFIT_ID);
     const mainEl     = document.getElementById('main-content');
     const staticEl   = document.getElementById('seo-static');
     let currentSlide = 0;
@@ -697,7 +698,7 @@
       mainEl.classList.add('ready');
 
       /* Related outfits */
-      const related = outfits
+      const related = outfitsData
         .filter(o => o.category === outfit.category && o.id !== outfit.id)
         .slice(0, 4);
 
@@ -753,9 +754,8 @@
           const app  = initializeApp(firebaseConfig);
           const auth = getAuth(app);
           const db   = getFirestore(app);
-          const _outfit = (typeof outfits !== 'undefined')
-            ? outfits.find(o => o.id === "look-31")
-            : null;
+          const outfitsData = window.outfits || (typeof outfits !== 'undefined' ? outfits : []);
+          const _outfit = outfitsData.find(o => o.id === "look-31") || null;
 
           onAuthStateChanged(auth, async user => {
             const btn = document.getElementById('btn-save');
