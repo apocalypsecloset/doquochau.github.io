@@ -623,29 +623,13 @@
     if (outfit && outfit.detail) {
       const d = outfit.detail;
 
-      const lookSeo = {
-        title: "Look #31 E-Girl Outfit: Áo Đen Ôm, Jeans Ống Rộng & Thắt Lưng Trắng",
-        desc:  "Look #31 mang vibe e-girl pha dark Y2K với áo thun đen ôm body, quần jeans ống rộng xám bạc, thắt lưng trắng và giày trắng. Set này hợp để đi cafe, đi chơi cuối tuần hoặc chụp ảnh street style ngoài phố. Dây chuyền thánh giá, túi vai sáng màu và form jeans baggy giúp tổng thể cá tính nhưng vẫn dễ mặc hằng ngày.",
-        alt:   "Look 31 e-girl outfit với áo thun đen ôm, quần jeans ống rộng xám bạc, thắt lưng trắng và giày trắng street style",
-        itemTypes: [
-          "Áo thun đen ôm body",
-          "Quần jeans ống rộng xám bạc",
-          "Giày trắng đế chunky",
-          "Thắt lưng trắng, dây chuyền thánh giá, túi vai sáng màu"
-        ]
-      };
-
-      d.title = lookSeo.title;
-      d.desc  = lookSeo.desc;
-      d.items = d.items.map((item, index) => ({
-        ...item,
-        type: lookSeo.itemTypes[index] || item.type
-      }));
+      /* imgAlt chỉ dùng cho alt text ảnh — không override UI title/desc/itemType */
+      const imgAlt = "Look 31 e-girl outfit với áo thun đen ôm, quần jeans ống rộng xám bạc, thắt lưng trắng và giày trắng street style";
 
       const imagesHTML = d.imgs.map((img, i) =>
         i === 0
-          ? `<img src="${img}" alt="${lookSeo.alt}" fetchpriority="high" decoding="async">`
-          : `<img src="${img}" alt="${lookSeo.alt}" loading="lazy" decoding="async">`
+          ? `<img src="${img}" alt="${imgAlt}" fetchpriority="high" decoding="async">`
+          : `<img src="${img}" alt="${imgAlt}" loading="lazy" decoding="async">`
       ).join('');
 
       const dotsHTML = d.imgs.length > 1
