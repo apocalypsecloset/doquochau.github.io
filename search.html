@@ -295,8 +295,15 @@
       .result-title { font-size: 20px; }
     }
   </style>
-</head>
+
+<style id="ac-a11y-skip-link">
+  .skip-link{position:absolute;left:12px;top:-80px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:Space Mono,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease;}
+  .skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px;}
+</style>
+
+<meta name="twitter:site" content="@apocalypse.closet"></head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
   <header>
     <a class="logo-wrap" href="/" aria-label="Apocalypse Closet Home">
       <img src="/Logo-Apocalypse-Closet.webp" width="44" height="44" alt="Apocalypse Closet logo" style="height:44px;width:auto;object-fit:contain;">
@@ -308,7 +315,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <div class="eyebrow">// Internal Search</div>
     <h1>Search<br><span>The Closet</span></h1>
 

@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet</title>
   <link rel="canonical" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="vi" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="vi-VN" href="https://apocalypsecloset.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://apocalypsecloset.com/" />
   
   <meta name="p:domain_verify" content="9f119494f51e0fb3070c74a60326a6da"/>
   <meta name="description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn.">
   
+  <meta property="og:locale" content="vi_VN" />
   <meta property="og:title" content="Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet" />
   <meta property="og:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn." />
   <meta property="og:image" content="https://apocalypsecloset.com/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp" />
+  <meta property="og:image:width" content="1086" />
+  <meta property="og:image:height" content="1448" />
   <meta property="og:url" content="https://apocalypsecloset.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +35,7 @@
   <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js">
+  <link rel="preload" as="script" href="outfits.js?v=20260528-40-home16-v4">
   <link rel="preload" as="font" href="oswald.woff2" type="font/woff2" crossorigin>
 
   
@@ -485,8 +491,15 @@
       document.head.appendChild(s);
     });
   </script>
-</head>
+
+<style id="ac-a11y-skip-link">
+  .skip-link{position:absolute;left:12px;top:-80px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:Space Mono,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease;}
+  .skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px;}
+</style>
+
+<meta name="twitter:site" content="@apocalypse.closet"></head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
   <header>
     <a class="logo-wrap" href="/">
@@ -524,7 +537,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
 
   <form id="search-bar" action="/search.html" method="get" role="search" aria-label="Tìm kiếm Apocalypse Closet">
     <input id="search-input" name="q" type="search" placeholder="TÌM OUTFIT, STYLE HOẶC MÃ SỐ (VD: 01, 12)...">
@@ -603,7 +616,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js" defer></script>
+  <script src="outfits.js?v=20260528-40-home16-v4" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -738,6 +751,7 @@
 
       const img = document.createElement('img');
       img.alt = `Badgirl outfit ${outfit.tag} — ${outfit.title} (${outfit.category})`;
+      img.setAttribute('loading', i < 4 ? 'eager' : 'lazy');
       img.decoding = i < 4 ? 'sync' : 'async';
       img.onload  = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
@@ -779,6 +793,16 @@
       return card;
     }
 
+    const DATA_VERSION = 'outfits-40-home16-20260528-v4';
+    try {
+      if (sessionStorage.getItem('ac_data_version') !== DATA_VERSION) {
+        sessionStorage.removeItem('ac_pool');
+        sessionStorage.removeItem('ac_last_batch');
+        sessionStorage.removeItem('savedOutfitOrder');
+        sessionStorage.setItem('ac_data_version', DATA_VERSION);
+      }
+    } catch {}
+
     const FIRST_BATCH = 4;
 
     window.renderAll = function(data = outfits) {
@@ -787,7 +811,7 @@
 
       grid.innerHTML = '';
       const counterEl = document.getElementById('counter');
-      const counterText = '100+ LOOKS · MỖI LẦN RELOAD MỘT BỘ MỚI';
+      const counterText = '+100 LOOKS - MỖI LẦN RELOAD MỘT BỘ MỚI';
       counterEl.textContent = counterText;
       counterEl.setAttribute('data-text', counterText);
 
@@ -822,9 +846,12 @@
       });
     };
 
-    const PAGE_SIZE = 16;
+    function getPageSize() {
+      return Math.min(16, Array.isArray(outfits) ? outfits.length : 16);
+    }
 
     function randomize() {
+      const PAGE_SIZE = getPageSize();
       const allIds = outfits.map(o => o.id);
 
       // Load pool còn lại (những look chưa được show)
@@ -855,8 +882,9 @@
       if (saved) {
         try {
           const order = JSON.parse(saved);
-          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean);
-          if (batch.length > 0) { renderAll(batch); return; }
+          const PAGE_SIZE = getPageSize();
+          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean).slice(0, PAGE_SIZE);
+          if (batch.length === PAGE_SIZE) { renderAll(batch); return; }
         } catch {}
       }
       randomize();
@@ -903,8 +931,17 @@
     }
 
     window._renderAllReady = true;
-    if (typeof outfits !== 'undefined') initGrid();
-    else document.addEventListener('DOMContentLoaded', initGrid);
+    if (typeof outfits !== 'undefined') {
+      initGrid();
+    } else {
+      window.addEventListener('load', () => {
+        if (typeof outfits !== 'undefined') initGrid();
+        else {
+          const grid = document.getElementById('outfit-grid');
+          if (grid) grid.innerHTML = '<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tải được dữ liệu outfit. Vui lòng refresh lại trang.</div>';
+        }
+      }, { once: true });
+    }
   </script>
 </body>
 </html>

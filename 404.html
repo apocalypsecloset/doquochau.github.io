@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 — Apocalypse Closet</title>
-  <meta name="description" content="Trang bạn tìm không tồn tại. Quay về Apocalypse Closet để khám phá các outfit dark wear, grunge và badgirl aesthetic.">
-  <meta name="robots" content="noindex">
+<link rel="canonical" href="https://apocalypsecloset.com/">
+<meta name="description" content="Trang bạn tìm không tồn tại. Quay về Apocalypse Closet để khám phá các outfit dark wear, grunge và badgirl aesthetic.">
+  
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -255,8 +256,15 @@
       main { padding: 40px 20px; }
     }
   </style>
-</head>
+
+<style id="ac-a11y-skip-link">
+  .skip-link{position:absolute;left:12px;top:-80px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:Space Mono,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease;}
+  .skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px;}
+</style>
+
+<meta name="robots" content="noindex, follow"></head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
   <header>
     <a class="logo-wrap" href="/">
@@ -268,7 +276,7 @@
     <a class="btn" href="/">← VỀ TRANG CHỦ</a>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <div class="bg-text">404</div>
     <div class="content">
       <div class="error-label">// Error 404 — Page not found</div>
