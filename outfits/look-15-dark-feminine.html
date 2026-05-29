@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
 
   <!-- ═══ SEO TĨNH ══════════════════════════════════════════════ -->
   <title>Look #15 Dark Feminine Outfit: Set Tông Tối, Silhouette Quyến Rũ &amp; Phụ Kiện Statement | Apocalypse Closet</title>
@@ -311,6 +312,9 @@
     .breadcrumb a:hover { color: var(--white); }
     .breadcrumb span { color: var(--white); text-transform: uppercase; }
     .breadcrumb .sep { color: #333; }
+
+    html.js .seo-static { display: none !important; }
+    html.no-js .seo-static { display: block; }
 
     .seo-static {
       padding: 48px 32px;
@@ -722,7 +726,7 @@
       `;
 
       /* FIX DOUBLE H1: xoá hẳn static node khỏi DOM, không để lại H1 thứ 2 */
-      staticEl.remove();
+      if (staticEl) staticEl.remove();
       mainEl.classList.add('ready');
 
       /* Related outfits */
