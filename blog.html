@@ -213,8 +213,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://apocalypsecloset.com/images/og/blog-og.webp">
-<meta name="twitter:site" content="@apocalypse.closet"></head>
+<meta name="twitter:image" content="https://apocalypsecloset.com/images/og/blog-og.webp"></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <span id="main" tabindex="-1"></span>
@@ -519,70 +518,68 @@
       }
     ];
 
-    let allPosts = POSTS;
+    const allPosts = POSTS;
     let activeTag = 'all';
 
     const urlTag = new URLSearchParams(window.location.search).get('tag');
     if (urlTag) activeTag = urlTag;
 
+    hydrateStaticCards();
     buildFilterBar();
-    renderGrid(activeTag);
+    filterPosts(activeTag);
+
+    function hydrateStaticCards() {
+      const postMap = new Map(allPosts.map(post => [post.slug, post]));
+      document.querySelectorAll('#post-grid .post-card').forEach(card => {
+        const href = card.getAttribute('href') || '';
+        const slug = href.split('/').pop().replace(/\.html(?:[?#].*)?$/, '');
+        const post = postMap.get(slug);
+        if (post) {
+          card.dataset.tags = post.tags.join(' ');
+        }
+      });
+    }
 
     function buildFilterBar() {
       const bar = document.getElementById('filter-bar');
-      const tags = [...new Set(allPosts.flatMap(p => p.tags))];
+      if (!bar) return;
+      const tags = [...new Set(allPosts.flatMap(post => post.tags))];
       tags.forEach(tag => {
+        if ([...bar.querySelectorAll('.filter-btn')].some(btn => btn.dataset.tag === tag)) return;
         const btn = document.createElement('button');
-        btn.className = 'filter-btn' + (tag === activeTag ? ' active' : '');
+        btn.className = 'filter-btn';
         btn.dataset.tag = tag;
         btn.textContent = tag;
         btn.onclick = () => filterPosts(tag);
         bar.appendChild(btn);
       });
-      if (activeTag !== 'all') {
-        bar.querySelector('[data-tag="all"]').classList.remove('active');
-      }
     }
 
     function filterPosts(tag) {
-      activeTag = tag;
-      document.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.tag === tag);
+      activeTag = tag || 'all';
+      const cards = [...document.querySelectorAll('#post-grid .post-card')];
+      let visibleCount = 0;
+
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tag === activeTag);
       });
-      renderGrid(tag);
-    }
 
-    function renderGrid(tag) {
-      const filtered = tag === 'all' ? allPosts : allPosts.filter(p => p.tags.includes(tag));
-      const grid = document.getElementById('post-grid');
-      if (filtered.length === 0) {
-        grid.innerHTML = '<div class="state-screen"><p>Chưa có bài nào với tag này.</p></div>';
-        return;
+      cards.forEach(card => {
+        const tags = (card.dataset.tags || '').split(' ');
+        const show = activeTag === 'all' || tags.includes(activeTag);
+        card.hidden = !show;
+        if (show) visibleCount += 1;
+      });
+
+      let emptyState = document.getElementById('post-empty-state');
+      if (!emptyState) {
+        emptyState = document.createElement('div');
+        emptyState.id = 'post-empty-state';
+        emptyState.className = 'state-screen';
+        emptyState.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
+        document.getElementById('post-grid')?.appendChild(emptyState);
       }
-      grid.innerHTML = filtered.map((post, i) => `
-        <a class="post-card" href="blog/${post.slug}.html">
-          <div class="card-cover">
-            <img src="${post.cover}" alt="${escapeHTML(post.coverAlt || '')}"
-                 loading="${i < 4 ? 'eager' : 'lazy'}">
-          </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span>${escapeHTML(post.category)}</span>
-              <span class="dot"></span>
-              <span>${escapeHTML(post.date)}</span>
-            </div>
-            <h2 class="card-title">${escapeHTML(post.shortTitle)}</h2>
-            <p class="card-desc">${escapeHTML(post.description)}</p>
-            <span class="card-link">Read more →</span>
-          </div>
-        </a>
-      `).join('');
-    }
-
-    function escapeHTML(str) {
-      return String(str)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      emptyState.hidden = visibleCount !== 0;
     }
   </script>
 </body>
