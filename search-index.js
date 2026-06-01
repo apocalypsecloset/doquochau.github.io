@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "Punk Makeup & Dark Aesthetic: Trang Điểm Đúng Cách Cho Từng Phong Cách",
+    "url": "/blog/punk-makeup-dark-aesthetic.html",
+    "type": "Journal",
+    "description": "Punk makeup và dark aesthetic: hướng dẫn trang điểm cho goth, egirl, soft grunge và badgirl. Eyeliner, smoky eye, lip tối và cách giữ makeup cả ngày.",
+    "image": "/images/badgirl-outfits/badgirl-goth-look-09-full-outfit.webp",
+    "keywords": "punk makeup dark aesthetic makeup goth makeup egirl makeup smoky eye trang điểm dark badgirl makeup eyeliner lip tối lip đen trang điểm goth trang điểm egirl dark aesthetic beauty guide"
+  },
+  {
     "title": "Phối Đồ Với Quần Jeans Ống Rộng Nữ: 7 Công Thức Dark Y2K & Badgirl",
     "url": "/blog/phoi-do-voi-quan-jeans-ong-rong-nu.html",
     "type": "Journal",
