@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "Phối Đồ Alt Fashion Cho Người Mới: 5 Bước Bắt Đầu Không Bị Lạc",
+    "url": "/blog/phoi-do-alt-fashion-cho-nguoi-moi.html",
+    "type": "Journal",
+    "description": "Chưa biết bắt đầu từ đâu với alt fashion? Hướng dẫn 5 bước thực chiến từ badgirl, egirl, soft grunge đến dark feminine — không cần vứt cả tủ đồ cũ.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-40-full-outfit.webp",
+    "keywords": "alt fashion là gì bắt đầu alt fashion phối đồ alt badgirl outfit egirl wardrobe dark feminine soft grunge goth aesthetic anchor piece key piece layering alt fashion cho người mới style guide"
+  },
+  {
     "title": "Punk Makeup & Dark Aesthetic: Trang Điểm Đúng Cách Cho Từng Phong Cách",
     "url": "/blog/punk-makeup-dark-aesthetic.html",
     "type": "Journal",
