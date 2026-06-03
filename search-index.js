@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+      "title": "Dark Feminine Outfit: 7 Công Thức Phối Đồ Quyến Rũ Nhưng Không Phô",
+      "url": "/blog/dark-feminine-outfit-phoi-do.html",
+      "type": "Journal",
+      "description": "Dark feminine outfit cho nữ: 7 công thức phối đồ đen quyến rũ nhưng không phô, từ corset, váy đen, blazer, boots đến phụ kiện bạc.",
+      "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-36-full-outfit.webp",
+      "keywords": "dark feminine outfit phối đồ dark feminine dark feminine style outfit đen nữ badgirl outfit phối đồ đen nữ corset blazer boots mesh layer phụ kiện bạc all black outfit nữ"
+  },
+  {
     "title": "Phối Đồ Alt Fashion Cho Người Mới: 5 Bước Bắt Đầu Không Bị Lạc",
     "url": "/blog/phoi-do-alt-fashion-cho-nguoi-moi.html",
     "type": "Journal",
