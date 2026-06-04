@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+      "title": "Phối Đồ Cho Người Gầy: 6 Công Thức Alt Fashion Không Bị Mất Dáng",
+      "url": "/blog/phoi-do-cho-nguoi-gay-alt-fashion.html",
+      "type": "Journal",
+      "description": "Phối đồ cho người gầy theo phong cách alt fashion: 6 công thức từ dark feminine, egirl, baddie streetwear đến goth giúp tạo dáng, không mất đường nét.",
+      "image": "/images/badgirl-outfits/badgirl-e-girl-look-33-full-outfit.webp",
+      "keywords": "phối đồ cho người gầy phối đồ người gầy nữ alt fashion người gầy dark feminine người gầy egirl outfit người gầy badgirl outfit người gầy goth outfit người gầy punk outfit người gầy soft grunge người gầy corset người gầy oversized người gầy layer alt fashion baddie streetwear cargo pants platform boots"
+  },
+  {
       "title": "Dark Feminine Outfit: 7 Công Thức Phối Đồ Quyến Rũ Nhưng Không Phô",
       "url": "/blog/dark-feminine-outfit-phoi-do.html",
       "type": "Journal",

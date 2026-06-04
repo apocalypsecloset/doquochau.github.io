@@ -12,7 +12,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://apocalypsecloset.com/blog.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -606,6 +606,19 @@
       <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-dark-feminine-look-36-full-outfit.webp</image:loc>
       <image:title>Dark Feminine Outfit: 7 Công Thức Phối Đồ Quyến Rũ Nhưng Không Phô</image:title>
       <image:caption>Dark feminine outfit với set đen quyến rũ, boots dark và phụ kiện statement | Apocalypse Closet</image:caption>
+    </image:image>
+  </url>
+
+
+  <url>
+    <loc>https://apocalypsecloset.com/blog/phoi-do-cho-nguoi-gay-alt-fashion.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-e-girl-look-33-full-outfit.webp</image:loc>
+      <image:title>Phối Đồ Cho Người Gầy: 6 Công Thức Alt Fashion Không Bị Mất Dáng</image:title>
+      <image:caption>Phối đồ cho người gầy theo phong cách egirl alt fashion với áo trễ vai đỏ đen, quần denim trắng rộng và mũ đỏ tạo dáng cân đối | Apocalypse Closet</image:caption>
     </image:image>
   </url>
 
