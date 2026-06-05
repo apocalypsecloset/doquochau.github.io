@@ -721,7 +721,6 @@
       const total = cards.filter(cardMatches).length;
 
       const wrap = document.getElementById('load-more-wrap');
-      console.log('[loadmore] shown=' + shown + ' total=' + total + ' hide=' + (shown >= total));
       if (wrap) wrap.hidden = shown >= total;
 
       let es = document.getElementById('post-empty-state');
@@ -732,7 +731,7 @@
         es.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
         document.getElementById('post-grid')?.appendChild(es);
       }
-      es.hidden = total !== 0;
+      es.hidden = total !== 0; // hide message when there ARE posts
     }
   </script>
 </body>
