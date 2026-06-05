@@ -477,7 +477,7 @@
     </a>
   </div>
 
-  <div id="load-more-wrap" hidden style="text-align:center;padding:0 32px 72px;">
+  <div id="load-more-wrap" style="text-align:center;padding:0 32px 72px;">
     <button id="load-more-btn" class="filter-btn" style="padding:0 32px;height:44px;font-size:11px;letter-spacing:.15em;">
       Load more
     </button>
@@ -721,6 +721,7 @@
       const total = cards.filter(cardMatches).length;
 
       const wrap = document.getElementById('load-more-wrap');
+      console.log('[loadmore] shown=' + shown + ' total=' + total + ' hide=' + (shown >= total));
       if (wrap) wrap.hidden = shown >= total;
 
       let es = document.getElementById('post-empty-state');
