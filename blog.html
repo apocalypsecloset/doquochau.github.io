@@ -90,6 +90,7 @@
     }
 
     /* CARD */
+    .post-card[hidden] { display: none !important; }
     .post-card {
       background: var(--black); display: flex; flex-direction: column;
       cursor: pointer; transition: background 0.15s;
@@ -501,9 +502,9 @@
         es.id = 'post-empty-state';
         es.className = 'state-screen';
         es.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
-        document.getElementById('post-grid')?.appendChild(es);
+        document.body.appendChild(es);
       }
-      es.hidden = matched.length !== 0;
+      es.style.display = matched.length === 0 ? 'block' : 'none';
     }
   </script>
 </body>
