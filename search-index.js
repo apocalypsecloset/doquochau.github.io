@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+      "title": "Phụ Kiện Alt Fashion: 8 Món Không Thể Thiếu Khi Bắt Đầu",
+      "url": "/blog/phu-kien-alt-fashion-thiet-yeu.html",
+      "type": "Journal",
+      "description": "8 phụ kiện alt fashion không thể thiếu cho người mới bắt đầu: chain necklace, belt đinh tán, platform boots, kính đen, túi mini, hair clip và nhiều hơn nữa.",
+      "image": "/images/badgirl-outfits/badgirl-goth-look-24-full-outfit.webp",
+      "keywords": "phụ kiện alt fashion accessories alt fashion phụ kiện badgirl phụ kiện dark feminine chain necklace belt đinh tán chain belt platform boots combat boots kính mắt tối màu túi mini hair clip hair accessories rings bracelets layered jewelry phụ kiện egirl phụ kiện goth phụ kiện punk grunge"
+  },
+  {
       "title": "Phối Đồ Cho Người Gầy: 6 Công Thức Alt Fashion Không Bị Mất Dáng",
       "url": "/blog/phoi-do-cho-nguoi-gay-alt-fashion.html",
       "type": "Journal",
