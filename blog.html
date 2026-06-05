@@ -236,7 +236,19 @@
 
   <div class="post-grid" id="post-grid">
     <a class="post-card" href="blog/phu-kien-alt-fashion-thiet-yeu.html">
+      <div class="card-cover">
+        <img src="/images/badgirl-outfits/badgirl-goth-look-24-full-outfit.webp" alt="Phụ kiện alt fashion goth với platform boots và layered accessories tối màu" loading="eager">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span>Style Guide</span>
+          <span class="dot"></span>
+          <span>05 Jun 2026</span>
+        </div>
         <h2 class="card-title">Phụ Kiện Alt Fashion: 8 Món Không Thể Thiếu</h2>
+        <p class="card-excerpt">Chain necklace, belt đinh tán, platform boots, kính narrow frame — 8 phụ kiện có hiệu quả cao nhất khi build wardrobe alt từ đầu, không cần tốn nhiều tiền.</p>
+        <span class="card-link">Đọc thêm →</span>
+      </div>
     </a>
         <a class="post-card" href="blog/phoi-do-cho-nguoi-gay-alt-fashion.html">
       <div class="card-cover">
@@ -465,10 +477,26 @@
     </a>
   </div>
 
+  <div id="load-more-wrap" style="text-align:center;padding:0 32px 72px;">
+    <button id="load-more-btn" class="filter-btn" style="padding:0 32px;height:44px;font-size:11px;letter-spacing:.15em;">
+      Load more
+    </button>
+  </div>
+
   <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
 
 <script>
     const POSTS = [
+      {
+        slug: 'phu-kien-alt-fashion-thiet-yeu',
+        shortTitle: 'Phụ Kiện Alt Fashion: 8 Món Không Thể Thiếu',
+        category: 'Style Guide',
+        date: '05 Jun 2026',
+        tags: ['#AltFashion','#Accessories','#StyleGuide'],
+        cover: '/images/badgirl-outfits/badgirl-goth-look-24-full-outfit.webp',
+        coverAlt: 'Phụ kiện alt fashion goth với platform boots và layered accessories tối màu',
+        description: '8 phụ kiện alt fashion không thể thiếu khi bắt đầu: chain necklace, belt đinh tán, platform boots, kính đen, túi mini, hair clip và nhiều hơn nữa.'
+      },
       {
         slug: 'dark-feminine-outfit-phoi-do',
         shortTitle: 'Dark Feminine Outfit',
@@ -601,8 +629,11 @@
       }
     ];
 
+    const BATCH = 12;
+    const STEP  = 6;
     const allPosts = POSTS;
     let activeTag = 'all';
+    let visibleLimit = BATCH;
 
     const urlTag = new URLSearchParams(window.location.search).get('tag');
     if (urlTag) activeTag = urlTag;
@@ -611,24 +642,27 @@
     buildFilterBar();
     filterPosts(activeTag);
 
+    document.getElementById('load-more-btn').addEventListener('click', () => {
+      visibleLimit += STEP;
+      applyVisibility();
+    });
+
     function hydrateStaticCards() {
       const postMap = new Map(allPosts.map(post => [post.slug, post]));
       document.querySelectorAll('#post-grid .post-card').forEach(card => {
         const href = card.getAttribute('href') || '';
         const slug = href.split('/').pop().replace(/\.html(?:[?#].*)?$/, '');
         const post = postMap.get(slug);
-        if (post) {
-          card.dataset.tags = post.tags.join(' ');
-        }
+        if (post) card.dataset.tags = post.tags.join(' ');
       });
     }
 
     function buildFilterBar() {
       const bar = document.getElementById('filter-bar');
       if (!bar) return;
-      const tags = [...new Set(allPosts.flatMap(post => post.tags))];
+      const tags = [...new Set(allPosts.flatMap(p => p.tags))];
       tags.forEach(tag => {
-        if ([...bar.querySelectorAll('.filter-btn')].some(btn => btn.dataset.tag === tag)) return;
+        if ([...bar.querySelectorAll('.filter-btn')].some(b => b.dataset.tag === tag)) return;
         const btn = document.createElement('button');
         btn.className = 'filter-btn';
         btn.dataset.tag = tag;
@@ -640,29 +674,41 @@
 
     function filterPosts(tag) {
       activeTag = tag || 'all';
-      const cards = [...document.querySelectorAll('#post-grid .post-card')];
-      let visibleCount = 0;
-
+      visibleLimit = BATCH;
       document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tag === activeTag);
       });
+      applyVisibility();
+    }
+
+    function applyVisibility() {
+      const cards = [...document.querySelectorAll('#post-grid .post-card')];
+      let shown = 0;
 
       cards.forEach(card => {
-        const tags = (card.dataset.tags || '').split(' ');
-        const show = activeTag === 'all' || tags.includes(activeTag);
-        card.hidden = !show;
-        if (show) visibleCount += 1;
+        const tags  = (card.dataset.tags || '').split(' ');
+        const match = activeTag === 'all' || tags.includes(activeTag);
+        if (match && shown < visibleLimit) { card.hidden = false; shown++; }
+        else { card.hidden = true; }
       });
 
-      let emptyState = document.getElementById('post-empty-state');
-      if (!emptyState) {
-        emptyState = document.createElement('div');
-        emptyState.id = 'post-empty-state';
-        emptyState.className = 'state-screen';
-        emptyState.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
-        document.getElementById('post-grid')?.appendChild(emptyState);
+      const total = cards.filter(card => {
+        const tags = (card.dataset.tags || '').split(' ');
+        return activeTag === 'all' || tags.includes(activeTag);
+      }).length;
+
+      const wrap = document.getElementById('load-more-wrap');
+      if (wrap) wrap.hidden = shown >= total;
+
+      let es = document.getElementById('post-empty-state');
+      if (!es) {
+        es = document.createElement('div');
+        es.id = 'post-empty-state';
+        es.className = 'state-screen';
+        es.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
+        document.getElementById('post-grid')?.appendChild(es);
       }
-      emptyState.hidden = visibleCount !== 0;
+      es.hidden = total !== 0;
     }
   </script>
 </body>
