@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+      "title": "Outfit Đi Chơi Đêm: 7 Công Thức Badgirl Không Sợ Bị Nhìn",
+      "url": "/blog/outfit-di-choi-dem-badgirl.html",
+      "type": "Journal",
+      "description": "Outfit đi chơi đêm badgirl cho nữ: 7 công thức từ baddie streetwear, dark feminine đến goth — đủ cá tính để được nhìn, đủ thực tế để đi cả đêm.",
+      "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp",
+      "keywords": "outfit đi chơi đêm outfit đêm nữ đồ đi chơi đêm cá tính badgirl outfit đêm night outfit nữ outfit đi bar nữ baddie outfit đêm dark feminine đêm goth đêm áo khoác da đêm platform boots đêm baddie streetwear đêm egirl đêm"
+  },
+  {
       "title": "Phụ Kiện Alt Fashion: 8 Món Không Thể Thiếu Khi Bắt Đầu",
       "url": "/blog/phu-kien-alt-fashion-thiet-yeu.html",
       "type": "Journal",
