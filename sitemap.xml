@@ -12,7 +12,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://apocalypsecloset.com/blog.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -643,6 +643,19 @@
       <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp</image:loc>
       <image:title>Outfit Đi Chơi Đêm: 7 Công Thức Badgirl Không Sợ Bị Nhìn</image:title>
       <image:caption>Outfit đi chơi đêm badgirl với áo khoác da đen, crop top, thắt lưng đỏ và sneaker đỏ — đủ cá tính cho cả đêm | Apocalypse Closet</image:caption>
+    </image:image>
+  </url>
+
+
+  <url>
+    <loc>https://apocalypsecloset.com/blog/phoi-do-voi-boots-da-nu.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-baddie-streetwear-look-21-full-outfit.webp</image:loc>
+      <image:title>Phối Đồ Với Boots Da Nữ: 7 Công Thức Alt Fashion</image:title>
+      <image:caption>Phối đồ với boots da nữ theo phong cách baddie streetwear với quần ống rộng, áo oversized tối màu và platform boots da — Apocalypse Closet</image:caption>
     </image:image>
   </url>
 

@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+      "title": "Phối Đồ Với Boots Da Nữ: 7 Công Thức Alt Fashion Không Bị Sai",
+      "url": "/blog/phoi-do-voi-boots-da-nu.html",
+      "type": "Journal",
+      "description": "Phối đồ với boots da nữ đúng cách: 7 công thức từ dark feminine, punk, baddie streetwear đến goth — boots da không khó mặc nếu biết công thức.",
+      "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-21-full-outfit.webp",
+      "keywords": "phối đồ với boots da nữ boots da nữ mặc với gì boots da cổ cao nữ combat boots nữ phối đồ ankle boots da nữ platform boots da boots da đen nữ dark feminine punk goth baddie streetwear"
+  },
+  {
       "title": "Outfit Đi Chơi Đêm: 7 Công Thức Badgirl Không Sợ Bị Nhìn",
       "url": "/blog/outfit-di-choi-dem-badgirl.html",
       "type": "Journal",
