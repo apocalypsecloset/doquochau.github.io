@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Áo Khoác Da Nữ: 7 Công Thức Alt Fashion Không Bị Sai",
+  "url": "/blog/phoi-do-voi-ao-khoac-da-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với áo khoác da nữ đúng cách: 7 công thức từ dark feminine, punk, baddie streetwear đến goth — áo khoác da không khó mặc nếu biết công thức.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+  "keywords": "phối đồ với áo khoác da nữ áo khoác da nữ mặc với gì leather jacket nữ áo da nữ phối đồ jacket da nữ alt fashion áo khoác da đen nữ moto jacket nữ cropped leather jacket duster coat da áo khoác da ngắn nữ dark feminine punk goth baddie streetwear egirl"
+},
+  {
       "title": "Phối Đồ Với Boots Da Nữ: 7 Công Thức Alt Fashion Không Bị Sai",
       "url": "/blog/phoi-do-voi-boots-da-nu.html",
       "type": "Journal",
