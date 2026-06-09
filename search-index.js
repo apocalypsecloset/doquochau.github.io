@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Váy Ngắn Nữ Theo Phong Cách Alt Fashion",
+  "url": "/blog/phoi-do-voi-vay-ngan-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với váy ngắn nữ theo phong cách alt fashion: từ mini skirt egirl, plaid skirt punk đến satin slip dress dark feminine — cách chọn và mặc cho từng aesthetic.",
+  "image": "/images/badgirl-outfits/badgirl-e-girl-look-35-full-outfit.webp",
+  "keywords": "phối đồ với váy ngắn nữ mini skirt phối đồ váy ngắn mặc với gì plaid skirt phối đồ váy ngắn dark feminine mini skirt egirl váy ngắn alt fashion váy ngắn boots phối đồ váy ngắn cá tính slip dress ngắn satin mini skirt punk grunge"
+},
+  {
   "title": "Phối Đồ Với Áo Khoác Da Nữ: 7 Công Thức Alt Fashion Không Bị Sai",
   "url": "/blog/phoi-do-voi-ao-khoac-da-nu.html",
   "type": "Journal",
