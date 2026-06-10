@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Cách Phối Đồ Layering Nữ Theo Phong Cách Alt Fashion",
+  "url": "/blog/phoi-do-layering-nu.html",
+  "type": "Journal",
+  "description": "Cách phối đồ layering nữ theo phong cách alt fashion: công thức layer từ dark feminine, egirl, goth đến punk grunge — không nặng nề, không mất dáng, không bị loạn.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+  "keywords": "cách phối đồ layer nữ phối đồ layering nữ layer alt fashion cách mặc nhiều lớp không bị nặng layering dark feminine layering egirl phối đồ layer mùa lạnh áo khoác layer layering goth punk grunge layering sheer mesh layer texture mix layer outfit nhiều lớp alt fashion layer công thức"
+},
+  {
   "title": "Phối Đồ Với Váy Ngắn Nữ Theo Phong Cách Alt Fashion",
   "url": "/blog/phoi-do-voi-vay-ngan-nu.html",
   "type": "Journal",
