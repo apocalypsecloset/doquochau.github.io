@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Quần Short Nữ Theo Phong Cách Alt Fashion",
+  "url": "/blog/phoi-do-voi-quan-short-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với quần short nữ theo phong cách alt fashion: 7 công thức từ baddie streetwear, egirl đến dark feminine — không bị cute quá, không bị đơn điệu, không lạc phong cách.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp",
+  "keywords": "phối đồ với quần short nữ quần short nữ mặc với gì quần short alt fashion baddie streetwear quần short cargo short nữ phối đồ quần short cá tính quần short đen nữ denim short nữ phối đồ biker short phối đồ quần short dark feminine quần short egirl công thức phối đồ quần short"
+},
+  {
   "title": "Cách Phối Đồ Layering Nữ Theo Phong Cách Alt Fashion",
   "url": "/blog/phoi-do-layering-nu.html",
   "type": "Journal",
