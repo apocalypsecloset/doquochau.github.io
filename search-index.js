@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Áo Thun Nữ Theo Phong Cách Alt Fashion",
+  "url": "/blog/phoi-do-voi-ao-thun-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với áo thun nữ theo phong cách alt fashion: từ graphic tee badgirl, band tee punk đến baby tee egirl — cách nâng một chiếc áo thun đơn giản lên thành outfit có thái độ.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp",
+  "keywords": "phối đồ với áo thun nữ áo thun nữ mặc với gì graphic tee phối đồ band tee phối đồ baby tee alt fashion áo thun đen nữ phối đồ crop tee badgirl áo thun cá tính nữ áo thun dark feminine áo thun egirl áo thun punk grunge áo thun oversized nữ band tee punk phối đồ graphic tee alt fashion"
+},
+  {
   "title": "Phối Đồ Với Quần Short Nữ Theo Phong Cách Alt Fashion",
   "url": "/blog/phoi-do-voi-quan-short-nu.html",
   "type": "Journal",
