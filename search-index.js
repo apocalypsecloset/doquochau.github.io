@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Corset Top Phối Đồ Nữ: Từ Dark Feminine Đến Everyday Look",
+  "url": "/blog/phoi-do-voi-corset-top-nu.html",
+  "type": "Journal",
+  "description": "Corset top phối đồ nữ đúng cách: từ dark feminine, baddie streetwear đến everyday alt look — không gồng, không sai aesthetic, chỉ cần biết logic phía sau.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+  "keywords": "corset top phối đồ nữ mặc corset với gì corset phối đồ corset dark feminine corset baddie corset over shirt corset mini skirt corset everyday look cách mặc corset corset alt fashion corset outfit nữ corset layering"
+},
+  {
   "title": "Phối Đồ Với Áo Thun Nữ Theo Phong Cách Alt Fashion",
   "url": "/blog/phoi-do-voi-ao-thun-nu.html",
   "type": "Journal",
