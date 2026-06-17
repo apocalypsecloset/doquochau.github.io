@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Xây Tủ Đồ Dark Aesthetic Từ Đầu: Không Phải Mua Nhiều, Mà Mua Đúng",
+  "url": "/blog/xay-tu-do-dark-aesthetic.html",
+  "type": "Journal",
+  "description": "Xây tủ đồ dark aesthetic không phải về việc mua nhiều đồ đen — mà về việc hiểu mình đang build cái gì, mua đúng thứ tự, và không lãng phí tiền vào những item sai hướng.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-15-full-outfit.webp",
+  "keywords": "tủ đồ dark aesthetic capsule wardrobe tối màu xây tủ đồ alt fashion dark aesthetic wardrobe mua đồ dark aesthetic thrift alt fashion boots dark aesthetic phụ kiện dark aesthetic"
+},
+  {
   "title": "Corset Top Phối Đồ Nữ: Từ Dark Feminine Đến Everyday Look",
   "url": "/blog/phoi-do-voi-corset-top-nu.html",
   "type": "Journal",
