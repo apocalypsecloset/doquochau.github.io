@@ -1,5 +1,21 @@
 window.searchIndex = [
   {
+  "title": "Nhuộm Tóc Dark Aesthetic: Chọn Màu, Giữ Màu Và Những Gì Tiệm Tóc Không Nói",
+  "url": "/blog/nhuom-toc-dark-aesthetic.html",
+  "type": "Journal",
+  "description": "Từ đen tuyền đến burgundy sâu — nhuộm tóc dark aesthetic không chỉ là chọn màu. Tone lạnh hay ấm, tẩy hay không, giữ màu đúng cách và biết khi nào không cần ra tiệm.",
+  "image": "/images/badgirl-outfits/badgirl-goth-look-16-full-outfit.webp",
+  "keywords": "nhuộm tóc dark aesthetic màu tóc dark aesthetic tóc đen dark aesthetic màu tóc goth tóc alt fashion nhuộm tóc cho người da ngăm"
+},
+  {
+  "title": "Phối Đồ Grunge Nữ: Vải Nặng, Layer Chồng Layer Và Thái Độ Không Xin Phép",
+  "url": "/blog/phoi-do-grunge-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ grunge nữ không phải về mặc đồ cũ — mà về vải nặng, màu đậm và layering đúng cách. Từ flannel đến combat boots, cách xây outfit grunge có attitude.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-06-full-outfit.webp",
+  "keywords": "phối đồ grunge nữ grunge outfit nữ phong cách grunge dark aesthetic outfit alt fashion grunge grunge aesthetic"
+},
+  {
   "title": "Xây Tủ Đồ Dark Aesthetic Từ Đầu: Không Phải Mua Nhiều, Mà Mua Đúng",
   "url": "/blog/xay-tu-do-dark-aesthetic.html",
   "type": "Journal",
