@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Quần Da Nữ: 7 Công Thức Alt Fashion Không Bị Sến",
+  "url": "/blog/phoi-do-voi-quan-da-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với quần da nữ đúng cách: 7 công thức từ dark feminine, goth, baddie streetwear đến punk — quần da không sến, không quá tay nếu biết công thức.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-19-full-outfit.webp",
+  "keywords": "phối đồ với quần da nữ quần da nữ mặc với gì quần da nữ phối đồ leather pants nữ quần giả da nữ phối đồ quần da bóng nữ phối đồ quần da nữ alt fashion"
+},
+  {
   "title": "Nhuộm Tóc Dark Aesthetic: Chọn Màu, Giữ Màu Và Những Gì Tiệm Tóc Không Nói",
   "url": "/blog/nhuom-toc-dark-aesthetic.html",
   "type": "Journal",
