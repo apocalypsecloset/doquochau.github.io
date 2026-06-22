@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Phối Đồ Với Áo Crop Top Nữ: 7 Công Thức Để Không Chỉ Là Khoe Bụng",
+  "url": "/blog/phoi-do-voi-ao-crop-top-nu.html",
+  "type": "Journal",
+  "description": "Phối đồ với áo crop top nữ đúng cách: 7 công thức từ baddie streetwear, dark feminine đến layering mùa lạnh — crop top không chỉ để khoe bụng nếu biết phối đúng tỷ lệ.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
+  "keywords": "phối đồ với áo crop top nữ áo crop top nữ mặc với gì crop top nữ phối đồ crop top alt fashion phối đồ crop top dark aesthetic crop top mùa lạnh mặc với gì"
+},
+  {
   "title": "Phối Đồ Với Quần Da Nữ: 7 Công Thức Alt Fashion Không Bị Sến",
   "url": "/blog/phoi-do-voi-quan-da-nu.html",
   "type": "Journal",
