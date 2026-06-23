@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Cách Bảo Quản Đồ Da Nữ: Áo Khoác, Quần Và Boots Không Bị Nứt Hay Phai Màu",
+  "url": "/blog/cach-bao-quan-do-da-nu.html",
+  "type": "Journal",
+  "description": "Cách bảo quản đồ da nữ đúng cách — từ áo khoác, quần đến boots da: vệ sinh, cất giữ, xử lý nứt, phai màu và mùi ẩm để đồ da bền lâu theo thời gian.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-10-full-outfit.webp",
+  "keywords": "cách bảo quản đồ da nữ bảo quản áo khoác da cách giặt quần da áo da bị nứt phải làm sao bảo quản boots da cách vệ sinh đồ da đồ da bị mùi ẩm"
+},
+  {
   "title": "Phối Đồ Với Áo Crop Top Nữ: 7 Công Thức Để Không Chỉ Là Khoe Bụng",
   "url": "/blog/phoi-do-voi-ao-crop-top-nu.html",
   "type": "Journal",
