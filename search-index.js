@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Cách Giặt Đồ Đen Không Bị Phai Màu Hay Bạc Màu Theo Thời Gian",
+  "url": "/blog/cach-giat-do-den-khong-phai-mau.html",
+  "type": "Journal",
+  "description": "Cách giặt đồ đen không bị phai màu hay bạc màu — từ chọn nước giặt, nhiệt độ nước, cách phơi đến là ủi đúng cách, để tủ đồ toàn màu đen luôn đen sâu như ngày đầu.",
+  "image": "/images/badgirl-outfits/badgirl-goth-look-32-full-outfit.webp",
+  "keywords": "cách giặt đồ đen không phai màu áo đen bị bạc màu làm sao cách giữ màu đen quần áo giặt quần áo đen đúng cách đồ đen ra màu khi giặt áo thun đen bị bạc màu"
+},
+  {
   "title": "Cách Bảo Quản Đồ Da Nữ: Áo Khoác, Quần Và Boots Không Bị Nứt Hay Phai Màu",
   "url": "/blog/cach-bao-quan-do-da-nu.html",
   "type": "Journal",
