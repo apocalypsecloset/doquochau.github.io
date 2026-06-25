@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Cách Chụp Ảnh OOTD Đẹp Bằng Điện Thoại: Ánh Sáng, Góc Chụp Và Chỉnh Ảnh",
+  "url": "/blog/cach-chup-anh-ootd-dep-bang-dien-thoai.html",
+  "type": "Journal",
+  "description": "Cách chụp ảnh OOTD đẹp bằng điện thoại — ánh sáng, góc chụp, setting camera, tripod và app chỉnh ảnh tone dark aesthetic, không cần máy ảnh xịn hay học chụp ảnh.",
+  "image": "/images/badgirl-outfits/badgirl-e-girl-look-31-full-outfit.webp",
+  "keywords": "cách chụp ảnh ootd đẹp chụp ảnh outfit bằng điện thoại góc chụp ảnh ootd đẹp app chỉnh ảnh dark aesthetic chụp ảnh outfit không bị mờ ánh sáng chụp ảnh ootd"
+},
+  {
   "title": "Cách Giặt Đồ Đen Không Bị Phai Màu Hay Bạc Màu Theo Thời Gian",
   "url": "/blog/cach-giat-do-den-khong-phai-mau.html",
   "type": "Journal",
