@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Y2K Là Gì? Phong Cách Y2K Nữ Đang Trở Lại Mạnh Nhất 2026",
+  "url": "/blog/y2k-la-gi-phong-cach-y2k-nu.html",
+  "type": "Journal",
+  "description": "Y2K là gì? Phong cách Y2K nữ đang là trend thời trang nóng nhất Việt Nam 2026 — nguồn gốc, đặc điểm nhận diện, item cốt lõi và cách phân biệt với Dark Y2K.",
+  "image": "/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp",
+  "keywords": "y2k là gì phong cách y2k y2k nữ thời trang y2k phong cách y2k nữ y2k aesthetic đồ y2k outfit y2k y2k revival"
+},
+  {
   "title": "Cách Chụp Ảnh OOTD Đẹp Bằng Điện Thoại: Ánh Sáng, Góc Chụp Và Chỉnh Ảnh",
   "url": "/blog/cach-chup-anh-ootd-dep-bang-dien-thoai.html",
   "type": "Journal",
