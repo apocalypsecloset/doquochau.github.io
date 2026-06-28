@@ -318,11 +318,15 @@
     <h1>Search<br><span>The Closet</span></h1>
 
     <form class="search-form" action="/search.html" method="get" role="search" aria-label="Tìm kiếm Apocalypse Closet">
-      <input id="q" name="q" type="search" placeholder="Nhập egirl, goth, đồ đen, look 01..." autocomplete="off">
+      <input id="q" name="q" type="search" placeholder="Nhập y2k, quần ống rộng, crop top, goth, look 31..." autocomplete="off">
       <button class="btn" type="submit">Search</button>
     </form>
 
     <div class="chips" aria-label="Gợi ý tìm kiếm">
+      <a class="chip" href="/search.html?q=y2k">y2k</a>
+      <a class="chip" href="/search.html?q=dark%20y2k">dark y2k</a>
+      <a class="chip" href="/search.html?q=qu%E1%BA%A7n%20%E1%BB%91ng%20r%E1%BB%99ng">quần ống rộng</a>
+      <a class="chip" href="/search.html?q=crop%20top">crop top</a>
       <a class="chip" href="/search.html?q=egirl">egirl</a>
       <a class="chip" href="/search.html?q=goth">goth</a>
       <a class="chip" href="/search.html?q=punk">punk</a>
@@ -395,6 +399,14 @@
       return score;
     }
 
+    function typeRank(type) {
+      const value = normalizeText(type);
+      if (value === 'outfit') return 3;
+      if (value === 'style') return 2;
+      if (value === 'journal') return 1;
+      return 0;
+    }
+
     function escapeHtml(value) {
       return String(value || '').replace(/[&<>"']/g, char => ({
         '&': '&amp;',
@@ -422,14 +434,14 @@
       const results = (window.searchIndex || [])
         .map(item => ({ ...item, score: scoreItem(item, q) }))
         .filter(item => item.score > 0)
-        .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
+        .sort((a, b) => b.score - a.score || typeRank(b.type) - typeRank(a.type) || a.title.localeCompare(b.title))
         .slice(0, 48);
 
       titleEl.textContent = 'Kết quả cho: ' + q;
       countEl.textContent = results.length + ' results';
 
       if (!results.length) {
-        resultsEl.innerHTML = '<div class="empty">Không tìm thấy kết quả phù hợp.<br>Thử: egirl, goth, punk, dark feminine, đồ đen hoặc look 01.</div>';
+        resultsEl.innerHTML = '<div class="empty">Không tìm thấy kết quả phù hợp.<br>Thử: y2k, dark y2k, quần ống rộng, crop top, egirl, goth, punk hoặc look 31.</div>';
         return;
       }
 
