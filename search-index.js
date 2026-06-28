@@ -1,5 +1,21 @@
 window.searchIndex = [
   {
+  "title": "Pastel Goth, Cyber Goth, Mall Goth Là Gì? 3 Nhánh Goth Hot Nhất TikTok",
+  "url": "/blog/pastel-goth-cyber-goth-mall-goth-la-gi.html",
+  "type": "Journal",
+  "description": "Pastel goth, cyber goth, mall goth là gì? 3 nhánh con của goth aesthetic đang hot trên TikTok và Pinterest — đặc điểm nhận diện, khác biệt và cách chọn nhánh hợp bạn.",
+  "image": "/images/badgirl-outfits/badgirl-goth-look-09-full-outfit.webp",
+  "keywords": "pastel goth là gì cyber goth là gì mall goth là gì nhánh goth goth aesthetic pastel goth outfit cyber goth outfit"
+},
+  {
+  "title": "Grunge Là Gì? Khác Gì Punk — Hai Phong Cách Hay Bị Gộp Chung",
+  "url": "/blog/grunge-la-gi-khac-gi-punk.html",
+  "type": "Journal",
+  "description": "Grunge là gì? Grunge và Punk thường bị gộp chung nhưng là hai phong cách khác nhau — nguồn gốc từ Seattle thập niên 90, đặc điểm nhận diện, và cách phân biệt rõ với Punk.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-38-full-outfit.webp",
+  "keywords": "grunge là gì grunge khác punk phong cách grunge grunge aesthetic 90s grunge soft grunge grunge nữ"
+},
+  {
   "title": "Y2K Là Gì? Phong Cách Y2K Nữ Đang Trở Lại Mạnh Nhất 2026",
   "url": "/blog/y2k-la-gi-phong-cach-y2k-nu.html",
   "type": "Journal",
