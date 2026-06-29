@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Dark Academia Là Gì? Phối Đồ Theo Hướng Badgirl, Không Preppy",
+  "url": "/blog/dark-academia-la-gi-phoi-do-badgirl.html",
+  "type": "Journal",
+  "description": "Dark Academia là gì? Tinh thần academic, văn học cổ điển và kiến trúc gothic — nhưng phối theo hướng badgirl, không preppy. Cách giữ chất riêng khi mặc trend hot nhất 2026.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-40-full-outfit.webp",
+  "keywords": "dark academia là gì phối đồ dark academia dark academia outfit dark academia aesthetic dark academia nữ phong cách dark academia"
+},
+  {
   "title": "Pastel Goth, Cyber Goth, Mall Goth Là Gì? 3 Nhánh Goth Hot Nhất TikTok",
   "url": "/blog/pastel-goth-cyber-goth-mall-goth-la-gi.html",
   "type": "Journal",
