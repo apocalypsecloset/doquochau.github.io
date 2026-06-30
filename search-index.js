@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Witch Aesthetic / Whimsigoth Là Gì? Phong Cách Huyền Bí Đang Hot Trên TikTok",
+  "url": "/blog/witch-aesthetic-whimsigoth-la-gi.html",
+  "type": "Journal",
+  "description": "Witch aesthetic và Whimsigoth là gì? Phong cách huyền bí pha trộn mysticism, velvet, layered jewelry và bảng màu jewel-tone đang hot trên TikTok và Pinterest 2026.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+  "keywords": "witch aesthetic là gì whimsigoth là gì witchcore phong cách phù thủy whimsigoth outfit witch aesthetic outfit dark mystical aesthetic"
+},
+  {
   "title": "Dark Academia Là Gì? Phối Đồ Theo Hướng Badgirl, Không Preppy",
   "url": "/blog/dark-academia-la-gi-phoi-do-badgirl.html",
   "type": "Journal",
