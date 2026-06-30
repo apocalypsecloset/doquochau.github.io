@@ -17,15 +17,15 @@
   <meta property="og:site_name" content="Apocalypse Closet" />
   <meta property="og:title" content="Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet" />
   <meta property="og:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn." />
- <meta property="og:image" content="https://raw.githubusercontent.com/apocalypsecloset/doquochau.github.io/master/logo-1.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+ <meta property="og:image" content="https://apocalypsecloset.com/logo-1.png" />
+<meta property="og:image:width" content="740" />
+<meta property="og:image:height" content="337" />
   <meta property="og:url" content="https://apocalypsecloset.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Badgirl Aesthetic — Thời Trang Dark & Nổi Loạn | Apocalypse Closet">
   <meta name="twitter:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn.">
-  <meta name="twitter:image" content="https://apocalypsecloset.com/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp">
+  <meta name="twitter:image" content="https://apocalypsecloset.com/logo-1.png">
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
   
@@ -33,7 +33,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
-  <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
   <link rel="preload" as="script" href="outfits.js?v=20260528-40-home16-v4">
@@ -557,8 +556,6 @@
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
   </div>
 
   <div class="ticker" data-nosnippet>
@@ -979,7 +976,7 @@
     if (typeof outfits !== 'undefined') {
       initGrid();
     } else {
-      window.addEventListener('load', () => {
+      document.addEventListener('DOMContentLoaded', () => {
         if (typeof outfits !== 'undefined') initGrid();
         else {
           const grid = document.getElementById('outfit-grid');
