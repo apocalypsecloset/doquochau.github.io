@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Indie Sleaze Là Gì? Trend Thời Trang Đang Thay Thế Y2K Năm 2026",
+  "url": "/blog/indie-sleaze-la-gi.html",
+  "type": "Journal",
+  "description": "Indie sleaze là gì? Trend thời trang \"bẩn, rối, không hoàn hảo\" đang thay thế Y2K bóng bẩy trên toàn cầu 2026 — nguồn gốc, đặc điểm nhận diện và cách áp dụng vào tủ đồ dark aesthetic.",
+  "image": "/images/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp",
+  "keywords": "indie sleaze là gì indie sleaze aesthetic indie sleaze outfit phong cách indie sleaze indie sleaze 2026 thời trang indie sleaze"
+},
+  {
   "title": "Witch Aesthetic / Whimsigoth Là Gì? Phong Cách Huyền Bí Đang Hot Trên TikTok",
   "url": "/blog/witch-aesthetic-whimsigoth-la-gi.html",
   "type": "Journal",
