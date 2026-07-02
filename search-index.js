@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Coquette Là Gì? Vì Sao Dark Coquette Hợp Với Bạn Hơn Bản Pastel",
+  "url": "/blog/coquette-la-gi-dark-coquette.html",
+  "type": "Journal",
+  "description": "Coquette là gì? Aesthetic nữ tính đang viral toàn cầu 2026 với nhánh Dark Coquette — ren đen, corset, sheer tights, son wine — hợp với dark aesthetic hơn bản pastel gốc.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+  "keywords": "coquette là gì dark coquette coquette aesthetic phong cách coquette dark coquette outfit coquette nữ"
+},
+  {
   "title": "Indie Sleaze Là Gì? Trend Thời Trang Đang Thay Thế Y2K Năm 2026",
   "url": "/blog/indie-sleaze-la-gi.html",
   "type": "Journal",
