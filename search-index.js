@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Mặc Đồ Đen Mùa Hè Có Nóng Không? Sự Thật Về Màu Sắc Và Cách Chọn Đồ Mát",
+  "url": "/blog/mac-do-den-mua-he-co-nong-khong.html",
+  "type": "Journal",
+  "description": "Mặc đồ đen mùa hè có nóng không? Sự thật là màu sắc chỉ chiếm một phần nhỏ — chất liệu vải và form dáng mới là yếu tố quyết định. Cách mặc đen mát mẻ suốt hè.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-17-full-outfit.webp",
+  "keywords": "mặc đồ đen mùa hè có nóng không màu đen có nóng hơn không quần áo đen mùa hè cách mặc đồ đen mát mẻ vải mát mùa hè đồ đen có bắt nắng không"
+},
+  {
   "title": "Coquette Là Gì? Vì Sao Dark Coquette Hợp Với Bạn Hơn Bản Pastel",
   "url": "/blog/coquette-la-gi-dark-coquette.html",
   "type": "Journal",
