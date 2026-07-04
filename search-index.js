@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Cách Chọn Size Đồ Alt Fashion Online: Corset, Jeans Ống Rộng, Boots",
+  "url": "/blog/cach-chon-size-do-alt-fashion-online.html",
+  "type": "Journal",
+  "description": "Cách chọn size đồ alt fashion online không sợ sai — đo số đo tại nhà chuẩn, đọc bảng size đúng cách, và mẹo riêng khi mua corset, quần ống rộng, boots qua mạng.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-22-full-outfit.webp",
+  "keywords": "cách chọn size quần áo online cách đo số đo cơ thể chọn size corset size quần ống rộng mua đồ online sợ sai size freesize là gì"
+},
+  {
   "title": "Mặc Đồ Đen Mùa Hè Có Nóng Không? Sự Thật Về Màu Sắc Và Cách Chọn Đồ Mát",
   "url": "/blog/mac-do-den-mua-he-co-nong-khong.html",
   "type": "Journal",
