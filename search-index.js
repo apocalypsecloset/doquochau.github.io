@@ -1,5 +1,21 @@
 window.searchIndex = [
   {
+  "title": "Streetwear Là Gì? Phong Cách Đường Phố Từ Basic Đến Baddie",
+  "url": "/blog/streetwear-la-gi.html",
+  "type": "Journal",
+  "description": "Streetwear là gì? Giải thích phong cách thời trang đường phố, khác casual/sportswear ra sao và vì sao streetwear nữ là nhánh dễ chuyển đổi sang baddie, alt fashion.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp",
+  "keywords": "streetwear là gì phong cách streetwear streetwear nữ baddie streetwear thời trang đường phố streetwear gen z outfit streetwear nữ local brand streetwear"
+},
+  {
+  "title": "Local Brand Là Gì? Vì Sao Gen Z Việt Chọn Local Brand Nữ",
+  "url": "/blog/local-brand-la-gi.html",
+  "type": "Journal",
+  "description": "Local brand là gì? Giải thích dễ hiểu về thương hiệu nội địa, khác shop order/fast fashion ra sao và vì sao local brand nữ hợp với tủ đồ cá tính, dark aesthetic.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-39-full-outfit.webp",
+  "keywords": "local brand là gì local brand nữ local brand việt nam local brand gen z thương hiệu nội địa local brand streetwear mua local brand nữ dark aesthetic"
+},
+  {
   "title": "Cách Chọn Size Đồ Alt Fashion Online: Corset, Jeans Ống Rộng, Boots",
   "url": "/blog/cach-chon-size-do-alt-fashion-online.html",
   "type": "Journal",
