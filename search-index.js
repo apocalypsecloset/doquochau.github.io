@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Aesthetic Là Gì? Gu Thẩm Mỹ Gen Z Trong Thời Trang",
+  "url": "/blog/aesthetic-la-gi.html",
+  "type": "Journal",
+  "description": "Aesthetic là gì? Giải thích gu thẩm mỹ Gen Z trong thời trang, cách nhận diện vibe cá nhân và chọn aesthetic hợp với tủ đồ dark, alt fashion.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-15-full-outfit.webp",
+  "keywords": "aesthetic là gì phong cách aesthetic aesthetic thời trang gu thẩm mỹ gen z aesthetic nữ dark aesthetic alt fashion aesthetic chọn aesthetic phù hợp"
+},
+  {
   "title": "Streetwear Là Gì? Phong Cách Đường Phố Từ Basic Đến Baddie",
   "url": "/blog/streetwear-la-gi.html",
   "type": "Journal",
