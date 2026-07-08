@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+  "title": "Capsule Wardrobe Là Gì? Tủ Đồ Ít Mà Chất Cho Nữ",
+  "url": "/blog/capsule-wardrobe-la-gi.html",
+  "type": "Journal",
+  "description": "Capsule wardrobe là gì? Giải thích tủ đồ con nhộng cho nữ, vì sao ít item nhưng mặc được nhiều hơn và cách xây capsule wardrobe tối màu, cá tính.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-18-full-outfit.webp",
+  "keywords": "capsule wardrobe là gì capsule wardrobe tủ đồ capsule tủ đồ con nhộng capsule wardrobe nữ xây tủ đồ tối giản dark aesthetic wardrobe tủ đồ tối màu alt fashion wardrobe"
+},
+  {
   "title": "Aesthetic Là Gì? Gu Thẩm Mỹ Gen Z Trong Thời Trang",
   "url": "/blog/aesthetic-la-gi.html",
   "type": "Journal",
@@ -7,6 +15,7 @@ window.searchIndex = [
   "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-15-full-outfit.webp",
   "keywords": "aesthetic là gì phong cách aesthetic aesthetic thời trang gu thẩm mỹ gen z aesthetic nữ dark aesthetic alt fashion aesthetic chọn aesthetic phù hợp"
 },
+
   {
   "title": "Streetwear Là Gì? Phong Cách Đường Phố Từ Basic Đến Baddie",
   "url": "/blog/streetwear-la-gi.html",
