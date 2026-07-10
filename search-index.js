@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "OOTD Là Gì? Outfit Of The Day Và Gu Mặc Cá Nhân",
+    "url": "/blog/ootd-la-gi.html",
+    "type": "Journal",
+    "description": "OOTD là gì? Giải thích Outfit Of The Day, vì sao OOTD giúp bạn thể hiện gu cá nhân, xây hình ảnh thời trang và chọn outfit dark aesthetic có chủ đích.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-34-full-outfit.webp",
+    "keywords": "ootd là gì ootd outfit of the day outfit hôm nay ootd nữ ootd aesthetic ootd dark aesthetic ootd streetwear ootd là viết tắt của từ gì outfit có gu"
+  },
+  {
     "title": "Outfit Là Gì? Hiểu Đúng Về Set Đồ Có Gu Cho Nữ",
     "url": "/blog/outfit-la-gi.html",
     "type": "Journal",
