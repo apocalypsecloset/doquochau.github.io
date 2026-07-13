@@ -296,18 +296,18 @@
     }
   </style>
 
-<style id="ac-a11y-skip-link">
-  .skip-link{position:absolute;left:12px;top:-80px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:Space Mono,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease;}
-  .skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px;}
-</style></head>
+<link rel="stylesheet" href="/assets/css/site-utilities.min.css"><link rel="stylesheet" href="/assets/css/seo-accessibility.min.css">
+<meta property="og:image:alt" content="Tìm Kiếm Outfit Badgirl &amp; Dark Aesthetic | Apocalypse Closet">
+<style>.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}</style>
+</head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <a class="logo-wrap" href="/" aria-label="Apocalypse Closet Home">
-      <img src="/Logo-Apocalypse-Closet.webp" width="44" height="44" alt="Apocalypse Closet logo" style="height:44px;width:auto;object-fit:contain;">
-      <img src="/wordmark.webp" width="70" height="32" alt="Apocalypse Closet" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;">
+      <img alt="Apocalypse Closet logo" decoding="async" height="44" loading="eager" src="/Logo-Apocalypse-Closet.webp" style="height:44px;width:auto;object-fit:contain;" width="44"/>
+      <img alt="Apocalypse Closet" decoding="async" height="32" loading="eager" src="/wordmark.webp" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;" width="70"/>
     </a>
-    <nav>
+    <nav aria-label="Điều hướng chính">
       <a class="btn" href="/">Home</a>
       <a class="btn" href="/blog.html">Journal</a>
     </nav>
@@ -318,6 +318,7 @@
     <h1>Search<br><span>The Closet</span></h1>
 
     <form class="search-form" action="/search.html" method="get" role="search" aria-label="Tìm kiếm Apocalypse Closet">
+      <label class="sr-only" for="q">Từ khóa tìm kiếm</label>
       <input id="q" name="q" type="search" placeholder="Nhập y2k, quần ống rộng, crop top, goth, look 31..." autocomplete="off">
       <button class="btn" type="submit">Search</button>
     </form>
@@ -343,7 +344,7 @@
     <section id="results" class="results" aria-live="polite"></section>
   </main>
 
-  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
+  <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a> &nbsp;·&nbsp; <span class="trust-links"><a href="about.html">Giới thiệu</a><a href="author.html">Tác giả</a><a href="editorial-policy.html">Biên tập</a><a href="contact.html">Liên hệ</a></span></footer>
 
   <script src="/search-index.js"></script>
   <script>
@@ -438,9 +439,11 @@
         .slice(0, 48);
 
       titleEl.textContent = 'Kết quả cho: ' + q;
+      if(typeof window.gtag==='function') window.gtag('event','site_search',{search_term:q});
       countEl.textContent = results.length + ' results';
 
       if (!results.length) {
+        if(typeof window.gtag==='function') window.gtag('event','search_no_result',{search_term:q});
         resultsEl.innerHTML = '<div class="empty">Không tìm thấy kết quả phù hợp.<br>Thử: y2k, dark y2k, quần ống rộng, crop top, egirl, goth, punk hoặc look 31.</div>';
         return;
       }
@@ -467,5 +470,6 @@
 
     render(rawQuery);
   </script>
+<script src="/assets/js/analytics-enhancements.min.js" defer></script>
 </body>
 </html>

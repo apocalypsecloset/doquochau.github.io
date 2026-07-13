@@ -775,5 +775,9 @@ window.searchIndex = [
     "description": "Outfit Dark Feminine #40: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet.",
     "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-40-full-outfit.webp",
     "keywords": "OUTFIT DETAILS #40 – Dark Feminine Outfit Dark Feminine #40: set badgirl quyến rũ với áo, quần, giày và phụ kiện tông tối — xem full look + link Shopee tại Apocalypse Closet. OUTFIT DETAILS #40 – Dark Feminine | Apocalypse Closet outfit phong cách Dark Feminine số 40 áo quần giày phụ kiện shopee dark feminine dark femme nu tinh bong toi outfit quyen luc look 40 badgirl aesthetic"
-  }
+  },
+  { title: "Giới Thiệu Apocalypse Closet", type: "Page", description: "Thông tin về Apocalypse Closet và định hướng nội dung dark aesthetic.", url: "/about.html", image: "/Logo-Apocalypse-Closet.webp", keywords: "about giới thiệu apocalypse closet" },
+  { title: "Tác Giả Và Đội Ngũ Biên Tập", type: "Page", description: "Thông tin tác giả và cách nội dung được biên tập.", url: "/author.html", image: "/Logo-Apocalypse-Closet.webp", keywords: "tác giả biên tập author" },
+  { title: "Liên Hệ Apocalypse Closet", type: "Page", description: "Email và mạng xã hội chính thức của Apocalypse Closet.", url: "/contact.html", image: "/Logo-Apocalypse-Closet.webp", keywords: "contact liên hệ email instagram" },
+
 ];
