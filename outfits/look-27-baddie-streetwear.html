@@ -138,339 +138,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
 
-  <style>
-    :root {
-      --black: #0a0a0a;
-      --white: #f0ece4;
-      --red: #c0392b;
-      --grey: #1a1a1a;
-      --muted: #888;
-      --muted-light: #888;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--black);
-      color: var(--white);
-      font-family: 'Space Mono', 'Courier New', Courier, monospace;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 999;
-      opacity: 0.3;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 32px;
-      border-bottom: 1px solid #222;
-      position: sticky;
-      top: 0;
-      background: rgba(10,10,10,0.95);
-      backdrop-filter: blur(8px);
-      z-index: 100;
-    }
-
-    .header-left { display: flex; align-items: center; gap: 12px; }
-
-    .btn {
-      font-family: 'Space Mono', 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      height: 36px;
-      padding: 0 16px;
-      border: 1px solid #333;
-      background: transparent;
-      color: var(--white);
-      cursor: pointer;
-      transition: all 0.15s;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-    .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
-
-    .cat-badge {
-      font-size: 9px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--red);
-      border: 1px solid var(--red);
-      padding: 4px 10px;
-      opacity: 0.8;
-    }
-
-    #btn-save { border-color: #333; color: var(--white); }
-    #btn-save.saved { border-color: var(--red); color: var(--red); }
-    #btn-save:hover { background: var(--red); color: var(--white); border-color: var(--red); }
-
-    .breadcrumb {
-      padding: 10px 32px;
-      border-bottom: 1px solid #1a1a1a;
-      font-size: 10px;
-      letter-spacing: 0.15em;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .breadcrumb a { color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.15s; }
-    .breadcrumb a:hover { color: var(--white); }
-    .breadcrumb span { color: var(--white); text-transform: uppercase; }
-    .breadcrumb .sep { color: #333; }
-
-    html.js .seo-static { display: none !important; }
-    html.no-js .seo-static { display: block; }
-
-    .seo-static {
-      padding: 48px 32px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .seo-static h1 {
-      font-family: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
-      font-size: 48px;
-      color: var(--red);
-      margin-bottom: 16px;
-    }
-    .seo-static img {
-      width: 100%;
-      max-width: 420px;
-      aspect-ratio: 3/4;
-      object-fit: cover;
-      display: block;
-      margin-bottom: 24px;
-      border: 1px solid #222;
-    }
-    .seo-static ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 12px;
-    }
-    .seo-static ul li {
-      padding: 12px 16px;
-      background: #111;
-      border: 1px solid #222;
-      font-size: 12px;
-      letter-spacing: 0.05em;
-    }
-    .seo-static ul li a { color: var(--red); text-decoration: none; }
-    .seo-static ul li a:hover { text-decoration: underline; }
-
-    .internal-links-static {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #1a1a1a;
-    }
-    .internal-links-static p {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .internal-links-static .link-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .internal-links-static a {
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      color: var(--white);
-      text-decoration: none;
-      border: 1px solid #333;
-      padding: 6px 14px;
-      transition: all 0.15s;
-    }
-    .internal-links-static a:hover { border-color: var(--red); color: var(--red); }
-    .internal-links-static a.cat-link { border-color: var(--red); color: var(--red); }
-    .internal-links-static a.cat-link:hover { background: var(--red); color: var(--white); }
-
-    .detail-container {
-      display: none;
-      padding: 48px 32px;
-      gap: 64px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .detail-container.ready {
-      display: flex;
-    }
-
-    .outfit-image-col { flex: 1; position: relative; }
-    .slider-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 420px;
-      aspect-ratio: 3/4;
-      overflow: hidden;
-      border: 1px solid #222;
-      background: var(--grey);
-      margin: 0 auto;
-    }
-    .slider-track {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slider-track img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-    .slider-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      background: rgba(10,10,10,0.8);
-      border: 1px solid #444;
-      color: var(--white);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-      border-radius: 50%;
-      transition: border-color 0.2s;
-    }
-    .slider-btn:hover { border-color: var(--white); }
-    .btn-prev { left: 12px; }
-    .btn-next { right: 12px; }
-    .slider-dots {
-      position: absolute;
-      bottom: 14px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-    }
-    .dot { width: 6px; height: 6px; background: rgba(255,255,255,0.3); border-radius: 50%; transition: all 0.2s; cursor: pointer; }
-    .dot.active { background: var(--white); transform: scale(1.5); }
-
-    .outfit-info-col { flex: 1; }
-    .outfit-title {
-      font-family: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
-      font-size: 48px;
-      color: var(--red);
-      margin-bottom: 8px;
-    }
-    .outfit-desc { font-size: 12px; color: var(--muted-light); margin-bottom: 40px; line-height: 1.7; }
-    .section-title {
-      font-size: 10px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      margin-bottom: 16px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .items-list { display: flex; flex-direction: column; gap: 10px; }
-    .item-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px;
-      background: #111;
-      border: 1px solid #222;
-      text-decoration: none;
-      color: var(--white);
-      transition: all 0.2s;
-    }
-    .item-link:hover { border-color: var(--muted-light); background: #1a1a1a; transform: translateX(5px); }
-    .item-link.no-link { cursor: default; opacity: 0.5; }
-    .item-link.no-link:hover { transform: none; border-color: #222; background: #111; }
-    .item-left { display: flex; align-items: center; gap: 16px; }
-    .item-icon { color: var(--red); font-size: 12px; }
-    .item-text h3 { font-size: 13px; font-weight: bold; letter-spacing: 0.05em; }
-    .item-text p { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 2px; }
-    .item-arrow { font-size: 14px; color: var(--muted); }
-
-    .internal-links-section {
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid #1a1a1a;
-    }
-    .internal-links-section .il-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-    .internal-links-section .il-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .il-pill {
-      font-family: 'Space Mono', 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--white);
-      border: 1px solid #333;
-      padding: 6px 14px;
-      text-decoration: none;
-      transition: all 0.15s;
-      display: inline-block;
-    }
-    .il-pill:hover { border-color: var(--white); background: var(--white); color: var(--black); }
-    .il-pill.primary { border-color: var(--red); color: var(--red); }
-    .il-pill.primary:hover { background: var(--red); color: var(--white); }
-
-    .related-section {
-      padding: 40px 32px 48px;
-      border-top: 1px solid #1a1a1a;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .related-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; margin-bottom: 20px; }
-    .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
-    .related-card { aspect-ratio: 3/4; overflow: hidden; background: var(--grey); cursor: pointer; position: relative; }
-    .related-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease, filter 0.3s; filter: saturate(0.8); }
-    .related-card:hover img { transform: scale(1.06); filter: saturate(1.1); }
-    .related-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; }
-    .related-card:hover::after { opacity: 1; }
-    .related-card-tag {
-      position: absolute; bottom: 12px; left: 12px;
-      font-family: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
-      font-size: 16px; color: var(--white); z-index: 2; opacity: 0; transition: opacity 0.3s;
-    }
-    .related-card:hover .related-card-tag { opacity: 1; }
-
-    footer { padding: 32px; border-top: 1px solid #1a1a1a; text-align: center; font-size: 10px; color: var(--muted); letter-spacing: 0.2em; }
-
-    @media (max-width: 768px) {
-      header { padding: 14px 16px; }
-      .breadcrumb { padding: 10px 16px; }
-      .detail-container { flex-direction: column; padding: 20px 16px; gap: 32px; }
-      .seo-static { padding: 24px 16px; }
-      .outfit-title { font-size: 36px; }
-      .related-grid { grid-template-columns: repeat(2, 1fr); }
-      .related-section { padding: 32px 16px; }
-      .il-row { gap: 6px; }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/outfit-base.min.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
   <script>
@@ -479,11 +147,9 @@
     gtag('js', new Date());
     gtag('config', 'G-452MPHT894');
   </script>
-<style id="ac-a11y-skip-link">
-  .skip-link{position:absolute;left:12px;top:-80px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:Space Mono,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease;}
-  .skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px;}
-</style>
+<link rel="stylesheet" href="/assets/css/site-utilities.min.css">
 
+<link rel="stylesheet" href="/assets/css/seo-accessibility.min.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -507,12 +173,7 @@
   <!-- ══ STATIC SEO FALLBACK ════════════════════════════════════ -->
   <div class="seo-static" id="seo-static">
     <h1>Look #27 Baddie Streetwear: Baggy Cá Tính</h1>
-    <img
-      src="/images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp"
-      alt="Look 27 baddie streetwear outfit với áo, quần, giày và phụ kiện badgirl street style"
-      width="420" height="560"
-      fetchpriority="high"
-    >
+    <img alt="Look 27 baddie streetwear outfit với áo, quần, giày và phụ kiện badgirl street style" decoding="async" height="560" loading="lazy" sizes="(max-width: 720px) 100vw, 1200px" src="/images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp" srcset="/images-mobile/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp 181w, /images/badgirl-outfits/badgirl-baddie-streetwear-look-27-full-outfit.webp 1024w" width="420"/>
     <p style="font-size:12px;color:#888;margin-bottom:16px;line-height:1.8;">
       Look #27 Baddie Streetwear phối áo streetwear, quần baggy/cargo, sneaker chunky và phụ kiện statement; hợp streetwear Việt Nam.
     </p>
@@ -553,7 +214,7 @@
        style="color:#a0a0a0;text-decoration:underline;"
        onmouseover="this.style.color='#f0ece4'"
        onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a>
-  </footer>
+   &nbsp;·&nbsp; <span class="trust-links"><a href="../about.html">Giới thiệu</a><a href="../author.html">Tác giả</a><a href="../editorial-policy.html">Biên tập</a><a href="../contact.html">Liên hệ</a></span></footer>
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 
   <script src="../outfits.js?v=20260528-40-v2"></script>
@@ -781,5 +442,6 @@
     });
   </script>
 
+<script src="/assets/js/analytics-enhancements.min.js" defer></script>
 </body>
 </html>
