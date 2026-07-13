@@ -139,6 +139,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
 
   <link rel="stylesheet" href="/assets/css/outfit-base.min.css">
+  <link rel="preload" as="image" href="/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp" imagesrcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 180w, /images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 1023w" imagesizes="(max-width: 768px) 100vw, 420px" fetchpriority="high" data-ac-lcp="2026-07-13">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
   <script>
@@ -147,9 +148,6 @@
     gtag('js', new Date());
     gtag('config', 'G-452MPHT894');
   </script>
-<link rel="stylesheet" href="/assets/css/site-utilities.min.css">
-
-<link rel="stylesheet" href="/assets/css/seo-accessibility.min.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -173,7 +171,7 @@
   <!-- ══ STATIC SEO FALLBACK ════════════════════════════════════ -->
   <div class="seo-static" id="seo-static">
     <h1>Look #29 Dark Feminine: Set Đen Quyến Rũ</h1>
-    <img alt="Look 29 dark feminine outfit với áo, quần, giày và phụ kiện badgirl street style" decoding="async" height="560" loading="lazy" sizes="(max-width: 720px) 100vw, 1200px" src="/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp" srcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 180w, /images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 1023w" width="420"/>
+    <img alt="Look 29 dark feminine outfit với áo, quần, giày và phụ kiện badgirl street style" decoding="async" fetchpriority="high" height="560" loading="eager" sizes="(max-width: 768px) 100vw, 420px" src="/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp" srcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 180w, /images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 1023w" width="420"/>
     <p style="font-size:12px;color:#888;margin-bottom:16px;line-height:1.8;">
       Look #29 Dark Feminine phối áo tông tối, quần hoặc váy đen, boots dark và phụ kiện statement; hợp nền tối công nghiệp.
     </p>
@@ -225,6 +223,10 @@
     const PAGE_SEO_TITLE = "Look #29 Dark Feminine: Set Đen Quyến Rũ";
     const PAGE_SEO_DESC  = "Look #29 là dark feminine outfit với vibe tông tối, quyến rũ và cá tính. Set này hợp đi cafe, đi chơi buổi tối hoặc chụp ảnh badgirl aesthetic.";
     const PAGE_IMG_ALT   = "Look 29 dark feminine outfit với áo, quần, giày và phụ kiện badgirl street style";
+    const PAGE_LCP_SRCSET = "/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 180w, /images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp 1023w";
+    const PAGE_LCP_SIZES  = "(max-width: 768px) 100vw, 420px";
+    const PAGE_LCP_WIDTH  = "420";
+    const PAGE_LCP_HEIGHT = "560";
     const UI_TITLE     = "OUTFIT DETAILS #29 – Dark Feminine";
     const UI_DESC      = "Nhấn vào từng mục để xem chi tiết sản phẩm.";
     const UI_ITEMS     = [
@@ -262,7 +264,7 @@
 
       const imagesHTML = d.imgs.map((img, i) =>
         i === 0
-          ? `<img src="${img}" alt="${PAGE_IMG_ALT}" fetchpriority="high" decoding="async">`
+          ? `<img src="${img}" srcset="${PAGE_LCP_SRCSET}" sizes="${PAGE_LCP_SIZES}" width="${PAGE_LCP_WIDTH}" height="${PAGE_LCP_HEIGHT}" alt="${PAGE_IMG_ALT}" loading="eager" fetchpriority="high" decoding="async">`
           : `<img src="${img}" alt="${PAGE_IMG_ALT}" loading="lazy" decoding="async">`
       ).join('');
 
