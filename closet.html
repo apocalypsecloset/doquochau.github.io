@@ -258,6 +258,14 @@
     }
     .btn-browse:hover { opacity: 0.85; }
 
+
+    .closet-guides { margin: 0 32px 64px; padding: 28px; border: 1px solid var(--border); background: var(--card); }
+    .closet-guides h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: .08em; margin-bottom: 10px; }
+    .closet-guides p { color: var(--muted); font-size: 10px; line-height: 1.8; margin-bottom: 18px; text-transform: uppercase; letter-spacing: .08em; }
+    .closet-guide-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .closet-guide-links a { color: var(--white); border: 1px solid var(--border); padding: 9px 12px; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+    .closet-guide-links a:hover { border-color: var(--red); }
+
     /* ── TOAST ───────────────────────────────────────────── */
     .toast {
       position: fixed;
@@ -488,6 +496,18 @@
       renderGrid(user.uid);
     });
   </script>
+
+  <section class="closet-guides" data-internal-links="2026-07-13" aria-labelledby="closet-guide-title">
+    <h2 id="closet-guide-title">BUILD A CLOSET THAT CONNECTS</h2>
+    <p>Đọc hướng dẫn trước khi lưu thêm item để closet có thể phối chéo và dùng lâu hơn.</p>
+    <div class="closet-guide-links">
+      <a href="blog/xay-tu-do-dark-aesthetic.html">Xây tủ đồ dark aesthetic</a>
+      <a href="blog/cach-chon-size-do-alt-fashion-online.html">Chọn size online</a>
+      <a href="blog/phoi-do-alt-fashion-cho-nguoi-moi.html">Alt Fashion cho người mới</a>
+      <a href="blog/capsule-wardrobe-la-gi.html">Capsule wardrobe</a>
+      <a href="blog/ootd-la-gi.html">Hiểu về OOTD</a>
+    </div>
+  </section>
   <footer>© 2026 APOCALYPSE CLOSET &nbsp;·&nbsp; <a href="privacy.html" style="color:#a0a0a0;text-decoration:underline;" onmouseover="this.style.color='#f0ece4'" onmouseout="this.style.color='#a0a0a0'">Privacy Policy</a></footer>
 </body>
 </html>
