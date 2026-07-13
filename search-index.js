@@ -1,5 +1,29 @@
 window.searchIndex = [
   {
+    "title": "Quần Cargo Là Gì? Chọn Cargo Nữ Đẹp Mà Không Bị Cồng Kềnh",
+    "url": "/blog/quan-cargo-la-gi.html",
+    "type": "Journal",
+    "description": "Quần cargo là gì? Phân biệt cargo, jogger và parachute pants; cách chọn túi, ống, chất liệu và size cargo nữ cho streetwear, dark aesthetic.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
+    "keywords": "quần cargo là gì cargo pants là gì quần cargo nữ quần túi hộp nữ cargo và jogger cargo và parachute pants chọn quần cargo size quần cargo nữ cargo streetwear quần cargo đen nữ"
+  },
+  {
+    "title": "Unisex Là Gì? Thời Trang Phi Giới Tính Có Dễ Mặc Không?",
+    "url": "/blog/unisex-la-gi.html",
+    "type": "Journal",
+    "description": "Unisex là gì? Hiểu đúng thời trang phi giới tính, phân biệt với oversize và androgynous, cách đọc size và chọn đồ unisex hợp dark streetwear.",
+    "image": "/images/badgirl-outfits/badgirl-punk-look-38-full-outfit.webp",
+    "keywords": "unisex là gì thời trang unisex là gì đồ unisex áo unisex là gì phong cách phi giới tính unisex nữ unisex và oversize size unisex thời trang trung tính unisex streetwear"
+  },
+  {
+    "title": "Oversize Là Gì? Hiểu Đúng Form Rộng Trước Khi Mua",
+    "url": "/blog/form-oversize-la-gi.html",
+    "type": "Journal",
+    "description": "Oversize là gì? Phân biệt oversize, freesize và mặc sai size; cách đọc form, chọn kích thước và ứng dụng đồ rộng vào streetwear, dark aesthetic.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-17-full-outfit.webp",
+    "keywords": "oversize là gì form oversize là gì áo oversize là gì oversized là gì oversize và freesize đồ form rộng áo form rộng nữ chọn size oversize oversize streetwear oversize dark aesthetic"
+  },
+  {
     "title": "OOTD Là Gì? Outfit Of The Day Và Gu Mặc Cá Nhân",
     "url": "/blog/ootd-la-gi.html",
     "type": "Journal",
