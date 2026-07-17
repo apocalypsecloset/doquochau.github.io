@@ -35,7 +35,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260717-home32-hd-v2">
+  <link rel="preload" as="script" href="outfits.js?v=20260717-home32-responsive-v3">
 
   
 
@@ -304,6 +304,12 @@
       opacity: 0;
       animation: fadeIn 0.4s ease forwards;
       will-change: transform;
+    }
+
+    .outfit-card--critical {
+      opacity: 1;
+      animation: none;
+      will-change: auto;
     }
 
     .outfit-card-link {
@@ -612,10 +618,46 @@
   </div>
 
   <div class="outfit-grid" id="outfit-grid">
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
+    <article class="outfit-card outfit-card--critical" data-outfit-id="look-01">
+      <a class="outfit-card-link" href="/outfits/look-01-egirl.html" aria-label="Xem chi tiết LOOK #01: E-Girl Badgirl Look #01">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp">
+          <img src="/images-grid/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp" alt="Badgirl outfit LOOK #01 — E-Girl Badgirl Look #01 (E-Girl)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
+        </picture>
+        <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #01</div></div>
+      </a>
+      <button class="btn-save-card" type="button" data-outfit-id="look-01" data-outfit-tag="LOOK #01" aria-label="Lưu LOOK #01 vào Closet">♡</button>
+    </article>
+    <article class="outfit-card outfit-card--critical" data-outfit-id="look-02">
+      <a class="outfit-card-link" href="/outfits/look-02-baddie-streetwear.html" aria-label="Xem chi tiết LOOK #02: Baddie Streetwear Badgirl Look #02">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp">
+          <img src="/images-grid/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp" alt="Badgirl outfit LOOK #02 — Baddie Streetwear Badgirl Look #02 (Baddie Streetwear)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
+        </picture>
+        <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #02</div></div>
+      </a>
+      <button class="btn-save-card" type="button" data-outfit-id="look-02" data-outfit-tag="LOOK #02" aria-label="Lưu LOOK #02 vào Closet">♡</button>
+    </article>
+    <article class="outfit-card outfit-card--critical" data-outfit-id="look-03">
+      <a class="outfit-card-link" href="/outfits/look-03-punk.html" aria-label="Xem chi tiết LOOK #03: Punk Badgirl Look #03">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp">
+          <img src="/images-grid/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp" alt="Badgirl outfit LOOK #03 — Punk Badgirl Look #03 (Punk)" loading="eager" decoding="async" width="768" height="1024">
+        </picture>
+        <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #03</div></div>
+      </a>
+      <button class="btn-save-card" type="button" data-outfit-id="look-03" data-outfit-tag="LOOK #03" aria-label="Lưu LOOK #03 vào Closet">♡</button>
+    </article>
+    <article class="outfit-card outfit-card--critical" data-outfit-id="look-04">
+      <a class="outfit-card-link" href="/outfits/look-04-dark-feminine.html" aria-label="Xem chi tiết LOOK #04: Dark Feminine Badgirl Look #04">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp">
+          <img src="/images-grid/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp" alt="Badgirl outfit LOOK #04 — Dark Feminine Badgirl Look #04 (Dark Feminine)" loading="eager" decoding="async" width="768" height="1024">
+        </picture>
+        <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #04</div></div>
+      </a>
+      <button class="btn-save-card" type="button" data-outfit-id="look-04" data-outfit-tag="LOOK #04" aria-label="Lưu LOOK #04 vào Closet">♡</button>
+    </article>
   </div>
 
   <section class="feed-end" data-nosnippet aria-labelledby="feed-end-title">
@@ -724,7 +766,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260717-home32-hd-v2" defer></script>
+  <script src="outfits.js?v=20260717-home32-responsive-v3" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -834,9 +876,38 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
+    function getPriorityCount() {
+      return window.matchMedia('(max-width: 768px)').matches ? 2 : 4;
+    }
+
+    function bindSaveButton(btn, outfit, savedIds) {
+      const isSaved = savedIds.has(outfit.id);
+      btn.type = 'button';
+      btn.dataset.outfitId = outfit.id;
+      btn.dataset.outfitTag = outfit.tag;
+      btn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
+      btn.innerHTML = isSaved ? '♥' : '♡';
+      btn.setAttribute('aria-label', isSaved ? `Bỏ lưu ${outfit.tag} khỏi Closet` : `Lưu ${outfit.tag} vào Closet`);
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        if (window.toggleSave) window.toggleSave(outfit, btn);
+      };
+    }
+
+    function updateGridCopy() {
+      const counterEl = document.getElementById('counter');
+      const counterText = '+200 LOOKS · RELOAD ĐỂ ĐỔI OUTFITS';
+      counterEl.textContent = counterText;
+      counterEl.setAttribute('data-text', counterText);
+
+      const feedCopy = document.getElementById('feed-end-copy');
+      if (feedCopy) feedCopy.textContent = 'Bạn đã xem hết outfit của lượt này.';
+    }
+
     function buildCard(outfit, i, savedIds) {
       const card = document.createElement('article');
       card.className = 'outfit-card shimmer';
+      card.dataset.outfitId = outfit.id;
       card.style.animationDelay = (i * 0.03) + 's';
 
       const link = document.createElement('a');
@@ -846,16 +917,18 @@
 
       const img = document.createElement('img');
       img.alt = `Badgirl outfit ${outfit.tag} — ${outfit.title} (${outfit.category})`;
-      img.setAttribute('loading', i < 4 ? 'eager' : 'lazy');
-      img.decoding = i < 4 ? 'sync' : 'async';
-      img.width = 1200;
-      img.height = 1600;
+      const isPriority = i < getPriorityCount();
+      img.setAttribute('loading', isPriority ? 'eager' : 'lazy');
+      img.decoding = isPriority ? 'sync' : 'async';
+      img.width = 768;
+      img.height = 1024;
       img.onload  = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
 
       const mobileUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-mobile/badgirl-outfits/');
-      img.src = outfit.img;
-      if (i < 4) img.fetchPriority = 'high';
+      const gridUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-grid/badgirl-outfits/');
+      img.src = gridUrl;
+      if (isPriority) img.fetchPriority = 'high';
 
       const picture = document.createElement('picture');
       const mobileSource = document.createElement('source');
@@ -872,19 +945,8 @@
       link.appendChild(overlay);
 
       const saveBtn = document.createElement('button');
-      const isSaved = savedIds.has(outfit.id);
-      saveBtn.type = 'button';
-      saveBtn.dataset.outfitId = outfit.id;
-      saveBtn.dataset.outfitTag = outfit.tag;
-      saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
-      saveBtn.innerHTML = isSaved ? '♥' : '♡';
-      saveBtn.setAttribute('aria-label', isSaved ? `Bỏ lưu ${outfit.tag} khỏi Closet` : `Lưu ${outfit.tag} vào Closet`);
-      saveBtn.onclick = (e) => {
-        e.stopPropagation();
-        if (window.toggleSave) window.toggleSave(outfit, saveBtn);
-      };
-
       card.appendChild(link);
+      bindSaveButton(saveBtn, outfit, savedIds);
       card.appendChild(saveBtn);
       return card;
     }
@@ -894,13 +956,7 @@
       const savedIds = getSafeSavedIds();
 
       grid.innerHTML = '';
-      const counterEl = document.getElementById('counter');
-      const counterText = '+200 LOOKS · RELOAD ĐỂ ĐỔI OUTFITS';
-      counterEl.textContent = counterText;
-      counterEl.setAttribute('data-text', counterText);
-
-      const feedCopy = document.getElementById('feed-end-copy');
-      if (feedCopy) feedCopy.textContent = 'Bạn đã xem hết outfit của lượt này.';
+      updateGridCopy();
 
       if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
@@ -911,6 +967,31 @@
       data.forEach((outfit, i) => fragment.appendChild(buildCard(outfit, i, savedIds)));
       grid.appendChild(fragment);
     };
+
+    function renderInitialBatch(data) {
+      const grid = document.getElementById('outfit-grid');
+      const savedIds = getSafeSavedIds();
+      const criticalCards = [...grid.querySelectorAll('.outfit-card--critical')];
+      const criticalIds = criticalCards.map(card => card.dataset.outfitId);
+      const expectedIds = data.slice(0, criticalCards.length).map(outfit => outfit.id);
+
+      if (criticalCards.length !== 4 || criticalIds.some((id, i) => id !== expectedIds[i])) {
+        window.renderAll(data);
+        return;
+      }
+
+      updateGridCopy();
+      criticalCards.forEach((card, i) => {
+        const btn = card.querySelector('.btn-save-card');
+        if (btn) bindSaveButton(btn, data[i], savedIds);
+      });
+
+      const fragment = document.createDocumentFragment();
+      data.slice(criticalCards.length).forEach((outfit, i) => {
+        fragment.appendChild(buildCard(outfit, i + criticalCards.length, savedIds));
+      });
+      grid.appendChild(fragment);
+    }
 
     window.updateSaveButtons = function() {
       const savedIds = getSafeSavedIds();
@@ -930,7 +1011,7 @@
     }
 
     function syncOutfitPoolVersion() {
-      const signature = `home32-hd-v2|${outfits.map(outfit => outfit.id).join('|')}`;
+      const signature = `home32-responsive-v3|${outfits.map(outfit => outfit.id).join('|')}`;
       try {
         if (sessionStorage.getItem('ac_outfit_signature') !== signature) {
           sessionStorage.removeItem('ac_pool');
@@ -983,18 +1064,28 @@
       }
     }
 
+    function renderFirstVisit() {
+      const PAGE_SIZE = getPageSize();
+      const allIds = outfits.map(outfit => outfit.id);
+      const pinnedIds = ['look-01', 'look-02', 'look-03', 'look-04']
+        .filter(id => allIds.includes(id))
+        .slice(0, PAGE_SIZE);
+      const pool = shuffle(allIds.filter(id => !pinnedIds.includes(id)));
+      const batch = [...pinnedIds];
+
+      while (batch.length < PAGE_SIZE && pool.length > 0) batch.push(pool.shift());
+
+      sessionStorage.setItem('ac_pool', JSON.stringify(pool));
+      sessionStorage.setItem('ac_last_batch', JSON.stringify(batch));
+      sessionStorage.setItem('savedOutfitOrder', JSON.stringify(batch));
+
+      const batchOutfits = batch.map(id => outfits.find(outfit => outfit.id === id)).filter(Boolean);
+      renderInitialBatch(batchOutfits);
+    }
+
     function initGrid() {
       syncOutfitPoolVersion();
-      const saved = sessionStorage.getItem('savedOutfitOrder');
-      if (saved) {
-        try {
-          const order = JSON.parse(saved);
-          const PAGE_SIZE = getPageSize();
-          const batch = order.map(id => outfits.find(o => o.id === id)).filter(Boolean).slice(0, PAGE_SIZE);
-          if (batch.length === PAGE_SIZE) { renderAll(batch); return; }
-        } catch {}
-      }
-      randomize(false);
+      renderFirstVisit();
     }
 
     function toggleSearch() {
