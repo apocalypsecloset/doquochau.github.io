@@ -312,6 +312,14 @@
       will-change: auto;
     }
 
+    .outfit-card--placeholder {
+      opacity: 1;
+      visibility: hidden;
+      animation: none;
+      pointer-events: none;
+      will-change: auto;
+    }
+
     .outfit-card-link {
       display: block;
       width: 100%;
@@ -614,7 +622,7 @@
   </section>
 
   <div class="section-header" data-nosnippet>
-    <span class="section-count" id="counter"></span>
+    <span class="section-count" id="counter" data-text="+200 LOOKS · RELOAD ĐỂ ĐỔI OUTFITS">+200 LOOKS · RELOAD ĐỂ ĐỔI OUTFITS</span>
   </div>
 
   <div class="outfit-grid" id="outfit-grid">
@@ -658,6 +666,34 @@
       </a>
       <button class="btn-save-card" type="button" data-outfit-id="look-04" data-outfit-tag="LOOK #04" aria-label="Lưu LOOK #04 vào Closet">♡</button>
     </article>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
+    <div class="outfit-card outfit-card--placeholder" aria-hidden="true"></div>
   </div>
 
   <section class="feed-end" data-nosnippet aria-labelledby="feed-end-title">
@@ -985,6 +1021,8 @@
         const btn = card.querySelector('.btn-save-card');
         if (btn) bindSaveButton(btn, data[i], savedIds);
       });
+
+      grid.querySelectorAll('.outfit-card--placeholder').forEach(card => card.remove());
 
       const fragment = document.createDocumentFragment();
       data.slice(criticalCards.length).forEach((outfit, i) => {
