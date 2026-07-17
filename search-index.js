@@ -1,5 +1,37 @@
 window.searchIndex = [
   {
+  "title": "Smart Casual Là Gì? Hệ Quy Chiếu Chọn Đồ Đúng Dịp",
+  "url": "/blog/smart-casual-la-gi.html",
+  "type": "Journal",
+  "description": "Smart casual là gì? Dùng ma trận hoàn cảnh, độ chỉn chu, chất liệu và giày để chọn outfit nữ đúng dịp mà vẫn giữ cá tính dark, streetwear hoặc alt fashion.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-37-full-outfit.webp",
+  "keywords": "smart casual là gì phong cách smart casual nữ smart casual nữ mặc gì dress code smart casual smart casual đi làm smart casual đi tiệc smart casual và business casual outfit smart casual nữ"
+},
+  {
+  "title": "Old Money Là Gì? Phân Biệt Gu Sang Với Costume",
+  "url": "/blog/old-money-la-gi.html",
+  "type": "Journal",
+  "description": "Old Money là gì? Phân biệt Old Money, Quiet Luxury và Dark Academia; kiểm tra form, chất liệu, màu sắc và độ hoàn thiện để mua đồ không biến thành costume.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+  "keywords": "old money là gì old money style là gì phong cách old money nữ quiet luxury là gì old money và new money old money và dark academia thời trang old money old money outfit nữ"
+},
+  {
+  "title": "Acubi Style Là Gì? Giải Mã Minimal Y2K Kiểu Hàn",
+  "url": "/blog/acubi-style-la-gi.html",
+  "type": "Journal",
+  "description": "Acubi style là gì? Giải mã bảng màu, silhouette, layer, chất liệu và ranh giới giữa Acubi, Y2K, subversive basics và streetwear trước khi mua đồ theo trend.",
+  "image": "/images/badgirl-outfits/badgirl-e-girl-look-31-full-outfit.webp",
+  "keywords": "acubi style là gì phong cách acubi acubi outfit nữ acubi style nữ minimal y2k subversive basics là gì thời trang acubi Hàn Quốc acubi và y2k"
+},
+  {
+  "title": "Quần Baggy Là Gì? Đọc Đúng Form Trước Khi Mua",
+  "url": "/blog/quan-baggy-la-gi.html",
+  "type": "Journal",
+  "description": "Quần baggy là gì? Nhận diện đúng dáng baggy, phân biệt với wide-leg, cargo và oversize; kiểm tra cạp, đũng, đùi, ống và size trước khi mua online.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-17-full-outfit.webp",
+  "keywords": "quần baggy là gì quần baggy nữ baggy jeans là gì quần baggy hợp dáng người nào baggy và ống rộng chọn size quần baggy quần baggy cạp cao quần baggy đen nữ"
+},
+  {
     "title": "Quần Cargo Là Gì? Chọn Cargo Nữ Đẹp Mà Không Bị Cồng Kềnh",
     "url": "/blog/quan-cargo-la-gi.html",
     "type": "Journal",
