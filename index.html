@@ -35,7 +35,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260717-home-all-lazy-v1">
+  <link rel="preload" as="script" href="outfits.js?v=20260717-home32-hd-v2">
 
   
 
@@ -226,7 +226,7 @@
     .section-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding: 28px 32px 16px;
       scroll-margin-top: 78px;
     }
@@ -312,6 +312,11 @@
       height: 100%;
       color: inherit;
       text-decoration: none;
+    }
+    .outfit-card picture {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
     .outfit-card-link:focus-visible {
       outline: 3px solid var(--red-text);
@@ -596,14 +601,13 @@
 
   <section class="hero">
     <div>
-      <div class="hero-label">// 30 outfit ngẫu nhiên mỗi lượt</div>
+      <div class="hero-label">// Mỗi lần reload, một phiên bản mới của bạn</div>
       <h1 class="hero-title">Outfit <span>Badgirl</span>, E-Girl, Goth &amp; Dark Fashion</h1>
     </div>
-    <p class="hero-sub">Cuộn để xem đủ 30 look. Bấm RELOAD để ưu tiên nhận những outfit chưa xuất hiện.</p>
+    <p class="hero-sub">Bấm RELOAD để ưu tiên nhận những outfit chưa xuất hiện.</p>
   </section>
 
   <div class="section-header" data-nosnippet>
-    <span class="section-label">30 Random Outfits</span>
     <span class="section-count" id="counter"></span>
   </div>
 
@@ -617,7 +621,7 @@
   <section class="feed-end" data-nosnippet aria-labelledby="feed-end-title">
     <div class="feed-end-icon" aria-hidden="true">✦</div>
     <h2 class="feed-end-title" id="feed-end-title">Bạn đã xem hết!</h2>
-    <p class="feed-end-copy" id="feed-end-copy">Bạn đã xem đủ 30 outfit của lượt này.</p>
+    <p class="feed-end-copy" id="feed-end-copy">Bạn đã xem hết outfit của lượt này.</p>
     <button class="btn btn-reload" type="button" onclick="randomize()">
       <span class="nav-icon spin" aria-hidden="true">↻</span>
       <span>RELOAD OUTFIT CHƯA HIỆN</span>
@@ -720,7 +724,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260717-home30-unseen-v1" defer></script>
+  <script src="outfits.js?v=20260717-home32-hd-v2" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -850,17 +854,21 @@
       img.onerror = () => card.classList.remove('shimmer');
 
       const mobileUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-mobile/badgirl-outfits/');
-      const srcset = `${mobileUrl} 480w, ${outfit.img} 1086w`;
-      img.srcset = srcset;
-      img.sizes = '(max-width: 768px) 50vw, (max-width: 1440px) 25vw, 360px';
       img.src = outfit.img;
       if (i < 4) img.fetchPriority = 'high';
+
+      const picture = document.createElement('picture');
+      const mobileSource = document.createElement('source');
+      mobileSource.media = '(max-width: 768px)';
+      mobileSource.srcset = mobileUrl;
+      picture.appendChild(mobileSource);
+      picture.appendChild(img);
 
       const overlay = document.createElement('div');
       overlay.className = 'outfit-overlay';
       overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
 
-      link.appendChild(img);
+      link.appendChild(picture);
       link.appendChild(overlay);
 
       const saveBtn = document.createElement('button');
@@ -887,12 +895,12 @@
 
       grid.innerHTML = '';
       const counterEl = document.getElementById('counter');
-      const counterText = `${data.length} LOOKS · RELOAD ĐỂ ĐỔI BỘ`;
+      const counterText = '+200 LOOKS · RELOAD ĐỂ ĐỔI OUTFITS';
       counterEl.textContent = counterText;
       counterEl.setAttribute('data-text', counterText);
 
       const feedCopy = document.getElementById('feed-end-copy');
-      if (feedCopy) feedCopy.textContent = `Bạn đã xem đủ ${data.length} outfit của lượt này.`;
+      if (feedCopy) feedCopy.textContent = 'Bạn đã xem hết outfit của lượt này.';
 
       if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
@@ -918,11 +926,11 @@
     };
 
     function getPageSize() {
-      return Math.min(30, Array.isArray(outfits) ? outfits.length : 30);
+      return Math.min(32, Array.isArray(outfits) ? outfits.length : 32);
     }
 
     function syncOutfitPoolVersion() {
-      const signature = outfits.map(outfit => outfit.id).join('|');
+      const signature = `home32-hd-v2|${outfits.map(outfit => outfit.id).join('|')}`;
       try {
         if (sessionStorage.getItem('ac_outfit_signature') !== signature) {
           sessionStorage.removeItem('ac_pool');
