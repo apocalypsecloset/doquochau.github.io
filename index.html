@@ -4,27 +4,27 @@
   <meta name="google-site-verification" content="google209e25d9de6b2414" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Badgirl Aesthetic — Thời Trang Dark &amp; Nổi Loạn</title>
+  <title>Outfit Badgirl, E-Girl, Goth &amp; Dark Fashion | Apocalypse Closet</title>
   <link rel="canonical" href="https://apocalypsecloset.com/" />
   <link rel="alternate" hreflang="vi" href="https://apocalypsecloset.com/" />
   <link rel="alternate" hreflang="vi-VN" href="https://apocalypsecloset.com/" />
   <link rel="alternate" hreflang="x-default" href="https://apocalypsecloset.com/" />
   
   <meta name="p:domain_verify" content="9f119494f51e0fb3070c74a60326a6da"/>
-  <meta name="description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn.">
+  <meta name="description" content="Khám phá outfit Badgirl, E-Girl, Goth, Grunge và Dark Feminine. Cuộn xem toàn bộ look, lưu outfit yêu thích và bấm Reload để xáo trộn cảm hứng mới.">
   
   <meta property="og:locale" content="vi_VN" />
   <meta property="og:site_name" content="Apocalypse Closet" />
-  <meta content="Badgirl Aesthetic — Thời Trang Dark &amp; Nổi Loạn" property="og:title"/>
-  <meta property="og:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn." />
+  <meta content="Outfit Badgirl, E-Girl, Goth &amp; Dark Fashion | Apocalypse Closet" property="og:title"/>
+  <meta property="og:description" content="Cuộn xem toàn bộ outfit Badgirl, E-Girl, Goth, Grunge và Dark Feminine; lưu look yêu thích và xáo trộn cảm hứng mới." />
  <meta property="og:image" content="https://apocalypsecloset.com/logo-1.png" />
 <meta property="og:image:width" content="740" />
 <meta property="og:image:height" content="337" />
   <meta property="og:url" content="https://apocalypsecloset.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta content="Badgirl Aesthetic — Thời Trang Dark &amp; Nổi Loạn" name="twitter:title"/>
-  <meta name="twitter:description" content="Thánh địa Badgirl chính hiệu. Dark wear, Grunge, Goth — phối đồ chuẩn aesthetic cho những tâm hồn nổi loạn.">
+  <meta content="Outfit Badgirl, E-Girl, Goth &amp; Dark Fashion | Apocalypse Closet" name="twitter:title"/>
+  <meta name="twitter:description" content="Cuộn xem toàn bộ outfit Badgirl, E-Girl, Goth, Grunge và Dark Feminine; lưu look yêu thích và xáo trộn cảm hứng mới.">
   <meta name="twitter:image" content="https://apocalypsecloset.com/logo-1.png">
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
@@ -35,7 +35,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260528-40-home16-v4">
+  <link rel="preload" as="script" href="outfits.js?v=20260717-home-all-lazy-v1">
 
   
 
@@ -114,6 +114,12 @@
       gap: 6px;
     }
     .btn:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+    .btn:focus-visible {
+      outline: 2px solid var(--white);
+      outline-offset: 3px;
+    }
+
+    .btn-blog { min-width: 58px; }
 
     .nav-icon {
       font-size: 16px;
@@ -184,31 +190,37 @@
     }
 
     .hero {
-      padding: 48px 32px 24px;
+      padding: 18px 32px;
       border-bottom: 1px solid #1a1a1a;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
     }
     .hero-label {
       font-size: 10px;
       letter-spacing: 0.4em;
       color: var(--red-text);
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     .hero-title {
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
-      font-size: clamp(52px, 8vw, 100px);
-      line-height: 0.92;
-      letter-spacing: 0.01em;
+      font-size: clamp(24px, 3vw, 40px);
+      line-height: 1.08;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
     }
     .hero-title span { color: var(--red); }
     .hero-sub {
-      margin-top: 16px;
+      margin: 0;
       font-size: 11px;
       color: var(--muted);
       letter-spacing: 0.08em;
-      max-width: 340px;
-      line-height: 1.8;
+      max-width: 430px;
+      line-height: 1.65;
+      text-align: right;
     }
 
     .section-header {
@@ -216,6 +228,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 28px 32px 16px;
+      scroll-margin-top: 78px;
     }
     .section-label { font-size: 10px; letter-spacing: 0.4em; color: var(--muted); text-transform: uppercase; }
   .section-count {
@@ -293,6 +306,18 @@
       will-change: transform;
     }
 
+    .outfit-card-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: inherit;
+      text-decoration: none;
+    }
+    .outfit-card-link:focus-visible {
+      outline: 3px solid var(--red-text);
+      outline-offset: -3px;
+    }
+
     .outfit-card img {
       width: 100%; height: 100%;
       object-fit: cover; display: block;
@@ -356,6 +381,38 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .feed-end {
+      padding: 64px 24px 56px;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      background: linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 100%);
+    }
+    .feed-end-icon {
+      color: #555;
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .feed-end-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .feed-end-copy {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .feed-end .btn-reload {
+      min-height: 42px;
+      padding-inline: 22px;
     }
 
     .ticker {
@@ -432,9 +489,15 @@
       .btn-save-card { opacity: 1; transform: translateY(0); top: 8px; right: 8px; width: 28px; height: 28px; font-size: 12px; }
       .logo-wrap img:first-child { height: 36px; }
       .logo-wrap img:last-child { height: 22px; }
-      .hero { padding: 32px 16px 20px; }
+      .btn-blog { min-width: 42px; padding: 0 7px; }
+      .hero { padding: 14px 16px; display: block; }
+      .hero-label { font-size: 8px; letter-spacing: 0.28em; }
+      .hero-title { font-size: 23px; }
+      .hero-sub { margin-top: 7px; font-size: 9px; line-height: 1.55; text-align: left; max-width: none; }
       .outfit-grid { grid-template-columns: repeat(2, 1fr); }
       .section-header { padding: 20px 16px 12px; }
+      .section-count { font-size: 11px; }
+      .feed-end { padding: 48px 20px 44px; }
       #search-bar { padding: 12px 16px; }
       .about-section { padding: 56px 24px; }
       .about-title { font-size: 28px; }
@@ -496,7 +559,7 @@
       <img alt="Apocalypse Closet" decoding="async" height="32" loading="eager" src="wordmark.webp" style="height:32px;width:auto;object-fit:contain;mix-blend-mode:screen;" width="70"/>
     </a>
     <nav aria-label="Điều hướng chính">
-      <button class="btn btn-icon-only btn-search" aria-label="Tìm kiếm outfit, style và blog" onclick="toggleSearch()">
+      <button class="btn btn-icon-only btn-search" type="button" aria-label="Tìm kiếm outfit, style và blog" onclick="toggleSearch()">
         <span class="nav-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
@@ -505,14 +568,15 @@
         </span>
         <span class="text-hide">SEARCH</span>
       </button>
-      <button class="btn btn-icon-only btn-reload" aria-label="Tải lại outfit ngẫu nhiên" onclick="randomize()">
+      <a class="btn btn-blog" href="blog.html" aria-label="Đọc Blog thời trang Apocalypse Closet">BLOG</a>
+      <button class="btn btn-icon-only btn-reload" type="button" aria-label="Tải lại outfit ngẫu nhiên" onclick="randomize()">
         <span class="nav-icon spin">↻</span><span class="text-hide">RELOAD</span>
       </button>
-      <a class="btn btn-icon-only" id="nav-closet-btn" aria-label="Đến Closet của bạn" href="login.html" aria-label="Mở Closet">
+      <a class="btn btn-icon-only" id="nav-closet-btn" href="login.html" aria-label="Mở Closet">
         <span class="nav-icon" id="nav-closet-icon">♡</span><span class="text-hide">CLOSET</span>
       </a>
       <div class="dropdown">
-        <button class="btn">STYLE ↓</button>
+        <button class="btn" type="button">STYLE ↓</button>
         <div class="dropdown-content">
           <a href="style/dark-feminine.html">Dark Feminine</a>
           <a href="style/egirl.html">E-Girl / Alt Girl</a>
@@ -530,14 +594,16 @@
     <input id="search-input" name="q" type="search" placeholder="TÌM OUTFIT, STYLE, BLOG... VD: Y2K, QUẦN ỐNG RỘNG, GOTH">
   </form>
 
-  <section class="hero" data-nosnippet>
-    <div class="hero-label">// Gợi ý phối đồ hôm nay</div>
-    <h1 class="hero-title">DRESS<br>LIKE A<br><span>BADGIRL</span></h1>
-    <p class="hero-sub">Outfit ngẫu nhiên mỗi lần reload.<br>Bấm RELOAD để xáo trộn thứ tự.</p>
+  <section class="hero">
+    <div>
+      <div class="hero-label">// 30 outfit ngẫu nhiên mỗi lượt</div>
+      <h1 class="hero-title">Outfit <span>Badgirl</span>, E-Girl, Goth &amp; Dark Fashion</h1>
+    </div>
+    <p class="hero-sub">Cuộn để xem đủ 30 look. Bấm RELOAD để ưu tiên nhận những outfit chưa xuất hiện.</p>
   </section>
 
   <div class="section-header" data-nosnippet>
-    <span class="section-label">All Outfits</span>
+    <span class="section-label">30 Random Outfits</span>
     <span class="section-count" id="counter"></span>
   </div>
 
@@ -546,11 +612,17 @@
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
     <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
-    <div class="outfit-card shimmer"></div><div class="outfit-card shimmer"></div>
   </div>
+
+  <section class="feed-end" data-nosnippet aria-labelledby="feed-end-title">
+    <div class="feed-end-icon" aria-hidden="true">✦</div>
+    <h2 class="feed-end-title" id="feed-end-title">Bạn đã xem hết!</h2>
+    <p class="feed-end-copy" id="feed-end-copy">Bạn đã xem đủ 30 outfit của lượt này.</p>
+    <button class="btn btn-reload" type="button" onclick="randomize()">
+      <span class="nav-icon spin" aria-hidden="true">↻</span>
+      <span>RELOAD OUTFIT CHƯA HIỆN</span>
+    </button>
+  </section>
 
   <div class="ticker" data-nosnippet>
     <div class="ticker-inner">
@@ -579,7 +651,7 @@
       Mang đậm âm hưởng của kỷ nguyên hậu tận thế, đan xen cùng nét sắc lạnh của <span>Dark Wear</span>, <span>Grunge</span> và <span>Badgirl Aesthetic</span>. Mỗi trang phục tại đây không đơn thuần là một gợi ý phối đồ, mà là một lời tuyên ngôn độc bản: Hãy rực sáng, kiêu hãnh và sống trọn vẹn theo cách riêng của bạn.
     </p>
     <div class="about-quote">"Dress like it's the end of the world"</div>
-    <a href="blog.html" class="about-blog-btn" data-nosnippet>ĐỌC THE MANIFESTO <span>→</span></a>
+    <a href="blog.html" class="about-blog-btn" data-nosnippet>XEM BLOG MỚI NHẤT <span>→</span></a>
   </section>
 
   </main>
@@ -648,7 +720,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260528-40-home16-v4" defer></script>
+  <script src="outfits.js?v=20260717-home30-unseen-v1" defer></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -716,6 +788,7 @@
         savedIdsSet.delete(outfit.id);
         btn.innerHTML = '♡';
         btn.classList.remove('saved');
+        btn.setAttribute('aria-label', `Lưu ${outfit.tag} vào Closet`);
         if (window.showToast) window.showToast('Đã xoá khỏi closet');
       } else {
         await setDoc(ref, {
@@ -726,6 +799,7 @@
         savedIdsSet.add(outfit.id);
         btn.innerHTML = '♥';
         btn.classList.add('saved');
+        btn.setAttribute('aria-label', `Bỏ lưu ${outfit.tag} khỏi Closet`);
         if (window.showToast) window.showToast('Đã lưu vào closet 🖤');
       }
     };
@@ -756,86 +830,56 @@
       t._t = setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(-50%) translateY(20px)'; }, 2200);
     }
 
-    const imgObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            if (img.dataset.srcset) {
-              img.srcset = img.dataset.srcset;
-              img.sizes  = img.dataset.sizes || '';
-              img.removeAttribute('data-srcset');
-              img.removeAttribute('data-sizes');
-            }
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-            imgObserver.unobserve(img);
-          }
-        }
-      });
-    }, { rootMargin: '200px' });
-
     function buildCard(outfit, i, savedIds) {
-      const card = document.createElement('div');
+      const card = document.createElement('article');
       card.className = 'outfit-card shimmer';
       card.style.animationDelay = (i * 0.03) + 's';
-      card.onclick = () => { window.location.href = `/outfits/${outfit.slug}.html`; };
+
+      const link = document.createElement('a');
+      link.className = 'outfit-card-link';
+      link.href = `/outfits/${outfit.slug}.html`;
+      link.setAttribute('aria-label', `Xem chi tiết ${outfit.tag}: ${outfit.title}`);
 
       const img = document.createElement('img');
       img.alt = `Badgirl outfit ${outfit.tag} — ${outfit.title} (${outfit.category})`;
       img.setAttribute('loading', i < 4 ? 'eager' : 'lazy');
       img.decoding = i < 4 ? 'sync' : 'async';
+      img.width = 1200;
+      img.height = 1600;
       img.onload  = () => card.classList.remove('shimmer');
       img.onerror = () => card.classList.remove('shimmer');
 
       const mobileUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-mobile/badgirl-outfits/');
       const srcset = `${mobileUrl} 480w, ${outfit.img} 1086w`;
-      const sizes  = '(max-width: 768px) 50vw, 1200px';
-
-      if (i < 4) {
-        img.srcset = srcset;
-        img.sizes  = sizes;
-        img.src    = outfit.img;
-        img.fetchPriority = 'high';
-      } else {
-        img.dataset.src    = outfit.img;
-        img.dataset.srcset = srcset;
-        img.dataset.sizes  = sizes;
-        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"%3E%3C/svg%3E';
-        imgObserver.observe(img);
-      }
+      img.srcset = srcset;
+      img.sizes = '(max-width: 768px) 50vw, (max-width: 1440px) 25vw, 360px';
+      img.src = outfit.img;
+      if (i < 4) img.fetchPriority = 'high';
 
       const overlay = document.createElement('div');
       overlay.className = 'outfit-overlay';
       overlay.innerHTML = `<span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">${outfit.tag}</div>`;
 
+      link.appendChild(img);
+      link.appendChild(overlay);
+
       const saveBtn = document.createElement('button');
       const isSaved = savedIds.has(outfit.id);
+      saveBtn.type = 'button';
       saveBtn.dataset.outfitId = outfit.id;
+      saveBtn.dataset.outfitTag = outfit.tag;
       saveBtn.className = 'btn-save-card' + (isSaved ? ' saved' : '');
       saveBtn.innerHTML = isSaved ? '♥' : '♡';
+      saveBtn.setAttribute('aria-label', isSaved ? `Bỏ lưu ${outfit.tag} khỏi Closet` : `Lưu ${outfit.tag} vào Closet`);
       saveBtn.onclick = (e) => {
         e.stopPropagation();
         if (window.toggleSave) window.toggleSave(outfit, saveBtn);
       };
 
-      card.appendChild(img);
-      card.appendChild(overlay);
+      card.appendChild(link);
       card.appendChild(saveBtn);
       return card;
     }
-
-    const DATA_VERSION = 'outfits-40-home16-20260528-v4';
-    try {
-      if (sessionStorage.getItem('ac_data_version') !== DATA_VERSION) {
-        sessionStorage.removeItem('ac_pool');
-        sessionStorage.removeItem('ac_last_batch');
-        sessionStorage.removeItem('savedOutfitOrder');
-        sessionStorage.setItem('ac_data_version', DATA_VERSION);
-      }
-    } catch {}
-
-    const FIRST_BATCH = 4;
 
     window.renderAll = function(data = outfits) {
       const grid = document.getElementById('outfit-grid');
@@ -843,28 +887,21 @@
 
       grid.innerHTML = '';
       const counterEl = document.getElementById('counter');
-      const counterText = '+100 LOOKS - MỖI LẦN RELOAD MỘT BỘ MỚI';
+      const counterText = `${data.length} LOOKS · RELOAD ĐỂ ĐỔI BỘ`;
       counterEl.textContent = counterText;
       counterEl.setAttribute('data-text', counterText);
+
+      const feedCopy = document.getElementById('feed-end-copy');
+      if (feedCopy) feedCopy.textContent = `Bạn đã xem đủ ${data.length} outfit của lượt này.`;
 
       if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column:1/-1;padding:60px 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Không tìm thấy outfit nào phù hợp.</div>`;
         return;
       }
 
-      const frag1 = document.createDocumentFragment();
-      data.slice(0, FIRST_BATCH).forEach((outfit, i) => frag1.appendChild(buildCard(outfit, i, savedIds)));
-      grid.appendChild(frag1);
-
-      if (data.length > FIRST_BATCH) {
-        const renderRest = () => {
-          const frag2 = document.createDocumentFragment();
-          data.slice(FIRST_BATCH).forEach((outfit, i) => frag2.appendChild(buildCard(outfit, i + FIRST_BATCH, savedIds)));
-          grid.appendChild(frag2);
-        };
-        if ('requestIdleCallback' in window) requestIdleCallback(renderRest, { timeout: 500 });
-        else setTimeout(renderRest, 50);
-      }
+      const fragment = document.createDocumentFragment();
+      data.forEach((outfit, i) => fragment.appendChild(buildCard(outfit, i, savedIds)));
+      grid.appendChild(fragment);
     };
 
     window.updateSaveButtons = function() {
@@ -875,41 +912,71 @@
         const saved = savedIds.has(id);
         btn.innerHTML = saved ? '♥' : '♡';
         btn.className = 'btn-save-card' + (saved ? ' saved' : '');
+        const look = btn.dataset.outfitTag || id;
+        btn.setAttribute('aria-label', saved ? `Bỏ lưu ${look} khỏi Closet` : `Lưu ${look} vào Closet`);
       });
     };
 
     function getPageSize() {
-      return Math.min(16, Array.isArray(outfits) ? outfits.length : 16);
+      return Math.min(30, Array.isArray(outfits) ? outfits.length : 30);
     }
 
-    function randomize() {
+    function syncOutfitPoolVersion() {
+      const signature = outfits.map(outfit => outfit.id).join('|');
+      try {
+        if (sessionStorage.getItem('ac_outfit_signature') !== signature) {
+          sessionStorage.removeItem('ac_pool');
+          sessionStorage.removeItem('ac_last_batch');
+          sessionStorage.removeItem('savedOutfitOrder');
+          sessionStorage.setItem('ac_outfit_signature', signature);
+        }
+      } catch {}
+    }
+
+    function shuffle(ids) {
+      const result = [...ids];
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+      return result;
+    }
+
+    function randomize(shouldScroll = true) {
       const PAGE_SIZE = getPageSize();
       const allIds = outfits.map(o => o.id);
 
-      // Load pool còn lại (những look chưa được show)
       let pool;
-      try { pool = JSON.parse(sessionStorage.getItem('ac_pool') || 'null'); } catch { pool = null; }
+      try { pool = JSON.parse(sessionStorage.getItem('ac_pool') || '[]'); } catch { pool = []; }
+      pool = Array.isArray(pool) ? pool.filter(id => allIds.includes(id)) : [];
+      if (pool.length === 0) pool = shuffle(allIds);
 
-      // Nếu pool không đủ PAGE_SIZE → refill, tránh lặp lại batch vừa xem
-      if (!Array.isArray(pool) || pool.length < PAGE_SIZE) {
-        let lastBatch;
-        try { lastBatch = new Set(JSON.parse(sessionStorage.getItem('ac_last_batch') || '[]')); } catch { lastBatch = new Set(); }
-        pool = allIds.filter(id => !lastBatch.has(id));
-        if (pool.length < PAGE_SIZE) pool = [...allIds]; // fallback nếu tổng look < PAGE_SIZE
+      const batch = [];
+      while (batch.length < PAGE_SIZE && allIds.length > 0) {
+        if (pool.length === 0) {
+          pool = shuffle(allIds.filter(id => !batch.includes(id)));
+          if (pool.length === 0) break;
+        }
+        const nextId = pool.shift();
+        if (allIds.includes(nextId) && !batch.includes(nextId)) batch.push(nextId);
       }
 
-      // Shuffle pool → lấy PAGE_SIZE looks → lưu phần còn lại
-      pool.sort(() => Math.random() - 0.5);
-      const batch = pool.splice(0, PAGE_SIZE);
       sessionStorage.setItem('ac_pool', JSON.stringify(pool));
       sessionStorage.setItem('ac_last_batch', JSON.stringify(batch));
       sessionStorage.setItem('savedOutfitOrder', JSON.stringify(batch));
 
       const batchOutfits = batch.map(id => outfits.find(o => o.id === id)).filter(Boolean);
       renderAll(batchOutfits);
+
+      if (shouldScroll) {
+        requestAnimationFrame(() => {
+          document.querySelector('.section-header')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
     }
 
     function initGrid() {
+      syncOutfitPoolVersion();
       const saved = sessionStorage.getItem('savedOutfitOrder');
       if (saved) {
         try {
@@ -919,7 +986,7 @@
           if (batch.length === PAGE_SIZE) { renderAll(batch); return; }
         } catch {}
       }
-      randomize();
+      randomize(false);
     }
 
     function toggleSearch() {
