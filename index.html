@@ -29,17 +29,36 @@
   <link rel="icon" type="image/webp" href="Logo-Apocalypse-Closet.webp">
   <link rel="apple-touch-icon" href="Logo-Apocalypse-Closet.webp">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
   <link rel="preload" as="image" href="Logo-Apocalypse-Closet.webp" fetchpriority="high">
   <link rel="preload" as="image" href="wordmark.webp">
-  <link rel="preload" as="script" href="outfits.js?v=20260717-home32-responsive-v3">
 
   
 
   <style>
+    @font-face {
+      font-family: 'Oswald';
+      src: url('/oswald.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Space Mono';
+      src: url('/space-mono-regular.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Space Mono';
+      src: url('/space-mono-bold.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+    }
+
     :root {
       --black: #0a0a0a;
       --white: #f0ece4;
@@ -560,12 +579,31 @@
   }
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-452MPHT894"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-452MPHT894');
+    window.gtag = gtag;
+
+    window.addEventListener('load', function scheduleAnalytics() {
+      const loadAnalytics = function() {
+        if (document.querySelector('script[data-ga-loader]')) return;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-452MPHT894';
+        script.dataset.gaLoader = 'true';
+        document.head.appendChild(script);
+        gtag('js', new Date());
+        gtag('config', 'G-452MPHT894');
+      };
+
+      setTimeout(function deferAnalyticsPastLcp() {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadAnalytics, { timeout: 2000 });
+        } else {
+          loadAnalytics();
+        }
+      }, 1500);
+    }, { once: true });
   </script>
 <meta property="og:image:alt" content="Badgirl Aesthetic — Thời Trang Dark &amp; Nổi Loạn">
 <style id="critical-site-accessibility">.skip-link{position:absolute;left:12px;top:-100px;z-index:10000;background:#f0ece4;color:#0a0a0a;padding:10px 14px;border:2px solid #c0392b;font-family:'Space Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:top .15s ease}.skip-link:focus{top:12px;outline:2px solid #f0ece4;outline-offset:2px}.seo-faq{max-width:720px;margin:48px auto 0;padding:32px 0;border-top:1px solid #292929}.seo-faq h2{font-family:'Oswald',sans-serif;font-size:26px;line-height:1.2;text-transform:uppercase;letter-spacing:.04em;margin:0 0 24px;color:#f0ece4}.seo-faq details{border-bottom:1px solid #242424;padding:0}.seo-faq summary{cursor:pointer;padding:18px 36px 18px 0;font-weight:700;line-height:1.55;position:relative;list-style:none}.seo-faq summary::-webkit-details-marker{display:none}.seo-faq summary::after{content:'+';position:absolute;right:4px;top:16px;color:#e05444;font-size:20px}.seo-faq details[open] summary::after{content:'−'}.seo-faq details p{margin:0;padding:0 0 20px;line-height:1.8;color:#c8c4bc}.trust-links{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:8px}.trust-links a{color:#a0a0a0;text-decoration:underline}.trust-links a:hover,.trust-links a:focus-visible{color:#f0ece4}.icon-only[aria-label],.btn-icon-only[aria-label]{position:relative}@media(max-width:768px){footer{padding-left:16px;padding-right:16px;line-height:1.5}.seo-faq{margin-top:36px;padding-top:24px}.seo-faq h2{font-size:22px}.seo-faq summary{font-size:13px}}footer a,footer .trust-links a{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:48px!important;min-height:48px!important;padding:12px 14px!important;margin:4px!important;box-sizing:border-box!important;line-height:1.25!important;vertical-align:middle!important;-webkit-tap-highlight-color:transparent}footer .trust-links{display:inline-flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:8px!important}@media(max-width:768px){footer{padding-left:16px!important;padding-right:16px!important;line-height:1.5!important}footer a,footer .trust-links a{margin:4px!important}}</style></head>
@@ -629,7 +667,7 @@
     <article class="outfit-card outfit-card--critical" data-outfit-id="look-01">
       <a class="outfit-card-link" href="/outfits/look-01-egirl.html" aria-label="Xem chi tiết LOOK #01: E-Girl Badgirl Look #01">
         <picture>
-          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp">
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp 1x, /images-mobile-hd/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp 2x">
           <img src="/images-grid/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp" alt="Badgirl outfit LOOK #01 — E-Girl Badgirl Look #01 (E-Girl)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
         </picture>
         <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #01</div></div>
@@ -639,7 +677,7 @@
     <article class="outfit-card outfit-card--critical" data-outfit-id="look-02">
       <a class="outfit-card-link" href="/outfits/look-02-baddie-streetwear.html" aria-label="Xem chi tiết LOOK #02: Baddie Streetwear Badgirl Look #02">
         <picture>
-          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp">
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp 1x, /images-mobile-hd/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp 2x">
           <img src="/images-grid/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp" alt="Badgirl outfit LOOK #02 — Baddie Streetwear Badgirl Look #02 (Baddie Streetwear)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
         </picture>
         <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #02</div></div>
@@ -649,8 +687,8 @@
     <article class="outfit-card outfit-card--critical" data-outfit-id="look-03">
       <a class="outfit-card-link" href="/outfits/look-03-punk.html" aria-label="Xem chi tiết LOOK #03: Punk Badgirl Look #03">
         <picture>
-          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp">
-          <img src="/images-grid/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp" alt="Badgirl outfit LOOK #03 — Punk Badgirl Look #03 (Punk)" loading="eager" decoding="async" width="768" height="1024">
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp 1x, /images-mobile-hd/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp 2x">
+          <img src="/images-grid/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp" alt="Badgirl outfit LOOK #03 — Punk Badgirl Look #03 (Punk)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
         </picture>
         <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #03</div></div>
       </a>
@@ -659,8 +697,8 @@
     <article class="outfit-card outfit-card--critical" data-outfit-id="look-04">
       <a class="outfit-card-link" href="/outfits/look-04-dark-feminine.html" aria-label="Xem chi tiết LOOK #04: Dark Feminine Badgirl Look #04">
         <picture>
-          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp">
-          <img src="/images-grid/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp" alt="Badgirl outfit LOOK #04 — Dark Feminine Badgirl Look #04 (Dark Feminine)" loading="eager" decoding="async" width="768" height="1024">
+          <source media="(max-width: 768px)" srcset="/images-mobile/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp 1x, /images-mobile-hd/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp 2x">
+          <img src="/images-grid/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp" alt="Badgirl outfit LOOK #04 — Dark Feminine Badgirl Look #04 (Dark Feminine)" loading="eager" decoding="async" fetchpriority="high" width="768" height="1024">
         </picture>
         <div class="outfit-overlay"><span class="outfit-tag">XEM OUTFIT</span><div class="outfit-num">LOOK #04</div></div>
       </a>
@@ -802,7 +840,7 @@
     </audio>
   </div>
 
-  <script src="outfits.js?v=20260717-home32-responsive-v3" defer></script>
+  <script src="outfits.js?v=20260717-home32-responsive-v3" defer fetchpriority="low"></script>
 
   <script type="module" defer>
     let _fbCache = null;
@@ -913,7 +951,7 @@
     }
 
     function getPriorityCount() {
-      return window.matchMedia('(max-width: 768px)').matches ? 2 : 4;
+      return 4;
     }
 
     function bindSaveButton(btn, outfit, savedIds) {
@@ -962,14 +1000,15 @@
       img.onerror = () => card.classList.remove('shimmer');
 
       const mobileUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-mobile/badgirl-outfits/');
+      const mobileHdUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-mobile-hd/badgirl-outfits/');
       const gridUrl = outfit.img.replace('/images/badgirl-outfits/', '/images-grid/badgirl-outfits/');
       img.src = gridUrl;
-      if (isPriority) img.fetchPriority = 'high';
+      if (isPriority) img.setAttribute('fetchpriority', 'high');
 
       const picture = document.createElement('picture');
       const mobileSource = document.createElement('source');
       mobileSource.media = '(max-width: 768px)';
-      mobileSource.srcset = mobileUrl;
+      mobileSource.srcset = `${mobileUrl} 1x, ${mobileHdUrl} 2x`;
       picture.appendChild(mobileSource);
       picture.appendChild(img);
 
