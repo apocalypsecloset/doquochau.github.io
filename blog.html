@@ -28,7 +28,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: var(--black); color: var(--white);
-      font-family: 'Space Mono', monospace; min-height: 100vh;
+      font-family: 'Space Mono', monospace; min-height: 100vh; overflow-x: hidden;
     }
 
     /* HEADER */
@@ -47,10 +47,19 @@
       font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
       font-size: 18px; letter-spacing: 0.15em; color: var(--white); text-transform: uppercase;
     }
+    .header-outfits {
+      font-size: 11px; letter-spacing: 0.12em; color: var(--white);
+      text-decoration: none; text-transform: uppercase; border: 1px solid #333;
+      min-height: 36px; padding: 0 14px; display: inline-flex; align-items: center;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+    .header-outfits:hover, .header-outfits:focus-visible {
+      background: var(--white); color: var(--black); border-color: var(--white); outline: none;
+    }
 
     /* PAGE HERO */
     .page-hero {
-      text-align: center; padding: 80px 32px 56px;
+      text-align: center; padding: 56px 32px 44px;
       border-bottom: 1px solid var(--border);
     }
     .page-kicker {
@@ -59,7 +68,7 @@
     }
     .page-title {
       font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
-      font-size: clamp(48px, 8vw, 96px);
+      font-size: clamp(42px, 7vw, 76px);
       text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.1;
     }
     .page-desc {
@@ -68,10 +77,18 @@
       line-height: 1.8;
     }
 
-    /* FILTER */
+    /* SEARCH + FILTER */
+    .blog-tools { border-bottom: 1px solid var(--border); background: #0d0d0d; }
+    .search-wrap { padding: 20px 40px 0; max-width: 720px; }
+    .search-label { display: block; margin-bottom: 8px; font-size: 10px; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
+    .search-input {
+      width: 100%; height: 46px; border: 1px solid #333; background: #111; color: var(--white);
+      padding: 0 16px; font: 13px/1.4 'Space Mono', monospace; border-radius: 0; appearance: none;
+    }
+    .search-input::placeholder { color: #777; }
+    .search-input:focus { border-color: var(--white); outline: 1px solid var(--white); outline-offset: 2px; }
     .filter-bar {
-      display: flex; gap: 8px; padding: 24px 40px; flex-wrap: wrap;
-      border-bottom: 1px solid var(--border);
+      display: flex; gap: 8px; padding: 16px 40px 14px; flex-wrap: wrap;
     }
     .filter-btn {
       font-family: 'Space Mono', monospace; font-size: 10px;
@@ -81,11 +98,12 @@
     }
     .filter-btn:hover, .filter-btn.active { color: var(--white); border-color: var(--white); }
     .filter-btn.active { background: var(--white); color: var(--black); }
+    .results-count { padding: 0 40px 18px; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
 
     /* GRID */
     .post-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0; background: var(--black); padding-bottom: 80px;
     }
 
@@ -130,7 +148,7 @@
       line-height: 1.3;
       color: var(--white);
     }
-    .card-desc { font-size: 11px; color: var(--muted); line-height: 1.9; flex: 1; }
+    .card-desc { font-size: 13px; color: #aaa49c; line-height: 1.75; flex: 1; }
     .card-link {
       font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--muted); margin-top: 6px; display: inline-flex; align-items: center; gap: 6px;
@@ -156,11 +174,18 @@
     @media (max-width: 768px) {
       header { padding: 14px 16px; }
       .page-hero { padding: 48px 20px 40px; }
-      .filter-bar { padding: 16px 20px; }
+      .search-wrap { padding: 16px 20px 0; }
+      .filter-bar { padding: 14px 20px 12px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+      .filter-btn { flex: 0 0 auto; min-height: 42px; }
+      .results-count { padding: 0 20px 16px; }
       .post-grid { grid-template-columns: repeat(2, 1fr); }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 560px) {
       .post-grid { grid-template-columns: 1fr; }
+      .page-hero { padding: 38px 16px 32px; }
+      .page-desc { font-size: 13px; letter-spacing: .04em; line-height: 1.7; }
+      .card-body { padding: 18px 18px 24px; }
+      .card-title { font-size: 24px; }
     }
   </style>
 
@@ -219,7 +244,7 @@
   <header>
     <a class="back-link" href="index.html">← Manifesto</a>
     <span class="nav-badge">Blog</span>
-    <div style="width: 80px;"></div>
+    <a class="header-outfits" href="index.html#outfit-grid">Outfits</a>
   </header>
 
   <div class="page-hero">
@@ -228,8 +253,15 @@
     <p class="page-desc">Thời trang. Tâm lý. Bản sắc. Những thứ không dành cho người muốn hoà tan vào đám đông.</p>
   </div>
 
-  <div class="filter-bar" id="filter-bar">
-    <button class="filter-btn active" data-tag="all" onclick="filterPosts('all')">All</button>
+  <div class="blog-tools">
+    <div class="search-wrap">
+      <label class="search-label" for="post-search">Tìm bài viết</label>
+      <input class="search-input" id="post-search" type="search" placeholder="Ví dụ: goth, phối đồ đen, smart casual…" autocomplete="off">
+    </div>
+    <div class="filter-bar" id="filter-bar" aria-label="Lọc bài viết theo chủ đề">
+      <button class="filter-btn active" data-filter="all" type="button">Tất cả</button>
+    </div>
+    <p class="results-count" id="results-count" aria-live="polite"></p>
   </div>
 
   <div class="post-grid" id="post-grid">
@@ -237,7 +269,7 @@
 
   <div id="load-more-wrap" style="text-align:center;padding:0 32px 72px;">
     <button id="load-more-btn" class="filter-btn" style="padding:0 32px;height:44px;font-size:11px;letter-spacing:.15em;">
-      Load more
+      Xem thêm bài viết
     </button>
   </div>
 
@@ -788,19 +820,33 @@
     ];
 
     const BATCH = 12;
-    const STEP  = 4;
-    let activeTag = 'all';
+    const STEP  = 6;
+    const FILTERS = [
+      { id: 'style', label: 'Phong cách', categories: ['Aesthetic','Style Guide','Style Audit','Trend Anatomy'] },
+      { id: 'mix', label: 'Phối đồ', categories: ['Fit Lab','Dress Code Desk','Fashion Basics'] },
+      { id: 'shopping', label: 'Mua sắm', categories: ['Shopping Guide'] },
+      { id: 'care', label: 'Chăm sóc', categories: ['Care Guide','Beauty Guide'] },
+      { id: 'mindset', label: 'Tâm lý', categories: ['Tâm Lý Học'] },
+      { id: 'tips', label: 'Tips', categories: ['Tips'] }
+    ];
+    let activeFilter = 'all';
+    let searchQuery = '';
     let visibleLimit = BATCH;
 
-    const urlTag = new URLSearchParams(window.location.search).get('tag');
-    if (urlTag) activeTag = urlTag;
+    const urlFilter = new URLSearchParams(window.location.search).get('category');
+    if (urlFilter && FILTERS.some(f => f.id === urlFilter)) activeFilter = urlFilter;
 
     renderCards();
     buildFilterBar();
-    filterPosts(activeTag);
+    applyVisibility();
 
     document.getElementById('load-more-btn').addEventListener('click', () => {
       visibleLimit += STEP;
+      applyVisibility();
+    });
+    document.getElementById('post-search').addEventListener('input', event => {
+      searchQuery = event.target.value.trim().toLocaleLowerCase('vi');
+      visibleLimit = BATCH;
       applyVisibility();
     });
 
@@ -813,6 +859,8 @@
         a.className = 'post-card';
         a.href = `blog/${post.slug}.html`;
         a.dataset.tags = post.tags.join(' ');
+        a.dataset.category = post.category;
+        a.dataset.search = `${post.shortTitle} ${post.description} ${post.category} ${post.tags.join(' ')}`.toLocaleLowerCase('vi');
         a.innerHTML = `
           <div class="card-cover">
             <img src="${post.cover}" alt="${post.coverAlt}" loading="${loading}">
@@ -834,38 +882,39 @@
     function buildFilterBar() {
       const bar = document.getElementById('filter-bar');
       if (!bar) return;
-      const tags = [...new Set(POSTS.flatMap(p => p.tags))];
-      tags.forEach(tag => {
-        if ([...bar.querySelectorAll('.filter-btn')].some(b => b.dataset.tag === tag)) return;
+      FILTERS.forEach(filter => {
         const btn = document.createElement('button');
         btn.className = 'filter-btn';
-        btn.dataset.tag = tag;
-        btn.textContent = tag;
-        btn.onclick = () => filterPosts(tag);
+        btn.type = 'button';
+        btn.dataset.filter = filter.id;
+        btn.textContent = filter.label;
         bar.appendChild(btn);
       });
-    }
-
-    function filterPosts(tag) {
-      activeTag = tag || 'all';
-      visibleLimit = BATCH;
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tag === activeTag);
+      bar.addEventListener('click', event => {
+        const btn = event.target.closest('.filter-btn');
+        if (!btn) return;
+        activeFilter = btn.dataset.filter || 'all';
+        visibleLimit = BATCH;
+        applyVisibility();
       });
-      applyVisibility();
     }
 
     function applyVisibility() {
       const cards = [...document.querySelectorAll('#post-grid .post-card')];
 
       function cardMatches(card) {
-        if (activeTag === 'all') return true;
-        const tags = (card.dataset.tags || '').split(' ').filter(Boolean);
-        return tags.includes(activeTag);
+        const filter = FILTERS.find(item => item.id === activeFilter);
+        const categoryMatch = !filter || filter.categories.includes(card.dataset.category);
+        const searchMatch = !searchQuery || (card.dataset.search || '').includes(searchQuery);
+        return categoryMatch && searchMatch;
       }
 
       const matched = cards.filter(cardMatches);
       const shown = Math.min(visibleLimit, matched.length);
+
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === activeFilter);
+      });
 
       cards.forEach(card => { card.hidden = true; });
       matched.slice(0, shown).forEach(card => { card.hidden = false; });
@@ -878,10 +927,12 @@
         es = document.createElement('div');
         es.id = 'post-empty-state';
         es.className = 'state-screen';
-        es.innerHTML = '<p>Chưa có bài nào với tag này.</p>';
-        document.body.appendChild(es);
+        es.innerHTML = '<p>Không tìm thấy bài viết phù hợp.</p>';
+        document.getElementById('post-grid').appendChild(es);
       }
-      es.style.display = matched.length === 0 ? 'block' : 'none';
+      es.style.display = matched.length === 0 ? 'flex' : 'none';
+      const count = document.getElementById('results-count');
+      if (count) count.textContent = matched.length ? `Đang hiển thị ${shown}/${matched.length} bài viết` : 'Không có kết quả';
     }
   </script>
 <script src="/assets/js/analytics-enhancements.min.js" defer></script>

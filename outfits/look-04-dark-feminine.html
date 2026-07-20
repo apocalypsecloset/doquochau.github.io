@@ -176,11 +176,12 @@
       Look #04 Dark Feminine phối áo tông tối, quần hoặc váy đen, boots dark và phụ kiện statement; hợp lookbook ngoài phố.
     </p>
     <ul>
-      <li><strong>ÁO</strong> — Áo tông tối phong cách dark feminine <a href="https://s.shopee.vn/8V5mcw7r05" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
-      <li><strong>QUẦN</strong> — Quần hoặc chân váy tông tối <a href="https://s.shopee.vn/2g7zgEMETK" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
-      <li><strong>GIÀY</strong> — Giày / boots phối dark feminine <a href="https://s.shopee.vn/9023DsWZ05" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
-      <li><strong>PHỤ KIỆN</strong> — Phụ kiện statement tông dark <a href="https://s.shopee.vn/8fPCpH1o0K" rel="nofollow noopener" target="_blank">[Xem sản phẩm]</a></li>
+      <li><strong>ÁO</strong> — Áo tông tối phong cách dark feminine <a href="https://s.shopee.vn/8V5mcw7r05" rel="nofollow noopener" target="_blank">[Mua trên Shopee]</a></li>
+      <li><strong>QUẦN</strong> — Quần hoặc chân váy tông tối <a href="https://s.shopee.vn/2g7zgEMETK" rel="nofollow noopener" target="_blank">[Mua trên Shopee]</a></li>
+      <li><strong>GIÀY</strong> — Giày / boots phối dark feminine <a href="https://s.shopee.vn/9023DsWZ05" rel="nofollow noopener" target="_blank">[Mua trên Shopee]</a></li>
+      <li><strong>PHỤ KIỆN</strong> — Phụ kiện statement tông dark <a href="https://s.shopee.vn/8fPCpH1o0K" rel="nofollow noopener" target="_blank">[Mua trên Shopee]</a></li>
     </ul>
+    <p class="shop-disclosure-static" style="font-size:10px;color:#99928a;margin-top:14px;line-height:1.7;">Liên kết dẫn đến Shopee. Giá và tình trạng sản phẩm có thể thay đổi.</p>
 
     <div class="internal-links-static">
       <p>Xem thêm Dark Feminine Outfits</p>
@@ -270,7 +271,7 @@
 
       const dotsHTML = d.imgs.length > 1
         ? d.imgs.map((_, i) =>
-            `<div class="dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`
+            `<button class="dot ${i === 0 ? 'active' : ''}" type="button" aria-label="Xem ảnh ${i + 1}" onclick="goToSlide(${i})"></button>`
           ).join('')
         : '';
       const itemsHTML = d.items.map((item, idx) => {
@@ -347,12 +348,12 @@
 
       if (related.length > 0) {
         const relHTML = related.map(o => `
-          <div class="related-card" onclick="window.location.href='https://apocalypsecloset.com/outfits/${o.slug}.html'">
+          <a class="related-card" href="https://apocalypsecloset.com/outfits/${o.slug}.html" aria-label="Xem ${o.tag}">
             <img src="${o.img}"
                  alt="${o.category} Badgirl ${o.tag} — Apocalypse Closet"
                  loading="lazy" decoding="async">
             <div class="related-card-tag">${o.tag}</div>
-          </div>
+          </a>
         `).join('');
 
         document.getElementById('related-wrap').innerHTML = `
@@ -444,6 +445,7 @@
     });
   </script>
 
+<script src="/assets/js/outfit-commerce.min.js" defer></script>
 <script src="/assets/js/analytics-enhancements.min.js" defer></script>
 </body>
 </html>
