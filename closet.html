@@ -394,6 +394,18 @@
     // ── Module-level cache of Firestore closet data ─────────────
     let closetOutfits = [];
 
+    // Tên ngắn dùng riêng cho card: luôn đồng nhất với homepage.
+    // Dữ liệu cũ trong Firestore vẫn giữ title dài cho alt/SEO, nhưng không in lên ảnh.
+    function getLookLabel(outfit) {
+      const sources = [outfit?.id, outfit?.slug, outfit?.tag, outfit?.title]
+        .filter(Boolean).map(String);
+      for (const source of sources) {
+        const match = source.match(/look[\s#_-]*(\d+)/i) || source.match(/#\s*(\d+)/);
+        if (match) return `LOOK #${String(Number(match[1])).padStart(2, '0')}`;
+      }
+      return 'SAVED OUTFIT';
+    }
+
     // ── Mở outfit detail ──────────────────────────────────────────
     window.openOutfit = (id) => {
       // Ưu tiên slug từ Firestore (data mới), fallback sang outfits.js (data cũ)
@@ -455,10 +467,10 @@
 
       grid.innerHTML = sorted.map(o => `
         <div class="outfit-card" id="card-${o.id}" onclick="openOutfit('${o.id}')">
-          <img src="${o.image}" alt="${o.title}" loading="lazy" />
+          <img src="${o.image}" alt="${o.title || getLookLabel(o)}" loading="lazy" />
           <div class="overlay">
-            <div class="overlay-title">${o.title}</div>
-            <div class="overlay-cat">${o.category}</div>
+            <div class="overlay-title">${getLookLabel(o)}</div>
+            <div class="overlay-cat">${o.category || 'OUTFIT'}</div>
           </div>
           <div class="saved-badge">Saved ${fmtDate(o.savedAt)}</div>
           <button class="btn-remove"
