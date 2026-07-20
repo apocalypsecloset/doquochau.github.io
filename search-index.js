@@ -1,5 +1,29 @@
 window.searchIndex = [
   {
+    "title": "Quần Parachute Là Gì? Kiểm Tra Form, Vải Và Size",
+    "url": "/blog/quan-parachute-la-gi.html",
+    "type": "Journal",
+    "description": "Quần parachute là gì? Phân biệt với cargo, jogger và baggy; kiểm tra cạp, đũng, vải, gấu và size trước khi mua quần parachute nữ online.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+    "keywords": "quần parachute là gì, parachute pants là gì, quần parachute nữ, quần dù ống rộng nữ, parachute và cargo, parachute và jogger, chọn size quần parachute, quần parachute streetwear Quần Parachute Là Gì Garment Lab"
+  },
+  {
+    "title": "Business Casual Là Gì? Giải Mã Dress Code Công Sở",
+    "url": "/blog/business-casual-la-gi.html",
+    "type": "Journal",
+    "description": "Business Casual là gì? Dùng hệ thống đèn tín hiệu, ma trận văn phòng và kiểm tra bối cảnh để mặc đi làm chuyên nghiệp mà vẫn giữ cá tính.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+    "keywords": "business casual là gì, business casual nữ, phong cách business casual, business casual mặc gì, business casual và smart casual, dress code công sở nữ, outfit đi làm nữ, business casual tông đen Business Casual Là Gì Office Code"
+  },
+  {
+    "title": "Quiet Luxury Là Gì? Đọc Chất Lượng Thay Vì Logo",
+    "url": "/blog/quiet-luxury-la-gi.html",
+    "type": "Journal",
+    "description": "Quiet Luxury là gì? Dùng bài kiểm tra form, chất liệu, hoàn thiện và cost-per-wear để chọn đồ tinh tế, không phụ thuộc logo hay màu be.",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+    "keywords": "quiet luxury là gì, phong cách quiet luxury, quiet luxury nữ, quiet luxury và old money, thời trang không logo, chọn đồ quiet luxury, quiet luxury tối màu, quiet luxury outfit nữ Quiet Luxury Là Gì Material Ledger"
+  },
+  {
   "title": "Smart Casual Là Gì? Hệ Quy Chiếu Chọn Đồ Đúng Dịp",
   "url": "/blog/smart-casual-la-gi.html",
   "type": "Journal",

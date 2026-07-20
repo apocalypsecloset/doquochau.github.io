@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,6 +69,24 @@
   <!-- ═══════════════════════════════════════════
        BLOG POSTS — ordered mới nhất trước
   ═══════════════════════════════════════════ -->
+<url>
+  <loc>https://apocalypsecloset.com/blog/quan-parachute-la-gi.html</loc>
+  <lastmod>2026-07-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://apocalypsecloset.com/blog/business-casual-la-gi.html</loc>
+  <lastmod>2026-07-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://apocalypsecloset.com/blog/quiet-luxury-la-gi.html</loc>
+  <lastmod>2026-07-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
 <url>
   <loc>https://apocalypsecloset.com/blog/smart-casual-la-gi.html</loc>
   <lastmod>2026-07-17</lastmod>
@@ -125,7 +143,7 @@
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/capsule-wardrobe-la-gi.html</loc>
-  <lastmod>2026-07-08</lastmod>
+  <lastmod>2026-07-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>

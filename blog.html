@@ -256,7 +256,7 @@
   <div class="blog-tools">
     <div class="search-wrap">
       <label class="search-label" for="post-search">Tìm bài viết</label>
-      <input class="search-input" id="post-search" type="search" placeholder="Ví dụ: goth, phối đồ đen, smart casual…" autocomplete="off">
+      <input class="search-input" id="post-search" type="search" placeholder="Ví dụ: quiet luxury, business casual, parachute…" autocomplete="off">
     </div>
     <div class="filter-bar" id="filter-bar" aria-label="Lọc bài viết theo chủ đề">
       <button class="filter-btn active" data-filter="all" type="button">Tất cả</button>
@@ -277,6 +277,36 @@
 
 <script>
     const POSTS = [
+      {
+  slug: 'quan-parachute-la-gi',
+  shortTitle: "Quần Parachute Là Gì",
+  category: "Garment Lab",
+  date: "20 Jul 2026",
+  tags: ["#ParachutePants", "#GarmentLab", "#Streetwear", "#FitGuide"],
+  cover: "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+  coverAlt: "Quần parachute ống phồng màu nâu xám trong outfit baddie streetwear nữ",
+  description: "Quần parachute là gì? Phân biệt với cargo, jogger và baggy; kiểm tra cạp, đũng, vải, gấu và size trước khi mua quần parachute nữ online."
+},
+      {
+  slug: 'business-casual-la-gi',
+  shortTitle: "Business Casual Là Gì",
+  category: "Office Code",
+  date: "19 Jul 2026",
+  tags: ["#BusinessCasual", "#OfficeCode", "#DressCode", "#Workwear"],
+  cover: "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+  coverAlt: "Outfit business casual nữ tông tối với quần dài và top có cấu trúc cho môi trường sáng tạo",
+  description: "Business Casual là gì? Dùng hệ thống đèn tín hiệu, ma trận văn phòng và kiểm tra bối cảnh để mặc đi làm chuyên nghiệp mà vẫn giữ cá tính."
+},
+      {
+  slug: 'quiet-luxury-la-gi',
+  shortTitle: "Quiet Luxury Là Gì",
+  category: "Material Ledger",
+  date: "18 Jul 2026",
+  tags: ["#QuietLuxury", "#MaterialLedger", "#OldMoney", "#Wardrobe"],
+  cover: "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+  coverAlt: "Outfit nữ tông nâu xám với bề mặt lì và form dài gợi tinh thần quiet luxury tối màu",
+  description: "Quiet Luxury là gì? Dùng bài kiểm tra form, chất liệu, hoàn thiện và cost-per-wear để chọn đồ tinh tế, không phụ thuộc logo hay màu be."
+},
       {
   slug: 'smart-casual-la-gi',
   shortTitle: 'Smart Casual Là Gì',
@@ -822,9 +852,9 @@
     const BATCH = 12;
     const STEP  = 6;
     const FILTERS = [
-      { id: 'style', label: 'Phong cách', categories: ['Aesthetic','Style Guide','Style Audit','Trend Anatomy'] },
-      { id: 'mix', label: 'Phối đồ', categories: ['Fit Lab','Dress Code Desk','Fashion Basics'] },
-      { id: 'shopping', label: 'Mua sắm', categories: ['Shopping Guide'] },
+      { id: 'style', label: 'Phong cách', categories: ['Aesthetic','Style Guide','Style Audit','Trend Anatomy','Material Ledger'] },
+      { id: 'mix', label: 'Phối đồ', categories: ['Fit Lab','Dress Code Desk','Fashion Basics','Office Code'] },
+      { id: 'shopping', label: 'Mua sắm', categories: ['Shopping Guide','Garment Lab'] },
       { id: 'care', label: 'Chăm sóc', categories: ['Care Guide','Beauty Guide'] },
       { id: 'mindset', label: 'Tâm lý', categories: ['Tâm Lý Học'] },
       { id: 'tips', label: 'Tips', categories: ['Tips'] }
