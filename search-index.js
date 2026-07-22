@@ -1,5 +1,29 @@
 window.searchIndex = [
   {
+  "title": "Techwear Là Gì? Đọc Công Năng Trước Khi Mua “Đồ Công Nghệ”",
+  "url": "/blog/techwear-la-gi.html",
+  "type": "Journal",
+  "description": "Techwear là gì? Kiểm tra vật liệu, chống thời tiết, hệ túi, chuyển động và modularity để phân biệt techwear thật với outfit chỉ mang thẩm mỹ cyberpunk.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+  "keywords": "techwear là gì, phong cách techwear, techwear nữ, technical wear là gì, techwear outfit nữ, quần techwear, techwear và cyberpunk, đồ công nghệ thời trang Techwear Là Gì? Đọc Công Năng Trước Khi Mua “Đồ Công Nghệ” System Spec"
+},
+  {
+  "title": "Sporty Chic Là Gì? Kiểm Tra Độ Đẹp Bằng Chuyển Động",
+  "url": "/blog/sporty-chic-la-gi.html",
+  "type": "Journal",
+  "description": "Sporty Chic là gì? Dùng bài kiểm tra chuyển động, chất liệu, tỷ lệ và bối cảnh để chọn đồ thể thao mặc ra phố mà không thành đồ tập hoặc costume.",
+  "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-20-full-outfit.webp",
+  "keywords": "sporty chic là gì, phong cách sporty chic, sporty style nữ, outfit thể thao nữ, athleisure là gì, sporty chic nữ, đồ thể thao mặc hàng ngày, sporty chic tối màu Sporty Chic Là Gì? Kiểm Tra Độ Đẹp Bằng Chuyển Động Movement Audit"
+},
+  {
+  "title": "Preppy Style Là Gì? Đọc Mã Đồng Phục Không Bị Costume",
+  "url": "/blog/preppy-style-la-gi.html",
+  "type": "Journal",
+  "description": "Preppy style là gì? Đọc đúng blazer, polo, knit, chân váy, quần suông và loafer; phân biệt Preppy, Old Money và Dark Academia trước khi mua đồ.",
+  "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-30-full-outfit.webp",
+  "keywords": "preppy style là gì, phong cách preppy, preppy nữ, preppy outfit nữ, ivy league style, preppy và old money, preppy và dark academia, đồ preppy nữ Preppy Style Là Gì? Đọc Mã Đồng Phục Không Bị Costume Uniform Decoder"
+},
+  {
     "title": "Quần Parachute Là Gì? Kiểm Tra Form, Vải Và Size",
     "url": "/blog/quan-parachute-la-gi.html",
     "type": "Journal",
