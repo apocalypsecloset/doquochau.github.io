@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "Quần Jogger Là Gì? Đọc Bo Gấu, Chất Vải Và Size",
+    "url": "/blog/quan-jogger-la-gi.html",
+    "type": "Journal",
+    "description": "Quần jogger là gì? Đọc đúng bo gấu, độ côn, cạp chun, chất vải và thông số size để chọn jogger nữ không bí chân, phồng gối hay sai dáng.",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-20-full-outfit.webp",
+    "keywords": "quần jogger là gì, quần jogger nữ, jogger pants là gì, quần jogger và quần nỉ, jogger và track pants, chọn size quần jogger, jogger ống rộng, jogger streetwear nữ Quần Jogger Là Gì Garment Mechanics"
+  },
+  {
   "title": "Techwear Là Gì? Đọc Công Năng Trước Khi Mua “Đồ Công Nghệ”",
   "url": "/blog/techwear-la-gi.html",
   "type": "Journal",
