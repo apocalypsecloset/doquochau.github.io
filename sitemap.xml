@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- ═══════════════════════════════════════════
        CORE PAGES
@@ -15,7 +16,7 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -71,222 +72,333 @@
   ═══════════════════════════════════════════ -->
 <url>
   <loc>https://apocalypsecloset.com/blog/techwear-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/techwear-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-22</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/sporty-chic-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/sporty-chic-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-24</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/preppy-style-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/preppy-style-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-21</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/quan-parachute-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/quan-parachute-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/business-casual-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/business-casual-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-19</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/quiet-luxury-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/quiet-luxury-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-18</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/smart-casual-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/smart-casual-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-17</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/old-money-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/old-money-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-16</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/acubi-style-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/acubi-style-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-15</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/quan-baggy-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/quan-baggy-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-14</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/quan-cargo-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/quan-cargo-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-13</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/unisex-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/unisex-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-12</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/form-oversize-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/form-oversize-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-11</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/ootd-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/ootd-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-13</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/outfit-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/outfit-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-17</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/capsule-wardrobe-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/capsule-wardrobe-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/aesthetic-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/aesthetic-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-22</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/streetwear-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/streetwear-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-06</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/local-brand-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/local-brand-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-05</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/cach-chon-size-do-alt-fashion-online.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/cach-chon-size-do-alt-fashion-online.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-04</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/mac-do-den-mua-he-co-nong-khong.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/mac-do-den-mua-he-co-nong-khong.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-03</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/coquette-la-gi-dark-coquette.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/coquette-la-gi-dark-coquette.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-02</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/indie-sleaze-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/indie-sleaze-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-07-01</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/witch-aesthetic-whimsigoth-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/witch-aesthetic-whimsigoth-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-30</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/dark-academia-la-gi-phoi-do-badgirl.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/dark-academia-la-gi-phoi-do-badgirl.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-29</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/pastel-goth-cyber-goth-mall-goth-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/pastel-goth-cyber-goth-mall-goth-la-gi.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-28</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/grunge-la-gi-khac-gi-punk.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/grunge-la-gi-khac-gi-punk.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-27</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/y2k-la-gi-phong-cach-y2k-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/y2k-la-gi-phong-cach-y2k-nu.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-26</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/cach-chup-anh-ootd-dep-bang-dien-thoai.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/cach-chup-anh-ootd-dep-bang-dien-thoai.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-25</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/cach-giat-do-den-khong-phai-mau.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/cach-giat-do-den-khong-phai-mau.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-24</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/cach-bao-quan-do-da-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/cach-bao-quan-do-da-nu.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-23</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/phoi-do-voi-ao-crop-top-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-ao-crop-top-nu.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-22</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/phoi-do-voi-quan-da-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-quan-da-nu.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-21</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/nhuom-toc-dark-aesthetic.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/nhuom-toc-dark-aesthetic.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/phoi-do-grunge-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-grunge-nu.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-19</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://apocalypsecloset.com/blog/xay-tu-do-dark-aesthetic.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/xay-tu-do-dark-aesthetic.webp</image:loc>
+  </image:image>
   <lastmod>2026-06-17</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-corset-top-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-corset-top-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -294,6 +406,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-ao-thun-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-ao-thun-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -301,6 +416,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-quan-short-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-quan-short-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -308,6 +426,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-layering-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-layering-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -315,6 +436,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-vay-ngan-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-vay-ngan-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -322,6 +446,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-ao-khoac-da-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-ao-khoac-da-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -329,6 +456,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-boots-da-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-boots-da-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -336,6 +466,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/outfit-di-choi-dem-badgirl.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/outfit-di-choi-dem-badgirl.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -343,6 +476,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phu-kien-alt-fashion-thiet-yeu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phu-kien-alt-fashion-thiet-yeu.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -350,6 +486,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-cho-nguoi-gay-alt-fashion.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-cho-nguoi-gay-alt-fashion.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -357,6 +496,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/dark-feminine-outfit-phoi-do.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/dark-feminine-outfit-phoi-do.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -364,6 +506,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-alt-fashion-cho-nguoi-moi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-alt-fashion-cho-nguoi-moi.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -371,6 +516,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/punk-makeup-dark-aesthetic.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/punk-makeup-dark-aesthetic.webp</image:loc>
+  </image:image>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -378,6 +526,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phoi-do-voi-quan-jeans-ong-rong-nu.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phoi-do-voi-quan-jeans-ong-rong-nu.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -385,6 +536,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/badgirl-outfit-di-cafe.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/badgirl-outfit-di-cafe.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -392,6 +546,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/cach-phoi-do-den-khong-nham-chan.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/cach-phoi-do-den-khong-nham-chan.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -399,6 +556,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/alt-fashion-la-gi-va-tai-sao-no-quan-trong.webp</image:loc>
+  </image:image>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -406,6 +566,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/y2k-dark-aesthetic-khac-gi-y2k-thuong.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/y2k-dark-aesthetic-khac-gi-y2k-thuong.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -413,6 +576,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/goth-aesthetic-huong-dan-day-du.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/goth-aesthetic-huong-dan-day-du.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -420,6 +586,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/soft-grunge-aesthetic-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/soft-grunge-aesthetic-la-gi.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -427,6 +596,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/phong-cach-egirl-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/phong-cach-egirl-la-gi.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -434,6 +606,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/badgirl.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/badgirl.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -441,6 +616,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/dark-feminine-is-not-a-trend.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/dark-feminine-is-not-a-trend.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -448,6 +626,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/the-art-of-burning-out.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/the-art-of-burning-out.webp</image:loc>
+  </image:image>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -740,6 +921,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/quan-jogger-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/quan-jogger-la-gi.webp</image:loc>
+  </image:image>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -747,6 +931,9 @@
 
   <url>
     <loc>https://apocalypsecloset.com/blog/athleisure-la-gi.html</loc>
+  <image:image>
+    <image:loc>https://apocalypsecloset.com/images/blog-covers/athleisure-la-gi.webp</image:loc>
+  </image:image>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
