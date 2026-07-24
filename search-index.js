@@ -1,5 +1,13 @@
 window.searchIndex = [
   {
+    "title": "Athleisure Là Gì? Kiểm Tra Đồ Thể Thao Trước Khi Mặc Cả Ngày",
+    "url": "/blog/athleisure-la-gi.html",
+    "type": "Journal",
+    "description": "Athleisure là gì? Kiểm tra độ thoáng, độ nén, độ trong, túi, đường may và khả năng chuyển bối cảnh trước khi mua đồ thể thao mặc hằng ngày.",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp",
+    "keywords": "athleisure là gì, phong cách athleisure, athleisure nữ, đồ thể thao mặc hàng ngày, activewear và athleisure, athleisure outfit nữ, quần athleisure, chọn đồ athleisure Athleisure Là Gì Wearability Protocol activewear sporty chic đồ tập mặc hàng ngày"
+  },
+  {
     "title": "Quần Jogger Là Gì? Đọc Bo Gấu, Chất Vải Và Size",
     "url": "/blog/quan-jogger-la-gi.html",
     "type": "Journal",
