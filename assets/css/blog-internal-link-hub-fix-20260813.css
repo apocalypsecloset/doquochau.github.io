@@ -277,3 +277,7 @@
     font-size:12.5px!important;
   }
 }
+
+
+/* AC AUTHORITY SOURCES 20260921 */
+.article-content .ac-sources{margin:52px 0 0;padding:26px clamp(18px,4vw,30px);border:1px solid #303030;background:#0d0d0d;box-sizing:border-box}.article-content .ac-sources h2{margin:0 0 12px!important}.article-content .ac-sources>p{margin:0 0 14px}.article-content .ac-sources ul{margin:0;padding-left:20px}.article-content .ac-sources li{margin:10px 0;line-height:1.7}.article-content .ac-sources a{overflow-wrap:anywhere}@media(max-width:768px){.article-content .ac-sources{margin-top:40px;padding:20px 16px}}

@@ -1,0 +1,37 @@
+
+/* GOLD TEST V2 — compact related outfits; no giant 9:16 cards. */
+.related-outfit-links{
+  width:100%!important;max-width:820px!important;margin:48px auto!important;
+  padding:28px 0 4px!important;border-top:1px solid #292929!important;
+}
+.related-outfit-links>h2{margin:0 0 10px!important}
+.related-outfit-links>p{margin:0 0 20px!important;color:#bdb7ae!important}
+.related-outfit-grid{
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;width:100%!important;
+}
+.related-outfit-card{
+  display:flex!important;flex-direction:column!important;min-width:0!important;overflow:hidden!important;
+  border:1px solid #2d2d2d!important;background:#0d0d0d!important;color:#f0ece4!important;
+  text-decoration:none!important;transition:transform .18s ease,border-color .18s ease!important;
+}
+.related-outfit-card:hover,.related-outfit-card:focus-visible{
+  transform:translateY(-3px)!important;border-color:#654039!important;outline:none!important;
+}
+.related-outfit-card>img{
+  display:block!important;width:100%!important;height:auto!important;aspect-ratio:4/5!important;
+  object-fit:cover!important;object-position:center 32%!important;margin:0!important;
+}
+.related-outfit-copy{display:flex!important;flex-direction:column!important;gap:6px!important;padding:12px 12px 13px!important}
+.related-outfit-copy strong{font-family:'Oswald',sans-serif!important;font-size:15px!important;line-height:1.25!important;text-transform:uppercase!important}
+.related-outfit-copy small{font-family:'Space Mono',monospace!important;font-size:8px!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#e05444!important}
+@media(max-width:768px){
+  .related-outfit-links{margin:38px auto!important;padding-top:22px!important}
+  .related-outfit-grid{grid-template-columns:1fr!important;gap:10px!important}
+  .related-outfit-card{display:grid!important;grid-template-columns:92px minmax(0,1fr)!important;align-items:stretch!important}
+  .related-outfit-card>img{width:92px!important;height:118px!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center 30%!important}
+  .related-outfit-copy{justify-content:center!important;padding:11px 12px!important}
+  .related-outfit-copy strong{font-size:14px!important}
+}
+
+.related-outfit-grid.is-two{grid-template-columns:repeat(2,minmax(0,1fr))!important}@media(max-width:768px){.related-outfit-grid.is-two{grid-template-columns:1fr!important}}

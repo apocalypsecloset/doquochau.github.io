@@ -1,0 +1,20 @@
+
+/* BATCH 6 — foundations/hubs intent guard + depth */
+.ac-intent-lock,.hub-intent-lock,.ac-depth-note,.ac-hub-guide{
+  margin:28px 0!important;padding:22px!important;border:1px solid #323232!important;background:#0f0f0f!important
+}
+.ac-intent-lock,.hub-intent-lock{border-left:3px solid #e05444!important;font-size:12px!important;line-height:1.75!important}
+.ac-depth-note h2,.ac-depth-note h3,.ac-hub-guide h2,.ac-hub-guide h3{margin-top:0!important}
+.ac-route-grid{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin:18px 0!important
+}
+.ac-route-card{padding:16px!important;border:1px solid #292929!important;background:#111!important}
+.ac-route-card strong{display:block!important;margin-bottom:6px!important}
+.ac-budget-grid{
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin:18px 0!important
+}
+.ac-budget-grid>div{padding:16px!important;border:1px solid #292929!important;background:#111!important}
+@media(max-width:768px){
+  .ac-intent-lock,.hub-intent-lock,.ac-depth-note,.ac-hub-guide{padding:20px 16px!important}
+  .ac-route-grid,.ac-budget-grid{grid-template-columns:1fr!important}
+}

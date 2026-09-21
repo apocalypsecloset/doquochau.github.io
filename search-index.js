@@ -40,6 +40,14 @@ window.searchIndex = [
     "keywords": "item guide, phối đồ theo item, item guide giày nữ: chọn footwear theo outfit"
   },
   {
+    "title": "Phụ Kiện Thời Trang Nữ Cá Tính",
+    "url": "/blog/phu-kien-thoi-trang-nu-ca-tinh.html",
+    "type": "Item Guide Hub",
+    "description": "Hub choker, fishnet tights, arm warmers, leg warmers và thắt lưng đinh tán; chọn phụ kiện theo tỷ lệ, texture và style.",
+    "image": "/images/blog-covers/phu-kien-alt-fashion-thiet-yeu.webp",
+    "keywords": "phụ kiện thời trang nữ cá tính, choker, fishnet tights, arm warmers, leg warmers, thắt lưng đinh tán"
+  },
+  {
     "title": "Bad Girl Outfit Ideas — 112 Pinterest Looks",
     "url": "/bad-girl-outfits.html",
     "type": "Baddie Streetwear",
@@ -2430,5 +2438,245 @@ window.searchIndex = [
     "description": "Nu Goth là gì? Giải thích nu goth fashion, all-black clean silhouette, mesh, platform boots, silver jewelry và 7 nu goth outfit dễ mặc.",
     "image": "/images/blog-covers/nu-goth-la-gi-phong-cach-nu-goth.webp",
     "keywords": "nu goth, nu goth fashion, nu goth outfit, nu goth style"
+  },
+  {
+    "title": "Angelcore Là Gì? Aesthetic Thiên Thần Và Cách Phối Outfit Dễ Mặc",
+    "url": "/blog/angelcore-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Angelcore là gì? Cách phối aesthetic thiên thần bằng palette sáng, sheer, satin, lace và metallic accent mà vẫn dễ mặc, không biến outfit thành costume.",
+    "image": "/images/blog-covers/angelcore-la-gi.webp",
+    "keywords": "Angelcore, Aesthetic, AltFashion"
+  },
+  {
+    "title": "Áo Hoodie Oversize Nữ Phối Với Gì? 9 Outfit Gọn Mà Vẫn Có Layer",
+    "url": "/blog/ao-hoodie-oversize-nu-phoi-voi-gi.html",
+    "type": "Item Styling",
+    "description": "Áo hoodie oversize nữ phối với gì? 9 công thức outfit theo volume, chiều dài, layer và footwear để hoodie rộng vẫn có tỷ lệ rõ, từ streetwear đến alt.",
+    "image": "/images/blog-covers/ao-hoodie-oversize-nu-phoi-voi-gi.webp",
+    "keywords": "Hoodie, Streetwear"
+  },
+  {
+    "title": "Áo Ống Nữ Phối Với Gì? Cách Chọn Form Và 10 Outfit Cá Tính",
+    "url": "/blog/ao-ong-nu-phoi-voi-gi.html",
+    "type": "Top Styling",
+    "description": "Áo ống nữ phối với gì để cân tỷ lệ và không bị trống phần trên? Xem cách chọn form, áo ống dài, áo ống xoè, áo ống trắng/đen và 10 công thức outfit cá tính.",
+    "image": "/images/blog-covers/ao-ong-nu-phoi-voi-gi.webp",
+    "keywords": "ÁoỐng, TopStyling, AltFashion, OutfitIdeas"
+  },
+  {
+    "title": "Arm Warmers Là Gì? Cách Phối Ống Tay Rời Theo Y2K, E-Girl Và Alt",
+    "url": "/blog/arm-warmers-la-gi-cach-phoi.html",
+    "type": "Accessory Styling",
+    "description": "Arm warmers là gì và phối sao không bị costume? Xem cách chọn độ dài, texture, màu và outfit ống tay rời theo Y2K, E-Girl và Alt.",
+    "image": "/images/blog-covers/arm-warmers-la-gi-cach-phoi.webp",
+    "keywords": "ArmWarmers, EGirl, Y2K"
+  },
+  {
+    "title": "Avant-Garde Fashion Là Gì? Cách Đọc Silhouette, Concept Và Outfit",
+    "url": "/blog/avant-garde-fashion-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Avant-garde fashion là gì? Học cách đọc silhouette, concept, tỷ lệ, texture và xây outfit thử nghiệm mà vẫn có chủ đích, không biến thành costume.",
+    "image": "/images/blog-covers/avant-garde-fashion-la-gi.webp",
+    "keywords": "AvantGarde, AltFashion, Styling"
+  },
+  {
+    "title": "Babydoll Dress Là Gì? Cách Phối Váy Babydoll Không Bị Quá Bánh Bèo",
+    "url": "/blog/babydoll-dress-la-gi-cach-phoi.html",
+    "type": "Dress Styling",
+    "description": "Babydoll dress là gì và phối sao để không quá bánh bèo? Xem cách đọc form, cân volume, chọn giày và outfit từ Coquette đến Dark Alt.",
+    "image": "/images/blog-covers/babydoll-dress-la-gi-cach-phoi.webp",
+    "keywords": "BabydollDress, DarkCoquette, AltFashion"
+  },
+  {
+    "title": "Ballet Flats Là Gì? Cách Phối Giày Búp Bê Theo Balletcore Và Alt Style",
+    "url": "/blog/ballet-flats-la-gi-cach-phoi.html",
+    "type": "Footwear Styling",
+    "description": "Ballet flats phối thế nào để không quá bánh bèo? Xem cách chọn form, ballet flats black, phối với váy, quần, tất và outfit từ Balletcore đến Alt Style.",
+    "image": "/images/blog-covers/ballet-flats-la-gi-cach-phoi.webp",
+    "keywords": "BalletFlats, Balletcore, AltFashion, FootwearStyling"
+  },
+  {
+    "title": "Bodycon Dress Là Gì? Cách Chọn Và Phối Váy Ôm Không Bị Gượng",
+    "url": "/blog/bodycon-dress-la-gi-cach-phoi.html",
+    "type": "Fit Guide",
+    "description": "Bodycon dress là gì và mặc sao không bị gượng? Hướng dẫn chọn độ ôm, chất liệu, layer và phối đầm bodycon theo Dark Feminine, minimal và alt.",
+    "image": "/images/blog-covers/bodycon-dress-la-gi-cach-phoi.webp",
+    "keywords": "BodyconDress, DarkFeminine, AltFashion"
+  },
+  {
+    "title": "Cách Phối Đồ Cho Người Béo Bụng Nữ: Cân Tỷ Lệ Mà Không Cần Giấu Cơ Thể",
+    "url": "/blog/cach-phoi-do-cho-nguoi-beo-bung-nu.html",
+    "type": "Body Shape Styling",
+    "description": "Cách phối đồ cho người béo bụng nữ theo tỷ lệ, độ rơi và điểm nhấn outfit. Gợi ý top, bottom, layer và giày để mặc thoải mái mà không cần giấu cơ thể.",
+    "image": "/images/blog-covers/cach-phoi-do-cho-nguoi-beo-bung-nu.webp",
+    "keywords": "BodyShape, Styling"
+  },
+  {
+    "title": "Chân Váy Bí Ngô Phối Với Áo Gì? Cách Mặc Không Bị Phồng Dáng",
+    "url": "/blog/chan-vay-bi-ngo-phoi-voi-ao-gi.html",
+    "type": "Skirt Styling",
+    "description": "Chân váy bí ngô mặc với áo gì để không bị phồng dáng? Xem cách chọn form, cân volume và phối bubble skirt với fitted top, áo len, blazer, boots và loafer.",
+    "image": "/images/blog-covers/chan-vay-bi-ngo-phoi-voi-ao-gi.webp",
+    "keywords": "ChânVáyBí, SkirtStyling, AltFashion, OutfitIdeas"
+  },
+  {
+    "title": "Chân Váy Tennis Phối Với Áo Gì? 10 Công Thức Từ Preppy Đến Alt",
+    "url": "/blog/chan-vay-tennis-phoi-voi-ao-gi.html",
+    "type": "Skirt Styling",
+    "description": "Chân váy tennis phối với áo gì? Xem cách chọn váy tennis trắng, xám, đen, phân biệt với chân váy xếp ly và 10 outfit từ Preppy đến Alt.",
+    "image": "/images/blog-covers/chan-vay-tennis-phoi-voi-ao-gi.webp",
+    "keywords": "TennisSkirt, Preppy, AltFashion"
+  },
+  {
+    "title": "Choker Nữ Là Gì? Cách Chọn Vòng Cổ Choker Theo Outfit Và Cổ Áo",
+    "url": "/blog/choker-nu-la-gi-cach-phoi.html",
+    "type": "Accessory Styling",
+    "description": "Choker nữ là gì? Cách chọn vòng cổ choker nữ theo độ rộng, chất liệu, neckline, tỷ lệ cổ và outfit Goth, E-Girl, Alt để phụ kiện không bị quá nặng.",
+    "image": "/images/blog-covers/choker-nu-la-gi-cach-phoi.webp",
+    "keywords": "Choker, Accessories"
+  },
+  {
+    "title": "Corporate Goth Là Gì? Cách Đưa Goth Vào Outfit Công Sở Mà Không Thành Costume",
+    "url": "/blog/corporate-goth-la-gi.html",
+    "type": "Workwear Aesthetic",
+    "description": "Corporate Goth là gì? Cách đưa Goth vào outfit công sở bằng tailoring tối, texture, giày và phụ kiện có kiểm soát; phân biệt với Office Siren và Business Casual.",
+    "image": "/images/blog-covers/corporate-goth-la-gi.webp",
+    "keywords": "CorporateGoth, Workwear"
+  },
+  {
+    "title": "Cyber Y2K Là Gì? Outfit Tương Lai Đầu 2000s Khác Dark Y2K Ra Sao",
+    "url": "/blog/cyber-y2k-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Cyber Y2K là gì? Giải mã cyber 2K qua metallic, tech details, silhouette đầu 2000s và outfit tương lai; so sánh với Dark Y2K và Techwear để phối đúng intent.",
+    "image": "/images/blog-covers/cyber-y2k-la-gi.webp",
+    "keywords": "CyberY2K, Y2K"
+  },
+  {
+    "title": "Fairycore Là Gì? Outfit, Màu Sắc Và Item Tạo Vibe Tiên Rừng",
+    "url": "/blog/fairycore-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Fairycore là gì? Khám phá màu sắc, texture, item và fairycore outfits mang cảm hứng tiên rừng, đồng thời phân biệt Fairycore với Fairy Grunge và Cottagecore.",
+    "image": "/images/blog-covers/fairycore-la-gi.webp",
+    "keywords": "Fairycore, AestheticGuide, AltFashion"
+  },
+  {
+    "title": "Fishnet Tights Là Gì? Cách Phối Tất Lưới Không Bị Quá Costume",
+    "url": "/blog/fishnet-tights-la-gi-cach-phoi.html",
+    "type": "Accessory Styling",
+    "description": "Fishnet tights là gì? Cách phối tất lưới theo độ mắt lưới, coverage, giày, váy và layer để outfit Goth, E-Girl hoặc Alt có chủ đích mà không quá costume.",
+    "image": "/images/blog-covers/fishnet-tights-la-gi-cach-phoi.webp",
+    "keywords": "Fishnet, AltAccessories"
+  },
+  {
+    "title": "Giày Loafer Nữ Là Gì? Cách Phối Loafer Không Bị Quá Công Sở",
+    "url": "/blog/giay-loafer-nu-la-gi-cach-phoi.html",
+    "type": "Footwear Guide",
+    "description": "Giày loafer nữ là gì và phối thế nào để không bị quá công sở? Xem cách chọn đế, mũi giày, tất và công thức outfit từ preppy, Office Siren đến alt.",
+    "image": "/images/blog-covers/giay-loafer-nu-la-gi-cach-phoi.webp",
+    "keywords": "Loafer, FootwearGuide, AltFashion, OutfitIdeas"
+  },
+  {
+    "title": "Leg Warmers Là Gì? Cách Phối Ống Giữ Ấm Chân Theo Y2K Và Balletcore",
+    "url": "/blog/leg-warmers-la-gi-cach-phoi.html",
+    "type": "Accessory Styling",
+    "description": "Leg warmers là gì và phối sao không bị costume? Xem cách chọn độ dài, volume, giày và outfit theo Balletcore, Y2K và Alt.",
+    "image": "/images/blog-covers/leg-warmers-la-gi-cach-phoi.webp",
+    "keywords": "LegWarmers, Balletcore, Y2K"
+  },
+  {
+    "title": "Light Academia Là Gì? Màu Sắc, Outfit Và Khác Dark Academia Thế Nào",
+    "url": "/blog/light-academia-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Light Academia là gì? Cách đọc bảng màu sáng, tailoring mềm, knit và outfit học thuật; so sánh Light Academia với Dark Academia để không phối sai mood.",
+    "image": "/images/blog-covers/light-academia-la-gi.webp",
+    "keywords": "LightAcademia, Academia, Styling"
+  },
+  {
+    "title": "Mermaidcore Là Gì? Màu Sắc, Chất Liệu Và Outfit Cảm Hứng Nàng Tiên Cá",
+    "url": "/blog/mermaidcore-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Mermaidcore là gì? Xây outfit cảm hứng nàng tiên cá bằng iridescent, sheer, satin, mesh, màu biển và silhouette chuyển động mà vẫn mặc được, không thành costume.",
+    "image": "/images/blog-covers/mermaidcore-la-gi.webp",
+    "keywords": "Mermaidcore, FantasyFashion"
+  },
+  {
+    "title": "Normcore Là Gì? Phong Cách Bình Thường Có Chủ Đích Khác Minimalist Ra Sao",
+    "url": "/blog/normcore-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Normcore là gì? Hiểu cách mặc những item bình thường có chủ đích, phân biệt Normcore với Minimalist và Casual Chic, cùng công thức outfit dễ áp dụng.",
+    "image": "/images/blog-covers/normcore-la-gi.webp",
+    "keywords": "Normcore, EverydayStyle, AestheticGuide"
+  },
+  {
+    "title": "Outfit Đi Biển Cho Nữ Cá Tính: 12 Set Đẹp, Gọn Và Dễ Chụp Hình",
+    "url": "/blog/outfit-di-bien-cho-nu-ca-tinh.html",
+    "type": "Occasion Styling",
+    "description": "Outfit đi biển cho nữ cá tính: 12 set gọn, mát, dễ chụp hình từ bikini layer, linen, crochet đến dark beachwear, kèm giày và phụ kiện thực tế.",
+    "image": "/images/blog-covers/outfit-di-bien-cho-nu-ca-tinh.webp",
+    "keywords": "BeachOutfit, SummerStyle, AltFashion"
+  },
+  {
+    "title": "Outfit Sân Bay Nữ: 10 Công Thức Thoải Mái Nhưng Vẫn Có Gu",
+    "url": "/blog/outfit-san-bay-nu.html",
+    "type": "Occasion Outfit",
+    "description": "Outfit sân bay nữ theo từng chặng di chuyển: check-in, security, chờ gate và lên máy bay. 10 công thức thoải mái, dễ layer, có túi hợp lý mà vẫn giữ gu cá nhân.",
+    "image": "/images/blog-covers/outfit-san-bay-nu.webp",
+    "keywords": "AirportOutfit, Occasion"
+  },
+  {
+    "title": "Phối Đồ Dáng Quả Lê: Cân Vai, Eo Và Hông Mà Không Cần Giấu Dáng",
+    "url": "/blog/phoi-do-dang-qua-le.html",
+    "type": "Body Shape Styling",
+    "description": "Phối đồ dáng quả lê theo mục tiêu tỷ lệ: cân vai, eo và hông bằng neckline, sleeve, bottom, layer và footwear. Gợi ý inclusive, không bắt buộc che hay sửa cơ thể.",
+    "image": "/images/blog-covers/phoi-do-dang-qua-le.webp",
+    "keywords": "BodyShape, PearShape"
+  },
+  {
+    "title": "Phối Đồ Dáng Tam Giác Ngược: Cân Vai Rộng Và Phần Dưới Tự Nhiên",
+    "url": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+    "type": "Body Shape Styling",
+    "description": "Phối đồ dáng tam giác ngược theo tỷ lệ vai và phần dưới bằng neckline, top, quần, váy, layer và footwear. Cách cân hoặc nhấn vai tự nhiên, không dùng quy tắc cấm đoán.",
+    "image": "/images/blog-covers/phoi-do-dang-tam-giac-nguoc.webp",
+    "keywords": "BodyShape, InvertedTriangle"
+  },
+  {
+    "title": "Quần Ống Rộng Nữ Phối Với Áo Gì? 12 Công Thức Cá Tính",
+    "url": "/blog/quan-ong-rong-nu-phoi-voi-ao-gi.html",
+    "type": "Item Styling",
+    "description": "Quần ống rộng nữ phối với áo gì để không bị nuốt dáng? Xem cách chọn form, cân tỷ lệ và 12 công thức phối với baby tee, tank, corset, sơ mi, hoodie, jacket và nhiều kiểu giày.",
+    "image": "/images/blog-covers/quan-ong-rong-nu-phoi-voi-ao-gi.webp",
+    "keywords": "QuầnỐngRộng, ItemStyling, AltFashion, OutfitIdeas"
+  },
+  {
+    "title": "Slip Dress Là Gì? Cách Phối Váy Hai Dây Satin Từ Tối Giản Đến Alt",
+    "url": "/blog/slip-dress-la-gi-cach-phoi.html",
+    "type": "Dress Guide",
+    "description": "Slip dress là gì và phối thế nào để không giống váy ngủ? Hướng dẫn chọn form, satin, layer, giày và outfit slip dress từ tối giản đến Dark Feminine, Grunge và Alt.",
+    "image": "/images/blog-covers/slip-dress-la-gi-cach-phoi.webp",
+    "keywords": "SlipDress, DarkFeminine, AltFashion, DressGuide"
+  },
+  {
+    "title": "Soft Goth Là Gì? Cách Phối Goth Mềm Hơn Mà Vẫn Giữ Dark Aesthetic",
+    "url": "/blog/soft-goth-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Soft Goth là gì? Cách phối Goth mềm hơn bằng palette tối, texture, silhouette và phụ kiện; phân biệt Soft Goth với Romantic Goth và Soft Grunge để tránh trộn intent.",
+    "image": "/images/blog-covers/soft-goth-la-gi.webp",
+    "keywords": "SoftGoth, Goth"
+  },
+  {
+    "title": "Thắt Lưng Đinh Tán Phối Đồ Sao Cho Đúng Chất Punk, Goth Và Alt",
+    "url": "/blog/that-lung-dinh-tan-phoi-do.html",
+    "type": "Accessory Styling",
+    "description": "Thắt lưng đinh tán phối đồ thế nào để đúng chất Punk, Goth và Alt? Cách chọn mật độ đinh, vị trí đeo, hardware và outfit để belt nổi bật mà không quá costume.",
+    "image": "/images/blog-covers/that-lung-dinh-tan-phoi-do.webp",
+    "keywords": "StuddedBelt, Punk"
+  },
+  {
+    "title": "Visual Kei Là Gì? Giải Mã Visual Kei Style, Hair Và Outfit",
+    "url": "/blog/visual-kei-la-gi.html",
+    "type": "Aesthetic Guide",
+    "description": "Visual Kei là gì? Tìm hiểu cách nhận diện Visual Kei qua outfit, hair, makeup, silhouette, chất liệu và cách phối hằng ngày mà không nhầm với Goth hay Scene.",
+    "image": "/images/blog-covers/visual-kei-la-gi.webp",
+    "keywords": "VisualKei, JapaneseStyle, AltFashion, AestheticGuide"
   }
 ];
