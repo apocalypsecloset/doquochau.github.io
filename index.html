@@ -359,7 +359,17 @@
     transform: translateX(-1px);
   }
 }
-    #outfit-grid:empty { min-height: 0; }
+    #outfit-grid:empty,
+    #outfit-grid[aria-busy="true"] {
+      min-height: max(640px, calc(100svh - 230px));
+    }
+
+    @media (max-width: 768px) {
+      #outfit-grid:empty,
+      #outfit-grid[aria-busy="true"] {
+        min-height: max(720px, calc(100svh - 210px));
+      }
+    }
 
     .outfit-grid {
       display: grid;
@@ -403,6 +413,7 @@
       animation: none;
       pointer-events: none;
       will-change: auto;
+      aspect-ratio: 9 / 16;
     }
 
     .outfit-card-link {
@@ -1356,7 +1367,16 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 </div>
 </section>
 <div class="ac-filter-root" data-ac-filter-mode="home" id="outfit-filter-root"></div>
-<div aria-busy="true" class="outfit-grid" id="outfit-grid"></div>
+<div aria-busy="true" class="outfit-grid" id="outfit-grid">
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+<article aria-hidden="true" class="outfit-card outfit-card--placeholder"></article>
+</div>
 <script defer src="/assets/js/outfits-home.min.js?v=20260809-home-seo-builder1"></script>
 <script id="ac-home-grid-bootstrap-v6">document.addEventListener('DOMContentLoaded',()=>{
 
@@ -1431,21 +1451,19 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
     return window.__acMobileLazyObserver;
   }
   window.acConfigureOutfitImage = function (mobileSource, img, urls, dims, priority, highest) {
-    const mobile = window.matchMedia('(max-width: 768px)').matches;
-    const mobileSet = `${urls.mobile} 240w, ${urls.mobileHd} 480w, ${urls.grid} ${dims.width}w`;
-    const fullSet = `${urls.mobile} 240w, ${urls.mobileHd} 480w, ${urls.grid} ${dims.width}w`;
+    const responsiveSet = `${urls.mobile} 240w, ${urls.mobileHd} 480w, ${urls.grid} ${dims.width}w`;
     mobileSource.media = '(max-width: 768px)';
     mobileSource.sizes = 'calc((100vw - 6px) / 2)';
-    img.sizes = '25vw';
+    img.sizes = '(max-width: 768px) calc((100vw - 6px) / 2), calc((100vw - 10px) / 4)';
     img.loading = priority ? 'eager' : 'lazy';
-    img.decoding = highest && mobile ? 'sync' : 'async';
+    img.decoding = highest ? 'sync' : 'async';
     if (highest) img.fetchPriority = 'high';
     else if (!priority) img.fetchPriority = 'low';
 
-    if (mobile && !priority && 'IntersectionObserver' in window) {
-      mobileSource.dataset.srcset = mobileSet;
-      img.dataset.src = urls.grid;
-      img.dataset.srcset = fullSet;
+    if (!priority && 'IntersectionObserver' in window) {
+      mobileSource.dataset.srcset = responsiveSet;
+      img.dataset.src = urls.mobileHd;
+      img.dataset.srcset = responsiveSet;
       img.src = AC_TRANSPARENT_PIXEL;
       requestAnimationFrame(function () {
         const observer = mobileLazyObserver();
@@ -1455,13 +1473,9 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
       return;
     }
 
-    mobileSource.srcset = mobileSet;
-    img.src = urls.grid;
-    if (mobile) {
-      img.srcset = fullSet;
-    } else {
-      img.removeAttribute('srcset');
-    }
+    mobileSource.srcset = responsiveSet;
+    img.src = urls.mobileHd;
+    img.srcset = responsiveSet;
     img.dataset.acLoaded = '1';
   };
   function createCard(outfit, priority, highest) {
@@ -1510,7 +1524,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
       return col;
     });
     const heights = Array(count).fill(0);
-    const priorityPerColumn = window.matchMedia('(max-width: 768px)').matches ? 1 : 2;
+    const priorityPerColumn = 1;
     data.forEach(function (outfit, index) {
       let target = index < count ? index : heights.indexOf(Math.min.apply(null, heights));
       const priority = columns[target].childElementCount < priorityPerColumn;
