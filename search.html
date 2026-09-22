@@ -306,7 +306,7 @@
 <body class="ac-site-shell"><a class="skip-link" href="#main">Bỏ qua điều hướng</a>
 <!-- search-blog-covers-v1-20260806 -->
 <header class="ac-site-header">
-<a class="ac-brand" href="/" aria-label="Apocalypse Closet — Trang chủ"><img class="ac-brand-mark" src="/Logo-Apocalypse-Closet.webp" width="88" height="88" alt="Apocalypse Closet"><img class="ac-brand-wordmark" src="/wordmark-hd.webp" width="280" height="128" alt="Apocalypse Closet"></a>
+<a class="ac-brand" href="/" aria-label="Apocalypse Closet — Trang chủ"><img class="ac-brand-mark" src="/Logo-Apocalypse-Closet.webp" width="88" height="88" alt="Apocalypse Closet" decoding="async"><img class="ac-brand-wordmark" src="/wordmark-hd.webp" width="280" height="128" alt="Apocalypse Closet" decoding="async"></a>
 <button class="ac-menu-toggle" type="button" aria-expanded="false" aria-controls="ac-primary-nav" aria-label="Mở menu"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg></button>
 <nav class="ac-primary-nav" id="ac-primary-nav" aria-label="Điều hướng chính">
 <a data-ac-nav="home" href="/">Trang chủ</a>
@@ -354,7 +354,7 @@
 
   <footer class="ac-site-footer">
 <div class="ac-footer-grid">
-<div class="ac-footer-about"><a class="ac-footer-brand" href="/"><img src="/Logo-Apocalypse-Closet.webp" width="88" height="88" alt=""><img src="/wordmark-hd.webp" width="280" height="128" alt="Apocalypse Closet"></a><p>Cảm hứng phối đồ nữ cá tính theo E-Girl, Goth, Dark Feminine, Baddie Streetwear và Punk / Grunge — từ ý tưởng đến Look có thể mặc và mua.</p></div>
+<div class="ac-footer-about"><a class="ac-footer-brand" href="/"><img src="/Logo-Apocalypse-Closet.webp" width="88" height="88" alt="" decoding="async"><img src="/wordmark-hd.webp" width="280" height="128" alt="Apocalypse Closet" decoding="async"></a><p>Cảm hứng phối đồ nữ cá tính theo E-Girl, Goth, Dark Feminine, Baddie Streetwear và Punk / Grunge — từ ý tưởng đến Look có thể mặc và mua.</p></div>
 <div><span class="ac-footer-title">Khám phá</span><ul class="ac-footer-links"><li><a href="/app-phoi-do.html">App phối đồ online</a></li><li><a href="/phoi-do-nu-ca-tinh.html">Phối đồ nữ cá tính</a></li><li><a href="/#outfit-grid">136 Look</a></li><li><a href="/blog.html">Blog thời trang</a></li><li><a href="/closet.html">Tủ đồ đã lưu</a></li><li><a href="/search.html">Tìm kiếm</a></li></ul></div>
 <div><span class="ac-footer-title">Phong cách</span><ul class="ac-footer-links"><li><a href="/style/dark-feminine.html">Dark Feminine</a></li><li><a href="/style/egirl.html">E-Girl / Alt Girl</a></li><li><a href="/style/goth.html">Goth / Gothic</a></li><li><a href="/style/baddie-streetwear.html">Baddie Streetwear</a></li><li><a href="/style/punk.html">Punk / Grunge</a></li></ul></div>
 <div><span class="ac-footer-title">Thông tin</span><ul class="ac-footer-links"><li><a href="/about.html">Giới thiệu</a></li><li><a href="/author.html">Tác giả</a></li><li><a href="/editorial-policy.html">Chính sách biên tập</a></li><li><a href="/privacy.html">Quyền riêng tư</a></li><li><a href="/contact.html">Liên hệ</a></li><li><a href="https://www.pinterest.com/apocalypsecloset/" rel="me noopener" target="_blank">Pinterest</a></li><li><a href="https://www.instagram.com/apocalypse.closet/" rel="me noopener" target="_blank">Instagram</a></li><li><a href="https://www.tiktok.com/@apocalypse.closet" rel="me noopener" target="_blank">TikTok</a></li></ul></div>
@@ -362,8 +362,9 @@
 <div class="ac-footer-bottom"><span>© 2026 Apocalypse Closet. All rights reserved.</span><span class="ac-affiliate-note">Một số liên kết sản phẩm có thể là liên kết tiếp thị liên kết. Giá mua của bạn không thay đổi.</span></div>
 </footer>
 
-  <script src="/search-index.js?v=20260819-audit-safe1"></script>
-  <script>
+  <script defer src="/search-index.js?v=20260819-audit-safe1"></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{
+
     const params = new URLSearchParams(window.location.search);
     const input = document.getElementById('q');
     const resultsEl = document.getElementById('results');
@@ -485,7 +486,8 @@
     }
 
     render(rawQuery);
-  </script>
+  
+});</script>
 <script src="/assets/js/analytics-enhancements.min.js" defer></script>
 <script defer src="/assets/js/site-shell-20260807.js?v=20260809-builder1"></script>
 </body>
