@@ -1,5 +1,5 @@
-/* Apocalypse Closet — Pinterest discovery links v2 (2026-08-11)
-   Keeps every Pinterest URL as a normal crawlable <a href> while matching the site's dark UI. */
+
+
 .ac-pinterest-links,
 .ac-pinterest-board-wrap{
   --ac-pin-accent:#e05a4f;

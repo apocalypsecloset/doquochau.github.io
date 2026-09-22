@@ -95,7 +95,7 @@
       text-transform: uppercase; margin-bottom: 32px; text-align: center;
     }
 
-    /* Tabs */
+     
     .tabs {
       display: flex; gap: 0; margin-bottom: 28px;
       border-bottom: 1px solid var(--border);
@@ -109,7 +109,7 @@
     }
     .tab-btn.active { color: var(--white); border-bottom-color: var(--red); }
 
-    /* Social buttons */
+     
     .btn-social {
       width: 100%; display: flex; align-items: center; justify-content: center;
       gap: 12px; padding: 13px 20px; margin-bottom: 10px;
@@ -121,7 +121,7 @@
     .btn-social:hover { border-color: var(--white); background: #1f1f1f; }
     .btn-social svg { flex-shrink: 0; }
 
-    /* Divider */
+     
     .divider {
       display: flex; align-items: center; gap: 12px;
       margin: 20px 0; color: var(--muted);
@@ -131,7 +131,7 @@
       content: ''; flex: 1; height: 1px; background: var(--border);
     }
 
-    /* Form fields */
+     
     .field { margin-bottom: 16px; }
     .field label {
       display: block; font-size: 9px; letter-spacing: 0.2em;
@@ -146,7 +146,7 @@
     .field input:focus { border-color: var(--red); }
     .field input::placeholder { color: var(--muted); }
 
-    /* Submit button */
+     
     .btn-submit {
       width: 100%; padding: 14px;
       background: var(--red); color: var(--white);
@@ -158,7 +158,7 @@
     .btn-submit:hover { opacity: 0.85; }
     .btn-submit:disabled { opacity: 0.4; cursor: not-allowed; }
 
-    /* Error / success msg */
+     
     .msg {
       font-size: 10px; letter-spacing: 0.1em; text-align: center;
       padding: 10px; margin-top: 12px; display: none;
@@ -166,7 +166,7 @@
     .msg.error { color: #e74c3c; border: 1px solid #e74c3c22; background: #e74c3c11; }
     .msg.success { color: #2ecc71; border: 1px solid #2ecc7122; background: #2ecc7111; }
 
-    /* Forgot password */
+     
     .forgot {
       text-align: right; margin-top: -8px; margin-bottom: 16px;
     }
@@ -185,7 +185,7 @@
     .note a { color: var(--red); text-decoration: none; }
     .note a:hover { text-decoration: underline; }
 
-    /* Logged-in state */
+     
     #user-box { display: none; text-align: center; }
     #user-box img {
       width: 64px; height: 64px; border-radius: 50%;
@@ -216,7 +216,7 @@
     }
     .btn-signout:hover { color: var(--white); }
 
-    /* Loading spinner */
+     
     .spinner {
       display: inline-block; width: 14px; height: 14px;
       border: 2px solid rgba(255,255,255,0.2);
@@ -266,12 +266,12 @@
       <img alt="Apocalypse Closet" decoding="async" height="32" loading="eager" src="wordmark.webp" style="height:36px;width:auto;object-fit:contain;mix-blend-mode:screen;" width="70"/>
     </div>
 
-    <!-- ── LOGIN STATE ── -->
+    
     <div id="login-box">
       <h1>WELCOME<br>BACK</h1>
       <p class="sub">Sign in to access your closet</p>
 
-      <!-- Google -->
+      
       <button class="btn-social" id="btn-google">
         <svg width="18" height="18" viewBox="0 0 48 48">
           <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
@@ -284,13 +284,13 @@
 
       <div class="divider">hoặc</div>
 
-      <!-- Tabs: Đăng nhập / Đăng ký -->
+      
       <div class="tabs">
         <button class="tab-btn active" id="tab-login" onclick="switchTab('login')">Đăng nhập</button>
         <button class="tab-btn" id="tab-register" onclick="switchTab('register')">Đăng ký</button>
       </div>
 
-      <!-- Form đăng nhập -->
+      
       <div id="form-login">
         <div class="field">
           <label for="login-email">Email</label>
@@ -304,7 +304,7 @@
         <button class="btn-submit" id="btn-login" onclick="loginEmail()">ĐĂNG NHẬP</button>
       </div>
 
-      <!-- Form đăng ký -->
+      
       <div id="form-register" style="display:none;">
         <div class="field">
           <label for="reg-name">Tên hiển thị</label>
@@ -329,7 +329,7 @@
       </p>
     </div>
 
-    <!-- ── LOGGED IN STATE ── -->
+    
     <div id="user-box">
       <img alt="avatar" decoding="async" height="40" id="user-avatar" loading="eager" src="/Logo-Apocalypse-Closet.webp" width="40"/>
       <div class="user-name" id="user-name"></div>
@@ -341,7 +341,7 @@
   </div>
 </main>
 
-  <!-- Firebase SDK -->
+  
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
     import {
@@ -372,8 +372,8 @@
     const app  = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
-    // AC_AUTH_PERSISTENCE_20260805
-    // Keep Firebase login across mobile navigation and reloads.
+    
+    
     try {
       await setPersistence(auth, browserLocalPersistence);
     } catch (localError) {
@@ -385,14 +385,14 @@
       }
     }
 
-    // ── Hiện user đã login ────────────────────────────────────────
+    
     function showUserBox(user) {
       document.getElementById('login-box').style.display = 'none';
       document.getElementById('user-box').style.display  = 'block';
       document.getElementById('user-avatar').src         = user.photoURL || 'Logo-Apocalypse-Closet.webp';
       document.getElementById('user-name').textContent   = user.displayName || 'Badgirl';
       document.getElementById('user-email').textContent  = user.email;
-      // Lưu vào localStorage để các trang khác dùng
+      
       localStorage.setItem('ac_user', JSON.stringify({
         name:    user.displayName || 'Badgirl',
         email:   user.email,
@@ -438,17 +438,17 @@
       }
     }
 
-    // ── Theo dõi trạng thái auth ──────────────────────────────────
+    
     onAuthStateChanged(auth, user => {
       if (!user) return;
       showUserBox(user);
-      // Trường hợp người dùng đã đăng nhập sẵn nhưng vừa được chuyển từ nút SAVE.
+      
       if (!authActionPending && getReturnUrl()) {
         window.setTimeout(redirectAfterLogin, 50);
       }
     });
 
-    // ── Hiện thông báo ────────────────────────────────────────────
+    
     function showMsg(text, type = 'error') {
       const el = document.getElementById('msg');
       el.textContent = text;
@@ -462,7 +462,7 @@
       else { btn.disabled = false; }
     }
 
-    // ── Google Login ──────────────────────────────────────────────
+    
     window.loginGoogle = async function() {
       const btn = document.getElementById('btn-google');
       btn.disabled = true;
@@ -483,7 +483,7 @@
 
     document.getElementById('btn-google').addEventListener('click', window.loginGoogle);
 
-    // ── Email Login ───────────────────────────────────────────────
+    
     window.loginEmail = async function() {
       const email = document.getElementById('login-email').value.trim();
       const pass  = document.getElementById('login-password').value;
@@ -510,7 +510,7 @@
       }
     };
 
-    // ── Email Register ────────────────────────────────────────────
+    
     window.registerEmail = async function() {
       const name  = document.getElementById('reg-name').value.trim();
       const email = document.getElementById('reg-email').value.trim();
@@ -540,7 +540,7 @@
       }
     };
 
-    // ── Quên mật khẩu ────────────────────────────────────────────
+    
     window.forgotPassword = async function() {
       const email = document.getElementById('login-email').value.trim();
       if (!email) { showMsg('Nhập email vào trước rồi bấm Quên mật khẩu nhé.'); return; }
@@ -552,7 +552,7 @@
       }
     };
 
-    // ── Sign out ──────────────────────────────────────────────────
+    
     window.signOut = async function() {
       await fbSignOut(auth);
       localStorage.removeItem('ac_user');
@@ -560,7 +560,7 @@
       document.getElementById('login-box').style.display = 'block';
     };
 
-    // ── Switch Tab ────────────────────────────────────────────────
+    
     window.switchTab = function(tab) {
       document.getElementById('msg').style.display = 'none';
       if (tab === 'login') {
@@ -576,7 +576,7 @@
       }
     };
 
-    // Enter key submit
+    
     document.addEventListener('keydown', e => {
       if (e.key !== 'Enter') return;
       const isLogin = document.getElementById('form-login').style.display !== 'none';

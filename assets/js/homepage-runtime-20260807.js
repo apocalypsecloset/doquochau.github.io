@@ -301,9 +301,9 @@ function getUser() {
       else              { audio.pause(); rec.classList.remove('playing'); }
     });
 
-    // Search trên trang chủ chuyển sang /search.html để tìm toàn site:
-    // Outfit + Style + Journal/Blog. Không lọc riêng outfits ở trang chủ nữa,
-    // tránh lỗi gõ “y2k” nhưng chỉ hiện “Không tìm thấy outfit nào phù hợp”.
+    
+    
+    
 
     document.getElementById('search-bar').addEventListener('submit', function(e) {
       const q = document.getElementById('search-input').value.trim();

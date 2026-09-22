@@ -1,8 +1,8 @@
-// ═══════════════════════════════════════════════════════════════════
-// APOCALYPSE CLOSET — OUTFIT DATA (SINGLE SOURCE OF TRUTH)
-// Taxonomy v2: 5 primary styles + secondary styles + practical filters.
-// URLs and image filenames are intentionally preserved for SEO stability.
-// ═══════════════════════════════════════════════════════════════════
+
+
+
+
+
 
 const outfits = [
   {
@@ -10953,7 +10953,7 @@ const outfits = [
 
 if (typeof window !== 'undefined') window.outfits = outfits;
 
-/* AC_NO_CROP_20260803_V3: preserve complete 9:16 outfit images in legacy 3:4 UI frames. */
+ 
 (function applyApocalypseNoCropFixV3() {
   if (typeof document === 'undefined' || document.getElementById('apocalypse-no-crop-fix-v3')) return;
   const style = document.createElement('style');
@@ -10976,10 +10976,10 @@ if (typeof window !== 'undefined') window.outfits = outfits;
   document.head.appendChild(style);
 })();
 
-/* AC_STYLE_LAYOUT_STABILITY_20260804_V1
-   The five /style/ pages keep their own Pinterest layout. This patch only
-   reserves each image's true ratio before the file finishes loading; it does
-   not rebuild or rebalance the page after every image load. */
+
+
+
+
 (function applyStylePageLayoutStabilityV1() {
   if (typeof document === 'undefined' || window.__acStyleLayoutStabilityV1) return;
 

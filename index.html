@@ -690,7 +690,7 @@
 @media(prefers-reduced-motion:reduce){.ac-filter-panel{transition:none!important}}
 </style>
 <style id="homepage-final-image-and-spacing-fix">
-  /* Giữ ảnh đúng màu gốc, không grayscale, không phủ tối khi hover/loading. */
+   
   #outfit-grid,
   .outfit-grid {
     background: #0a0a0a !important;
@@ -729,7 +729,7 @@
     background: none !important;
   }
 
-  /* Bỏ hai dòng đếm Look và thu gọn khoảng trống trước lưới ảnh. */
+   
   .section-header, .section-count, #counter, #outfit-filter-root .ac-filter-count { display: none !important; }
 
   #outfit-filter-root.ac-filter-root {
@@ -750,7 +750,7 @@
 
 
 <style id="homepage-original-image-color-fix">
-  /* Bỏ lớp noise phủ lên toàn bộ ảnh. */
+   
   body::before {
     display: none !important;
     content: none !important;
@@ -758,7 +758,7 @@
     background: none !important;
   }
 
-  /* Card chỉ dùng nền đen trong lúc ảnh chưa tải, không dùng shimmer xám. */
+   
   .outfit-card,
   .outfit-card.shimmer {
     background: #0a0a0a !important;
@@ -769,7 +769,7 @@
     animation-name: fadeIn !important;
   }
 
-  /* Giữ nguyên màu ảnh gốc trong mọi trạng thái. */
+   
   #outfit-grid img,
   .outfit-card img,
   .outfit-card:hover img,
@@ -824,8 +824,8 @@
   }
 </style>
 
-<style id="ac-home-shell-critical">/* Local fonts are preloaded by blog pages; optional display prevents late font swaps/CLS. */
-/* Apocalypse Closet unified site header + footer — 2026-08-07 */
+<style id="ac-home-shell-critical"> 
+ 
 :root{
   --ac-shell-bg:#080808;
   --ac-shell-panel:#0d0d0d;
@@ -950,7 +950,7 @@ body.ac-site-shell{overflow-x:hidden}
 }
 .ac-nav-dropdown.is-open .ac-dropdown-menu,.ac-nav-dropdown:focus-within .ac-dropdown-menu{display:grid!important}
 @media (hover:hover) and (min-width:961px){
-  /* Invisible hover bridge closes the 8px visual gap between the trigger and menu. */
+   
   .ac-nav-dropdown::after{
     content:""!important;
     position:absolute!important;
@@ -1074,18 +1074,18 @@ body:not(.auth-ready).ac-closet-page .ac-user-panel{visibility:hidden!important}
   .ac-site-footer{padding-top:34px!important}
   .ac-footer-bottom{display:block!important}.ac-affiliate-note{text-align:left!important;margin-top:8px!important}
 }
-/* Auth page originally centers the whole body; make room for the shared shell. */
+ 
 body.ac-auth-page{display:block!important;min-height:100vh!important;overflow-x:hidden!important;overflow-y:auto!important;padding:0!important}
 body.ac-auth-page>.card{margin:64px auto 72px!important}
 body.ac-auth-page>.back{display:none!important}
-/* Trust/privacy pages sometimes place padding directly on body. Keep full-width shell while preserving content spacing. */
+ 
 body.ac-privacy-page>.wrap{padding-top:30px!important;padding-bottom:20px!important}
 body.ac-privacy-page>.wrap>.back{display:none!important}
-/* Closet used to hide its footer and had a separate nav. */
+ 
 body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 @media (prefers-reduced-motion:reduce){.ac-site-header *,.ac-site-footer *{transition:none!important;scroll-behavior:auto!important}}
 
-/* A11Y 2026-08-07: links inside prose must not rely on color alone. */
+ 
 .ac-site-shell :where(.article-content,.faq-section,.seo-faq,.hub-main,.trust-page,.privacy-content) p a,
 .ac-site-shell :where(.article-content,.faq-section,.seo-faq,.hub-main,.trust-page,.privacy-content) li a{
   color:#ff8b80!important;text-decoration-line:underline!important;text-decoration-color:currentColor!important;
@@ -1098,7 +1098,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 @media(max-width:620px){.ac-footer-links a{display:inline-flex!important;align-items:center!important;min-height:44px!important;padding:7px 0!important}}
 
 
-/* Homepage persistent RELOAD control — 2026-08-07 v4 */
+ 
 .ac-header-actions{
   display:flex!important;
   align-items:center!important;
@@ -1161,8 +1161,8 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 }</style>
 
 <style id="ac-home-mobile-filter-progressive-disclosure">
-/* Homepage mobile UX: chỉ giữ CTA Builder ở màn hình đầu.
-   Filter vẫn tồn tại nhưng chỉ xuất hiện như utility nhỏ khi đã cuộn vào grid. */
+
+
 @media (max-width: 768px) {
   #outfit-filter-root.ac-filter-root {
     margin: 0 !important;
@@ -1208,7 +1208,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 
 
 <style id="ac-home-app-hero-v1">
-  /* Compact App CTA on homepage — desktop balanced, mobile keeps the current compact flow. */
+   
   .hero {
     align-items: center;
     gap: clamp(24px, 4vw, 56px);

@@ -1,5 +1,5 @@
 
-  /* Bỏ lớp noise phủ lên ảnh. */
+   
   body::before {
     display: none !important;
     content: none !important;
@@ -7,7 +7,7 @@
     background: none !important;
   }
 
-  /* Masonry giữ đúng tỷ lệ thật của ảnh 3:4 và 9:16. */
+   
   .outfit-grid {
     columns: 4 !important;
     column-gap: 2px !important;

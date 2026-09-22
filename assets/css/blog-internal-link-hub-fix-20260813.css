@@ -1,11 +1,11 @@
-/* APCL BLOG RELATED SECTIONS V2 — 2026-08-13
-   Cleaner related-topic layout + Closet related Look cards.
-   Goal: no overlapping, no giant boxed "one lump", clean desktop/mobile spacing.
-*/
 
-/* =========================================================
-   1) "ĐỌC TIẾP THEO CHỦ ĐỀ / CỤM..." — section, not giant box
-   ========================================================= */
+
+
+
+
+
+
+
 .article-content nav.internal-link-hub{
   display:block!important;
   position:relative!important;
@@ -176,16 +176,16 @@
   transform:none!important;
 }
 
-/* =========================================================
-   2) "OUTFIT TRONG CLOSET LIÊN QUAN"
-      Convert inline comma-list into clean cards using CSS only.
-   ========================================================= */
+
+
+
+
 .article-content h2#outfit-trong-closet-lien-quan{
   margin-bottom:18px!important;
 }
 
-/* hide comma/period text nodes by zeroing parent font-size;
-   anchors restore readable font-size */
+
+
 .article-content h2#outfit-trong-closet-lien-quan + p{
   display:grid!important;
   grid-template-columns:repeat(2,minmax(0,1fr))!important;
@@ -238,9 +238,9 @@
   color:#f0ece4!important;
 }
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+
+
+
 @media(max-width:768px){
   .article-content nav.internal-link-hub{
     margin-top:44px!important;
@@ -279,5 +279,5 @@
 }
 
 
-/* AC AUTHORITY SOURCES 20260921 */
+ 
 .article-content .ac-sources{margin:52px 0 0;padding:26px clamp(18px,4vw,30px);border:1px solid #303030;background:#0d0d0d;box-sizing:border-box}.article-content .ac-sources h2{margin:0 0 12px!important}.article-content .ac-sources>p{margin:0 0 14px}.article-content .ac-sources ul{margin:0;padding-left:20px}.article-content .ac-sources li{margin:10px 0;line-height:1.7}.article-content .ac-sources a{overflow-wrap:anywhere}@media(max-width:768px){.article-content .ac-sources{margin-top:40px;padding:20px 16px}}

@@ -35,7 +35,7 @@
       min-height: 100vh;
     }
 
-    /* ── NAVBAR ──────────────────────────────────────────── */
+     
     nav {
       position: sticky;
       top: 0;
@@ -93,7 +93,7 @@
     }
     .btn-signout:hover { border-color: var(--white); color: var(--white); }
 
-    /* ── HEADER ──────────────────────────────────────────── */
+     
     .page-header {
       padding: 52px 32px 32px;
       border-bottom: 1px solid var(--border);
@@ -120,7 +120,7 @@
       padding-bottom: 8px;
     }
 
-    /* ── GRID ────────────────────────────────────────────── */
+     
     .grid-wrap {
       padding: 40px 32px 80px;
     }
@@ -131,7 +131,7 @@
       column-gap: 2px;
     }
 
-    /* ── OUTFIT CARD ─────────────────────────────────────── */
+     
     .outfit-card {
       position: relative;
       display: inline-block;
@@ -156,7 +156,7 @@
     }
     .outfit-card:hover img { transform: none; }
 
-    /* Overlay */
+     
     .outfit-card .overlay {
       position: absolute;
       inset: 0;
@@ -183,7 +183,7 @@
       text-transform: uppercase;
     }
 
-    /* Remove button */
+     
     .btn-remove {
       position: absolute;
       top: 10px;
@@ -205,7 +205,7 @@
     .outfit-card:hover .btn-remove { opacity: 1; }
     .btn-remove:hover { background: var(--red); border-color: var(--red); }
 
-    /* Saved date badge */
+     
     .saved-badge {
       position: absolute;
       top: 10px;
@@ -221,7 +221,7 @@
     }
     .outfit-card:hover .saved-badge { opacity: 1; }
 
-    /* ── EMPTY STATE ─────────────────────────────────────── */
+     
     .empty-state {
       display: none;
       flex-direction: column;
@@ -281,7 +281,7 @@
     .closet-guide-links a { color: var(--white); border: 1px solid var(--border); padding: 9px 12px; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
     .closet-guide-links a:hover { border-color: var(--red); }
 
-    /* ── TOAST ───────────────────────────────────────────── */
+     
     .toast {
       position: fixed;
       bottom: 32px;
@@ -310,7 +310,7 @@
       .outfit-grid { column-count: 3; }
     }
 
-    /* ── MOBILE ──────────────────────────────────────────── */
+     
     @media (max-width: 600px) {
       nav { padding: 0 16px; }
       .page-header { padding: 32px 16px 24px; }
@@ -341,7 +341,7 @@
 <body class="ac-site-shell ac-closet-page"><a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
 <span id="main" tabindex="-1"></span>
 
-  <!-- ── NAVBAR ── -->
+  
   <header class="ac-site-header">
 <a class="ac-brand" href="/" aria-label="Apocalypse Closet — Trang chủ"><img class="ac-brand-mark" src="/Logo-Apocalypse-Closet.webp" width="88" height="88" alt="Apocalypse Closet" decoding="async"><img class="ac-brand-wordmark" src="/wordmark-hd.webp" width="280" height="128" alt="Apocalypse Closet" decoding="async"></a>
 <button class="ac-menu-toggle" type="button" aria-expanded="false" aria-controls="ac-primary-nav" aria-label="Mở menu"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg></button>
@@ -361,17 +361,17 @@
 
   <div id="auth-checking" role="status" aria-live="polite">Đang kiểm tra trạng thái đăng nhập…</div>
 
-  <!-- ── PAGE HEADER ── -->
+  
   <div class="page-header">
     <h1>MY<br><span>CLOSET</span></h1>
     <div class="outfit-count" id="outfit-count">0 OUTFITS SAVED</div>
   </div>
 
-  <!-- ── GRID ── -->
+  
   <div class="grid-wrap">
     <div class="outfit-grid" id="outfit-grid"></div>
 
-    <!-- Empty state -->
+    
     <div class="empty-state" id="empty-state">
       <div class="empty-icon">🖤</div>
       <div class="empty-title">Your closet is empty</div>
@@ -380,13 +380,13 @@
     </div>
   </div>
 
-  <!-- Toast -->
+  
   <div class="toast" id="toast"></div>
 </main>
 
   <script defer src="/outfits.js?v=20260805-style-auth-home-v1"></script>
   <script>
-    // Bridge: expose slug lookup for module scripts
+    
     window.__getSlug = function(id) {
       if (typeof outfits === 'undefined') return null;
       var o = outfits.find(function(x) { return x.id === id; });
@@ -413,7 +413,7 @@
     const auth = getAuth(app);
     const db   = getFirestore(app);
 
-    // AC_AUTH_PERSISTENCE_20260805
+    
     try {
       await setPersistence(auth, browserLocalPersistence);
     } catch (localError) {
@@ -423,12 +423,12 @@
       }
     }
 
-    // ── Format ngày lưu ──────────────────────────────────────────
+    
     function fmtDate(ts) {
       return new Date(ts).toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit' });
     }
 
-    // ── Toast notification ────────────────────────────────────────
+    
     function showToast(msg) {
       const t = document.getElementById('toast');
       t.textContent = msg;
@@ -436,11 +436,11 @@
       setTimeout(() => t.classList.remove('show'), 2200);
     }
 
-    // ── Module-level cache of Firestore closet data ─────────────
+    
     let closetOutfits = [];
 
-    // Tên ngắn dùng riêng cho card: luôn đồng nhất với homepage.
-    // Dữ liệu cũ trong Firestore vẫn giữ title dài cho alt/SEO, nhưng không in lên ảnh.
+    
+    
     function getLookLabel(outfit) {
       const sources = [outfit?.id, outfit?.slug, outfit?.tag, outfit?.title]
         .filter(Boolean).map(String);
@@ -451,9 +451,9 @@
       return 'SAVED OUTFIT';
     }
 
-    // ── Mở outfit detail ──────────────────────────────────────────
+    
     window.openOutfit = (id) => {
-      // Ưu tiên slug từ Firestore (data mới), fallback sang outfits.js (data cũ)
+      
       const fromFirestore = closetOutfits.find(x => x.id === id);
       const slug = fromFirestore?.slug || window.__getSlug?.(id);
       if (slug) {
@@ -462,14 +462,14 @@
       }
     };
 
-    // ── Xoá outfit khỏi Firestore ─────────────────────────────────
+    
     window.removeOutfit = async (uid, outfitId) => {
       try {
         await deleteDoc(doc(db, 'users', uid, 'closet', outfitId));
-        // Xoá card khỏi DOM ngay, không cần fetch lại
+        
         const card = document.getElementById(`card-${outfitId}`);
         if (card) card.remove();
-        // Cập nhật count
+        
         const grid  = document.getElementById('outfit-grid');
         const count = grid.querySelectorAll('.outfit-card').length;
         document.getElementById('outfit-count').textContent =
@@ -482,13 +482,13 @@
       }
     };
 
-    // ── Render grid từ Firestore ──────────────────────────────────
+    
     async function renderGrid(uid) {
       const grid  = document.getElementById('outfit-grid');
       const empty = document.getElementById('empty-state');
       const count = document.getElementById('outfit-count');
 
-      // Loading skeleton
+      
       grid.innerHTML = `
         <div class="outfit-card" style="background:#111;animation:none;height:320px;"></div>
         <div class="outfit-card" style="background:#111;animation:none;height:320px;"></div>
@@ -546,7 +546,7 @@
       }
     }
 
-    // ── Sign out ───────────────────────────────────────────────────
+    
     window.signOut = async () => {
       await fbSignOut(auth);
       localStorage.removeItem('ac_user');
@@ -584,17 +584,17 @@
     }
     document.getElementById('delete-account')?.addEventListener('click', deleteAccountAndData);
 
-    // ── Auth guard + init ──────────────────────────────────────────
+    
     onAuthStateChanged(auth, user => {
       if (!user) {
         window.location.href = 'login.html';
         return;
       }
       document.body.classList.add('auth-ready');
-      // Điền navbar
+      
       document.getElementById('nav-avatar').src        = user.photoURL || '/Logo-Apocalypse-Closet.webp';
       document.getElementById('nav-name').textContent  = user.displayName || '';
-      // Cập nhật localStorage để các trang khác vẫn nhận được uid
+      
       localStorage.setItem('ac_user', JSON.stringify({
         name: user.displayName || '', email: user.email,
         picture: user.photoURL || '', sub: user.uid

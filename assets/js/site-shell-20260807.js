@@ -1,4 +1,4 @@
-/* Apocalypse Closet unified site shell — 2026-08-07 */
+ 
 (() => {
   const header = document.querySelector('.ac-site-header');
   if (!header) return;

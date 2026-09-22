@@ -1,5 +1,5 @@
 
-/* APCL FINAL BLOG STANDARD — homepage-sized header + bounded cover — 2026-07-30 */
+ 
 header{
   display:flex!important;align-items:center!important;justify-content:space-between!important;
   gap:16px!important;padding:18px 32px!important;min-height:0!important;height:auto!important;
@@ -33,7 +33,7 @@ header .btn.btn-icon-only{width:30px!important;min-width:30px!important;padding:
 header .nav-icon{font-size:16px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:16px!important;height:16px!important;line-height:1!important}
 header .dropdown{position:relative!important;display:inline-flex!important;align-items:center!important}
 
-/* One reliable cover frame for every article. It is always H1 -> cover -> text. */
+ 
 main>.apcl-standard-cover{
   width:min(calc(100% - 48px),820px)!important;max-width:820px!important;
   margin:0 auto clamp(40px,6vw,68px)!important;padding:0!important;box-sizing:border-box!important;
