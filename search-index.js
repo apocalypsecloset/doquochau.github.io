@@ -1,5 +1,245 @@
 window.searchIndex = [
   {
+    "title": "Gyaru Là Gì? Gyaru Style Và Các Phong Cách Gyaru",
+    "url": "/blog/gyaru.html",
+    "type": "Aesthetic Guide",
+    "description": "Gyaru là gì? Hiểu gyaru style qua tóc, makeup, silhouette, màu sắc và các nhánh như Kogal, Ganguro, Hime Gyaru, Amekaji để chọn hướng phối phù hợp.",
+    "image": "/images/blog-covers/gyaru.webp",
+    "keywords": "gyaru, gyaru style, gyaru meaning, gyaru nghĩa là gì, gyaru style là gì"
+  },
+  {
+    "title": "Cutecore Là Gì? Cutecore Aesthetic Và Cách Phối Outfit",
+    "url": "/blog/cutecore.html",
+    "type": "Aesthetic Guide",
+    "description": "Cutecore là gì? Hiểu mã nhận diện của Cutecore aesthetic, cách chọn màu, silhouette, phụ kiện và các công thức Cutecore outfits dễ mặc ngoài đời.",
+    "image": "/images/blog-covers/cutecore.webp",
+    "keywords": "cutecore, cutecore outfits, cutecore aesthetic"
+  },
+  {
+    "title": "Devilcore Là Gì? Devilcore Aesthetic Và Dark Outfit",
+    "url": "/blog/devil-core.html",
+    "type": "Dark / Alt",
+    "description": "Devil core là gì? Hiểu dấu hiệu nhận diện Devilcore, bảng màu đen đỏ, motif, texture, phụ kiện và cách phối dark outfit có chủ đích.",
+    "image": "/images/blog-covers/devil-core.webp",
+    "keywords": "devil core, devilcore, dark outfit"
+  },
+  {
+    "title": "Harajuku Style Là Gì? Thời Trang Harajuku Nhật Bản",
+    "url": "/blog/harajuku-style.html",
+    "type": "J-Fashion",
+    "description": "Harajuku style là gì? Hiểu thời trang Harajuku Nhật Bản, các nhánh nổi bật, cách đọc màu sắc, layer, phụ kiện và công thức phối dễ áp dụng.",
+    "image": "/images/blog-covers/harajuku-style.webp",
+    "keywords": "harajuku style, harajuku style fashion, harajuku style là gì"
+  },
+  {
+    "title": "Chicano Style Là Gì? Lịch Sử, Item Và Cách Phối Chicano Nữ",
+    "url": "/blog/chicano-style.html",
+    "type": "Subculture / Street",
+    "description": "Chicano style là gì? Tìm hiểu bối cảnh pachuco, zoot suit, các item nhận diện và cách phối Chicano nữ theo silhouette rộng, gọn và có chủ đích.",
+    "image": "/images/blog-covers/chicano-style.webp",
+    "keywords": "chicano style, style chicano, chicano style là gì"
+  },
+  {
+    "title": "Cybergoth Là Gì? Phong Cách Cybergoth Và Cách Phối Outfit",
+    "url": "/blog/cybergoth.html",
+    "type": "Goth / Cyber",
+    "description": "Cybergoth là gì? Hiểu phong cách Cybergoth qua nền đen, neon, industrial details, cyberlox, platform boots và các công thức outfit dễ áp dụng.",
+    "image": "/images/blog-covers/cybergoth.webp",
+    "keywords": "cybergoth, cybergoth là gì, cybergoth outfits"
+  },
+  {
+    "title": "Mori Kei Là Gì? Phong Cách Mori Kei Và Outfit",
+    "url": "/blog/mori-kei.html",
+    "type": "J-Fashion",
+    "description": "Mori Kei là gì? Hiểu phong cách forest girl Nhật Bản, cách layer, chọn màu, chất liệu, giày phụ kiện và các công thức Mori Kei outfit dễ áp dụng.",
+    "image": "/images/blog-covers/mori-kei.webp",
+    "keywords": "mori kei, mori kei style, mori kei fashion, mori kei outfit"
+  },
+  {
+    "title": "Hippie Style Là Gì? Phong Cách Hippie Trong Thời Trang",
+    "url": "/blog/hippie-style.html",
+    "type": "Retro / Subculture",
+    "description": "Hippie style là gì? Hiểu nguồn gốc, silhouette, màu sắc, chất liệu và cách phối phong cách Hippie nữ hiện đại mà không biến outfit thành costume.",
+    "image": "/images/blog-covers/hippie-style.webp",
+    "keywords": "hippie style, hippie style la gì, hippie style là gì"
+  },
+  {
+    "title": "New Look Là Gì? Christian Dior Và Silhouette Làm Thay Đổi Thời Trang 1947",
+    "url": "/blog/new-look-fashion.html",
+    "type": "Historical Fashion",
+    "description": "New Look fashion là gì? Tìm hiểu Christian Dior, Bar suit, silhouette eo thắt – váy xòe của năm 1947, tranh cãi hậu chiến và cách đọc ảnh hưởng của New Look.",
+    "image": "/images/blog-covers/new-look-fashion.webp",
+    "keywords": "new look fashion, new look christian dior, new look dior, new look dior 1947"
+  },
+  {
+    "title": "Sustainable Fashion Là Gì? Thời Trang Bền Vững Hoạt Động Thế Nào",
+    "url": "/blog/sustainable-fashion.html",
+    "type": "Fashion Knowledge",
+    "description": "Sustainable fashion là gì? Hiểu thời trang bền vững theo vòng đời: thiết kế, vật liệu, sản xuất, sử dụng, sửa chữa, tái dùng và tái chế.",
+    "image": "/images/blog-covers/sustainable-fashion.webp",
+    "keywords": "sustainable fashion, ecofashion, sustainable fashion là gì, thời trang bền vững"
+  },
+  {
+    "title": "Parisian Chic Là Gì? Cách Mặc Phong Cách Parisian Chic",
+    "url": "/blog/parisian-chic.html",
+    "type": "Mainstream Style",
+    "description": "Parisian Chic là gì? Hiểu phong cách Parisian Chic, cách chọn blazer, sơ mi, jeans, giày bệt, bảng màu và 7 công thức outfit thanh lịch nhưng không gượng.",
+    "image": "/images/blog-covers/parisian-chic.webp",
+    "keywords": "parisian chic, parisian chic style"
+  },
+  {
+    "title": "Ganguro Là Gì? Ganguro Gyaru, Makeup Và Fashion",
+    "url": "/blog/ganguro.html",
+    "type": "J-Fashion / Gyaru",
+    "description": "Ganguro là gì? Tìm hiểu Ganguro Gyaru, makeup tương phản, tóc sáng, platform boots, thời trang Shibuya cuối 1990s và cách lấy cảm hứng an toàn hiện nay.",
+    "image": "/images/blog-covers/ganguro.webp",
+    "keywords": "ganguro, ganguro gyaru, ganguro makeup"
+  },
+  {
+    "title": "Ulzzang Style Là Gì? Phong Cách Hàn Quốc Và Cách Phối Đồ Nữ",
+    "url": "/blog/ulzzang-style.html",
+    "type": "K-Fashion",
+    "description": "Ulzzang style là gì? Hiểu nguồn gốc từ văn hóa internet Hàn đầu 2000s, cách ulzzang fashion style được diễn giải và công thức phối đồ nữ hiện đại.",
+    "image": "/images/blog-covers/ulzzang-style.webp",
+    "keywords": "ulzzang style, ulzzang fashion style, style ulzzang, K-Fashion"
+  },
+  {
+    "title": "Kidcore Là Gì? Kidcore Aesthetic Và Cách Phối Outfit",
+    "url": "/blog/kidcore.html",
+    "type": "Aesthetic",
+    "description": "Kidcore là gì? Hiểu Kidcore aesthetic qua màu primary, nostalgia 90s–2000s, cartoon, toy motifs và cách phối outfit vui mắt nhưng vẫn có tỷ lệ.",
+    "image": "/images/blog-covers/kidcore.webp",
+    "keywords": "kidcore"
+  },
+  {
+    "title": "Kogal Là Gì? Kogal Gyaru Và Phong Cách Nữ Sinh Nhật 90s",
+    "url": "/blog/kogal.html",
+    "type": "J-Fashion / Gyaru",
+    "description": "Kogal là gì? Tìm hiểu Kogal Gyaru ở Shibuya thập niên 90, loose socks, váy xếp ly, tóc nhuộm, platform shoes và cách lấy cảm hứng Kogal hiện đại.",
+    "image": "/images/blog-covers/kogal.webp",
+    "keywords": "kogal, kogal gyaru, kogyaru"
+  },
+  {
+    "title": "Ouji Fashion Là Gì? Prince Style Nhật Bản Và Cách Phối Đồ",
+    "url": "/blog/ouji-fashion.html",
+    "type": "J-Fashion",
+    "description": "Ouji fashion là gì? Giải mã Prince Style Nhật Bản qua silhouette, blouse, waistcoat, shorts/trousers, boots và cách phối Ouji không thành costume.",
+    "image": "/images/blog-covers/ouji-fashion.webp",
+    "keywords": "ouji fashion, Prince Style Nhật Bản, ouji style, boystyle, J-Fashion"
+  },
+  {
+    "title": "Amekaji Là Gì? American Casual Trong Gyaru Fashion",
+    "url": "/blog/amekaji.html",
+    "type": "J-Fashion / Gyaru",
+    "description": "Amekaji là gì? Hiểu American Casual trong Gyaru qua denim, plaid, varsity, sneaker, hair-makeup Gyaru và 6 công thức outfit dễ mặc hằng ngày.",
+    "image": "/images/blog-covers/amekaji.webp",
+    "keywords": "amekaji"
+  },
+  {
+    "title": "Power Dressing Là Gì? Cách Mặc Quyền Lực Mà Không Quá Cứng",
+    "url": "/blog/power-dressing.html",
+    "type": "Tailoring / Workwear",
+    "description": "Power dressing là gì? Hiểu power dressing 1980s, silhouette quyền lực và cách phối blazer, quần, váy, giày để mạnh nhưng không quá cứng.",
+    "image": "/images/blog-covers/power-dressing.webp",
+    "keywords": "power dressing, power dressing 1980s, power suit, tailoring nữ"
+  },
+  {
+    "title": "Heisei Retro Là Gì? Aesthetic Nhật Bản 90s–2000s",
+    "url": "/blog/heisei-retro.html",
+    "type": "J-Fashion / Retro",
+    "description": "Heisei Retro là gì? Hiểu aesthetic Nhật Bản gợi nhớ 1990s–đầu 2000s qua purikura, flip phone, Gyaru, loose socks, platform shoes và cách phối outfit hiện đại.",
+    "image": "/images/blog-covers/heisei-retro.webp",
+    "keywords": "heisei retro, heisei retro style"
+  },
+  {
+    "title": "Ivy Style Là Gì? Ivy League Khác Preppy Thế Nào",
+    "url": "/blog/ivy-style.html",
+    "type": "Classic / Preppy Adjacent",
+    "description": "Ivy Style là gì? Hiểu nguồn gốc Ivy League, blazer, Oxford shirt, khaki, loafers và cách phân biệt Ivy với Preppy, Old Money để phối nữ hiện đại.",
+    "image": "/images/blog-covers/ivy-style.webp",
+    "keywords": "ivy, style"
+  },
+  {
+    "title": "Rockabilly Là Gì? Rockabilly Style Và Cách Phối Đồ",
+    "url": "/blog/rockabilly.html",
+    "type": "Retro / Subculture",
+    "description": "Rockabilly là gì? Tìm hiểu gốc nhạc rockabilly 1950s, rockabilly style nữ, item nhận diện và cách phối đồ retro mà không thành costume.",
+    "image": "/images/blog-covers/rockabilly.webp",
+    "keywords": "rockabilly, rockabilly style, rockabilly fashion, 1950s"
+  },
+  {
+    "title": "Hime Gyaru Là Gì? Princess Gyaru Style Và Outfit",
+    "url": "/blog/hime-gyaru.html",
+    "type": "J-Fashion / Gyaru",
+    "description": "Hime Gyaru là gì? Hiểu Princess Gyaru qua tóc volume, gyaru makeup, lace, bows, pearls, heels và cách phối outfit công chúa mà không nhầm Lolita.",
+    "image": "/images/blog-covers/hime-gyaru.webp",
+    "keywords": "hime, gyaru"
+  },
+  {
+    "title": "Thời Trang 1950s Là Gì? Silhouette Và Outfit Nữ Thập Niên 50",
+    "url": "/blog/1950s-fashion.html",
+    "type": "Historical Fashion",
+    "description": "1950s fashion nữ có gì đặc trưng? Tìm hiểu New Look, full skirt, pencil skirt, sheath, suit, sportswear và cách phối outfit lấy cảm hứng thập niên 50.",
+    "image": "/images/blog-covers/1950s-fashion.webp",
+    "keywords": "1950s fashion, outfit 1950, 1950s fashion for ladies, 1950s fashion women"
+  },
+  {
+    "title": "Japanese Streetwear Là Gì? Phong Cách Đường Phố Nhật Bản",
+    "url": "/blog/japanese-streetwear.html",
+    "type": "J-Fashion / Streetwear",
+    "description": "Japanese Streetwear là gì? Hiểu phong cách đường phố Nhật qua Harajuku, Ura-Harajuku, layering, silhouette, vintage, sneaker và cách phối nữ hiện đại.",
+    "image": "/images/blog-covers/japanese-streetwear.webp",
+    "keywords": "japanese, streetwear"
+  },
+  {
+    "title": "Thời Trang 1930s: Silhouette, Váy Áo Và Cách Ứng Dụng",
+    "url": "/blog/1930s-fashion.html",
+    "type": "Historical Fashion",
+    "description": "1930s fashion có gì đặc trưng? Khám phá natural waist, bias-cut gown, vai rộng dần, Hollywood glamour và cách ứng dụng silhouette thập niên 30 vào outfit nữ hiện đại.",
+    "image": "/images/blog-covers/1930s-fashion.webp",
+    "keywords": "1930s, fashion"
+  },
+  {
+    "title": "Gurokawa Là Gì? Khi Kawaii Gặp Dark Và Grotesque",
+    "url": "/blog/gurokawa.html",
+    "type": "J-Fashion / Kawaii",
+    "description": "Gurokawa là gì? Hiểu gurokawaii khi kawaii gặp grotesque: eyeball, bones, horror motifs, cách phối cute-dark và phân biệt với Yami Kawaii, Pastel Goth.",
+    "image": "/images/blog-covers/gurokawa.webp",
+    "keywords": "gurokawa, gurokawaii, creepy cute, J-Fashion"
+  },
+  {
+    "title": "Morute Là Gì? Morute Aesthetic Và Cách Phối Đồ",
+    "url": "/blog/morute.html",
+    "type": "Internet Aesthetic",
+    "description": "Morute là gì? Hiểu aesthetic morbid + cute từ Tumblr đầu 2010s, bảng màu, lace, vintage nightgown, distressed texture và cách phối Morute an toàn, không glamorize harm.",
+    "image": "/images/blog-covers/morute.webp",
+    "keywords": "morute, morute là gì, morute core"
+  },
+  {
+    "title": "Barbiecore Là Gì? Barbiecore Aesthetic Và Outfit",
+    "url": "/blog/barbiecore.html",
+    "type": "Aesthetic",
+    "description": "Barbiecore là gì? Giải mã Barbiecore aesthetic qua màu hồng, silhouette, texture và các công thức outfit nữ dễ mặc mà không thành costume.",
+    "image": "/images/blog-covers/barbiecore.webp",
+    "keywords": "barbiecore, barbiecore aesthetic, barbiecore outfit"
+  },
+  {
+    "title": "McBling Là Gì? Phong Cách McBling Đầu Những Năm 2000",
+    "url": "/blog/mcbling.html",
+    "type": "Y2K / Retro",
+    "description": "McBling là gì? Giải mã phong cách McBling đầu 2000s: velour tracksuit, rhinestone, logo, trucker hat, mini bag và cách phân biệt với Y2K.",
+    "image": "/images/blog-covers/mcbling.webp",
+    "keywords": "mcbling, mcbling style, mcbling aesthetic, 2000s"
+  },
+  {
+    "title": "Geek Chic Là Gì? Phong Cách Mọt Sách Thành Trend 2026",
+    "url": "/blog/geek-chic.html",
+    "type": "Contemporary Style",
+    "description": "Geek Chic là gì? Tìm hiểu kính gọng mảnh, cardigan, shirt, tie, skirt, loafer và cách Geek Chic phát triển thành literary chic/modern prep trong năm 2026.",
+    "image": "/images/blog-covers/geek-chic.webp",
+    "keywords": "geek chic, geek chic style, literary chic"
+  },
+  {
     "title": "Item Guide Nữ: Phối Đồ Theo Item",
     "url": "/blog/phoi-do-theo-item.html",
     "type": "Item Guide Hub",
