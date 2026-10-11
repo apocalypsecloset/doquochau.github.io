@@ -1,0 +1,15 @@
+/* Site quality fixes: 2026-10-11. Shared across articles, hubs and Look pages. */
+.ac-reading-path{margin:32px 0;padding:22px;border:1px solid #d6cec5;border-radius:8px;line-height:1.65;clear:both}
+.ac-reading-path h2{font-size:1.25rem!important;margin:0 0 14px!important;line-height:1.4}
+.ac-reading-path ul{padding-left:22px;display:grid;gap:10px;margin:12px 0}
+.ac-reading-path a,.ac-topic-route a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.ac-topic-route{font-size:.88rem;line-height:1.6;margin:0 0 20px;color:inherit}
+.article-content>p,.article-content>ul,.article-content>ol,.article-content blockquote,.article-content .seo-faq,.article-content .ac-reading-path,.hub-copy,.hub-section>p{font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.8}
+.article-content figcaption{font-family:Arial,Helvetica,sans-serif;line-height:1.6;font-size:14px}
+.article-content{min-width:0;overflow-wrap:break-word}
+.article-content img,.hub-main img{max-width:100%;height:auto}
+.ac-verified-looks .related-outfit-card img{width:100%;aspect-ratio:9/16;object-fit:contain;background:#ece8e2;height:auto}
+.article-content .ac-v22-cta{margin:16px 0;padding:12px 16px;min-height:0}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #9b2f58;outline-offset:4px}
+@media(max-width:768px){.ac-reading-path{padding:16px;margin:24px 0}.article-content table,.hub-main table{display:block;max-width:100%;overflow-x:auto}.article-content>p,.article-content>ul,.article-content>ol{font-size:16px;line-height:1.75}.ac-verified-looks .related-outfit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related-outfit-copy{min-width:0;overflow-wrap:anywhere}.ac-parent-links{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
