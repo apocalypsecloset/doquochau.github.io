@@ -104,10 +104,10 @@ window.searchIndex = [
     "keywords": "ulzzang style, ulzzang fashion style, style ulzzang, K-Fashion"
   },
   {
-    "title": "Kidcore Là Gì? Kidcore Aesthetic Và Cách Phối Outfit",
+    "title": "Kidcore Là Gì? Đặc Trưng Và 6 Cách Phối Đồ Nhiều Màu",
     "url": "/blog/kidcore.html",
     "type": "Aesthetic Guide",
-    "description": "Kidcore là gì? Hiểu Kidcore aesthetic qua màu primary, nostalgia 90s–2000s, cartoon, toy motifs và cách phối outfit vui mắt nhưng vẫn có tỷ lệ.",
+    "description": "Kidcore là phong cách lấy cảm hứng từ tuổi thơ: màu tươi, họa tiết hoạt hình, denim yếm và phụ kiện hạt. Xem 6 cách phối đồ và phân biệt Kidcore với Cutecore.",
     "image": "/images/blog-covers/kidcore.webp",
     "keywords": "kidcore"
   },
@@ -320,10 +320,10 @@ window.searchIndex = [
     "keywords": "outfit đi đám cưới cho nữ cá tính, phối đồ đi đám cưới nữ cá tính, outfit đám cưới nữ, đồ đi đám cưới nữ cá tính"
   },
   {
-    "title": "Quần Cạp Trễ Là Gì? Cách Nhận Biết Low-Rise Và Chọn Fit Không Bị Tuột",
+    "title": "Quần Cạp Trễ Là Gì? Phân Biệt Cạp Cao Và Cách Chọn Size",
     "url": "/blog/quan-cap-tre-la-gi.html",
     "type": "Fashion Basics",
-    "description": "Quần cạp trễ là gì? Phân biệt low-rise với mid/high-rise, đọc rise measurement, chọn fit ở eo-hông và hiểu vì sao cạp trễ gắn với Y2K.",
+    "description": "Quần cạp trễ (low-rise) có cạp nằm thấp hơn eo tự nhiên. Xem cách phân biệt cạp trễ, cạp vừa, cạp cao và kiểm tra số đo để chọn quần vừa hông, không tuột.",
     "image": "/images/blog-covers/quan-cap-tre-la-gi.webp",
     "keywords": "quần cạp trễ là gì, quần cạp trễ nữ, quần jean cạp trễ nữ, low rise là gì, low rise jeans"
   },
@@ -448,10 +448,10 @@ window.searchIndex = [
     "keywords": "chân váy chữ a phối với áo gì, phối đồ với chân váy chữ a, chân váy chữ a ngắn phối với áo gì, chân váy chữ a dài phối với áo gì"
   },
   {
-    "title": "Phong Cách Emo Là Gì? Dấu Hiệu Nhận Biết Và Khác Scene, E-Girl, Grunge",
+    "title": "Emo Girl Là Gì? Phong Cách Emo Và Cách Phân Biệt E-Girl",
     "url": "/blog/phong-cach-emo-la-gi.html",
     "type": "Style Guide",
-    "description": "Phong cách Emo là gì? Nhận biết Emo fashion, bảng màu, item và cách phân biệt Emo với Scene, E-Girl, Grunge để không gom mọi alt look vào một nhóm.",
+    "description": "Emo girl là gì? Hiểu mối liên hệ với nhạc Emo, nhận diện tóc, trang phục và makeup; phân biệt Emo với Scene, E-Girl, Grunge và Goth qua ví dụ dễ hiểu.",
     "image": "/images/blog-covers/phong-cach-emo-la-gi.webp",
     "keywords": "phong cách emo, emo style, emo fashion, emo là gì, emo outfit nữ, emo và scene"
   },
@@ -480,10 +480,10 @@ window.searchIndex = [
     "keywords": "giày mary jane là gì, mary jane là gì, giày mary jane, mary jane shoes, cách phối giày mary jane"
   },
   {
-    "title": "Croptop Là Gì? Cách Chọn Độ Dài, Form Và Phối Đồ Không Lệch Tỷ Lệ",
+    "title": "Áo Croptop Là Gì? Các Kiểu Áo Và Cách Chọn Độ Dài",
     "url": "/blog/croptop-la-gi.html",
     "type": "Fashion Basics",
-    "description": "Croptop là gì, crop top khác bra top thế nào? Cách nhận biết độ dài, các form croptop và chọn tỷ lệ trước khi phối với quần, chân váy.",
+    "description": "Croptop (crop top) là áo có gấu ngắn, thường ngang eo hoặc cao hơn. Tìm hiểu các kiểu croptop, cách chọn độ dài và phân biệt với baby tee, bra top, áo ống.",
     "image": "/images/blog-covers/croptop-la-gi.webp",
     "keywords": "croptop là gì, crop top là gì, croptop, áo croptop là gì, các loại croptop"
   },
@@ -1344,10 +1344,10 @@ window.searchIndex = [
     "keywords": "Goth Aesthetic 2026: Hướng Dẫn Đầy Đủ Cho Người Mới Bắt Đầu — Apocalypse Closet Goth không phải phase. Đó là một subculture với lịch sử 40 năm và ngôn ngữ thời trang riêng. Hướng dẫn goth aesthetic từ trad goth đến nu-goth cho người mới bắt đầu. Goth Aesthetic 2026: Hướng Dẫn Đầy Đủ Cho Người Mới Bắt Đầu Goth Aesthetic 2026: Hướng Dẫn Đầy Đủ Cho Người Mới Bắt Đầu — Apocalypse Closet ← Blog Apocalypse Closet Style Guide 23 May 2026 Goth Aesthetic 2026: Hướng Dẫn Đầy Đủ Cho Người Mới Bắt Đầu By Apocalypse Closet Bố mẹ bạn có thể đã hỏi đó là phase. Câu trả lời sau 40 năm tồn tại của subculture này đã rõ: không phải. Goth aesthetic có rễ cắm sâu vào post-punk Anh cuối thập niên 70, qua Siouxsie Sioux, qua The Cure, qua những cemetery photoshoot lúc hoàng hôn và những quyển sách về triết học hiện sinh bìa đen. Năm 2026, goth không cần bạn phải nghe nhạc Bauhaus để dress goth — nhưng nếu thử thì bạn sẽ hiểu tại sao aesthetic này vận hành theo cách nó vận hành. Các Nhánh Goth Chính Cần Biết Trad Goth — bản gốc: lace, velvet, dramatic silhouette, big hair, mắt smoky đen sâu và skin tone tương phản mạnh. Nu-Goth — phiên bản thế kỷ 21: minimalist hơn, palette đen thuần, geometry và occult symbols thay thế Victorian drama. Pastel Goth — paradox có chủ ý: màu pastel kết hợp với motif skull, cross và creepy-cute để tạo cognitive dissonance thẩm mỹ. Cyber Goth — industrial và rave fusion: neon accent trên nền đen, PVC, platform boots cao đến đùi và dreads synthetic màu UV. Goth Wardrobe Cơ Bản Không Thể Thiếu Nền tảng của bất kỳ goth wardrobe nào đều xoay quanh: màu đen chiếm ít nhất 80% tủ đồ, silhouette dramatic (flowy, oversized hoặc fitted tùy nhánh), texture phức tạp (lace, velvet, PVC, sheer), platform shoes ở mọi độ cao, và jewelry với motif mang tính biểu tượng — cross, crescent moon, serpent, coffin. Goth không về cái chết. Goth về việc nhìn thẳng vào những thứ người ta sợ nhìn — và thấy chúng đẹp. Goth Makeup: Bước Vào Darkness Có Kiểm Soát Goth makeup không nhất thiết phải full white face powder và black lipstick ngay từ đầu. Điểm khởi đầu thực tế hơn: eyeliner đen dày, mascara volumizing, brow đậm hơn thường ngày và lip màu berry hoặc plum. Đây là cách goth hóa một everyday look mà không cần cam kết toàn bộ. Từ đó bạn có thể đẩy dần lên tùy comfort zone. #Goth #DarkAesthetic #StyleGuide Share: Twitter ← Bài trước Soft Grunge Aesthetic Là Gì Bài tiếp → Dark Y2K Aesthetic © 2026 APOCALYPSE CLOSET goth gothic dark aesthetic"
   },
   {
-    "title": "Badgirl Là Gì? Phong Cách & Cách Phối Đồ",
+    "title": "Bad Girl Là Gì? Ý Nghĩa, Dấu Hiệu Và Phong Cách Badgirl",
     "url": "/blog/badgirl.html",
     "type": "Journal",
-    "description": "Badgirl là gì? Hiểu đúng phong cách badgirl, dấu hiệu nhận biết, khác biệt với good girl và trap girl, cùng 6 outfit thực tế dễ áp dụng.",
+    "description": "Bad girl nghĩa là gì, có phải “gái hư” không? Phân biệt badgirl, good girl và trap girl; nhận diện phong cách cá tính mà không đánh giá qua vẻ ngoài.",
     "image": "/images/blog-covers/badgirl.webp",
     "keywords": "Phong Cách Badgirl: Hướng Dẫn Đầy Đủ Từ Tủ Đồ Đến Thái Độ Sống — Apocalypse Closet Phong cách badgirl là gì, gồm những style con nào, cách phối đồ ra sao và tại sao aesthetic này không phải về việc làm hư hỏng — mà về sự tự do. Hướng dẫn đầy đủ từ Apocalypse Closet. Phong Cách Badgirl: Hướng Dẫn Đầy Đủ Từ Tủ Đồ Đến Thái Độ Sống Phong Cách Badgirl: Hướng Dẫn Đầy Đủ Từ Tủ Đồ Đến Thái Độ Sống — Apocalypse Closet ← Blog Apocalypse Closet Shop Dark Feminine E-Girl Goth Baddie Punk Blog Style Guide 21 May 2026 Apocalypse Closet Phong Cách Badgirl: Hướng Dẫn Đầy Đủ Từ Tủ Đồ Đến Thái Độ Sống Phong cách badgirl không phải về việc xấu hay hư hỏng. Đó là một tuyên ngôn về sự tự do — mặc những gì bạn muốn, không xin phép ai, không giải thích với ai. Internet đặt hai chữ \"badgirl\" vào một cái hộp rất nhỏ — tóc nhuộm, hình xăm, thái độ. Nhưng nếu bạn nhìn kỹ hơn vào những cô gái thực sự mặc phong cách này, bạn thấy gì? Không phải sự hư hỏng. Bạn thấy sự tự tin không cần được xác nhận, sự rõ ràng về bản sắc, và khả năng chiếm không gian mà không xin lỗi ai. Đó mới là DNA thật sự của phong cách badgirl. Phong Cách Badgirl Là Gì — Định Nghĩa Không Phải Của Từ Điển Phong cách badgirl (badgirl aesthetic) là tập hợp các lựa chọn thời trang và thái độ hướng đến việc thể hiện sức mạnh, sự độc lập và cá tính không tuân thủ chuẩn mực. Nó không phải một xu hướng có ngày hết hạn — nó là một hệ giá trị được mặc lên người. Khác với các trend thời trang bình thường, phong cách badgirl không đến từ runway hay fashion week. Nó đến từ đường phố, từ subculture, từ những người phụ nữ quyết định không còn thu nhỏ bản thân để người khác cảm thấy thoải mái. Từ punk rock thập niên 70, qua hip-hop thập niên 90, đến dark aesthetic và alt fashion của thế hệ TikTok — mỗi kỷ nguyên đều có phiên bản badgirl của riêng nó. Phong cách badgirl không dạy bạn cách mặc. Nó dạy bạn cách chiếm không gian. 4 Style Con Của Phong Cách Badgirl Badgirl aesthetic không phải một khối đồng nhất. Có ít nhất 4 nhánh chính, mỗi nhánh có ngôn ngữ riêng: 1. Edgy Badgirl — Da Và Xích Đây là hình ảnh badgirl kinh điển nhất: leather jacket, quần da skinny hoặc cargo, boots cao cổ với buckle, chain necklace và belt chains. Palette chủ đạo là đen — không có ngoại lệ. Nếu có màu thì là đỏ blood hoặc bạc metallic. Energy: motorcycle, underground club, người không cần bản đồ. 2. Dark Feminine — Quyền Lực Và Bí Ẩn Nhánh này lấy cảm hứng từ triết học Jungian về shadow self — phần sức mạnh bị kìm nén trong mỗi người. Trang phục thể hiện qu baddie streetwear badgirl phong cach badgirl"
   },
