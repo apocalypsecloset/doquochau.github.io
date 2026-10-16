@@ -1,4 +1,4 @@
-/* assets/css/site-shell-20260807.css */
+
  
 @font-face{font-family:"Oswald";src:url("/oswald.woff2") format("woff2");font-style:normal;font-weight:500 700;font-display:optional}
 @font-face{font-family:"Space Mono";src:url("/space-mono-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:optional}
@@ -360,7 +360,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 @media (max-width:900px){.ac-pinterest-pin-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.ac-pinterest-links{align-items:stretch}.ac-pinterest-pin-link,.ac-pinterest-board-link{width:100%}.ac-pinterest-pin-grid{grid-template-columns:1fr}}
 
-/* assets/css/pinterest-links-20260811.css */
+
 
 
 .ac-pinterest-links,
@@ -488,7 +488,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
   }
 }
 
-/* assets/css/ac-maintenance-20260812.css */
+
 
 
 @font-face{
@@ -533,8 +533,8 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
   }
 }
 
-/* assets/css/site-quality.css */
-/* Site quality fixes: 2026-10-11. Shared across articles, hubs and Look pages. */
+
+
 .ac-reading-path{margin:32px 0;padding:22px;border:1px solid #d6cec5;border-radius:8px;line-height:1.65;clear:both}
 .ac-reading-path h2{font-size:1.25rem!important;margin:0 0 14px!important;line-height:1.4}
 .ac-reading-path ul{padding-left:22px;display:grid;gap:10px;margin:12px 0}

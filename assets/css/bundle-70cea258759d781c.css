@@ -1,4 +1,4 @@
-/* assets/css/perf-layout-trio-20260921.css */
+
  
  
 html{overflow-x:hidden;scroll-padding-top:84px}body{overflow-x:hidden}.skip-link{position:fixed!important;left:12px!important;top:-120px!important;z-index:100000!important;opacity:0!important;pointer-events:none!important}.skip-link:focus{top:12px!important;opacity:1!important;pointer-events:auto!important}
@@ -125,7 +125,7 @@ main>.apcl-standard-cover .blog-cover-image{
 
  
 
-/* assets/css/perf-shell-pair-20260921.css */
+
  
 .related-outfit-links{margin:42px 0;padding:26px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
 .related-outfit-links h2{margin:0 0 8px;font-family:Oswald,Arial,sans-serif;font-size:clamp(24px,4vw,36px);line-height:1.15;text-transform:uppercase}
@@ -509,7 +509,7 @@ body.ac-closet-page>.ac-site-footer{visibility:visible!important}
 @media (max-width:900px){.ac-pinterest-pin-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.ac-pinterest-links{align-items:stretch}.ac-pinterest-pin-link,.ac-pinterest-board-link{width:100%}.ac-pinterest-pin-grid{grid-template-columns:1fr}}
 
-/* assets/css/perf-blog-components-20260921.css */
+
  
 
 

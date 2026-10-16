@@ -1,4 +1,4 @@
-/* assets/css/perf-gold-pair-20260921.css */
+
  
  
 .ac-blog-app-box[data-blog-app-box="golden-v22"]{position:relative!important;isolation:isolate!important;overflow:hidden!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:18px!important;width:100%!important;max-width:840px!important;min-height:226px!important;margin:0 auto 38px!important;padding:30px 24px!important;text-decoration:none!important;text-align:center!important;color:#fff8ef!important;border:1px solid rgba(255,131,109,.66)!important;border-left:5px solid #ff705b!important;border-radius:9px!important;background:radial-gradient(circle at 50% 46%,rgba(255,111,88,.18),transparent 28%),linear-gradient(135deg,rgba(255,102,80,.10),transparent 42%),#050505!important;box-shadow:0 22px 54px rgba(0,0,0,.54),0 0 0 1px rgba(255,126,105,.08),0 0 40px rgba(255,92,70,.12),inset 0 1px 0 rgba(255,255,255,.04)!important;transform:translateZ(0)!important;contain:layout!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease!important}
@@ -58,8 +58,8 @@ main>.apcl-standard-cover{width:min(calc(100% - 48px),780px)!important;max-width
 
 .related-outfit-grid.is-two{grid-template-columns:repeat(2,minmax(0,1fr))!important}@media(max-width:768px){.related-outfit-grid.is-two{grid-template-columns:1fr!important}}
 
-/* assets/css/site-quality.css */
-/* Site quality fixes: 2026-10-11. Shared across articles, hubs and Look pages. */
+
+
 .ac-reading-path{margin:32px 0;padding:22px;border:1px solid #d6cec5;border-radius:8px;line-height:1.65;clear:both}
 .ac-reading-path h2{font-size:1.25rem!important;margin:0 0 14px!important;line-height:1.4}
 .ac-reading-path ul{padding-left:22px;display:grid;gap:10px;margin:12px 0}

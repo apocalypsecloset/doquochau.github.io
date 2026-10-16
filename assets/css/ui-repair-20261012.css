@@ -1,5 +1,5 @@
-/* UI repair, 2026-10-12. Loaded after existing page bundles. */
-/* Scope article navigation explicitly: the legacy nav rule uses a horizontal flex layout. */
+
+
 .ac-ui-v2 .ac-reading-path{display:block!important;width:100%;max-width:100%;box-sizing:border-box;float:none;clear:both;text-align:left}
 .ac-ui-v2 .ac-reading-path>h2{display:block;width:100%;max-width:none;border:0;padding:0;white-space:normal}
 .ac-ui-v2 .ac-reading-path>.ac-parent-links{display:block!important;margin:0 0 18px!important;font:15px/1.7 Arial,Helvetica,sans-serif}
@@ -8,7 +8,7 @@
 .ac-ui-v2 .ac-reading-path>ul>li{display:block!important;position:static!important;border:0!important;padding:0!important;min-width:0;box-sizing:border-box}
 .ac-ui-v2 .ac-reading-path>ul>li::before,.ac-ui-v2 .ac-reading-path>ul>li::after{content:none!important;display:none!important}
 .ac-ui-v2 .ac-reading-path>ul>li>a{box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;word-break:normal}
-/* Reserve a real marker gutter, including two-digit numbers and wrapped titles. */
+
 .ac-ui-v2 .article-toc,.ac-ui-v2 .toc{display:block!important;box-sizing:border-box;max-width:100%;min-width:0;text-align:left}
 .ac-ui-v2 .article-toc ol,.ac-ui-v2 .toc ol{display:block!important;box-sizing:border-box!important;width:100%!important;max-width:100%!important;margin:0!important;padding:8px 20px 18px 3.75em!important;list-style:decimal outside!important}
 .ac-ui-v2 .article-toc ol>li,.ac-ui-v2 .toc ol>li{display:list-item!important;position:static!important;float:none!important;width:auto!important;max-width:100%!important;margin:0!important;padding:10px 0 10px 4px!important;list-style:decimal outside!important;line-height:1.65;white-space:normal;overflow-wrap:anywhere}
