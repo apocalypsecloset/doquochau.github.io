@@ -190,6 +190,57 @@ function createCard(p,index){
   });
   purch.append(select,buy);body.append(purch,note);card.append(media,body);return card;
 }
+/**
+ * Preview-only grid slots: 5 additional visual cards built from the existing
+ * Silent Chaos images. Never invent inventory, prices, variant IDs or checkout.
+ * These placeholders disappear on production and as real catalog items arrive.
+ */
+function isLayoutPreview(){
+  return /(^|\\.)pages\\.dev$/i.test(location.hostname) || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+}
+function createDemoCard(product,slot){
+  const card=el('article','ac-product-card ac-product-card--demo');
+  card.setAttribute('data-layout-preview','true');
+  const media=el('div','ac-product-media');
+  const imageBox=el('div','ac-product-image');
+  const images=productPhotos(product);
+  const photoIndex=images.length ? [1,4,7,10,13][(slot-1)%5] % images.length : -1;
+  if(photoIndex>=0){
+    const photo=document.createElement('img');
+    photo.src=images[photoIndex]; photo.loading='lazy';photo.decoding='async';
+    photo.alt='Alternate mockup view of the existing Silent Chaos tee — layout demo '+slot;
+    photo.width=560;photo.height=640;
+    imageBox.append(photo);
+  }else imageBox.append(el('span','ac-product-image-placeholder','SILENT CHAOS'));
+  imageBox.append(el('span','ac-product-flag ac-product-flag--demo','LAYOUT DEMO'));
+  media.append(imageBox);
+  const body=el('div','ac-product-body');
+  body.append(el('p','ac-product-type','DESIGN SLOT '+String(slot+1).padStart(2,'0')+' / PREVIEW'));
+  const title=el('h3','ac-product-title','SILENT CHAOS / MOCKUP '+String(slot).padStart(2,'0'));
+  body.append(title,el('strong','ac-product-price ac-demo-price','COMING SOON'));
+  const purchase=el('div','ac-product-purchase');
+  const button=el('button','ac-product-add ac-demo-button','PREVIEW ONLY');
+  button.type='button';button.disabled=true;
+  button.title='Layout demonstration. This is not a separately purchasable product.';
+  purchase.append(button);
+  body.append(purchase,el('p','ac-product-status','Same shirt, another photo · Not for sale'));
+  card.append(media,body);
+  return card;
+}
+function paintCatalog(products, featured){
+  const showDemo = isLayoutPreview() && products.length < 6;
+  const fillers=showDemo
+    ? Array.from({length:6-products.length},(_,i)=>createDemoCard(featured,i+1))
+    : [];
+  grid.replaceChildren(...products.map(createCard),...fillers);
+  grid.classList.toggle('is-single',products.length===1&&!showDemo);
+  grid.classList.toggle('is-demo',showDemo);
+  say(status,showDemo
+    ? products.length+' LIVE DESIGN'+(products.length>1?'S':'')+' · '+fillers.length+' DEMO SLOTS · PREVIEW ONLY'
+    : products.length+' LIVE DROPS');
+  const notice=document.querySelector('#ac-demo-note');
+  if(notice) notice.hidden=!showDemo;
+}
 function paintHero(product){
   if(!product)return;
   const src=imageUrl(product);
@@ -210,14 +261,16 @@ async function loadCatalog(){
       if(!publicProduct(fallback))throw new Error('No public product');
       products.push(fallback);
     }
-    grid.replaceChildren(...products.map(createCard));
-    grid.classList.toggle('is-single',products.length===1);
-    say(status,products.length===1?'DROP 001 · ONE DESIGN · MULTIPLE VIEWS':products.length+' ORIGINAL DROPS');
     const featured=products.find(p=>p.slug===FEATURED_SLUG)||products[0];
-    paintHero(featured);
-    renderLookbook(featured);
+    // Fetch detailed photos for all six demo slots; if unavailable, use collection data.
+    let fullFeatured=featured;
+    try{fullFeatured=await api('/products/'+encodeURIComponent(featured.slug));}
+    catch(_){/* Collection image remains usable. */}
+    paintCatalog(products,fullFeatured);
+    paintHero(fullFeatured);
+    renderLookbook(fullFeatured);
   }catch(e){
-    try{const product=await api('/products/'+encodeURIComponent(FEATURED_SLUG));if(!publicProduct(product))throw new Error('Not public');grid.replaceChildren(createCard(product,0));grid.classList.add('is-single');say(status,'DROP 001 · ONE DESIGN · MULTIPLE VIEWS');paintHero(product);renderLookbook(product);}
+    try{const product=await api('/products/'+encodeURIComponent(FEATURED_SLUG));if(!publicProduct(product))throw new Error('Not public');paintCatalog([product],product);paintHero(product);renderLookbook(product);}
     catch(_){errorFallback();}
   }
 }
