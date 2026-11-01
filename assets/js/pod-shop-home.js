@@ -196,7 +196,7 @@ function createCard(p,index){
  * These placeholders disappear on production and as real catalog items arrive.
  */
 function isLayoutPreview(){
-  return /(^|\\.)pages\\.dev$/i.test(location.hostname) || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  return location.hostname.endsWith('.pages.dev') || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 }
 function createDemoCard(product,slot){
   const card=el('article','ac-product-card ac-product-card--demo');
