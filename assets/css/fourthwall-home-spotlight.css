@@ -1,0 +1,35 @@
+/* Apocalypse Closet POD spotlight – additive only; uses existing Oswald/Space Mono fonts. */
+#ac-pod-spotlight{padding:clamp(18px,4vw,52px) 32px;background:#0b0b0b;border-top:1px solid #242424;border-bottom:1px solid #292929;color:var(--white,#f0ece4)}
+#ac-pod-spotlight *{box-sizing:border-box}
+.ac-pod-eyebrow{font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.19em;color:var(--red-text,#e05444);text-transform:uppercase}
+.ac-pod-layout{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.05fr);gap:clamp(20px,5vw,76px);align-items:center;max-width:1230px;margin:0 auto}
+.ac-pod-art{position:relative;min-height:360px;aspect-ratio:4/4.3;background:radial-gradient(circle at 50% 35%,#282320 0%,#121212 48%,#080808 100%);border:1px solid #38312e;display:grid;place-items:center;overflow:hidden}
+.ac-pod-art:before,.ac-pod-art:after{content:'';position:absolute;pointer-events:none;border:1px solid #46302b;inset:22px;opacity:.48}
+.ac-pod-art:after{inset:35px;border-color:#242424}
+.ac-pod-art img{display:block;width:100%;height:100%;object-fit:contain;position:relative;z-index:2}
+.ac-pod-art-placeholder{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:44px;color:#f0ece4}
+.ac-pod-art-placeholder span{font:700 clamp(37px,6vw,88px)/.98 'Oswald',sans-serif;letter-spacing:.03em;text-transform:uppercase}
+.ac-pod-art-placeholder strong{font:700 12px/1.5 'Space Mono',monospace;letter-spacing:.22em;color:#db685a}
+.ac-pod-corner{position:absolute;left:16px;top:16px;z-index:3;font:700 10px/1.4 'Space Mono',monospace;letter-spacing:.16em;color:#ddd;padding:7px 10px;background:#0a0a0ad9;border:1px solid #44332f}
+.ac-pod-copy h2{font:700 clamp(40px,6vw,82px)/1.02 'Oswald',sans-serif;letter-spacing:.02em;text-transform:uppercase;margin:10px 0 20px;color:#f0ece4}
+.ac-pod-copy h2 em{font-style:normal;color:var(--red-text,#e05444)}
+.ac-pod-description{font:400 12px/1.9 'Space Mono',monospace;color:#c7bfb8;max-width:500px}
+.ac-pod-details{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:19px 0;margin-top:19px;border-top:1px solid #36302c;border-bottom:1px solid #36302c}
+.ac-pod-price{font:700 30px/1 'Oswald',sans-serif;color:#f0ece4}
+.ac-pod-small{font:400 10px/1.6 'Space Mono',monospace;color:#aaa29d}
+.ac-pod-purchase{display:flex;gap:9px;align-items:stretch;margin-top:18px;flex-wrap:wrap}
+.ac-pod-select{min-height:45px;min-width:150px;flex:1 1 150px;padding:0 12px;border:1px solid #514741;color:#f0ece4;background:#141313;font:700 11px 'Space Mono',monospace}
+.ac-pod-action,.ac-pod-cart-trigger{border:1px solid var(--red,#c0392b);background:var(--red,#c0392b);color:#fff;min-height:45px;padding:0 19px;font:700 11px/1.4 'Space Mono',monospace;letter-spacing:.07em;text-transform:uppercase;display:inline-flex;justify-content:center;align-items:center;text-decoration:none;cursor:pointer}
+.ac-pod-action:hover,.ac-pod-action:focus-visible{background:#d1493a}
+.ac-pod-cart-trigger{background:transparent;border-color:#666}
+.ac-pod-action:disabled{opacity:.5;cursor:wait}
+.ac-pod-status{font:400 10px/1.6 'Space Mono',monospace;color:#bdb5af;margin-top:12px;min-height:16px}
+.ac-pod-cart{max-width:410px;width:calc(100% - 24px);margin:auto;background:#101010;border:1px solid #5c4c47;color:#f0ece4;padding:25px}
+.ac-pod-cart::backdrop{background:rgba(0,0,0,.8)}
+.ac-pod-cart h3{font:700 25px 'Oswald',sans-serif;text-transform:uppercase;margin:0 0 15px}
+.ac-pod-cart p{font:400 12px/1.6 'Space Mono',monospace;margin-bottom:18px;color:#d9d0c7}
+.ac-pod-cart a{width:100%}
+.ac-pod-cart-close{float:right;background:none;color:#f0ece4;border:1px solid #666;padding:5px 9px;cursor:pointer}
+@media(max-width:820px){#ac-pod-spotlight{padding:26px 16px}.ac-pod-layout{grid-template-columns:1fr;gap:24px}.ac-pod-art{max-width:560px;min-height:300px;width:100%;margin:auto}.ac-pod-copy h2{font-size:48px}}
+@media(max-width:420px){.ac-pod-art{min-height:250px}.ac-pod-copy h2{font-size:42px}.ac-pod-purchase{flex-direction:column}.ac-pod-select,.ac-pod-action{width:100%;min-height:46px}}
+@media(prefers-reduced-motion:reduce){#ac-pod-spotlight *{scroll-behavior:auto!important;transition:none!important}}
