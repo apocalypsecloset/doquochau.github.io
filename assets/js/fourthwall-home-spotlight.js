@@ -77,15 +77,29 @@
     var v = selected[selectEl.value];
     priceEl.textContent = v ? money(v.unitPrice && v.unitPrice.value || 0, v.unitPrice && v.unitPrice.currency || 'USD') : 'From $29.99';
   }
-  async function ensureCart() {
-    var old = '';
-    try { old = localStorage.getItem('ac_fourthwall_cart_id') || ''; } catch (e) {}
-    if (old) {
-      try { await endpoint('/carts/' + encodeURIComponent(old)); return old; }
-      catch (e) {}
+  async function ensureCartWithItem(variantId) {
+    var previous = '';
+    try { previous = localStorage.getItem('ac_fourthwall_cart_id') || ''; } catch (e) {}
+    if (previous && /^[a-zA-Z0-9-]{1,64}$/.test(previous)) {
+      try {
+        await endpoint('/carts/' + encodeURIComponent(previous));
+        await endpoint('/carts/' + encodeURIComponent(previous) + '/add', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: [{ variantId: variantId, quantity: 1 }] })
+        });
+        return previous;
+      } catch (e) {
+        // Expired or invalid cart: create a new cart with the requested item.
+      }
     }
-    var cart = await endpoint('/carts', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({currency:'USD'}) });
-    if (!cart.id) throw new Error('Cart creation failed');
+    // Fourthwall requires items when creating a cart. Do not create an empty cart.
+    var cart = await endpoint('/carts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: [{ variantId: variantId, quantity: 1 }] })
+    });
+    if (!cart || !cart.id) throw new Error('Cart creation failed');
     try { localStorage.setItem('ac_fourthwall_cart_id', cart.id); } catch (e) {}
     return cart.id;
   }
@@ -99,8 +113,7 @@
     addEl.disabled = true;
     addEl.textContent = 'ADDING…';
     try {
-      cartId = await ensureCart();
-      await endpoint('/carts/' + encodeURIComponent(cartId) + '/add', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({items:[{variantId:variantId,quantity:1}]}) });
+      cartId = await ensureCartWithItem(variantId);
       var cart = await fetchCart();
       var count = (cart && Array.isArray(cart.items) ? cart.items : []).reduce(function (s, x) { return s + Number(x.quantity || 0); }, 0);
       bagEl.textContent = 'BAG (' + count + ')';
