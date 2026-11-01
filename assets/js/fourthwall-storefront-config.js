@@ -1,2 +1,2 @@
-/* Public Storefront API token (ptkn_...) only. No Stripe secrets or Open API passwords. */
-window.AC_FOURTHWALL = { storefrontToken: '' };
+/* Only the PUBLIC Cloudflare Worker URL belongs here. Storefront token stays in Cloudflare Secret. */
+window.AC_FOURTHWALL = { apiBase: '' };
