@@ -152,6 +152,14 @@
 </dialog>
 <script defer src="/assets/js/fourthwall-storefront-config.js?v=20261102a"></script>
 <script defer src="/assets/js/pod-shop-home.js?v=20261102a"></script>
-<script defer src="/assets/js/analytics-enhancements.min.js?v=20260807-mobile-perf-v1"></script>
+<script>
+/* Keep preview traffic out of the production GA4 property. */
+if (location.hostname === 'apocalypsecloset.com' || location.hostname === 'www.apocalypsecloset.com') {
+  const analytics = document.createElement('script');
+  analytics.defer = true;
+  analytics.src = '/assets/js/analytics-enhancements.min.js?v=20260807-mobile-perf-v1';
+  document.head.appendChild(analytics);
+}
+</script>
 </body>
 </html>
