@@ -8,6 +8,9 @@ const grid = document.querySelector('#ac-product-grid');
 const status = document.querySelector('#ac-catalog-status');
 const heroVisual = document.querySelector('#ac-store-hero-visual');
 const heroPrice = document.querySelector('#ac-feature-price');
+const heroSize = document.querySelector('#ac-hero-size');
+const heroAdd = document.querySelector('#ac-hero-add');
+const heroStatus = document.querySelector('#ac-hero-buy-status');
 const bagButton = document.querySelector('#ac-cart-button');
 const dialog = document.querySelector('#ac-cart-dialog');
 const cartList = document.querySelector('#ac-cart-items');
@@ -242,38 +245,77 @@ function paintCatalog(products, featured){
   if(notice) notice.hidden=!showDemo;
 }
 function paintHero(product){
-  if(!product)return;
+  if(!product || !heroSize || !heroAdd)return;
   const src=imageUrl(product);
   if(src && heroVisual){
-    const img=document.createElement('img');
-    img.src=src;img.alt='Silent Chaos gothic angel graphic tee — Apocalypse Closet';img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;
-    heroVisual.querySelector('.ac-visual-placeholder')?.replaceWith(img);
+    let img=heroVisual.querySelector('img');
+    if(!img){
+      img=document.createElement('img');
+      img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;
+      heroVisual.querySelector('.ac-visual-placeholder')?.replaceWith(img);
+    }
+    img.src=src;img.alt='Silent Chaos Gothic Angel Graphic Tee by Apocalypse Closet';
   }
-  const v=lowest(product);
-  if(v)say(heroPrice,'FROM '+priceOf(v));
+  const options=variants(product);
+  const preferred=['XS','S','M','L','XL','2XL','3XL','4XL','5XL'];
+  options.sort((a,b)=>{
+    const n=v=>{const i=preferred.indexOf(v.attributes?.size?.name||'');return i<0?99:i;};
+    return n(a)-n(b);
+  });
+  heroSize.replaceChildren(new Option('CHOOSE SIZE',''));
+  options.forEach(v=>heroSize.add(new Option(variantLabel(v)+' · '+priceOf(v),v.id)));
+  heroSize.disabled=!options.length;
+  heroAdd.disabled=!options.length;
+  const min=lowest(product);
+  if(min)say(heroPrice,'FROM '+priceOf(min));
+  say(heroStatus,options.length?'Choose a size to add this item to your bag.':'Size availability unavailable. Shop directly on Fourthwall.');
+  heroSize.onchange=()=>{
+    const v=options.find(v=>v.id===heroSize.value);
+    say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Price at checkout');
+  };
+  heroAdd.onclick=async()=>{
+    const v=options.find(v=>v.id===heroSize.value);
+    if(!v){say(heroStatus,'Please choose your size first.');heroSize.focus();return;}
+    await addToCart(v.id,heroAdd,heroStatus);
+  };
 }
+
 async function loadCatalog(){
+  // Load the featured product immediately: buyers should see real size/price
+  // before the rest of the catalog has finished loading.
+  const featuredPromise=api('/products/'+encodeURIComponent(FEATURED_SLUG))
+    .then(p=>{if(publicProduct(p)){paintHero(p);renderLookbook(p);}return p;})
+    .catch(()=>null);
   try{
     const data=await api('/collections/all/products?page=0&size=24');
     const products=Array.isArray(data.results)?data.results.filter(publicProduct):[];
+    let featured=await featuredPromise;
     if(!products.length){
-      const fallback=await api('/products/'+encodeURIComponent(FEATURED_SLUG));
-      if(!publicProduct(fallback))throw new Error('No public product');
-      products.push(fallback);
+      if(!publicProduct(featured))throw new Error('No public product');
+      products.push(featured);
     }
-    const featured=products.find(p=>p.slug===FEATURED_SLUG)||products[0];
-    // Fetch detailed photos for all six demo slots; if unavailable, use collection data.
-    let fullFeatured=featured;
-    try{fullFeatured=await api('/products/'+encodeURIComponent(featured.slug));}
-    catch(_){/* Collection image remains usable. */}
-    paintCatalog(products,fullFeatured);
-    paintHero(fullFeatured);
-    renderLookbook(fullFeatured);
+    const head=products.find(p=>p.slug===FEATURED_SLUG)||products[0];
+    // Prefer the original first tee even if a collection returns products in a new order.
+    if(!publicProduct(featured) || featured.slug!==head.slug){
+      try{featured=await api('/products/'+encodeURIComponent(head.slug));}
+      catch(_){featured=head;}
+    }
+    paintCatalog(products,featured);
+    paintHero(featured);
+    renderLookbook(featured);
   }catch(e){
-    try{const product=await api('/products/'+encodeURIComponent(FEATURED_SLUG));if(!publicProduct(product))throw new Error('Not public');paintCatalog([product],product);paintHero(product);renderLookbook(product);}
-    catch(_){errorFallback();}
+    const featured=await featuredPromise;
+    if(publicProduct(featured)){
+      paintCatalog([featured],featured);
+      paintHero(featured);
+      renderLookbook(featured);
+    }else{
+      errorFallback();
+      say(heroStatus,'Live sizes are unavailable. View the product on Fourthwall.');
+    }
   }
 }
+
 function getStoredCart(){
   try{const value=localStorage.getItem(storageKey)||'';return /^[a-zA-Z0-9-]{1,64}$/.test(value)?value:'';}
   catch(_){return '';}
