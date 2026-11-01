@@ -1,2 +1,2 @@
-/* Only the PUBLIC Cloudflare Worker URL belongs here. Storefront token stays in Cloudflare Secret. */
-window.AC_FOURTHWALL = { apiBase: '' };
+/* Public Worker URL only; Fourthwall Storefront token stays encrypted in Cloudflare. */
+window.AC_FOURTHWALL = { apiBase: 'https://apocalypse-pod-api.doquochau92.workers.dev' };
