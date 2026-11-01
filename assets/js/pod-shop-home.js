@@ -16,6 +16,13 @@ const checkout = document.querySelector('#ac-checkout-link');
 const cartStatus = document.querySelector('#ac-cart-status');
 const mobileToggle = document.querySelector('.ac-menu-toggle');
 const nav = document.querySelector('#ac-primary-nav');
+const lookbook = document.querySelector('#lookbook');
+const lookbookGallery = document.querySelector('#ac-lookbook-gallery');
+const lightbox = document.querySelector('#ac-image-lightbox');
+const lightboxImg = document.querySelector('#ac-lightbox-image');
+const lightboxCounter = document.querySelector('#ac-lightbox-count');
+let lightboxImages = [];
+let lightboxIndex = 0;
 const storageKey = 'ac_fourthwall_cart_id';
 let cartId = '';
 let busy = false;
@@ -53,6 +60,55 @@ function imageUrl(p){
   const value=(p.images||[]).find(i=>i&&typeof i.url==='string'&&/^https:\/\//.test(i.url));
   return value?.url||'';
 }
+function productPhotos(product){
+  return (Array.isArray(product?.images)?product.images:[])
+    .filter(im=>im && typeof im.url==='string' && /^https:\/\//.test(im.url))
+    .filter((im,i,arr)=>arr.findIndex(other=>other.url===im.url)===i)
+    .map(im=>im.url);
+}
+function showLightbox(index){
+  if(!lightbox || !lightboxImages.length) return;
+  lightboxIndex = (index + lightboxImages.length) % lightboxImages.length;
+  lightboxImg.src = lightboxImages[lightboxIndex];
+  lightboxImg.alt = 'Silent Chaos tee: product view ' + (lightboxIndex+1);
+  say(lightboxCounter,(lightboxIndex+1)+' / '+lightboxImages.length);
+  if(!lightbox.open && typeof lightbox.showModal==='function') lightbox.showModal();
+}
+function renderLookbook(product){
+  if(!lookbook || !lookbookGallery) return;
+  const urls=productPhotos(product);
+  if(urls.length<2){lookbook.hidden=true;return;}
+  // Use distinct images from different positions in the product media sequence.
+  // This is one tee, never mislabel these as separate products.
+  const preferred=urls.length>=12?[1,4,8,12,16]:urls.length>=7?[1,3,5,6]:[0,1,2,3,4];
+  const picks=preferred.filter(i=>i<urls.length).map(i=>urls[i]);
+  lightboxImages=picks;
+  lookbookGallery.replaceChildren();
+  picks.forEach((src,index)=>{
+    const button=document.createElement('button');
+    button.type='button';button.className='ac-lookbook-shot';
+    button.setAttribute('aria-label','Expand Silent Chaos product view '+(index+1));
+    const photo=document.createElement('img');
+    photo.src=src;
+    photo.alt='Silent Chaos Gothic Angel Tee — product photograph '+(index+1);
+    photo.loading='lazy';photo.decoding='async';photo.width=560;photo.height=740;
+    const label=document.createElement('span');
+    label.className='ac-lookbook-shot-label';
+    label.textContent='FRAME 0'+(index+1)+' / '+String(picks.length).padStart(2,'0');
+    button.append(photo,label);
+    button.addEventListener('click',()=>showLightbox(index));
+    lookbookGallery.append(button);
+  });
+  lookbook.hidden=false;
+}
+lightbox?.querySelector('#ac-lightbox-close')?.addEventListener('click',()=>lightbox.close());
+lightbox?.querySelector('#ac-lightbox-prev')?.addEventListener('click',()=>showLightbox(lightboxIndex-1));
+lightbox?.querySelector('#ac-lightbox-next')?.addEventListener('click',()=>showLightbox(lightboxIndex+1));
+lightbox?.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close();});
+lightbox?.addEventListener('keydown',event=>{
+  if(event.key==='ArrowRight'){event.preventDefault();showLightbox(lightboxIndex+1);}
+  if(event.key==='ArrowLeft'){event.preventDefault();showLightbox(lightboxIndex-1);}
+});
 function el(tag, cls, txt){
   const e=document.createElement(tag);
   if(cls)e.className=cls;
@@ -66,6 +122,7 @@ function variantLabel(v){
 }
 function createCard(p,index){
   const card=el('article','ac-product-card');
+  const media=el('div','ac-product-media');
   const photo=el('a','ac-product-image');
   photo.href=SHOP+'/products/'+encodeURIComponent(p.slug);
   photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' on Fourthwall');
@@ -76,6 +133,31 @@ function createCard(p,index){
     photo.append(el('span','ac-product-image-placeholder','APOCALYPSE'));
   }
   photo.append(el('span','ac-product-flag',index===0?'DROP 001':'MADE TO ORDER'));
+  media.append(photo);
+  const galleryUrls=productPhotos(p).slice(0,6);
+  if(galleryUrls.length>1 && image){
+    const thumbRail=el('div','ac-thumb-rail');
+    const mainPhoto=photo.querySelector('img');
+    galleryUrls.forEach((src,thumbIndex)=>{
+      const thumbnail=el('button','ac-thumb'+(thumbIndex===0?' is-selected':''));
+      thumbnail.type='button';
+      thumbnail.setAttribute('aria-label','Show product photograph '+(thumbIndex+1));
+      thumbnail.setAttribute('aria-pressed',thumbIndex===0?'true':'false');
+      const miniature=document.createElement('img');
+      miniature.src=src;miniature.alt='';miniature.loading='lazy';miniature.decoding='async';
+      thumbnail.append(miniature);
+      thumbnail.addEventListener('click',()=>{
+        mainPhoto.src=src;
+        mainPhoto.alt=p.name+' — view '+(thumbIndex+1);
+        thumbRail.querySelectorAll('button').forEach(button=>{
+          button.classList.remove('is-selected');button.setAttribute('aria-pressed','false');
+        });
+        thumbnail.classList.add('is-selected');thumbnail.setAttribute('aria-pressed','true');
+      });
+      thumbRail.append(thumbnail);
+    });
+    media.append(thumbRail);
+  }
   const body=el('div','ac-product-body');
   body.append(el('p','ac-product-type','APOCALYPSE CLOSET / ORIGINAL'));
   const title=el('h3','ac-product-title');
@@ -106,7 +188,7 @@ function createCard(p,index){
     if(!v){say(note,'Please select a size first.');select.focus();return;}
     await addToCart(v.id,buy,note);
   });
-  purch.append(select,buy);body.append(purch,note);card.append(photo,body);return card;
+  purch.append(select,buy);body.append(purch,note);card.append(media,body);return card;
 }
 function paintHero(product){
   if(!product)return;
@@ -129,11 +211,13 @@ async function loadCatalog(){
       products.push(fallback);
     }
     grid.replaceChildren(...products.map(createCard));
-    say(status,products.length===1?'1 ORIGINAL DROP · MORE TO COME':products.length+' ORIGINAL DROPS');
+    grid.classList.toggle('is-single',products.length===1);
+    say(status,products.length===1?'DROP 001 · ONE DESIGN · MULTIPLE VIEWS':products.length+' ORIGINAL DROPS');
     const featured=products.find(p=>p.slug===FEATURED_SLUG)||products[0];
     paintHero(featured);
+    renderLookbook(featured);
   }catch(e){
-    try{const product=await api('/products/'+encodeURIComponent(FEATURED_SLUG));if(!publicProduct(product))throw new Error('Not public');grid.replaceChildren(createCard(product,0));say(status,'1 ORIGINAL DROP');paintHero(product);}
+    try{const product=await api('/products/'+encodeURIComponent(FEATURED_SLUG));if(!publicProduct(product))throw new Error('Not public');grid.replaceChildren(createCard(product,0));grid.classList.add('is-single');say(status,'DROP 001 · ONE DESIGN · MULTIPLE VIEWS');paintHero(product);renderLookbook(product);}
     catch(_){errorFallback();}
   }
 }
