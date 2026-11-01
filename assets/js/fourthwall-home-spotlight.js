@@ -4,12 +4,12 @@
   var root = document.getElementById('ac-pod-spotlight');
   if (!root) return;
   var cfg = window.AC_FOURTHWALL || {};
-  var token = String(cfg.storefrontToken || '').trim();
-  var apiEnabled = /^ptkn_[a-zA-Z0-9_-]+$/.test(token);
+  var workerHost = String(cfg.apiBase || '').trim().replace(/\/+$/, '');
+  var apiEnabled = /^https:\/\/[a-z0-9.-]+$/i.test(workerHost);
   var slug = 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
   var shopHost = 'apocalypse-closet-shop.fourthwall.com';
   var productUrl = 'https://' + shopHost + '/products/' + slug;
-  var apiBase = 'https://storefront-api.fourthwall.com/v1';
+  var apiBase = workerHost + '/v1';
   var priceEl = root.querySelector('#ac-pod-price');
   var artEl = root.querySelector('#ac-pod-art');
   var selectEl = root.querySelector('#ac-pod-size');
@@ -27,7 +27,7 @@
   function message(text) { statusEl.textContent = text; }
   function money(v, c) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: c || 'USD' }).format(Number(v)); }
   function endpoint(path, opts) {
-    return fetch(apiBase + path + (path.includes('?') ? '&' : '?') + 'storefront_token=' + encodeURIComponent(token), opts).then(function (response) {
+    return fetch(apiBase + path, opts).then(function (response) {
       if (!response.ok) throw new Error('Fourthwall returned ' + response.status);
       return response.json();
     });
