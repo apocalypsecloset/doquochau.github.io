@@ -7,6 +7,7 @@ const BASE = "https://storefront-api.fourthwall.com";
 const ALLOWED_ORIGINS = new Set([
   "https://apocalypsecloset.com",
   "https://www.apocalypsecloset.com",
+  "https://doquochau-github-io.pages.dev",
   "http://localhost:8000"
 ]);
 function validPath(path, method) {
