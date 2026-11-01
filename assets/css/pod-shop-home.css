@@ -182,3 +182,45 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
   .ac-image-lightbox{width:100%;max-width:100%;height:88vh;padding:50px 5px 35px}
 }
 @media(prefers-reduced-motion:reduce){.ac-lookbook-shot img{transition:none}}
+
+
+/* Original 136-look archive restored as image-first inspiration (not POD merchandise). */
+.ac-outfit-archive{padding:clamp(60px,7vw,106px) clamp(16px,4vw,66px);background:#0a0909;border-top:1px solid #2e2422;border-bottom:1px solid #352725;color:#f0ece4}
+.ac-archive-wrap{max-width:1450px;margin:auto}
+.ac-archive-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;padding-bottom:26px;border-bottom:1px solid #352b29}
+.ac-archive-heading h2{font:700 clamp(40px,6vw,86px)/.98 'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.015em;margin:12px 0}
+.ac-archive-heading h2 em{font-style:normal;color:#e05444}
+.ac-archive-desc{font:400 11px/1.9 'Space Mono',monospace;color:#b6aaa1;max-width:670px;margin:20px 0 0}
+.ac-archive-link{font:700 10px/1.5 'Space Mono',monospace;letter-spacing:.09em;text-decoration:none;border-bottom:1px solid #9f554e;padding:10px 0;color:#ded6cf;white-space:nowrap}
+.ac-archive-link:hover{color:#f07063}
+.ac-archive-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 0 12px}
+.ac-archive-filters{display:flex;gap:7px;flex-wrap:wrap}
+.ac-archive-filters button,.ac-archive-shuffle{appearance:none;border:1px solid #43332e;background:#12100f;color:#cbbdb3;min-height:39px;padding:10px 12px;font:700 9px/1.4 'Space Mono',monospace;letter-spacing:.08em;white-space:nowrap}
+.ac-archive-filters button:hover,.ac-archive-filters button.is-active,.ac-archive-shuffle:hover{border-color:#b3483e;color:#fff;background:#301713}
+.ac-archive-shuffle{border-color:#c0392b;color:#f0ece4;min-width:126px}
+.ac-archive-count{color:#aaa19a;font:400 9px/1.7 'Space Mono',monospace;letter-spacing:.15em;margin:0 0 20px;min-height:18px}
+.ac-archive-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ac-archive-card{border:1px solid #302827;background:#141211;min-width:0;display:block;overflow:hidden}
+.ac-archive-image-button{position:relative;display:block;background:#181616;aspect-ratio:3/4;width:100%;margin:0;padding:0;border:0;overflow:hidden;text-align:left;cursor:zoom-in}
+.ac-archive-image-button img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .26s ease}
+.ac-archive-image-button:hover img{transform:scale(1.035)}
+.ac-archive-look-number{position:absolute;top:11px;left:11px;background:#080808df;color:#e9e1d9;border:1px solid #72504b;padding:7px 9px;letter-spacing:.1em;font:700 9px 'Space Mono',monospace}
+.ac-archive-view{position:absolute;bottom:10px;right:10px;background:#0a0a0ad9;color:#fff;border:1px solid #4f3a35;padding:8px 10px;letter-spacing:.08em;font:700 9px 'Space Mono',monospace}
+.ac-archive-card-body{padding:17px 15px 18px;border-top:1px solid #2f2724}
+.ac-archive-card-category{font:700 9px/1.5 'Space Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:#e05444;margin:0 0 7px}
+.ac-archive-card-title{font:700 22px/1.15 'Oswald',sans-serif;letter-spacing:.015em;text-transform:uppercase;margin:0}
+.ac-archive-card-note{font:400 9px/1.7 'Space Mono',monospace;color:#9f9690;margin:8px 0 0}
+.ac-archive-end{border-top:1px solid #302725;margin-top:28px;padding-top:18px;display:flex;justify-content:space-between;align-items:center;gap:20px;font:700 9px/1.5 'Space Mono',monospace;letter-spacing:.08em;color:#a99e98}
+.ac-archive-end a{color:#e05444;text-decoration:none}
+.ac-archive-end a:hover{text-decoration:underline}
+.ac-archive-lightbox{border:1px solid #5a3e39;background:#0b0a0a;color:#f0ece4;padding:20px;max-width:min(740px,94vw);max-height:94vh;overflow:auto}
+.ac-archive-lightbox::backdrop{background:rgba(0,0,0,.92)}
+.ac-archive-lightbox img{max-height:72vh;max-width:100%;object-fit:contain;display:block;margin:auto}
+.ac-archive-lightbox-caption{border-top:1px solid #302725;margin-top:15px;padding-top:12px}
+.ac-archive-lightbox-caption h3{font:700 26px 'Oswald',sans-serif;margin:0 0 4px;text-transform:uppercase}
+.ac-archive-lightbox-caption p{font:400 11px/1.5 'Space Mono',monospace;color:#e05444;margin:0}
+.ac-archive-lightbox-close{position:sticky;top:0;float:right;border:1px solid #513731;background:#0a0a0a;color:#fff;width:39px;height:39px;font:700 18px 'Space Mono',monospace;z-index:1}
+@media(max-width:1000px){.ac-archive-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.ac-archive-controls{align-items:stretch;flex-direction:column}.ac-archive-shuffle{align-self:flex-end}}
+@media(max-width:700px){.ac-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ac-archive-heading{display:block}.ac-archive-link{display:inline-block;margin-top:15px}.ac-archive-card-body{padding:12px 11px}.ac-archive-card-title{font-size:18px}.ac-archive-card-note{display:none}.ac-archive-filters button{font-size:8px;padding:8px 9px}.ac-archive-image-button{aspect-ratio:3/4.3}.ac-archive-end{align-items:flex-start;flex-direction:column}.ac-archive-shuffle{align-self:stretch}}
+@media(max-width:400px){.ac-archive-card-title{font-size:16px}.ac-archive-look-number,.ac-archive-view{font-size:8px}.ac-archive-grid{gap:6px}}
+@media(prefers-reduced-motion:reduce){.ac-archive-image-button img{transition:none}}
