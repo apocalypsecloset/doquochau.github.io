@@ -382,3 +382,8 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .ac-product-grid.is-demo .ac-product-add{grid-column:auto}
 .ac-product-card .ac-product-color,.ac-product-card .ac-product-size{font-size:9px;min-height:40px}
 }
+
+/* Higher specificity than legacy preview/single-card flex controls. */
+.ac-product-grid.is-demo .ac-product-card:not(.ac-product-card--demo) .ac-product-purchase,.ac-product-grid.is-single .ac-product-card .ac-product-purchase{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ac-product-grid.is-demo .ac-product-card:not(.ac-product-card--demo) .ac-product-add{grid-column:1/-1;width:100%}
+@media(max-width:590px){.ac-product-grid.is-demo .ac-product-card:not(.ac-product-card--demo) .ac-product-purchase{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}}
