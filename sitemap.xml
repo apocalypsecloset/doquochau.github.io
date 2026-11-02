@@ -2,21 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://apocalypsecloset.com/</loc>
-    <image:image>
-      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-e-girl-look-01-full-outfit.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-punk-look-03-full-outfit.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://apocalypsecloset.com/images/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp</image:loc>
-    </image:image>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/blog.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/about.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/contact.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/blog/how-to-style-gothic-graphic-tees.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/blog/goth-vs-grunge-style.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://apocalypsecloset.com/app-phoi-do.html</loc>
