@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-quan-jean-ong-suong-nu",
+      "en_slug": "womens-straight-leg-jeans-outfits",
+      "source_text_segments": 146,
+      "en_words": 1491,
+      "headings": 14,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-dai",
+      "en_slug": "how-to-style-long-skirts",
+      "source_text_segments": 137,
+      "en_words": 1451,
+      "headings": 15,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-chu-a",
+      "en_slug": "how-to-style-a-line-skirts",
+      "source_text_segments": 136,
+      "en_words": 1352,
+      "headings": 17,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "quan-ong-rong-nu-phoi-voi-ao-gi",
+      "en_slug": "womens-wide-leg-trouser-outfits",
+      "source_text_segments": 133,
+      "en_words": 1366,
+      "headings": 32,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "bodycon-dress-la-gi-cach-phoi",
+      "en_slug": "how-to-style-bodycon-dresses",
+      "source_text_segments": 148,
+      "en_words": 1591,
+      "headings": 40,
+      "images": 5,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "babydoll-dress-la-gi-cach-phoi",
+      "en_slug": "how-to-style-babydoll-dresses",
+      "source_text_segments": 156,
+      "en_words": 1631,
+      "headings": 41,
+      "images": 7,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "giay-loafer-nu-la-gi-cach-phoi",
+      "en_slug": "womens-loafer-outfit-ideas",
+      "source_text_segments": 139,
+      "en_words": 1429,
+      "headings": 25,
+      "images": 5,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-so-mi-nu",
+      "en_slug": "womens-shirt-outfit-ideas",
+      "source_text_segments": 144,
+      "en_words": 1456,
+      "headings": 13,
+      "images": 8,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "chan-vay-tennis-phoi-voi-ao-gi",
+      "en_slug": "tennis-skirt-outfit-ideas",
+      "source_text_segments": 166,
+      "en_words": 1659,
+      "headings": 37,
+      "images": 9,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "chan-vay-bi-ngo-phoi-voi-ao-gi",
+      "en_slug": "bubble-skirt-outfit-ideas",
+      "source_text_segments": 171,
+      "en_words": 1739,
+      "headings": 32,
+      "images": 10,
+      "tables": 1,
+      "faqs": 5
+    }
+  ],
+  "errors": []
+}

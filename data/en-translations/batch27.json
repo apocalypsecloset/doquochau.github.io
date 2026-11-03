@@ -1,0 +1,92 @@
+[
+  {
+    "vi_slug": "phoi-do-voi-quan-jean-ong-suong-nu",
+    "en_slug": "womens-straight-leg-jeans-outfits",
+    "title": "Straight-Leg Jeans Outfits: Tops, Hems and Shoes",
+    "description": "Style straight-leg jeans by rise, hem length, top volume and footwear, with distinctions from wide-leg and baggy denim.",
+    "primary_intent": "Straight-leg denim silhouette specialist; wide-leg trousers and baggy fit remain separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "7af089bf26f3aec659d0f44d07a2b70c107cd524d78b38f6fe0331283cf01710"
+  },
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-dai",
+    "en_slug": "how-to-style-long-skirts",
+    "title": "Long Skirt Outfits: Shape, Fabric and Hem Length",
+    "description": "Choose tops and footwear for long skirts through drape, structure, waistband visibility and practical hem clearance.",
+    "primary_intent": "General long-length skirt proportions; midi, pleated and denim-specific specialists separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "e9455a72b6835be64447f16f21a04c53063caa109f5a973e797df40c64ba2dac"
+  },
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-chu-a",
+    "en_slug": "how-to-style-a-line-skirts",
+    "title": "A-Line Skirt Outfits: Waist, Volume and Length",
+    "description": "Recognize an A-line skirt and balance top length, waist definition, fabric structure and footwear across different hems.",
+    "primary_intent": "A-line silhouette specialist; pleat construction, tennis skirts and general mini styling separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "c170e1aa4bfc70e22a1c576349ddf5fd47ff8813a09ac1a2fee30f04ad81005c"
+  },
+  {
+    "vi_slug": "quan-ong-rong-nu-phoi-voi-ao-gi",
+    "en_slug": "womens-wide-leg-trouser-outfits",
+    "title": "Wide-Leg Trouser Outfits: Twelve Top and Shoe Formulas",
+    "description": "Style wide-leg trousers through waistbands, top length, fabric drape and footwear, with twelve adaptable outfit formulas.",
+    "primary_intent": "General wide-leg trouser volume styling; straight jeans, cargos and baggy construction separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "4e089020c3f73d7648b04a867745d8b0c08afd35cd252f1f89daae5ed5d84f7d"
+  },
+  {
+    "vi_slug": "bodycon-dress-la-gi-cach-phoi",
+    "en_slug": "how-to-style-bodycon-dresses",
+    "title": "Bodycon Dresses: Fit, Fabric and Layering Ideas",
+    "description": "Evaluate bodycon dress fit, stretch, lining and movement, then choose layers and footwear for everyday or darker styling.",
+    "primary_intent": "Close-fitting dress construction and styling; slip drape and babydoll volume distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "47356ec2459c10fea86e51df870fbb56fc78ee7b5904a68b335b7005393242d5"
+  },
+  {
+    "vi_slug": "babydoll-dress-la-gi-cach-phoi",
+    "en_slug": "how-to-style-babydoll-dresses",
+    "title": "Babydoll Dresses: Volume, Layers and Alternative Outfits",
+    "description": "Understand babydoll dress construction and balance volume, neckline, layers and footwear without restricting body type.",
+    "primary_intent": "Adult babydoll dress silhouette specialist; Coquette aesthetic and slip/bodycon construction separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "9a9e1251e88ac71c5da200702f57954b7af7a05571e0b51e3e8f9f9d4bd2e3dc"
+  },
+  {
+    "vi_slug": "giay-loafer-nu-la-gi-cach-phoi",
+    "en_slug": "womens-loafer-outfit-ideas",
+    "title": "Loafer Outfits for Women: Shape, Socks and Proportion",
+    "description": "Compare loafer shapes and visual weight, then style trousers, skirts, socks and darker outfits with deliberate proportions.",
+    "primary_intent": "Loafer construction and styling specialist; Mary Jane straps and ballet-flat openness distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "28f362d4d11bbbac2d802bf1ba945c5e08d7ccdb44a5e6b3c8e66067586604ae"
+  },
+  {
+    "vi_slug": "phoi-do-voi-ao-so-mi-nu",
+    "en_slug": "womens-shirt-outfit-ideas",
+    "title": "Shirt Outfits for Women: Fit, Color and Tucking",
+    "description": "Choose shirt fit, color, layers and tucking around trousers and skirts for casual, tailored and alternative outfits.",
+    "primary_intent": "Button-front shirt shape and styling specialist; vests, blazers and aesthetic-level guides distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "501c4b996eef3b050aa7634106ec0cba9100c546eb9a2ce7bebf23420f4266e7"
+  },
+  {
+    "vi_slug": "chan-vay-tennis-phoi-voi-ao-gi",
+    "en_slug": "tennis-skirt-outfit-ideas",
+    "title": "Tennis Skirt Outfits: Tops, Shoes and Everyday Styling",
+    "description": "Style tennis-inspired skirts through rise, pleats, shorts, tops and footwear while distinguishing fashion from sports performance.",
+    "primary_intent": "Tennis-inspired skirt silhouette and sporty styling; general pleated and mini-length guides distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "860414609d7641ce5628bd5c6c6cd6774eed2108a4ad7dae045e09a3e72ce078"
+  },
+  {
+    "vi_slug": "chan-vay-bi-ngo-phoi-voi-ao-gi",
+    "en_slug": "bubble-skirt-outfit-ideas",
+    "title": "Bubble Skirt Outfits: Volume, Tops and Footwear",
+    "description": "Balance a bubble skirt gathered hem through upper shape, length, material and footwear in casual and alternative outfits.",
+    "primary_intent": "Gathered bubble-hem volume specialist; A-line and pleated construction distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "0adeaf3e1d1b29d88124d86f046ac6124772e0ed31110bbb76f5322883305660"
+  }
+]
