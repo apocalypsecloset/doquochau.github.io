@@ -1,0 +1,92 @@
+[
+  {
+    "vi_slug": "giay-mary-jane-la-gi",
+    "en_slug": "what-are-mary-jane-shoes",
+    "title": "Mary Jane Shoes: Shapes, Fit and Outfit Ideas",
+    "description": "Recognize Mary Jane instep straps, compare flats and boots, and choose fit, materials, socks and outfit proportions.",
+    "primary_intent": "Footwear construction and styling specialist; broader footwear directory and boot comparison separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "254c5fd7fbe23112a7a69e1d9da01d94eb0ad7cebd9a25b08031223faada5598"
+  },
+  {
+    "vi_slug": "leg-warmers-la-gi-cach-phoi",
+    "en_slug": "how-to-style-leg-warmers",
+    "title": "Leg Warmers: Volume, Footwear and Eight Outfit Ideas",
+    "description": "Style leg warmers through length, gathering, color and footwear, with eight outfit formulas and practical warm-weather choices.",
+    "primary_intent": "Lower-leg volume and footwear accessory specialist; arm warmers and Balletcore definition distinct",
+    "role": "ACCESSORY_GUIDE",
+    "source_sha256": "9eb18c791cb72a334232faf645ad41f10e11b359b77dead3d854ea0dac811b62"
+  },
+  {
+    "vi_slug": "coquette-la-gi-dark-coquette",
+    "en_slug": "coquette-vs-dark-coquette",
+    "title": "Coquette vs. Dark Coquette: Details and Outfit Ideas",
+    "description": "Understand Coquette and Dark Coquette through bows, lace, palettes and practical outfits, with distinctions from Balletcore and Dark Feminine.",
+    "primary_intent": "Coquette definition plus pastel/dark comparison; Dark Feminine hub and outfit specialist separate",
+    "role": "STYLE_COMPARISON",
+    "source_sha256": "700e85208632ccb4b51efc1d3ef46dc43be4f8a7e63f0e39382a38ea2266b16a"
+  },
+  {
+    "vi_slug": "indie-sleaze-la-gi",
+    "en_slug": "what-is-indie-sleaze",
+    "title": "Indie Sleaze: Music References, Texture and Outfit Ideas",
+    "description": "Explore Indie Sleaze music and nightlife references, slim denim, worn textures, four outfits, photography and qualified revival claims.",
+    "primary_intent": "Retrospective indie nightlife styling and photography; Grunge-Punk and Y2K definitions distinct",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "d14b0e2442a6a15fbf67be2c99819220d10993237c692b612559cbfd57ae05c4"
+  },
+  {
+    "vi_slug": "techwear-la-gi",
+    "en_slug": "what-is-techwear",
+    "title": "What Is Techwear? Function, Fabrics and Buying Checks",
+    "description": "Evaluate techwear through materials, movement, pockets, layers and weather specifications rather than decorative straps or a futuristic image.",
+    "primary_intent": "Function-first technical clothing evaluation; Cyber Y2K visual styling and Gorpcore outdoor context separate",
+    "role": "FUNCTION_GUIDE",
+    "source_sha256": "6e7d24827df5b23a019361d18884d1e64bfdaeed06c7b0e227fb3d3efc7a9f59"
+  },
+  {
+    "vi_slug": "cyber-y2k-la-gi",
+    "en_slug": "cyber-y2k-style-outfits",
+    "title": "Cyber Y2K: Futuristic Details and Eight Outfit Ideas",
+    "description": "Build Cyber Y2K outfits around millennium-era proportions, metallics, eyewear and selected digital accents, distinct from Dark Y2K and techwear.",
+    "primary_intent": "Futuristic millennium visual styling; general Y2K, Dark Y2K comparison and functional techwear separate",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "28680d7810e819d8f8ce54f22931086ab75900c2681483163798794e7a8b1a88"
+  },
+  {
+    "vi_slug": "visual-kei-la-gi",
+    "en_slug": "what-is-visual-kei",
+    "title": "Visual Kei: Music, Hair and Eight Outfit Formulas",
+    "description": "Understand Visual Kei through Japanese music and visual personas, then adapt hair, layers and eight outfit formulas for everyday settings.",
+    "primary_intent": "Japanese music-scene visual presentation specialist; Goth and Scene retain their own cultural targets",
+    "role": "SUBCULTURE_GUIDE",
+    "source_sha256": "cd097ac9ff30f2882916c05c698256eee47539ab8c6b0e5c52deeb12604c03c3"
+  },
+  {
+    "vi_slug": "devil-core",
+    "en_slug": "devilcore-aesthetic-outfits",
+    "title": "Devilcore: Infernal Motifs and Five Dark Outfit Routes",
+    "description": "Explore Devilcore as an informal motif-based aesthetic through five outfit routes, red-black contrast and selected infernal details.",
+    "primary_intent": "Infernal motif-led micro-aesthetic; general Goth, Emo and mystical Whimsigoth separate",
+    "role": "MICRO_AESTHETIC_GUIDE",
+    "source_sha256": "4c1e26fd6cb1b8addc7719cb81a633844b86ead7390c8160b09fc4d405c15b2c"
+  },
+  {
+    "vi_slug": "morute",
+    "en_slug": "morute-aesthetic-outfits",
+    "title": "Morute: Morbid-Cute Texture and Six Outfit Ideas",
+    "description": "Explore Morute through faded palettes, delicate and worn textures, six adult outfit ideas and clothing-based contrasts without harmful imagery.",
+    "primary_intent": "Morbid-cute aged texture and community usage; Coquette, Soft Goth and Gurokawa motif system distinct",
+    "role": "MICRO_AESTHETIC_GUIDE",
+    "source_sha256": "77ce616a1fca45e3414188df446562f825eb63037765a0528836742e56ff269c"
+  },
+  {
+    "vi_slug": "gurokawa",
+    "en_slug": "gurokawa-creepy-cute-outfits",
+    "title": "Gurokawa: Creepy-Cute Motifs and Six Outfit Ideas",
+    "description": "Balance kawaii and stylized grotesque motifs through six outfits, graphic tees, DIY accessories and practical levels of visual emphasis.",
+    "primary_intent": "Kawaii-grotesque graphics and DIY styling; Morute aged texture and Pastel Goth specialist separate",
+    "role": "MICRO_AESTHETIC_GUIDE",
+    "source_sha256": "d1299205ee92a34278697e028f5ec1a0349290582abda5529933c6c0b38de12f"
+  }
+]

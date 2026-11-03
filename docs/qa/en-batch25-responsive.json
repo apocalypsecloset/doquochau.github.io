@@ -1,0 +1,279 @@
+{
+  "checks": [
+    {
+      "view": "what-are-mary-jane-shoes-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": [
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "what-are-mary-jane-shoes-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": [
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "how-to-style-leg-warmers-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "how-to-style-leg-warmers-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    },
+    {
+      "view": "coquette-vs-dark-coquette-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": [
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "coquette-vs-dark-coquette-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": [
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "what-is-indie-sleaze-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": [
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "what-is-indie-sleaze-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": [
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "what-is-techwear-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": [
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        },
+        {
+          "width": 848,
+          "container": 848,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "what-is-techwear-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": [
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        },
+        {
+          "width": 650,
+          "container": 341,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "view": "cyber-y2k-style-outfits-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "cyber-y2k-style-outfits-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    },
+    {
+      "view": "what-is-visual-kei-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "what-is-visual-kei-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    },
+    {
+      "view": "devilcore-aesthetic-outfits-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "devilcore-aesthetic-outfits-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    },
+    {
+      "view": "morute-aesthetic-outfits-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "morute-aesthetic-outfits-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    },
+    {
+      "view": "gurokawa-creepy-cute-outfits-1440",
+      "width": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640,
+      "tables": []
+    },
+    {
+      "view": "gurokawa-creepy-cute-outfits-390",
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343,
+      "tables": []
+    }
+  ],
+  "mobile_faq": {
+    "page": "what-are-mary-jane-shoes",
+    "question": "What are Mary Jane shoes?",
+    "open": true,
+    "answer_visible": true
+  },
+  "method": "Cloud browser DOM measurement in 20 1440px/390px iframe views; mobile FAQ visually inspected."
+}
