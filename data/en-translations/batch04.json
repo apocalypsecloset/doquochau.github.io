@@ -1,0 +1,92 @@
+[
+  {
+    "vi_slug": "cybergoth",
+    "en_slug": "cybergoth-style-outfits",
+    "title": "What Is Cybergoth? Industrial References and Six Outfit Ideas",
+    "description": "Explore cybergoth history, neon and industrial references, cyberlox, goggles and six outfit ideas, with practical ways to control color and intensity.",
+    "primary_intent": "Cybergoth specialist history and six outfits; three-way comparison retains comparison intent",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "45af76a02d27b8469cb3be35311d0cc76ce91afe88ae7b7839565950f44d14c7"
+  },
+  {
+    "vi_slug": "scene-style-la-gi",
+    "en_slug": "scene-style-fashion",
+    "title": "What Is Scene Style? MySpace Roots and Modern Outfit Ideas",
+    "description": "Understand Scene fashion through MySpace culture, layered hair, bright graphics and accessories, with six modern outfits and Emo and E-Girl distinctions.",
+    "primary_intent": "Scene historical definition and modern Scene outfits, distinct from Emo and later E-Girl pillar",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "2bfde5dc92bde622d55257cf3a12298021857ca23a1d073233faf4baab785352"
+  },
+  {
+    "vi_slug": "phong-cach-egirl-la-gi",
+    "en_slug": "what-is-egirl-style",
+    "title": "What Is E-Girl Style? Building a Wearable Wardrobe",
+    "description": "Explore E-Girl origins, cute and edgy contrasts, wardrobe roles, makeup, silhouettes and practical shopping priorities for everyday outfits.",
+    "primary_intent": "E-Girl definition and comprehensive wardrobe pillar; hub navigation and budget/accessory shopping specialists remain distinct",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "2c98e8dd92811ccbc97bfcc8a6c95b76cdb98c7ad4985faccd978abf1f2ed104"
+  },
+  {
+    "vi_slug": "phoi-do-layering-nu",
+    "en_slug": "alternative-layering-outfits-women",
+    "title": "Women's Alternative Layering: Proportions, Texture and Six Outfits",
+    "description": "Build alternative layered outfits with clear base, middle and outer roles, six formulas, visible hems and lighter adaptations for warm weather.",
+    "primary_intent": "General alternative layering geometry and removable layer system; mesh and hoodie specialists remain item-specific",
+    "role": "TECHNIQUE_GUIDE",
+    "source_sha256": "3569cb14275c060bf3ec14706a312cb1b0b79e5fd7a82d47ce0074dc8d8ae80b"
+  },
+  {
+    "vi_slug": "cach-giat-do-den-khong-phai-mau",
+    "en_slug": "how-to-wash-black-clothes",
+    "title": "How to Wash Black Clothes and Reduce Fading",
+    "description": "Care for black tees, hoodies and denim through label-led washing, measured detergent, gentle cycles and suitable drying, ironing and storage.",
+    "primary_intent": "Black textile laundering and fading diagnosis, separate from black outfit styling and summer thermal comfort",
+    "role": "CARE_GUIDE",
+    "source_sha256": "a58150cb22c2329de2518e88a239dfebee3b031b60dbc6a9ef6b75d8d5e79a7a"
+  },
+  {
+    "vi_slug": "goth-nails-mau-nail-phong-cach-goth",
+    "en_slug": "goth-nail-designs",
+    "title": "Goth Nails: Twelve Designs and How to Match Your Outfit",
+    "description": "Choose Goth nail shapes and twelve wearable designs, from black French tips and burgundy to chrome, lace and negative space, with outfit pairings.",
+    "primary_intent": "Goth manicure designs, shape and outfit coordination, distinct from general Goth definition",
+    "role": "BEAUTY_GUIDE",
+    "source_sha256": "e2ea8c4657ca345e7dba2e7596972fe666c1acc6db5768a3751d2d879224b0f4"
+  },
+  {
+    "vi_slug": "kieu-toc-goth-goth-hairstyle-nu",
+    "en_slug": "goth-hairstyles-women",
+    "title": "Women's Goth Hairstyles: Eight Cuts and Styling Directions",
+    "description": "Explore eight Goth hairstyle directions, from Trad backcombing and romantic waves to bobs and sleek hair, with proportion and maintenance advice.",
+    "primary_intent": "Goth haircut and styling silhouette specialist, separate from hair-dye technique and Punk hair",
+    "role": "BEAUTY_GUIDE",
+    "source_sha256": "20e18efcda466f9f7be296a133bf92bac137dacbf06e58dc1f1baa2f4ae1e5e6"
+  },
+  {
+    "vi_slug": "xay-tu-do-dark-aesthetic",
+    "en_slug": "build-a-dark-aesthetic-wardrobe",
+    "title": "How to Build a Dark Aesthetic Wardrobe",
+    "description": "Build a dark aesthetic wardrobe around versatile foundations, purchase priorities and reusable outfit combinations rather than one-off statement sets.",
+    "primary_intent": "Long-term dark wardrobe foundation and purchase order; fixed-budget capsule and beginner style discovery remain separate",
+    "role": "WARDROBE_GUIDE",
+    "source_sha256": "689b9e9a38047b987932323ae0d652feafda48571dec30eb0047de566b70abec"
+  },
+  {
+    "vi_slug": "phoi-do-alt-fashion-cho-nguoi-moi",
+    "en_slug": "alternative-fashion-for-beginners",
+    "title": "Alternative Fashion for Beginners: Five Practical Styling Steps",
+    "description": "Start alternative styling with your existing wardrobe, choose silhouettes and one key piece, then check accessories, proportions and everyday comfort.",
+    "primary_intent": "Five-step beginner action workflow and silhouette discovery; not broad alt definition or long-term capsule planning",
+    "role": "BEGINNER_GUIDE",
+    "source_sha256": "c3a7e2ef0a87ecb6299d73f5f2ff980f5c6b92e2e6687280ef6652316bcc7f90"
+  },
+  {
+    "vi_slug": "phu-kien-alt-fashion-thiet-yeu",
+    "en_slug": "alternative-fashion-accessories",
+    "title": "Alternative Fashion Accessories: Eight Useful Starting Pieces",
+    "description": "Compare eight alternative accessory categories, choose versatile starting pieces and coordinate metal details, proportions and outfit intensity.",
+    "primary_intent": "Eight-category alternative accessory selection; E-Girl accessory seller and shopping guide remains narrower",
+    "role": "ACCESSORY_GUIDE",
+    "source_sha256": "bd60cc03c455c3b1f46b76cfc94e1650cfa82779cf732a4129cad3bf9f078076"
+  }
+]

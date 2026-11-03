@@ -5,7 +5,7 @@ from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from en_translate import VI,source
+from en_translate import VI,source,faq_pairs
 configs=json.loads((ROOT/'data/en-translations'/((sys.argv[1] if len(sys.argv)>1 else 'batch02')+'.json')).read_text())
 errors=[];results=[]
 def check(ok,message):
@@ -45,11 +45,12 @@ for c in configs:
   data=json.loads(j.string);graph=data.get('@graph',[data]);bp=next((n for n in graph if n['@type']=='BlogPosting'),None)
   check(bp is not None and bp['inLanguage']=='en' and bp['mainEntityOfPage']['@id']==url,slug+': schema')
   faq=next((n for n in graph if n['@type']=='FAQPage'),None)
-  if orig.select('.seo-faq details'):
-   check(faq and len(faq['mainEntity'])==len(orig.select('.seo-faq details')),slug+': FAQ schema parity')
+  if faq_pairs(orig):
+   expected=[{'@type':'Question','name':q.get_text(' ',strip=True),'acceptedAnswer':{'@type':'Answer','text':ans.get_text(' ',strip=True)}} for q,ans in faq_pairs(a)]
+   check(faq and faq['mainEntity']==expected and len(expected)==len(faq_pairs(orig)),slug+': FAQ schema parity')
  external=lambda x:sorted(l['href'] for l in x.select('a[href]') if urlsplit(l['href']).scheme and urlsplit(l['href']).netloc!='apocalypsecloset.com')
  check(external(a)==external(orig),slug+': external references')
- results.append({'vi_slug':c['vi_slug'],'en_slug':slug,'source_text_segments':len(texts),'en_words':len(a.get_text(' ',strip=True).split()),'headings':len(orig.select('h2,h3')),'images':len(a.select('img')),'tables':len(a.select('table')),'faqs':len(a.select('.seo-faq details'))})
+ results.append({'vi_slug':c['vi_slug'],'en_slug':slug,'source_text_segments':len(texts),'en_words':len(a.get_text(' ',strip=True).split()),'headings':len(orig.select('h2,h3')),'images':len(a.select('img')),'tables':len(a.select('table')),'faqs':len(faq_pairs(a))})
 # Migration safety checks across all 216 source URLs, not only the translated ten.
 import xml.etree.ElementTree as ET
 rows=list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()))
