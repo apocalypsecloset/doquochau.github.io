@@ -181,7 +181,7 @@ vi_url,topic_cluster,page_role,collision_risk,en_url,translation_status,intent_r
 "https://apocalypsecloset.com/blog/phoi-do-dang-tam-giac-nguoc.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/quan-ong-rong-nu-phoi-voi-ao-gi.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/slip-dress-la-gi-cach-phoi.html","SKIRTS_DRESSES","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
-"https://apocalypsecloset.com/blog/soft-goth-la-gi.html","GOTHIC_SUBSTYLES","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
+"https://apocalypsecloset.com/blog/soft-goth-la-gi.html","GOTHIC_SUBSTYLES","ARTICLE","REVIEW","https://apocalypsecloset.com/en/blog/soft-goth-style-outfits.html","DRAFT_READY","INTENT_DISTINCT","Soft Goth everyday outfits and lower intensity: unique from Corporate Goth office outfits and main Goth hub; full EN article QA pending"
 "https://apocalypsecloset.com/blog/that-lung-dinh-tan-phoi-do.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/visual-kei-la-gi.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/phu-kien-thoi-trang-nu-ca-tinh.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
