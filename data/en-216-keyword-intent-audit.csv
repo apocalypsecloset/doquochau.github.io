@@ -166,7 +166,7 @@ vi_url,topic_cluster,page_role,collision_risk,en_url,translation_status,intent_r
 "https://apocalypsecloset.com/blog/chan-vay-bi-ngo-phoi-voi-ao-gi.html","SKIRTS_DRESSES","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/chan-vay-tennis-phoi-voi-ao-gi.html","SKIRTS_DRESSES","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/choker-nu-la-gi-cach-phoi.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
-"https://apocalypsecloset.com/blog/corporate-goth-la-gi.html","GOTHIC_SUBSTYLES","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
+"https://apocalypsecloset.com/blog/corporate-goth-la-gi.html","GOTHIC_SUBSTYLES","ARTICLE","REVIEW","https://apocalypsecloset.com/en/blog/corporate-goth-office-outfits.html","DRAFT_READY","INTENT_DISTINCT","Corporate goth workwear office outfits; full EN translation with 6 original images and reciprocal hreflang; pending PR QA"
 "https://apocalypsecloset.com/blog/cyber-y2k-la-gi.html","ALT_AESTHETICS","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/fairycore-la-gi.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
 "https://apocalypsecloset.com/blog/fishnet-tights-la-gi-cach-phoi.html","OTHER_FASHION","ARTICLE","REVIEW","","PENDING","NOT_REVIEWED","Review original title, intent and GSC queries"
