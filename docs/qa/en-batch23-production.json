@@ -1,0 +1,62 @@
+[
+  {
+    "path": "en/blog/how-to-style-arm-warmers.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/how-to-style-chokers.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/how-to-style-fishnet-tights.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/combat-boots-vs-platform-boots.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/nylon-vs-twill-cargo-pants.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/wide-leg-jeans-outfits-dark-y2k.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/flared-pants-outfits-women.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/jogger-outfits-women.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/bomber-jacket-outfits-women.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog/long-black-skirt-outfits.html",
+    "exact": false,
+    "error": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "path": "en/blog.html",
+    "exact": false,
+    "error": ""
+  },
+  {
+    "path": "sitemap.xml",
+    "exact": false,
+    "error": ""
+  }
+]

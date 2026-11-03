@@ -31,3 +31,7 @@ Baseline master: `c11d2f9eaf67395f5b3b7a8883b8314044becec1`. Published: **59/216
 ## Evidence
 
 `docs/qa/en-batch23-{static,images,regressions,responsive}.json`; full translations in `data/en-translations/*.tsv`, mapping in `batch23.json`, 216-row inventory updated. Release/deployment checks will be recorded in the PR before merge; publication must be verified afterward.
+
+## Publication result
+
+Merged PR #33 as `3a8ccd5db87ee9e80311a74a17efef2d0c65fe5a`. All five master checks succeeded afterward, including Workers Builds. Production initially returned pre-deploy responses; the final 22-file check passes byte for byte for all ten EN/VI pairs, Journal and sitemap. Tracker now records **69 MERGED, 147 PENDING**. Final evidence: `docs/qa/en-batch23-production-verified.json`.
