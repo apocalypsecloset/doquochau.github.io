@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 VI=re.compile('[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]',re.I)
 def source(slug):
  raw=(ROOT/'blog'/f'{slug}.html').read_text()
- raw=re.sub(r'<!-- AC-EN-BATCH02-START -->.*?<!-- AC-EN-BATCH02-END -->','',raw,flags=re.S)
+ raw=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',raw,flags=re.S)
  s=BeautifulSoup(raw,'html.parser')
  parts=[s.h1,s.select_one('.ac-article-intro'),s.select_one('.apcl-standard-cover'),s.select_one('article.article-content')]
  assert all(parts),slug
@@ -43,7 +43,8 @@ def generate(config):
     if attr in n.attrs and VI.search(n[attr]):
      n[attr]={'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading'}.get(n[attr], 'Article navigation')
  mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()) if r['en_url']}
- for c in json.loads((ROOT/'data/en-translations/batch02.json').read_text()):mapping['/blog/'+c['vi_slug']+'.html']='/en/blog/'+c['en_slug']+'.html'
+ for manifest in sorted((ROOT/'data/en-translations').glob('batch[0-9][0-9].json')):
+  for c in json.loads(manifest.read_text()):mapping['/blog/'+c['vi_slug']+'.html']='/en/blog/'+c['en_slug']+'.html'
  for p in parts:
   for a in p.select('a[href]'):
    h=a['href']
@@ -110,5 +111,5 @@ def generate(config):
  out=ROOT/'en/blog'/f"{config['en_slug']}.html";out.write_text(str(template)+'\n')
  return out
 if __name__=='__main__' and sys.argv[1]=='generate':
- for c in json.loads((ROOT/'data/en-translations/batch02.json').read_text()):
+ for c in json.loads((ROOT/'data/en-translations'/((sys.argv[2] if len(sys.argv)>2 else 'batch02')+'.json')).read_text()):
   print(generate(c).relative_to(ROOT))

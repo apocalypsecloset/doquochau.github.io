@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "nu-goth-la-gi-phong-cach-nu-goth",
+      "en_slug": "nu-goth-style-outfits",
+      "source_text_segments": 215,
+      "en_words": 2215,
+      "headings": 20,
+      "images": 6,
+      "tables": 3,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "vampire-goth-la-gi-vampire-goth-aesthetic",
+      "en_slug": "vampire-goth-style-outfits",
+      "source_text_segments": 201,
+      "en_words": 2150,
+      "headings": 20,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "pastel-goth-cyber-goth-mall-goth-la-gi",
+      "en_slug": "pastel-goth-vs-cybergoth-vs-mall-goth",
+      "source_text_segments": 160,
+      "en_words": 1878,
+      "headings": 16,
+      "images": 7,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phong-cach-emo-la-gi",
+      "en_slug": "what-is-emo-style",
+      "source_text_segments": 205,
+      "en_words": 2213,
+      "headings": 25,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "dark-academia-la-gi-phoi-do-badgirl",
+      "en_slug": "dark-academia-outfits-alternative-style",
+      "source_text_segments": 130,
+      "en_words": 1444,
+      "headings": 18,
+      "images": 10,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-luoi-nu",
+      "en_slug": "what-to-wear-with-mesh-tops",
+      "source_text_segments": 241,
+      "en_words": 2084,
+      "headings": 15,
+      "images": 9,
+      "tables": 3,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "form-oversize-la-gi",
+      "en_slug": "what-is-oversized-fit",
+      "source_text_segments": 158,
+      "en_words": 2156,
+      "headings": 22,
+      "images": 8,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "ao-hoodie-oversize-nu-phoi-voi-gi",
+      "en_slug": "oversized-hoodie-outfits-women",
+      "source_text_segments": 147,
+      "en_words": 1684,
+      "headings": 27,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "dark-feminine-outfit-phoi-do",
+      "en_slug": "dark-feminine-outfit-ideas",
+      "source_text_segments": 129,
+      "en_words": 1789,
+      "headings": 18,
+      "images": 7,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "mac-do-den-mua-he-co-nong-khong",
+      "en_slug": "is-black-clothing-hotter-in-summer",
+      "source_text_segments": 134,
+      "en_words": 1538,
+      "headings": 11,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    }
+  ],
+  "errors": []
+}
