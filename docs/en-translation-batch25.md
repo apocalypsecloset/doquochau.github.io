@@ -1,6 +1,6 @@
 # English translation batch25 — 2026-11-03
 
-Status: complete local editorial/static/responsive QA; awaiting PR preview, merge and production verification. Baseline: 79/216 published, 137 pending. This batch adds ten full translations; do not count as published yet.
+Status: published through PR #37, master `e4dd2bf4b44ed01ae7cc1efe75f84c71dcf49f3c`. Now 89/216 translation pairs merged and production-verified; 127 pending. Two EN-only originals are additional (91 Journal cards).
 
 ## Source and intent mapping
 
@@ -48,3 +48,10 @@ Primary/first-party resources cross-checked during editorial work (original arti
 - Twenty browser views at 1440px/390px show no page horizontal overflow. Mobile tables scroll inside their wrappers; one mobile FAQ expanded and visually inspected.
 - Evidence: `docs/qa/en-batch25-static.json`, `en-batch25-regressions.json`, `en-batch25-responsive.json`; `en-batch25-images.json`: all 66 distinct original, responsive and shell image endpoints return HTTP 200 with image MIME.
 - Homepage, POD, Fourthwall, shop layout, routing configuration and PR #9 untouched.
+
+## Deployment verification
+
+- Cloudflare Pages PR preview succeeded. All 22 files (ten EN, ten VI, Journal and sitemap) match validated bytes.
+- Normal squash merge used the expected PR head and unchanged master base.
+- The first production check ran before deployment completed and saw temporary 404/stale responses. After deployment, all 22 files match byte for byte. Four exposed master checks (Cloudflare Pages, build, deploy, report-build-status) succeeded. No Workers check appeared in the exposed results for this release; no all-five-check claim is made.
+- Evidence: `docs/qa/en-batch25-preview.json`, `docs/qa/en-batch25-production-verified.json`.
