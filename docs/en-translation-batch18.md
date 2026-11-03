@@ -1,0 +1,5 @@
+# English Batch 18 — Sustainable Fashion (draft)
+
+Baseline 45/216 complete. Full translation `/blog/sustainable-fashion.html` → `/en/blog/what-is-sustainable-fashion.html`, 166 unique source text and image-alt segments. Maintains definitions of ecofashion, slow, circular and ethical fashion; six-phase clothing lifecycle; the four evaluation dimensions Planet/People/Product Life/Proof; sustainability certifications, brand claims, shopping hierarchy, five myths and all FAQs.
+
+Original 6 images and English alt, original source references (UNEP, EEA, EC, GOTS, OEKO-TEX) and external URLs are preserved. Specific intent: how clothing sustainability works across the lifecycle and how to assess claims; different from the capsule wardrobe method. EN self canonical, hreflang pairs, BlogPosting/FAQ/Breadcrumb JSON-LD, Journal and sitemap. VI unchanged except marked locale switch. Status DRAFT_NEEDS_QA; static parity, CI and local links still require review; browser/HTTP/GSC not independently verified.
