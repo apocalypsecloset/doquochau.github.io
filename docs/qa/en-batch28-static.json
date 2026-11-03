@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-jean-ngan",
+      "en_slug": "denim-mini-skirt-outfits",
+      "source_text_segments": 167,
+      "en_words": 1820,
+      "headings": 15,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-jean-dai",
+      "en_slug": "long-denim-skirt-outfits",
+      "source_text_segments": 161,
+      "en_words": 1646,
+      "headings": 23,
+      "images": 5,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-xoe",
+      "en_slug": "flared-skirt-outfit-ideas",
+      "source_text_segments": 148,
+      "en_words": 1647,
+      "headings": 23,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-duoi-ca",
+      "en_slug": "mermaid-skirt-outfit-ideas",
+      "source_text_segments": 249,
+      "en_words": 2087,
+      "headings": 28,
+      "images": 6,
+      "tables": 6,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-tre-vai-nu",
+      "en_slug": "off-the-shoulder-top-outfits",
+      "source_text_segments": 174,
+      "en_words": 1685,
+      "headings": 20,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "ao-ong-nu-phoi-voi-gi",
+      "en_slug": "tube-top-outfit-ideas",
+      "source_text_segments": 166,
+      "en_words": 1674,
+      "headings": 38,
+      "images": 7,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-nu-ca-tinh-mua-he",
+      "en_slug": "alternative-summer-outfits-women",
+      "source_text_segments": 234,
+      "en_words": 2258,
+      "headings": 21,
+      "images": 7,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
+      "en_slug": "alternative-going-out-outfits-women",
+      "source_text_segments": 187,
+      "en_words": 1898,
+      "headings": 18,
+      "images": 11,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "outfit-di-choi-dem-badgirl",
+      "en_slug": "alternative-night-out-outfits-women",
+      "source_text_segments": 140,
+      "en_words": 1498,
+      "headings": 12,
+      "images": 8,
+      "tables": 1,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-tay-ong-suong-nu",
+      "en_slug": "womens-straight-tailored-trouser-outfits",
+      "source_text_segments": 163,
+      "en_words": 1699,
+      "headings": 19,
+      "images": 6,
+      "tables": 1,
+      "faqs": 6
+    }
+  ],
+  "errors": []
+}

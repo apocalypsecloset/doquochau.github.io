@@ -1,0 +1,42 @@
+{
+  "counts": {
+    "h1": {
+      "original": 1,
+      "extracted": 1
+    },
+    "h2": {
+      "original": 12,
+      "extracted": 12
+    },
+    "h3": {
+      "original": 0,
+      "extracted": 0
+    },
+    "p": {
+      "original": 28,
+      "extracted": 28
+    },
+    "li": {
+      "original": 21,
+      "extracted": 21
+    },
+    "img": {
+      "original": 8,
+      "extracted": 8
+    },
+    "table": {
+      "original": 1,
+      "extracted": 1
+    },
+    "details": {
+      "original": 1,
+      "extracted": 1
+    },
+    "figcaption": {
+      "original": 7,
+      "extracted": 7
+    }
+  },
+  "trailing_bodycon_reference_preserved": true,
+  "reading_navigation_preserved": true
+}

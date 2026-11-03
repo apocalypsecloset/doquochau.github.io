@@ -1,7 +1,7 @@
 """Verify full source parity, routing and bilingual safety for translation batches."""
 import sys,json,re,csv,hashlib,posixpath,subprocess
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit,unquote
 from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -40,12 +40,12 @@ for c in configs:
  for l in s.select('a[href]')+s.select('link[rel=stylesheet]'):
   h=l['href'];u=urlsplit(h)
   if u.scheme and u.netloc!='apocalypsecloset.com':continue
-  if h.startswith('#'):check(u.fragment in ids,slug+': broken anchor '+h);continue
+  if h.startswith('#'):check(unquote(u.fragment) in ids,slug+': broken anchor '+h);continue
   path=u.path
   if path and path!='/':
    f=ROOT/path.lstrip('/');check(f.is_file(),slug+': missing local target '+path)
    if u.fragment and f.is_file() and f.suffix=='.html':
-    target=BeautifulSoup(f.read_text(),'html.parser');check(bool(target.find(id=u.fragment)),slug+': target fragment '+h)
+    target=BeautifulSoup(f.read_text(),'html.parser');check(bool(target.find(id=unquote(u.fragment))),slug+': target fragment '+h)
  for j in s.select('script[type="application/ld+json"]'):
   data=json.loads(j.string);graph=data.get('@graph',[data]);bp=next((n for n in graph if n['@type']=='BlogPosting'),None)
   check(bp is not None and bp['inLanguage']=='en' and bp['mainEntityOfPage']['@id']==url,slug+': schema')
