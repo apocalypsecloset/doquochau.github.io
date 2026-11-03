@@ -1,0 +1,92 @@
+[
+  {
+    "vi_slug": "grunge-la-gi-khac-gi-punk",
+    "source_sha256": "520396c925e42edb46f3ef56495c7b4e36b8f69d677c568c83493c5c4074073e",
+    "en_slug": "what-is-grunge-style-vs-punk",
+    "title": "What Is Grunge Style? Grunge vs. Punk and Soft Grunge",
+    "description": "Understand grunge's Seattle roots, visual codes and differences from punk and soft grunge, with practical layering advice for hot weather.",
+    "primary_intent": "Grunge definition and distinction from punk; not Goth vs Grunge or an outfit formula guide",
+    "role": "DEFINITION_COMPARISON"
+  },
+  {
+    "vi_slug": "soft-grunge-aesthetic-la-gi",
+    "en_slug": "soft-grunge-wardrobe-outfits",
+    "title": "What Is Soft Grunge? Wardrobe Essentials and Eight Outfits",
+    "description": "Explore soft grunge's Tumblr roots, wardrobe essentials, eight outfit formulas, muted colors and differences from fairy grunge and soft goth.",
+    "primary_intent": "Tumblr soft grunge wardrobe and soft-rough outfit balance",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "368775fa6557bd3202f42085c5a9b4c24b3fc516e063b20cd129810c1f8a2206"
+  },
+  {
+    "vi_slug": "phoi-do-grunge-nu",
+    "en_slug": "grunge-outfits-women-layering",
+    "title": "Grunge Outfits for Women: Layers, Textures and Everyday Styling",
+    "description": "Build practical grunge outfits with contrasting fabrics, flannel, denim, footwear and accessories, including lighter layering for hot cities.",
+    "primary_intent": "Practical women's grunge outfit construction; not grunge definition or Gothic graphic tee styling",
+    "role": "OUTFIT_GUIDE",
+    "source_sha256": "c284c573a422770e7fb6a6eeba0fcc293e226ae3899618d4b89866e5f0299aab"
+  },
+  {
+    "vi_slug": "phoi-do-voi-ao-thun-nu",
+    "en_slug": "alternative-t-shirt-outfits-women",
+    "title": "How to Style Women's T-Shirts for Alternative Fashion",
+    "description": "Style plain tees, band tees, baby tees and oversized T-shirts through alternative outfit proportions, bottoms, layers and footwear.",
+    "primary_intent": "General women's T-shirt types across alternative styles; gothic graphic print styling remains the existing specialist URL",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "0418dc8d8834492b0ea346b491b87f941470e21766428d2ef2992d34e8594a44"
+  },
+  {
+    "vi_slug": "witch-aesthetic-whimsigoth-la-gi",
+    "en_slug": "witch-aesthetic-vs-whimsigoth",
+    "title": "Witch Aesthetic vs. Whimsigoth: Meaning and Everyday Outfits",
+    "description": "Distinguish witch aesthetic from whimsigoth, then explore jewel tones, velvet, celestial details and four everyday outfit formulas.",
+    "primary_intent": "Witch umbrella vs 1990s mystical bohemian Whimsigoth distinction",
+    "role": "SUBSTYLE_COMPARISON",
+    "source_sha256": "7ed9f308ca9c9032dff1824d9b04bb828ec236aef7b82134a8d6a10b3bd10c1b"
+  },
+  {
+    "vi_slug": "goth-aesthetic-huong-dan-day-du",
+    "en_slug": "what-is-goth-style",
+    "title": "What Is Goth Style? Origins, Visual Codes and a Starter Wardrobe",
+    "description": "Understand goth vs Gothic, post-punk origins, key fashion references, substyles and a starter wardrobe, with practical hot-weather ideas.",
+    "primary_intent": "Goth fashion definition and pillar; future goth hub is navigation only, existing goth vs grunge owns cross-aesthetic comparison",
+    "role": "PILLAR",
+    "source_sha256": "6ed3f3ec15cf6472e8416d0bde9467d1250d8b53e854a66bc2cbd8e07b78e021"
+  },
+  {
+    "vi_slug": "fairy-grunge-la-gi",
+    "en_slug": "fairy-grunge-style-outfits",
+    "title": "What Is Fairy Grunge? Earthy Textures and Everyday Outfits",
+    "description": "Balance fairycore softness with grunge textures through earth tones, lace, asymmetric hems, boots and wearable fairy grunge outfit formulas.",
+    "primary_intent": "Fairycore-grunge hybrid with organic textures and earthy movement; distinct from soft grunge Tumblr",
+    "role": "HYBRID_STYLE_GUIDE",
+    "source_sha256": "cdc27658da41b8c6891dd188ba7de945504ad23b212b252c25bba64e802deefb"
+  },
+  {
+    "vi_slug": "romantic-goth-la-gi",
+    "en_slug": "romantic-goth-style-guide",
+    "title": "What Is Romantic Goth? Lace, Velvet and Dark Romance",
+    "description": "Explore romantic goth through lace, velvet, flowing silhouettes, antique details and practical outfits, plus comparisons with neighboring styles.",
+    "primary_intent": "Ornate dark romance and historical-looking texture, unlike low-intensity soft goth",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "e4d79cde7c285ea9430781ddcf8ab4731e1b69d56c1e0ba9ded048b5af45843b"
+  },
+  {
+    "vi_slug": "trad-goth-la-gi-traditional-goth-style",
+    "en_slug": "trad-goth-hair-makeup-outfits",
+    "title": "What Is Trad Goth? Traditional Goth Hair, Makeup and Outfits",
+    "description": "Explore traditional goth's first-wave references, DIY clothing, hair, makeup and seven outfit formulas, with lighter options for hot weather.",
+    "primary_intent": "First-wave post-punk/deathrock fashion lineage and hair/makeup; not general goth pillar",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "59099f15c147125170a6fbfa9000cd0da8ce2b59452438db85a5a24dc19fd70a"
+  },
+  {
+    "vi_slug": "nu-metal-aesthetic-la-gi",
+    "en_slug": "nu-metal-fashion-outfits",
+    "title": "What Is Nu Metal Fashion? Baggy Shapes, Jerseys and Outfit Ideas",
+    "description": "Understand nu metal fashion through baggy denim, jerseys, sports and skate influences, substantial footwear and four practical outfit formulas.",
+    "primary_intent": "Nu metal late-1990s/2000s sports-skate-rock silhouette; distinct from worn-in grunge",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "e6c6257eb4d61f4fb63fe78897f8000832d72102c06f9ea4ff355f01a0667900"
+  }
+]
