@@ -4,13 +4,15 @@ import json,csv,io,html,re,sys
 from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1];batch=sys.argv[1] if len(sys.argv)>1 else 'batch02';cs=json.loads((ROOT/'data/en-translations'/(batch+'.json')).read_text())
 START='<!-- AC-EN-'+batch.upper()+'-START -->';END='<!-- AC-EN-'+batch.upper()+'-END -->'
+assert all((ROOT/'en/blog'/f"{c['en_slug']}.html").is_file() for c in cs),'Generate every complete counterpart before wiring any source URL'
 for c in cs:
  p=ROOT/'blog'/f"{c['vi_slug']}.html";s=p.read_text();s=re.sub(re.escape(START)+'.*?'+re.escape(END),'',s,flags=re.S)
  en='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
  assert (ROOT/'en/blog'/f"{c['en_slug']}.html").is_file()
- assert 'hreflang="vi"' in s
- s=s.replace('</head>',START+f'<link rel="alternate" hreflang="en" href="{en}">'+END+'</head>',1)
- match=re.search(r'<article\b[^>]*>',s);assert match
+ vi='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html'
+ alternate_vi='' if re.search(r'hreflang=[\"\x27]vi[\"\x27]',s) else f'<link rel="alternate" hreflang="vi" href="{vi}">'
+ s=s.replace('</head>',START+alternate_vi+f'<link rel="alternate" hreflang="en" href="{en}">'+END+'</head>',1)
+ match=re.search(r'<article\b[^>]*>',s) or re.search(r'<main\b[^>]*>',s);assert match
  switch=START+f'<p class="ac-locale-link" style="margin:0 0 20px"><a href="/en/blog/{c["en_slug"]}.html" lang="en" hreflang="en" style="display:inline-block;border:1px solid #c0392b;padding:10px 15px;color:inherit;text-decoration:none;font-weight:700">READ THE ENGLISH VERSION ↗</a></p>'+END
  s=s[:match.end()]+switch+s[match.end():];p.write_text(s)
 p=ROOT/'sitemap.xml';s=p.read_text()

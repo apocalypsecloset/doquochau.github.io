@@ -7,6 +7,11 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from en_translate import VI,source,faq_pairs
 configs=json.loads((ROOT/'data/en-translations'/((sys.argv[1] if len(sys.argv)>1 else 'batch02')+'.json')).read_text())
+if any(c.get('source_kind')=='hub' for c in configs):
+ assert all(c.get('source_kind')=='hub' for c in configs),'Mixed source kinds need separate release gates'
+ import runpy
+ runpy.run_path(str(ROOT/'scripts/qa_en_hubs.py'),run_name='__main__')
+ sys.exit(0)
 errors=[];results=[]
 def check(ok,message):
  if not ok:errors.append(message)
