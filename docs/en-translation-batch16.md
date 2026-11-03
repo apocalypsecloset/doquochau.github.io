@@ -1,9 +1,25 @@
-# Batch 16 — What Is an Outfit? (draft)
+# Translation release 16 — What Is an Outfit (2026-11-03)
 
-Baseline 43/216 translated. Full source VI /blog/outfit-la-gi.html → English /en/blog/what-is-an-outfit.html.
+## Scope
+- Original VI: `/blog/outfit-la-gi.html`.
+- New English counterpart: `/en/blog/what-is-an-outfit.html`.
+- After merge: **44/216** full VI→EN translations, **172 pending**, plus the two original English-only blog articles.
+- Distinct English intent: What an Outfit is, how pieces form a complete look; separate from OOTD daily-look posts and fashion aesthetic explanations.
 
-Source-locked complete 116-segment translation including outfit vs clothing, OOTD, style and aesthetic, fit/palette/texture, outfit components, trend-proof wardrobe and new style map dated July 17, 2026. One comparison table, original six editorial images with English alts, 4 FAQs, Merriam-Webster and Vogue sources preserved.
+## Source and translation
+- VI source SHA-256: `f5dcb6e2ac4ac247754775f21af35176d68d4c4b7181b9237bacb28f24ab1d89`.
+- 116 unique text/image-alt segments completely translated, including full body, original mini-terminology table, outfit components and the additional style map updated July 17, 2026.
+- Exact source parity: 13 H2, 1 three-column table with 5 rows, 5 figures/captions, 6 original content images in order, 20 list items, 1 blockquote and 4 FAQ answers.
+- Original VI page/SEO fields byte-exact after removing only marked reciprocal EN hreflang and English switch.
+- Four FAQPage schema questions and answers exactly match visible copy. Original Merriam-Webster and Vogue references preserved. EN link to published OOTD page.
 
-Distinct search intent: what an outfit means as a complete coordinated set of garments, not what OOTD means or how to photograph one. Links directly to the published OOTD English guide. Original VI content/metadata unchanged outside marked language alternate/switch, EN self canonical, reciprocal hreflang, BlogPosting/FAQ/Breadcrumb schema, English Journal and sitemap.
+## Static SEO QA
+- Exactly one English H1, EN self canonical, reciprocal VI/EN alternate hreflang, BlogPosting/FAQPage/Breadcrumb structured data.
+- English Journal links to the real translated HTML page.
+- Sitemap retains **216 VI article URLs** and **46 EN blog URLs** (44 translations + 2 original EN-only guides), with no duplicates or linked HTML pages missing.
+- No broken fragment anchors.
+- Cloudflare Pages passed on prior branch head 48b839af2f2d3acf3fd1a5ef95793ce6ed97cdc8.
 
-Status DRAFT_NEEDS_QA. Static parity/CI/link QA pending; live browser, images and GSC query/page overlap unverified. No POD/checkout/Worker edits.
+## Remaining QA limits
+- Live production HTTP/images, mobile/desktop browser at 390/1440px, standalone Python QA and GSC query/page overlap not independently tested. Workers Builds preview failed as in prior translation branches; no Worker edits.
+- No changes to homepage, shop, POD, Fourthwall, checkout or VI URL/title/canonical/meta.
