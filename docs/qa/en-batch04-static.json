@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "cybergoth",
+      "en_slug": "cybergoth-style-outfits",
+      "source_text_segments": 188,
+      "en_words": 1924,
+      "headings": 18,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "scene-style-la-gi",
+      "en_slug": "scene-style-fashion",
+      "source_text_segments": 198,
+      "en_words": 2406,
+      "headings": 24,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phong-cach-egirl-la-gi",
+      "en_slug": "what-is-egirl-style",
+      "source_text_segments": 250,
+      "en_words": 2609,
+      "headings": 16,
+      "images": 6,
+      "tables": 3,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-layering-nu",
+      "en_slug": "alternative-layering-outfits-women",
+      "source_text_segments": 185,
+      "en_words": 2419,
+      "headings": 20,
+      "images": 8,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cach-giat-do-den-khong-phai-mau",
+      "en_slug": "how-to-wash-black-clothes",
+      "source_text_segments": 127,
+      "en_words": 1993,
+      "headings": 16,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "goth-nails-mau-nail-phong-cach-goth",
+      "en_slug": "goth-nail-designs",
+      "source_text_segments": 186,
+      "en_words": 1849,
+      "headings": 26,
+      "images": 7,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "kieu-toc-goth-goth-hairstyle-nu",
+      "en_slug": "goth-hairstyles-women",
+      "source_text_segments": 184,
+      "en_words": 2109,
+      "headings": 20,
+      "images": 6,
+      "tables": 3,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "xay-tu-do-dark-aesthetic",
+      "en_slug": "build-a-dark-aesthetic-wardrobe",
+      "source_text_segments": 95,
+      "en_words": 1451,
+      "headings": 11,
+      "images": 8,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-alt-fashion-cho-nguoi-moi",
+      "en_slug": "alternative-fashion-for-beginners",
+      "source_text_segments": 210,
+      "en_words": 2178,
+      "headings": 18,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phu-kien-alt-fashion-thiet-yeu",
+      "en_slug": "alternative-fashion-accessories",
+      "source_text_segments": 82,
+      "en_words": 1352,
+      "headings": 13,
+      "images": 6,
+      "tables": 0,
+      "faqs": 3
+    }
+  ],
+  "errors": []
+}

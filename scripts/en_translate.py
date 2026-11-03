@@ -24,6 +24,18 @@ if __name__=='__main__' and sys.argv[1]=='extract':
   print('SOURCE',slug,'SHA256',hashlib.sha256(raw.encode()).hexdigest())
   for i,t in enumerate(texts): print(f'{i}\t{t}')
 
+def faq_pairs(article):
+ pairs=[]
+ for section in article.select('.seo-faq'):
+  for detail in section.select('details'):
+   pairs.append((detail.summary,detail.p))
+  if not section.select('details'):
+   for question in section.select('h3'):
+    answer=question.find_next_sibling('p')
+    assert answer is not None,'FAQ heading without answer'
+    pairs.append((question,answer))
+ return pairs
+
 def generate(config):
  slug=config['vi_slug']; raw,s,parts,texts=source(slug)
  assert hashlib.sha256(raw.encode()).hexdigest()==config['source_sha256'],f'Source changed: {slug}'
@@ -89,8 +101,8 @@ def generate(config):
  for j in template.select('script[type="application/ld+json"]'):j.decompose()
  graph=[{'@type':'BlogPosting','headline':config['title'],'description':config['description'],'inLanguage':'en','datePublished':'2026-11-03','dateModified':'2026-11-03','mainEntityOfPage':{'@type':'WebPage','@id':url},'isBasedOn':{'@id':vi},'image':['https://apocalypsecloset.com'+i['src'] for p in parts for i in p.select('img')],'author':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/'},'publisher':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/','logo':{'@type':'ImageObject','url':'https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp'}}}]
  faq=[]
- for d in article.select('.seo-faq details'):
-  faq.append({'@type':'Question','name':d.summary.get_text(' ',strip=True),'acceptedAnswer':{'@type':'Answer','text':d.p.get_text(' ',strip=True)}})
+ for question,answer in faq_pairs(article):
+  faq.append({'@type':'Question','name':question.get_text(' ',strip=True),'acceptedAnswer':{'@type':'Answer','text':answer.get_text(' ',strip=True)}})
  if faq:graph.append({'@type':'FAQPage','inLanguage':'en','mainEntity':faq})
  graph.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':name,'item':u} for i,(name,u) in enumerate([('Shop','https://apocalypsecloset.com/'),('Journal','https://apocalypsecloset.com/en/blog.html'),(config['title'],url)])]})
  j=template.new_tag('script',type='application/ld+json');j.string=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False);template.head.append(j)
