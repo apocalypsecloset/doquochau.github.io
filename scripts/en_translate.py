@@ -54,6 +54,15 @@ def generate(config):
    for attr in ['aria-label','title']:
     if attr in n.attrs and VI.search(n[attr]):
      n[attr]={'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading','Bảng thông tin':'Information table'}.get(n[attr], 'Article navigation')
+ # A translated fragment may start with a word where VI began with punctuation.
+ # Keep words separated across inline tags without changing any content nodes.
+ for part in parts:
+  for n in list(part.descendants):
+   if not isinstance(n,str) or isinstance(n,Comment) or not n:continue
+   v=str(n);before=n.previous_sibling;after=n.next_sibling
+   if getattr(before,'name',None) and before.get_text()[-1:].isalnum() and v[:1].isalnum():v=' '+v
+   if getattr(after,'name',None) and after.get_text()[:1].isalnum() and v[-1:].isalnum():v+=' '
+   if v!=str(n):n.replace_with(v)
  mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()) if r['en_url']}
  for manifest in sorted((ROOT/'data/en-translations').glob('batch[0-9][0-9].json')):
   for c in json.loads(manifest.read_text()):mapping['/blog/'+c['vi_slug']+'.html']='/en/blog/'+c['en_slug']+'.html'
@@ -68,6 +77,14 @@ def generate(config):
    elif path!='/' and (ROOT/path.lstrip('/')).is_file():
     a['lang']='vi';a['hreflang']='vi';a['title']='Vietnamese reference';a.append(' (Vietnamese)')
  article=parts[3];article['class']=['editorial'];article['data-source-sha256']=config['source_sha256']
+ if slug=='techwear-la-gi':
+  # Source insertions placed these headings after their two introductory paragraphs.
+  # Move only EN headings; retain all paragraphs, images and VI source bytes.
+  for section_id in ['visual-code-techwear','gorpcore-va-techwear-cung-ky-thuat-khac-diem-xuat-phat']:
+   heading=article.find(id=section_id)
+   first=heading.find_previous_sibling('p').find_previous_sibling('p')
+   assert first is not None
+   heading.extract();first.insert_before(heading)
  if slug=='witch-aesthetic-whimsigoth-la-gi':
   # The VI source has a pre-existing reversed insertion order. Repair EN order only.
   starter=article.find(id='starter-wardrobe-whimsigoth');formulas=article.find(id='cong-thuc-whimsigoth')
