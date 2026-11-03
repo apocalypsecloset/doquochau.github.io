@@ -47,4 +47,19 @@ for c in configs:
  external=lambda x:sorted(l['href'] for l in x.select('a[href]') if urlsplit(l['href']).scheme and urlsplit(l['href']).netloc!='apocalypsecloset.com')
  check(external(a)==external(orig),slug+': external references')
  results.append({'vi_slug':c['vi_slug'],'en_slug':slug,'source_text_segments':len(texts),'en_words':len(a.get_text(' ',strip=True).split()),'headings':len(orig.select('h2,h3')),'images':len(a.select('img')),'tables':len(a.select('table')),'faqs':len(a.select('.seo-faq details'))})
+# Migration safety checks across all 216 source URLs, not only the translated ten.
+import xml.etree.ElementTree as ET
+rows=list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()))
+check(len(rows)==216,'Inventory must contain 216 URLs')
+urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
+check(len(urls)==len(set(urls)),'Duplicate sitemap URLs')
+check(len([u for u in urls if '/blog/' in u and '/en/' not in u])==216,'Original VI sitemap count')
+journal=BeautifulSoup((ROOT/'en/blog.html').read_text(),'html.parser')
+for c in configs:
+ vi='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html';en='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
+ v=BeautifulSoup((ROOT/'blog'/f"{c['vi_slug']}.html").read_text(),'html.parser')
+ check(bool(v.select_one(f'link[rel=alternate][hreflang=en][href="{en}"]')),c['vi_slug']+': VI reciprocal hreflang')
+ check(v.select_one('link[rel=canonical]')['href']==vi,c['vi_slug']+': VI canonical')
+ check(en in urls and vi in urls,c['vi_slug']+': sitemap pair')
+ check(bool(journal.select_one(f'a[href="/en/blog/{c["en_slug"]}.html"]')),c['en_slug']+': journal discovery')
 print(json.dumps({'results':results,'errors':errors},indent=2));sys.exit(bool(errors))

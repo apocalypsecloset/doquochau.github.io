@@ -48,3 +48,9 @@ python scripts/qa_en_translations.py
 
 ## Remaining work
 204 complete source translations and per-batch QA remain. Prioritize Nu Goth, Vampire Goth, subtype comparisons, Emo, Dark Academia, dark-feminine outfits, mesh/oversized tops and the Goth/Punk navigation hubs next. Hubs must remain navigation hubs rather than competing definition articles. Then proceed through the remaining inventory in batches of 10–20. Do not interpret this batch report as completion of all 216 articles.
+
+## GitHub publication checks — PR #11
+- Commit `abe2874dae684615eb45e8400ceda09546002448`: Cloudflare Pages **success**; deployed preview `https://458a889d.doquochau-github-io.pages.dev`.
+- `qa/en-batch02-preview-deployment.json`: all 10 deployed preview HTML responses match the QA-validated local files byte-for-byte.
+- Separate `Workers Builds: doquochau-github-io` check **failure**. The same named check also failed on the baseline master commit `14189d9`; this is not a newly introduced check failure from the article changes. Its GitHub output provides no diagnostic annotations; the Cloudflare build log requires separate dashboard access. No Worker, routing, shop or Fourthwall files were changed to address it.
+- Do not describe the full check suite as all green. The actual Pages deployment and the source/content QA above are distinct from the existing Worker-build issue.
