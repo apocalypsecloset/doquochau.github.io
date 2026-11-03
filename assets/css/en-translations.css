@@ -1,0 +1,15 @@
+/* Complete source-preserving translations; English journal only. */
+.editorial .apcl-standard-cover{max-width:640px;margin:28px auto 40px}
+.editorial .apcl-standard-cover img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.editorial .related-outfit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.editorial a.article-figure{display:block;min-width:0;text-decoration:none}
+.editorial .related-outfit-copy{display:block;padding-top:10px}
+.editorial .related-outfit-copy strong,.editorial .related-outfit-copy small{display:block}
+.editorial .answer-first,.editorial blockquote{margin:24px 0;padding:18px 22px;background:var(--surface);border-left:3px solid var(--redlite)}
+.editorial .answer-first p{margin:8px 0 0}
+.editorial .seo-faq details{padding:16px 0;border-bottom:1px solid var(--line)}
+.editorial summary{cursor:pointer;font-weight:700;line-height:1.8}
+.editorial .seo-faq details p{margin:14px 0 0}
+.editorial [id]{scroll-margin-top:160px}
+@media(max-width:650px){.editorial .related-outfit-grid{grid-template-columns:1fr}.editorial h1{overflow-wrap:anywhere}.editorial .article-table-scroll{width:100%}}
+.editorial img{max-width:100%;height:auto}

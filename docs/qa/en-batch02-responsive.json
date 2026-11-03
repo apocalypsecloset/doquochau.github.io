@@ -1,0 +1,32 @@
+{
+  "method": "Cloud browser, same-origin iframes using real viewport media queries",
+  "desktop_frame_px": 1440,
+  "desktop_document_px": 1425,
+  "mobile_frame_px": 390,
+  "mobile_document_px": 375,
+  "horizontal_overflow": false,
+  "pages_checked": [
+    "what-is-grunge-style-vs-punk",
+    "soft-grunge-wardrobe-outfits",
+    "grunge-outfits-women-layering",
+    "alternative-t-shirt-outfits-women",
+    "witch-aesthetic-vs-whimsigoth",
+    "what-is-goth-style",
+    "fairy-grunge-style-outfits",
+    "romantic-goth-style-guide",
+    "trad-goth-hair-makeup-outfits",
+    "nu-metal-fashion-outfits"
+  ],
+  "mobile_table": {
+    "viewport": 341,
+    "scroll_width": 650,
+    "overflow_x": "auto"
+  },
+  "toc_expands": true,
+  "faq_opens": true,
+  "notes": [
+    "Initial overflow in two legacy inline images corrected with EN-only max-width CSS.",
+    "Browser viewport scrollbar accounts for 15px difference.",
+    "Whimsigoth source had pre-existing reversed headings/paragraph insertion; EN order repaired, all sections retained."
+  ]
+}

@@ -1,0 +1,32 @@
+"""Wire only completed pages into VI alternates, sitemap, journal and status inventory."""
+from pathlib import Path
+import json,csv,io,html,re
+ROOT=Path(__file__).resolve().parents[1];cs=json.loads((ROOT/'data/en-translations/batch02.json').read_text())
+START='<!-- AC-EN-BATCH02-START -->';END='<!-- AC-EN-BATCH02-END -->'
+for c in cs:
+ p=ROOT/'blog'/f"{c['vi_slug']}.html";s=p.read_text();s=re.sub(re.escape(START)+'.*?'+re.escape(END),'',s,flags=re.S)
+ en='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
+ assert (ROOT/'en/blog'/f"{c['en_slug']}.html").is_file()
+ assert 'hreflang="vi"' in s
+ s=s.replace('</head>',START+f'<link rel="alternate" hreflang="en" href="{en}">'+END+'</head>',1)
+ match=re.search(r'<article\b[^>]*>',s);assert match
+ switch=START+f'<p class="ac-locale-link" style="margin:0 0 20px"><a href="/en/blog/{c["en_slug"]}.html" lang="en" hreflang="en" style="display:inline-block;border:1px solid #c0392b;padding:10px 15px;color:inherit;text-decoration:none;font-weight:700">READ THE ENGLISH VERSION ↗</a></p>'+END
+ s=s[:match.end()]+switch+s[match.end():];p.write_text(s)
+p=ROOT/'sitemap.xml';s=p.read_text()
+for c in cs:
+ url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
+ if '<loc>'+url+'</loc>' not in s:s=s.replace('</urlset>',f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-11-03</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>')
+p.write_text(s)
+p=ROOT/'en/blog.html';s=p.read_text();s=re.sub(re.escape(START)+'.*?'+re.escape(END),'',s,flags=re.S)
+cards='\n'.join(f'<a class="card" href="/en/blog/{c["en_slug"]}.html"><span class="eyebrow">{i+5:02d} / {html.escape(c["role"].replace("_"," "))}</span><h3>{html.escape(c["title"])}</h3><p>{html.escape(c["description"])}</p><span class="read">READ THE GUIDE ↗</span></a>' for i,c in enumerate(cs))
+s=s.replace('</div></section>',START+'\n'+cards+'\n'+END+'</div></section>',1).replace('Original English-language guides. The full Vietnamese fashion archive remains available separately.','Original English guides and full translations from our Vietnamese fashion archive.')
+p.write_text(s)
+p=ROOT/'data/en-216-keyword-intent-audit.csv';rows=list(csv.DictReader(p.open()));fields=list(rows[0]);mapping={c['vi_slug']:c for c in cs}
+for row in rows:
+ slug=row['vi_url'].rsplit('/',1)[-1][:-5]
+ if row['translation_status']=='DRAFT_READY':
+  row['translation_status']='MERGED';row['notes']+='; Merged in PR #10, verified on master 14189d9'
+ if slug in mapping:
+  c=mapping[slug];row.update(en_url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html',page_role=c['role'],translation_status=(row['translation_status'] if row['translation_status']=='COMPLETE_QA_PASSED' else 'TRANSLATED_QA_PENDING'),intent_review='EDITORIAL_REVIEW_NO_GSC',notes=c['primary_intent']+'; No GSC query x page data: no confirmed cannibalization diagnosis.')
+out=io.StringIO(newline='');out.write(','.join(fields)+'\n');w=csv.DictWriter(out,fieldnames=fields,lineterminator='\n',quoting=csv.QUOTE_ALL);w.writerows(rows);p.write_text(out.getvalue())
+print('Wired 10 complete translations; inventory 216 rows, 2 merged + 10 QA pending + 204 pending.')
