@@ -13,7 +13,7 @@
 
 ## Internal English link refresh
 
-A separate reviewed change promotes completed English counterparts in older EN articles/collections. Original-language links are preserved, including both handcrafted initial translations. This maintenance adds no translations to the count. See `docs/en-internal-link-refresh.md`; production verification status is recorded there.
+A separate reviewed change promotes completed English counterparts in older EN articles/collections. Original-language links are preserved, including both handcrafted initial translations. This maintenance adds no translations to the count. See `docs/en-internal-link-refresh.md`; production verification status is recorded there. PR #42 (`1109ede1c781c3d03e9ff556b1e0cb153290fb26`) is merged; all 82 updated EN files byte-match preview and production. All four exposed master checks pass.
 
 ## Latest ten published English URLs
 
@@ -46,3 +46,14 @@ No batch28 English pages or placeholder URLs have been created. Confirm current 
 ## Resume procedure
 
 Read current master, this checkpoint, the full 216-row tracker and guardrails; reconcile concurrent publications. Preserve all existing slugs and Vietnamese source metadata/body outside bilingual additions. Translate full batches of 10–20. After all EN pages exist and sync is complete, run `refresh_en_internal_links.py --apply --report <batch evidence path>` before regression QA, so older English pages link to newly available counterparts. The helper preserves every link to each page's own VI original. QA all changed HTML, schemas, links, original image assets and mobile/desktop behavior before PR/merge. Verify preview and deployed files before recording publication. For current shopping/price/availability guidance, use verified current primary sources rather than carrying old product claims forward.
+
+## Batch28 source-layout finding
+
+The provisional, outline-screened intent plan is saved at `data/en-intent-plans/batch28.json`; it creates no public EN URLs. The night-out source is a wrapped article: H1, intro and cover are inside `article#main-content`, followed by `div.article-content` plus trailing references/reading navigation. The standard article extractor intentionally rejects it. Implement and QA a full wrapped-article adapter before translating that page; do not use the collection-hub adapter or extract only the inner div and silently omit trailing content. Other nine queued sources have the standard article layout. All ten still require full editorial source review and translation.
+
+## Session completion evidence
+
+- Batches25–27 published 30 full English translations: 52,326 English words, 197 original image placements, 32 tables and 128 FAQs. Each batch passed source-preservation, schema/link/canonical/hreflang, image, desktop/mobile, preview and deployed-file checks.
+- Internal maintenance promoted 354 links in 82 EN pages; all original-language links remain intact. The two handcrafted initial translations and the two EN-only originals were not modified. No remaining eligible completed-counterpart references were found on a second helper run.
+- All 111 EN files have one H1 and a self-canonical, without duplicate title, meta description or canonical values. This does not establish or exclude query-level cannibalization; GSC access is still unavailable.
+- Durable inventory: `data/en-216-keyword-intent-audit.csv` contains exactly 109 MERGED and 107 PENDING rows. The 216 original VI URLs match the VI sitemap set.

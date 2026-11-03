@@ -1,6 +1,6 @@
 # English internal-link refresh — 2026-11-04
 
-Status: local QA complete; preview and deployed-file verification pending. Translation count remains **109/216 published, 107 pending**.
+Status: published through PR #42, master `1109ede1c781c3d03e9ff556b1e0cb153290fb26`; all 82 changed English pages match validated bytes on both preview and production. Translation count remains **109/216 published, 107 pending**.
 
 Older English articles and collections still linked to Vietnamese references whose complete English counterparts were published in subsequent batches. This change promotes **354 content links in 82 English pages** to their existing English counterparts. It removes only the redundant `(Vietnamese)` suffix and VI reference attributes for promoted links. It is a language-navigation repair, not a cannibalization diagnosis.
 
@@ -23,3 +23,10 @@ python scripts/refresh_en_internal_links.py --apply --report docs/qa/<batch>-int
 ```
 
 Run all release gates and browser checks for the affected scope before PR/merge. Default invocation is read-only; `--apply` changes only eligible references to existing EN files. Never replace original-language switches with self-links.
+
+## Deployment and inventory verification
+
+- Cloudflare Pages preview succeeds and all 82 changed EN files match byte for byte. Normal expected-head squash merge completed with the unchanged base.
+- All four exposed master checks (Cloudflare Pages, build, deploy, report-build-status) succeeded before production verification began. All 82 deployed EN files then match the reviewed release. No Workers check appeared for this release.
+- Global inventory: 111 EN pages (109 translations plus two EN-only originals), one H1 per page, self-canonical matching each file URL, and no duplicate title, description or canonical values. This metadata check is not a GSC cannibalization diagnosis.
+- Evidence: `docs/qa/en-internal-links-preview.json`, `en-internal-links-production-verified.json`, `en109-global-metadata.json`.
