@@ -23,7 +23,7 @@ Baseline master `66158f6fc49e73ccba73f6afe42111caedb7d155`: **69 published / 216
 - 8,356 English words; 203 H2/H3 headings. Source-hash lock and paragraph/list/card/heading/figure/caption/gallery parity pass. Ten VI sources byte-identical after stripping only marked EN alternate and language-link additions.
 - Every English hub has a self canonical, reciprocal VI/EN hreflang, one H1, English metadata, and CollectionPage/ItemList plus breadcrumb schema. ItemList names, order, URLs and count match visible cards. No fabricated BlogPosting or FAQ schema. All 216 VI sitemap URLs retained; all ten counterparts appear in the English Journal and sitemap.
 - Internal links select completed English counterparts; remaining Vietnamese articles and outfit tools are explicitly labelled. Broken skip links were detected and corrected before publication.
-- Goth hub directs to Goth definition, subtype specialists and existing graphic-tee guide where linked by source; it does not duplicate the definition pillar. Punk/Grunge hub routes to the separate Grunge-vs-Punk comparison, preserving the original Goth-vs-Grunge comparison. Tops directory remains navigation rather than a second graphic-tee styling article.
+- Goth hub directs to the Goth definition and subtype specialists; the definition pillar and existing graphic-tee styling guide retain their separate intents. Punk/Grunge hub routes to the separate Grunge-vs-Punk comparison, preserving the original Goth-vs-Grunge comparison. Tops directory remains navigation rather than a second graphic-tee styling article.
 - No GSC query × page access. These are editorial intent distinctions, not a confirmed cannibalization diagnosis. No VI URL deletion, consolidation, noindex, redirects, or title/meta changes.
 - Avoided carrying forward unsupported claims that Y2K is the hottest 2026 trend or that Indie Sleaze is replacing it; retained the corresponding style topics. Budget mentions are illustrative VND plans, not verified current prices.
 
@@ -46,3 +46,13 @@ python scripts/qa_en_images.py batch24 /tmp/en24-images.json
 ```
 
 Image QA complete: **139/139** distinct original/responsive image endpoints return HTTP 200 and image MIME. Evidence: `docs/qa/en-batch24-images.json`.
+
+## Publication result
+
+Merged PR #35 as `aa42a1e6fcfeb9a402fb26154d5daa192b7b80ca`. Cloudflare preview and production each pass all 23 byte-exact checks: ten EN hubs, ten VI counterparts, Journal, sitemap and EN-only CSS. PR-branch Workers Build failed without a diagnostic cause in the exposed check output; after merge, all five master checks succeeded, including Workers Builds. No Worker configuration changes were made.
+
+Tracker: **79 MERGED, 137 PENDING**. Full 216 source URLs remain. Evidence: `docs/qa/en-batch24-preview.json` and `docs/qa/en-batch24-production-verified.json`.
+
+## Journal correction found during final inventory
+
+The inherited generic string insertion placed translated cards inside hero actions, leaving only four cards in the intended reading grid and repeating batch numbers. Moved every marked batch block into `#latest .cards`, retaining all 81 unique article links, titles, descriptions and existing hero/shop actions. Renumbered 01–81. Batch sync now targets the actual grid; it preserves MERGED status on reruns. Both release gates enforce grid placement, unique hrefs and sequential numbers. All 23 batch regressions pass. Journal browser checks at 1440px/390px show 81 grid cards, zero hero cards and no document overflow. Added a scroll margin so the reading anchor clears the sticky header. Evidence: `docs/qa/en-batch24-journal-{regressions,responsive}.json`.

@@ -1,39 +1,40 @@
 # Translation checkpoint — 2026-11-03
 
-- Master publication: PR #33, commit `3a8ccd5db87ee9e80311a74a17efef2d0c65fe5a`.
-- **69/216 translated pairs; 147 pending**. Two EN-only originals are additional: 71 English articles.
-- Batch23 adds ten complete item guides/comparisons: 16,056 English words, 64 original editorial images, ten tables and 30 FAQ answers.
-- Full static checks, all 22 manifest regressions and all 70 original/responsive image endpoints pass. Twenty browser views at 1440px/390px have no document overflow; mobile tables scroll and FAQ expands.
-- Ten VI originals byte-match baseline after removing only the marked EN alternate/language-link additions. No source title, meta, canonical, slug, body or image changes.
-- Cloudflare Pages preview succeeded; all twelve preview files byte-match validated files. Workers Builds failed on both PR head and unchanged master baseline; this content PR changes no Worker or deployment settings. After merge, all master checks succeeded (Workers, Cloudflare Pages, GitHub Pages build/deploy/report). Production initially served the previous deployment; after deployment completed, all 22 files (10 EN, 10 VI, Journal, sitemap) byte-match validated content. Evidence: `docs/qa/en-batch23-production-verified.json`.
-- Evidence/mapping: `docs/en-translation-batch23.md`, `data/en-translations/batch23.json`, `docs/qa/en-batch23-*.json`.
-- GSC query × page unavailable. Intent review remains editorial screening, with no confirmed cannibalization or URL consolidation.
-- Homepage, POD, Fourthwall, shop UI and PR #9 untouched.
+- Master content release: PR #35, commit `aa42a1e6fcfeb9a402fb26154d5daa192b7b80ca`.
+- **79/216 translation pairs merged; 137 pending**. Two EN-only originals are additional: 81 English articles and collections.
+- Batch24 adds five aesthetic hubs and five garment-guide directories: 8,356 English words, 124 guide cards, 153 original image placements. All 139 distinct original/responsive image endpoints pass HTTP 200/image MIME checks.
+- Full main-only hub extraction preserves introductions, routes, headings, cards, references, captions, alt text and galleries. Source-locked translations use CollectionPage/ItemList schema matching visible cards.
+- All 23 manifest release gates pass. Twenty browser views at 1440px/390px have no horizontal overflow; three desktop card columns become one on mobile; Goth gallery expands with a 305px-wide mobile image.
+- Ten VI source pages byte-match baseline after stripping only the marked EN alternate and language-link additions. Homepage, POD, Fourthwall, shop/checkout, Worker/routing and PR #9 untouched.
+- Cloudflare Pages preview succeeds; all 23 preview files (ten EN, ten VI, Journal, sitemap, CSS) byte-match validated content. PR branch Workers Build failed; available check output does not establish why. Baseline master had passed. After merge, all five master checks succeeded: Workers Builds, Cloudflare Pages, GitHub Pages build/deploy/report. Production verification passes byte for byte for all 23 files, including both language counterparts and the new CSS. Evidence: `docs/qa/en-batch24-production-verified.json`.
+- No GSC query × page access. Editorial intent screening only; no confirmed cannibalization or URL consolidation.
+- Journal repair: all 81 cards moved out of hero actions into the reading grid, numbered 01–81. The batch sync now appends to the actual grid and preserves MERGED state. Release gates enforce card location, uniqueness and sequential numbering. Two Journal browser views pass without overflow.
+- Evidence: `docs/en-translation-batch24.md`, `data/en-translations/batch24.json`, `docs/qa/en-batch24-*.json`.
 
-## Latest ten published EN paths
+## Latest ten English paths
 
-- `/en/blog/how-to-style-arm-warmers.html`
-- `/en/blog/how-to-style-chokers.html`
-- `/en/blog/how-to-style-fishnet-tights.html`
-- `/en/blog/combat-boots-vs-platform-boots.html`
-- `/en/blog/nylon-vs-twill-cargo-pants.html`
-- `/en/blog/wide-leg-jeans-outfits-dark-y2k.html`
-- `/en/blog/flared-pants-outfits-women.html`
-- `/en/blog/jogger-outfits-women.html`
-- `/en/blog/bomber-jacket-outfits-women.html`
-- `/en/blog/long-black-skirt-outfits.html`
+- `/en/blog/goth-guides.html`
+- `/en/blog/egirl-alt-girl-guides.html`
+- `/en/blog/punk-grunge-guides.html`
+- `/en/blog/dark-feminine-guides.html`
+- `/en/blog/baddie-streetwear-guides.html`
+- `/en/blog/womens-item-styling-guides.html`
+- `/en/blog/womens-tops-styling-guides.html`
+- `/en/blog/womens-trouser-styling-guides.html`
+- `/en/blog/womens-skirt-dress-styling-guides.html`
+- `/en/blog/womens-footwear-guides.html`
 
-## Next batch queue: navigation hubs
+## Proposed next ten pending sources
 
-- `/blog/goth.html`
-- `/blog/egirl.html`
-- `/blog/punk-grunge.html`
-- `/blog/dark-feminine.html`
-- `/blog/baddie-streetwear.html`
-- `/blog/phoi-do-theo-item.html`
-- `/blog/phoi-do-theo-ao-nu.html`
-- `/blog/phoi-do-theo-quan-nu.html`
-- `/blog/phoi-do-theo-chan-vay-vay-nu.html`
-- `/blog/phoi-do-theo-giay-nu.html`
+- `/blog/giay-mary-jane-la-gi.html`
+- `/blog/leg-warmers-la-gi-cach-phoi.html`
+- `/blog/coquette-la-gi-dark-coquette.html`
+- `/blog/indie-sleaze-la-gi.html`
+- `/blog/techwear-la-gi.html`
+- `/blog/cyber-y2k-la-gi.html`
+- `/blog/visual-kei-la-gi.html`
+- `/blog/devil-core.html`
+- `/blog/morute.html`
+- `/blog/gurokawa.html`
 
-These ten source hubs use `<main>` without an `<article>` element. Extend extraction, generation and QA for the hub DOM before translating; the article-only generator must not create empty hubs. These hubs need full translated navigation and editorial copy, with intent distinct from existing definition pillars and specialist guides. Read current master and all 216 tracker rows before resuming. Reconcile any intervening publications and preserve their English slugs. Continue in complete batches of 10–20; do not publish partial pages.
+Read current master and all 216 tracker rows first; reconcile intervening publications and preserve existing English slugs. Maintain complete batches of 10–20. Use `en_translate_hubs.py` for main-only hubs and `en_translate.py` for article sources. The standard `qa_en_translations.py` command dispatches hub batches to their collection release gate. Do not publish incomplete pages or mark a merged PR as production-verified before checking the deployed files.
