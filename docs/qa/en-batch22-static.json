@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "alt-fashion-la-gi-va-tai-sao-no-quan-trong",
+      "en_slug": "what-is-alt-style",
+      "source_text_segments": 145,
+      "en_words": 1811,
+      "headings": 13,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "cach-phoi-do-den-khong-nham-chan",
+      "en_slug": "black-outfits-women-texture-proportions",
+      "source_text_segments": 148,
+      "en_words": 1733,
+      "headings": 18,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "y2k-dark-aesthetic-khac-gi-y2k-thuong",
+      "en_slug": "dark-y2k-vs-y2k",
+      "source_text_segments": 176,
+      "en_words": 2054,
+      "headings": 22,
+      "images": 5,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "tu-do-alt-fashion-1-trieu",
+      "en_slug": "alternative-wardrobe-vnd-one-million",
+      "source_text_segments": 162,
+      "en_words": 1736,
+      "headings": 15,
+      "images": 4,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "kieu-toc-punk-nu",
+      "en_slug": "punk-hairstyles-women",
+      "source_text_segments": 167,
+      "en_words": 1701,
+      "headings": 21,
+      "images": 8,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "that-lung-dinh-tan-phoi-do",
+      "en_slug": "how-to-style-studded-belts",
+      "source_text_segments": 128,
+      "en_words": 1627,
+      "headings": 30,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-short-nu",
+      "en_slug": "shorts-outfits-women",
+      "source_text_segments": 129,
+      "en_words": 1551,
+      "headings": 18,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "y2k-la-gi-phong-cach-y2k-nu",
+      "en_slug": "what-is-y2k-fashion",
+      "source_text_segments": 126,
+      "en_words": 1507,
+      "headings": 18,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cach-bao-quan-do-da-nu",
+      "en_slug": "leather-jacket-clothing-care",
+      "source_text_segments": 82,
+      "en_words": 1365,
+      "headings": 11,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "nhuom-toc-dark-aesthetic",
+      "en_slug": "dark-aesthetic-hair-color",
+      "source_text_segments": 86,
+      "en_words": 1647,
+      "headings": 10,
+      "images": 8,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": []
+}

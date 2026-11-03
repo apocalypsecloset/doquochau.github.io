@@ -53,7 +53,7 @@ def generate(config):
   for n in [part]+list(part.find_all()):
    for attr in ['aria-label','title']:
     if attr in n.attrs and VI.search(n[attr]):
-     n[attr]={'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading'}.get(n[attr], 'Article navigation')
+     n[attr]={'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading','Bảng thông tin':'Information table'}.get(n[attr], 'Article navigation')
  mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()) if r['en_url']}
  for manifest in sorted((ROOT/'data/en-translations').glob('batch[0-9][0-9].json')):
   for c in json.loads(manifest.read_text()):mapping['/blog/'+c['vi_slug']+'.html']='/en/blog/'+c['en_slug']+'.html'
@@ -83,6 +83,21 @@ def generate(config):
   sequence.extend([mistakes,mistake_list])
   for n in sequence:n.extract()
   for n in sequence:anchor.insert_before(n)
+
+ if slug=='y2k-la-gi-phong-cach-y2k-nu':
+  # Repair reversed source insertions in EN only; retain every original content node.
+  headings=[h for h in article.select('h3') if re.match(r'^[1-5]\.',h.get_text())]
+  assert len(headings)==5
+  pairs=[(h,h.find_previous_sibling('p')) for h in headings]
+  intro=next(h for h in headings if h.get_text().startswith('1.')).find_next_sibling('p')
+  section=article.find(id='cong-thuc-phoi-do-y2k-nu')
+  anchor=article.find(id='y2k-va-dark-y2k-khac-nhau-o-dau')
+  sequence=[section,intro]
+  for h,paragraph in sorted(pairs,key=lambda pair:pair[0].get_text()):sequence.extend([h,paragraph])
+  for node in sequence:node.extract()
+  for node in sequence:anchor.insert_before(node)
+  pastel=article.find(id='y2k-khong-chi-la-pastel')
+  paragraph=pastel.find_previous_sibling('p');paragraph.extract();pastel.insert_after(paragraph)
 
  # Reuse the established English shell, never the Vietnamese shop or shared navigation.
  template=BeautifulSoup((ROOT/'en/blog/soft-goth-style-outfits.html').read_text(),'html.parser')
