@@ -1,0 +1,92 @@
+[
+  {
+    "vi_slug": "nu-goth-la-gi-phong-cach-nu-goth",
+    "en_slug": "nu-goth-style-outfits",
+    "title": "What Is Nu Goth? Modern Dark Style and Seven Outfits",
+    "description": "Explore nu goth's internet-era references, modern silhouettes, seven outfit formulas and a versatile starter capsule, with lighter options for warm weather.",
+    "primary_intent": "Internet-era modern nu goth, fitted/oversized contrasts and selected hardware; distinct from trad, soft and corporate goth",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "7716b31219d6e5a0f1b51d354d8cdbe5c4673f48a43082f1586bc7af3ebaf657"
+  },
+  {
+    "vi_slug": "vampire-goth-la-gi-vampire-goth-aesthetic",
+    "en_slug": "vampire-goth-style-outfits",
+    "title": "What Is Vampire Goth? Dark Romance and Seven Outfit Formulas",
+    "description": "Build vampire-inspired goth outfits with wine tones, lace, velvet, structured shapes and antique details, plus seven practical styling formulas.",
+    "primary_intent": "Vampire cinema/mythology and controlled dark opulence; romantic goth remains broader historical romance",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "0746210099875e586b62a7541c5b33bfbe445718c8c3c86b2f55c45d98fa8d98"
+  },
+  {
+    "vi_slug": "pastel-goth-cyber-goth-mall-goth-la-gi",
+    "en_slug": "pastel-goth-vs-cybergoth-vs-mall-goth",
+    "title": "Pastel Goth vs. Cybergoth vs. Mall Goth: How They Differ",
+    "description": "Compare pastel goth, cybergoth and mall goth through origins, color, silhouette, texture and accessories, with practical ways to tell them apart.",
+    "primary_intent": "Three-way subtype comparison; future cybergoth specialist owns detailed cybergoth history and outfits",
+    "role": "COMPARISON",
+    "source_sha256": "6a2fc6a13ab5a1f168282841fe22ba7dd80de644a91bd5f6dfb2522da33748a5"
+  },
+  {
+    "vi_slug": "phong-cach-emo-la-gi",
+    "en_slug": "what-is-emo-style",
+    "title": "What Is Emo Style? Emo Girl, Scene and E-Girl Differences",
+    "description": "Understand emo's musical roots, changing fashion references and distinctions from scene, e-girl, grunge and goth, with modern outfit ideas.",
+    "primary_intent": "Emo definition and musical-era distinctions; not general alt or e-girl pillar",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "f7ccbe6a4ff92ecadb3460bf81d02a074bc7cffa075e8c086a9fecbceb5146de"
+  },
+  {
+    "vi_slug": "dark-academia-la-gi-phoi-do-badgirl",
+    "en_slug": "dark-academia-outfits-alternative-style",
+    "title": "What Is Dark Academia? Women's Outfits with an Alternative Edge",
+    "description": "Explore dark academia's academic references, tailoring and textures, then adapt four women's outfit formulas for an alternative wardrobe and warm weather.",
+    "primary_intent": "Academic tailoring and muted textured wardrobe with alternative edge, unlike dark feminine general outfit formulas",
+    "role": "SUBSTYLE_GUIDE",
+    "source_sha256": "ea0dc1f78c01560874adb3af5c0aa95ec24e89c1fcae9cc2c9312aaa780291a4"
+  },
+  {
+    "vi_slug": "phoi-do-voi-ao-luoi-nu",
+    "en_slug": "what-to-wear-with-mesh-tops",
+    "title": "What to Wear with Mesh Tops: Layers, Coverage and Outfit Ideas",
+    "description": "Choose mesh-top inner layers, bottoms, outerwear and shoes with deliberate coverage, balanced textures and practical formulas for everyday settings.",
+    "primary_intent": "Mesh item-specific layering and coverage; not generic graphic-tee specialist or general layering guide",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "860df2fa05f75f502aef1bb820d3897b10326bc0053f5df45b8f9f793127cb19"
+  },
+  {
+    "vi_slug": "form-oversize-la-gi",
+    "en_slug": "what-is-oversized-fit",
+    "title": "What Is Oversized Fit? Shape, Sizing and Proportion Before Buying",
+    "description": "Understand oversized vs relaxed, boxy, one-size and plus-size, with five fit checkpoints, measurement tips and practical ways to balance volume.",
+    "primary_intent": "Oversized fit definition and shopping measurements; hoodie page owns hoodie outfit construction",
+    "role": "FIT_GUIDE",
+    "source_sha256": "b2b52637402d7571a7b89d1c76bec903da581fcda2ebeb78c07e37861d85d9f3"
+  },
+  {
+    "vi_slug": "ao-hoodie-oversize-nu-phoi-voi-gi",
+    "en_slug": "oversized-hoodie-outfits-women",
+    "title": "How to Style an Oversized Hoodie: Nine Women's Outfit Ideas",
+    "description": "Style oversized hoodies with skirts, cargos, jeans and layers through nine outfit ideas, clear hems, balanced volume and practical shoe choices.",
+    "primary_intent": "Hoodie-specific outfit formulas, hood/hem and outer-layer geometry; not oversized definition",
+    "role": "ITEM_OUTFIT_GUIDE",
+    "source_sha256": "02c5face1af314480ac94a385af784cbb569e9ae213221965d8ec10f71d6b1a5"
+  },
+  {
+    "vi_slug": "dark-feminine-outfit-phoi-do",
+    "en_slug": "dark-feminine-outfit-ideas",
+    "title": "Dark Feminine Outfits: Seven Formulas with Shape and Contrast",
+    "description": "Try seven dark feminine outfit formulas using clear silhouettes, contrasting fabrics, restrained accents and practical adjustments for settings and weather.",
+    "primary_intent": "Practical seven-formula outfit construction; future dark feminine definition and navigation hub retain distinct roles",
+    "role": "OUTFIT_GUIDE",
+    "source_sha256": "5356ac4c9f92632c603d08be9781c0e591aea3409a7eb86ff56351c720d9f477"
+  },
+  {
+    "vi_slug": "mac-do-den-mua-he-co-nong-khong",
+    "en_slug": "is-black-clothing-hotter-in-summer",
+    "title": "Is Black Clothing Hotter in Summer? Fabric, Fit and Sun Exposure",
+    "description": "Understand black clothing in summer through solar heating, fabric structure, airflow and fit, while keeping comfort separate from tested UV protection.",
+    "primary_intent": "Color and thermal comfort/fabric fit, not summer outfit recipes or black-clothing laundry",
+    "role": "MATERIAL_GUIDE",
+    "source_sha256": "5686ec990875da4a8f8b97787724f492957429fef70e29f7ebc8ab6241100ef2"
+  }
+]

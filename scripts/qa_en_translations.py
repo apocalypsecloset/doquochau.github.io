@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from en_translate import VI,source
-configs=json.loads((ROOT/'data/en-translations/batch02.json').read_text())
+configs=json.loads((ROOT/'data/en-translations'/((sys.argv[1] if len(sys.argv)>1 else 'batch02')+'.json')).read_text())
 errors=[];results=[]
 def check(ok,message):
  if not ok:errors.append(message)
@@ -22,6 +22,9 @@ for c in configs:
  check(s.select_one('meta[name=description]')['content']==c['description'],slug+': meta')
  for lang,href in [('en',url),('vi','https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html')]:
   check(bool(s.select_one(f'link[rel=alternate][hreflang={lang}][href="{href}"]')),slug+': hreflang '+lang)
+ check(len(a.select('p'))==len(orig.select('p'))+len(parts[1].select('p'))+2,slug+': paragraph parity')
+ check(len(a.select('li'))==len(orig.select('li')),slug+': list item parity')
+ check(len(a.select('blockquote'))==len(orig.select('blockquote')),slug+': blockquote parity')
  for tag in ['h2','h3','table','tr','th','td','details','figcaption']:
   check(len(a.select(tag))==len(orig.select(tag)),f'{slug}: {tag} parity {len(a.select(tag))}/{len(orig.select(tag))}')
  check([i['src'] for i in a.select('img')]==[i['src'] for p in parts[:3] for i in p.select('img')]+[i['src'] for i in orig.select('img')],slug+': images and order')
