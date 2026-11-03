@@ -77,6 +77,30 @@ def generate(config):
    elif path!='/' and (ROOT/path.lstrip('/')).is_file():
     a['lang']='vi';a['hreflang']='vi';a['title']='Vietnamese reference';a.append(' (Vietnamese)')
  article=parts[3];article['class']=['editorial'];article['data-source-sha256']=config['source_sha256']
+ if slug=='phoi-do-voi-ao-blazer-den-nu':
+  # Repair reversed source insertions in EN only, preserving every content node.
+  colors=article.find(id='colors');colors_first=colors.find_previous_sibling('p')
+  dresses=article.find(id='dress');dress_first=dresses.find_previous_sibling('p').find_previous_sibling('p')
+  formulas=article.find(id='formulas');formula_image=formulas.find_next_sibling('figure')
+  recipes=[]
+  for h in article.find_all('h3',recursive=False):
+   if re.match(r'^[1-6]\.',h.get_text()):
+    paragraph=h.find_previous_sibling('p');assert paragraph is not None
+    image=h.find_next_sibling('figure') if h.get_text().startswith('2.') else None
+    recipes.append((int(h.get_text()[0]),h,paragraph,image))
+  assert len(recipes)==6
+  first_recipe=recipes[0][2]
+  formulas.extract();first_recipe.insert_before(formulas)
+  formula_image.extract()
+  anchor_node=formulas
+  for number,h,paragraph,image in sorted(recipes,key=lambda x:x[0]):
+   h.extract();paragraph.extract();anchor_node.insert_after(h);h.insert_after(paragraph);anchor_node=paragraph
+   if image is not None:image.extract();anchor_node.insert_after(image);anchor_node=image
+  anchor_node.insert_after(formula_image)
+  colors.extract();colors_first.insert_before(colors)
+  dresses.extract();dress_first.insert_before(dresses)
+  climate=article.find(id='climate');first=climate.find_previous_sibling('p').find_previous_sibling('p')
+  climate.extract();first.insert_before(climate)
  if slug=='techwear-la-gi':
   # Source insertions placed these headings after their two introductory paragraphs.
   # Move only EN headings; retain all paragraphs, images and VI source bytes.

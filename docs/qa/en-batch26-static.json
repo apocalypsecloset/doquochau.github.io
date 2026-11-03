@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-da",
+      "en_slug": "how-to-style-leather-skirts",
+      "source_text_segments": 164,
+      "en_words": 1929,
+      "headings": 13,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-khoac-jean-nu",
+      "en_slug": "womens-denim-jacket-outfits",
+      "source_text_segments": 194,
+      "en_words": 2094,
+      "headings": 22,
+      "images": 9,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-gile-nu",
+      "en_slug": "womens-vest-layering-outfits",
+      "source_text_segments": 153,
+      "en_words": 1568,
+      "headings": 13,
+      "images": 8,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-xep-ly",
+      "en_slug": "how-to-style-pleated-skirts",
+      "source_text_segments": 153,
+      "en_words": 1588,
+      "headings": 15,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-vay-ngan-nu",
+      "en_slug": "alternative-mini-skirt-outfits",
+      "source_text_segments": 146,
+      "en_words": 1704,
+      "headings": 12,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "slip-dress-la-gi-cach-phoi",
+      "en_slug": "how-to-style-slip-dresses",
+      "source_text_segments": 180,
+      "en_words": 2016,
+      "headings": 34,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "ballet-flats-la-gi-cach-phoi",
+      "en_slug": "how-to-style-ballet-flats",
+      "source_text_segments": 141,
+      "en_words": 1636,
+      "headings": 28,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "outfit-nu-ca-tinh-di-concert",
+      "en_slug": "alternative-concert-outfits-for-women",
+      "source_text_segments": 208,
+      "en_words": 2238,
+      "headings": 19,
+      "images": 7,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-blazer-den-nu",
+      "en_slug": "womens-black-blazer-outfits",
+      "source_text_segments": 216,
+      "en_words": 2132,
+      "headings": 22,
+      "images": 8,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "cach-chon-tui-cho-outfit-nu-ca-tinh",
+      "en_slug": "choosing-bags-for-alternative-outfits",
+      "source_text_segments": 211,
+      "en_words": 1861,
+      "headings": 27,
+      "images": 6,
+      "tables": 3,
+      "faqs": 4
+    }
+  ],
+  "errors": []
+}
