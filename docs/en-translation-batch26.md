@@ -1,6 +1,6 @@
 # English translation batch26 — 2026-11-03
 
-Status: full translations and local editorial/static/responsive QA complete; all 70 distinct original/responsive/shell image endpoints pass HTTP 200 and image MIME checks; PR preview and production verification remain before publication. Baseline 89/216 published; ten in this batch; 117 further sources pending.
+Status: published through PR #39, master `6a8c3288f7f76a0c83e094147d4786067a949b28`. Now 99/216 translation pairs production-verified, 117 pending. Two EN-only originals are additional (101 Journal cards).
 
 ## Source and intent mapping
 
@@ -42,3 +42,9 @@ The VI blazer source has reversed inserted recipe headings/paragraphs and mispla
 - Twenty desktop/mobile browser views have no page horizontal overflow. All mobile tables scroll in their wrappers; concert FAQ opens and shows its complete answer.
 - Evidence: `docs/qa/en-batch26-static.json`, `en-batch26-regressions.json`, `en-batch26-responsive.json`, `en-batch26-blazer-order.json`, `en-batch26-images.json`.
 - Homepage, POD, Fourthwall, shop, routing configuration and PR #9 untouched.
+
+## Deployment verification
+
+- Cloudflare Pages preview succeeds; all 22 release files match validated bytes. Normal expected-head squash merge completed.
+- Initial production checks preceded deployment completion and found temporary 404/stale responses; after deployment all 22 files match byte for byte. Four exposed master checks (Cloudflare Pages, build, deploy, report-build-status) succeed. No Workers check appeared for this release.
+- Evidence: `docs/qa/en-batch26-preview.json`, `docs/qa/en-batch26-production-verified.json`.
