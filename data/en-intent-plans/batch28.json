@@ -1,0 +1,116 @@
+{
+  "status": "PROVISIONAL_PLAN_ONLY_NO_EN_PAGES",
+  "gsc": "NO_QUERY_PAGE_ACCESS",
+  "sources": [
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-jean-ngan",
+      "proposed_en_slug": "denim-mini-skirt-outfits",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "4f94cda08c43944c5f57521dc03be502483b2f6431233ea38ca6744f50726981",
+      "source_h1": "Chân Váy Jean Ngắn Phối Với Áo Gì? Giữ Tỷ Lệ Mà Không Bị Basic",
+      "primary_intent_provisional": "Denim-mini wash, seams, stiffness and proportions; general mini-length guide remains broader",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-jean-dai",
+      "proposed_en_slug": "long-denim-skirt-outfits",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "f28cad178cd1db0a39bbac4a78ba281886045ed5b68d9e8a77982fb3eab6f140",
+      "source_h1": "Chân Váy Jean Dài Phối Với Áo Gì? Chọn Top, Giày Và Tỷ Lệ Dễ Mặc",
+      "primary_intent_provisional": "Long denim structure, slit and footwear; general long-skirt and black-skirt guides remain separate",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-xoe",
+      "proposed_en_slug": "flared-skirt-outfit-ideas",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "8466cf74e02115817629e4b16afd522ff6a2f241442a44c8e4e04f1c9c639ae4",
+      "source_h1": "Chân Váy Xòe Phối Với Áo Gì? Cân Độ Bung Và Chuyển Động",
+      "primary_intent_provisional": "Full or flared hem movement across lengths; distinguish gradual A-line, pleats and inward bubble hems",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-duoi-ca",
+      "proposed_en_slug": "mermaid-skirt-outfit-ideas",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "af6885badbbe3bb6455707e2a4d86a638d5f8f355f93a6deac8e8f042fc29b6e",
+      "source_h1": "Chân Váy Đuôi Cá Phối Với Áo Gì? Chọn Top Theo Form Và Tỷ Lệ",
+      "primary_intent_provisional": "Fitted skirt and low flare placement; distinguish Mermaidcore aesthetic and general long skirts",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-tre-vai-nu",
+      "proposed_en_slug": "off-the-shoulder-top-outfits",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "77d17ef3cd3304c21d39160ba0fb3950a12400322efe34847c744b82375ecc7c",
+      "source_h1": "Áo Trễ Vai Phối Với Gì? Cân Đường Vai Theo Dark Feminine Và Y2K",
+      "primary_intent_provisional": "Open-shoulder neckline construction, support and movement; crop-length and tube-top specialists distinct",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "ao-ong-nu-phoi-voi-gi",
+      "proposed_en_slug": "tube-top-outfit-ideas",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "9d0163d3b8138ffbbcbe1d0308d32c5760393583373f50914e77c3ad8c2a14f7",
+      "source_h1": "Áo Ống Nữ Phối Với Gì? Cách Chọn Form Và 10 Outfit Cá Tính",
+      "primary_intent_provisional": "Strapless tube-top fit and layering across lengths; distinguish off-shoulder sleeves and general cropped length",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-nu-ca-tinh-mua-he",
+      "proposed_en_slug": "alternative-summer-outfits-women",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "7585f7a2107dc5c3db1aa02a5c7f32674ca3e95d0932ff92c433141a0a59bb22",
+      "source_h1": "Outfit Mùa Hè Nữ: Mát, Dễ Mặc Mà Vẫn Cá Tính",
+      "primary_intent_provisional": "Warm-weather alternative outfit system across garments; distinguish black-clothing heat specialist and individual item guides",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
+      "proposed_en_slug": "alternative-going-out-outfits-women",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "9941a254a10cf52c87e9525b05dab44c86a82a1abae1456e4949a3d8148ff991",
+      "source_h1": "Phối Đồ Nữ Cá Tính Đi Chơi: Chọn Đúng Outfit Cho Từng Cuộc Hẹn",
+      "primary_intent_provisional": "Occasion-selection overview by activity and duration; cafe, night-out, concert and beach specialists stay narrower",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    },
+    {
+      "vi_slug": "outfit-di-choi-dem-badgirl",
+      "proposed_en_slug": "alternative-night-out-outfits-women",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "e10911186f94a91cdb06d57f4dd35e4bfc13c8f2a4987b81c7c73b140c1e1b8c",
+      "source_h1": "Outfit Đi Chơi Đêm Nữ: 7 Công Thức Badgirl Cá Tính, Dễ Mặc",
+      "primary_intent_provisional": "Evening venue-type styling and seven formulas; distinguish daytime outing overview and concert mobility specialist",
+      "source_layout": "wrapped_article_with_div_body",
+      "adapter_note": "Requires full wrapped-article extraction. H1, intro and cover are inside article#main-content; div.article-content alone omits trailing Bodycon reference and reading-path navigation. Do not use collection-hub adapter or drop these nodes."
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-tay-ong-suong-nu",
+      "proposed_en_slug": "womens-straight-tailored-trouser-outfits",
+      "publication_status": "PENDING",
+      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
+      "source_sha256": "e987f53c514bd03033fed66c99e2d326402fff591f06a9d69f878637dac8f937",
+      "source_h1": "Quần Tây Ống Suông Phối Với Áo Gì? 7 Công Thức Nữ",
+      "primary_intent_provisional": "Straight tailored fabric, rise, creases and hems; distinguish straight denim and general wide-leg volume",
+      "source_layout": "standard_article",
+      "adapter_note": null
+    }
+  ]
+}
