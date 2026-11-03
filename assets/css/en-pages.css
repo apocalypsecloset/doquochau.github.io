@@ -81,3 +81,21 @@ h1 em,h2 em{font-style:normal;color:var(--redlite)}
 @media(max-width:950px){.site-header{flex-direction:column;align-items:flex-start;gap:3px}.nav{gap:12px 18px;padding:7px 0}.feature{grid-template-columns:1fr}}
 @media(max-width:650px){.site-header{padding:12px 16px}.brand img:last-child{width:110px;height:38px}.brand img:first-child{height:36px;width:36px}.nav a{font-size:9px}.hero{padding:52px 0 36px}.wrap{width:calc(100% - 32px)}.cards,.contact-list,.footer-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.footer-grid{gap:28px}.editorial{padding:28px 0 50px}.editorial p,.editorial li{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card:hover{transform:none}}
+
+
+/* English editorial articles: image parity, accessible comparison tables and TOC */
+.editorial a{overflow-wrap:anywhere;text-underline-offset:3px}
+.editorial .article-figure{margin:32px auto 37px;max-width:640px}
+.editorial .article-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#201b1a}
+.editorial .article-figure figcaption{margin-top:8px;color:var(--muted);font:400 10px/1.7 'Space Mono',monospace}
+.editorial .article-toc-en{margin:29px 0 43px;padding:20px 26px;border:1px solid var(--line);background:var(--surface)}
+.editorial .article-toc-en strong{font:700 11px/1.5 'Space Mono',monospace;color:var(--redlite)}
+.editorial .article-toc-en ol{padding:0 0 0 20px;margin:12px 0 0}
+.editorial .article-toc-en li{font-size:11px;line-height:1.7;margin:5px 0;color:var(--muted)}
+.editorial .article-toc-en a{color:var(--ivory)}
+.editorial .article-table-scroll{max-width:100%;overflow-x:auto;margin:23px 0 35px;border:1px solid var(--line)}
+.editorial .article-table{border-collapse:collapse;width:100%;min-width:650px;background:var(--surface)}
+.editorial .article-table th,.editorial .article-table td{text-align:left;padding:12px 13px;vertical-align:top;border:1px solid var(--line);font:400 11px/1.7 'Space Mono',monospace}
+.editorial .article-table th{background:#241916;color:#f2ded7;text-transform:uppercase;font-weight:700;letter-spacing:.04em}
+.editorial .article-table td:first-child{font-weight:700;color:var(--ivory)}
+@media(max-width:650px){.editorial .article-figure{margin:24px auto}.editorial .article-toc-en{padding:17px 19px}}
