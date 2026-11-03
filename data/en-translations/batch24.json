@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "goth",
+    "en_slug": "goth-guides",
+    "title": "Goth and Gothic: Style and Outfit Guide Collection",
+    "description": "Explore Goth foundations, substyles, hair, nails, item guides and outfit collections through focused reading routes.",
+    "primary_intent": "Goth collection navigation; definition pillar, substyles and graphic tee styling remain separate",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "d7a4c3ed0d7a32877e18b819699578348cab183d106de40b3dfe18fed77eca70"
+  },
+  {
+    "vi_slug": "egirl",
+    "en_slug": "egirl-alt-girl-guides",
+    "title": "E-Girl and Alt Girl: Style and Outfit Guide Collection",
+    "description": "Browse E-Girl and Alt Girl definitions, Dark Y2K, Scene, Acubi, hair, wardrobe and budget guides by your styling goal.",
+    "primary_intent": "Alt Girl umbrella and E-Girl collection navigation; E-Girl definition and Scene or Y2K specialists separate",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "d4b2fd5e7706cfe44315b31c19f236d57102eb5ccdf26d7e2904073b2255065d"
+  },
+  {
+    "vi_slug": "punk-grunge",
+    "en_slug": "punk-grunge-guides",
+    "title": "Punk and Grunge: Style and Outfit Guide Collection",
+    "description": "Find Punk and Grunge comparisons, substyle guides, outfit formulas, layering, hair and makeup through focused reading routes.",
+    "primary_intent": "Punk and Grunge collection navigation, not another Goth vs Grunge or Grunge vs Punk comparison",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "e3efd4d7091061711dbc61650727a8bf562d67d10c7ab7bea5a2ccfe218c5de4"
+  },
+  {
+    "vi_slug": "dark-feminine",
+    "en_slug": "dark-feminine-guides",
+    "title": "Dark Feminine: Style and Outfit Guide Collection",
+    "description": "Explore Dark Feminine wardrobe, outfits, leather, corset tops and related aesthetics through item and occasion guides.",
+    "primary_intent": "Dark Feminine collection navigation, separate from seven-formula outfit specialist and editorial essay",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "34c9f9e80074d8a65efaea2d59ff978307afced1b0e6b0a42592ad0c7b50f1d7"
+  },
+  {
+    "vi_slug": "baddie-streetwear",
+    "en_slug": "baddie-streetwear-guides",
+    "title": "Baddie Streetwear: Outfit and Styling Guide Collection",
+    "description": "Browse Baddie Streetwear outfit, trouser, top, footwear and budget guides by garment, setting and practical styling goal.",
+    "primary_intent": "Baddie streetwear collection navigation, separate from Badgirl definition, occasion outfits and item specialists",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "a877d3cb1fd41015b625b0777e1bd8211fc9e43d0ceeae74622306f986acaef0"
+  },
+  {
+    "vi_slug": "phoi-do-theo-item",
+    "en_slug": "womens-item-styling-guides",
+    "title": "Women's Item Styling Guide Directory",
+    "description": "Choose tops, trousers, skirts, dresses, footwear or accessories to find focused outfit guidance around the garment you own.",
+    "primary_intent": "Top-level garment-guide directory; routes to category hubs rather than duplicating individual item answers",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "4d76d4953882972f6e88e4f94c34eb35cda1b63db1f6fb5dc1064d899ebad73f"
+  },
+  {
+    "vi_slug": "phoi-do-theo-ao-nu",
+    "en_slug": "womens-tops-styling-guides",
+    "title": "Women's Tops: Fit, Layering and Styling Guide Directory",
+    "description": "Find crop top, blazer, vest, shirt, mesh, bomber, tee, corset and jacket guides by shape, layering needs and outfit proportions.",
+    "primary_intent": "Upper-body garment navigation; tee article and gothic graphic tee specialist retain distinct styling intents",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "e520766c1ad44ba741e597114330d0542858f8ca56d451ed602f5271896824dc"
+  },
+  {
+    "vi_slug": "phoi-do-theo-quan-nu",
+    "en_slug": "womens-trouser-styling-guides",
+    "title": "Women's Trousers: Fit and Styling Guide Directory",
+    "description": "Browse trouser definitions and outfit guides by rise, leg shape, fabric, hem length and footwear, from denim to cargos and flares.",
+    "primary_intent": "Trouser category navigation; construction definitions, fabric comparisons and outfit formulas remain separate",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "838570bf4a32883d97c9fbddceec4022a84dcae609c26a2ffec5df4cf334a87a"
+  },
+  {
+    "vi_slug": "phoi-do-theo-chan-vay-vay-nu",
+    "en_slug": "womens-skirt-dress-styling-guides",
+    "title": "Women's Skirts and Dresses: Styling Guide Directory",
+    "description": "Choose skirt or dress guides by shape, length, fabric and hem, then find the relevant tops, shoes and outfit proportions.",
+    "primary_intent": "Skirt and dress category navigation; long black, denim, mini, midi and pleated specialists retain own targets",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "36ff5e106f3a2432d9198286fdb3df50cb3a81901e5c502e31ba902d4a9f0646"
+  },
+  {
+    "vi_slug": "phoi-do-theo-giay-nu",
+    "en_slug": "womens-footwear-guides",
+    "title": "Women's Footwear: Styling, Selection and Care Guides",
+    "description": "Find Mary Jane, boot, platform, ballet flat and loafer guides by outfit proportion, practical fit, buying checks and care needs.",
+    "primary_intent": "Footwear navigation across definition, comparison, styling and care; combat-platform comparison remains separate",
+    "role": "CATEGORY_HUB",
+    "source_kind": "hub",
+    "source_sha256": "4ff5ddd336e89e07376697f49542d408170bfc2c95a98a8e2167d38410f49adc"
+  }
+]
