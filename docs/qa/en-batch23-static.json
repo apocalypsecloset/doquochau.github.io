@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "arm-warmers-la-gi-cach-phoi",
+      "en_slug": "how-to-style-arm-warmers",
+      "source_text_segments": 155,
+      "en_words": 1632,
+      "headings": 36,
+      "images": 7,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "choker-nu-la-gi-cach-phoi",
+      "en_slug": "how-to-style-chokers",
+      "source_text_segments": 145,
+      "en_words": 1475,
+      "headings": 28,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "fishnet-tights-la-gi-cach-phoi",
+      "en_slug": "how-to-style-fishnet-tights",
+      "source_text_segments": 140,
+      "en_words": 1448,
+      "headings": 27,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "combat-boots-hay-platform-boots",
+      "en_slug": "combat-boots-vs-platform-boots",
+      "source_text_segments": 179,
+      "en_words": 1625,
+      "headings": 19,
+      "images": 8,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quan-cargo-vai-du-hay-kaki",
+      "en_slug": "nylon-vs-twill-cargo-pants",
+      "source_text_segments": 185,
+      "en_words": 1562,
+      "headings": 13,
+      "images": 7,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-jeans-ong-rong-nu",
+      "en_slug": "wide-leg-jeans-outfits-dark-y2k",
+      "source_text_segments": 146,
+      "en_words": 1614,
+      "headings": 15,
+      "images": 6,
+      "tables": 1,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-ong-loe-nu",
+      "en_slug": "flared-pants-outfits-women",
+      "source_text_segments": 174,
+      "en_words": 1637,
+      "headings": 21,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-jogger-nu",
+      "en_slug": "jogger-outfits-women",
+      "source_text_segments": 158,
+      "en_words": 1550,
+      "headings": 24,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-ao-bomber-nu",
+      "en_slug": "bomber-jacket-outfits-women",
+      "source_text_segments": 197,
+      "en_words": 1735,
+      "headings": 27,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "phoi-do-voi-chan-vay-dai-den",
+      "en_slug": "long-black-skirt-outfits",
+      "source_text_segments": 167,
+      "en_words": 1778,
+      "headings": 22,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    }
+  ],
+  "errors": []
+}
