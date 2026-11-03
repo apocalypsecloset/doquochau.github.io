@@ -1,6 +1,6 @@
 # English translation batch27 — 2026-11-03
 
-Status: ten full English translations complete; local editorial, static, image and responsive QA passed. Awaiting PR preview and production verification. Baseline: 99/216 published; ten QA-passed; 107 further sources pending.
+Status: published through PR #41, master `f1471c263c4596af0cc9749314309f35b2b778ad`. Now 109/216 full translation pairs production-verified, 107 pending. Two EN-only originals are additional (111 Journal cards).
 
 ## Source and intent mapping
 
@@ -40,3 +40,9 @@ Status: ten full English translations complete; local editorial, static, image a
 - Image endpoints: see `docs/qa/en-batch27-images.json`; all tested URLs return HTTP 200 with image MIME.
 - Evidence: `docs/qa/en-batch27-static.json`, `en-batch27-regressions.json`, `en-batch27-images.json`, `en-batch27-responsive.json`.
 - Homepage, POD, Fourthwall, shop, routing and PR #9 untouched.
+
+## Deployment verification
+
+- Cloudflare Pages preview succeeded; all 22 release files match validated bytes. Normal expected-head squash merge completed.
+- Initial production checks preceded deployment completion and saw temporary 404/stale responses. After deployment, all 22 files match byte for byte. All four exposed master checks (Cloudflare Pages, build, deploy, report-build-status) succeeded. No Workers check appeared for this release.
+- Evidence: `docs/qa/en-batch27-preview.json`, `docs/qa/en-batch27-production-verified.json`.
