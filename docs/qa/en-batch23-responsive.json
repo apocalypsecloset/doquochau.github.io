@@ -1,0 +1,166 @@
+{
+  "checks": [
+    {
+      "view": "how-to-style-arm-warmers-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "how-to-style-arm-warmers-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "how-to-style-chokers-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "how-to-style-chokers-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "how-to-style-fishnet-tights-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "how-to-style-fishnet-tights-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "combat-boots-vs-platform-boots-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "combat-boots-vs-platform-boots-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "nylon-vs-twill-cargo-pants-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "nylon-vs-twill-cargo-pants-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "wide-leg-jeans-outfits-dark-y2k-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 850
+    },
+    {
+      "view": "wide-leg-jeans-outfits-dark-y2k-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "flared-pants-outfits-women-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "flared-pants-outfits-women-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "jogger-outfits-women-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "jogger-outfits-women-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "bomber-jacket-outfits-women-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "bomber-jacket-outfits-women-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    },
+    {
+      "view": "long-black-skirt-outfits-1440",
+      "viewport": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "maxImageWidth": 640
+    },
+    {
+      "view": "long-black-skirt-outfits-390",
+      "viewport": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "maxImageWidth": 343
+    }
+  ],
+  "faq_mobile": "Arm warmers first FAQ expands and displays answer; observed in browser and screenshot",
+  "tables_mobile": "All 10 table containers: clientWidth 341, scrollWidth 650, overflowX auto"
+}
