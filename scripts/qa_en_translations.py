@@ -64,6 +64,10 @@ urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}
 check(len(urls)==len(set(urls)),'Duplicate sitemap URLs')
 check(len([u for u in urls if '/blog/' in u and '/en/' not in u])==216,'Original VI sitemap count')
 journal=BeautifulSoup((ROOT/'en/blog.html').read_text(),'html.parser')
+cards=journal.select('a.card');grid_cards=journal.select('#latest .cards a.card')
+check(len(cards)==len(grid_cards),'Journal cards must all be in the reading grid')
+check(len({a['href'] for a in cards})==len(cards),'Duplicate Journal cards')
+check([int(a.select_one('.eyebrow').get_text().split('/')[0]) for a in grid_cards]==list(range(1,len(cards)+1)),'Journal card sequence')
 for c in configs:
  vi='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html';en='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
  v=BeautifulSoup((ROOT/'blog'/f"{c['vi_slug']}.html").read_text(),'html.parser')

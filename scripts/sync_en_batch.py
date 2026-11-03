@@ -21,17 +21,23 @@ for c in cs:
  if '<loc>'+url+'</loc>' not in s:s=s.replace('</urlset>',f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-11-03</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>')
 p.write_text(s)
 p=ROOT/'en/blog.html';s=p.read_text();s=re.sub(re.escape(START)+'.*?'+re.escape(END),'',s,flags=re.S)
-offset=len(BeautifulSoup(s,'html.parser').select('.cards a.card'))+1
+journal=BeautifulSoup(s,'html.parser');grid=journal.select_one('#latest .cards');assert grid is not None
+offset=len(grid.select('a.card'))+1
 cards='\n'.join(f'<a class="card" href="/en/blog/{c["en_slug"]}.html"><span class="eyebrow">{i+offset:02d} / {html.escape(c["role"].replace("_"," "))}</span><h3>{html.escape(c["title"])}</h3><p>{html.escape(c["description"])}</p><span class="read">READ THE GUIDE ↗</span></a>' for i,c in enumerate(cs))
-s=s.replace('</div></section>',START+'\n'+cards+'\n'+END+'</div></section>',1).replace('Original English-language guides. The full Vietnamese fashion archive remains available separately.','Original English guides and full translations from our Vietnamese fashion archive.')
-p.write_text(s)
+fragment=BeautifulSoup(START+'\n'+cards+'\n'+END,'html.parser')
+for node in list(fragment.contents):grid.append(node)
+for i,card in enumerate(grid.select('a.card'),1):
+ eyebrow=card.select_one('.eyebrow')
+ if eyebrow:eyebrow.string=re.sub(r'^\d+\s*/',f'{i:02d} /',eyebrow.get_text())
+s=str(journal).replace('Original English-language guides. The full Vietnamese fashion archive remains available separately.','Original English guides and full translations from our Vietnamese fashion archive.')
+p.write_text(s.rstrip()+'\n')
 p=ROOT/'data/en-216-keyword-intent-audit.csv';rows=list(csv.DictReader(p.open()));fields=list(rows[0]);mapping={c['vi_slug']:c for c in cs}
 for row in rows:
  slug=row['vi_url'].rsplit('/',1)[-1][:-5]
  if row['translation_status']=='DRAFT_READY':
   row['translation_status']='MERGED';row['notes']+='; Merged in PR #10, verified on master 14189d9'
  if slug in mapping:
-  c=mapping[slug];row.update(en_url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html',page_role=c['role'],translation_status=(row['translation_status'] if row['translation_status']=='COMPLETE_QA_PASSED' else 'TRANSLATED_QA_PENDING'),intent_review='EDITORIAL_REVIEW_NO_GSC',notes=c['primary_intent']+'; No GSC query x page data: no confirmed cannibalization diagnosis.')
+  c=mapping[slug];row.update(en_url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html',page_role=c['role'],translation_status=(row['translation_status'] if row['translation_status'] in {'COMPLETE_QA_PASSED','MERGED'} else 'TRANSLATED_QA_PENDING'),intent_review='EDITORIAL_REVIEW_NO_GSC',notes=c['primary_intent']+'; No GSC query x page data: no confirmed cannibalization diagnosis.')
 out=io.StringIO(newline='');out.write(','.join(fields)+'\n');w=csv.DictWriter(out,fieldnames=fields,lineterminator='\n',quoting=csv.QUOTE_ALL);w.writerows(rows);p.write_text(out.getvalue())
 from collections import Counter
 print(batch, len(cs), 'pages wired;', dict(Counter(r['translation_status'] for r in rows)))

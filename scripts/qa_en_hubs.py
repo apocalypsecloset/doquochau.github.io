@@ -54,6 +54,10 @@ for c in configs:
 rows=list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()));check(len(rows)==216,'216 source rows')
 urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')];check(len(urls)==len(set(urls)),'sitemap duplicates');check(len([u for u in urls if '/blog/' in u and '/en/' not in u])==216,'216 VI sitemap URLs')
 journal=(ROOT/'en/blog.html').read_text()
+index=BeautifulSoup(journal,'html.parser');cards=index.select('a.card');grid_cards=index.select('#latest .cards a.card')
+check(len(cards)==len(grid_cards),'Journal cards must all be in the reading grid')
+check(len({a['href'] for a in cards})==len(cards),'Duplicate Journal cards')
+check([int(a.select_one('.eyebrow').get_text().split('/')[0]) for a in grid_cards]==list(range(1,len(cards)+1)),'Journal card sequence')
 for c in configs:
  check('https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html' in urls,c['en_slug']+': sitemap')
  check('/en/blog/'+c['en_slug']+'.html' in journal,c['en_slug']+': Journal')
