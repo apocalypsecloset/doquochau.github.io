@@ -53,3 +53,33 @@ Date: 2026-11-03
 ## Execution
 - Branch batch01: translate **Corporate Goth** first, a distinct office-workwear query not covered by existing EN originals.
 - Continue in manageable audited batches; expanding to 216 English URLs requires actual complete translation + QA for each.
+
+
+## Batch 01 status — 2026-11-03
+- Source titles for all **216** sitemap blog URLs collected from the existing Vietnamese blog index and remaining page headings.
+- **2 full English translations drafted** (not live until PR merged):
+  - `/blog/corporate-goth-la-gi.html` → `/en/blog/corporate-goth-office-outfits.html`: **office workwear**.
+  - `/blog/soft-goth-la-gi.html` → `/en/blog/soft-goth-style-outfits.html`: **low-intensity everyday gothic outfits**.
+- 214 original blog URLs still `PENDING`; no placeholder English pages were created.
+- The English Journal and sitemap contain only real completed drafts (in the PR branch).
+- The new translations preserve original editorial images, headings, tables/comparisons and cited source links.
+- Both VI/EN pairs have reciprocal hreflang and their own self-canonicals.
+- Existing English articles remain separate:
+  - Gothic graphic tees = **how to style one product category**.
+  - Goth vs. Grunge = **cross-aesthetic comparison**.
+
+## Manual overlap review candidates based on Vietnamese titles
+The inventory records source titles and groups to review. A shared head term alone **does not mean cannibalization**:
+- `quan-cargo-la-gi.html` (definition) vs. `quan-cargo-nu-mua-o-dau.html` (shopping) have different purposes.
+- `phoi-do-voi-quan-ong-loe-nu.html` (flared trousers) vs. `quan-ong-rong-nu-phoi-voi-ao-gi.html` (wide-leg trousers) concern different silhouettes.
+- `dark-feminine.html` (topic hub) vs. `dark-feminine-outfit-phoi-do.html` (practical outfit guide) need different primary intent and links.
+- `phoi-do-voi-ao-thun-nu.html` (general women's tee styling) vs. existing English gothic graphic tee guide requires semantic differentiation.
+
+**Do not merge, redirect, or noindex either page solely due to title overlap.** A confirmed cannibalization diagnosis requires Search Console export joining **query, page, country, date** over a consistent date range, supplemented by actual content and search results. VI/EN language pairs should be treated separately in that analysis.
+
+## Suggested next translation topics (provisional, pending GSC and source review)
+- Grunge style vs Punk; Grunge outfits for women; Soft Grunge
+- Gothic style pillar, Romantic Goth, Trad Goth, Pastel/Cyber/Mall Goth, Nu Goth
+- Dark Feminine outfits; E-Girl style; Dark Academia
+- Oversized fit guide; Alt fashion T-shirt styling; Cargo pants styling
+- Existing topic hubs should be translated as navigation hubs, not duplicated as another in-depth article aimed at the same query.
