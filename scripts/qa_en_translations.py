@@ -28,7 +28,7 @@ for c in configs:
  for tag in ['h2','h3','table','tr','th','td','details','figcaption']:
   check(len(a.select(tag))==len(orig.select(tag)),f'{slug}: {tag} parity {len(a.select(tag))}/{len(orig.select(tag))}')
  check([i['src'] for i in a.select('img')]==[i['src'] for p in parts[:3] for i in p.select('img')]+[i['src'] for i in orig.select('img')],slug+': images and order')
- check(not VI.search(re.sub(r'caf[ée]s?|décor','',a.get_text(),flags=re.I)),slug+': Vietnamese text remains')
+ check(not VI.search(re.sub(r"caf[ée]s?|décor|l[’']or[ée]al",'',a.get_text(),flags=re.I)),slug+': Vietnamese text remains')
  check(all(i.get('alt') and not VI.search(i['alt']) for i in a.select('img')),slug+': image alt')
  check(not any(VI.search(n.get(attr,'')) for n in a.find_all() for attr in ['title','aria-label']),slug+': Vietnamese attributes')
  ids=[n['id'] for n in s.select('[id]')];check(len(ids)==len(set(ids)),slug+': duplicate IDs')
