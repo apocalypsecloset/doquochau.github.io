@@ -1,0 +1,677 @@
+{
+  "batch02": {
+    "results": [
+      {
+        "vi_slug": "grunge-la-gi-khac-gi-punk",
+        "en_slug": "what-is-grunge-style-vs-punk",
+        "source_text_segments": 174,
+        "en_words": 2197,
+        "headings": 16,
+        "images": 6,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "soft-grunge-aesthetic-la-gi",
+        "en_slug": "soft-grunge-wardrobe-outfits",
+        "source_text_segments": 176,
+        "en_words": 1989,
+        "headings": 25,
+        "images": 6,
+        "tables": 2,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "phoi-do-grunge-nu",
+        "en_slug": "grunge-outfits-women-layering",
+        "source_text_segments": 101,
+        "en_words": 1955,
+        "headings": 10,
+        "images": 8,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "phoi-do-voi-ao-thun-nu",
+        "en_slug": "alternative-t-shirt-outfits-women",
+        "source_text_segments": 84,
+        "en_words": 1575,
+        "headings": 9,
+        "images": 7,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "witch-aesthetic-whimsigoth-la-gi",
+        "en_slug": "witch-aesthetic-vs-whimsigoth",
+        "source_text_segments": 146,
+        "en_words": 1754,
+        "headings": 19,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "goth-aesthetic-huong-dan-day-du",
+        "en_slug": "what-is-goth-style",
+        "source_text_segments": 202,
+        "en_words": 2010,
+        "headings": 22,
+        "images": 6,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "fairy-grunge-la-gi",
+        "en_slug": "fairy-grunge-style-outfits",
+        "source_text_segments": 165,
+        "en_words": 1928,
+        "headings": 18,
+        "images": 10,
+        "tables": 1,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "romantic-goth-la-gi",
+        "en_slug": "romantic-goth-style-guide",
+        "source_text_segments": 232,
+        "en_words": 2369,
+        "headings": 23,
+        "images": 6,
+        "tables": 3,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "trad-goth-la-gi-traditional-goth-style",
+        "en_slug": "trad-goth-hair-makeup-outfits",
+        "source_text_segments": 204,
+        "en_words": 2066,
+        "headings": 24,
+        "images": 6,
+        "tables": 2,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "nu-metal-aesthetic-la-gi",
+        "en_slug": "nu-metal-fashion-outfits",
+        "source_text_segments": 182,
+        "en_words": 1950,
+        "headings": 20,
+        "images": 10,
+        "tables": 2,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch03": {
+    "results": [
+      {
+        "vi_slug": "nu-goth-la-gi-phong-cach-nu-goth",
+        "en_slug": "nu-goth-style-outfits",
+        "source_text_segments": 215,
+        "en_words": 2211,
+        "headings": 20,
+        "images": 6,
+        "tables": 3,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "vampire-goth-la-gi-vampire-goth-aesthetic",
+        "en_slug": "vampire-goth-style-outfits",
+        "source_text_segments": 201,
+        "en_words": 2148,
+        "headings": 20,
+        "images": 6,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "pastel-goth-cyber-goth-mall-goth-la-gi",
+        "en_slug": "pastel-goth-vs-cybergoth-vs-mall-goth",
+        "source_text_segments": 160,
+        "en_words": 1874,
+        "headings": 16,
+        "images": 7,
+        "tables": 1,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "phong-cach-emo-la-gi",
+        "en_slug": "what-is-emo-style",
+        "source_text_segments": 205,
+        "en_words": 2208,
+        "headings": 25,
+        "images": 6,
+        "tables": 2,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "dark-academia-la-gi-phoi-do-badgirl",
+        "en_slug": "dark-academia-outfits-alternative-style",
+        "source_text_segments": 130,
+        "en_words": 1444,
+        "headings": 18,
+        "images": 10,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "phoi-do-voi-ao-luoi-nu",
+        "en_slug": "what-to-wear-with-mesh-tops",
+        "source_text_segments": 241,
+        "en_words": 2083,
+        "headings": 15,
+        "images": 9,
+        "tables": 3,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "form-oversize-la-gi",
+        "en_slug": "what-is-oversized-fit",
+        "source_text_segments": 158,
+        "en_words": 2156,
+        "headings": 22,
+        "images": 8,
+        "tables": 1,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "ao-hoodie-oversize-nu-phoi-voi-gi",
+        "en_slug": "oversized-hoodie-outfits-women",
+        "source_text_segments": 147,
+        "en_words": 1684,
+        "headings": 27,
+        "images": 6,
+        "tables": 0,
+        "faqs": 0
+      },
+      {
+        "vi_slug": "dark-feminine-outfit-phoi-do",
+        "en_slug": "dark-feminine-outfit-ideas",
+        "source_text_segments": 129,
+        "en_words": 1788,
+        "headings": 18,
+        "images": 7,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "mac-do-den-mua-he-co-nong-khong",
+        "en_slug": "is-black-clothing-hotter-in-summer",
+        "source_text_segments": 134,
+        "en_words": 1534,
+        "headings": 11,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch04": {
+    "results": [
+      {
+        "vi_slug": "cybergoth",
+        "en_slug": "cybergoth-style-outfits",
+        "source_text_segments": 188,
+        "en_words": 1924,
+        "headings": 18,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "scene-style-la-gi",
+        "en_slug": "scene-style-fashion",
+        "source_text_segments": 198,
+        "en_words": 2406,
+        "headings": 24,
+        "images": 6,
+        "tables": 2,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "phong-cach-egirl-la-gi",
+        "en_slug": "what-is-egirl-style",
+        "source_text_segments": 250,
+        "en_words": 2609,
+        "headings": 16,
+        "images": 6,
+        "tables": 3,
+        "faqs": 6
+      },
+      {
+        "vi_slug": "phoi-do-layering-nu",
+        "en_slug": "alternative-layering-outfits-women",
+        "source_text_segments": 185,
+        "en_words": 2419,
+        "headings": 20,
+        "images": 8,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "cach-giat-do-den-khong-phai-mau",
+        "en_slug": "how-to-wash-black-clothes",
+        "source_text_segments": 127,
+        "en_words": 1993,
+        "headings": 16,
+        "images": 6,
+        "tables": 0,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "goth-nails-mau-nail-phong-cach-goth",
+        "en_slug": "goth-nail-designs",
+        "source_text_segments": 186,
+        "en_words": 1849,
+        "headings": 26,
+        "images": 7,
+        "tables": 2,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "kieu-toc-goth-goth-hairstyle-nu",
+        "en_slug": "goth-hairstyles-women",
+        "source_text_segments": 184,
+        "en_words": 2109,
+        "headings": 20,
+        "images": 6,
+        "tables": 3,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "xay-tu-do-dark-aesthetic",
+        "en_slug": "build-a-dark-aesthetic-wardrobe",
+        "source_text_segments": 95,
+        "en_words": 1451,
+        "headings": 11,
+        "images": 8,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "phoi-do-alt-fashion-cho-nguoi-moi",
+        "en_slug": "alternative-fashion-for-beginners",
+        "source_text_segments": 210,
+        "en_words": 2178,
+        "headings": 18,
+        "images": 6,
+        "tables": 2,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "phu-kien-alt-fashion-thiet-yeu",
+        "en_slug": "alternative-fashion-accessories",
+        "source_text_segments": 82,
+        "en_words": 1352,
+        "headings": 13,
+        "images": 6,
+        "tables": 0,
+        "faqs": 3
+      }
+    ],
+    "errors": []
+  },
+  "batch05": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-boots-da-nu",
+        "en_slug": "how-to-style-womens-boots",
+        "source_text_segments": 134,
+        "en_words": 2004,
+        "headings": 15,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch05b": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-ao-khoac-da-nu",
+        "en_slug": "womens-leather-jacket-outfits",
+        "source_text_segments": 102,
+        "en_words": 1949,
+        "headings": 13,
+        "images": 8,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch07": {
+    "results": [
+      {
+        "vi_slug": "punk-makeup-dark-aesthetic",
+        "en_slug": "punk-makeup-dark-aesthetic-guide",
+        "source_text_segments": 159,
+        "en_words": 1986,
+        "headings": 21,
+        "images": 6,
+        "tables": 2,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch08": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-quan-cargo-nu",
+        "en_slug": "womens-cargo-pants-outfits",
+        "source_text_segments": 177,
+        "en_words": 2242,
+        "headings": 15,
+        "images": 5,
+        "tables": 2,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch09": {
+    "results": [
+      {
+        "vi_slug": "quan-cargo-la-gi",
+        "en_slug": "what-are-cargo-pants",
+        "source_text_segments": 127,
+        "en_words": 1956,
+        "headings": 17,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch10": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-quan-da-nu",
+        "en_slug": "womens-leather-pants-outfits",
+        "source_text_segments": 89,
+        "en_words": 1733,
+        "headings": 13,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch11": {
+    "results": [
+      {
+        "vi_slug": "cach-chon-size-do-alt-fashion-online",
+        "en_slug": "alt-fashion-size-guide-online",
+        "source_text_segments": 100,
+        "en_words": 1788,
+        "headings": 12,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch12": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-corset-top-nu",
+        "en_slug": "how-to-style-a-corset-top",
+        "source_text_segments": 82,
+        "en_words": 1794,
+        "headings": 12,
+        "images": 7,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch13": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-ao-crop-top-nu",
+        "en_slug": "womens-crop-top-outfits",
+        "source_text_segments": 103,
+        "en_words": 1878,
+        "headings": 14,
+        "images": 7,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch14": {
+    "results": [
+      {
+        "vi_slug": "unisex-la-gi",
+        "en_slug": "what-does-unisex-mean",
+        "source_text_segments": 101,
+        "en_words": 1720,
+        "headings": 15,
+        "images": 2,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch15": {
+    "results": [
+      {
+        "vi_slug": "ootd-la-gi",
+        "en_slug": "what-does-ootd-mean",
+        "source_text_segments": 100,
+        "en_words": 1736,
+        "headings": 12,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch16": {
+    "results": [
+      {
+        "vi_slug": "outfit-la-gi",
+        "en_slug": "what-is-an-outfit",
+        "source_text_segments": 116,
+        "en_words": 1834,
+        "headings": 13,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch17": {
+    "results": [
+      {
+        "vi_slug": "capsule-wardrobe-la-gi",
+        "en_slug": "what-is-a-capsule-wardrobe",
+        "source_text_segments": 117,
+        "en_words": 1919,
+        "headings": 18,
+        "images": 6,
+        "tables": 1,
+        "faqs": 3
+      }
+    ],
+    "errors": []
+  },
+  "batch18": {
+    "results": [
+      {
+        "vi_slug": "sustainable-fashion",
+        "en_slug": "what-is-sustainable-fashion",
+        "source_text_segments": 166,
+        "en_words": 1909,
+        "headings": 24,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  },
+  "batch19": {
+    "results": [
+      {
+        "vi_slug": "minimalist-style-la-gi",
+        "en_slug": "what-is-minimalist-fashion",
+        "source_text_segments": 130,
+        "en_words": 2075,
+        "headings": 16,
+        "images": 6,
+        "tables": 0,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch20": {
+    "results": [
+      {
+        "vi_slug": "vay-midi-la-gi",
+        "en_slug": "what-is-midi-length",
+        "source_text_segments": 118,
+        "en_words": 1781,
+        "headings": 15,
+        "images": 5,
+        "tables": 1,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch21": {
+    "results": [
+      {
+        "vi_slug": "phoi-do-voi-chan-vay-midi",
+        "en_slug": "how-to-style-midi-skirts",
+        "source_text_segments": 197,
+        "en_words": 2352,
+        "headings": 13,
+        "images": 6,
+        "tables": 3,
+        "faqs": 5
+      }
+    ],
+    "errors": []
+  },
+  "batch22": {
+    "results": [
+      {
+        "vi_slug": "alt-fashion-la-gi-va-tai-sao-no-quan-trong",
+        "en_slug": "what-is-alt-style",
+        "source_text_segments": 145,
+        "en_words": 1811,
+        "headings": 13,
+        "images": 6,
+        "tables": 1,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "cach-phoi-do-den-khong-nham-chan",
+        "en_slug": "black-outfits-women-texture-proportions",
+        "source_text_segments": 148,
+        "en_words": 1733,
+        "headings": 18,
+        "images": 6,
+        "tables": 1,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "y2k-dark-aesthetic-khac-gi-y2k-thuong",
+        "en_slug": "dark-y2k-vs-y2k",
+        "source_text_segments": 176,
+        "en_words": 2054,
+        "headings": 22,
+        "images": 5,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "tu-do-alt-fashion-1-trieu",
+        "en_slug": "alternative-wardrobe-vnd-one-million",
+        "source_text_segments": 162,
+        "en_words": 1736,
+        "headings": 15,
+        "images": 4,
+        "tables": 2,
+        "faqs": 5
+      },
+      {
+        "vi_slug": "kieu-toc-punk-nu",
+        "en_slug": "punk-hairstyles-women",
+        "source_text_segments": 167,
+        "en_words": 1701,
+        "headings": 21,
+        "images": 8,
+        "tables": 2,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "that-lung-dinh-tan-phoi-do",
+        "en_slug": "how-to-style-studded-belts",
+        "source_text_segments": 128,
+        "en_words": 1627,
+        "headings": 30,
+        "images": 5,
+        "tables": 0,
+        "faqs": 0
+      },
+      {
+        "vi_slug": "phoi-do-voi-quan-short-nu",
+        "en_slug": "shorts-outfits-women",
+        "source_text_segments": 129,
+        "en_words": 1551,
+        "headings": 18,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "y2k-la-gi-phong-cach-y2k-nu",
+        "en_slug": "what-is-y2k-fashion",
+        "source_text_segments": 126,
+        "en_words": 1507,
+        "headings": 18,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "cach-bao-quan-do-da-nu",
+        "en_slug": "leather-jacket-clothing-care",
+        "source_text_segments": 82,
+        "en_words": 1365,
+        "headings": 11,
+        "images": 6,
+        "tables": 0,
+        "faqs": 4
+      },
+      {
+        "vi_slug": "nhuom-toc-dark-aesthetic",
+        "en_slug": "dark-aesthetic-hair-color",
+        "source_text_segments": 86,
+        "en_words": 1647,
+        "headings": 10,
+        "images": 8,
+        "tables": 0,
+        "faqs": 4
+      }
+    ],
+    "errors": []
+  }
+}

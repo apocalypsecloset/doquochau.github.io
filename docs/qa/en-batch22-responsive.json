@@ -1,0 +1,390 @@
+{
+  "checks": [
+    {
+      "view": "how-to-style-womens-boots-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "womens-leather-jacket-outfits-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "punk-makeup-dark-aesthetic-guide-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 850,
+      "h1": 1
+    },
+    {
+      "view": "womens-cargo-pants-outfits-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-are-cargo-pants-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "womens-leather-pants-outfits-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "alt-fashion-size-guide-online-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-a-corset-top-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "womens-crop-top-outfits-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-does-unisex-mean-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-does-ootd-mean-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-an-outfit-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-a-capsule-wardrobe-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-sustainable-fashion-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-minimalist-fashion-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-midi-length-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-midi-skirts-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 770,
+      "h1": 1
+    },
+    {
+      "view": "what-is-alt-style-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 850,
+      "h1": 1
+    },
+    {
+      "view": "black-outfits-women-texture-proportions-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 850,
+      "h1": 1
+    },
+    {
+      "view": "dark-y2k-vs-y2k-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 850,
+      "h1": 1
+    },
+    {
+      "view": "alternative-wardrobe-vnd-one-million-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "punk-hairstyles-women-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-studded-belts-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "shorts-outfits-women-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "what-is-y2k-fashion-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "leather-jacket-clothing-care-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "dark-aesthetic-hair-color-1440",
+      "width": 1425,
+      "scroll_width": 1425,
+      "max_image_width": 640,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-womens-boots-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "womens-leather-jacket-outfits-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "punk-makeup-dark-aesthetic-guide-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "womens-cargo-pants-outfits-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-are-cargo-pants-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "womens-leather-pants-outfits-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "alt-fashion-size-guide-online-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-a-corset-top-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "womens-crop-top-outfits-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-does-unisex-mean-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-does-ootd-mean-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-an-outfit-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-a-capsule-wardrobe-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-sustainable-fashion-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-minimalist-fashion-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-midi-length-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-midi-skirts-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-alt-style-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "black-outfits-women-texture-proportions-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "dark-y2k-vs-y2k-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "alternative-wardrobe-vnd-one-million-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "punk-hairstyles-women-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "how-to-style-studded-belts-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "shorts-outfits-women-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "what-is-y2k-fashion-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "leather-jacket-clothing-care-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    },
+    {
+      "view": "dark-aesthetic-hair-color-390",
+      "width": 375,
+      "scroll_width": 375,
+      "max_image_width": 343,
+      "h1": 1
+    }
+  ],
+  "views": 54,
+  "overflow_failures": [],
+  "budget_tables": {
+    "width": 341,
+    "scroll_width": 650,
+    "overflow_x": "auto"
+  },
+  "hair_faq_expansion": true
+}
