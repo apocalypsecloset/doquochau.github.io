@@ -151,6 +151,30 @@ def generate(config):
   pastel=article.find(id='y2k-khong-chi-la-pastel')
   paragraph=pastel.find_previous_sibling('p');paragraph.extract();pastel.insert_after(paragraph)
 
+ if slug=='streetwear-la-gi':
+  # Repair reversed source insertions in EN only; preserve every source content node.
+  origin=article.find(id='nguon-goc-streetwear')
+  history=origin.find_previous_sibling('p');influences=history.find_previous_sibling('p')
+  assert 'Modern streetwear' in history.get_text() and 'absorbed' in influences.get_text()
+  origin.extract();history.extract();influences.insert_before(origin);origin.insert_after(history)
+  silhouette=article.find(id='silhouette-streetwear-nu');first=silhouette.find_previous_sibling('p')
+  assert 'Fitted and baggy' in first.get_text();silhouette.extract();first.insert_before(silhouette)
+  formulas=article.find(id='cong-thuc-streetwear-nu')
+  headings=[h for h in article.find_all('h3',recursive=False) if re.match(r'^[1-5]\.',h.get_text())]
+  assert len(headings)==5
+  pairs=[(h,h.find_previous_sibling('p')) for h in headings]
+  first=pairs[0][1];formulas.extract();first.insert_before(formulas)
+  anchor_node=formulas
+  for h,paragraph in sorted(pairs,key=lambda pair:pair[0].get_text()):
+   h.extract();paragraph.extract();anchor_node.insert_after(h);h.insert_after(paragraph);anchor_node=paragraph
+  climate=article.find(id='streetwear-viet-nam')
+  warm=climate.find_previous_sibling('p');rain=warm.find_previous_sibling('p')
+  assert 'Although streetwear' in warm.get_text() and 'rainy days' in rain.get_text()
+  climate.extract();warm.extract();rain.insert_before(climate);climate.insert_after(warm)
+ if slug=='vintage-style-la-gi':
+  climate=article.find(id='vintage-viet-nam');paragraph=climate.find_previous_sibling('p')
+  assert 'Heavy wool coats' in paragraph.get_text();climate.extract();paragraph.insert_before(climate)
+
  # Reuse the established English shell, never the Vietnamese shop or shared navigation.
  template=BeautifulSoup((ROOT/'en/blog/soft-goth-style-outfits.html').read_text(),'html.parser')
  url='https://apocalypsecloset.com/en/blog/'+config['en_slug']+'.html';vi='https://apocalypsecloset.com/blog/'+slug+'.html'
