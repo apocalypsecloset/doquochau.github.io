@@ -1,6 +1,6 @@
 # English translation batch33 — 2026-11-04
 
-Baseline: master `42431808ec0e193eb71e8c89f8b02c7384899c0a`; 159/216 production-verified pairs plus two EN-only originals. Ten complete translations are ready; publication remains pending preview, normal merge and production verification.
+Baseline: master `42431808ec0e193eb71e8c89f8b02c7384899c0a`; 159/216 production-verified pairs plus two EN-only originals. Ten complete translations are published through PR #53 after preview, normal merge and production verification.
 
 ## Intent ownership
 
@@ -42,3 +42,9 @@ Baseline: master `42431808ec0e193eb71e8c89f8b02c7384899c0a`; 159/216 production-
 - Guarded maintenance promotes 51 links in 29 older EN pages, preserving their own VI-original links and guarding unrelated bodies/metadata/assets. These are maintenance touches, not additional translations. Final scan and release comparisons are recorded separately.
 
 Evidence: `docs/qa/en-batch33-*.json`. Full source-locked translations: `data/en-translations/batch33.json` and ten complete TSV files. Local QA status is distinct from published status.
+
+## Release confirmation
+
+PR #53 merged normally as `77e8ddee56361c63025718a08237bfafa98e8a78` from reviewed head `91a33a2c93bab7ce8a8ee1c4e136f89fdd7f706b`. All 51 preview and all 51 production files match byte-for-byte: ten new EN, ten VI, twenty-nine maintained older EN, Journal and sitemap. All five production-master checks succeeded. Actual branch checks are recorded separately: Cloudflare Pages succeeded; Workers Builds failed with zero diagnostic annotations. No failure cause is inferred and no override was used. Final guarded link scan: zero eligible links, zero skipped pages. Tracker: 169 MERGED, 47 PENDING; two additional EN-only originals make 171 Journal cards.
+
+The first production comparison began while master deployment was still in progress and observed 24 mismatches, including two new-page HTTP 404 responses. That observation is retained separately in `docs/qa/en-batch33-production-before-deployment.json`. After all five master checks succeeded, a fresh comparison of all 51 files matched exactly. No content change or forced deployment was used to resolve the observation.

@@ -1,5 +1,5 @@
 {
-  "status": "COMPLETE_QA_PASSED",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "baseline": "42431808ec0e193eb71e8c89f8b02c7384899c0a",
   "sources": [
@@ -28,7 +28,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phoi-do-nu-ca-tinh-cho-nu-lun",
@@ -55,7 +55,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phoi-do-cho-nguoi-gay-alt-fashion",
@@ -82,7 +82,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "cach-phoi-do-cho-nguoi-beo-bung-nu",
@@ -117,7 +117,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phoi-do-dang-qua-le",
@@ -161,7 +161,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phoi-do-dang-tam-giac-nguoc",
@@ -199,7 +199,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "quan-baggy-cho-nguoi-thap",
@@ -227,7 +227,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "cach-khu-mui-boots",
@@ -261,7 +261,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "cach-lam-mem-boots-moi",
@@ -295,7 +295,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ao-baby-tee-form-dep-tren-shopee",
@@ -318,7 +318,9 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pr": 53,
+  "merge_commit": "77e8ddee56361c63025718a08237bfafa98e8a78"
 }
