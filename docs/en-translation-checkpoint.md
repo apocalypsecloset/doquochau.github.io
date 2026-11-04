@@ -23,9 +23,9 @@
 - https://apocalypsecloset.com/en/blog/ouji-fashion-guide.html
 - https://apocalypsecloset.com/en/blog/cottagecore-style-guide.html
 
-## Next batch32: provisional, not translated
+## Batch32 locally complete, not yet published
 
-`data/en-intent-plans/batch32.json` records ten PENDING sources: Business Casual, Smart Casual, Power Dressing, Preppy, Ivy, Classic, Casual Chic, Quiet Luxury, Old Money and Balletcore. These are outline-screened plans only. Full-source editorial review, translation and all publication gates remain. No EN stubs or bilingual additions exist for this next queue, and it does not increase the 149 count.
+Ten full source-locked EN translations are implemented and locally QA-passed in `data/en-translations/batch32.json`: Business Casual, Smart Casual, Power Dressing, Preppy, Ivy, Classic, Casual Chic, Quiet Luxury, Old Money and Balletcore. They do not increase the 149 published count until release verification. See `docs/en-translation-batch32.md` and `docs/qa/en-batch32-*.json`. Next: PR preview comparison, normal merge, production verification and a publication checkpoint.
 
 ## Resume
 

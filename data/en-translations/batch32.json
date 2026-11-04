@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "business-casual-la-gi",
+    "en_slug": "business-casual-women-guide",
+    "title": "What Is Business Casual? Women’s Office Outfit Guide",
+    "description": "Assess workplace requirements, fit, coverage and footwear, with five women’s Business Casual combinations and distinctions from Smart Casual.",
+    "primary_intent": "Workplace formality and practical garment choices; Corporate Goth and Office Siren retain their aesthetic-specific intents",
+    "role": "DRESS_CODE_GUIDE",
+    "source_sha256": "4363179e788a6ab244c797a0247a55d43176c34a7d9362ded1a74ee897d5f5df",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "smart-casual-la-gi",
+    "en_slug": "smart-casual-women-guide",
+    "title": "What Is Smart Casual? Outfits for the Setting",
+    "description": "Use occasion, role, formality and garment finish to build women’s Smart Casual outfits, including denim, dark palettes and warm-weather layers.",
+    "primary_intent": "Mixed-formality dress guidance by setting; separate from Business Casual work context and Casual Chic visual finish",
+    "role": "DRESS_CODE_GUIDE",
+    "source_sha256": "90e96e2a33754e2dcb682dbc75cb83714ba429b00c18a647431e704a01ee7a6b",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "power-dressing",
+    "en_slug": "power-dressing-style-guide",
+    "title": "What Is Power Dressing? Presence through Clothing",
+    "description": "Explore tailoring, scale and finish through six power-dressing formulas, historical context and distinctions from Office Siren and work dress codes.",
+    "primary_intent": "Clothing and perceived authority through silhouette/context; Office Siren internet persona remains narrower",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "37577a5c962d6b4c1d625a5c5edb5459db0fbe781fab73d16a5cdd8b32f45fdd",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "preppy-style-la-gi",
+    "en_slug": "preppy-style-guide",
+    "title": "What Is Preppy Style? Collegiate Outfit References",
+    "description": "Understand collars, knits, pleats and sporting details, with five women’s Preppy outfit formulas and clear Ivy, Old Money and Academia boundaries.",
+    "primary_intent": "Uniform and collegiate style vocabulary; Ivy historical reference and Academia specialists remain separate",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "1150101730f87d45a6a51853c065fb6ec6cb7522b755e2e0a33780e22d69054e",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "ivy-style",
+    "en_slug": "ivy-style-guide",
+    "title": "What Is Ivy Style? Ivy League Clothing versus Preppy",
+    "description": "Explore Ivy’s campus garment history, relaxed tailoring and six women’s outfit formulas, with Preppy comparisons and warm-weather adaptations.",
+    "primary_intent": "Ivy League style context and wardrobe references; broader Preppy overview retains its own primary target",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "176e84b8c2d0a70b95d0b49c064954ba6e4ce4276e692e30fef4a8856d076020",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "classic-style-la-gi",
+    "en_slug": "classic-style-women-guide",
+    "title": "What Is Classic Style? A Versatile Women’s Wardrobe",
+    "description": "Build repeatable Classic outfits through familiar cuts, clear proportions and useful wardrobe roles, including dark palettes and practical garment checks.",
+    "primary_intent": "Classic-style wardrobe lines and repeated garment relationships; separate from vintage-period dressing and quiet-luxury material claims",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "83d710819db0859006f46932c5fcc85fc1bfa176e123ae9c1d5dd06a246e9676",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "casual-chic-la-gi",
+    "en_slug": "casual-chic-style-guide",
+    "title": "What Is Casual Chic? Relaxed and Polished Outfits",
+    "description": "Use existing everyday clothes with deliberate proportions, textures and finishing details, through seven Casual Chic formulas and practical wardrobe planning.",
+    "primary_intent": "Relaxed-polished visual styling; distinguish dress-code guidance and minimalist wardrobe philosophy",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "e990a7b5026875f4e2f984913d4d1a1397433e7613841fe4eaf4b626d5a8340b",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quiet-luxury-la-gi",
+    "en_slug": "quiet-luxury-style-guide",
+    "title": "What Is Quiet Luxury? Quality beyond Logos",
+    "description": "Assess cut, construction, fit and expected use beyond branding, with dark Quiet Luxury palettes, garment checklists and cost-per-wear examples.",
+    "primary_intent": "Understated quality and assessing garments; separate from Old Money social imagery and general Classic Style",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "4f374bf912b5aaa7aac25c56ed11d67df1f1c23e813ac82ea8c0a8a961e7f916",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "old-money-la-gi",
+    "en_slug": "old-money-style-guide",
+    "title": "What Is Old Money Style? Clothing and Context",
+    "description": "Distinguish inherited-wealth imagery from actual status, compare adjacent aesthetics and build five Old Money-inspired outfits from useful garments.",
+    "primary_intent": "Old Money visual references and historical/social limitations; avoid presenting price or class as identity proof",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "7bc054bf49e987bacc82d2cd6684e507823577b3a2c6ab33a5665945def2dab2",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "balletcore-la-gi",
+    "en_slug": "balletcore-style-guide",
+    "title": "What Is Balletcore? Dancewear-Inspired Outfit Ideas",
+    "description": "Explore wraps, tulle, flats and movement through wearable Balletcore combinations, dark palettes and distinctions from Coquette and Sporty Chic.",
+    "primary_intent": "Ballet-rehearsal clothing references; separate from ballet-flat garment guide, Angelcore and Coquette",
+    "role": "STYLE_GUIDE",
+    "source_sha256": "25b15435d2c5e30042dee1287a538625d85a6bd01e69714bdaa056757216d268",
+    "published_date": "2026-11-04"
+  }
+]
