@@ -1,5 +1,5 @@
 {
-  "status": "PROVISIONAL_PLAN_ONLY_NO_EN_PAGES",
+  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -26,8 +26,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "smart-casual-la-gi",
@@ -55,8 +55,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "power-dressing",
@@ -92,8 +92,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "preppy-style-la-gi",
@@ -120,8 +120,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "ivy-style",
@@ -154,8 +154,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "classic-style-la-gi",
@@ -182,8 +182,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "casual-chic-la-gi",
@@ -207,8 +207,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "quiet-luxury-la-gi",
@@ -236,8 +236,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "old-money-la-gi",
@@ -269,8 +269,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "balletcore-la-gi",
@@ -300,8 +300,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     }
   ]
 }
