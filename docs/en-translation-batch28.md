@@ -31,3 +31,7 @@ Ten complete item/occasion translations; 109 published pairs before release, 119
 - Preview, production, deployment checks and final tracker publication status are recorded after verification. No page is counted as published before that point.
 
 Evidence: `docs/qa/en-batch28-*.json`; complete source-locked translations: `data/en-translations/batch28.json` and its ten TSV files.
+
+## Publication evidence
+
+PR #44 merged as `3f0ee619d4c65697ddf67d84c4e7262002fed97a`. Preview `https://790154a1.doquochau-github-io.pages.dev` and production each byte-match all 53 release files: ten EN, ten VI, 31 refreshed older EN pages, Journal and sitemap. Five master checks succeeded, including Workers Builds. The branch Worker failure had no diagnostic annotations; Pages preview succeeded. No Worker configuration edits were made. Tracker publication count is 119 pairs, 97 pending. EN-only originals are additional.
