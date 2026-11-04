@@ -1,0 +1,261 @@
+{
+  "base": "https://apocalypsecloset.com",
+  "checked": 51,
+  "results": [
+    {
+      "path": "blog/ao-baby-tee-form-dep-tren-shopee.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/cach-khu-mui-boots.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/cach-lam-mem-boots-moi.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/cach-phoi-do-cho-nguoi-beo-bung-nu.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/phoi-do-cho-nguoi-gay-alt-fashion.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/phoi-do-dang-qua-le.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/phoi-do-dang-tam-giac-nguoc.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/phoi-do-nu-ca-tinh-cho-nguoi-map.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "blog/quan-baggy-cho-nguoi-thap.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/airport-outfits-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alt-fashion-size-guide-online.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-beach-outfits-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-concert-outfits-for-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-fashion-accessories.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-going-out-outfits-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-t-shirt-outfits-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/baddie-streetwear-guides.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/baggy-pants-outfits-women.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/baggy-pants-petite-fit-guide.html",
+      "exact": false,
+      "error": "curl: (22) The requested URL returned error: 404\n"
+    },
+    {
+      "path": "en/blog/buying-baby-tees-shopee-fit-guide.html",
+      "exact": false,
+      "error": "curl: (22) The requested URL returned error: 404\n"
+    },
+    {
+      "path": "en/blog/combat-boots-vs-platform-boots.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/egirl-alt-girl-guides.html",
+      "exact": false,
+      "error": null
+    },
+    {
+      "path": "en/blog/flared-pants-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/flared-skirt-outfit-ideas.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/goth-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-break-in-new-boots.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-remove-boot-odor.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-a-line-skirts.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-womens-boots.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-wash-black-clothes.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/inverted-triangle-outfit-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/leather-jacket-clothing-care.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/nylon-vs-twill-cargo-pants.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/off-the-shoulder-top-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/outfits-fuller-stomach-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/pear-shaped-outfit-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/petite-alternative-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/plus-size-alternative-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/punk-grunge-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/slim-frame-alternative-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-are-baggy-pants.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-a-crop-top.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-crop-top-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-footwear-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-straight-tailored-trouser-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-tops-styling-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-trouser-styling-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "sitemap.xml",
+      "exact": true,
+      "error": null
+    }
+  ]
+}
