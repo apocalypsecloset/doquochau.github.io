@@ -32,3 +32,8 @@ The `mua-sam-alt-fashion` hub needs full-layout review before an extraction adap
 ## Resume
 
 Fetch master and reconcile concurrent work. Read this checkpoint, all 216 CSV rows and SEO guardrails. Select 10–20 distinct targets and read complete sources/references. Translate every text/alt segment with source SHA locks, plus semantic attribute labels. Generate only complete counterparts before sync; refresh guarded links; QA source parity, HTML/schema, images, local paths/fragments, title/meta, reciprocal vi/en and self-canonical, sitemap/Journal and desktop/mobile. Verify preview before normal merge. Wait for all deployment checks before the final production comparison and update the tracker only after exact verification. Persist a checkpoint. Do not count maintenance, plans or partial pages as translations.
+
+
+## Batch35 prepared — publication pending
+
+Ten complete translations passed local source, HTML/schema, image and desktop/mobile QA. Tracker:179 MERGED,10 COMPLETE_QA_PASSED,27 PENDING. Published count remains179. Resume this release before selecting another batch: exact preview comparison, normal PR merge, all production deployment checks, then exact production verification. Full manifest/TSVs and evidence: `docs/en-translation-batch35.md`.
