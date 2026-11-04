@@ -32,3 +32,8 @@ The `mua-sam-alt-fashion` hub still needs full-layout review before an extractio
 ## Resume
 
 Fetch master, reconcile concurrent work and read this checkpoint, all 216 CSV rows and SEO guardrails. Choose 10–20 unique intents; retain the existing EN-only and translated primary targets. Read full originals/references; translate every text/alt segment with source SHA locks. Generate all complete pages before sync; refresh guarded internal links; QA source parity, HTML/schema, images, local links/fragments, metadata, reciprocal hreflang/canonical, sitemap/Journal and desktop/mobile. Verify preview before normal PR merge, wait for deployment, compare production bytes and persist checkpoint. Never count provisional plans, partial pages or maintenance as translations.
+
+
+## Batch34 prepared — publication pending
+
+Ten complete translations are locally implemented and QA passed: Shopee set-versus-separate buying, alternative VND500000 budget, cargo buying, platform budget buying, E-Girl accessories, Goth clothing buying, E-Girl VND500000 budget, Baddie VND700000 budget, corset buying and leather-jacket buying. See `docs/en-translation-batch34.md`, the complete manifest/TSVs and QA JSON. Tracker:169 MERGED,10 COMPLETE_QA_PASSED,37 PENDING. Published count remains169 until preview, normal merge, deployment checks and final production comparison succeed. Resume this release before selecting another batch.
