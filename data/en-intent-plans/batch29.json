@@ -1,5 +1,5 @@
 {
-  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
+  "status": "MERGED_PR45_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -31,7 +31,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "alternative-cafe-outfits-women",
       "primary_intent_provisional": "Café seating, lighting, venue design and seven formulas; narrower than general going-out or night-out guides",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -66,7 +66,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "alternative-wedding-guest-outfits-women",
       "primary_intent_provisional": "Personal alternative styling within the actual wedding invitation and dress code; not generic night-out",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -118,7 +118,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "alternative-beach-outfits-women",
       "primary_intent_provisional": "Beach activities, heat, wind, sand and packing; not general summer outfit overview",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -167,7 +167,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "airport-outfits-women",
       "primary_intent_provisional": "Travel duration, seated movement, layers and baggage; distinguish everyday sporty styling",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -201,7 +201,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "femme-fatale-aesthetic-style-guide",
       "primary_intent_provisional": "Character and visual-code aesthetic guide; distinguish broad dark feminine mood and practical dark feminine outfit specialist",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -229,7 +229,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "what-are-low-rise-pants",
       "primary_intent_provisional": "Waist rise definition and fit; distinguish specific denim/cargo styles and styling formulas",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -263,7 +263,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "what-is-a-crop-top",
       "primary_intent_provisional": "Cropped-length definition and construction; existing crop-top outfit article remains styling target",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -296,7 +296,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "leggings-outfit-ideas-women",
       "primary_intent_provisional": "Close-fitting stretch leggings and layering/coverage choices; not jogger/athleisure overview",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -335,7 +335,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "parachute-pants-outfits-women",
       "primary_intent_provisional": "Parachute fabric, adjustable volume and proportions; definition article remains separate",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     },
@@ -375,7 +375,7 @@
       "article_layout": "standard",
       "proposed_en_slug": "baggy-pants-outfits-women",
       "primary_intent_provisional": "Roomy trouser volume and top lengths; distinguish baggy definition, wide-leg and straight-leg specialists",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR45_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
       "draft_status": "FULL_TEXT_SEGMENT_COVERAGE_PASSED"
     }

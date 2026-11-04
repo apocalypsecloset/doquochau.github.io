@@ -36,3 +36,7 @@ Ten complete source-locked translations. Baseline: 119 published pairs (PR #44 p
 - Homepage/POD/Fourthwall/shop/routing/PR #9 untouched. Preview and production verification are required before recording the ten as published.
 
 Evidence: `docs/qa/en-batch29-*.json`; complete translations: `data/en-translations/batch29.json` and ten TSV files.
+
+## Publication
+
+PR #45 merged as `4762abb52ff2d35ae95ae5853ee88b16a3eb4e8e`. Preview `https://bbd2b48f.doquochau-github-io.pages.dev` and production each match all 40 release files byte for byte: ten EN, ten VI, eighteen refreshed older EN pages, Journal and sitemap. Branch Pages succeeded; branch Workers failed without diagnostic annotations. Master deployment checks are recorded separately in the release-check evidence. No Worker or shop configuration changes were made. Tracker: 129 MERGED and 87 PENDING. The second internal-link scan finds zero eligible references left to promote.
