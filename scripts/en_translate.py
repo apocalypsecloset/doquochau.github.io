@@ -61,7 +61,7 @@ def generate(config):
   for n in [part]+list(part.find_all()):
    for attr in ['aria-label','title']:
     if attr in n.attrs and VI.search(n[attr]):
-     n[attr]={'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading','Bảng thông tin':'Information table'}.get(n[attr], 'Article navigation')
+     n[attr]=config.get('attribute_translations',{}).get(n[attr], {'Mục lục bài viết':'On this page','Tóm tắt nhanh':'At a glance','Hướng dẫn đọc tiếp':'Further reading','Bảng thông tin':'Information table'}.get(n[attr], 'Article navigation'))
  # A translated fragment may start with a word where VI began with punctuation.
  # Keep words separated across inline tags without changing any content nodes.
  for part in parts:
@@ -77,7 +77,7 @@ def generate(config):
  for p in parts:
   for a in p.select('a[href]'):
    h=a['href']
-   if h=='/' and (slug,a.get_text(strip=True)) in {('phoi-do-nu-ca-tinh-di-choi','the original outfit collection'),('phoi-do-nu-ca-tinh-cho-nu-lun','the original alternative outfit collection')}:
+   if h=='/' and (slug,a.get_text(strip=True)) in {('phoi-do-nu-ca-tinh-di-choi','the original outfit collection'),('phoi-do-nu-ca-tinh-cho-nu-lun','the original alternative outfit collection'),('set-do-nu-ca-tinh-shopee','the original alternative outfit collection'),('outfit-nu-ca-tinh-duoi-500k','the original alternative outfit collection')}:
     # The source predates the POD homepage; route this EN reference to the retained outfit directory.
     h='/phoi-do-nu-ca-tinh.html'
    if h.startswith('#') or urlsplit(h).scheme and urlsplit(h).netloc!='apocalypsecloset.com':continue
