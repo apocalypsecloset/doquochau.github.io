@@ -1,34 +1,32 @@
 # Translation checkpoint — 2026-11-04
 
-- Latest published content: PR #47, master `2441619bfbf2d13cbcbc581fafa54fe6b973a1a2`.
-- **139/216 full translation pairs published and production-verified; 77 pending.** Two EN-only originals are additional: 141 English Journal cards.
-- This continuation completed batches28–30: 30 full translations, 57,034 English article words, 193 original image placements, 52 tables and 134 FAQs. Each batch has source-preservation, schema/link/canonical/hreflang, image, desktop/mobile, preview and production evidence.
-- Batch28: PR #44, `3f0ee619d4c65697ddf67d84c4e7262002fed97a`; all 53 preview/production files match and all five master checks succeeded.
-- Batch29: PR #45, `4762abb52ff2d35ae95ae5853ee88b16a3eb4e8e`; all 40 preview/production files match and all five master checks succeeded. PR #46 persisted checkpoint129.
-- Batch30: PR #47; all 41 preview/production files match and all five master checks succeeded. All 29 manifest gates and 71 HTTP image endpoints pass. Twenty desktop/mobile views have no body overflow; mobile FAQ interaction passes.
-- The 216-row tracker contains exactly 139 MERGED and 77 PENDING, with no incomplete public EN pages. All original VI sitemap URLs remain. VI titles, metadata, canonicals, URLs, bodies and images remain byte-identical outside marked bilingual additions for these batches.
-- Full translations and source locks: `data/en-translations/batch28.json`, `batch29.json`, `batch30.json` and their TSV files. Evidence: `docs/en-translation-batch28.md`, `docs/en-translation-batch29.md`, `docs/en-translation-batch30.md` and `docs/qa/en-batch28-*.json` through `en-batch30-*.json`.
-- Guarded link maintenance promoted 138 links across 31+18+19 older-page touches in these releases. Those are maintenance touches, not extra translations or necessarily distinct pages. Every original-language link stays. The final read-only scan finds zero eligible links and zero skipped pages.
-- All 141 EN pages have one H1 and self-canonical, with unique titles, descriptions and canonicals. No GSC query × page access: editorial screening only, no confirmed cannibalization diagnosis or URL consolidation.
-- Homepage/POD/Fourthwall/shop/routing/PR #9 untouched. Branch Workers failures lacked diagnostic details; reports distinguish them from successful production-master checks.
+- Latest published content: PR #49, master `796fd146ee310ab63d1e3b0b3cfc0b0e6c6f6bf4`.
+- **149/216 full translation pairs published and production-verified; 67 pending.** Two additional EN-only originals make 151 English Journal cards.
+- Batch31 adds ten full translations: Office Siren, Avant-garde, Rockabilly, Light Academia, Fairycore, Angelcore, Mermaidcore, Mori Kei, Ouji and Cottagecore. All 1,527 indexed source text/alt segments are translated: 19,688 English article words, 263 headings, 61 original image placements, three tables and 25 FAQs.
+- All 35 preview files and 35 production files match the reviewed local files byte-for-byte. All five checks on the production-master content commit succeeded. Evidence: `docs/qa/en-batch31-preview.json`, `en-batch31-production.json`, `en-batch31-release-checks.json`. Branch/master conclusions are recorded separately; no override was used.
+- All 30 manifest gates pass. All ten original VI files are byte-identical outside marked bilingual additions; all 216 original VI sitemap URLs remain. VI URL/slug/title/meta/canonical/body/images are preserved.
+- All 151 EN pages have one H1, self-canonical and unique title/description/canonical. All 66 distinct HTTP image endpoints pass. Twenty desktop/mobile views have no body overflow, tables scroll, and the mobile Office Siren glasses FAQ opens with a complete visible answer. Mobile Cottagecore H1 wraps inside the viewport.
+- Guarded maintenance promotes 21 links in 13 older EN pages; each page's own VI links remain. Those touches are not extra translations. The final scan finds zero eligible links and zero skipped pages.
+- No GSC query × page access is available. Intent screening is editorial only; no confirmed cannibalization diagnosis, deletion, consolidation, redirect or noindex changes. Community-history limits and dated trend reporting are documented in `docs/en-translation-batch31.md`.
+- Homepage/POD/Fourthwall/shop/routing/PR #9 untouched. Earlier release details remain in batch28–30 reports; checkpoint139 was persisted through PR #48. The old Office Siren draft is archived; use the reviewed normal manifest.
 
 ## Latest ten published English URLs
 
-- https://apocalypsecloset.com/en/blog/what-are-parachute-pants.html
-- https://apocalypsecloset.com/en/blog/what-are-baggy-pants.html
-- https://apocalypsecloset.com/en/blog/what-are-jogger-pants.html
-- https://apocalypsecloset.com/en/blog/what-is-athleisure.html
-- https://apocalypsecloset.com/en/blog/acubi-style-guide.html
-- https://apocalypsecloset.com/en/blog/gorpcore-style-guide.html
-- https://apocalypsecloset.com/en/blog/downtown-girl-style-guide.html
-- https://apocalypsecloset.com/en/blog/model-off-duty-style-guide.html
-- https://apocalypsecloset.com/en/blog/sporty-chic-style-guide.html
-- https://apocalypsecloset.com/en/blog/blokecore-style-guide.html
+- https://apocalypsecloset.com/en/blog/office-siren-style-guide.html
+- https://apocalypsecloset.com/en/blog/avant-garde-fashion-guide.html
+- https://apocalypsecloset.com/en/blog/rockabilly-style-guide.html
+- https://apocalypsecloset.com/en/blog/light-academia-style-guide.html
+- https://apocalypsecloset.com/en/blog/fairycore-style-guide.html
+- https://apocalypsecloset.com/en/blog/angelcore-style-guide.html
+- https://apocalypsecloset.com/en/blog/mermaidcore-style-guide.html
+- https://apocalypsecloset.com/en/blog/mori-kei-style-guide.html
+- https://apocalypsecloset.com/en/blog/ouji-fashion-guide.html
+- https://apocalypsecloset.com/en/blog/cottagecore-style-guide.html
 
-## Batch31 locally complete, not counted as published
+## Next batch32: provisional, not translated
 
-Ten full source-locked EN translations are implemented and QA-passed in `data/en-translations/batch31.json`: Office Siren, Avant-garde, Rockabilly, Light Academia, Fairycore, Angelcore, Mermaidcore, Mori Kei, Ouji and Cottagecore. Tracker: 139 MERGED, 10 COMPLETE_QA_PASSED, 67 PENDING. See `docs/en-translation-batch31.md` and its QA evidence. Next: PR preview comparison, normal merge, production verification and publication checkpoint. The earlier Office Siren draft is historical; its reviewed translation is now in the normal manifest.
+`data/en-intent-plans/batch32.json` records ten PENDING sources: Business Casual, Smart Casual, Power Dressing, Preppy, Ivy, Classic, Casual Chic, Quiet Luxury, Old Money and Balletcore. These are outline-screened plans only. Full-source editorial review, translation and all publication gates remain. No EN stubs or bilingual additions exist for this next queue, and it does not increase the 149 count.
 
 ## Resume
 
-Read current master, this checkpoint, the full 216-row tracker and `docs/en-translation-seo-guardrails.md`; reconcile concurrent merges before choosing the next batch. Preserve all existing VI URLs/slug/title/meta/canonical/body except bilingual additions. Translate full batches of 10–20. Recheck source hashes and target intents for the batch31 drafts. After all EN files exist and sync is complete, run the guarded internal-link refresh, then static/schema/image/source-preservation and desktop/mobile QA. Normal-merge only after QA; verify preview and deployed files before marking publication. Never count provisional plans, incomplete pages or maintenance link changes as translations. Check current primary sources for shopping, prices or availability rather than carrying old claims forward.
+Fetch current master and reconcile concurrent work. Read this checkpoint, the 216-row CSV and SEO guardrails before choosing targets. Preserve VI URLs, title, metadata, self-canonical, body and images except marked bilingual additions. Translate complete batches of 10–20 with source SHA locks. Recheck next-batch target intents against all existing EN pages; read entire originals and references before drafting. Generate all complete EN pages before sync; then refresh links and run source/HTML/schema/image/metadata/canonical/hreflang/sitemap/Journal and desktop/mobile QA. Verify preview before normal PR merge, wait for production deployment, compare released files and persist a checkpoint. Never count plans, partial pages or maintenance touches as translations.

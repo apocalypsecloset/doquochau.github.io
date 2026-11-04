@@ -45,3 +45,7 @@ Baseline: master `424bc599b8038c9f015dcb3847602be49167226d`, 139/216 published t
 - No GSC query × page access is available: overlap screening is editorial only. No confirmed cannibalization diagnosis, deletion, consolidation, redirect or noindex change.
 
 Evidence: `docs/qa/en-batch31-*.json`. Source-locked full translations: `data/en-translations/batch31.json` and ten TSV files. Preview and production checks remain required before marking publication.
+
+## Release confirmation
+
+PR #49 merged normally as `796fd146ee310ab63d1e3b0b3cfc0b0e6c6f6bf4` from reviewed head `aa8973fcfea94a5371c10593981aa512c6a8d986`; no check override. All 35 preview files and all 35 production files match byte-for-byte: ten new EN pages, ten VI pages, thirteen maintained older EN pages, Journal and sitemap. All five production-master checks succeeded; actual branch checks are recorded separately in `docs/qa/en-batch31-release-checks.json`. Final guarded link scan finds zero eligible links and zero skipped pages. The tracker now has 149 MERGED and 67 PENDING, plus two additional EN-only originals (151 Journal cards).
