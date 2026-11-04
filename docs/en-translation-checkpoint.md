@@ -28,28 +28,17 @@ A separate reviewed change promotes completed English counterparts in older EN a
 - https://apocalypsecloset.com/en/blog/tennis-skirt-outfit-ideas.html
 - https://apocalypsecloset.com/en/blog/bubble-skirt-outfit-ideas.html
 
-## Proposed batch28: ten pending sources
+## Batch28 ready for release
 
-No batch28 English pages or placeholder URLs have been created. Confirm current source and intent before choosing final English slugs.
-
-- `/blog/phoi-do-voi-chan-vay-jean-ngan.html`
-- `/blog/phoi-do-voi-chan-vay-jean-dai.html`
-- `/blog/phoi-do-voi-chan-vay-xoe.html`
-- `/blog/phoi-do-voi-chan-vay-duoi-ca.html`
-- `/blog/phoi-do-voi-ao-tre-vai-nu.html`
-- `/blog/ao-ong-nu-phoi-voi-gi.html`
-- `/blog/phoi-do-nu-ca-tinh-mua-he.html`
-- `/blog/phoi-do-nu-ca-tinh-di-choi.html`
-- `/blog/outfit-di-choi-dem-badgirl.html`
-- `/blog/phoi-do-voi-quan-tay-ong-suong-nu.html`
+Ten full translations are implemented and locally QA-passed in `data/en-translations/batch28.json`. They are not counted as published yet. See `docs/en-translation-batch28.md` and `docs/qa/en-batch28-*.json`. All 63 distinct HTTP image endpoints pass. The 10 VI sources preserve every byte outside bilingual additions. Preview/deployment verification and publication checkpoint are next.
 
 ## Resume procedure
 
 Read current master, this checkpoint, the full 216-row tracker and guardrails; reconcile concurrent publications. Preserve all existing slugs and Vietnamese source metadata/body outside bilingual additions. Translate full batches of 10–20. After all EN pages exist and sync is complete, run `refresh_en_internal_links.py --apply --report <batch evidence path>` before regression QA, so older English pages link to newly available counterparts. The helper preserves every link to each page's own VI original. QA all changed HTML, schemas, links, original image assets and mobile/desktop behavior before PR/merge. Verify preview and deployed files before recording publication. For current shopping/price/availability guidance, use verified current primary sources rather than carrying old product claims forward.
 
-## Batch28 source-layout finding
+## Batch28 wrapped source adapter
 
-The provisional, outline-screened intent plan is saved at `data/en-intent-plans/batch28.json`; it creates no public EN URLs. The night-out source is a wrapped article: H1, intro and cover are inside `article#main-content`, followed by `div.article-content` plus trailing references/reading navigation. The standard article extractor intentionally rejects it. Implement and QA a full wrapped-article adapter before translating that page; do not use the collection-hub adapter or extract only the inner div and silently omit trailing content. Other nine queued sources have the standard article layout. All ten still require full editorial source review and translation.
+The full wrapped night-out article is now extracted without losing trailing content or duplicating its H1, intro or cover. Source preservation and tag-count parity are recorded in `docs/qa/en-batch28-wrapped-extraction.json`. No Vietnamese source structure changes were made.
 
 ## Session completion evidence
 

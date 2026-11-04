@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-jean-ngan",
+    "en_slug": "denim-mini-skirt-outfits",
+    "title": "Denim Mini Skirt Outfits: Wash, Shape and Proportion",
+    "description": "Choose tops, washes, layers and footwear for denim mini skirts, with seven formulas and practical movement checks.",
+    "primary_intent": "Denim-mini wash, seams, stiffness and proportions; general mini-length guide remains broader",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "4f94cda08c43944c5f57521dc03be502483b2f6431233ea38ca6744f50726981",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-jean-dai",
+    "en_slug": "long-denim-skirt-outfits",
+    "title": "Long Denim Skirt Outfits: Tops, Shoes and Proportions",
+    "description": "Style long denim skirts through shape, waistband, slits, wash and footwear, with honest shorter-skirt comparisons.",
+    "primary_intent": "Long denim structure, slit and footwear; general long-skirt and black-skirt guides remain separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "f28cad178cd1db0a39bbac4a78ba281886045ed5b68d9e8a77982fb3eab6f140",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-xoe",
+    "en_slug": "flared-skirt-outfit-ideas",
+    "title": "Flared Skirt Outfits: Fullness, Tops and Movement",
+    "description": "Balance flared skirt fullness across mini, midi and maxi lengths through top structure, footwear and movement.",
+    "primary_intent": "Full or flared hem movement across lengths; distinguish gradual A-line, pleats and inward bubble hems",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "8466cf74e02115817629e4b16afd522ff6a2f241442a44c8e4e04f1c9c639ae4",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-chan-vay-duoi-ca",
+    "en_slug": "mermaid-skirt-outfit-ideas",
+    "title": "Mermaid Skirt Outfits: Flare, Fit and Top Choices",
+    "description": "Choose mermaid skirt tops by flare placement, hip fit, fabric and hem length, with practical styling and movement checks.",
+    "primary_intent": "Fitted skirt and low flare placement; distinguish Mermaidcore aesthetic and general long skirts",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "af6885badbbe3bb6455707e2a4d86a638d5f8f355f93a6deac8e8f042fc29b6e",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-ao-tre-vai-nu",
+    "en_slug": "off-the-shoulder-top-outfits",
+    "title": "Off-Shoulder Top Outfits: Neckline, Fit and Balance",
+    "description": "Compare Bardot, draped and one-shoulder tops through support, movement, bottoms and four occasion-based outfits.",
+    "primary_intent": "Open-shoulder neckline construction, support and movement; crop-length and tube-top specialists distinct",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "77d17ef3cd3304c21d39160ba0fb3950a12400322efe34847c744b82375ecc7c",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "ao-ong-nu-phoi-voi-gi",
+    "en_slug": "tube-top-outfit-ideas",
+    "title": "Tube Top Outfits: Shape, Layers and Ten Formulas",
+    "description": "Style fitted, longer and flared tube tops through waistbands, volume, layers and ten alternative outfit formulas.",
+    "primary_intent": "Strapless tube-top fit and layering across lengths; distinguish off-shoulder sleeves and general cropped length",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "9d0163d3b8138ffbbcbe1d0308d32c5760393583373f50914e77c3ad8c2a14f7",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-nu-ca-tinh-mua-he",
+    "en_slug": "alternative-summer-outfits-women",
+    "title": "Alternative Summer Outfits: Fabric, Shape and Details",
+    "description": "Build alternative summer outfits with suitable fabric, deliberate proportions and selected details across six style routes.",
+    "primary_intent": "Warm-weather alternative outfit system across garments; distinguish black-clothing heat specialist and individual item guides",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "7585f7a2107dc5c3db1aa02a5c7f32674ca3e95d0932ff92c433141a0a59bb22",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
+    "en_slug": "alternative-going-out-outfits-women",
+    "title": "Alternative Going-Out Outfits for Different Plans",
+    "description": "Choose alternative outfits for caf\u00e9s, walking, cinema, dinner and afternoon-to-evening plans by movement and duration.",
+    "primary_intent": "Occasion-selection overview by activity and duration; cafe, night-out, concert and beach specialists stay narrower",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "9941a254a10cf52c87e9525b05dab44c86a82a1abae1456e4949a3d8148ff991",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "outfit-di-choi-dem-badgirl",
+    "en_slug": "alternative-night-out-outfits-women",
+    "title": "Alternative Night-Out Outfits: Seven Practical Routes",
+    "description": "Adapt seven alternative night-out formulas to venue type, lighting, movement and coverage, with practical pre-outing checks.",
+    "primary_intent": "Evening venue-type styling and seven formulas; distinguish daytime outing overview and concert mobility specialist",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "e10911186f94a91cdb06d57f4dd35e4bfc13c8f2a4987b81c7c73b140c1e1b8c",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-quan-tay-ong-suong-nu",
+    "en_slug": "womens-straight-tailored-trouser-outfits",
+    "title": "Straight Tailored Trouser Outfits: Fit, Pleats and Hems",
+    "description": "Style straight tailored trousers through rise, pleats, top length and footwear across seven adaptable outfit formulas.",
+    "primary_intent": "Straight tailored fabric, rise, creases and hems; distinguish straight denim and general wide-leg volume",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "e987f53c514bd03033fed66c99e2d326402fff591f06a9d69f878637dac8f937",
+    "published_date": "2026-11-04"
+  }
+]

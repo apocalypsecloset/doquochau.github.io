@@ -1,7 +1,8 @@
 """Generate English pages only from complete, source-hash-locked editorial translations."""
 from bs4 import BeautifulSoup, Comment
 from pathlib import Path
-import hashlib,json,re,sys,posixpath,csv
+import hashlib,json,re,sys,posixpath,csv,copy
+from datetime import date
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 VI=re.compile('[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]',re.I)
@@ -9,7 +10,14 @@ def source(slug):
  raw=(ROOT/'blog'/f'{slug}.html').read_text()
  raw=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',raw,flags=re.S)
  s=BeautifulSoup(raw,'html.parser')
- parts=[s.h1,s.select_one('.ac-article-intro'),s.select_one('.apcl-standard-cover'),s.select_one('article.article-content')]
+ body=s.select_one('article.article-content')
+ if body is None and s.select_one('article#main-content > div.article-content'):
+  # Preserve the complete wrapped article, including hero details and trailing references.
+  # Split out the three opening parts once; never restrict extraction to the inner div.
+  body=copy.deepcopy(s.select_one('article#main-content'))
+  for selector in ['h1','.ac-article-intro','.apcl-standard-cover']:
+   node=body.select_one(selector);assert node is not None,slug;node.decompose()
+ parts=[s.h1,s.select_one('.ac-article-intro'),s.select_one('.apcl-standard-cover'),body]
  assert all(parts),slug
  texts=[]
  for p in parts:
@@ -69,6 +77,9 @@ def generate(config):
  for p in parts:
   for a in p.select('a[href]'):
    h=a['href']
+   if slug=='phoi-do-nu-ca-tinh-di-choi' and h=='/' and a.get_text(strip=True)=='the original outfit collection':
+    # The source predates the POD homepage; route this EN reference to the retained outfit directory.
+    h='/phoi-do-nu-ca-tinh.html'
    if h.startswith('#') or urlsplit(h).scheme and urlsplit(h).netloc!='apocalypsecloset.com':continue
    parsed=urlsplit(h)
    path=posixpath.normpath('/'+parsed.path[3:] if h.startswith('../') else parsed.path)
@@ -155,7 +166,8 @@ def generate(config):
  for lang,href in [('en',url),('vi',vi)]:
   l=template.new_tag('link',rel='alternate',hreflang=lang,href=href);template.head.append(l)
  for j in template.select('script[type="application/ld+json"]'):j.decompose()
- graph=[{'@type':'BlogPosting','headline':config['title'],'description':config['description'],'inLanguage':'en','datePublished':'2026-11-03','dateModified':'2026-11-03','mainEntityOfPage':{'@type':'WebPage','@id':url},'isBasedOn':{'@id':vi},'image':['https://apocalypsecloset.com'+i['src'] for p in parts for i in p.select('img')],'author':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/'},'publisher':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/','logo':{'@type':'ImageObject','url':'https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp'}}}]
+ published=config.get('published_date','2026-11-03')
+ graph=[{'@type':'BlogPosting','headline':config['title'],'description':config['description'],'inLanguage':'en','datePublished':published,'dateModified':published,'mainEntityOfPage':{'@type':'WebPage','@id':url},'isBasedOn':{'@id':vi},'image':['https://apocalypsecloset.com'+i['src'] for p in parts for i in p.select('img')],'author':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/'},'publisher':{'@type':'Organization','name':'Apocalypse Closet','url':'https://apocalypsecloset.com/','logo':{'@type':'ImageObject','url':'https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp'}}}]
  faq=[]
  for question,answer in faq_pairs(article):
   faq.append({'@type':'Question','name':question.get_text(' ',strip=True),'acceptedAnswer':{'@type':'Answer','text':answer.get_text(' ',strip=True)}})
@@ -167,7 +179,7 @@ def generate(config):
  # Reverse insertion above must retain H1 -> intro -> cover.
  for p in parts[:3]:p.extract()
  for i,p in enumerate(parts[:3]):article.insert(i,p)
- meta=template.new_tag('p',attrs={'class':'article-meta'});meta.string='APOCALYPSE CLOSET EDITORIAL · ENGLISH TRANSLATION · NOVEMBER 3, 2026';article.insert(0,meta)
+ meta=template.new_tag('p',attrs={'class':'article-meta'});meta.string='APOCALYPSE CLOSET EDITORIAL · ENGLISH TRANSLATION · '+date.fromisoformat(published).strftime('%B %-d, %Y').upper();article.insert(0,meta)
  switch=template.new_tag('p');a=template.new_tag('a',href=vi,lang='vi',hreflang='vi');a.string='Read the Vietnamese original';switch.append(a);article.insert(1,switch)
  main.append(article)
  for f in article.select('figure'):f['class']=['article-figure']
