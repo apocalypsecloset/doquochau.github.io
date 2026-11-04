@@ -1,5 +1,5 @@
 {
-  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -29,7 +29,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "quan-baggy-la-gi",
@@ -56,7 +56,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "quan-jogger-la-gi",
@@ -83,7 +83,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "athleisure-la-gi",
@@ -111,7 +111,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "acubi-style-la-gi",
@@ -146,7 +146,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "gorpcore-la-gi",
@@ -179,7 +179,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "downtown-girl-la-gi",
@@ -208,7 +208,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "model-off-duty-la-gi",
@@ -240,7 +240,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "sporty-chic-la-gi",
@@ -274,7 +274,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "blokecore-la-gi",
@@ -308,7 +308,9 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pull_request": 47,
+  "merge_commit": "2441619bfbf2d13cbcbc581fafa54fe6b973a1a2"
 }
