@@ -1,0 +1,178 @@
+{
+  "applied": true,
+  "pages": 13,
+  "links": 21,
+  "changes": [
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "links": [
+        {
+          "old": "/blog/angelcore-la-gi.html",
+          "new": "/en/blog/angelcore-style-guide.html",
+          "label": "Angelcore"
+        },
+        {
+          "old": "/blog/mermaidcore-la-gi.html",
+          "new": "/en/blog/mermaidcore-style-guide.html",
+          "label": "Mermaidcore"
+        },
+        {
+          "old": "/blog/ouji-fashion.html",
+          "new": "/en/blog/ouji-fashion-guide.html",
+          "label": "Ouji Fashion"
+        },
+        {
+          "old": "/blog/angelcore-la-gi.html",
+          "new": "/en/blog/angelcore-style-guide.html",
+          "label": "What Is Angelcore? Angelic References and Everyday Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-academia-outfits-alternative-style.html",
+      "links": [
+        {
+          "old": "/blog/light-academia-la-gi.html",
+          "new": "/en/blog/light-academia-style-guide.html",
+          "label": "What Is Light Academia? Colors, Outfits and the Dark Academia Comparison"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-feminine-guides.html",
+      "links": [
+        {
+          "old": "/blog/office-siren-la-gi.html",
+          "new": "/en/blog/office-siren-style-guide.html",
+          "label": "What Is Office Siren? Sharp Tailoring and Workplace References Explore fitted blazers, pencil skirts, narrow glasses, and the distinction between office-inspired styling and an actual workplace dress code."
+        }
+      ]
+    },
+    {
+      "path": "en/blog/fairy-grunge-style-outfits.html",
+      "links": [
+        {
+          "old": "/blog/fairycore-la-gi.html",
+          "new": "/en/blog/fairycore-style-guide.html",
+          "label": "Fairycore"
+        },
+        {
+          "old": "/blog/fairycore-la-gi.html",
+          "new": "/en/blog/fairycore-style-guide.html",
+          "label": "Fairycore"
+        },
+        {
+          "old": "/blog/cottagecore-la-gi.html",
+          "new": "/en/blog/cottagecore-style-guide.html",
+          "label": "Cottagecore"
+        },
+        {
+          "old": "/blog/fairycore-la-gi.html",
+          "new": "/en/blog/fairycore-style-guide.html",
+          "label": "Fairycore"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/femme-fatale-aesthetic-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/angelcore-la-gi.html",
+          "new": "/en/blog/angelcore-style-guide.html",
+          "label": "Angelcore: References and Everyday Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/flared-pants-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/rockabilly.html",
+          "new": "/en/blog/rockabilly-style-guide.html",
+          "label": "Rockabilly"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-style-babydoll-dresses.html",
+      "links": [
+        {
+          "old": "/blog/angelcore-la-gi.html",
+          "new": "/en/blog/angelcore-style-guide.html",
+          "label": "What Is Angelcore? Angelic References and Everyday Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-techwear.html",
+      "links": [
+        {
+          "old": "/blog/avant-garde-fashion-la-gi.html",
+          "new": "/en/blog/avant-garde-fashion-guide.html",
+          "label": "Avant-Garde Fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-visual-kei.html",
+      "links": [
+        {
+          "old": "/blog/mori-kei.html",
+          "new": "/en/blog/mori-kei-style-guide.html",
+          "label": "What Is Mori Kei? Style and Outfit References"
+        },
+        {
+          "old": "/blog/avant-garde-fashion-la-gi.html",
+          "new": "/en/blog/avant-garde-fashion-guide.html",
+          "label": "What Is Avant-Garde Fashion? Silhouette, Concept, and Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-y2k-fashion.html",
+      "links": [
+        {
+          "old": "/blog/angelcore-la-gi.html",
+          "new": "/en/blog/angelcore-style-guide.html",
+          "label": "Angelcore"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/witch-aesthetic-vs-whimsigoth.html",
+      "links": [
+        {
+          "old": "/blog/cottagecore-la-gi.html",
+          "new": "/en/blog/cottagecore-style-guide.html",
+          "label": "cottagecore"
+        },
+        {
+          "old": "/blog/fairycore-la-gi.html",
+          "new": "/en/blog/fairycore-style-guide.html",
+          "label": "Fairycore"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-black-blazer-outfits.html",
+      "links": [
+        {
+          "old": "/blog/office-siren-la-gi.html",
+          "new": "/en/blog/office-siren-style-guide.html",
+          "label": "What Is Office Siren? Sharp Tailoring and Workplace References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-leather-jacket-outfits.html",
+      "links": [
+        {
+          "old": "/blog/rockabilly.html",
+          "new": "/en/blog/rockabilly-style-guide.html",
+          "label": "Rockabilly"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}

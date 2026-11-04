@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "office-siren-la-gi",
+      "en_slug": "office-siren-style-guide",
+      "source_text_segments": 188,
+      "en_words": 2588,
+      "headings": 26,
+      "images": 9,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "avant-garde-fashion-la-gi",
+      "en_slug": "avant-garde-fashion-guide",
+      "source_text_segments": 121,
+      "en_words": 1814,
+      "headings": 24,
+      "images": 7,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "rockabilly",
+      "en_slug": "rockabilly-style-guide",
+      "source_text_segments": 164,
+      "en_words": 2087,
+      "headings": 26,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "light-academia-la-gi",
+      "en_slug": "light-academia-style-guide",
+      "source_text_segments": 148,
+      "en_words": 1767,
+      "headings": 24,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "fairycore-la-gi",
+      "en_slug": "fairycore-style-guide",
+      "source_text_segments": 168,
+      "en_words": 2037,
+      "headings": 43,
+      "images": 5,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "angelcore-la-gi",
+      "en_slug": "angelcore-style-guide",
+      "source_text_segments": 137,
+      "en_words": 1815,
+      "headings": 27,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "mermaidcore-la-gi",
+      "en_slug": "mermaidcore-style-guide",
+      "source_text_segments": 150,
+      "en_words": 1865,
+      "headings": 32,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "mori-kei",
+      "en_slug": "mori-kei-style-guide",
+      "source_text_segments": 142,
+      "en_words": 1823,
+      "headings": 23,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "ouji-fashion",
+      "en_slug": "ouji-fashion-guide",
+      "source_text_segments": 158,
+      "en_words": 1972,
+      "headings": 22,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cottagecore-la-gi",
+      "en_slug": "cottagecore-style-guide",
+      "source_text_segments": 151,
+      "en_words": 1920,
+      "headings": 16,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    }
+  ],
+  "errors": []
+}

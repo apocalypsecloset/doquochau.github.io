@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "office-siren-la-gi",
+    "en_slug": "office-siren-style-guide",
+    "title": "What Is Office Siren? Tailoring and Everyday Style",
+    "description": "Explore fitted blazers, pencil skirts and slim glasses, then adapt Office Siren proportions to your wardrobe and actual workplace requirements.",
+    "primary_intent": "Fashion aesthetic around tailored lines, neckline and accessories; separate from Corporate Goth workplace specialist and actual business dress codes",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "38a0e6ad40343c3408cf31785f14c8c878e68cad5b210001cbdf6e8ea89794b4",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "avant-garde-fashion-la-gi",
+    "en_slug": "avant-garde-fashion-guide",
+    "title": "What Is Avant-Garde Fashion? Concept and Silhouette",
+    "description": "Explore experimental shape, volume, asymmetry, texture and negative space, with seven ways to adapt avant-garde ideas into everyday outfits.",
+    "primary_intent": "Experimental fashion concepts, shape and construction; separate from any single dark aesthetic or product outfit specialist",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "e991ba0a1cc6d02163ecebb753fc69b210dde49d91a542c59cae74507c8ba221",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "rockabilly",
+    "en_slug": "rockabilly-style-guide",
+    "title": "What Is Rockabilly? Music, Style and Outfit Ideas",
+    "description": "Understand rockabilly music and clothing references, compare Greaser and Psychobilly, and build rebel-denim or pin-up-inspired outfits.",
+    "primary_intent": "Rockabilly cultural and visual references; distinguish Punk, generic vintage and broad 1950s fashion",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "49688ed8eab258d0a5a8ecfc9955d118c5c543f8682fc56c36379a0ab9c7f656",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "light-academia-la-gi",
+    "en_slug": "light-academia-style-guide",
+    "title": "What Is Light Academia? Colors and Outfit Ideas",
+    "description": "Build Light Academia outfits through pale neutrals, academic references and soft tailoring, with warm-weather options and Dark Academia differences.",
+    "primary_intent": "Light Academia visual vocabulary and outfits; distinguish existing Dark Academia and general preppy/academic style",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "20bcc349eca633cdda73cb3a8b99daa99782804a2d4f0b3dd2a97f4f9af25368",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "fairycore-la-gi",
+    "en_slug": "fairycore-style-guide",
+    "title": "What Is Fairycore? Colors, Textures and Outfits",
+    "description": "Explore nature-inspired Fairycore through lace, knits, sheer layers and movement, including dark palettes and distinctions from Fairy Grunge.",
+    "primary_intent": "Fairy-inspired nature imagery and styling; distinguish existing Fairy Grunge/Fairy Goth and broader Cottagecore",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "0d524479afc883d1b1443f83d644427c3f4e627d494d2957e1ccc8f263866ef1",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "angelcore-la-gi",
+    "en_slug": "angelcore-style-guide",
+    "title": "What Is Angelcore? Ethereal Style and Outfit Ideas",
+    "description": "Use light colors, airy layers and selective shine to build Angelcore outfits, from subtle everyday combinations to more elaborate styling.",
+    "primary_intent": "Angelic/ethereal visual styling; distinguish fairy/nature references and darker aesthetic collections",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "6f967ffb06b995e7fe715c55db7dde08f773782a02a4f9c2ddb4827ed7afb7ef",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "mermaidcore-la-gi",
+    "en_slug": "mermaidcore-style-guide",
+    "title": "What Is Mermaidcore? Ocean-Inspired Outfit Ideas",
+    "description": "Explore aquatic colors, iridescent surfaces, drape and sheer layers, with eight Mermaidcore outfits and grounded deep-ocean alternatives.",
+    "primary_intent": "Aquatic aesthetic colors/surfaces and outfits; separate from mermaid-skirt garment construction and beach occasion guide",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "ed3706ba5aa94a247fcfc9dc87e299f736f0b0211a21b0b4374dda638f44dfdc",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "mori-kei",
+    "en_slug": "mori-kei-style-guide",
+    "title": "What Is Mori Kei? Japanese Forest-Inspired Style",
+    "description": "Understand Mori Kei layering, natural colors and soft silhouettes, with six outfit routes, warm-weather adaptations and related-style comparisons.",
+    "primary_intent": "Mori Kei cultural and layered forest-inspired wardrobe references; distinguish Cottagecore and Fairycore labels",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "eb05f804f0af552296ed65ac96a87859bfd99b34af88c62e5f77446d0ba60e91",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "ouji-fashion",
+    "en_slug": "ouji-fashion-guide",
+    "title": "What Is Ouji Fashion? Japanese Prince-Inspired Style",
+    "description": "Build an Ouji coordinate through blouses, waistcoats, shorts or trousers and footwear, with five outfit routes and clear Lolita distinctions.",
+    "primary_intent": "Japanese princely fashion vocabulary and proportions; distinguish Victorian Goth and Lolita-related comparisons",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "ea866f8c89b79047954d2541b5973b235c4b2e7d90d8d71846df85204a3c2a55",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "cottagecore-la-gi",
+    "en_slug": "cottagecore-style-guide",
+    "title": "What Is Cottagecore? Fabrics, Florals and Outfits",
+    "description": "Explore Cottagecore textures, florals and soft silhouettes, with everyday formulas, dark palettes and practical adaptations for humid weather.",
+    "primary_intent": "Rural/romantic visual wardrobe vocabulary; distinguish Mori Kei history, Fairycore imagery and Dark Academia",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "3295b563d647a6d6f4a4b1e2d984c33bda222658c969c043b57a6f2f61a4f31f",
+    "published_date": "2026-11-04"
+  }
+]
