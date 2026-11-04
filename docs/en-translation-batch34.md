@@ -1,6 +1,6 @@
 # English translation batch34 — 2026-11-04
 
-Baseline: master `b4cee68a7fbb868917f00097438b1c8d540a34ae`, 169/216 published pairs plus two EN-only originals. Ten full translations are locally complete and QA passed. Publication awaits preview, normal merge and production verification.
+Baseline: master `b4cee68a7fbb868917f00097438b1c8d540a34ae`, 169/216 published pairs plus two EN-only originals. Ten full translations are published through PR #55 after preview, normal merge and production verification.
 
 ## Intent ownership
 
@@ -42,4 +42,8 @@ Baseline: master `b4cee68a7fbb868917f00097438b1c8d540a34ae`, 169/216 published p
 - All 64 distinct HTTP image endpoints return 200/image MIME. Browser QA uses identical reviewed HTML and original image bytes cached only in the internal preview. All 20 desktop1440/mobile390 views have no document overflow, fit their images and load original covers; all 16 tables scroll inside wrappers. Mobile set-shopping FAQ opens with a complete visible answer. The mobile jacket material table and desktop Goth buying H1/intro were visually inspected.
 - Guarded maintenance promotes 68 links in 41 older EN pages, preserving each page’s VI-original links and guarding unrelated content/metadata/assets. Those touches are not additional translations. The final scan has zero eligible links and zero skipped pages.
 
-Evidence: `docs/qa/en-batch34-*.json`. Full source-locked translations: `data/en-translations/batch34.json` and ten TSV files. Publication count remains 169 until release verification succeeds.
+Evidence: `docs/qa/en-batch34-*.json`. Full source-locked translations: `data/en-translations/batch34.json` and ten TSV files. Release verification below confirms the updated publication count.
+
+## Release confirmation
+
+PR #55 merged normally as `8bcbd3a3f154431571922367dc8637f4a21ac333` from reviewed head `3e2692f8b053657a8edc7f48ee9f41a8b1389929`. All 63 preview and all 63 production files match repository bytes: ten new EN pages, ten VI pages, forty-one maintained older EN pages, Journal and sitemap. All five production-master checks succeeded. Actual branch conclusions are recorded separately in `docs/qa/en-batch34-release-checks.json`; no check override used and no failure cause inferred. Final guarded scan: zero eligible links and zero skipped pages. Tracker: 179 MERGED and 37 PENDING, plus two EN-only originals (181 Journal cards).

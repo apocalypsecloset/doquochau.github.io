@@ -1,5 +1,5 @@
 {
-  "status": "COMPLETE_QA_PASSED",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "baseline": "b4cee68a7fbb868917f00097438b1c8d540a34ae",
   "sources": [
@@ -29,7 +29,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "outfit-nu-ca-tinh-duoi-500k",
@@ -57,7 +57,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "quan-cargo-nu-mua-o-dau",
@@ -82,7 +82,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "boots-de-cao-nu-duoi-500k",
@@ -108,7 +108,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phu-kien-egirl-mua-o-dau",
@@ -137,7 +137,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "do-goth-nu-mua-o-dau",
@@ -159,7 +159,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "outfit-egirl-duoi-500k",
@@ -189,7 +189,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "set-baddie-duoi-700k",
@@ -223,7 +223,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ao-corset-nu-mua-o-dau",
@@ -247,7 +247,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ao-khoac-da-nu-mua-o-dau",
@@ -273,7 +273,9 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pr": 55,
+  "merge_commit": "8bcbd3a3f154431571922367dc8637f4a21ac333"
 }
