@@ -25,9 +25,9 @@
 - https://apocalypsecloset.com/en/blog/sporty-chic-style-guide.html
 - https://apocalypsecloset.com/en/blog/blokecore-style-guide.html
 
-## Batch31 unpublished checkpoint
+## Batch31 locally complete, not counted as published
 
-The ten-topic provisional queue is `data/en-intent-plans/batch31.json`: Office Siren, Avant-garde, Rockabilly, Light Academia, Fairycore, Angelcore, Mermaidcore, Mori Kei, Ouji and Cottagecore. All remain PENDING. Office Siren has a full 188-entry text/alt draft at `data/en-translation-drafts/batch31/office-siren-la-gi.tsv`; index coverage passes, but generated-page/publication QA is not complete. The other nine are outline-only plans. No batch31 public EN pages or hreflang additions exist; drafts do not increase the 139 published count. See the draft README for source lock, reference dates and editorial cautions.
+Ten full source-locked EN translations are implemented and QA-passed in `data/en-translations/batch31.json`: Office Siren, Avant-garde, Rockabilly, Light Academia, Fairycore, Angelcore, Mermaidcore, Mori Kei, Ouji and Cottagecore. Tracker: 139 MERGED, 10 COMPLETE_QA_PASSED, 67 PENDING. See `docs/en-translation-batch31.md` and its QA evidence. Next: PR preview comparison, normal merge, production verification and publication checkpoint. The earlier Office Siren draft is historical; its reviewed translation is now in the normal manifest.
 
 ## Resume
 

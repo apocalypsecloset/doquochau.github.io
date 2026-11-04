@@ -1,5 +1,5 @@
 {
-  "status": "PROVISIONAL_PLAN_ONLY_NO_EN_PAGES",
+  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -37,11 +37,8 @@
         "Tham khảo cách phối trên Look"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING",
-      "draft_path": "data/en-translation-drafts/batch31/office-siren-la-gi.tsv",
-      "draft_status": "FULL_TEXT_DRAFT_INDEX_COVERAGE_ONLY_NOT_PAGE_QA",
-      "draft_segments": 188
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "avant-garde-fashion-la-gi",
@@ -76,8 +73,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "rockabilly",
@@ -114,8 +111,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "light-academia-la-gi",
@@ -150,8 +147,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "fairycore-la-gi",
@@ -205,8 +202,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "angelcore-la-gi",
@@ -244,8 +241,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "mermaidcore-la-gi",
@@ -288,8 +285,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "mori-kei",
@@ -323,8 +320,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "ouji-fashion",
@@ -357,8 +354,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "cottagecore-la-gi",
@@ -385,8 +382,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     }
   ]
 }
