@@ -1,5 +1,5 @@
 {
-  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -38,7 +38,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "avant-garde-fashion-la-gi",
@@ -74,7 +74,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "rockabilly",
@@ -112,7 +112,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "light-academia-la-gi",
@@ -148,7 +148,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "fairycore-la-gi",
@@ -203,7 +203,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "angelcore-la-gi",
@@ -242,7 +242,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "mermaidcore-la-gi",
@@ -286,7 +286,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "mori-kei",
@@ -321,7 +321,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ouji-fashion",
@@ -355,7 +355,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "cottagecore-la-gi",
@@ -383,7 +383,9 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pull_request": 49,
+  "merge_commit": "796fd146ee310ab63d1e3b0b3cfc0b0e6c6f6bf4"
 }
