@@ -30,3 +30,8 @@ The CSV's 57 PENDING rows are the authoritative remaining inventory. No batch33 
 ## Resume
 
 Fetch current master and reconcile concurrent work. Read this checkpoint, the full 216-row CSV and SEO guardrails before choosing 10–20 targets. Preserve VI URLs/title/meta/canonical/body/images except marked bilingual additions. Recheck English intent ownership against all existing pages. Read entire originals and references; translate every source text/alt segment with SHA locks. Generate all complete EN pages before sync; refresh links and run source/HTML/schema/image/metadata/canonical/hreflang/sitemap/Journal and desktop/mobile QA. Verify preview before normal PR merge, wait for deployment, compare production files and persist a checkpoint. Never count provisional plans, partial pages or maintenance touches as translations.
+
+
+## Batch33 prepared — publication pending
+
+Ten complete translations are locally implemented and QA passed: plus size, petite, slim frame, fuller stomach, pear shape, inverted triangle, petite baggy buying, boot odor, boot break-in and Shopee baby-tee buying. See `docs/en-translation-batch33.md`, its complete manifest/TSVs and QA evidence. Tracker: 159 MERGED, 10 COMPLETE_QA_PASSED, 47 PENDING. The production-verified count remains 159 until preview, normal merge, deployment checks and exact production comparison succeed. No partial EN stubs. Resume by completing this release before choosing another batch.
