@@ -1,6 +1,6 @@
 # English translation batch32 — 2026-11-04
 
-Baseline: master `294db2de4ca40d907b5579eec3e2b895c806228d`, 149/216 published translation pairs plus two EN-only originals. Ten complete translations are implemented. Publication remains pending until preview, normal PR merge and production verification.
+Baseline: master `294db2de4ca40d907b5579eec3e2b895c806228d`, 149/216 published translation pairs plus two EN-only originals. Ten complete translations are implemented. Published through PR #51 after preview, normal merge and production verification; see release confirmation below.
 
 ## Intent ownership
 
@@ -42,4 +42,10 @@ Baseline: master `294db2de4ca40d907b5579eec3e2b895c806228d`, 149/216 published t
 - Guarded maintenance promotes 47 links in 21 older EN pages, preserving each page's own VI links and guarding unrelated bodies, metadata and assets. These maintenance touches are not additional translations.
 - No GSC query × page access: editorial intent screening only, no confirmed cannibalization diagnosis, deletion, consolidation, redirect or noindex changes.
 
-Evidence: `docs/qa/en-batch32-*.json`. Complete source-locked translations: `data/en-translations/batch32.json` and ten TSV files. Preview and production verification remain required before marking publication.
+Evidence: `docs/qa/en-batch32-*.json`. Complete source-locked translations: `data/en-translations/batch32.json` and ten TSV files. The release comparisons and checks below confirm publication.
+
+## Release confirmation
+
+PR #51 merged normally as `df422586825d1eaf9a7e0b7c3d86e3faf713332e` from reviewed head `f2576587c88c292fc4d5c088d2e705820ae70a30`; no check override. All 43 preview files and all 43 production files match byte-for-byte: ten new EN pages, ten VI pages, twenty-one maintained older EN pages, Journal and sitemap. All five production-master checks succeeded; actual branch checks are recorded separately in `docs/qa/en-batch32-release-checks.json`. Final guarded link scan finds zero eligible links and zero skipped pages. Tracker: 159 MERGED and 57 PENDING, plus two additional EN-only originals (161 Journal cards).
+
+The initial production comparison observed HTTP 503 on the existing `en/blog/how-to-style-ballet-flats.html` page. One targeted retry matched the repository bytes. The production JSON retains the initial failure and retry result; the cause is not inferred.

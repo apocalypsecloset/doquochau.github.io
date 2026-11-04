@@ -1,0 +1,229 @@
+{
+  "base": "https://apocalypsecloset.com",
+  "checked": 43,
+  "results": [
+    {
+      "path": "blog/balletcore-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/business-casual-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/casual-chic-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/classic-style-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/ivy-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/old-money-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/power-dressing.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/preppy-style-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/quiet-luxury-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/smart-casual-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/airport-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/angelcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/balletcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/business-casual-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/casual-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/classic-style-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-academia-outfits-alternative-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-babydoll-dresses.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-ballet-flats.html",
+      "exact": true,
+      "error": null,
+      "retried_once": true
+    },
+    {
+      "path": "en/blog/how-to-style-leg-warmers.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/ivy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/light-academia-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/office-siren-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/old-money-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/power-dressing-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/preppy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/quiet-luxury-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/rockabilly-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/smart-casual-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/sporty-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/tennis-skirt-outfit-ideas.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-are-mary-jane-shoes.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-a-capsule-wardrobe.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-an-outfit.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-athleisure.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-minimalist-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-sustainable-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-black-blazer-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-loafer-outfit-ideas.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "sitemap.xml",
+      "exact": true,
+      "error": null
+    }
+  ],
+  "initial_failures": [
+    {
+      "path": "en/blog/how-to-style-ballet-flats.html",
+      "exact": false,
+      "error": "curl: (22) The requested URL returned error: 503\n"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "commit": "df422586825d1eaf9a7e0b7c3d86e3faf713332e",
+  "master": [
+    {
+      "name": "Workers Builds: doquochau-github-io",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/1108f6a0-05a7-4805-b41f-ca2a1b4ada79"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41776879599/job/126399328352"
+    },
+    {
+      "name": "report-build-status",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41776879599/job/126399328312"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/86961b23-dac1-440b-bb47-b160a9062e0b"
+    },
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41776879599/job/126399191041"
+    }
+  ],
+  "branch": {
+    "commit": "f2576587c88c292fc4d5c088d2e705820ae70a30",
+    "checks": [
+      {
+        "name": "Workers Builds: doquochau-github-io",
+        "status": "completed",
+        "conclusion": "failure",
+        "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/8172384f-4ee0-4831-b11a-17fce6d2a76f"
+      },
+      {
+        "name": "Cloudflare Pages",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/05721079-b679-48d5-a80f-25c55ff16675"
+      }
+    ],
+    "note": "Branch Workers failed with zero diagnostic annotations; Pages preview succeeded. All five production-master checks succeeded. No check override used."
+  }
+}

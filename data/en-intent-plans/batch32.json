@@ -1,5 +1,5 @@
 {
-  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -27,7 +27,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "smart-casual-la-gi",
@@ -56,7 +56,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "power-dressing",
@@ -93,7 +93,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "preppy-style-la-gi",
@@ -121,7 +121,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ivy-style",
@@ -155,7 +155,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "classic-style-la-gi",
@@ -183,7 +183,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "casual-chic-la-gi",
@@ -208,7 +208,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "quiet-luxury-la-gi",
@@ -237,7 +237,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "old-money-la-gi",
@@ -270,7 +270,7 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "balletcore-la-gi",
@@ -301,7 +301,9 @@
       ],
       "layout": "standard",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "COMPLETE_QA_PASSED"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pull_request": 51,
+  "merge_commit": "df422586825d1eaf9a7e0b7c3d86e3faf713332e"
 }
