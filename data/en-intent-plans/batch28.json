@@ -1,11 +1,11 @@
 {
-  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
+  "status": "MERGED_PR44_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
       "vi_slug": "phoi-do-voi-chan-vay-jean-ngan",
       "proposed_en_slug": "denim-mini-skirt-outfits",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "4f94cda08c43944c5f57521dc03be502483b2f6431233ea38ca6744f50726981",
       "source_h1": "Chân Váy Jean Ngắn Phối Với Áo Gì? Giữ Tỷ Lệ Mà Không Bị Basic",
@@ -16,7 +16,7 @@
     {
       "vi_slug": "phoi-do-voi-chan-vay-jean-dai",
       "proposed_en_slug": "long-denim-skirt-outfits",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "f28cad178cd1db0a39bbac4a78ba281886045ed5b68d9e8a77982fb3eab6f140",
       "source_h1": "Chân Váy Jean Dài Phối Với Áo Gì? Chọn Top, Giày Và Tỷ Lệ Dễ Mặc",
@@ -27,7 +27,7 @@
     {
       "vi_slug": "phoi-do-voi-chan-vay-xoe",
       "proposed_en_slug": "flared-skirt-outfit-ideas",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "8466cf74e02115817629e4b16afd522ff6a2f241442a44c8e4e04f1c9c639ae4",
       "source_h1": "Chân Váy Xòe Phối Với Áo Gì? Cân Độ Bung Và Chuyển Động",
@@ -38,7 +38,7 @@
     {
       "vi_slug": "phoi-do-voi-chan-vay-duoi-ca",
       "proposed_en_slug": "mermaid-skirt-outfit-ideas",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "af6885badbbe3bb6455707e2a4d86a638d5f8f355f93a6deac8e8f042fc29b6e",
       "source_h1": "Chân Váy Đuôi Cá Phối Với Áo Gì? Chọn Top Theo Form Và Tỷ Lệ",
@@ -49,7 +49,7 @@
     {
       "vi_slug": "phoi-do-voi-ao-tre-vai-nu",
       "proposed_en_slug": "off-the-shoulder-top-outfits",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "77d17ef3cd3304c21d39160ba0fb3950a12400322efe34847c744b82375ecc7c",
       "source_h1": "Áo Trễ Vai Phối Với Gì? Cân Đường Vai Theo Dark Feminine Và Y2K",
@@ -60,7 +60,7 @@
     {
       "vi_slug": "ao-ong-nu-phoi-voi-gi",
       "proposed_en_slug": "tube-top-outfit-ideas",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "9d0163d3b8138ffbbcbe1d0308d32c5760393583373f50914e77c3ad8c2a14f7",
       "source_h1": "Áo Ống Nữ Phối Với Gì? Cách Chọn Form Và 10 Outfit Cá Tính",
@@ -71,7 +71,7 @@
     {
       "vi_slug": "phoi-do-nu-ca-tinh-mua-he",
       "proposed_en_slug": "alternative-summer-outfits-women",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "7585f7a2107dc5c3db1aa02a5c7f32674ca3e95d0932ff92c433141a0a59bb22",
       "source_h1": "Outfit Mùa Hè Nữ: Mát, Dễ Mặc Mà Vẫn Cá Tính",
@@ -82,7 +82,7 @@
     {
       "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
       "proposed_en_slug": "alternative-going-out-outfits-women",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "9941a254a10cf52c87e9525b05dab44c86a82a1abae1456e4949a3d8148ff991",
       "source_h1": "Phối Đồ Nữ Cá Tính Đi Chơi: Chọn Đúng Outfit Cho Từng Cuộc Hẹn",
@@ -93,7 +93,7 @@
     {
       "vi_slug": "outfit-di-choi-dem-badgirl",
       "proposed_en_slug": "alternative-night-out-outfits-women",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "e10911186f94a91cdb06d57f4dd35e4bfc13c8f2a4987b81c7c73b140c1e1b8c",
       "source_h1": "Outfit Đi Chơi Đêm Nữ: 7 Công Thức Badgirl Cá Tính, Dễ Mặc",
@@ -104,7 +104,7 @@
     {
       "vi_slug": "phoi-do-voi-quan-tay-ong-suong-nu",
       "proposed_en_slug": "womens-straight-tailored-trouser-outfits",
-      "publication_status": "COMPLETE_QA_PASSED",
+      "publication_status": "MERGED_PR44_PRODUCTION_VERIFIED",
       "review_status": "FULL_SOURCE_AND_EN_EDITORIAL_REVIEW_NO_GSC",
       "source_sha256": "e987f53c514bd03033fed66c99e2d326402fff591f06a9d69f878637dac8f937",
       "source_h1": "Quần Tây Ống Suông Phối Với Áo Gì? 7 Công Thức Nữ",

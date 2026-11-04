@@ -18,7 +18,7 @@ for c in cs:
 p=ROOT/'sitemap.xml';s=p.read_text()
 for c in cs:
  url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html'
- if '<loc>'+url+'</loc>' not in s:s=s.replace('</urlset>',f'  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-11-03</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>')
+ if '<loc>'+url+'</loc>' not in s:s=s.replace('</urlset>',f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{c.get('published_date','2026-11-03')}</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>')
 p.write_text(s)
 p=ROOT/'en/blog.html';s=p.read_text();s=re.sub(re.escape(START)+'.*?'+re.escape(END),'',s,flags=re.S)
 journal=BeautifulSoup(s,'html.parser');grid=journal.select_one('#latest .cards');assert grid is not None

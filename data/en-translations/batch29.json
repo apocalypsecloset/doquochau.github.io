@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "badgirl-outfit-di-cafe",
+    "en_slug": "alternative-cafe-outfits-women",
+    "title": "Alternative Café Outfits for Women: Seven Formulas",
+    "description": "Choose alternative café outfits by seating, interiors, light and visit duration, with seven adaptable formulas and practical checks.",
+    "primary_intent": "Café seating, lighting, venue design and seven formulas; narrower than general going-out or night-out guides",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "aacfd1b7ff97b1ddf10e8ebdc51b1c98da7ed5f3301619ade823c16621d42823",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "outfit-di-dam-cuoi-nu-ca-tinh",
+    "en_slug": "alternative-wedding-guest-outfits-women",
+    "title": "Alternative Wedding-Guest Outfits and Dress Codes",
+    "description": "Adapt personal alternative style to the actual wedding invitation, setting and activities through six garment and footwear formulas.",
+    "primary_intent": "Personal alternative styling within the actual wedding invitation and dress code; not generic night-out",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "7dd344f6495fd68195adbb50fea99b197c66bec75d0216a9ac1f1875d4d9ab4b",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "outfit-di-bien-cho-nu-ca-tinh",
+    "en_slug": "alternative-beach-outfits-women",
+    "title": "Alternative Beach Outfits: Twelve Practical Formulas",
+    "description": "Plan alternative beach outfits for walking, changing, cafés and evening stops through fabric, footwear, coverage and packing choices.",
+    "primary_intent": "Beach activities, heat, wind, sand and packing; not general summer outfit overview",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "6accbcc6f62ca9903d2f9a1603eeedb3ee3b40d375f7b6f8041b5a70ddbd4f8c",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "outfit-san-bay-nu",
+    "en_slug": "airport-outfits-women",
+    "title": "Airport Outfits for Women: Ten Adaptable Formulas",
+    "description": "Choose airport clothing for luggage, layers, seated fit and easy access, with ten formulas and checks for short or longer journeys.",
+    "primary_intent": "Travel duration, seated movement, layers and baggage; distinguish everyday sporty styling",
+    "role": "OCCASION_GUIDE",
+    "source_sha256": "a02692a7e8eb1e30a7dc69d5ccadfe70c2cc8ad5ab1fa9cc34d9ca56e1e68d5f",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "femme-fatale-aesthetic-la-gi",
+    "en_slug": "femme-fatale-aesthetic-style-guide",
+    "title": "Femme Fatale Aesthetic: Noir and Everyday Styling",
+    "description": "Explore a noir-inspired styling interpretation through tailoring, contrast, seven outfit formulas and a clear Dark Feminine distinction.",
+    "primary_intent": "Character and visual-code aesthetic guide; distinguish broad dark feminine mood and practical dark feminine outfit specialist",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "de262bd9bcd28e2911bd523daa786513159215e18602a2851433a7c842c2c381",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quan-cap-tre-la-gi",
+    "en_slug": "what-are-low-rise-pants",
+    "title": "What Are Low-Rise Pants? Rise, Measurements and Fit",
+    "description": "Understand low-rise construction, front and back rise, waistband stability and measurements before choosing a trouser silhouette.",
+    "primary_intent": "Waist rise definition and fit; distinguish specific denim/cargo styles and styling formulas",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "edbd6f241938cf9f3a485bf05b47e4b93d10de6fc815223c2e2c7e112f22e18e",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "croptop-la-gi",
+    "en_slug": "what-is-a-crop-top",
+    "title": "What Is a Crop Top? Length, Shape and Fit",
+    "description": "Understand cropped length, compare baby tees, tube tops and structured tops, and assess garment dimensions and preferred coverage.",
+    "primary_intent": "Cropped-length definition and construction; existing crop-top outfit article remains styling target",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "3f27f03692231732d31a32721a78324f0053c94b71eab90e46a8e7d877935289",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-quan-legging-nu",
+    "en_slug": "leggings-outfit-ideas-women",
+    "title": "Leggings Outfits: Tops, Layers and Proportions",
+    "description": "Style leggings through opacity, top length, structured layers and footwear, with flared-leg comparisons and everyday fit checks.",
+    "primary_intent": "Close-fitting stretch leggings and layering/coverage choices; not jogger/athleisure overview",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "8a87d5ae00dca89a50863a365c138b6e14a06b4dabf63f2b516fdd99a362967f",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-voi-quan-parachute-nu",
+    "en_slug": "parachute-pants-outfits-women",
+    "title": "Parachute Pants Outfits for Women: Eight Formulas",
+    "description": "Compare tops, outer layers and footwear against parachute-pants volume through eight formulas, three Closet looks and hem checks.",
+    "primary_intent": "Parachute fabric, adjustable volume and proportions; definition article remains separate",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "04fb93b6946a0e5ef370a6f9d7aa73e0df51288c606422a32e63607d824a2b11",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quan-baggy-phoi-voi-ao-gi",
+    "en_slug": "baggy-pants-outfits-women",
+    "title": "Baggy Pants Outfits: Tops, Volume and Proportions",
+    "description": "Style baggy trousers through top endings, denim wash, layers and footwear, with five Closet examples and three reusable outfit routes.",
+    "primary_intent": "Roomy trouser volume and top lengths; distinguish baggy definition, wide-leg and straight-leg specialists",
+    "role": "ITEM_GUIDE",
+    "source_sha256": "2822072d8c86f32dffeb8ff0a9bafcb3a82afbaf5c0b33f8d6bae8db59ffe9a8",
+    "published_date": "2026-11-04"
+  }
+]
