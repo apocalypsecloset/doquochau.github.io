@@ -1,6 +1,6 @@
 # English translation batch35 — 2026-11-04
 
-Baseline: master `93a72674a0bbe6e2a20cb6f97353829ec7351c39`, checkpoint179/216 production-verified pairs plus two English-only originals. Ten full translations are complete and local QA passed; preview, merge and production verification remain pending.
+Baseline: master `93a72674a0bbe6e2a20cb6f97353829ec7351c39`, checkpoint179/216 production-verified pairs plus two English-only originals. Ten full translations are published through PR #57 after preview, normal merge and production verification.
 
 ## Intent ownership
 
@@ -50,4 +50,8 @@ Original cited URLs are retained. Retrieved using web search on 2026-11-04:
 - Mobile moodboard FAQ opens with its complete answer visible. Mobile Local Brand comparison heading/table and desktop Streetwear H1/introduction visually inspected. A linked Badgirl outfit heading navigated to a target absent from the intentionally limited local preview; the real repository target passes static validation. This is recorded as a preview limitation, not a production defect or a successful navigation check.
 - Guarded refresh promotes 70 links in 43 older EN pages while preserving each article’s VI-original link, unrelated metadata, assets and content. These are maintenance touches, not additional translated articles. Final scan: zero eligible links, zero skipped pages.
 
-Evidence: `docs/qa/en-batch35-*.json`, `data/en-translations/batch35.json`, ten full TSV files and `data/en-intent-plans/batch35.json`. Publication count remains 179 until preview, merge and final production checks succeed.
+Evidence: `docs/qa/en-batch35-*.json`, `data/en-translations/batch35.json`, ten full TSV files and `data/en-intent-plans/batch35.json`. The release confirmation below establishes the updated publication count.
+
+## Release confirmation
+
+PR #57 merged normally as `b584fe817fd48667d2dedac817f28257ff5615d3` from reviewed head `c25ed4076c9ee01f46f42acd2a3c52647884bcf9` and tree `8c84230d0344751532bbf142ba5af6787c745206`. All 65 preview files and all 65 production files match repository bytes: ten new EN, ten VI, forty-three maintained older EN, Journal and sitemap. All five production-master checks succeeded. Branch Pages succeeded; branch Workers failed with zero diagnostic annotations. Actual payloads are retained in `docs/qa/en-batch35-release-checks.json`; no failure cause inferred and no override used. The retained Look02 URL absent from the limited local preview was independently checked on production: HTTP200, text/html. Final guarded scan has zero eligible links and zero skipped pages. Tracker: 189 MERGED, 27 PENDING; two EN-only originals make 191 Journal cards.
