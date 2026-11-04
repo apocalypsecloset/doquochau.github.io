@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "quan-parachute-la-gi",
+    "en_slug": "what-are-parachute-pants",
+    "title": "What Are Parachute Pants? Shape, Fabric and Fit",
+    "description": "Compare parachute, cargo, jogger and baggy construction, then check fabric, rise, adjusters and measurements before choosing a pair.",
+    "primary_intent": "Construction, adjustable hems, fabric and fit definition; separate from parachute outfit specialist",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "510d9005cfb41794f2caa646253798245ef35242b4498a81b870aca8eafa6414",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quan-baggy-la-gi",
+    "en_slug": "what-are-baggy-pants",
+    "title": "What Are Baggy Pants? Construction and Measurements",
+    "description": "Understand intentional trouser volume, compare wide-leg and cargo descriptions, and assess waistband, rise, thighs, hems and fabric.",
+    "primary_intent": "Baggy hip/thigh/leg volume and construction terminology; separate from outfit pairings and shorter-wearer fit",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "23d5a63256f6b476abee8f158684e8162138563a7d0cbe9e37689d0436772058",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quan-jogger-la-gi",
+    "en_slug": "what-are-jogger-pants",
+    "title": "What Are Jogger Pants? Cuffs, Fabric and Fit",
+    "description": "Identify jogger construction through waistbands, taper and ankle finishes, with material comparisons and practical measurement checks.",
+    "primary_intent": "Jogger construction, cuffs and fit definition; separate from existing jogger outfit specialist",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "d3a97a81f80b572296375906218e4e0d4eee23913deb21e3d245434f95fc1548",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "athleisure-la-gi",
+    "en_slug": "what-is-athleisure",
+    "title": "What Is Athleisure? Sportswear in Everyday Life",
+    "description": "Understand athleisure and compare activewear and Sporty Chic through movement, opacity, storage, fabric behavior and four outfit ideas.",
+    "primary_intent": "Sportswear in everyday clothing and intended use; distinguish sporty-chic aesthetic and actual performance clothing",
+    "role": "DEFINITION_GUIDE",
+    "source_sha256": "8a74f7d28c328396ff98e5eeb35e66fc2b6a0be4225bf97d4095fa0650d5a980",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "acubi-style-la-gi",
+    "en_slug": "acubi-style-guide",
+    "title": "Acubi Style: Korean Minimal Y2K Outfit References",
+    "description": "Explore Acubi through muted palettes, altered basics, visible layers and five outfit formulas, with practical wardrobe comparisons.",
+    "primary_intent": "Specific Acubi visual references and outfit structure; distinguish general minimalism and Korean-style overview",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "d683db85eadd948e10684896b67a2d8e4dd2e039ca248d71b22d90e03748800c",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "gorpcore-la-gi",
+    "en_slug": "gorpcore-style-guide",
+    "title": "What Is Gorpcore? Outdoor References in Urban Style",
+    "description": "Explore Gorpcore context, layers, outfit directions and Techwear differences while checking actual product function and climate needs.",
+    "primary_intent": "Outdoor-gear-inspired fashion vocabulary; distinguish performance claims and existing Techwear specialist",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "a885ee24b465267644b864da0a04a3ee31a0b95eaaf94217c4b6eb5db61b7dba",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "downtown-girl-la-gi",
+    "en_slug": "downtown-girl-style-guide",
+    "title": "Downtown Girl Style: Lived-In Urban Outfit Ideas",
+    "description": "Compare denim, knitwear, jackets and five urban outfit formulas, with wardrobe planning and nearby aesthetic distinctions.",
+    "primary_intent": "Urban casual aesthetic vocabulary and outfit choices; distinguish general Grunge and model-off-duty references",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "ff8f6ee22733e350e812782df66d85dff722e816aaa4815e744fd9544704b076",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "model-off-duty-la-gi",
+    "en_slug": "model-off-duty-style-guide",
+    "title": "Model Off-Duty Style: Pared-Back Outfit Composition",
+    "description": "Build a deliberate outfit from familiar basics, garment proportions and a selected focal detail, with five formulas and climate adaptations.",
+    "primary_intent": "Off-duty styling vocabulary and repeatable casual proportions; distinguish downtown-girl and general OOTD",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "7ec3073e377c3a033d5c8b92db1ed64f2a52673b42c79e0b582e1de0eb829cf1",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "sporty-chic-la-gi",
+    "en_slug": "sporty-chic-style-guide",
+    "title": "What Is Sporty Chic? Sports References and Polish",
+    "description": "Compare Sporty Chic and athleisure through fabric, movement and finishing, with five outfit formulas and practical garment checks.",
+    "primary_intent": "Polished and sportswear visual combinations; distinguish broader athleisure definition and travel occasion",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "a1f6917fb12f752fc13d63f932b03abce10ddf3a294ba7320b2d6ea00f7d3872",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "blokecore-la-gi",
+    "en_slug": "blokecore-style-guide",
+    "title": "What Is Blokecore? Football Shirts in Streetwear",
+    "description": "Explore football-shirt references, jersey proportions, five outfit formulas, Blokette comparisons and practical care considerations.",
+    "primary_intent": "Football-shirt fashion references and styling; distinguish general graphic tees, sporty-chic and performance kit",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "0cb12d5d7548fb59a9341a78a1ec186ec6e82134cb36e140cf92fde8a3ee15ee",
+    "published_date": "2026-11-04"
+  }
+]

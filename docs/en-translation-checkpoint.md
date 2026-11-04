@@ -24,9 +24,9 @@
 - https://apocalypsecloset.com/en/blog/parachute-pants-outfits-women.html
 - https://apocalypsecloset.com/en/blog/baggy-pants-outfits-women.html
 
-## Next batch30
+## Batch30 ready for release
 
-Ten PENDING source outlines and provisional intent boundaries are saved in `data/en-intent-plans/batch30.json`. They cover parachute/baggy/jogger definitions, Athleisure, Acubi, Gorpcore, Downtown Girl, Model Off-Duty, Sporty Chic and Blokecore. All have the standard article layout, but full source review and translation have not started. No batch30 EN pages or placeholder URLs exist. Keep definitions distinct from completed styling specialists and distinguish adjacent aesthetic labels through full source/SERP review. Verify niche historical/material/performance claims with primary sources.
+Ten full translations are implemented and locally QA-passed in `data/en-translations/batch30.json`. They are not counted as published yet. Tracker: 129 MERGED, 10 COMPLETE_QA_PASSED, 77 PENDING. See `docs/en-translation-batch30.md` and its QA evidence. Next: PR preview comparison, normal merge, production verification and publication checkpoint.
 
 ## Resume
 
