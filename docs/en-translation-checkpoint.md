@@ -1,13 +1,33 @@
 # Translation checkpoint — 2026-11-04
 
-- Latest published content: PR #44, master `3f0ee619d4c65697ddf67d84c4e7262002fed97a`.
-- **119/216 full translation pairs published and production-verified; 97 not yet published.** Two EN-only originals are additional.
-- Batch28 preview and production both match all 53 release files. All five master checks succeeded, including Workers Builds; branch Worker failure did not include diagnostics. Evidence: `docs/en-translation-batch28.md` and `docs/qa/en-batch28-*.json`.
-- Batch29 has ten full translations, all locally QA-passed, awaiting PR preview, normal merge and deployed-file verification. Do not count them as published. Tracker: 119 MERGED, 10 COMPLETE_QA_PASSED, 87 PENDING. No empty/partial EN pages were created.
-- Batch29: 20,329 English article words, 64 original image placements, 19 tables, 36 FAQs; all 28 manifest gates and 66 HTTP image endpoints pass. Twenty desktop/mobile views have no page overflow, and mobile FAQ interaction passes. See `docs/en-translation-batch29.md`.
-- Every VI source URL/slug/title/meta/canonical/body/image stays intact except marked bilingual additions. All 216 VI sitemap URLs remain. Homepage, POD, Fourthwall, shop, routing and PR #9 untouched.
-- No GSC query × page access: editorial screening only, no confirmed cannibalization or URL deletion/consolidation.
+- Latest published content: PR #45, master `4762abb52ff2d35ae95ae5853ee88b16a3eb4e8e`.
+- **129/216 full translation pairs published and production-verified; 87 pending.** Two EN-only originals are additional: 131 English Journal cards.
+- This work completed batches28–29: 20 full translations, 38,241 English article words, 132 original image placements, 36 tables and 86 FAQs. Each batch has full source-preservation, schema/link/canonical/hreflang, image, desktop/mobile, preview and production evidence.
+- Batch28: PR #44, `3f0ee619d4c65697ddf67d84c4e7262002fed97a`; all 53 preview/production files match and all five master checks succeeded.
+- Batch29: PR #45; all 40 preview/production files match. All 28 manifest gates and 66 HTTP image endpoints pass. Twenty desktop/mobile views have no body overflow; mobile FAQ interaction passes. Master checks are recorded in `docs/qa/en-batch29-release-checks.json`.
+- The 216-row tracker contains exactly 129 MERGED and 87 PENDING, with no incomplete EN pages. All original VI sitemap URLs remain. VI titles, metadata, canonicals, URLs, bodies and images remain byte-identical outside marked bilingual additions for these batches.
+- Full translations and source locks: `data/en-translations/batch28.json`, `batch29.json` and their TSV files. Evidence: `docs/en-translation-batch28.md`, `docs/en-translation-batch29.md`, `docs/qa/en-batch28-*.json`, `docs/qa/en-batch29-*.json`.
+- Guarded link maintenance promoted 99 links in 31+18 older-page touches across these releases. Those are maintenance touches, not extra translations or necessarily distinct pages. Every original-language link stays. No eligible completed-counterpart links remain after the final scan.
+- All 131 EN pages have one H1 and self-canonical, with unique titles, descriptions and canonicals. No GSC query × page access: editorial screening only, no confirmed cannibalization diagnosis or URL consolidation.
+- Homepage/POD/Fourthwall/shop/routing/PR #9 untouched. Branch Workers failures lacked diagnostic details; preserve the actual branch/master distinction in reports.
+
+## Latest ten published English URLs
+
+- https://apocalypsecloset.com/en/blog/alternative-cafe-outfits-women.html
+- https://apocalypsecloset.com/en/blog/alternative-wedding-guest-outfits-women.html
+- https://apocalypsecloset.com/en/blog/alternative-beach-outfits-women.html
+- https://apocalypsecloset.com/en/blog/airport-outfits-women.html
+- https://apocalypsecloset.com/en/blog/femme-fatale-aesthetic-style-guide.html
+- https://apocalypsecloset.com/en/blog/what-are-low-rise-pants.html
+- https://apocalypsecloset.com/en/blog/what-is-a-crop-top.html
+- https://apocalypsecloset.com/en/blog/leggings-outfit-ideas-women.html
+- https://apocalypsecloset.com/en/blog/parachute-pants-outfits-women.html
+- https://apocalypsecloset.com/en/blog/baggy-pants-outfits-women.html
+
+## Next batch30
+
+Ten PENDING source outlines and provisional intent boundaries are saved in `data/en-intent-plans/batch30.json`. They cover parachute/baggy/jogger definitions, Athleisure, Acubi, Gorpcore, Downtown Girl, Model Off-Duty, Sporty Chic and Blokecore. All have the standard article layout, but full source review and translation have not started. No batch30 EN pages or placeholder URLs exist. Keep definitions distinct from completed styling specialists and distinguish adjacent aesthetic labels through full source/SERP review. Verify niche historical/material/performance claims with primary sources.
 
 ## Resume
 
-Read current master, this checkpoint, the 216-row tracker and `docs/en-translation-seo-guardrails.md`. Reconcile concurrent merges. If batch29 is still open, inspect its latest head/checks, compare preview files, normal-merge only after QA, verify production, then update publication status. Full source-locked translations are in `data/en-translations/batch29.json` plus the ten corresponding TSV files. Intent plans are evidence only, never public EN stubs. Continue subsequent batches of 10–20 with full source review, intent differentiation, complete translation, guarded internal-link refresh, static/schema/image/source-preservation and desktop/mobile QA. Preserve each original-language link. Record durable publication counts and URLs only after verification.
+Read current master, this checkpoint, the full 216-row tracker and `docs/en-translation-seo-guardrails.md`; reconcile concurrent merges before choosing the next batch. Preserve all existing VI URLs/slug/title/meta/canonical/body except bilingual additions. Translate full batches of 10–20. After all EN files exist and sync is complete, run the guarded internal-link refresh, then static/schema/image/source-preservation and desktop/mobile QA. Normal-merge only after QA; verify preview and deployed files before marking publication. Never count provisional plans, empty EN stubs or maintenance link changes as translations. For current shopping, prices or availability, check current primary sources rather than carrying old claims forward.
