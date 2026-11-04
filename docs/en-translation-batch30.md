@@ -43,3 +43,12 @@ Ten full source-locked translations; baseline 129 published pairs, target 139 on
 - The two preserved British GQ articles were checked as commentary on football-shirt fashion and internet labels, not used to predict today's trend status.
 
 Evidence: `docs/qa/en-batch30-*.json`; source-locked translations: `data/en-translations/batch30.json` and its ten TSV files.
+
+## Release confirmation — 2026-11-04
+
+- PR #47 merged normally as `2441619bfbf2d13cbcbc581fafa54fe6b973a1a2` from head `edb29e377c28c264731b7aa35f380ad4ce5a0745`. No check override.
+- All 41 preview files match the reviewed local files byte-for-byte. All 41 production files match after deployment: ten EN pages, ten VI pages, nineteen maintained EN pages, Journal and sitemap.
+- An initial production probe preceded the completed Workers deployment and observed old files/404s. After all five master checks succeeded, the complete comparison was repeated and passed; the final production evidence records that result.
+- Branch Pages succeeded; branch Workers failed without diagnostic annotations. All five checks on the production master commit succeeded. Evidence: `docs/qa/en-batch30-release-checks.json`.
+- Final read-only internal-link refresh finds zero eligible links and zero skipped pages.
+- Published tracker: 139 MERGED, 77 PENDING; 141 English Journal cards include the two EN-only originals. This release adds ten translations; the nineteen older-page maintenance touches are not additional translations.
