@@ -77,7 +77,7 @@ def generate(config):
  for p in parts:
   for a in p.select('a[href]'):
    h=a['href']
-   if slug=='phoi-do-nu-ca-tinh-di-choi' and h=='/' and a.get_text(strip=True)=='the original outfit collection':
+   if h=='/' and (slug,a.get_text(strip=True)) in {('phoi-do-nu-ca-tinh-di-choi','the original outfit collection'),('phoi-do-nu-ca-tinh-cho-nu-lun','the original alternative outfit collection')}:
     # The source predates the POD homepage; route this EN reference to the retained outfit directory.
     h='/phoi-do-nu-ca-tinh.html'
    if h.startswith('#') or urlsplit(h).scheme and urlsplit(h).netloc!='apocalypsecloset.com':continue

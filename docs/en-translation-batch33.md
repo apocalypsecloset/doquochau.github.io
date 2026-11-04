@@ -1,0 +1,44 @@
+# English translation batch33 — 2026-11-04
+
+Baseline: master `42431808ec0e193eb71e8c89f8b02c7384899c0a`; 159/216 production-verified pairs plus two EN-only originals. Ten complete translations are ready; publication remains pending preview, normal merge and production verification.
+
+## Intent ownership
+
+| Vietnamese source | English counterpart | Primary intent boundary |
+| --- | --- | --- |
+| `/blog/phoi-do-nu-ca-tinh-cho-nguoi-map.html` | `/en/blog/plus-size-alternative-outfits-women.html` | Whole-outfit plus-size fit and composition; stomach-specific fit, shape-specific proportions and item styling retain separate targets. |
+| `/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html` | `/en/blog/petite-alternative-outfits-women.html` | General petite alternative composition and vertical proportions; baggy-pants buying measurements belong to the petite baggy specialist. |
+| `/blog/phoi-do-cho-nguoi-gay-alt-fashion.html` | `/en/blog/slim-frame-alternative-outfits-women.html` | Optional volume distribution on slim frames; separate from plus size, body-shape shoulder-to-hip guides and height-specific proportions. |
+| `/blog/cach-phoi-do-cho-nguoi-beo-bung-nu.html` | `/en/blog/outfits-fuller-stomach-women.html` | Midsection waistband, hem and torso interactions regardless of size; broader plus-size outfit guide remains separate. |
+| `/blog/phoi-do-dang-qua-le.html` | `/en/blog/pear-shaped-outfit-guide.html` | Hips visually wider than shoulders: optional shoulder-to-hip balance or emphasis; separate from clothing size and the inverse relationship. |
+| `/blog/phoi-do-dang-tam-giac-nguoc.html` | `/en/blog/inverted-triangle-outfit-guide.html` | Shoulders visually wider than hips: optional lower-body presence or shoulder emphasis, distinct from pear shape and petite vertical fit. |
+| `/blog/quan-baggy-cho-nguoi-thap.html` | `/en/blog/baggy-pants-petite-fit-guide.html` | Petite baggy trouser selection by rise, inseam and pattern placement; baggy definition, general outfits and broad petite styling remain separate. |
+| `/blog/cach-khu-mui-boots.html` | `/en/blog/how-to-remove-boot-odor.html` | Boot interior odor and moisture cycle, distinct from new-boot stiffness, leather upper care and outfit styling. |
+| `/blog/cach-lam-mem-boots-moi.html` | `/en/blog/how-to-break-in-new-boots.html` | New-boot stiffness and initial comfortable wear, not interior deodorizing, upper maintenance or Combat versus Platform purchase comparison. |
+| `/blog/ao-baby-tee-form-dep-tren-shopee.html` | `/en/blog/buying-baby-tees-shopee-fit-guide.html` | Baby-tee listing assessment on Shopee; separate from crop-top definition, generic online sizing and general or Gothic graphic-tee outfits. |
+
+## Completeness and editorial review
+
+- All 1,538 indexed text/alt segments are translated with source SHA256 locks, including H1/H2/H3, full main content, tables, captions, FAQs, metadata and internal anchor labels. The ten articles contain 19,063 English words, 197 headings, 58 original image placements, 10 tables and 35 FAQs. No empty or partial counterparts.
+- Whole-outfit plus-size composition, petite vertical proportions, slim-frame volume choices, midsection waistband/hem fit and the two opposing shoulder-to-hip relationships have separate intents. Size does not determine body shape. Balance, emphasis and a column are optional visual routes rather than body correction or garment permission lists. The petite baggy guide owns rise/inseam/pattern selection, while the existing baggy definition and general outfit guides remain primary for their queries.
+- Boot odor concerns interior moisture and insole care; break-in concerns new material stiffness and initial wear. Neither substitutes for correcting an unsuitable fit. Upper-material maintenance and boot outfit styling remain separate. Baby-tee buying assesses listing evidence on Shopee, distinct from generic T-shirt styling, crop-top definition, online size measurement and the original Gothic graphic-tee guide.
+- All original image sources, source attributes/order and external reference URLs remain. Related Closet photographs illustrate garment relationships rather than establish body-size labels, height, seller availability or fit. Look #06 is explicitly a shorts comparison rather than baggy trousers. Look #43 is an outfit reference, not evidence about an individual baby-tee listing. No replacement images.
+- The petite original's old homepage reference is routed in EN only to the retained outfit directory, with matching anchor/prose. The one-line generator extension is limited by exact source slug and translated anchor; the earlier going-out adapter retains its behavior. Homepage/shop/routing files are unchanged.
+- Finished garment measurements, flat-width versus circumference conventions, rise/inseam, actual fabric construction and movement are distinguished from weight-only sizing. Fiber percentages, ribbing and GSM alone do not establish stretch recovery, opacity, ventilation or quality. Budget labels remain VND planning references rather than current quotations. No seller stock, individual listing or exchange policy is asserted verified.
+- Brief movement tests reveal initial fit issues, not all-day comfort. The break-in schedule is illustrative, never a required timetable or medical protocol; pain, numbness or developing blisters are reasons to stop and reassess. No promise of stretching a wrong size into a correct one. Conditioner/cleaner suitability is specific to material, finish and maker instructions; high heat and soaking are not improvised shortcuts. Dry absorbers and contained baking soda are optional compatible aids, not disinfectants or a substitute for drying/cleaning.
+
+## Reference checks and limits
+
+- The two preserved official URLs were read: [Timberland work-boot break-in guide](https://www.timberland.com/en-us/blog/gear-guides/how-to-break-in-work-boots) and [Dr. Martens boot-softening guide](https://www.drmartens.com/uk/en_gb/dms-world/product/break-in-guide). General gradual-wear and compatible material-care principles were checked. Brand-specific products, extra sock layers and manipulation techniques are not generalized to all boots. Another Timberland FAQ gives different heat advice; this article attributes the no-heat statement specifically to the linked work-boot guide and prioritizes exact-model care instructions.
+- [Red Wing care guidance](https://www.redwingshoes.com/articles/proper-care.html) and its [boot-care FAQ](https://eu.redwingshoes.com/leather-care/boot-care-faq) support controlled cleaning, drying and rest between wears. These are brand-specific care references rather than proof that every odor has the same cause. A Nike URL could not be retrieved and is not cited as verified or added to article references. The odor original had no external reference links; that set is preserved.
+- No GSC query × page access. Screening is editorial only; no confirmed cannibalization diagnosis, deletion, consolidation, redirect or noindex changes. No current SERP or ranking claims. Existing English hubs and the two original EN articles retain their primary intents.
+
+## QA
+
+- Ten VI sources match baseline bytes outside marked bilingual additions; original URL/slug/title/meta/canonical/body/images remain. All 216 original VI sitemap URLs remain. Homepage/POD/Fourthwall/shop/routing/PR #9 untouched.
+- All 31 manifest gates pass, including complete source/tag/image/reference parity, FAQ/schema, local links/fragments, one H1, English metadata, self-canonical, reciprocal vi/en, sitemap and sequential unique Journal cards. All 171 EN pages have unique titles/descriptions/canonicals, one H1 and self-canonical.
+- All 62 distinct HTTP image endpoints returned 200/image MIME. Original remote image bytes are cached only in the internal preview because the checkout does not include those assets; production paths/srcsets are unchanged. Browser checks use identical reviewed HTML.
+- Twenty desktop1440/mobile390 views have no document overflow; article images fit, and all ten tables have scroll wrappers. The mobile plus-size crop-top FAQ opens with its complete answer. The mobile boot schedule and desktop baby-tee H1 were visually inspected; all twenty original covers render after caching the original assets. Embedded Vietnamese lettering in source images is preserved, with English alt/captions.
+- Guarded maintenance promotes 51 links in 29 older EN pages, preserving their own VI-original links and guarding unrelated bodies/metadata/assets. These are maintenance touches, not additional translations. Final scan and release comparisons are recorded separately.
+
+Evidence: `docs/qa/en-batch33-*.json`. Full source-locked translations: `data/en-translations/batch33.json` and ten complete TSV files. Local QA status is distinct from published status.

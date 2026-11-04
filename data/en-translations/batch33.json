@@ -1,0 +1,102 @@
+[
+  {
+    "vi_slug": "phoi-do-nu-ca-tinh-cho-nguoi-map",
+    "en_slug": "plus-size-alternative-outfits-women",
+    "title": "Plus-Size Alternative Outfits: Fit, Shape and Personal Style",
+    "description": "Build plus-size alternative outfits through fit, drape, layers, color and movement, with eight formulas and practical online measurement checks.",
+    "primary_intent": "Whole-outfit plus-size fit and composition; stomach-specific fit, shape-specific proportions and item styling retain separate targets.",
+    "role": "OUTFIT_FIT_GUIDE",
+    "source_sha256": "7d653bda4ddf03df6e4e554d549cc678b8d58bf14c6a24c162d418af633d503f",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-nu-ca-tinh-cho-nu-lun",
+    "en_slug": "petite-alternative-outfits-women",
+    "title": "Petite Alternative Outfits: Ten Ways to Adjust Proportions",
+    "description": "Explore petite alternative outfits through waist placement, garment lengths, volume, layers and shoes, without restricting styles by height.",
+    "primary_intent": "General petite alternative composition and vertical proportions; baggy-pants buying measurements belong to the petite baggy specialist.",
+    "role": "OUTFIT_FIT_GUIDE",
+    "source_sha256": "bee25944e255352abebb703707b7fda4e843779649e260341c13083c4ad95276",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-cho-nguoi-gay-alt-fashion",
+    "en_slug": "slim-frame-alternative-outfits-women",
+    "title": "Slim-Frame Outfits for Women: Shape and Alternative Style",
+    "description": "Choose volume, texture and layers for a slim frame across E-Girl, Goth, Punk and other alternative styles, with comfortable proportion options.",
+    "primary_intent": "Optional volume distribution on slim frames; separate from plus size, body-shape shoulder-to-hip guides and height-specific proportions.",
+    "role": "OUTFIT_FIT_GUIDE",
+    "source_sha256": "ea6dc631cd85502a947addc1022ea0750090b0f574d0199dd15b678854c02518",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "cach-phoi-do-cho-nguoi-beo-bung-nu",
+    "en_slug": "outfits-fuller-stomach-women",
+    "title": "Outfits for a Fuller Stomach: Fit and Proportion Options",
+    "description": "Assess waistbands, top hems, drape and open layers around a fuller midsection, with eight outfit ideas and movement checks for comfortable fit.",
+    "primary_intent": "Midsection waistband, hem and torso interactions regardless of size; broader plus-size outfit guide remains separate.",
+    "role": "OUTFIT_FIT_GUIDE",
+    "source_sha256": "fff2ef99fdf25a4603d5b19b2fea4ea132b69fecc2d1051b558a1c418e268bf9",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-dang-qua-le",
+    "en_slug": "pear-shaped-outfit-guide",
+    "title": "Pear-Shaped Outfits: Shoulder, Waist and Hip Proportions",
+    "description": "Explore balance, curve emphasis and column silhouettes for pear-shaped proportions using necklines, drape, color, footwear and comfortable fit.",
+    "primary_intent": "Hips visually wider than shoulders: optional shoulder-to-hip balance or emphasis; separate from clothing size and the inverse relationship.",
+    "role": "BODY_PROPORTION_GUIDE",
+    "source_sha256": "3164799986505af9bc14a6c7a1b88a3b8c8fad36e9c04d01d04b02efdba0dd03",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "phoi-do-dang-tam-giac-nguoc",
+    "en_slug": "inverted-triangle-outfit-guide",
+    "title": "Inverted-Triangle Outfits: Shoulder and Lower-Body Proportions",
+    "description": "Style broader-shoulder proportions through necklines, lower-body volume, layers and focal points, with balance, emphasis and column options.",
+    "primary_intent": "Shoulders visually wider than hips: optional lower-body presence or shoulder emphasis, distinct from pear shape and petite vertical fit.",
+    "role": "BODY_PROPORTION_GUIDE",
+    "source_sha256": "2ef4e82963daff8e70ed2be0a7bbab62b62adf51d533a2e09bb174a8dfadcc56",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "quan-baggy-cho-nguoi-thap",
+    "en_slug": "baggy-pants-petite-fit-guide",
+    "title": "Baggy Pants for Petite Women: Rise, Inseam and Shape",
+    "description": "Compare rise, inseam, pocket placement, leg width and hems when buying baggy pants for a petite frame, including shoes, reviews and alterations.",
+    "primary_intent": "Petite baggy trouser selection by rise, inseam and pattern placement; baggy definition, general outfits and broad petite styling remain separate.",
+    "role": "BUYING_FIT_GUIDE",
+    "source_sha256": "5248604d94ead411a0274e13d2ddb19bc0819f6ef932616baf925405f11bb116",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "cach-khu-mui-boots",
+    "en_slug": "how-to-remove-boot-odor",
+    "title": "How to Remove Boot Odor: Drying, Linings and Insoles",
+    "description": "Address boot odor through material-compatible drying, lining and insole care, removable absorbers and better rest between wears.",
+    "primary_intent": "Boot interior odor and moisture cycle, distinct from new-boot stiffness, leather upper care and outfit styling.",
+    "role": "FOOTWEAR_CARE_GUIDE",
+    "source_sha256": "122a1079ad8c85c4317625f16a92e824060b5ecaa6db3afebd0087ce14cb5409",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "cach-lam-mem-boots-moi",
+    "en_slug": "how-to-break-in-new-boots",
+    "title": "How to Break In New Boots: Fit and Gradual Wear",
+    "description": "Check boot fit before gradual wear, assess rubbing and material limits, and avoid heat or soaking shortcuts when breaking in new boots.",
+    "primary_intent": "New-boot stiffness and initial comfortable wear, not interior deodorizing, upper maintenance or Combat versus Platform purchase comparison.",
+    "role": "FOOTWEAR_CARE_GUIDE",
+    "source_sha256": "66934e2af44099cb1fc2c04cbaf9788c524a5ddf3a8721975eda97f43377d6f2",
+    "published_date": "2026-11-04"
+  },
+  {
+    "vi_slug": "ao-baby-tee-form-dep-tren-shopee",
+    "en_slug": "buying-baby-tees-shopee-fit-guide",
+    "title": "Buying Baby Tees on Shopee: Fit and Listing Checks",
+    "description": "Compare baby-tee measurements, knit construction, graphics, customer reviews and exchange information when assessing Shopee listings.",
+    "primary_intent": "Baby-tee listing assessment on Shopee; separate from crop-top definition, generic online sizing and general or Gothic graphic-tee outfits.",
+    "role": "BUYING_GUIDE",
+    "source_sha256": "0ab9e4c064125fb6bc5b31ab7c9c5e76857ccf180beb7be8bd87bbd3f052525c",
+    "published_date": "2026-11-04"
+  }
+]
