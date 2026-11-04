@@ -1,0 +1,298 @@
+{
+  "applied": true,
+  "pages": 19,
+  "links": 39,
+  "changes": [
+    {
+      "path": "en/blog/airport-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/athleisure-la-gi.html",
+          "new": "/en/blog/what-is-athleisure.html",
+          "label": "the athleisure guide"
+        },
+        {
+          "old": "/blog/athleisure-la-gi.html",
+          "new": "/en/blog/what-is-athleisure.html",
+          "label": "Athleisure: Sportswear References in Everyday Clothing"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-night-out-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "what baggy trousers are"
+        },
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "parachute trousers"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/baddie-streetwear-guides.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Trousers? Understand the Cut Before Buying Recognize baggy fit, distinguish it from wide legs, cargos, and oversized sizing, and check waist, rise, thighs, legs, and measurements online."
+        },
+        {
+          "old": "/blog/quan-jogger-la-gi.html",
+          "new": "/en/blog/what-are-jogger-pants.html",
+          "label": "What Are Joggers? Cuffs, Fabrics, and Sizing Assess gathered cuffs, taper, elastic waistbands, fabrics, and measurements for practical jogger fit."
+        },
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "What Are Parachute Pants? Shape, Fabric, and Sizing Distinguish parachute trousers from cargos, joggers, and baggy cuts, with online checks for waist, rise, material, hems, and sizing."
+        },
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "baggy"
+        },
+        {
+          "old": "/blog/blokecore-la-gi.html",
+          "new": "/en/blog/blokecore-style-guide.html",
+          "label": "Blokecore and Football Shirts in Streetwear"
+        },
+        {
+          "old": "/blog/gorpcore-la-gi.html",
+          "new": "/en/blog/gorpcore-style-guide.html",
+          "label": "Gorpcore: Outdoor Clothing in City Outfits"
+        },
+        {
+          "old": "/blog/sporty-chic-la-gi.html",
+          "new": "/en/blog/sporty-chic-style-guide.html",
+          "label": "Sporty Chic: Sportswear in Everyday Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/baggy-pants-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "what baggy pants are"
+        },
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "what baggy pants are"
+        },
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "Baggy Pants: Construction and Fit Before Buying"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/egirl-alt-girl-guides.html",
+      "links": [
+        {
+          "old": "/blog/acubi-style-la-gi.html",
+          "new": "/en/blog/acubi-style-guide.html",
+          "label": "What Is Acubi Style? Korean Minimal Y2K Explained Explore Acubi palettes, silhouettes, lightweight layers, materials, and distinctions from Y2K, subversive basics, and streetwear before shopping."
+        }
+      ]
+    },
+    {
+      "path": "en/blog/jogger-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/quan-jogger-la-gi.html",
+          "new": "/en/blog/what-are-jogger-pants.html",
+          "label": "What Are Joggers? Guide"
+        },
+        {
+          "old": "/blog/quan-jogger-la-gi.html",
+          "new": "/en/blog/what-are-jogger-pants.html",
+          "label": "What Are Joggers? Guide"
+        },
+        {
+          "old": "/blog/quan-jogger-la-gi.html",
+          "new": "/en/blog/what-are-jogger-pants.html",
+          "label": "What Are Joggers? Cuffs, Fabrics, and Sizing"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/nu-metal-fashion-outfits.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "what baggy trousers are"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/nylon-vs-twill-cargo-pants.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Trousers? Understanding Shape Before Buying"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/parachute-pants-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "what parachute pants are"
+        },
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "Parachute Pants: Construction, Fabric, and Fit"
+        },
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "Parachute Pants: Construction, Fabric, and Fit"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-are-cargo-pants.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Pants? Choosing a Fit"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-are-low-rise-pants.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "what baggy pants are"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-does-unisex-mean.html",
+      "links": [
+        {
+          "old": "/blog/athleisure-la-gi.html",
+          "new": "/en/blog/what-is-athleisure.html",
+          "label": "What Is Athleisure? Wearing Sportswear All Day"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-a-capsule-wardrobe.html",
+      "links": [
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "What Are Parachute Pants?"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-an-outfit.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Pants?"
+        },
+        {
+          "old": "/blog/acubi-style-la-gi.html",
+          "new": "/en/blog/acubi-style-guide.html",
+          "label": "What Is Acubi Style?"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-minimalist-fashion.html",
+      "links": [
+        {
+          "old": "/blog/model-off-duty-la-gi.html",
+          "new": "/en/blog/model-off-duty-style-guide.html",
+          "label": "Model Off-Duty"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-oversized-fit.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Trousers? Understanding Fit Before Buying"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-techwear.html",
+      "links": [
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "What Are Parachute Pants?"
+        },
+        {
+          "old": "/blog/gorpcore-la-gi.html",
+          "new": "/en/blog/gorpcore-style-guide.html",
+          "label": "Gorpcore"
+        },
+        {
+          "old": "/blog/sporty-chic-la-gi.html",
+          "new": "/en/blog/sporty-chic-style-guide.html",
+          "label": "What Is Sporty Chic? Style through Movement"
+        },
+        {
+          "old": "/blog/quan-parachute-la-gi.html",
+          "new": "/en/blog/what-are-parachute-pants.html",
+          "label": "What Are Parachute Pants? Shape, Fabric, and Sizing"
+        },
+        {
+          "old": "/blog/gorpcore-la-gi.html",
+          "new": "/en/blog/gorpcore-style-guide.html",
+          "label": "What Is Gorpcore? Outdoor References in City Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/wide-leg-jeans-outfits-dark-y2k.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Trousers? Understanding Shape Before Buying"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-trouser-styling-guides.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-la-gi.html",
+          "new": "/en/blog/what-are-baggy-pants.html",
+          "label": "What Are Baggy Trousers? Understand the Cut Before Buying Recognize baggy fit, distinguish it from wide legs, cargos, and oversized sizing, and check waist, rise, thighs, legs, and measurements online."
+        },
+        {
+          "old": "/blog/quan-jogger-la-gi.html",
+          "new": "/en/blog/what-are-jogger-pants.html",
+          "label": "What Are Joggers? Cuffs, Fabrics, and Sizing Assess gathered cuffs, taper, elastic waistbands, fabrics, and measurements for practical jogger fit."
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}

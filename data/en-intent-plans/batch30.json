@@ -1,5 +1,5 @@
 {
-  "status": "PROVISIONAL_PLAN_ONLY_NO_EN_PAGES",
+  "status": "FULL_TRANSLATIONS_LOCAL_QA_PASSED_PENDING_RELEASE",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "sources": [
     {
@@ -28,8 +28,8 @@
         "Tham khảo cách phối trên Look"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "quan-baggy-la-gi",
@@ -55,8 +55,8 @@
         "Tham khảo cách phối trên Look"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "quan-jogger-la-gi",
@@ -82,8 +82,8 @@
         "Tham khảo cách phối trên Look"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "athleisure-la-gi",
@@ -110,8 +110,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "acubi-style-la-gi",
@@ -145,8 +145,8 @@
         "Tham khảo cách phối trên Look"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "gorpcore-la-gi",
@@ -178,8 +178,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "downtown-girl-la-gi",
@@ -207,8 +207,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "model-off-duty-la-gi",
@@ -239,8 +239,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "sporty-chic-la-gi",
@@ -273,8 +273,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     },
     {
       "vi_slug": "blokecore-la-gi",
@@ -307,8 +307,8 @@
         "Đọc tiếp theo chủ đề"
       ],
       "layout": "standard",
-      "review_status": "OUTLINE_SCREENED_NOT_FULL_EDITORIAL_REVIEW",
-      "publication_status": "PENDING"
+      "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
+      "publication_status": "COMPLETE_QA_PASSED"
     }
   ]
 }
