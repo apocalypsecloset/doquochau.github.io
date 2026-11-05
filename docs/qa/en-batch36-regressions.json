@@ -1,0 +1,146 @@
+{
+  "baseline": "a7738068475065fe16c70a615fffe6f11fb5d807",
+  "vi_sources_unchanged_outside_markers": 10,
+  "manifest_gates": [
+    {
+      "batch": "batch02",
+      "errors": []
+    },
+    {
+      "batch": "batch03",
+      "errors": []
+    },
+    {
+      "batch": "batch04",
+      "errors": []
+    },
+    {
+      "batch": "batch05",
+      "errors": []
+    },
+    {
+      "batch": "batch07",
+      "errors": []
+    },
+    {
+      "batch": "batch08",
+      "errors": []
+    },
+    {
+      "batch": "batch09",
+      "errors": []
+    },
+    {
+      "batch": "batch10",
+      "errors": []
+    },
+    {
+      "batch": "batch11",
+      "errors": []
+    },
+    {
+      "batch": "batch12",
+      "errors": []
+    },
+    {
+      "batch": "batch13",
+      "errors": []
+    },
+    {
+      "batch": "batch14",
+      "errors": []
+    },
+    {
+      "batch": "batch15",
+      "errors": []
+    },
+    {
+      "batch": "batch16",
+      "errors": []
+    },
+    {
+      "batch": "batch17",
+      "errors": []
+    },
+    {
+      "batch": "batch18",
+      "errors": []
+    },
+    {
+      "batch": "batch19",
+      "errors": []
+    },
+    {
+      "batch": "batch20",
+      "errors": []
+    },
+    {
+      "batch": "batch21",
+      "errors": []
+    },
+    {
+      "batch": "batch22",
+      "errors": []
+    },
+    {
+      "batch": "batch23",
+      "errors": []
+    },
+    {
+      "batch": "batch24",
+      "errors": []
+    },
+    {
+      "batch": "batch25",
+      "errors": []
+    },
+    {
+      "batch": "batch26",
+      "errors": []
+    },
+    {
+      "batch": "batch27",
+      "errors": []
+    },
+    {
+      "batch": "batch28",
+      "errors": []
+    },
+    {
+      "batch": "batch29",
+      "errors": []
+    },
+    {
+      "batch": "batch30",
+      "errors": []
+    },
+    {
+      "batch": "batch31",
+      "errors": []
+    },
+    {
+      "batch": "batch32",
+      "errors": []
+    },
+    {
+      "batch": "batch33",
+      "errors": []
+    },
+    {
+      "batch": "batch34",
+      "errors": []
+    },
+    {
+      "batch": "batch35",
+      "errors": []
+    },
+    {
+      "batch": "batch36",
+      "errors": []
+    }
+  ],
+  "en_pages": 201,
+  "unique_titles_descriptions_canonicals": true,
+  "single_h1_self_canonical_all": true,
+  "errors": []
+}

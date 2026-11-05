@@ -74,6 +74,8 @@ def generate(config):
  mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()) if r['en_url']}
  for manifest in sorted((ROOT/'data/en-translations').glob('batch[0-9][0-9].json')):
   for c in json.loads(manifest.read_text()):mapping['/blog/'+c['vi_slug']+'.html']='/en/blog/'+c['en_slug']+'.html'
+ # Optional source-specific equivalents for existing non-article English destinations.
+ mapping.update(config.get('internal_link_overrides',{}))
  for p in parts:
   for a in p.select('a[href]'):
    h=a['href']
