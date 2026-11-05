@@ -1,17 +1,34 @@
-# Translation checkpoint — 2026-11-05
+# Completed English translation checkpoint — 2026-11-05
 
-- Latest published content: PR #61, master `02138e1135d925b30d11c1e737892cd07456f8a3`.
-- **209/216 full translation pairs published and production-verified; seven pending.** Two EN-only originals make 211 English Journal cards.
-- Batch37 publishes three full collection hubs and seven Japanese-fashion guides: Gyaru, Harajuku, Ganguro, Kogal, Amekaji, Heisei Retro and Hime Gyaru. All 1,735 text/alt/attribute segments translated, 17,901 English words, 294 H2/H3 headings, 157 original image placements, five tables, 28 FAQ pairs and 110 hub cards.
-- All 126 preview and production web files match the reviewed tree. All five production-master checks succeeded. Branch Pages succeeded; branch Workers failure supplies zero diagnostic annotations. Its cause remains unknown; no override. Full evidence: docs/qa/en-batch37-preview.json, en-batch37-production.json and en-batch37-release-checks.json.
-- All 35 manifest gates pass, including both complete article/hub gates for the mixed manifest. All 216 original VI sitemap URLs remain. Ten VI sources byte-identical outside marked alternates and language switches. All 211 EN pages have one H1, self-canonical and unique title/description/canonical. Reciprocal hreflang and Journal sequence verified.
-- All 171 original/srcset/logo image endpoints return HTTP200/image MIME. All 20 desktop1440/mobile390 views have no document overflow; covers load; tables scroll within wrappers. Desktop three-column dictionary, mobile accessory hub, open Hime FAQ and original dictionary gallery visually inspected. Original image lettering retained with English alt/captions.
-- Guarded maintenance promotes 224 links in 104 older EN pages. This does not add translated article counts. Final scan: zero eligible links, zero skipped pages.
-- No GSC query × page access. Overlap analysis is editorial, without confirmed cannibalization, URL removal, consolidation, redirect or noindex. Gyaru overview/substyles, Harajuku place ecosystem, Heisei nostalgia and dictionary navigation retain distinct intents.
-- WHO UV guidance, Web Japan 1997 socks, Dior, V&A, FIT, KCI and dated Nippon Information survey context checked. Community references remain attributed. Full decisions: docs/en-translation-batch37.md.
-- No homepage/POD/Fourthwall/shop/routing/PR #9 changes.
+- **216/216 Vietnamese blog sources now have complete, published and production-verified English counterparts. Zero remain pending.**
+- The two pre-existing EN-only originals bring the English Journal total to **218 unique pages/cards**; they are not counted as translations.
+- Final content release: PR #63, master `d93ca3b4f72bf97c37bc0fe3ca90cc841f25baef`, reviewed head `ac27692b84da8cd099fa4f41334f0e13f6b5da0d`, tree `ea54a3984e164e1daa34bbd5d838b7c2dcf4f2b6`. Prior ten-page content release: PR #61, master 02138e1135d925b30d11c1e737892cd07456f8a3; checkpoint209 PR #62. Initial two translated pairs were merged through PR #10; original four EN pages were included in intent review.
+- This continuation publishes all 17 previously pending sources in sequential releases: ten in batch37 and the final seven in batch38. Together: 2,854 source text/alt/attribute segments, 29,685 English words, 448 H2/H3 headings, 199 original image placements, eight tables and 55 FAQ pairs. Three hubs preserve all 110 cards and original galleries.
+- Final inventory: all 216 rows MERGED, all VI and EN URLs unique, no blank EN counterparts. Full status table: data/en-216-keyword-intent-audit.csv. All source locks and scope decisions are retained in data/en-translations and data/en-intent-plans.
 
-## Latest ten published English URLs
+## Verified publication and QA
+
+All 126 batch37 preview/live web files and all 37 batch38 preview/live web files match their respective reviewed repository trees. Both content releases have all five production-master deployment checks successful. Branch Pages/Workers conclusions are recorded as returned; failed branch Workers runs have no diagnostic annotations and no inferred cause. No check override was used. Evidence: docs/qa/en-batch37-{preview,production,release-checks}.json and docs/qa/en-batch38-{preview,production,release-checks}.json.
+
+All 36 manifest gates pass. All 218 EN pages have exactly one H1, self-canonical and unique title/description/canonical. The separate global216 audit verifies each of all 216 unique VI–EN mappings, both self-canonicals, bidirectional vi/en alternates, both sitemap URLs and the counterpart's English Journal card. All 216 original VI sitemap URLs remain; all 218 Journal cards are unique, ordered and in the reading grid.
+
+All 216 VI sources are additionally byte-verified against the pre-continuation master 9c24d99 outside marked language additions; original URL, slug, canonical, title, metadata, body and image references preserved. Full source paragraph/heading/list/table/caption/image/reference/FAQ parity gates pass; no empty or partial EN pages.
+
+All 171 batch37 and 44 batch38 original/srcset/logo endpoint checks pass HTTP200/image MIME. All 34 desktop1440/mobile390 browser views have no document overflow; first images load and comparison tables scroll within wrappers. Dictionary desktop grid, mobile hub introduction/gallery, Hime FAQ, New Look desktop opening and Ulzzang mobile expanded answer were visually inspected. Original image lettering retained with English alt and captions.
+
+Guarded maintenance promotes 224 links in 104 older EN pages for batch37, then 37 links in 21 older EN pages for batch38. Overlapping maintained pages are not extra translations. Final scan has zero eligible links and zero skipped pages. No homepage/POD/Fourthwall/shop/routing/PR #9 changes.
+
+## Final seven published English URLs
+
+- https://apocalypsecloset.com/en/blog/chicano-style-history-outfits.html
+- https://apocalypsecloset.com/en/blog/hippie-counterculture-fashion-style.html
+- https://apocalypsecloset.com/en/blog/dior-new-look-1947-silhouette.html
+- https://apocalypsecloset.com/en/blog/ulzzang-korean-casual-style.html
+- https://apocalypsecloset.com/en/blog/1950s-womens-fashion-guide.html
+- https://apocalypsecloset.com/en/blog/japanese-streetwear-outfit-guide.html
+- https://apocalypsecloset.com/en/blog/1930s-fashion-silhouette-guide.html
+
+## Previous ten published in this continuation
 
 - https://apocalypsecloset.com/en/blog/alternative-fashion-shopping-guides.html
 - https://apocalypsecloset.com/en/blog/fashion-aesthetic-directory.html
@@ -24,20 +41,12 @@
 - https://apocalypsecloset.com/en/blog/heisei-retro-fashion-nostalgia.html
 - https://apocalypsecloset.com/en/blog/hime-gyaru-princess-style.html
 
-## Seven remaining source URLs
+## SEO and reference limits
 
-- https://apocalypsecloset.com/blog/chicano-style.html
-- https://apocalypsecloset.com/blog/hippie-style.html
-- https://apocalypsecloset.com/blog/new-look-fashion.html
-- https://apocalypsecloset.com/blog/ulzzang-style.html
-- https://apocalypsecloset.com/blog/1950s-fashion.html
-- https://apocalypsecloset.com/blog/japanese-streetwear.html
-- https://apocalypsecloset.com/blog/1930s-fashion.html
+No GSC query × page access was available. Cannibalization review is editorial and flags possible overlap only; there is no confirmed diagnosis, deletion, consolidation, redirect or noindex. Gyaru overview and substyles, Harajuku ecosystem and Japanese Streetwear, Heisei nostalgia and Y2K, dictionary navigation and aesthetic definition, New Look 1947 and 1950s overview, 1930s drape and later full-skirt forms retain separate intents. Chicano cultural identity is not reduced to stereotype; Ulzzang fashion has no skin/facial/body eligibility rules. Original references remain attributed.
 
-## Next work
+Historical and institutional references were checked against Dior, V&A, FIT, Met, PBS, GO TOKYO, Korea Policy Briefing, KCI and Web Japan. Dated 2026 survey data remain sample-specific. Original Celebrity Studies DOI retrieval403 is documented without claiming full-text review. Detailed editorial choices and limitations remain in docs/en-translation-batch37.md and docs/en-translation-batch38.md.
 
-The seven PENDING CSV rows are authoritative: Chicano, Hippie, New Look, Ulzzang, 1950s, Japanese Streetwear and 1930s. All use the standard article extractor. They form the final remainder after 10-page batch37; do not create extra pages to reach a batch minimum. No corresponding EN stubs or sitemap entries exist yet.
+## Remaining work
 
-Keep Chicano cultural identity distinct from generic Streetwear; Ulzzang internet beauty origins separate from all Korean fashion and body prerequisites; Hippie counterculture separate from Boho Chic; New Look Dior 1947 construction separate from the complete 1950s decade; 1930s natural-waist/bias drape separate from postwar full skirts; Japanese Streetwear silhouette/curation separate from Harajuku's broader place-based ecosystem. Original references and full sources must be retained and checked.
-
-Fetch master and reconcile ongoing work. Read CSV/guardrails, fully translate and hash-lock each source, meaningful attributes and metadata, generate only complete pages, wire reciprocal hreflang/Journal/sitemap, refresh guarded links and run all gates. Verify images and desktop/mobile, exact preview, normal PR merge, all production deployment checks and exact live bytes. Only then mark the remaining seven MERGED and record 216/216. Plans, drafts and maintenance never count as published translations.
+No translation backlog remains. Do not restart, duplicate or count the two EN-only originals as missing translations. Future performance analysis requires actual GSC query × page evidence and separate authorization for any change beyond the completed translation scope. This checkpoint makes no indexing or ranking guarantee.

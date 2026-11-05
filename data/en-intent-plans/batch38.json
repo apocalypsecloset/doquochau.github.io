@@ -1,5 +1,5 @@
 {
-  "status": "TRANSLATED_QA_PENDING",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "baseline": "f90ada06c5216c9893314f8efc6b92e00cd74e1b",
   "sources": [
@@ -35,7 +35,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "hippie-style",
@@ -65,7 +65,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "new-look-fashion",
@@ -97,7 +97,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ulzzang-style",
@@ -132,7 +132,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "1950s-fashion",
@@ -167,7 +167,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "japanese-streetwear",
@@ -203,7 +203,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "1930s-fashion",
@@ -239,7 +239,9 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pr": 63,
+  "merge_commit": "d93ca3b4f72bf97c37bc0fe3ca90cc841f25baef"
 }

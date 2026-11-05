@@ -7,8 +7,12 @@
   "all_pairs_in_sitemap": true,
   "all_counterparts_in_journal": true,
   "inventory_status": {
-    "MERGED": 209,
-    "TRANSLATED_QA_PENDING": 7
+    "MERGED": 216
   },
-  "errors": []
+  "errors": [],
+  "all_216_vi_sources_byte_identical_outside_language_markers": true,
+  "preservation_baseline": "9c24d990b5e6183b69bd8ed908557897bc6b5ed9",
+  "homepage_pod_shop_fourthwall_routing_untouched": true,
+  "indexed_manifest_pairs": 213,
+  "legacy_verified_pairs": 3
 }
