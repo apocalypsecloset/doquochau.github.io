@@ -1,6 +1,6 @@
 # Final English translation batch38 — 2026-11-05
 
-Status: COMPLETE_LOCAL_QA; preview, normal merge and production verification pending. Baseline master `f90ada06c5216c9893314f8efc6b92e00cd74e1b`, checkpoint PR #62, 209 published pairs.
+Status: MERGED_PRODUCTION_VERIFIED through PR #63. Baseline master `f90ada06c5216c9893314f8efc6b92e00cd74e1b`, checkpoint PR #62, 209 published pairs.
 
 Seven final full counterparts: Chicano, Hippie, Dior New Look 1947, Ulzzang, 1950s women's fashion, Japanese Streetwear and 1930s fashion. This is the final seven-page remainder after the preceding ten-page batch, not a reason to manufacture additional URLs.
 
@@ -49,4 +49,4 @@ Guarded maintenance promotes 37 links in 21 older EN pages, with zero eligible l
 
 ## Release confirmation
 
-Pending. CSV remains TRANSLATED_QA_PENDING for these seven until normal PR merge, all production deployment checks and exact live-byte verification. Published count remains 209 meanwhile.
+PR #63 merged normally as `d93ca3b4f72bf97c37bc0fe3ca90cc841f25baef` from reviewed head `ac27692b84da8cd099fa4f41334f0e13f6b5da0d` and tree `ea54a3984e164e1daa34bbd5d838b7c2dcf4f2b6`. All 37 preview and all 37 production web files match reviewed bytes: seven new EN, seven VI, 21 maintained older EN, Journal and sitemap. All five production-master checks succeeded. Actual branch check conclusions are retained without override or inferred cause. Tracker: 216 MERGED, zero pending; two EN-only originals make 218 English Journal cards. Full 216-pair global audit passes.
