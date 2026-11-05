@@ -1,0 +1,14 @@
+{
+  "source_pairs": 216,
+  "english_pages_and_journal_cards": 218,
+  "original_english_only": 2,
+  "all_pairs_unique": true,
+  "all_self_canonicals_and_bidirectional_hreflang": true,
+  "all_pairs_in_sitemap": true,
+  "all_counterparts_in_journal": true,
+  "inventory_status": {
+    "MERGED": 209,
+    "TRANSLATED_QA_PENDING": 7
+  },
+  "errors": []
+}
