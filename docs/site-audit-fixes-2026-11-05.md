@@ -39,3 +39,11 @@ Fourthwall currently provides signed 1920px image URLs. The storefront does not 
 Confirm purchase reporting on Fourthwall, shipping/returns configuration and end-to-end real checkout separately; no payment is submitted. The English policy is a translation/context update, not a legal compliance certification. Image/CDN/R2 backup, full external-image HTTP crawl, GSC indexing/overlap and Firebase account/security verification require their respective services.
 
 PR #9 and its unmerged branch are not merged or rewritten by this repair.
+
+## Release checkpoint
+
+PR #65 merged normally as `17fd97ab3fef4df7ea38f4a4ec15c053a2866eae`; reviewed head `81c9953667c00e250dc3125d2078d2ef6cc2d1bb`; reviewed/uploaded tree `f067f50a9fe2f58b0d02ae7dce752a826e0b1753`. Branch Cloudflare Pages and Website quality passed. The optional branch Workers build failed with no diagnostic annotations; its production-master counterpart subsequently passed. No check was disabled or overridden.
+
+Production-master Website quality, Cloudflare Pages, Workers Builds, GitHub Pages build and report-build-status passed. GitHub Pages publishing itself timed out after remaining at `updating_pages` for ten minutes; its failed-job-only retry returned `Deployment cancelled`. Workflow run: https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/42048899407 .
+
+The custom-domain home was still the previous version during verification. The reviewed immutable Cloudflare preview renders the new Solarpunk, White on White and privacy pages without desktop overflow; this is not proof of custom-domain publication. New extension rows now accurately say COMPLETE_QA_PASSED and are not labeled production-verified. This documentation/data-only checkpoint supplies a fresh deployment commit; publication still requires live verification. No website code is changed in this checkpoint.
