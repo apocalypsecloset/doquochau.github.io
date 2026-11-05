@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "vi_slug": "gyaru",
+      "en_slug": "gyaru-style-guide",
+      "source_text_segments": 188,
+      "en_words": 2109,
+      "headings": 23,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "harajuku-style",
+      "en_slug": "harajuku-fashion-style-guide",
+      "source_text_segments": 173,
+      "en_words": 1921,
+      "headings": 17,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "ganguro",
+      "en_slug": "ganguro-gyaru-fashion-makeup",
+      "source_text_segments": 173,
+      "en_words": 1761,
+      "headings": 18,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "kogal",
+      "en_slug": "kogal-gyaru-style-history",
+      "source_text_segments": 154,
+      "en_words": 1670,
+      "headings": 23,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "amekaji",
+      "en_slug": "amekaji-gyaru-american-casual",
+      "source_text_segments": 173,
+      "en_words": 1895,
+      "headings": 21,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "heisei-retro",
+      "en_slug": "heisei-retro-fashion-nostalgia",
+      "source_text_segments": 130,
+      "en_words": 1610,
+      "headings": 23,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "hime-gyaru",
+      "en_slug": "hime-gyaru-princess-style",
+      "source_text_segments": 188,
+      "en_words": 1918,
+      "headings": 23,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "mua-sam-alt-fashion",
+      "en_slug": "alternative-fashion-shopping-guides",
+      "source_segments": 197,
+      "en_words": 1498,
+      "cards": 24,
+      "images": 26,
+      "headings": 34
+    },
+    {
+      "vi_slug": "aesthetic-dictionary",
+      "en_slug": "fashion-aesthetic-directory",
+      "source_segments": 243,
+      "en_words": 2095,
+      "cards": 78,
+      "images": 81,
+      "headings": 88
+    },
+    {
+      "vi_slug": "phu-kien-thoi-trang-nu-ca-tinh",
+      "en_slug": "alternative-accessories-guide-directory",
+      "source_segments": 116,
+      "en_words": 1424,
+      "cards": 8,
+      "images": 8,
+      "headings": 24
+    }
+  ],
+  "errors": []
+}

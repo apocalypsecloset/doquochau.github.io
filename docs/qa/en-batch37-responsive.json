@@ -1,0 +1,292 @@
+{
+  "method": "Observed read-only browser DOM measurements at terminal.local:4173/qa37.html after visiting first content sections; repository-identical HTML, original remote image bytes cached only for preview.",
+  "views": [
+    {
+      "slug": "alternative-fashion-shopping-guides",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 320,
+      "cards": 24,
+      "tables": [
+        {
+          "client_width": 1132,
+          "scroll_width": 1132,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "alternative-fashion-shopping-guides",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 341,
+      "cover_natural_width": 389,
+      "cards": 24,
+      "tables": [
+        {
+          "client_width": 343,
+          "scroll_width": 650,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "fashion-aesthetic-directory",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 1024,
+      "cards": 78,
+      "tables": []
+    },
+    {
+      "slug": "fashion-aesthetic-directory",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 341,
+      "cover_natural_width": 1024,
+      "cards": 78,
+      "tables": []
+    },
+    {
+      "slug": "alternative-accessories-guide-directory",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 360.671875,
+      "cover_natural_width": 941,
+      "cards": 8,
+      "tables": []
+    },
+    {
+      "slug": "alternative-accessories-guide-directory",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 341,
+      "cover_natural_width": 941,
+      "cards": 8,
+      "tables": []
+    },
+    {
+      "slug": "gyaru-style-guide",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 848,
+          "scroll_width": 848,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "gyaru-style-guide",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 341,
+          "scroll_width": 650,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "harajuku-fashion-style-guide",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 848,
+          "scroll_width": 848,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "harajuku-fashion-style-guide",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 341,
+          "scroll_width": 650,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "ganguro-gyaru-fashion-makeup",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "ganguro-gyaru-fashion-makeup",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "kogal-gyaru-style-history",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "kogal-gyaru-style-history",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "amekaji-gyaru-american-casual",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 848,
+          "scroll_width": 848,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "amekaji-gyaru-american-casual",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 341,
+          "scroll_width": 650,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "heisei-retro-fashion-nostalgia",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "heisei-retro-fashion-nostalgia",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": []
+    },
+    {
+      "slug": "hime-gyaru-princess-style",
+      "frame_width": 1440,
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "h1": 1,
+      "max_main_image_width": 640,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 848,
+          "scroll_width": 848,
+          "overflow_x": "auto"
+        }
+      ]
+    },
+    {
+      "slug": "hime-gyaru-princess-style",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "h1": 1,
+      "max_main_image_width": 343,
+      "cover_natural_width": 941,
+      "cards": 0,
+      "tables": [
+        {
+          "client_width": 341,
+          "scroll_width": 650,
+          "overflow_x": "auto"
+        }
+      ]
+    }
+  ],
+  "visual_checks": [
+    "Mobile accessory hub title and introduction",
+    "Desktop aesthetic directory three-column grid: 1132px, columns 362.656/362.672/362.656px",
+    "Mobile Hime Gyaru FAQ opened; Lolita distinction visible",
+    "Mobile dictionary gallery opened: four original images, 305px display width; no document overflow"
+  ],
+  "original_image_lettering_retained": true
+}

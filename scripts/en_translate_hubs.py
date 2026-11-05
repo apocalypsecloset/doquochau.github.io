@@ -76,7 +76,7 @@ def generate(c):
  for t in main.select('table'):t.wrap(template.new_tag('div',attrs={'class':'article-table-scroll'}))
  cards=main.select('a.hub-card[href]')
  items=[{'@type':'ListItem','position':i+1,'name':a.h3.get_text(' ',strip=True),'url':'https://apocalypsecloset.com'+a['href']} for i,a in enumerate(cards) if a.h3]
- graph=[{'@type':'CollectionPage','@id':url,'url':url,'name':c['title'],'description':c['description'],'inLanguage':'en','isBasedOn':{'@id':vi},'dateModified':'2026-11-03','mainEntity':{'@type':'ItemList','numberOfItems':len(items),'itemListElement':items}},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':name,'item':u} for i,(name,u) in enumerate([('Shop','https://apocalypsecloset.com/'),('Journal','https://apocalypsecloset.com/en/blog.html'),(c['title'],url)])]}]
+ graph=[{'@type':'CollectionPage','@id':url,'url':url,'name':c['title'],'description':c['description'],'inLanguage':'en','isBasedOn':{'@id':vi},'dateModified':c.get('published_date','2026-11-03'),'mainEntity':{'@type':'ItemList','numberOfItems':len(items),'itemListElement':items}},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':name,'item':u} for i,(name,u) in enumerate([('Shop','https://apocalypsecloset.com/'),('Journal','https://apocalypsecloset.com/en/blog.html'),(c['title'],url)])]}]
  j=template.new_tag('script',type='application/ld+json');j.string=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False);template.head.append(j)
  template.head.append(template.new_tag('link',rel='stylesheet',href='/assets/css/en-hubs.css?v=20261103'))
  out=ROOT/'en/blog'/f"{c['en_slug']}.html";out.write_text(str(template)+'\n');return out
