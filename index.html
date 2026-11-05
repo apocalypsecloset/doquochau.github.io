@@ -35,7 +35,7 @@
 @font-face{font-family:'Space Mono';src:url('/space-mono-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
 @font-face{font-family:'Space Mono';src:url('/space-mono-bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
 </style>
-<link rel="stylesheet" href="/assets/css/pod-shop-home.css?v=20261102e">
+<link rel="stylesheet" href="/assets/css/pod-shop-home.css?v=20261105a">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Apocalypse Closet","url":"https://apocalypsecloset.com/","@id":"https://apocalypsecloset.com/#website","publisher":{"@id":"https://apocalypsecloset.com/#organization"},"inLanguage":"en"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Apocalypse Closet","url":"https://apocalypsecloset.com/","logo":{"@type":"ImageObject","url":"https://apocalypsecloset.com/Logo-Apocalypse-Closet.webp","width":88,"height":88},"description":"Apocalypse Closet is an independent gothic and grunge streetwear label offering original print-on-demand graphic apparel.","sameAs":["https://www.instagram.com/apocalypse.closet","https://www.pinterest.com/apocalypsecloset/","https://www.tiktok.com/@apocalypse.closet","https://www.facebook.com/apocalypsecloset/","https://www.youtube.com/@apocalypsecloset","https://x.com/apocalypse_cls","https://www.threads.net/@apocalypse.closet","https://www.linkedin.com/company/apocalypsecloset","https://about.me/apocalypsecloset","https://gravatar.com/apocalypseclose","https://www.behance.net/apocalypsecloset","https://www.designspiration.com/apocalypsecloset/","https://www.are.na/apocalypse-closet/channels","https://github.com/apocalypsecloset","https://www.quora.com/profile/Apocalypse-Closet","https://speakerdeck.com/apocalypsecloset","https://anyflip.com/homepage/pylnt","https://issuu.com/apocalypsecloset","https://www.diigo.com/profile/apocalypsecloset","https://coub.com/apocalypsecloset/","https://potofu.me/apocalypsecloset","https://heylink.me/apocalypsecloset","https://apptuts.bio/apocalypseclose"],"@id":"https://apocalypsecloset.com/#organization"}</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};</script>
@@ -73,9 +73,10 @@
 <p class="ac-store-lead">Heavyweight garment-dyed cotton. Relaxed fit. Original gothic angel artwork. Made to order.</p>
 <div class="ac-hero-buy-price"><strong id="ac-feature-price">FROM $29.99</strong><span>USD · BLACK · S–4XL</span></div>
 <div class="ac-hero-quickbuy">
-<label for="ac-hero-size">SELECT YOUR SIZE</label>
+<p class="ac-variant-heading">SELECT COLOR &amp; SIZE</p>
 <div class="ac-hero-buy-actions">
-<select id="ac-hero-size" aria-label="Select size for Silent Chaos graphic tee" disabled><option value="">LOADING SIZES…</option></select>
+<label class="ac-variant-field" for="ac-hero-color">COLOR<select id="ac-hero-color" aria-label="Select color for Silent Chaos graphic tee" disabled><option value="">LOADING COLORS…</option></select></label>
+<label class="ac-variant-field" for="ac-hero-size">SIZE<select id="ac-hero-size" aria-label="Select size for Silent Chaos graphic tee" disabled><option value="">LOADING SIZES…</option></select></label>
 <button id="ac-hero-add" type="button" disabled>ADD TO BAG ↗</button>
 </div>
 <p id="ac-hero-buy-status" class="ac-hero-buy-status" role="status" aria-live="polite">Loading live size availability…</p>
@@ -128,6 +129,13 @@
 <button id="ac-lightbox-next" class="ac-lightbox-arrow ac-lightbox-next" type="button" aria-label="Next product photograph">›</button>
 <span id="ac-lightbox-count" class="ac-lightbox-count"></span>
 </dialog>
+<section id="product-details" class="ac-section" aria-labelledby="ac-product-details-title">
+<div class="ac-section-inner">
+<p class="ac-overline">// BEFORE YOU ORDER</p><h2 id="ac-product-details-title">FIT, CARE &amp; ORDER HELP.</h2>
+<div id="ac-product-information" class="ac-product-information" aria-live="polite"></div>
+<p class="ac-section-intro">Check the current product measurements and available options on Fourthwall before choosing a size. Shipping and applicable taxes are calculated at checkout. Use your order confirmation for tracking and order support.</p>
+<p><a class="ac-btn ac-btn-secondary" href="https://apocalypse-closet-shop.fourthwall.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet" rel="noopener noreferrer">VIEW PRODUCT &amp; SIZE DETAILS ↗</a></p>
+</div></section>
 <section id="manifesto" class="ac-edition" aria-labelledby="ac-manifesto-title">
 <div>
 <p class="ac-overline">// THE BRAND / NOT JUST A T-SHIRT</p>
@@ -164,7 +172,7 @@
 <li><a href="https://www.pinterest.com/apocalypsecloset/" rel="me noopener noreferrer" target="_blank">Pinterest</a></li>
 <li><a href="https://www.instagram.com/apocalypse.closet/" rel="me noopener noreferrer" target="_blank">Instagram</a></li>
 <li><a href="https://www.tiktok.com/@apocalypse.closet" rel="me noopener noreferrer" target="_blank">TikTok</a></li>
-<li><a href="/privacy.html">Privacy policy</a></li>
+<li><a href="/en/privacy.html">Privacy policy</a></li>
 </ul></div>
 </div>
 <div class="ac-footer-bottom"><span>© 2026 Apocalypse Closet. All rights reserved.</span><span>Storefront powered by Fourthwall · Secure checkout on Fourthwall</span></div>
@@ -177,15 +185,17 @@
 <p class="ac-cart-help">Shipping and applicable taxes are calculated at checkout.</p>
 <a id="ac-checkout-link" class="ac-btn" href="https://apocalypse-closet-shop.fourthwall.com" hidden>SECURE CHECKOUT ↗</a>
 <p class="ac-cart-status" id="ac-cart-status" role="status">Add a piece to get started.</p>
+<button id="ac-cart-retry" class="ac-cart-retry" type="button" hidden>RETRY LOADING BAG</button>
 </dialog>
 <script defer src="/assets/js/fourthwall-storefront-config.js?v=20261102a"></script>
-<script defer src="/assets/js/pod-shop-home.js?v=20261102d"></script>
+<script defer src="/assets/js/pod-shop-model.js?v=20261105a"></script>
+<script defer src="/assets/js/pod-shop-home.js?v=20261105a"></script>
 <script>
 /* Keep preview traffic out of the production GA4 property. */
 if (location.hostname === 'apocalypsecloset.com' || location.hostname === 'www.apocalypsecloset.com') {
   const analytics = document.createElement('script');
   analytics.defer = true;
-  analytics.src = '/assets/js/analytics-enhancements.min.js?v=20260807-mobile-perf-v1';
+  analytics.src = '/assets/js/analytics-enhancements.min.js?v=20261105a';
   document.head.appendChild(analytics);
 }
 </script>

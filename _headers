@@ -1,2 +1,6 @@
-/*
+# Keep Pages aliases/previews out of search without blocking the custom domain.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex, nofollow

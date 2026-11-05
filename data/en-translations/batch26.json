@@ -6,7 +6,7 @@
     "description": "Style leather skirts by balancing shine, skirt shape, tops and footwear, with practical casual, work and alternative outfit routes.",
     "primary_intent": "Leather-skirt material and shape styling; leather care and buying guides remain separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "c3012515ee191b91155c2ac041e6db874d602d937a69f24f4b5061f7f2694e83"
+    "source_sha256": "84d5fab83a43dc4144ce5898cd82007ce00ef0f72d577afa810d80f4cb8aec13"
   },
   {
     "vi_slug": "phoi-do-voi-ao-khoac-jean-nu",
@@ -15,7 +15,7 @@
     "description": "Choose denim jacket wash and fit, compare cropped and oversized shapes, and build eight outfits with deliberate double-denim contrast.",
     "primary_intent": "Denim-jacket outerwear wash and layering; leather jackets and denim-bottom specialists remain separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "38ad8e9a6090c3f02125b39a43eaa0b1af69a01429b2d95871202ac67d4e90b7"
+    "source_sha256": "e8695dc99458f27743357e3ea335678cff6afc7c93aee6671dea60e75a460d11"
   },
   {
     "vi_slug": "phoi-do-voi-ao-gile-nu",
@@ -24,7 +24,7 @@
     "description": "Compare sweater vests and tailored waistcoats, choose underlayers and bottoms, and balance necklines, hems and waistbands.",
     "primary_intent": "Sleeveless knit and tailored vest layering; Dark Academia and Office Siren broader aesthetic guides separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "bae57c298168f01c956e2c7cd90e54dcc1924aae0debace0279f6de446730439"
+    "source_sha256": "0bcd76719060f18d5353d3a3465a66c03d169453b771a90dc3778107af09f2c2"
   },
   {
     "vi_slug": "phoi-do-voi-chan-vay-xep-ly",
@@ -33,7 +33,7 @@
     "description": "Match tops, layers and shoes to mini, midi and long pleated skirts while controlling pleat width, movement and volume.",
     "primary_intent": "Pleat construction, volume and hem specialist; tennis, A-line and general long-skirt articles separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "f5f592c5edbd4de3039a1697d28e25c3cca145c12908ad4c7fb49bdabec88c22"
+    "source_sha256": "c1943ca1fd8d7dd184d666d1a572da9c0124d1a791f7ef648303ca1526654280"
   },
   {
     "vi_slug": "phoi-do-voi-vay-ngan-nu",
@@ -42,7 +42,7 @@
     "description": "Build alternative mini skirt outfits around shape, waist definition, tights, footwear and practical proportions.",
     "primary_intent": "Mini-length alternative outfit styling; denim, leather and tennis skirt material-specific guides separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "5eba26baaf914240c901218317cec813ae53a111e1bd06ef3c12c20ca35021fa"
+    "source_sha256": "c2122a1ada0c3afcc24a22ce6ebb64f776270f197778eda6dc06f76afe7e4d59"
   },
   {
     "vi_slug": "slip-dress-la-gi-cach-phoi",
@@ -51,7 +51,7 @@
     "description": "Understand slip dress construction and style satin or matte versions through layers, neckline, hem length and contrasting footwear.",
     "primary_intent": "Slip-dress construction and layering; bodycon and babydoll silhouette specialists separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "639bc5f4b3869c00b55f4653c23254eec72a48898f1c82f366a1841e49896099"
+    "source_sha256": "fd1e662d835fbd046ae04604bf98c9b2c152429225cb136b40ca4f3fd50c655e"
   },
   {
     "vi_slug": "ballet-flats-la-gi-cach-phoi",
@@ -60,7 +60,7 @@
     "description": "Recognize ballet flats and style them with skirts, trousers and darker outfits while checking fit, materials and proportions.",
     "primary_intent": "Unstrapped ballet-flat construction and styling; Mary Jane instep straps and Balletcore aesthetic distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "579670333bd989c7d3ce2245e59e16773729ff6f25247c06bb0f8ecf58beaa7e"
+    "source_sha256": "a6b9d1b6d4fc6bd48d81b4a54d9949478bf8adce16b3b4d551dd0e1d5f19a60e"
   },
   {
     "vi_slug": "outfit-nu-ca-tinh-di-concert",
@@ -69,7 +69,7 @@
     "description": "Plan alternative concert outfits around venue, weather, movement, footwear and bags, with graphic tee and dark-fashion routes.",
     "primary_intent": "Concert occasion and movement requirements; gothic graphic tee product styling and general going-out guides separate",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "28dbe84818ece4d5ae22481fc125b623e0ea5c023f1d297df5e4ade5bb4b524b"
+    "source_sha256": "625f39defc30a57973ed57bf3f7fae137e2ee01ec3cffd84c9739b291392225d"
   },
   {
     "vi_slug": "phoi-do-voi-ao-blazer-den-nu",
@@ -78,7 +78,7 @@
     "description": "Style a black blazer through fit, shoulder structure, length and four silhouettes with casual and alternative outfit details.",
     "primary_intent": "Black-blazer silhouette and layering specialist; Corporate Goth workwear and Office Siren aesthetic separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "bba98d0735faa70300f10ad441f9d9f5352f71e5c2e3e6ff774f64c85535f108"
+    "source_sha256": "e3f519d224aac047bb6ba4d9297b12d9107ca9abb50f0382094b89e6874ae4b2"
   },
   {
     "vi_slug": "cach-chon-tui-cho-outfit-nu-ca-tinh",
@@ -87,6 +87,6 @@
     "description": "Choose bag shape, scale, color, texture and carrying position to support alternative outfits and everyday practical needs.",
     "primary_intent": "Bag selection and carrying-position specialist; general accessory directory and occasion styling separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "aa635a8cb50df49cab2b5abd9a30a4c454c737ace4c7ed222b8c1357bbf4bd7c"
+    "source_sha256": "3d988e4cf44fac01926aca704b96f6c2f54e22d197512084c68ec3956e65b623"
   }
 ]

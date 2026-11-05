@@ -6,7 +6,7 @@
     "description": "Compare parachute, cargo, jogger and baggy construction, then check fabric, rise, adjusters and measurements before choosing a pair.",
     "primary_intent": "Construction, adjustable hems, fabric and fit definition; separate from parachute outfit specialist",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "510d9005cfb41794f2caa646253798245ef35242b4498a81b870aca8eafa6414",
+    "source_sha256": "d50564d595838e10ac3301f59114987af164bcab82b6fa774c796f3eadcb6488",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Understand intentional trouser volume, compare wide-leg and cargo descriptions, and assess waistband, rise, thighs, hems and fabric.",
     "primary_intent": "Baggy hip/thigh/leg volume and construction terminology; separate from outfit pairings and shorter-wearer fit",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "23d5a63256f6b476abee8f158684e8162138563a7d0cbe9e37689d0436772058",
+    "source_sha256": "15f15b814c723aa67657ce4e27be59fbc4931d434e279d96549dfcb40bb7b9ba",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Identify jogger construction through waistbands, taper and ankle finishes, with material comparisons and practical measurement checks.",
     "primary_intent": "Jogger construction, cuffs and fit definition; separate from existing jogger outfit specialist",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "d3a97a81f80b572296375906218e4e0d4eee23913deb21e3d245434f95fc1548",
+    "source_sha256": "8b4b04e8ddba27eaaee441d86ba3479b6edef7b2e61662c6fcaff55c4cb5cd01",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Understand athleisure and compare activewear and Sporty Chic through movement, opacity, storage, fabric behavior and four outfit ideas.",
     "primary_intent": "Sportswear in everyday clothing and intended use; distinguish sporty-chic aesthetic and actual performance clothing",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "8a74f7d28c328396ff98e5eeb35e66fc2b6a0be4225bf97d4095fa0650d5a980",
+    "source_sha256": "b18082594dfedd64bfb93f8d7618de6ba1595678ebb131339503b4e049f65140",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore Acubi through muted palettes, altered basics, visible layers and five outfit formulas, with practical wardrobe comparisons.",
     "primary_intent": "Specific Acubi visual references and outfit structure; distinguish general minimalism and Korean-style overview",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "d683db85eadd948e10684896b67a2d8e4dd2e039ca248d71b22d90e03748800c",
+    "source_sha256": "f9bc1b1137422c44dae50a570c17fac179d4cb5f507b38bc26f6fabba83dfffe",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Explore Gorpcore context, layers, outfit directions and Techwear differences while checking actual product function and climate needs.",
     "primary_intent": "Outdoor-gear-inspired fashion vocabulary; distinguish performance claims and existing Techwear specialist",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "a885ee24b465267644b864da0a04a3ee31a0b95eaaf94217c4b6eb5db61b7dba",
+    "source_sha256": "dc3e3638a6758146637bf6510b89f83a35807525a15b094362797fc7c765cb1e",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Compare denim, knitwear, jackets and five urban outfit formulas, with wardrobe planning and nearby aesthetic distinctions.",
     "primary_intent": "Urban casual aesthetic vocabulary and outfit choices; distinguish general Grunge and model-off-duty references",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "ff8f6ee22733e350e812782df66d85dff722e816aaa4815e744fd9544704b076",
+    "source_sha256": "63b68f360e20eb5e32d12338d4f5c8d8d4a8bc27e10c46bf5dc3349ecb74c8ed",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Build a deliberate outfit from familiar basics, garment proportions and a selected focal detail, with five formulas and climate adaptations.",
     "primary_intent": "Off-duty styling vocabulary and repeatable casual proportions; distinguish downtown-girl and general OOTD",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "7ec3073e377c3a033d5c8b92db1ed64f2a52673b42c79e0b582e1de0eb829cf1",
+    "source_sha256": "195936534e5b1e7e29e8169398244873ad22a3961f41754d6e8a0ff0adaba5f1",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Compare Sporty Chic and athleisure through fabric, movement and finishing, with five outfit formulas and practical garment checks.",
     "primary_intent": "Polished and sportswear visual combinations; distinguish broader athleisure definition and travel occasion",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "a1f6917fb12f752fc13d63f932b03abce10ddf3a294ba7320b2d6ea00f7d3872",
+    "source_sha256": "cac0080149e8373f668b26626a876e1f0cf1806225ffd1cd395c2ad8a7236b27",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Explore football-shirt references, jersey proportions, five outfit formulas, Blokette comparisons and practical care considerations.",
     "primary_intent": "Football-shirt fashion references and styling; distinguish general graphic tees, sporty-chic and performance kit",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "0cb12d5d7548fb59a9341a78a1ec186ec6e82134cb36e140cf92fde8a3ee15ee",
+    "source_sha256": "db9f081efe1e30271e51e2cdd4ade141777174002083fa1096945b6ba7992cd7",
     "published_date": "2026-11-04"
   }
 ]

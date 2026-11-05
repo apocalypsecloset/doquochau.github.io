@@ -1,0 +1,24 @@
+[
+  {
+    "vi_slug": "solarpunk",
+    "en_slug": "solarpunk-fashion-aesthetic-guide",
+    "title": "What Is Solarpunk? A Green Aesthetic and Practical Fashion",
+    "description": "Explore solarpunk ideas, natural colors, practical layers and six everyday outfit formulas, with distinctions from cyberpunk and cottagecore.",
+    "primary_intent": "Ecological future aesthetics translated into wardrobe choices; distinct from sustainable-fashion lifecycle advice and cottagecore nostalgia.",
+    "role": "AESTHETIC_GUIDE",
+    "source_sha256": "578f25f66d8a9d73114240d854cc3e624e14b4813fbfb363307da5f1e68c5a8b",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "white-on-white",
+    "en_slug": "white-on-white-outfit-guide",
+    "title": "White on White: How to Give an All-White Outfit Depth",
+    "description": "Build all-white outfits through undertones, fabric texture and clear proportions, with four practical formulas and accessories that finish the look.",
+    "primary_intent": "All-white tonal outfit styling across texture and proportion; distinct from minimalism as a complete wardrobe philosophy.",
+    "role": "OUTFIT_STYLE_GUIDE",
+    "source_sha256": "599a89e9a5153907e1eef5f3aef26b107e62e6bd0fbca826928e8a109ba671e1",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  }
+]

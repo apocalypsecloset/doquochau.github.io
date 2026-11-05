@@ -6,7 +6,7 @@
     "description": "Explore fitted blazers, pencil skirts and slim glasses, then adapt Office Siren proportions to your wardrobe and actual workplace requirements.",
     "primary_intent": "Fashion aesthetic around tailored lines, neckline and accessories; separate from Corporate Goth workplace specialist and actual business dress codes",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "38a0e6ad40343c3408cf31785f14c8c878e68cad5b210001cbdf6e8ea89794b4",
+    "source_sha256": "62e8d53796e8dd305a557c807bd68498798559d3a85a10d4b79627d3472de4d3",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Explore experimental shape, volume, asymmetry, texture and negative space, with seven ways to adapt avant-garde ideas into everyday outfits.",
     "primary_intent": "Experimental fashion concepts, shape and construction; separate from any single dark aesthetic or product outfit specialist",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "e991ba0a1cc6d02163ecebb753fc69b210dde49d91a542c59cae74507c8ba221",
+    "source_sha256": "f00a7b10bda74be5009078057ff524bcad4b5145cc0b668d78f06479346e2b3a",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Understand rockabilly music and clothing references, compare Greaser and Psychobilly, and build rebel-denim or pin-up-inspired outfits.",
     "primary_intent": "Rockabilly cultural and visual references; distinguish Punk, generic vintage and broad 1950s fashion",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "49688ed8eab258d0a5a8ecfc9955d118c5c543f8682fc56c36379a0ab9c7f656",
+    "source_sha256": "0527abe14b8ea72d5fbb3f4e3d374c6926fbe2f9fea0d2b34d5bf3792b8f82bb",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Build Light Academia outfits through pale neutrals, academic references and soft tailoring, with warm-weather options and Dark Academia differences.",
     "primary_intent": "Light Academia visual vocabulary and outfits; distinguish existing Dark Academia and general preppy/academic style",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "20bcc349eca633cdda73cb3a8b99daa99782804a2d4f0b3dd2a97f4f9af25368",
+    "source_sha256": "79d0e60ae8de72d53b04ff2c974ec8ac73d1e93af475fb5dabd83b9b4962491d",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore nature-inspired Fairycore through lace, knits, sheer layers and movement, including dark palettes and distinctions from Fairy Grunge.",
     "primary_intent": "Fairy-inspired nature imagery and styling; distinguish existing Fairy Grunge/Fairy Goth and broader Cottagecore",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "0d524479afc883d1b1443f83d644427c3f4e627d494d2957e1ccc8f263866ef1",
+    "source_sha256": "9c360fbb45dfdad8cef2e455ee0b9304b15893b267d60cd6b674d510e7ef53d5",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Use light colors, airy layers and selective shine to build Angelcore outfits, from subtle everyday combinations to more elaborate styling.",
     "primary_intent": "Angelic/ethereal visual styling; distinguish fairy/nature references and darker aesthetic collections",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "6f967ffb06b995e7fe715c55db7dde08f773782a02a4f9c2ddb4827ed7afb7ef",
+    "source_sha256": "0423a7ab2b624deddc2119395c643f8f25ac42ca19c0cc364230a7c604ef93f6",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Explore aquatic colors, iridescent surfaces, drape and sheer layers, with eight Mermaidcore outfits and grounded deep-ocean alternatives.",
     "primary_intent": "Aquatic aesthetic colors/surfaces and outfits; separate from mermaid-skirt garment construction and beach occasion guide",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "ed3706ba5aa94a247fcfc9dc87e299f736f0b0211a21b0b4374dda638f44dfdc",
+    "source_sha256": "a03d5257f18baa8693910031a577278f6e040a5959b5ad4c7c1c754d0bb9b6c7",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Understand Mori Kei layering, natural colors and soft silhouettes, with six outfit routes, warm-weather adaptations and related-style comparisons.",
     "primary_intent": "Mori Kei cultural and layered forest-inspired wardrobe references; distinguish Cottagecore and Fairycore labels",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "eb05f804f0af552296ed65ac96a87859bfd99b34af88c62e5f77446d0ba60e91",
+    "source_sha256": "ae5e65991a4de9b7cf2852af11fe124cee54ad6a47d2c4d2b4b0cb9a78208723",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Build an Ouji coordinate through blouses, waistcoats, shorts or trousers and footwear, with five outfit routes and clear Lolita distinctions.",
     "primary_intent": "Japanese princely fashion vocabulary and proportions; distinguish Victorian Goth and Lolita-related comparisons",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "ea866f8c89b79047954d2541b5973b235c4b2e7d90d8d71846df85204a3c2a55",
+    "source_sha256": "504d33ea6d65dca3a738c6a4361a81e9a38ffd1e5dff3cbd24e2453e5e68c546",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Explore Cottagecore textures, florals and soft silhouettes, with everyday formulas, dark palettes and practical adaptations for humid weather.",
     "primary_intent": "Rural/romantic visual wardrobe vocabulary; distinguish Mori Kei history, Fairycore imagery and Dark Academia",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "3295b563d647a6d6f4a4b1e2d984c33bda222658c969c043b57a6f2f61a4f31f",
+    "source_sha256": "d4da66c9c7990a230b3a44e73be18fa67ea4684612c24ed114b9d62117a2943e",
     "published_date": "2026-11-04"
   }
 ]
