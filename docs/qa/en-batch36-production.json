@@ -1,0 +1,261 @@
+{
+  "base": "https://apocalypsecloset.com",
+  "checked": 51,
+  "results": [
+    {
+      "path": "blog/barbiecore.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/clean-girl-aesthetic-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/cutecore.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/dark-feminine-is-not-a-trend.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/geek-chic.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/kidcore.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/mcbling.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/mob-wife-aesthetic-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/parisian-chic.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/the-art-of-burning-out.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-cafe-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/badgirl-fashion-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/barbiecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/boho-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/casual-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/classic-style-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/clean-girl-aesthetic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cutecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cyber-y2k-style-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-academia-outfits-alternative-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-feminine-explained-wardrobe.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-feminine-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-feminine-outfit-ideas.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-y2k-vs-y2k.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/devilcore-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/downtown-girl-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/geek-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/gurokawa-creepy-cute-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-a-corset-top.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/ivy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/kidcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mcbling-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mob-wife-aesthetic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/morute-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/office-siren-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/parisian-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/preppy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/rockabilly-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/sporty-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/understanding-job-burnout.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-does-aesthetic-mean-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-a-capsule-wardrobe.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-indie-sleaze.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-minimalist-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-y2k-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-black-blazer-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-leather-jacket-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "sitemap.xml",
+      "exact": true,
+      "error": null
+    }
+  ]
+}

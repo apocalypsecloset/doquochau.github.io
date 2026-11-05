@@ -1,6 +1,6 @@
 # English translation batch36 — 2026-11-05
 
-Baseline: master `a7738068475065fe16c70a615fffe6f11fb5d807`, checkpoint 189/216 production-verified pairs plus two English-only originals. Ten full translations are complete and local QA passed; preview, normal merge and production verification remain pending.
+Baseline: master `a7738068475065fe16c70a615fffe6f11fb5d807`, checkpoint 189/216 production-verified pairs plus two English-only originals. Ten full translations are published through PR #59 after preview, normal merge and production verification.
 
 ## Intent ownership
 
@@ -44,4 +44,8 @@ Baseline: master `a7738068475065fe16c70a615fffe6f11fb5d807`, checkpoint 189/216 
 - Mobile burnout FAQ opens with the full answer visible, including the not-treatment distinction. The revised English Journal hrefs and no overflow were rechecked. Mobile Mob Wife comparison heading/table and desktop Geek Chic H1/introduction were visually inspected. Only original source image bytes are cached for the internal preview, with no HTML asset replacement.
 - Guarded refresh promotes 52 links in 29 older EN pages, with each own-VI original link and unrelated content preserved. The additional related hub card label correction is documented separately; those maintenance touches are not new translations. Final guarded scan has zero eligible links and zero skipped pages.
 
-Evidence: `docs/qa/en-batch36-*.json`, `data/en-translations/batch36.json`, ten full TSVs and `data/en-intent-plans/batch36.json`. Published count remains 189 until preview, merge, deployment and final production comparison succeed. No GSC query × page access: intent screening is editorial only, without confirmed cannibalization, removal, consolidation, redirect or noindex changes.
+Evidence: `docs/qa/en-batch36-*.json`, `data/en-translations/batch36.json`, ten full TSVs and `data/en-intent-plans/batch36.json`. The release confirmation below establishes the updated published count. No GSC query × page access: intent screening is editorial only, without confirmed cannibalization, removal, consolidation, redirect or noindex changes.
+
+## Release confirmation
+
+PR #59 merged normally as `95678f747dc3db7fca078a38705225e95a063624` from reviewed head `2c084b39673200c211fc59df4683895f41df3230` and tree `d8cdbe9d41fe37cd1bb0df9814ebcff7c66e1f81`. All 51 preview and all 51 production web files match repository bytes: ten new EN, ten VI, twenty-nine maintained older EN, Journal and sitemap. All five production-master checks succeeded. Actual branch check conclusions and full payloads are retained in `docs/qa/en-batch36-release-checks.json`; no check override or inferred failure cause. Final guarded scan: zero eligible links and zero skipped pages. Tracker: 199 MERGED, 17 PENDING; two EN-only originals make 201 Journal cards.
