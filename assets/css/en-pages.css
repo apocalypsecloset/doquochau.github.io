@@ -99,3 +99,5 @@ h1 em,h2 em{font-style:normal;color:var(--redlite)}
 .editorial .article-table th{background:#241916;color:#f2ded7;text-transform:uppercase;font-weight:700;letter-spacing:.04em}
 .editorial .article-table td:first-child{font-weight:700;color:var(--ivory)}
 @media(max-width:650px){.editorial .article-figure{margin:24px auto}.editorial .article-toc-en{padding:17px 19px}}
+
+.editorial-image{margin:28px 0}.editorial-image img{display:block;max-width:100%;height:auto;max-height:680px;object-fit:contain;margin:auto}.editorial-image figcaption{font-size:11px;line-height:1.7;color:#b8aaa1;margin-top:10px}

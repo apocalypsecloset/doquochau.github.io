@@ -6,7 +6,7 @@
     "description": "Choose alternative café outfits by seating, interiors, light and visit duration, with seven adaptable formulas and practical checks.",
     "primary_intent": "Café seating, lighting, venue design and seven formulas; narrower than general going-out or night-out guides",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "aacfd1b7ff97b1ddf10e8ebdc51b1c98da7ed5f3301619ade823c16621d42823",
+    "source_sha256": "fe3dac7aaf0f62257bf61cdd18aea3396f98bfc6537218b152a671c0cb3ed4f8",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Adapt personal alternative style to the actual wedding invitation, setting and activities through six garment and footwear formulas.",
     "primary_intent": "Personal alternative styling within the actual wedding invitation and dress code; not generic night-out",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "7dd344f6495fd68195adbb50fea99b197c66bec75d0216a9ac1f1875d4d9ab4b",
+    "source_sha256": "ceef43094e160a793390d9e8c09c0d5f6df8015ca40bd1f8e33d3453e655c977",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Plan alternative beach outfits for walking, changing, cafés and evening stops through fabric, footwear, coverage and packing choices.",
     "primary_intent": "Beach activities, heat, wind, sand and packing; not general summer outfit overview",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "6accbcc6f62ca9903d2f9a1603eeedb3ee3b40d375f7b6f8041b5a70ddbd4f8c",
+    "source_sha256": "751b8c3869eee8b27c097d6ab02977b63b6d3e04cfd8bef6a032e9d6ab7c4a17",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Choose airport clothing for luggage, layers, seated fit and easy access, with ten formulas and checks for short or longer journeys.",
     "primary_intent": "Travel duration, seated movement, layers and baggage; distinguish everyday sporty styling",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "a02692a7e8eb1e30a7dc69d5ccadfe70c2cc8ad5ab1fa9cc34d9ca56e1e68d5f",
+    "source_sha256": "b159b0afb6a54e245d76487dfefc283157c4878225ce32d75416b06439eb3a97",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore a noir-inspired styling interpretation through tailoring, contrast, seven outfit formulas and a clear Dark Feminine distinction.",
     "primary_intent": "Character and visual-code aesthetic guide; distinguish broad dark feminine mood and practical dark feminine outfit specialist",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "de262bd9bcd28e2911bd523daa786513159215e18602a2851433a7c842c2c381",
+    "source_sha256": "b5b0289bd3e541276351bd69d52acf3d09b35763f23c72888734bdca76afea1a",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Understand low-rise construction, front and back rise, waistband stability and measurements before choosing a trouser silhouette.",
     "primary_intent": "Waist rise definition and fit; distinguish specific denim/cargo styles and styling formulas",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "edbd6f241938cf9f3a485bf05b47e4b93d10de6fc815223c2e2c7e112f22e18e",
+    "source_sha256": "3ae990494255a8cdaacb2a4f7352c3478f8dfca346a41a31db313528f1486acc",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Understand cropped length, compare baby tees, tube tops and structured tops, and assess garment dimensions and preferred coverage.",
     "primary_intent": "Cropped-length definition and construction; existing crop-top outfit article remains styling target",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "3f27f03692231732d31a32721a78324f0053c94b71eab90e46a8e7d877935289",
+    "source_sha256": "127e31b2996624cd796f49aaeb987e389f1ad6b5b480102aa9d4f1af93f10f42",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Style leggings through opacity, top length, structured layers and footwear, with flared-leg comparisons and everyday fit checks.",
     "primary_intent": "Close-fitting stretch leggings and layering/coverage choices; not jogger/athleisure overview",
     "role": "ITEM_GUIDE",
-    "source_sha256": "8a87d5ae00dca89a50863a365c138b6e14a06b4dabf63f2b516fdd99a362967f",
+    "source_sha256": "5c99e9699db6f77516f8e37f68267dc2031bf55c4d1d43d1decaabee7b8551e6",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Compare tops, outer layers and footwear against parachute-pants volume through eight formulas, three Closet looks and hem checks.",
     "primary_intent": "Parachute fabric, adjustable volume and proportions; definition article remains separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "04fb93b6946a0e5ef370a6f9d7aa73e0df51288c606422a32e63607d824a2b11",
+    "source_sha256": "af5212bafb10c391b138f77fa6e97acefc9cf119661fbdaaa7747f122452d45a",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Style baggy trousers through top endings, denim wash, layers and footwear, with five Closet examples and three reusable outfit routes.",
     "primary_intent": "Roomy trouser volume and top lengths; distinguish baggy definition, wide-leg and straight-leg specialists",
     "role": "ITEM_GUIDE",
-    "source_sha256": "2822072d8c86f32dffeb8ff0a9bafcb3a82afbaf5c0b33f8d6bae8db59ffe9a8",
+    "source_sha256": "37907948d6430effdc6f83c6c26e2d9e1d3c7fa60a1011b3b48a6e3f7c427552",
     "published_date": "2026-11-04"
   }
 ]

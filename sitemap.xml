@@ -11771,4 +11771,29 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/blog/solarpunk-fashion-aesthetic-guide.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/en/blog/white-on-white-outfit-guide.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/blog/solarpunk.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apocalypsecloset.com/blog/white-on-white.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://apocalypsecloset.com/en/privacy.html</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>

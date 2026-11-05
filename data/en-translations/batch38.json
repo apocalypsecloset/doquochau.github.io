@@ -6,7 +6,7 @@
     "description": "Explore Chicano fashion through Mexican-American history, structured volume and workwear, with five contemporary outfit interpretations.",
     "primary_intent": "Mexican-American/Chicano cultural history and structured workwear proportions; not generic Streetwear or a costume/stereotype checklist.",
     "role": "CULTURAL_STYLE_SPECIALIST",
-    "source_sha256": "c7a156d2efddcad9c24cac39968ebc618b9fd94577d5b0d48beda90625e9e4ad",
+    "source_sha256": "580e6d5b5e06750ac4813f2d3c1dc58d1b5afa5bbd32f9e2fdc1a60f73e4f769",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -17,7 +17,7 @@
     "description": "Understand late-1960s and early-1970s hippie fashion through flow, craft and reuse, with six outfits and distinctions from Boho Chic.",
     "primary_intent": "Hippie counterculture, anti-fashion, craft and reuse; distinct from polished Boho Chic, broad Vintage and rural-romantic Cottagecore.",
     "role": "HISTORICAL_STYLE_SPECIALIST",
-    "source_sha256": "7029b1e58b0a6ceb434cffa903a27ef7ddb14c0c067fc227620b17499a324e55",
+    "source_sha256": "b05110a5b5b38f0eb689cd6abcfbf23dd197c7a34d6bfc697dc666edba2f5b75",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Hippie với các phong cách gần": "Hippie compared with related styles"
@@ -30,7 +30,7 @@
     "description": "Explore Dior's 1947 New Look, the Bar suit's construction and postwar controversy, with contemporary interpretations of its proportions.",
     "primary_intent": "Dior 1947 debut and Bar construction/controversy; separate from complete 1950s overview, corset-item styling and broad Vintage.",
     "role": "HISTORICAL_EVENT_SPECIALIST",
-    "source_sha256": "b4ed71a6e000c2deebd8398129815b2782fb90f1f1bbcdcd4352c0e144a65008",
+    "source_sha256": "91129b23b8a4447995bcc28a4351c8c1bf4b195332de8e226dc99f92228f13c8",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -41,7 +41,7 @@
     "description": "Separate ulzzang's Korean internet origins from its later casual-fashion label, with six outfit formulas and no body or skin-color requirements.",
     "primary_intent": "Korean internet image/beauty origins and later international clothing label; not all K-fashion, Acubi layers, Clean Girl polish or body eligibility.",
     "role": "CULTURAL_STYLE_SPECIALIST",
-    "source_sha256": "b67733cf1a292eebbd0beb1ec025879f3348d65d810f708a3ce41ea25dee6900",
+    "source_sha256": "12e4644dc792474899509d9a39da243a2cf15f87bc8c6e720a2342e4cd805fcb",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -52,7 +52,7 @@
     "description": "Explore full skirts, sheaths, suits, sportswear and later 1950s shapes, with six contemporary outfits beyond a single New Look silhouette.",
     "primary_intent": "Complete 1950s womenswear range and evolving occasion-based shapes; broader than Dior 1947 New Look and distinct from timeless Classic or generic Vintage.",
     "role": "HISTORICAL_PERIOD_OVERVIEW",
-    "source_sha256": "53e5bc9ea62c8d61bf5cda3a7c59eaa2e0afa0edfc64183190081889fceff892",
+    "source_sha256": "12b86ade24d1cfe502d35b5098721108fe6f51ad77ce1920a35552eed03e6190",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },

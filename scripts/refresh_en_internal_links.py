@@ -6,7 +6,8 @@ from bs4 import BeautifulSoup,NavigableString
 ROOT=Path(__file__).resolve().parents[1] if Path(__file__).parent.name=='scripts' else Path.cwd()
 sys.path.insert(0,str(ROOT/'scripts'))
 from en_translate import faq_pairs
-mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()) if r['en_url'] and (ROOT/urlsplit(r['en_url']).path.lstrip('/')).is_file()}
+from translation_inventory import rows as inventory_rows
+mapping={urlsplit(r['vi_url']).path:urlsplit(r['en_url']).path for r in inventory_rows() if r['en_url'] and (ROOT/urlsplit(r['en_url']).path.lstrip('/')).is_file()}
 apply='--apply' in sys.argv;results=[];skipped=[]
 for path in sorted((ROOT/'en/blog').glob('*.html')):
  raw=path.read_text();s=BeautifulSoup(raw,'html.parser');body=s.select_one('main.en-hub') or s.article

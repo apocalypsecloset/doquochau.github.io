@@ -6,7 +6,7 @@
     "description": "Browse alternative-fashion shopping guides to sizing, budgets, materials, seller checks and clothing care, with focused articles for each decision.",
     "role": "SHOPPING_HUB",
     "primary_intent": "Shopping navigation and decision framework; individual seller, budget, size and material specialists retain their intents.",
-    "source_sha256": "fbfbe59e449162b0a047e833f319210cb805d9fed1f31b4811faccaa2d10bdc8",
+    "source_sha256": "f99dd317286ded5a7a980ca69f53c458f53bd4cb1e282fd3a921d421adb2e881",
     "published_date": "2026-11-05",
     "source_kind": "hub"
   },
@@ -17,7 +17,7 @@
     "description": "Find specialist guides to alternative fashion, Japanese subcultures, historical clothing and internet aesthetics through a structured fashion directory.",
     "role": "NAVIGATION_HUB",
     "primary_intent": "Style-name lookup and guide navigation, separate from what-aesthetic-means definition and every individual style specialist.",
-    "source_sha256": "539f5f79d026d3e2405e3859c4f42a20722c93d10427c3607eecd6a1662ff7cc",
+    "source_sha256": "ca0d2950298519f0c90c76384a5d6a04664bbebb7b10abc0979995fe221a88e0",
     "published_date": "2026-11-05",
     "source_kind": "hub"
   },
@@ -28,7 +28,7 @@
     "description": "Choose accessory placement, proportion and visual weight, then explore focused guides to chokers, fishnets, belts, bags, chains and warmers.",
     "role": "ACCESSORIES_HUB",
     "primary_intent": "Accessory decision framework and navigation; not the dedicated necklace, choker, bag, belt, chain or leg/arm warmer specialists.",
-    "source_sha256": "15b1a52a6662c3224decee3d15cc6daddec042c2f035e6f3328c6b320e359551",
+    "source_sha256": "3dd85512e68823702ec115eb1462b67b2cdfc5119056e0ec2ae188fab77a3fbe",
     "published_date": "2026-11-05",
     "source_kind": "hub"
   },
@@ -39,7 +39,7 @@
     "description": "Understand Gyaru through hair, makeup, clothing, footwear and finish, with an overview of its branches and six adaptable outfit formulas.",
     "role": "SUBCULTURE_OVERVIEW",
     "primary_intent": "Broad Gyaru definition and visual system; Ganguro contrast, Kogal uniforms, Hime princess and Amekaji Americana remain separate specialists.",
-    "source_sha256": "21f485b4a70590d32eb51110bd4bf7129ad7597d24b2fc946b3e33c371fe3b4b",
+    "source_sha256": "12d9270bf352830010a4e0da2c946c65c52af233a34e898ff460143bb1d46d2b",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Gyaru với các phong cách gần": "Gyaru compared with related styles"
@@ -52,7 +52,7 @@
     "description": "Explore Harajuku as a diverse street-fashion environment, with identity, layering and contrast frameworks and six practical outfit combinations.",
     "role": "CULTURAL_OVERVIEW",
     "primary_intent": "Place-based Harajuku ecosystem and diverse self-expression; not a replacement for Gyaru, Visual Kei, Lolita or Japanese urban streetwear.",
-    "source_sha256": "6771f9be686ba9d3a0be7267d68aaf2a2c4dd5bfe40566da2aaf2a508c3546d5",
+    "source_sha256": "a064bcfb0268cfa7c865dfa3e46cfbd1f38a5a1b5ca853505a7fdf07a921ea20",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Harajuku với các hệ thời trang liên quan": "Harajuku and related fashion systems compared"
@@ -65,7 +65,7 @@
     "description": "Understand late-1990s Ganguro through contrasting hair, makeup and clothing, with cultural context, outfit ideas and UV-conscious reinterpretations.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "Ganguro historical high-contrast beauty and fashion; distinguish broad Gyaru, uniform Kogal and later Yamanba/Manba, no tanning prescription.",
-    "source_sha256": "20fdd6991cbae37aa18836ec3da5030682e7e071708119dd052e5d5cd143baa7",
+    "source_sha256": "35b548b66ab3b4883e579bbe1be33e2d5d25ba267ed9ea0ba8cc736eb454a8dc",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -76,7 +76,7 @@
     "description": "Explore Kogal history, loose socks and personalized uniform codes, with six adult outfit interpretations and distinctions from Ganguro and Preppy.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "1990s Shibuya uniform customization and loose-sock history; contemporary adult interpretations, not generic Preppy or sexualized schoolgirl costumes.",
-    "source_sha256": "4306eb7eb5a60ea6e5289a44e030ff960371089c24a61b6c3bd4dda1556e21d3",
+    "source_sha256": "636203004dd741f311cdf1beb770ee0b65b0870e2afc5d66a65bea8d6a191566",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -98,7 +98,7 @@
     "description": "Interpret Japanese Heisei-era nostalgia through fashion, compact technology and character details, with clear distinctions from Y2K, Gyaru and Kogal.",
     "role": "PERIOD_NOSTALGIA",
     "primary_intent": "Japanese period-memory umbrella and consumer objects; distinguish millennium futurism, Gyaru subculture and Kogal uniforms. Survey statistics explicitly dated and sample-specific.",
-    "source_sha256": "1f8b000ce631262dc326a3caa59ab0e5ff79d5d65ad23d21bb34ca7042181fc1",
+    "source_sha256": "71e971cffda27d831b5743f96802a5eb903fbde7d6872d6ba6b4df5edfe401c5",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },

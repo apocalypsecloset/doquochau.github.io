@@ -6,7 +6,7 @@
     "description": "Compare women’s bomber jacket listings through shoulder fit, body length, ribbing, lining, material evidence and seller information.",
     "primary_intent": "Bomber listing and seller selection; bomber styling specialist remains primary for outfit formulas.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "89e9fcd5c188baf75067fec276d0253c56b55f763338075b3a5bc2a11632a31b",
+    "source_sha256": "fa7c6c726e0577af323b36d8d9be719ca63517e61023232aa513f7cafff16c4c",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Bảng chọn nơi mua bomber": "Bomber jacket shopping channels",
@@ -20,7 +20,7 @@
     "description": "Understand aesthetic as a fashion term, distinguish it from personal style and trends, and read colors, silhouettes and cultural references.",
     "primary_intent": "Meaning and usage of aesthetic in fashion; dictionary hub remains navigation and individual style guides retain specialist intents.",
     "role": "DEFINITION",
-    "source_sha256": "0b39d90215e9065b9adb7f5baf7b46c1af738a383aca80a65dec0c898eaccfec",
+    "source_sha256": "a2dc8d8d1c300f6a4632091fad62dc10ff7936881b058fabd8aad40feb4a4686",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -31,7 +31,7 @@
     "description": "Explore streetwear culture, core garments and proportions, with five women’s outfit formulas and practical adaptations for warm weather.",
     "primary_intent": "Broad streetwear cultural definition and silhouette framework; Baddie hub, Badgirl persona and Japanese Streetwear are separate.",
     "role": "DEFINITION_STYLING",
-    "source_sha256": "5a1918702db3a01d62cde1b91faeebab6dff3b828433f3776217da8d07c06758",
+    "source_sha256": "59595ca8edb1caa97d683ab91bcfd8266180e94b7ecc4eca0f221883131ffa58",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -42,7 +42,7 @@
     "description": "Understand Vietnamese fashion usage of local brand, compare retail models and assess individual garments through fit, materials and seller evidence.",
     "primary_intent": "Vietnamese usage of domestic fashion label and own-product identity; not shopping-directory hub or universal legal or manufacturing definition.",
     "role": "DEFINITION_BUYING",
-    "source_sha256": "5608f8af997ac76102ac875a2627df9dc234d285545cca75bdd0a6f76a84ea58",
+    "source_sha256": "d08044e5512d304c1799a3e65a069d804b5bf41ecfc6ca5e153ede19774177ac",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "So sánh local brand, shop order và fast fashion": "Local labels, resellers and fast fashion compared"
@@ -55,7 +55,7 @@
     "description": "Build an alternative-fashion moodboard from selected references, colors, proportions and textures, then turn it into outfits and wardrobe decisions.",
     "primary_intent": "Visual-reference selection and translation into outfit formulas; not aesthetic definition, dictionary navigation or photography technique.",
     "role": "METHOD_GUIDE",
-    "source_sha256": "31203cd118b9acc77c5cc0049f90797292abc99314d73631f9c6d9954625b419",
+    "source_sha256": "842962c99a60be6e5542eb36cca9916416be32f0556dec9eae00c821cd67aa8f",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Các thành phần của fashion moodboard": "Fashion moodboard components",
@@ -70,7 +70,7 @@
     "description": "Photograph outfits with your phone using practical light, camera distance, composition, poses and editing that preserves fabric detail.",
     "primary_intent": "Phone outfit-photography technique and editing workflow; distinct from OOTD abbreviation definition and garment styling.",
     "role": "METHOD_GUIDE",
-    "source_sha256": "4fe289725af06e9d0b7e6a39cebd4badcaa6066ecef05cd6a3412493d0f66350",
+    "source_sha256": "14f2636d8a7d6b35d12a3c6eb16ed5fbe6ad87101e2cc32403500e2d1e1ccdc7",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -81,7 +81,7 @@
     "description": "Understand badgirl as an informal fashion image, distinguish internet labels and explore adaptable outfit, accessory and makeup references.",
     "primary_intent": "Meaning and editorial interpretation of badgirl persona; not the Baddie navigation hub, broad streetwear definition or Dark Feminine specialist.",
     "role": "STYLE_PERSONA",
-    "source_sha256": "3c727edc129f0128b9e3d931a9912a1fd274c9643a6abbd8b1446afdc6405faa",
+    "source_sha256": "1eb5e0141d023500ab3b109c44ab6c7db0086612dc5d6b64b355bddf1264dbf0",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -92,7 +92,7 @@
     "description": "Explore intentional ordinary dressing through familiar clothes, comfortable proportions, repeated outfits and distinctions from Minimalist and Casual Chic.",
     "primary_intent": "Intentional ordinary and repeatable dressing; minimalist edited design, Casual Chic polish, quiet luxury and Classic retain distinct purposes.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "69dd3cdb52a312a380c92a12bb735db5fdb11b67ab5d2599b50a065776baeb64",
+    "source_sha256": "3ee8b2f8fcdc56c3a9d537ad9a05453407b82aed9eaa4b01bb6b4f696e72d562",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -103,7 +103,7 @@
     "description": "Distinguish vintage, retro and secondhand, choose coherent period references and combine older pieces with modern fits for everyday outfits.",
     "primary_intent": "Cross-period styling and actual-vintage versus retro or secondhand distinctions; individual decade and garment history specialists stay separate.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "d32152aa0fa62d25cf9a1ceb4f60a90c4bb3368234b9da88eb104e59ca62d9fc",
+    "source_sha256": "a6fb112388a82cb97ae5cb1f7df73012778f2de980aaba35fd8cecff3354da8f",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Phân biệt vintage retro secondhand antique": "Vintage, retro, secondhand and antique compared",
@@ -117,7 +117,7 @@
     "description": "Build everyday Boho Chic outfits through drape, texture and clear proportions, including warm-weather and Dark Boho variations.",
     "primary_intent": "Edited everyday Boho Chic texture and proportion; not Hippie history, Whimsigoth, Fairy Grunge or Cottagecore specialist intents.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "7ef18ff910a3a517024d0a336a24ac55054fec6e967d8500d5a82121baa4cd88",
+    "source_sha256": "41c56b6f2e283e5b424573ee2eed2e2ee31ddfdab78c14739fb1acea231a0673",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Câu hỏi thường gặp": "Frequently asked questions"

@@ -71,11 +71,12 @@ for c in configs:
  results.append({'vi_slug':c['vi_slug'],'en_slug':slug,'source_text_segments':len(texts),'en_words':len(a.get_text(' ',strip=True).split()),'headings':len(orig.select('h2,h3')),'images':len(a.select('img')),'tables':len(a.select('table')),'faqs':len(faq_pairs(a))})
 # Migration safety checks across all 216 source URLs, not only the translated ten.
 import xml.etree.ElementTree as ET
+from translation_inventory import rows as inventory_rows
 rows=list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()))
 check(len(rows)==216,'Inventory must contain 216 URLs')
 urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
 check(len(urls)==len(set(urls)),'Duplicate sitemap URLs')
-check(len([u for u in urls if '/blog/' in u and '/en/' not in u])==216,'Original VI sitemap count')
+check({r['vi_url'] for r in inventory_rows()}=={u for u in urls if '/blog/' in u and '/en/' not in u},'Complete VI sitemap inventory')
 journal=BeautifulSoup((ROOT/'en/blog.html').read_text(),'html.parser')
 cards=journal.select('a.card');grid_cards=journal.select('#latest .cards a.card')
 check(len(cards)==len(grid_cards),'Journal cards must all be in the reading grid')

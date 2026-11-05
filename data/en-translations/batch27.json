@@ -6,7 +6,7 @@
     "description": "Style straight-leg jeans by rise, hem length, top volume and footwear, with distinctions from wide-leg and baggy denim.",
     "primary_intent": "Straight-leg denim silhouette specialist; wide-leg trousers and baggy fit remain separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "7af089bf26f3aec659d0f44d07a2b70c107cd524d78b38f6fe0331283cf01710"
+    "source_sha256": "1e131b1fc53148f6b558c769d6dfc28a84dc2605afffa829c002cd72f2a26ff4"
   },
   {
     "vi_slug": "phoi-do-voi-chan-vay-dai",
@@ -15,7 +15,7 @@
     "description": "Choose tops and footwear for long skirts through drape, structure, waistband visibility and practical hem clearance.",
     "primary_intent": "General long-length skirt proportions; midi, pleated and denim-specific specialists separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "e9455a72b6835be64447f16f21a04c53063caa109f5a973e797df40c64ba2dac"
+    "source_sha256": "bfb75708e109217240e095da21d1ea3d23299b83ed972c73f191c0ba39a55495"
   },
   {
     "vi_slug": "phoi-do-voi-chan-vay-chu-a",
@@ -24,7 +24,7 @@
     "description": "Recognize an A-line skirt and balance top length, waist definition, fabric structure and footwear across different hems.",
     "primary_intent": "A-line silhouette specialist; pleat construction, tennis skirts and general mini styling separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "c170e1aa4bfc70e22a1c576349ddf5fd47ff8813a09ac1a2fee30f04ad81005c"
+    "source_sha256": "2f36cefb62d99a4b5dd777539d934552357c5a21829d554cda2b233937676961"
   },
   {
     "vi_slug": "quan-ong-rong-nu-phoi-voi-ao-gi",
@@ -33,7 +33,7 @@
     "description": "Style wide-leg trousers through waistbands, top length, fabric drape and footwear, with twelve adaptable outfit formulas.",
     "primary_intent": "General wide-leg trouser volume styling; straight jeans, cargos and baggy construction separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "4e089020c3f73d7648b04a867745d8b0c08afd35cd252f1f89daae5ed5d84f7d"
+    "source_sha256": "27c43c84baa9c154cb407f4f6e4338cbb7f57e094a515f3fc1e2d38e20568024"
   },
   {
     "vi_slug": "bodycon-dress-la-gi-cach-phoi",
@@ -42,7 +42,7 @@
     "description": "Evaluate bodycon dress fit, stretch, lining and movement, then choose layers and footwear for everyday or darker styling.",
     "primary_intent": "Close-fitting dress construction and styling; slip drape and babydoll volume distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "47356ec2459c10fea86e51df870fbb56fc78ee7b5904a68b335b7005393242d5"
+    "source_sha256": "2078b0d12d8c40612c2e390e25bc2fba2400d0a428b232fcab51661dd98e6abd"
   },
   {
     "vi_slug": "babydoll-dress-la-gi-cach-phoi",
@@ -51,7 +51,7 @@
     "description": "Understand babydoll dress construction and balance volume, neckline, layers and footwear without restricting body type.",
     "primary_intent": "Adult babydoll dress silhouette specialist; Coquette aesthetic and slip/bodycon construction separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "9a9e1251e88ac71c5da200702f57954b7af7a05571e0b51e3e8f9f9d4bd2e3dc"
+    "source_sha256": "6b015447d54f4ff8c1fe130a132d6f0c6a37ecb90e724cb27895ebcd656469be"
   },
   {
     "vi_slug": "giay-loafer-nu-la-gi-cach-phoi",
@@ -60,7 +60,7 @@
     "description": "Compare loafer shapes and visual weight, then style trousers, skirts, socks and darker outfits with deliberate proportions.",
     "primary_intent": "Loafer construction and styling specialist; Mary Jane straps and ballet-flat openness distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "28f362d4d11bbbac2d802bf1ba945c5e08d7ccdb44a5e6b3c8e66067586604ae"
+    "source_sha256": "1fd437aecfba95f03ce5fd68ae1a1f4baf8d7f408b1304ae1421135979ec52eb"
   },
   {
     "vi_slug": "phoi-do-voi-ao-so-mi-nu",
@@ -69,7 +69,7 @@
     "description": "Choose shirt fit, color, layers and tucking around trousers and skirts for casual, tailored and alternative outfits.",
     "primary_intent": "Button-front shirt shape and styling specialist; vests, blazers and aesthetic-level guides distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "501c4b996eef3b050aa7634106ec0cba9100c546eb9a2ce7bebf23420f4266e7"
+    "source_sha256": "e60b474798f8e84eb3f7e251b7ec41c729a49905ab8cb8b09a93ad3094c60b4f"
   },
   {
     "vi_slug": "chan-vay-tennis-phoi-voi-ao-gi",
@@ -78,7 +78,7 @@
     "description": "Style tennis-inspired skirts through rise, pleats, shorts, tops and footwear while distinguishing fashion from sports performance.",
     "primary_intent": "Tennis-inspired skirt silhouette and sporty styling; general pleated and mini-length guides distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "860414609d7641ce5628bd5c6c6cd6774eed2108a4ad7dae045e09a3e72ce078"
+    "source_sha256": "531816d5e182638ec40753811ee6d3a67698cedbae3c3e39cb36fb493907ed35"
   },
   {
     "vi_slug": "chan-vay-bi-ngo-phoi-voi-ao-gi",
@@ -87,6 +87,6 @@
     "description": "Balance a bubble skirt gathered hem through upper shape, length, material and footwear in casual and alternative outfits.",
     "primary_intent": "Gathered bubble-hem volume specialist; A-line and pleated construction distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "0adeaf3e1d1b29d88124d86f046ac6124772e0ed31110bbb76f5322883305660"
+    "source_sha256": "7b0536fb8a0a9a99960dbd3bea59e9048a8fba600830dbd811aca48a3e4e091f"
   }
 ]

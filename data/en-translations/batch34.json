@@ -6,7 +6,7 @@
     "description": "Compare bundled alternative outfits with separate pieces on Shopee using variants, measurements, total cost, reviews and repeat-wear checks.",
     "primary_intent": "Bundled outfit versus separate-purchase decision on Shopee; not the buying hub or a fixed-budget aesthetic outfit guide.",
     "role": "BUYING_COMPARISON",
-    "source_sha256": "da5a818c440eac023942b91bbc48fd378e8cb083fbe57fd770796d598672936f",
+    "source_sha256": "09f3c9ac9d6284e1eaeb3505a6a6eb567c66e059984a3a405c5e6a5c25221b91",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Checklist mua set đồ Shopee": "Shopee outfit-set buying checklist"
@@ -19,7 +19,7 @@
     "description": "Plan a VND 500,000 alternative outfit update using existing basics, one statement piece, delivery reserves and realistic repeat-wear comparisons.",
     "primary_intent": "Cross-style single-outfit VND500000 allocation overview; E-Girl VND500000 and Baddie VND700000 specialists and full wardrobe VND1million remain separate.",
     "role": "BUDGET_GUIDE",
-    "source_sha256": "aee25634a76e4bc149b31a2d3f2fdde10691b9f47799127a2732251725394b32",
+    "source_sha256": "616d2723de7962234c006fc86144b4475b773c3e21d765c4dbc1b147ab0c226e",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Cách chia ngân sách outfit nữ cá tính dưới 500K": "Alternative outfit budget allocation below VND 500,000"
@@ -32,7 +32,7 @@
     "description": "Compare cargo-pants shopping channels, measurements, pockets, fabric evidence, customer reviews and exchange information before choosing a listing.",
     "primary_intent": "Cargo listing and seller selection; separate from cargo definition, nylon-versus-twill comparison and women’s cargo styling.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "6c5de06210c4aafb390d6303c4e82beda4d13d53c9acc33be37da3d872b81e8d",
+    "source_sha256": "d0dde3dd178473849db7994660fba15def622f008c3d38f82eb44131fab650ab",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "So sánh kênh mua cargo nữ": "Women’s cargo-pants shopping channels"
@@ -45,7 +45,7 @@
     "description": "Assess raised-sole boot listings within a VND 500,000 plan through fit, sole construction, images, reviews and current exchange information.",
     "primary_intent": "Raised-sole footwear budget/listing assessment; not generic Combat-versus-Platform comparison, boot styling, break-in or odor care.",
     "role": "BUDGET_BUYING_GUIDE",
-    "source_sha256": "f3106478d5872debe4002fe196111ff4002ea4fa3ed53876ac2fcf5b42d9bdab",
+    "source_sha256": "cd5f50e208674900f96077c9c479f8fa5ba963fe7f06a1e2b2a66b151ffd847b",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Bảng phân bổ ngân sách theo rủi ro": "Boot budget priorities",
@@ -59,7 +59,7 @@
     "description": "Choose E-Girl accessories for wardrobe gaps, then compare dimensions, materials, fastenings, seller evidence and a flexible budget allocation.",
     "primary_intent": "E-Girl accessory purchase order and channel/listing selection; broader alt-accessory wardrobe and choker/belt/legwear specialists retain styling intent.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "2948c00a2b84cfa82f9d261347a02ab8cc9d7e32356bec8c558fffd36f0a9982",
+    "source_sha256": "c545daaa37a365d29f70d42d28cdc7cb2e1f6d8a81bbf3f4d4eb6f58226543bb",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Chọn phụ kiện theo tủ đồ": "Accessories for existing wardrobe gaps",
@@ -73,7 +73,7 @@
     "description": "Compare channels for Goth clothing through garment complexity, measurements, materials, construction, customer evidence and current return terms.",
     "primary_intent": "Cross-category Goth clothing seller/listing assessment; not Goth cultural definition, Goth hub or individual corset/cargo/boot buying specialists.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "a37603e5043a254d52e6acfcacfde2b546343cd06f5d08e6e7abc6eb75c2e7e3",
+    "source_sha256": "0a8660495f680a7d7f977a8f655a47031271d3518f85e4d871d6be2a20bc41f9",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Kiểm tra chất liệu đồ Goth": "Goth clothing material checks",
@@ -87,7 +87,7 @@
     "description": "Plan an E-Girl wardrobe update within VND 500,000 using existing basics, a silhouette-defining garment and one reusable style cue.",
     "primary_intent": "E-Girl-specific VND500000 allocation and staged purchase order; cross-style budget overview, E-Girl definition and accessories buying separate.",
     "role": "BUDGET_GUIDE",
-    "source_sha256": "2349270885abf3d81a255e83e433e68be71385162ecd2c24bba68d347013bd6a",
+    "source_sha256": "717eeb2f81dc4b936d9e6b9b3cfbb7cfa8f17690222ca58f6a7d04920820d2ff",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Gợi ý chia ngân sách outfit E-Girl dưới 500K": "E-Girl outfit budget allocation below VND 500,000"
@@ -100,7 +100,7 @@
     "description": "Prioritize one Baddie statement garment, reuse wardrobe basics and allocate a VND 700,000 plan around fit, delivery and repeat outfits.",
     "primary_intent": "Baddie-specific single-outfit VND700000 priority allocation; separate from Baddie hub, E-Girl budget and full wardrobe planning.",
     "role": "BUDGET_GUIDE",
-    "source_sha256": "2bc541ac01ba6caa8b46f707877c6b0ba4edbd2270ae41db097ea4a1868cb9be",
+    "source_sha256": "ab15648153cb465d7c880d8286eee861a2c90fbc0dd6617483468e586d37a582",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Chọn hero piece cho set Baddie dưới 700K": "Choosing a Baddie statement piece below VND 700,000"
@@ -113,7 +113,7 @@
     "description": "Identify corset-top construction and intended use, compare model-specific measurements, and assess seller evidence, cups, boning and returns.",
     "primary_intent": "Corset and corset-top product identification, construction and seller decision; styling specialist remains primary for outfits; no waist-training advice.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "51ec52336a416f54e7113f283eebcbdbc5a16789d2e6663b5de9c0881b5c133a",
+    "source_sha256": "1116b779a501b8232e8ea25d966df5a48858389cfa795962c6edd8763834fc35",
     "published_date": "2026-11-04",
     "attribute_translations": {}
   },
@@ -124,7 +124,7 @@
     "description": "Compare jacket shopping channels, genuine leather and synthetic materials, lining, measurements, construction and current exchange information.",
     "primary_intent": "Leather and leather-look jacket material, fit and seller assessment; existing jacket outfit and care specialists remain separate.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "868f8501782fc8e269ea02447eb01484b1f8abfea8336361396f13ff78ff138a",
+    "source_sha256": "b6ea8373e07d45d383a886de42d6403d8ccf6bf11027a271d7a28fd39706648d",
     "published_date": "2026-11-04",
     "attribute_translations": {
       "Câu hỏi thường gặp": "Frequently asked questions"

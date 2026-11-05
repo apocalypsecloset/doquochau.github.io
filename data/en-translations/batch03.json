@@ -6,7 +6,7 @@
     "description": "Explore nu goth's internet-era references, modern silhouettes, seven outfit formulas and a versatile starter capsule, with lighter options for warm weather.",
     "primary_intent": "Internet-era modern nu goth, fitted/oversized contrasts and selected hardware; distinct from trad, soft and corporate goth",
     "role": "SUBSTYLE_GUIDE",
-    "source_sha256": "7716b31219d6e5a0f1b51d354d8cdbe5c4673f48a43082f1586bc7af3ebaf657"
+    "source_sha256": "d16d43a0708cb4a5b9c6cfb7970548e71c837133c9a8dda0853492cb443a96e1"
   },
   {
     "vi_slug": "vampire-goth-la-gi-vampire-goth-aesthetic",
@@ -15,7 +15,7 @@
     "description": "Build vampire-inspired goth outfits with wine tones, lace, velvet, structured shapes and antique details, plus seven practical styling formulas.",
     "primary_intent": "Vampire cinema/mythology and controlled dark opulence; romantic goth remains broader historical romance",
     "role": "SUBSTYLE_GUIDE",
-    "source_sha256": "0746210099875e586b62a7541c5b33bfbe445718c8c3c86b2f55c45d98fa8d98"
+    "source_sha256": "af0d5d2179cd428da75ff39e2862c9463304346ca243356cd36bc781d82ed8c9"
   },
   {
     "vi_slug": "pastel-goth-cyber-goth-mall-goth-la-gi",
@@ -24,7 +24,7 @@
     "description": "Compare pastel goth, cybergoth and mall goth through origins, color, silhouette, texture and accessories, with practical ways to tell them apart.",
     "primary_intent": "Three-way subtype comparison; future cybergoth specialist owns detailed cybergoth history and outfits",
     "role": "COMPARISON",
-    "source_sha256": "6a2fc6a13ab5a1f168282841fe22ba7dd80de644a91bd5f6dfb2522da33748a5"
+    "source_sha256": "9618eeffd587e4889339a547e5e6814f69473f8d71001f7bab289b499751b7dc"
   },
   {
     "vi_slug": "phong-cach-emo-la-gi",
@@ -33,7 +33,7 @@
     "description": "Understand emo's musical roots, changing fashion references and distinctions from scene, e-girl, grunge and goth, with modern outfit ideas.",
     "primary_intent": "Emo definition and musical-era distinctions; not general alt or e-girl pillar",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "f7ccbe6a4ff92ecadb3460bf81d02a074bc7cffa075e8c086a9fecbceb5146de"
+    "source_sha256": "cbbf2eab41ca3d0c7c08b08c79db0e9046ac26cd66de766dd7f17ec74875f49e"
   },
   {
     "vi_slug": "dark-academia-la-gi-phoi-do-badgirl",
@@ -42,7 +42,7 @@
     "description": "Explore dark academia's academic references, tailoring and textures, then adapt four women's outfit formulas for an alternative wardrobe and warm weather.",
     "primary_intent": "Academic tailoring and muted textured wardrobe with alternative edge, unlike dark feminine general outfit formulas",
     "role": "SUBSTYLE_GUIDE",
-    "source_sha256": "ea0dc1f78c01560874adb3af5c0aa95ec24e89c1fcae9cc2c9312aaa780291a4"
+    "source_sha256": "7c8a8e84d056b9c895ad42b8383e8743d9fa25d10ec489c5982cfbb664c3e315"
   },
   {
     "vi_slug": "phoi-do-voi-ao-luoi-nu",
@@ -51,7 +51,7 @@
     "description": "Choose mesh-top inner layers, bottoms, outerwear and shoes with deliberate coverage, balanced textures and practical formulas for everyday settings.",
     "primary_intent": "Mesh item-specific layering and coverage; not generic graphic-tee specialist or general layering guide",
     "role": "ITEM_GUIDE",
-    "source_sha256": "860df2fa05f75f502aef1bb820d3897b10326bc0053f5df45b8f9f793127cb19"
+    "source_sha256": "dc0a56536878ab5646424a6c46c6e9f8183bf44317763e2fa76cbdc3431cfe21"
   },
   {
     "vi_slug": "form-oversize-la-gi",
@@ -60,7 +60,7 @@
     "description": "Understand oversized vs relaxed, boxy, one-size and plus-size, with five fit checkpoints, measurement tips and practical ways to balance volume.",
     "primary_intent": "Oversized fit definition and shopping measurements; hoodie page owns hoodie outfit construction",
     "role": "FIT_GUIDE",
-    "source_sha256": "b2b52637402d7571a7b89d1c76bec903da581fcda2ebeb78c07e37861d85d9f3"
+    "source_sha256": "2a0a0c45651ef9f6f18ae86ce31ffb6726336040f82af51d4ce4e20150b299a3"
   },
   {
     "vi_slug": "ao-hoodie-oversize-nu-phoi-voi-gi",
@@ -69,7 +69,7 @@
     "description": "Style oversized hoodies with skirts, cargos, jeans and layers through nine outfit ideas, clear hems, balanced volume and practical shoe choices.",
     "primary_intent": "Hoodie-specific outfit formulas, hood/hem and outer-layer geometry; not oversized definition",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "02c5face1af314480ac94a385af784cbb569e9ae213221965d8ec10f71d6b1a5"
+    "source_sha256": "f07a9f3de9a8bb959b5cc4120fe62dbf89b28d1df903da83fb6132c8c16e924c"
   },
   {
     "vi_slug": "dark-feminine-outfit-phoi-do",
@@ -78,7 +78,7 @@
     "description": "Try seven dark feminine outfit formulas using clear silhouettes, contrasting fabrics, restrained accents and practical adjustments for settings and weather.",
     "primary_intent": "Practical seven-formula outfit construction; future dark feminine definition and navigation hub retain distinct roles",
     "role": "OUTFIT_GUIDE",
-    "source_sha256": "5356ac4c9f92632c603d08be9781c0e591aea3409a7eb86ff56351c720d9f477"
+    "source_sha256": "19578d4d0c4da58bba0ba0df18a3ef5cd5def37a760334e71ab2b99f9ec60929"
   },
   {
     "vi_slug": "mac-do-den-mua-he-co-nong-khong",
@@ -87,6 +87,6 @@
     "description": "Understand black clothing in summer through solar heating, fabric structure, airflow and fit, while keeping comfort separate from tested UV protection.",
     "primary_intent": "Color and thermal comfort/fabric fit, not summer outfit recipes or black-clothing laundry",
     "role": "MATERIAL_GUIDE",
-    "source_sha256": "5686ec990875da4a8f8b97787724f492957429fef70e29f7ebc8ab6241100ef2"
+    "source_sha256": "110fe8807c80eb9e8f957f00f21fb26a28634ea8fb914f5d8c71cc62460981dc"
   }
 ]

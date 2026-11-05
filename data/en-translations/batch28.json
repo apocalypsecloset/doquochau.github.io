@@ -6,7 +6,7 @@
     "description": "Choose tops, washes, layers and footwear for denim mini skirts, with seven formulas and practical movement checks.",
     "primary_intent": "Denim-mini wash, seams, stiffness and proportions; general mini-length guide remains broader",
     "role": "ITEM_GUIDE",
-    "source_sha256": "4f94cda08c43944c5f57521dc03be502483b2f6431233ea38ca6744f50726981",
+    "source_sha256": "94f668937c6316efbfbee8d5545ac54c8d51c70917058f2e1235022cb58cb1d2",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Style long denim skirts through shape, waistband, slits, wash and footwear, with honest shorter-skirt comparisons.",
     "primary_intent": "Long denim structure, slit and footwear; general long-skirt and black-skirt guides remain separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "f28cad178cd1db0a39bbac4a78ba281886045ed5b68d9e8a77982fb3eab6f140",
+    "source_sha256": "26b91415e0aba9370a3f03bea8673a333cac1f7b49b9b116d19331e1ff6c11a8",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Balance flared skirt fullness across mini, midi and maxi lengths through top structure, footwear and movement.",
     "primary_intent": "Full or flared hem movement across lengths; distinguish gradual A-line, pleats and inward bubble hems",
     "role": "ITEM_GUIDE",
-    "source_sha256": "8466cf74e02115817629e4b16afd522ff6a2f241442a44c8e4e04f1c9c639ae4",
+    "source_sha256": "d1550fcce0cddc6ecf70c4a7f8fe3a1cd6e34d2d9d7d861e3ffc167d4c5d6dbd",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Choose mermaid skirt tops by flare placement, hip fit, fabric and hem length, with practical styling and movement checks.",
     "primary_intent": "Fitted skirt and low flare placement; distinguish Mermaidcore aesthetic and general long skirts",
     "role": "ITEM_GUIDE",
-    "source_sha256": "af6885badbbe3bb6455707e2a4d86a638d5f8f355f93a6deac8e8f042fc29b6e",
+    "source_sha256": "65e3439dc7b71c03d02ca688feabe458d0b4331ec90c7471a602d225c31a3694",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Compare Bardot, draped and one-shoulder tops through support, movement, bottoms and four occasion-based outfits.",
     "primary_intent": "Open-shoulder neckline construction, support and movement; crop-length and tube-top specialists distinct",
     "role": "ITEM_GUIDE",
-    "source_sha256": "77d17ef3cd3304c21d39160ba0fb3950a12400322efe34847c744b82375ecc7c",
+    "source_sha256": "25290e1940376428c2839baed2dc195d92e7e565fccf2ce3a6dc864acc66a583",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Style fitted, longer and flared tube tops through waistbands, volume, layers and ten alternative outfit formulas.",
     "primary_intent": "Strapless tube-top fit and layering across lengths; distinguish off-shoulder sleeves and general cropped length",
     "role": "ITEM_GUIDE",
-    "source_sha256": "9d0163d3b8138ffbbcbe1d0308d32c5760393583373f50914e77c3ad8c2a14f7",
+    "source_sha256": "3a7e8d416cd3861392c55a49445e30d36351a679be330d703c11b188149707fe",
     "published_date": "2026-11-04"
   },
   {
@@ -66,17 +66,17 @@
     "description": "Build alternative summer outfits with suitable fabric, deliberate proportions and selected details across six style routes.",
     "primary_intent": "Warm-weather alternative outfit system across garments; distinguish black-clothing heat specialist and individual item guides",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "7585f7a2107dc5c3db1aa02a5c7f32674ca3e95d0932ff92c433141a0a59bb22",
+    "source_sha256": "c889d7201879c0c3cad7ceab4ce17d9d00285d3730bf10544f03bf2fd3082f17",
     "published_date": "2026-11-04"
   },
   {
     "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
     "en_slug": "alternative-going-out-outfits-women",
     "title": "Alternative Going-Out Outfits for Different Plans",
-    "description": "Choose alternative outfits for caf\u00e9s, walking, cinema, dinner and afternoon-to-evening plans by movement and duration.",
+    "description": "Choose alternative outfits for cafés, walking, cinema, dinner and afternoon-to-evening plans by movement and duration.",
     "primary_intent": "Occasion-selection overview by activity and duration; cafe, night-out, concert and beach specialists stay narrower",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "9941a254a10cf52c87e9525b05dab44c86a82a1abae1456e4949a3d8148ff991",
+    "source_sha256": "81dec11e6b5db8f95a6b6997023809f9433c60a658a01834bd8d09c87fb09479",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Adapt seven alternative night-out formulas to venue type, lighting, movement and coverage, with practical pre-outing checks.",
     "primary_intent": "Evening venue-type styling and seven formulas; distinguish daytime outing overview and concert mobility specialist",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "e10911186f94a91cdb06d57f4dd35e4bfc13c8f2a4987b81c7c73b140c1e1b8c",
+    "source_sha256": "ce879cf26c4fee4164f12da749906c19b94125cf4c200892435795717c2b30a0",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Style straight tailored trousers through rise, pleats, top length and footwear across seven adaptable outfit formulas.",
     "primary_intent": "Straight tailored fabric, rise, creases and hems; distinguish straight denim and general wide-leg volume",
     "role": "ITEM_GUIDE",
-    "source_sha256": "e987f53c514bd03033fed66c99e2d326402fff591f06a9d69f878637dac8f937",
+    "source_sha256": "571af2410eb63ea59f7ed724fcd69e5b4e99c6cfc7046d95f254e2da67b71938",
     "published_date": "2026-11-04"
   }
 ]

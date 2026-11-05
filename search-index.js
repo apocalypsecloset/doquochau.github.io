@@ -2918,5 +2918,21 @@ window.searchIndex = [
     "description": "Visual Kei là gì? Tìm hiểu cách nhận diện Visual Kei qua outfit, hair, makeup, silhouette, chất liệu và cách phối hằng ngày mà không nhầm với Goth hay Scene.",
     "image": "/images/blog-covers/visual-kei-la-gi.webp",
     "keywords": "VisualKei, JapaneseStyle, AltFashion, AestheticGuide"
+  },
+  {
+    "title": "Solarpunk Là Gì? Aesthetic Xanh Và Cách Ứng Dụng Thời Trang",
+    "url": "/blog/solarpunk.html",
+    "type": "Aesthetic Guide",
+    "description": "Solarpunk là gì? Khám phá aesthetic xanh kết hợp năng lượng sinh thái, công nghệ lạc quan và cách ứng dụng vào trang phục, màu sắc, chất liệu đời thực.",
+    "image": "/assets/editorial/solarpunk-wardrobe.svg",
+    "keywords": "solarpunk"
+  },
+  {
+    "title": "White On White: Cách Phối Cả Cây Trắng Có Chiều Sâu Cho Nữ",
+    "url": "/blog/white-on-white.html",
+    "type": "Outfit Guide",
+    "description": "White on white không phải là mặc một màu phẳng. Khám phá cách phối cả cây trắng có chiều sâu qua chất liệu, sắc độ, tỷ lệ và phụ kiện.",
+    "image": "/images/blog/white-on-white-01.webp",
+    "keywords": "white on white"
   }
 ];

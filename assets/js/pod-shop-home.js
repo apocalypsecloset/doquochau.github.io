@@ -2,6 +2,7 @@
 (function(){
 'use strict';
 const API = String(window.AC_FOURTHWALL && window.AC_FOURTHWALL.apiBase || '').replace(/\/+$/, '');
+const model = window.ACShopModel;
 const SHOP = 'https://apocalypse-closet-shop.fourthwall.com';
 const FEATURED_SLUG = 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
 const grid = document.querySelector('#ac-product-grid');
@@ -9,6 +10,7 @@ const status = document.querySelector('#ac-catalog-status');
 const heroVisual = document.querySelector('#ac-store-hero-visual');
 const heroPrice = document.querySelector('#ac-feature-price');
 const heroSize = document.querySelector('#ac-hero-size');
+const heroColor = document.querySelector('#ac-hero-color');
 const heroAdd = document.querySelector('#ac-hero-add');
 const heroStatus = document.querySelector('#ac-hero-buy-status');
 const bagButton = document.querySelector('#ac-cart-button');
@@ -29,7 +31,17 @@ let lightboxIndex = 0;
 const storageKey = 'ac_fourthwall_cart_id';
 let cartId = '';
 let busy = false;
-if(!grid || !dialog || !bagButton || !API) return;
+let currentCart = null;
+let cartNeedsRefresh = false;
+let featuredProduct = null;
+const variantNames = new Map();
+const viewedProducts = new Set();
+if(!grid || !dialog || !bagButton || !API || !model) return;
+function track(name,payload){
+  if(!['apocalypsecloset.com','www.apocalypsecloset.com'].includes(location.hostname))return;
+  if(window.acTrack)window.acTrack(name,payload);
+  else if(window.gtag)window.gtag('event',name,payload);
+}
 function say(element, value){ if(element) element.textContent=value; }
 function money(amount,currency){const n=Number(amount);return Number.isFinite(n) ? new Intl.NumberFormat('en-US',{style:'currency',currency:currency||'USD'}).format(n):'Price at checkout';}
 function errorFallback(message){
@@ -46,13 +58,13 @@ async function api(path, options){
   const timer=setTimeout(()=>controller.abort(),12000);
   try{
     const response=await fetch(API+'/v1'+path,{...(options||{}),signal:controller.signal});
-    if(!response.ok)throw new Error('Request failed: '+response.status);
+    if(!response.ok){const error=new Error('Request failed: '+response.status);error.status=response.status;throw error;}
     return response.json();
   }finally{clearTimeout(timer);}
 }
 function publicProduct(p){return p && typeof p.slug==='string' && p.state?.type==='AVAILABLE' && p.access?.type==='PUBLIC';}
 function variants(p){
-  return (Array.isArray(p?.variants)?p.variants:[]).filter(v=>v && v.id && v.stock?.type!=='UNAVAILABLE' && v.stock?.type!=='SOLD_OUT' && Number.isFinite(Number(v.unitPrice?.value)));
+  return model.available(p);
 }
 function lowest(p){
   const arr=variants(p);
@@ -77,9 +89,9 @@ function showLightbox(index){
   say(lightboxCounter,(lightboxIndex+1)+' / '+lightboxImages.length);
   if(!lightbox.open && typeof lightbox.showModal==='function') lightbox.showModal();
 }
-function renderLookbook(product){
+function renderLookbook(product,chosenColor,chosenVariant){
   if(!lookbook || !lookbookGallery) return;
-  const urls=productPhotos(product);
+  const urls=model.colorPhotos(product,chosenColor||model.colors(product)[0],chosenVariant);
   if(urls.length<2){lookbook.hidden=true;return;}
   // Use distinct images from different positions in the product media sequence.
   // This is one tee, never mislabel these as separate products.
@@ -119,79 +131,75 @@ function el(tag, cls, txt){
   return e;
 }
 function priceOf(v){return money(v.unitPrice?.value,v.unitPrice?.currency);}
+function fillSizes(select,product,color,preserve){
+  const options=model.sizes(product,color);
+  const previous=preserve||'';
+  select.replaceChildren(new Option('CHOOSE SIZE',''));
+  options.forEach(v=>select.add(new Option(model.size(v)+' · '+priceOf(v),model.size(v))));
+  if(options.some(v=>model.size(v)===previous))select.value=previous;
+  select.disabled=!options.length;
+}
+function fillColors(select,product){
+  select.replaceChildren();
+  model.colors(product).forEach(c=>select.add(new Option(c,c)));
+  select.disabled=!select.options.length;
+}
+function paintCardPhotos(media,product,color,variant){
+  const photo=media.querySelector('.ac-product-image');
+  photo.replaceChildren();
+  media.querySelector('.ac-thumb-rail')?.remove();
+  const urls=model.colorPhotos(product,color,variant);
+  if(!urls.length){photo.append(el('span','ac-product-image-placeholder','PHOTO PENDING — '+color));return;}
+  const img=el('img');img.src=urls[0];img.alt=product.name+' — '+color;img.width=560;img.height=640;img.loading='lazy';img.decoding='async';photo.append(img);
+  const rail=el('div','ac-thumb-rail');
+  urls.slice(0,6).forEach((src,i)=>{
+    const b=el('button','ac-thumb'+(i===0?' is-selected':''));b.type='button';
+    b.setAttribute('aria-label','Show '+color+' product photograph '+(i+1));b.setAttribute('aria-pressed',String(i===0));
+    const mini=el('img');mini.src=src;mini.alt='';mini.width=90;mini.height=100;mini.loading='lazy';mini.decoding='async';b.append(mini);
+    b.addEventListener('click',()=>{img.src=src;img.alt=product.name+' — '+color+' view '+(i+1);rail.querySelectorAll('button').forEach(x=>{x.classList.remove('is-selected');x.setAttribute('aria-pressed','false');});b.classList.add('is-selected');b.setAttribute('aria-pressed','true');});rail.append(b);
+  });
+  if(urls.length>1)media.append(rail);
+}
 function variantLabel(v){
   const col=v.attributes?.color?.name, size=v.attributes?.size?.name;
   return [col,size].filter(Boolean).join(' / ') || v.attributes?.description || v.name || 'One size';
 }
 function createCard(p,index){
+  variants(p).forEach(v=>variantNames.set(v.id,p.name));
   const card=el('article','ac-product-card');
   const media=el('div','ac-product-media');
   const photo=el('a','ac-product-image');
   photo.href=SHOP+'/products/'+encodeURIComponent(p.slug);
-  photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' on Fourthwall');
-  const image=imageUrl(p);
-  if(image){
-    const img=document.createElement('img');img.src=image;img.alt=p.name;img.loading=index<2?'eager':'lazy';img.decoding='async';img.width=560;img.height=640;photo.append(img);
-  }else{
-    photo.append(el('span','ac-product-image-placeholder','APOCALYPSE'));
-  }
-  photo.append(el('span','ac-product-flag',index===0?'DROP 001':'MADE TO ORDER'));
-  media.append(photo);
-  const galleryUrls=productPhotos(p).slice(0,6);
-  if(galleryUrls.length>1 && image){
-    const thumbRail=el('div','ac-thumb-rail');
-    const mainPhoto=photo.querySelector('img');
-    galleryUrls.forEach((src,thumbIndex)=>{
-      const thumbnail=el('button','ac-thumb'+(thumbIndex===0?' is-selected':''));
-      thumbnail.type='button';
-      thumbnail.setAttribute('aria-label','Show product photograph '+(thumbIndex+1));
-      thumbnail.setAttribute('aria-pressed',thumbIndex===0?'true':'false');
-      const miniature=document.createElement('img');
-      miniature.src=src;miniature.alt='';miniature.loading='lazy';miniature.decoding='async';
-      thumbnail.append(miniature);
-      thumbnail.addEventListener('click',()=>{
-        mainPhoto.src=src;
-        mainPhoto.alt=p.name+' — view '+(thumbIndex+1);
-        thumbRail.querySelectorAll('button').forEach(button=>{
-          button.classList.remove('is-selected');button.setAttribute('aria-pressed','false');
-        });
-        thumbnail.classList.add('is-selected');thumbnail.setAttribute('aria-pressed','true');
-      });
-      thumbRail.append(thumbnail);
-    });
-    media.append(thumbRail);
-  }
+  photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' on Fourthwall');media.append(photo);
   const body=el('div','ac-product-body');
   body.append(el('p','ac-product-type','APOCALYPSE CLOSET / ORIGINAL'));
-  const title=el('h3','ac-product-title');
-  const link=el('a','',p.name);link.href=photo.href;title.append(link);
-  body.append(title);
-  const min=lowest(p);
-  const price=el('strong','ac-product-price',min?'FROM '+priceOf(min):'Unavailable');
-  body.append(price);
-  const purch=el('div','ac-product-purchase');
-  const select=el('select','ac-product-size');select.setAttribute('aria-label','Choose size for '+p.name);
-  select.add(new Option('CHOOSE SIZE',''));
-  const options=variants(p);
-  const preferred=['XS','S','M','L','XL','2XL','3XL','4XL','5XL'];
-  options.sort((a,b)=>{
-    const as=a.attributes?.size?.name||'',bs=b.attributes?.size?.name||'';
-    return (preferred.indexOf(as)<0?99:preferred.indexOf(as))-(preferred.indexOf(bs)<0?99:preferred.indexOf(bs));
-  });
-  options.forEach(v=>select.add(new Option(variantLabel(v)+' · '+priceOf(v),v.id)));
+  const title=el('h3','ac-product-title');const link=el('a','',p.name);link.href=photo.href;title.append(link);body.append(title);
+  const min=lowest(p),price=el('strong','ac-product-price',min?'FROM '+priceOf(min):'Unavailable');body.append(price);
+  const controls=el('div','ac-variant-controls');
+  const colorLabel=el('label','ac-variant-field','COLOR');
+  const color=el('select','ac-product-color');color.setAttribute('aria-label','Choose color for '+p.name);colorLabel.append(color);
+  const sizeLabel=el('label','ac-variant-field','SIZE');
+  const size=el('select','ac-product-size');size.setAttribute('aria-label','Choose size for '+p.name);sizeLabel.append(size);
+  controls.append(colorLabel,sizeLabel);body.append(controls);
   const buy=el('button','ac-product-add','ADD TO BAG');buy.type='button';
-  const note=el('p','ac-product-status','Select your size · Checkout by Fourthwall');
-  if(!options.length){select.disabled=true;buy.disabled=true;say(note,'Currently unavailable');}
-  select.addEventListener('change',()=>{
-    const v=options.find(v=>v.id===select.value);
+  const note=el('p','ac-product-status','Choose color and size · Checkout by Fourthwall');note.setAttribute('role','status');
+  fillColors(color,p);fillSizes(size,p,color.value);
+  function refresh(colorChanged){
+    if(colorChanged)fillSizes(size,p,color.value,size.value);
+    const v=model.variant(p,color.value,size.value);
     say(price,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
-  });
+    buy.disabled=!v;
+    paintCardPhotos(media,p,color.value,v);
+    say(note,!color.options.length?'Currently unavailable':v?'Selected '+color.value+' / '+model.size(v):'Choose a size for '+color.value+'.');
+  }
+  color.addEventListener('change',()=>refresh(true));
+  size.addEventListener('change',()=>refresh(false));
   buy.addEventListener('click',async()=>{
-    const v=options.find(v=>v.id===select.value);
-    if(!v){say(note,'Please select a size first.');select.focus();return;}
-    await addToCart(v.id,buy,note);
+    const v=model.variant(p,color.value,size.value);
+    if(!v){say(note,'Please choose color and size.');size.focus();return;}
+    await addToCart(v,buy,note,p.name);
   });
-  purch.append(select,buy);body.append(purch,note);card.append(media,body);return card;
+  body.append(buy,note);card.append(media,body);refresh(false);return card;
 }
 /**
  * Preview-only grid slots: 5 additional visual cards built from the existing
@@ -243,48 +251,64 @@ function paintCatalog(products, featured){
     : products.length+' LIVE DROPS');
   const notice=document.querySelector('#ac-demo-note');
   if(notice) notice.hidden=!showDemo;
+  const items=products.map(p=>{const v=lowest(p);return v?model.ecommerceItem(v,1,p.name):null;}).filter(Boolean);
+  if(items.length)track('view_item_list',{item_list_id:'home_catalog',item_list_name:'Home catalog',items});
 }
 function paintHero(product){
-  if(!product || !heroSize || !heroAdd)return;
-  const src=imageUrl(product);
-  if(src && heroVisual){
-    let img=heroVisual.querySelector('img');
-    if(!img){
-      img=document.createElement('img');
-      img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;
-      heroVisual.querySelector('.ac-visual-placeholder')?.replaceWith(img);
-    }
-    img.src=src;img.alt='Silent Chaos Gothic Angel Graphic Tee by Apocalypse Closet';
+  if(!product || !heroSize || !heroColor || !heroAdd)return;
+  featuredProduct=product;
+  const information=document.querySelector('#ac-product-information');
+  if(information){
+    information.replaceChildren();
+    (Array.isArray(product.additionalInformation)?product.additionalInformation:[]).forEach(info=>{
+      const panel=el('div','ac-product-information-panel');panel.append(el('h3','',info.title||'Product details'));
+      // Keep upstream text while never attaching upstream HTML or its attributes.
+      const parsed=new DOMParser().parseFromString(String(info.bodyHtml||''),'text/html');
+      parsed.querySelectorAll('script,style,iframe,object').forEach(n=>n.remove());
+      const items=parsed.querySelectorAll('li');
+      if(items.length){const list=el('ul');items.forEach(item=>list.append(el('li','',item.textContent)));panel.append(list);}
+      else panel.append(el('p','',parsed.body.textContent));
+      information.append(panel);
+    });
   }
-  const options=variants(product);
-  const preferred=['XS','S','M','L','XL','2XL','3XL','4XL','5XL'];
-  options.sort((a,b)=>{
-    const n=v=>{const i=preferred.indexOf(v.attributes?.size?.name||'');return i<0?99:i;};
-    return n(a)-n(b);
-  });
-  heroSize.replaceChildren(new Option('CHOOSE SIZE',''));
-  options.forEach(v=>heroSize.add(new Option(variantLabel(v)+' · '+priceOf(v),v.id)));
-  heroSize.disabled=!options.length;
-  heroAdd.disabled=!options.length;
+  variants(product).forEach(v=>variantNames.set(v.id,product.name));
+  if(!viewedProducts.has(product.id||product.slug)){
+    const first=lowest(product);
+    if(first){viewedProducts.add(product.id||product.slug);track('view_item',model.eventForVariant(first,1,product.name));}
+  }
+  const previousColor=heroColor.value,previousSize=heroSize.value;
+  fillColors(heroColor,product);
+  if(model.colors(product).includes(previousColor))heroColor.value=previousColor;
+  fillSizes(heroSize,product,heroColor.value,previousSize);
   const min=lowest(product);
-  if(min)say(heroPrice,'FROM '+priceOf(min));
-  say(heroStatus,options.length?'Choose a size to add this item to your bag.':'Size availability unavailable. Shop directly on Fourthwall.');
-  heroSize.onchange=()=>{
-    const v=options.find(v=>v.id===heroSize.value);
-    say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Price at checkout');
-  };
+  function refresh(colorChanged){
+    if(colorChanged)fillSizes(heroSize,product,heroColor.value,heroSize.value);
+    const v=model.variant(product,heroColor.value,heroSize.value);
+    const urls=model.colorPhotos(product,heroColor.value,v);
+    heroVisual.querySelectorAll('img,.ac-visual-placeholder').forEach(n=>n.remove());
+    if(urls.length){
+      const img=el('img');img.src=urls[0];img.alt=product.name+' — '+heroColor.value;
+      img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;heroVisual.append(img);
+    }else heroVisual.append(el('div','ac-visual-placeholder','PHOTO PENDING — '+heroColor.value));
+    heroAdd.disabled=!v;
+    say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
+    say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product on Fourthwall.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
+    renderLookbook(product,heroColor.value,v);
+  }
+  heroColor.onchange=()=>refresh(true);heroSize.onchange=()=>refresh(false);
   heroAdd.onclick=async()=>{
-    const v=options.find(v=>v.id===heroSize.value);
-    if(!v){say(heroStatus,'Please choose your size first.');heroSize.focus();return;}
-    await addToCart(v.id,heroAdd,heroStatus);
+    const v=model.variant(product,heroColor.value,heroSize.value);
+    if(!v){say(heroStatus,'Please choose color and size.');heroSize.focus();return;}
+    await addToCart(v,heroAdd,heroStatus,product.name);
   };
+  refresh(false);
 }
 
 async function loadCatalog(){
   // Load the featured product immediately: buyers should see real size/price
   // before the rest of the catalog has finished loading.
   const featuredPromise=api('/products/'+encodeURIComponent(FEATURED_SLUG))
-    .then(p=>{if(publicProduct(p)){paintHero(p);renderLookbook(p);}return p;})
+    .then(p=>{if(publicProduct(p)){paintHero(p);}return p;})
     .catch(()=>null);
   try{
     const data=await api('/collections/all/products?page=0&size=24');
@@ -302,14 +326,12 @@ async function loadCatalog(){
     }
     paintCatalog(products,featured);
     paintHero(featured);
-    renderLookbook(featured);
   }catch(e){
     const featured=await featuredPromise;
     if(publicProduct(featured)){
       paintCatalog([featured],featured);
       paintHero(featured);
-      renderLookbook(featured);
-    }else{
+      }else{
       errorFallback();
       say(heroStatus,'Live sizes are unavailable. View the product on Fourthwall.');
     }
@@ -325,33 +347,61 @@ function storeCart(value){
   try{localStorage.setItem(storageKey,value);}catch(_){}
 }
 function countItems(cart){return Array.isArray(cart.items)?cart.items.reduce((n,i)=>n+Number(i.quantity||0),0):0;}
-function cartTotal(cart){
-  return (cart.items||[]).reduce((sum,item)=>sum+Number(item.quantity||0)*Number(item.variant?.unitPrice?.value||0),0);
-}
+function cartTotal(cart){return model.total(cart);}
 function updateCount(cart){say(bagButton,'BAG ('+countItems(cart)+')');}
+function showBag(){if(!dialog.open&&typeof dialog.showModal==='function')dialog.showModal();}
+function retryVisible(visible){const b=document.querySelector('#ac-cart-retry');if(b)b.hidden=!visible;}
 function displayCart(cart){
-  updateCount(cart);cartList.replaceChildren();
-  (cart.items||[]).forEach(item=>{
-    const li=el('li','');
-    const details=el('div','');
-    const product=el('strong','',item.variant?.name||'Apocalypse Closet item');
-    const meta=el('div','', 'Qty '+Number(item.quantity||0));meta.style.color='#b8aaa1';
-    details.append(product,meta);
-    const total=el('span','',money(Number(item.variant?.unitPrice?.value||0)*Number(item.quantity||0),item.variant?.unitPrice?.currency||'USD'));
-    li.append(details,total);cartList.append(li);
+  currentCart=cart;
+  cartNeedsRefresh=false;
+  retryVisible(false);updateCount(cart);cartList.replaceChildren();
+  model.cartItems(cart).forEach(item=>{
+    const v=item.variant,q=Number(item.quantity||0);if(!v)return;
+    const li=el('li','');const details=el('div','');
+    const name=variantNames.get(v.id)||v.name||'Apocalypse Closet item';
+    details.append(el('strong','',name),el('div','ac-cart-variant',[model.color(v),model.size(v)].join(' / ')));
+    const controls=el('div','ac-cart-quantity');
+    const label=el('label','','QUANTITY');
+    const input=el('input');input.type='number';input.min='1';input.max='99';input.step='1';input.value=String(q);
+    input.setAttribute('aria-label','Quantity for '+name+' '+model.color(v)+' '+model.size(v));label.append(input);
+    const update=el('button','','UPDATE');update.type='button';
+    const remove=el('button','','REMOVE');remove.type='button';remove.setAttribute('aria-label','Remove '+name+' '+model.color(v)+' '+model.size(v));
+    update.addEventListener('click',()=>{
+      const n=Number(input.value);
+      if(!Number.isInteger(n)||n<1||n>99){input.reportValidity();say(cartStatus,'Choose a whole quantity from 1 to 99.');return;}
+      changeCart(item,n);
+    });
+    remove.addEventListener('click',()=>changeCart(item,0));controls.append(label,update,remove);details.append(controls);
+    li.append(details,el('span','',money(Number(v.unitPrice?.value||0)*q,v.unitPrice?.currency||'USD')));cartList.append(li);
   });
   say(subtotal,money(cartTotal(cart),'USD'));
-  checkout.href=SHOP+'/checkout/?'+new URLSearchParams({cartCurrency:'USD',cartId:cart.id}).toString();
+  checkout.href=SHOP+'/checkout/?'+new URLSearchParams({cartCurrency:'USD',cartId:cart.id||''}).toString();
   checkout.hidden=!cart.id||!countItems(cart);
   say(cartStatus,countItems(cart)?'Shipping and any applicable taxes are calculated during secure checkout.':'Your bag is empty.');
 }
+async function changeCart(item,quantity){
+  if(busy)return;const id=cartId||getStoredCart();if(!id)return;
+  busy=true;checkout.setAttribute('aria-disabled','true');cartList.querySelectorAll('button,input').forEach(n=>n.disabled=true);say(cartStatus,'UPDATING BAG…');
+  try{
+    const action=quantity===0?'remove':'change';
+    const payload={items:[{variantId:item.variant.id,quantity:quantity===0?Number(item.quantity):quantity}]};
+    await api('/carts/'+encodeURIComponent(id)+'/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const cart=await api('/carts/'+encodeURIComponent(id));displayCart(cart);
+    const delta=quantity-Number(item.quantity||0);
+    if(delta)track(delta>0?'add_to_cart':'remove_from_cart',model.eventForVariant(item.variant,Math.abs(delta),variantNames.get(item.variant.id)));
+  }catch(e){
+    if(model.expired(e)){storeCart('');displayCart({items:[]});say(cartStatus,'This bag expired. Add an item to start again.');}
+    else{cartNeedsRefresh=true;checkout.hidden=true;retryVisible(true);say(cartStatus,'Could not confirm the update. Your saved bag is kept. Retry loading before making another change.');}
+  }finally{busy=false;checkout.removeAttribute('aria-disabled');cartList.querySelectorAll('button,input').forEach(n=>n.disabled=cartNeedsRefresh);}
+}
 async function newCartWith(variantId){
-  const cart=await api('/carts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:[{variantId,quantity:1}]})});
+  const cart=await api('/carts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({currency:'USD',items:[{variantId,quantity:1}]})});
   if(!cart?.id)throw new Error('No cart ID');
   storeCart(cart.id);
   return cart;
 }
-async function addToCart(variantId,button,note){
+async function addToCart(variant,button,note,productName){
+  const variantId=variant.id;
   if(busy)return;
   busy=true;button.disabled=true;say(note,'ADDING…');
   try{
@@ -364,25 +414,34 @@ async function addToCart(variantId,button,note){
         storeCart(stored);
       }catch(e){
         // Only create a new cart if the old cart is actually expired/missing.
-        const code=String(e.message||'');
-        if(!/404|410/.test(code))throw e;
+        if(!model.expired(e))throw e;
         cart=await newCartWith(variantId);
       }
     }else cart=await newCartWith(variantId);
     // A create response may omit full cart items, so fetch the current cart.
     if(!Array.isArray(cart.items))cart=await api('/carts/'+encodeURIComponent(cartId));
-    displayCart(cart);say(note,'ADDED TO BAG');if(typeof dialog.showModal==='function')dialog.showModal();
-    if(window.gtag)window.gtag('event','add_to_cart',{currency:'USD',value:cartTotal(cart),items:[{item_id:variantId,quantity:1}]});
+    displayCart(cart);say(note,'ADDED TO BAG');showBag();
+    track('add_to_cart',model.eventForVariant(variant,1,productName));
   }catch(e){say(note,'Could not add item. Please retry or open its Fourthwall page.');}
   finally{busy=false;button.disabled=false;}
 }
 async function openCart(){
-  const stored=cartId||getStoredCart();
-  if(!stored){cartList.replaceChildren();say(subtotal,money(0,'USD'));checkout.hidden=true;say(cartStatus,'Your bag is empty.');dialog.showModal();return;}
-  try{const cart=await api('/carts/'+encodeURIComponent(stored));storeCart(stored);displayCart(cart);dialog.showModal();}
-  catch(_){storeCart('');cartList.replaceChildren();checkout.hidden=true;say(cartStatus,'Your saved cart expired. Add an item to start a new bag.');dialog.showModal();}
+  if(busy)return;
+  const stored=cartId||getStoredCart();showBag();
+  if(!stored){displayCart({items:[]});return;}
+  busy=true;checkout.hidden=true;retryVisible(false);say(cartStatus,'LOADING BAG…');
+  try{const cart=await api('/carts/'+encodeURIComponent(stored));storeCart(stored);displayCart(cart);}
+  catch(e){
+    if(model.expired(e)){storeCart('');displayCart({items:[]});say(cartStatus,'Your saved bag expired. Add an item to start again.');}
+    else{retryVisible(true);say(cartStatus,'Connection unavailable. Your saved bag is kept. Retry to load its latest contents.');}
+  }finally{busy=false;}
 }
 bagButton.addEventListener('click',openCart);
+document.querySelector('#ac-cart-retry')?.addEventListener('click',openCart);
+checkout.addEventListener('click',event=>{
+  if(busy||checkout.getAttribute('aria-disabled')==='true'||!currentCart?.id||!countItems(currentCart)){event.preventDefault();return;}
+  track('begin_checkout',{currency:'USD',value:cartTotal(currentCart),items:model.cartItems(currentCart).filter(i=>i.variant).map(i=>model.ecommerceItem(i.variant,i.quantity,variantNames.get(i.variant.id)))});
+});
 document.querySelector('#ac-cart-close')?.addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
 mobileToggle?.addEventListener('click',()=>{
@@ -392,7 +451,7 @@ mobileToggle?.addEventListener('click',()=>{
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('is-open');mobileToggle?.setAttribute('aria-expanded','false');}));
 const stored=getStoredCart();
 if(stored){
-  api('/carts/'+encodeURIComponent(stored)).then(cart=>{storeCart(stored);updateCount(cart);}).catch(()=>storeCart(''));
+  api('/carts/'+encodeURIComponent(stored)).then(cart=>{storeCart(stored);updateCount(cart);}).catch(e=>{if(model.expired(e))storeCart('');});
 }
 loadCatalog();
 })();

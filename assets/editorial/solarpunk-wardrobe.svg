@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Solarpunk wardrobe: natural colors and practical layers</title>
+<desc id="desc">An original editorial diagram of an off-white shirt, moss-green utility trousers, a woven bag and earth-tone color swatches under a stylized sun.</desc>
+<rect width="1200" height="800" fill="#eef0df"/>
+<circle cx="1020" cy="150" r="78" fill="#e2b94c"/>
+<path d="M0 660Q200 540 400 650T800 630T1200 650V800H0Z" fill="#b9c79a"/>
+<path d="M0 730Q250 640 500 710T1000 700T1200 720V800H0Z" fill="#657c4a"/>
+<text x="65" y="97" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#273e2e">SOLARPUNK</text>
+<text x="68" y="137" font-family="Arial,sans-serif" font-size="20" fill="#40543a">COLOR · TEXTURE · PRACTICAL LAYERS</text>
+<g stroke="#374b35" stroke-width="5" stroke-linejoin="round">
+<path d="M245 250 320 225 350 260 380 225 455 250 510 350 455 380 430 330 430 585 270 585 270 330 245 380 190 350Z" fill="#fcf9eb"/>
+<path d="m320 225 30 35-25 44-26-62m81-17-30 35 25 44 26-62M350 260V585" fill="none"/>
+<path d="M590 260H785L810 585 728 605 688 385 650 605 568 585Z" fill="#7d9462"/>
+<path d="M590 292H785M688 292V385M603 360H653V439H597M728 360H780L787 439H734" fill="none"/>
+<path d="M872 401H1048L1063 575H858Z" fill="#b28d59"/>
+<path d="M900 401V362Q960 294 1020 362V401" fill="none"/>
+<path d="M879 441H1042M874 478H1046M870 515H1051M902 409V570M942 409V570M982 409V570M1022 409V570" stroke="#e0c99e" stroke-width="3"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="#273e2e">
+<text x="350" y="635">LIGHT NATURAL TEXTURE</text><text x="690" y="650">UTILITY &amp; MOVEMENT</text><text x="960" y="625">WOVEN DETAIL</text></g>
+<g transform="translate(68 190)"><rect width="55" height="32" fill="#fcf9eb" stroke="#89967b"/><rect x="64" width="55" height="32" fill="#7d9462"/><rect x="128" width="55" height="32" fill="#b28d59"/><rect x="192" width="55" height="32" fill="#e2b94c"/></g>
+<text x="68" y="761" font-family="Arial,sans-serif" font-size="16" fill="#fff">APOCALYPSE CLOSET · EDITORIAL ILLUSTRATION</text>
+</svg>
