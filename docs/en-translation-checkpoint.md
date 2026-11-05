@@ -61,3 +61,8 @@ The CSV’s 27 PENDING rows are authoritative. No batch36 EN stubs exist. Three 
 ## Resume
 
 Fetch master and reconcile concurrent work. Read this checkpoint, all 216 inventory rows and guardrails. Read full sources/references; assign distinct English targets before translating. Translate every text/alt segment with source SHA locks and meaningful English attributes. Generate only complete counterparts before sync; refresh guarded links; QA source parity, HTML/schema, images, paths/fragments, metadata, reciprocal hreflang, self-canonical, sitemap/Journal and desktop/mobile. Verify exact preview before normal merge. Wait for every production deployment check before comparing live bytes. Only then mark MERGED, update the total and persist a checkpoint. Plans, maintenance touches and incomplete pages never count as translated publications.
+
+
+## Batch36 prepared — publication pending (2026-11-05)
+
+Ten full translations passed local source/HTML/schema/image/desktop/mobile QA. Tracker:189 MERGED,10 COMPLETE_QA_PASSED,17 PENDING. Published count remains189. Resume this release before selecting another batch: verify exact preview, normal PR merge, all production deployment checks, then exact production verification. See `docs/en-translation-batch36.md` and its full manifest/TSVs and QA evidence.
