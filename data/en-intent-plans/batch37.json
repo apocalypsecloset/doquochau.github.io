@@ -1,5 +1,5 @@
 {
-  "status": "TRANSLATED_QA_PENDING",
+  "status": "MERGED_PRODUCTION_VERIFIED",
   "gsc": "NO_QUERY_PAGE_ACCESS",
   "baseline": "9c24d990b5e6183b69bd8ed908557897bc6b5ed9",
   "sources": [
@@ -47,7 +47,7 @@
       ],
       "layout": "hub",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "aesthetic-dictionary",
@@ -147,7 +147,7 @@
       ],
       "layout": "hub",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "phu-kien-thoi-trang-nu-ca-tinh",
@@ -183,7 +183,7 @@
       ],
       "layout": "hub",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "gyaru",
@@ -218,7 +218,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "harajuku-style",
@@ -247,7 +247,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "ganguro",
@@ -277,7 +277,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "kogal",
@@ -312,7 +312,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "amekaji",
@@ -345,7 +345,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "heisei-retro",
@@ -380,7 +380,7 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     },
     {
       "vi_slug": "hime-gyaru",
@@ -415,7 +415,9 @@
       ],
       "layout": "article",
       "review_status": "FULL_SOURCE_EDITORIAL_REVIEW_NO_GSC",
-      "publication_status": "TRANSLATED_QA_PENDING"
+      "publication_status": "MERGED"
     }
-  ]
+  ],
+  "pr": 61,
+  "merge_commit": "02138e1135d925b30d11c1e737892cd07456f8a3"
 }
