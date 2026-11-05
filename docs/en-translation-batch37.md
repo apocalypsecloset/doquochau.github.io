@@ -1,6 +1,6 @@
 # English translation batch37 — 2026-11-05
 
-Status: COMPLETE_LOCAL_QA; production verification pending. Baseline master: `9c24d990b5e6183b69bd8ed908557897bc6b5ed9`.
+Status: MERGED_PRODUCTION_VERIFIED through PR #61. Baseline master: `9c24d990b5e6183b69bd8ed908557897bc6b5ed9`.
 
 Ten complete translations: three collection hubs plus Gyaru, Harajuku, Ganguro, Kogal, Amekaji, Heisei Retro and Hime Gyaru. The remaining seven historical/global guides form the next final batch. This split keeps this release within the requested 10–20-page batch size and its linked Japanese-fashion context together.
 
@@ -52,4 +52,4 @@ Guarded maintenance promotes 224 existing links in 104 older EN pages to the new
 
 ## Release confirmation
 
-Pending normal PR merge and exact preview/production byte verification. CSV remains TRANSLATED_QA_PENDING until production proof.
+PR #61 merged normally as `02138e1135d925b30d11c1e737892cd07456f8a3` from reviewed head `89b48fe14fcc5846ff486dc641fecccfc15007e7` and tree `67c1a8f0e638490c07a982a5f9cff22b0b2efe13`. All 126 preview and all 126 production web files match reviewed bytes: ten new EN, ten VI, 104 maintained older EN, Journal and sitemap. All five production-master checks succeeded. Actual branch conclusions are retained without override or inferred cause. Tracker: 209 MERGED, seven PENDING; two EN-only originals make 211 English Journal cards.

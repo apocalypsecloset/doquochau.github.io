@@ -1,55 +1,43 @@
 # Translation checkpoint — 2026-11-05
 
-- Latest published content: PR #59, master `95678f747dc3db7fca078a38705225e95a063624`.
-- **199/216 full translation pairs published and production-verified; 17 pending.** Two EN-only originals make 201 English Journal cards.
-- Batch36 adds Mob Wife, Clean Girl, Dark Feminine definition/wardrobe, occupational burnout, Cutecore, Kidcore, Barbiecore, McBling, Parisian Chic and Geek Chic. All 1,734 source text/alt segments translated: 17,240 English words, 217 headings, 67 original image placements, 11 tables and 46 FAQ pairs.
-- All 51 preview and all 51 production web files match the reviewed tree. All five production-master content checks succeeded. Actual branch conclusions are recorded separately, without override or inferred cause. Evidence: `docs/qa/en-batch36-preview.json`, `en-batch36-production.json`, `en-batch36-release-checks.json`.
-- All 34 manifest gates pass. All 216 original VI sitemap URLs remain; ten VI files byte-identical outside marked alternates/switches. VI URL/slug/title/meta/canonical/body/images preserved. All 201 EN pages have one H1, self-canonical and unique title/description/canonical.
-- All 72 distinct original/srcset image endpoints return 200/image MIME. All 20 desktop1440/mobile390 browser views have no document overflow; covers load and 11 tables scroll inside wrappers. Mobile burnout FAQ and English Journal hrefs, mobile Mob Wife comparison and desktop Geek Chic title/introduction inspected. Original image lettering retained with English alt/captions.
-- Guarded refresh promotes 52 links in 29 older EN pages. Related Dark Feminine hub H3, image alt and ItemList name now describe the actual definition/wardrobe source; its single reusable TSV label is updated. The historical essay assumption is superseded, without changing VI or previous manifest history. These are maintenance touches, not new translations. Final scan: zero eligible links, zero skipped pages.
-- Optional per-config internal-link overrides map the burnout article’s existing blog-index references to /en/blog.html, with defaults unchanged for older manifests. No homepage/POD/Fourthwall/shop/routing/PR #9 changes.
-- No GSC query × page access; overlap review is editorial, without confirmed cannibalization, removal, consolidation, redirect or noindex. Dark Feminine definition, seven-formula outfit specialist and navigation hub retain separate purposes. Dated fashion coverage is not a current popularity guarantee.
-- WHO, APA and Mayo Clinic health context checked; no clothing/shopping-treatment claim or invented clinician review. Both Aesthetics Wiki sources had retrieval limits, recorded without claiming authoritative verification. Full reference checks and editorial decisions: `docs/en-translation-batch36.md`.
+- Latest published content: PR #61, master `02138e1135d925b30d11c1e737892cd07456f8a3`.
+- **209/216 full translation pairs published and production-verified; seven pending.** Two EN-only originals make 211 English Journal cards.
+- Batch37 publishes three full collection hubs and seven Japanese-fashion guides: Gyaru, Harajuku, Ganguro, Kogal, Amekaji, Heisei Retro and Hime Gyaru. All 1,735 text/alt/attribute segments translated, 17,901 English words, 294 H2/H3 headings, 157 original image placements, five tables, 28 FAQ pairs and 110 hub cards.
+- All 126 preview and production web files match the reviewed tree. All five production-master checks succeeded. Branch Pages succeeded; branch Workers failure supplies zero diagnostic annotations. Its cause remains unknown; no override. Full evidence: docs/qa/en-batch37-preview.json, en-batch37-production.json and en-batch37-release-checks.json.
+- All 35 manifest gates pass, including both complete article/hub gates for the mixed manifest. All 216 original VI sitemap URLs remain. Ten VI sources byte-identical outside marked alternates and language switches. All 211 EN pages have one H1, self-canonical and unique title/description/canonical. Reciprocal hreflang and Journal sequence verified.
+- All 171 original/srcset/logo image endpoints return HTTP200/image MIME. All 20 desktop1440/mobile390 views have no document overflow; covers load; tables scroll within wrappers. Desktop three-column dictionary, mobile accessory hub, open Hime FAQ and original dictionary gallery visually inspected. Original image lettering retained with English alt/captions.
+- Guarded maintenance promotes 224 links in 104 older EN pages. This does not add translated article counts. Final scan: zero eligible links, zero skipped pages.
+- No GSC query × page access. Overlap analysis is editorial, without confirmed cannibalization, URL removal, consolidation, redirect or noindex. Gyaru overview/substyles, Harajuku place ecosystem, Heisei nostalgia and dictionary navigation retain distinct intents.
+- WHO UV guidance, Web Japan 1997 socks, Dior, V&A, FIT, KCI and dated Nippon Information survey context checked. Community references remain attributed. Full decisions: docs/en-translation-batch37.md.
+- No homepage/POD/Fourthwall/shop/routing/PR #9 changes.
 
 ## Latest ten published English URLs
 
-- https://apocalypsecloset.com/en/blog/mob-wife-aesthetic-style-guide.html
-- https://apocalypsecloset.com/en/blog/clean-girl-aesthetic-style-guide.html
-- https://apocalypsecloset.com/en/blog/dark-feminine-explained-wardrobe.html
-- https://apocalypsecloset.com/en/blog/understanding-job-burnout.html
-- https://apocalypsecloset.com/en/blog/cutecore-style-guide.html
-- https://apocalypsecloset.com/en/blog/kidcore-style-guide.html
-- https://apocalypsecloset.com/en/blog/barbiecore-style-guide.html
-- https://apocalypsecloset.com/en/blog/mcbling-style-guide.html
-- https://apocalypsecloset.com/en/blog/parisian-chic-style-guide.html
-- https://apocalypsecloset.com/en/blog/geek-chic-style-guide.html
+- https://apocalypsecloset.com/en/blog/alternative-fashion-shopping-guides.html
+- https://apocalypsecloset.com/en/blog/fashion-aesthetic-directory.html
+- https://apocalypsecloset.com/en/blog/alternative-accessories-guide-directory.html
+- https://apocalypsecloset.com/en/blog/gyaru-style-guide.html
+- https://apocalypsecloset.com/en/blog/harajuku-fashion-style-guide.html
+- https://apocalypsecloset.com/en/blog/ganguro-gyaru-fashion-makeup.html
+- https://apocalypsecloset.com/en/blog/kogal-gyaru-style-history.html
+- https://apocalypsecloset.com/en/blog/amekaji-gyaru-american-casual.html
+- https://apocalypsecloset.com/en/blog/heisei-retro-fashion-nostalgia.html
+- https://apocalypsecloset.com/en/blog/hime-gyaru-princess-style.html
 
-## Remaining 17 source URLs
+## Seven remaining source URLs
 
-- https://apocalypsecloset.com/blog/mua-sam-alt-fashion.html
-- https://apocalypsecloset.com/blog/aesthetic-dictionary.html
-- https://apocalypsecloset.com/blog/phu-kien-thoi-trang-nu-ca-tinh.html
-- https://apocalypsecloset.com/blog/gyaru.html
-- https://apocalypsecloset.com/blog/harajuku-style.html
 - https://apocalypsecloset.com/blog/chicano-style.html
 - https://apocalypsecloset.com/blog/hippie-style.html
 - https://apocalypsecloset.com/blog/new-look-fashion.html
-- https://apocalypsecloset.com/blog/ganguro.html
 - https://apocalypsecloset.com/blog/ulzzang-style.html
-- https://apocalypsecloset.com/blog/kogal.html
-- https://apocalypsecloset.com/blog/amekaji.html
-- https://apocalypsecloset.com/blog/heisei-retro.html
-- https://apocalypsecloset.com/blog/hime-gyaru.html
 - https://apocalypsecloset.com/blog/1950s-fashion.html
 - https://apocalypsecloset.com/blog/japanese-streetwear.html
 - https://apocalypsecloset.com/blog/1930s-fashion.html
 
 ## Next work
 
-The CSV’s 17 PENDING rows are authoritative. No batch37 EN stubs exist. The remaining work can form one final audited batch of 17, once every layout and intent is fully reviewed. Three hubs (`mua-sam-alt-fashion`, `aesthetic-dictionary`, `phu-kien-thoi-trang-nu-ca-tinh`) use main.hub-main#main-content rather than the standard article extractor. Read and preserve their entire navigation and implement explicit extraction plus full QA. Current QA dispatch rejects mixed hub/article manifests; support for a mixed final batch must preserve each source-kind gate, not skip or relax checks. This is an implementation prerequisite, not a diagnosed SEO error.
+The seven PENDING CSV rows are authoritative: Chicano, Hippie, New Look, Ulzzang, 1950s, Japanese Streetwear and 1930s. All use the standard article extractor. They form the final remainder after 10-page batch37; do not create extra pages to reach a batch minimum. No corresponding EN stubs or sitemap entries exist yet.
 
-The other 14 include Gyaru and its subtype/geographic contexts plus historical fashion. Keep Gyaru overview, Ganguro, Kogal, Hime Gyaru, Amekaji, Heisei Retro, Harajuku and Japanese Streetwear scopes distinct; Chicano and Ulzzang have their own cultural context. Hippie, New Look, 1950s and 1930s guides need primary historical references. Read actual current content, not only slugs or inventory titles.
+Keep Chicano cultural identity distinct from generic Streetwear; Ulzzang internet beauty origins separate from all Korean fashion and body prerequisites; Hippie counterculture separate from Boho Chic; New Look Dior 1947 construction separate from the complete 1950s decade; 1930s natural-waist/bias drape separate from postwar full skirts; Japanese Streetwear silhouette/curation separate from Harajuku's broader place-based ecosystem. Original references and full sources must be retained and checked.
 
-## Resume
-
-Fetch master and reconcile concurrent work. Read this checkpoint, all 216 inventory rows and guardrails. Read full sources/references and assign distinct English targets. Translate every text/alt segment with SHA locks and meaningful attributes. Generate only complete counterparts before sync; refresh guarded links; QA source parity, HTML/schema, images, paths/fragments, metadata, reciprocal vi/en, self-canonical, sitemap/Journal and desktop/mobile. Verify exact preview before normal merge; wait for all production deployment checks before comparing live bytes. Only then mark MERGED, update the count and persist a checkpoint. Maintenance, plans and partial pages never count as published translations.
+Fetch master and reconcile ongoing work. Read CSV/guardrails, fully translate and hash-lock each source, meaningful attributes and metadata, generate only complete pages, wire reciprocal hreflang/Journal/sitemap, refresh guarded links and run all gates. Verify images and desktop/mobile, exact preview, normal PR merge, all production deployment checks and exact live bytes. Only then mark the remaining seven MERGED and record 216/216. Plans, drafts and maintenance never count as published translations.
