@@ -1,0 +1,81 @@
+[
+  {
+    "vi_slug": "chicano-style",
+    "en_slug": "chicano-style-history-outfits",
+    "title": "Chicano Style: Cultural History, Clothing and Women's Outfits",
+    "description": "Explore Chicano fashion through Mexican-American history, structured volume and workwear, with five contemporary outfit interpretations.",
+    "primary_intent": "Mexican-American/Chicano cultural history and structured workwear proportions; not generic Streetwear or a costume/stereotype checklist.",
+    "role": "CULTURAL_STYLE_SPECIALIST",
+    "source_sha256": "c7a156d2efddcad9c24cac39968ebc618b9fd94577d5b0d48beda90625e9e4ad",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "hippie-style",
+    "en_slug": "hippie-counterculture-fashion-style",
+    "title": "What Is Hippie Style? Counterculture and Fashion",
+    "description": "Understand late-1960s and early-1970s hippie fashion through flow, craft and reuse, with six outfits and distinctions from Boho Chic.",
+    "primary_intent": "Hippie counterculture, anti-fashion, craft and reuse; distinct from polished Boho Chic, broad Vintage and rural-romantic Cottagecore.",
+    "role": "HISTORICAL_STYLE_SPECIALIST",
+    "source_sha256": "7029b1e58b0a6ceb434cffa903a27ef7ddb14c0c067fc227620b17499a324e55",
+    "published_date": "2026-11-05",
+    "attribute_translations": {
+      "So sánh Hippie với các phong cách gần": "Hippie compared with related styles"
+    }
+  },
+  {
+    "vi_slug": "new-look-fashion",
+    "en_slug": "dior-new-look-1947-silhouette",
+    "title": "What Was Dior's New Look? The Silhouette That Changed Fashion in 1947",
+    "description": "Explore Dior's 1947 New Look, the Bar suit's construction and postwar controversy, with contemporary interpretations of its proportions.",
+    "primary_intent": "Dior 1947 debut and Bar construction/controversy; separate from complete 1950s overview, corset-item styling and broad Vintage.",
+    "role": "HISTORICAL_EVENT_SPECIALIST",
+    "source_sha256": "b4ed71a6e000c2deebd8398129815b2782fb90f1f1bbcdcd4352c0e144a65008",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "ulzzang-style",
+    "en_slug": "ulzzang-korean-casual-style",
+    "title": "What Is Ulzzang Style? Korean Fashion and Women's Outfits",
+    "description": "Separate ulzzang's Korean internet origins from its later casual-fashion label, with six outfit formulas and no body or skin-color requirements.",
+    "primary_intent": "Korean internet image/beauty origins and later international clothing label; not all K-fashion, Acubi layers, Clean Girl polish or body eligibility.",
+    "role": "CULTURAL_STYLE_SPECIALIST",
+    "source_sha256": "b67733cf1a292eebbd0beb1ec025879f3348d65d810f708a3ce41ea25dee6900",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "1950s-fashion",
+    "en_slug": "1950s-womens-fashion-guide",
+    "title": "1950s Women's Fashion: Silhouettes and Outfit Ideas",
+    "description": "Explore full skirts, sheaths, suits, sportswear and later 1950s shapes, with six contemporary outfits beyond a single New Look silhouette.",
+    "primary_intent": "Complete 1950s womenswear range and evolving occasion-based shapes; broader than Dior 1947 New Look and distinct from timeless Classic or generic Vintage.",
+    "role": "HISTORICAL_PERIOD_OVERVIEW",
+    "source_sha256": "53e5bc9ea62c8d61bf5cda3a7c59eaa2e0afa0edfc64183190081889fceff892",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "japanese-streetwear",
+    "en_slug": "japanese-streetwear-outfit-guide",
+    "title": "Japanese Streetwear: Silhouettes, Layers and Women's Outfits",
+    "description": "Build Japanese streetwear-inspired outfits through silhouette, layered lengths, vintage and considered selection, with six adaptable combinations.",
+    "primary_intent": "Japan-context urban streetwear, Ura-Hara selection and layering; distinguish global Streetwear and Harajuku ecosystem including non-streetwear subcultures.",
+    "role": "REGIONAL_STREETWEAR_SPECIALIST",
+    "source_sha256": "4313f8c94b225dc9edd859ae1f2862f8cac31fe7a4a5e69df16097a8ca502eb0",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "1930s-fashion",
+    "en_slug": "1930s-fashion-silhouette-guide",
+    "title": "1930s Fashion: Silhouettes, Clothing and Contemporary References",
+    "description": "Understand natural waists, bias-cut gowns, daytime tailoring and Hollywood references, with six ways to interpret 1930s proportions today.",
+    "primary_intent": "1930s natural-waist elongated bias drape and changing shoulders; not 1920s flapper, postwar New Look full skirts or generic Vintage.",
+    "role": "HISTORICAL_PERIOD_OVERVIEW",
+    "source_sha256": "230d7d51dccf2718c298eb2b173faedec3bab0fb9454610033c181ec3e5a7c8f",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  }
+]
