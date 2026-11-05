@@ -218,4 +218,7 @@ def generate(config):
  return out
 if __name__=='__main__' and sys.argv[1]=='generate':
  for c in json.loads((ROOT/'data/en-translations'/((sys.argv[2] if len(sys.argv)>2 else 'batch02')+'.json')).read_text()):
-  print(generate(c).relative_to(ROOT))
+  if c.get('source_kind')=='hub':
+   from en_translate_hubs import generate as generate_hub
+   print(generate_hub(c).relative_to(ROOT))
+  else:print(generate(c).relative_to(ROOT))

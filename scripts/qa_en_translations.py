@@ -8,10 +8,23 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from en_translate import VI,source,faq_pairs
 configs=json.loads((ROOT/'data/en-translations'/((sys.argv[1] if len(sys.argv)>1 else 'batch02')+'.json')).read_text())
 if any(c.get('source_kind')=='hub' for c in configs):
- assert all(c.get('source_kind')=='hub' for c in configs),'Mixed source kinds need separate release gates'
- import runpy
- runpy.run_path(str(ROOT/'scripts/qa_en_hubs.py'),run_name='__main__')
- sys.exit(0)
+ if all(c.get('source_kind')=='hub' for c in configs):
+  import runpy
+  runpy.run_path(str(ROOT/'scripts/qa_en_hubs.py'),run_name='__main__')
+  sys.exit(0)
+ if '--articles-only' in sys.argv:
+  configs=[c for c in configs if c.get('source_kind','article')=='article']
+ else:
+  # Run both complete release gates; never discard a source kind in a mixed batch.
+  reports=[]
+  for script,flag in [('qa_en_translations.py','--articles-only'),('qa_en_hubs.py','--hubs-only')]:
+   r=subprocess.run([sys.executable,str(ROOT/'scripts'/script),sys.argv[1],flag],capture_output=True,text=True)
+   report=json.loads(r.stdout)
+   if r.returncode and not report['errors']:report['errors'].append(script+': gate failed '+r.stderr)
+   reports.append(report)
+  results=[x for r in reports for x in r['results']];errors=[x for r in reports for x in r['errors']]
+  if sorted(x['vi_slug'] for x in results)!=sorted(c['vi_slug'] for c in configs):errors.append('Mixed batch source coverage mismatch')
+  print(json.dumps(dict(results=results,errors=errors),indent=2));sys.exit(bool(errors))
 errors=[];results=[]
 def check(ok,message):
  if not ok:errors.append(message)

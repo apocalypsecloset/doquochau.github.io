@@ -1,0 +1,116 @@
+[
+  {
+    "vi_slug": "mua-sam-alt-fashion",
+    "en_slug": "alternative-fashion-shopping-guides",
+    "title": "Alternative Fashion Shopping: Size, Budget and Seller Guides",
+    "description": "Browse alternative-fashion shopping guides to sizing, budgets, materials, seller checks and clothing care, with focused articles for each decision.",
+    "role": "SHOPPING_HUB",
+    "primary_intent": "Shopping navigation and decision framework; individual seller, budget, size and material specialists retain their intents.",
+    "source_sha256": "fbfbe59e449162b0a047e833f319210cb805d9fed1f31b4811faccaa2d10bdc8",
+    "published_date": "2026-11-05",
+    "source_kind": "hub"
+  },
+  {
+    "vi_slug": "aesthetic-dictionary",
+    "en_slug": "fashion-aesthetic-directory",
+    "title": "Aesthetic Dictionary: Fashion Style and Topic Directory",
+    "description": "Find specialist guides to alternative fashion, Japanese subcultures, historical clothing and internet aesthetics through a structured fashion directory.",
+    "role": "NAVIGATION_HUB",
+    "primary_intent": "Style-name lookup and guide navigation, separate from what-aesthetic-means definition and every individual style specialist.",
+    "source_sha256": "539f5f79d026d3e2405e3859c4f42a20722c93d10427c3607eecd6a1662ff7cc",
+    "published_date": "2026-11-05",
+    "source_kind": "hub"
+  },
+  {
+    "vi_slug": "phu-kien-thoi-trang-nu-ca-tinh",
+    "en_slug": "alternative-accessories-guide-directory",
+    "title": "Alternative Accessories: Choosing Details for Your Outfit",
+    "description": "Choose accessory placement, proportion and visual weight, then explore focused guides to chokers, fishnets, belts, bags, chains and warmers.",
+    "role": "ACCESSORIES_HUB",
+    "primary_intent": "Accessory decision framework and navigation; not the dedicated necklace, choker, bag, belt, chain or leg/arm warmer specialists.",
+    "source_sha256": "15b1a52a6662c3224decee3d15cc6daddec042c2f035e6f3328c6b320e359551",
+    "published_date": "2026-11-05",
+    "source_kind": "hub"
+  },
+  {
+    "vi_slug": "gyaru",
+    "en_slug": "gyaru-style-guide",
+    "title": "What Is Gyaru? Gyaru Style and Its Substyles",
+    "description": "Understand Gyaru through hair, makeup, clothing, footwear and finish, with an overview of its branches and six adaptable outfit formulas.",
+    "role": "SUBCULTURE_OVERVIEW",
+    "primary_intent": "Broad Gyaru definition and visual system; Ganguro contrast, Kogal uniforms, Hime princess and Amekaji Americana remain separate specialists.",
+    "source_sha256": "21f485b4a70590d32eb51110bd4bf7129ad7597d24b2fc946b3e33c371fe3b4b",
+    "published_date": "2026-11-05",
+    "attribute_translations": {
+      "So sánh Gyaru với các phong cách gần": "Gyaru compared with related styles"
+    }
+  },
+  {
+    "vi_slug": "harajuku-style",
+    "en_slug": "harajuku-fashion-style-guide",
+    "title": "What Is Harajuku Style? Japanese Street Fashion Explained",
+    "description": "Explore Harajuku as a diverse street-fashion environment, with identity, layering and contrast frameworks and six practical outfit combinations.",
+    "role": "CULTURAL_OVERVIEW",
+    "primary_intent": "Place-based Harajuku ecosystem and diverse self-expression; not a replacement for Gyaru, Visual Kei, Lolita or Japanese urban streetwear.",
+    "source_sha256": "6771f9be686ba9d3a0be7267d68aaf2a2c4dd5bfe40566da2aaf2a508c3546d5",
+    "published_date": "2026-11-05",
+    "attribute_translations": {
+      "So sánh Harajuku với các hệ thời trang liên quan": "Harajuku and related fashion systems compared"
+    }
+  },
+  {
+    "vi_slug": "ganguro",
+    "en_slug": "ganguro-gyaru-fashion-makeup",
+    "title": "What Is Ganguro? Gyaru, Makeup and Fashion",
+    "description": "Understand late-1990s Ganguro through contrasting hair, makeup and clothing, with cultural context, outfit ideas and UV-conscious reinterpretations.",
+    "role": "SUBSTYLE_SPECIALIST",
+    "primary_intent": "Ganguro historical high-contrast beauty and fashion; distinguish broad Gyaru, uniform Kogal and later Yamanba/Manba, no tanning prescription.",
+    "source_sha256": "20fdd6991cbae37aa18836ec3da5030682e7e071708119dd052e5d5cd143baa7",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "kogal",
+    "en_slug": "kogal-gyaru-style-history",
+    "title": "What Is Kogal? Gyaru and 1990s Japanese Schoolgirl Style",
+    "description": "Explore Kogal history, loose socks and personalized uniform codes, with six adult outfit interpretations and distinctions from Ganguro and Preppy.",
+    "role": "SUBSTYLE_SPECIALIST",
+    "primary_intent": "1990s Shibuya uniform customization and loose-sock history; contemporary adult interpretations, not generic Preppy or sexualized schoolgirl costumes.",
+    "source_sha256": "4306eb7eb5a60ea6e5289a44e030ff960371089c24a61b6c3bd4dda1556e21d3",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "amekaji",
+    "en_slug": "amekaji-gyaru-american-casual",
+    "title": "What Is Amekaji? American Casual in Gyaru Fashion",
+    "description": "Build Amekaji Gyaru outfits with denim, plaid, graphic tees and considered beauty styling, with everyday proportions and warm-weather adaptations.",
+    "role": "SUBSTYLE_SPECIALIST",
+    "primary_intent": "Amekaji Gyaru casual Americana plus gal finish, not broad Japanese menswear Amekaji/Ametora history or general streetwear.",
+    "source_sha256": "75f2bc00132346a8f3d9d00afeb6277175f4cbb0f4e7dfd098c284ab9d664dd1",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "heisei-retro",
+    "en_slug": "heisei-retro-fashion-nostalgia",
+    "title": "What Is Heisei Retro? Japanese 1990s–2000s Nostalgia",
+    "description": "Interpret Japanese Heisei-era nostalgia through fashion, compact technology and character details, with clear distinctions from Y2K, Gyaru and Kogal.",
+    "role": "PERIOD_NOSTALGIA",
+    "primary_intent": "Japanese period-memory umbrella and consumer objects; distinguish millennium futurism, Gyaru subculture and Kogal uniforms. Survey statistics explicitly dated and sample-specific.",
+    "source_sha256": "1f8b000ce631262dc326a3caa59ab0e5ff79d5d65ad23d21bb34ca7042181fc1",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  },
+  {
+    "vi_slug": "hime-gyaru",
+    "en_slug": "hime-gyaru-princess-style",
+    "title": "What Is Hime Gyaru? Princess Gyaru Style and Outfits",
+    "description": "Explore Princess Gyaru hair, makeup, lace and coordinated accessories, with six outfit formulas and distinctions from Lolita and casual Himekaji.",
+    "role": "SUBSTYLE_SPECIALIST",
+    "primary_intent": "Princess Gyaru full beauty-and-decoration system, separate from independent Lolita and softer Himekaji; not general Gyaru definition.",
+    "source_sha256": "e31486f7a044b3d7b9eef747af6e6322b8f70d85fe68e1af72271f68ab517f74",
+    "published_date": "2026-11-05",
+    "attribute_translations": {}
+  }
+]
