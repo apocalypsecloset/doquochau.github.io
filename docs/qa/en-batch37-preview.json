@@ -1,0 +1,636 @@
+{
+  "base": "https://cbd81dab.doquochau-github-io.pages.dev",
+  "checked": 126,
+  "results": [
+    {
+      "path": "blog/aesthetic-dictionary.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/amekaji.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/ganguro.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/gyaru.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/harajuku-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/heisei-retro.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/hime-gyaru.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/kogal.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/mua-sam-alt-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/phu-kien-thoi-trang-nu-ca-tinh.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/acubi-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alt-fashion-size-guide-online.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-accessories-guide-directory.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-fashion-accessories.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-fashion-for-beginners.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-fashion-shopping-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-outfit-sets-shopee.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-outfits-vnd-500000.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/alternative-wardrobe-vnd-one-million.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/amekaji-gyaru-american-casual.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/angelcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/avant-garde-fashion-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/baddie-outfits-vnd-700000.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/baddie-streetwear-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/baggy-pants-petite-fit-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/balletcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/barbiecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/black-outfits-women-texture-proportions.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/blokecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/boho-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/build-a-dark-aesthetic-wardrobe.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/business-casual-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-baby-tees-shopee-fit-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-corsets-corset-tops.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-egirl-accessories.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-goth-clothing-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-womens-bomber-jackets.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-womens-cargo-pants.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/buying-womens-leather-jackets.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/casual-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/choosing-bags-for-alternative-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/classic-style-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/clean-girl-aesthetic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/combat-boots-vs-platform-boots.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cottagecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cutecore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cyber-y2k-style-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cybergoth-style-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-feminine-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/dark-y2k-vs-y2k.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/devilcore-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/downtown-girl-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/egirl-alt-girl-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/egirl-outfits-vnd-500000.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/fairycore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/fashion-aesthetic-directory.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/femme-fatale-aesthetic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/ganguro-gyaru-fashion-makeup.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/geek-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/gorpcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/goth-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/gurokawa-creepy-cute-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/gyaru-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/harajuku-fashion-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/heisei-retro-fashion-nostalgia.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/hime-gyaru-princess-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-break-in-new-boots.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-make-fashion-moodboard.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-remove-boot-odor.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-arm-warmers.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-chokers.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-fishnet-tights.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-leg-warmers.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-studded-belts.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-womens-boots.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-wash-black-clothes.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/is-black-clothing-hotter-in-summer.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/ivy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/kidcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/kogal-gyaru-style-history.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/leather-jacket-clothing-care.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/light-academia-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mcbling-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mermaidcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mob-wife-aesthetic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/mori-kei-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/morute-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/normcore-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/nu-metal-fashion-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/nylon-vs-twill-cargo-pants.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/old-money-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/ouji-fashion-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/parisian-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/phone-ootd-photography-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/platform-boots-under-vnd-500000.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/power-dressing-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/preppy-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/punk-grunge-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/quiet-luxury-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/rockabilly-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/slim-frame-alternative-outfits-women.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/smart-casual-women-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/sporty-chic-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/vintage-style-guide.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-does-aesthetic-mean-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-does-local-brand-mean-vietnam.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-does-ootd-mean.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-does-unisex-mean.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-a-capsule-wardrobe.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-alt-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-an-outfit.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-athleisure.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-emo-style.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-indie-sleaze.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-minimalist-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-streetwear.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-sustainable-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-techwear.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-visual-kei.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-y2k-fashion.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/wide-leg-jeans-outfits-dark-y2k.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/womens-item-styling-guides.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "sitemap.xml",
+      "exact": true,
+      "error": null
+    }
+  ]
+}

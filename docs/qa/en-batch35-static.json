@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "vi_slug": "ao-khoac-bomber-nu-mua-o-dau",
+      "en_slug": "buying-womens-bomber-jackets",
+      "source_text_segments": 150,
+      "en_words": 1489,
+      "headings": 12,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "aesthetic-la-gi",
+      "en_slug": "what-does-aesthetic-mean-fashion",
+      "source_text_segments": 141,
+      "en_words": 1553,
+      "headings": 15,
+      "images": 7,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "streetwear-la-gi",
+      "en_slug": "what-is-streetwear",
+      "source_text_segments": 140,
+      "en_words": 1824,
+      "headings": 21,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "local-brand-la-gi",
+      "en_slug": "what-does-local-brand-mean-vietnam",
+      "source_text_segments": 149,
+      "en_words": 1692,
+      "headings": 13,
+      "images": 5,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "cach-tao-moodboard-thoi-trang",
+      "en_slug": "how-to-make-fashion-moodboard",
+      "source_text_segments": 200,
+      "en_words": 2018,
+      "headings": 23,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "cach-chup-anh-ootd-dep-bang-dien-thoai",
+      "en_slug": "phone-ootd-photography-guide",
+      "source_text_segments": 148,
+      "en_words": 1859,
+      "headings": 15,
+      "images": 6,
+      "tables": 0,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "badgirl",
+      "en_slug": "badgirl-fashion-style-guide",
+      "source_text_segments": 153,
+      "en_words": 1629,
+      "headings": 25,
+      "images": 13,
+      "tables": 1,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "normcore-la-gi",
+      "en_slug": "normcore-style-guide",
+      "source_text_segments": 156,
+      "en_words": 1636,
+      "headings": 33,
+      "images": 6,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "vintage-style-la-gi",
+      "en_slug": "vintage-style-guide",
+      "source_text_segments": 140,
+      "en_words": 1736,
+      "headings": 25,
+      "images": 5,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "boho-chic-la-gi",
+      "en_slug": "boho-chic-style-guide",
+      "source_text_segments": 122,
+      "en_words": 1758,
+      "headings": 17,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    }
+  ],
+  "errors": []
+}

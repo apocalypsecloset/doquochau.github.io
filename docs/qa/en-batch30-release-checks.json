@@ -1,0 +1,53 @@
+{
+  "commit": "2441619bfbf2d13cbcbc581fafa54fe6b973a1a2",
+  "master": [
+    {
+      "name": "Workers Builds: doquochau-github-io",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/a30ce445-ab56-41c7-b040-aa43821b29a1"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41766121173/job/126364943822"
+    },
+    {
+      "name": "report-build-status",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41766121173/job/126364943737"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/ef2a0a32-03a0-4512-be7d-aa1adcf1ebf2"
+    },
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41766121173/job/126364788695"
+    }
+  ],
+  "branch": {
+    "commit": "edb29e377c28c264731b7aa35f380ad4ce5a0745",
+    "checks": [
+      {
+        "name": "Workers Builds: doquochau-github-io",
+        "status": "completed",
+        "conclusion": "failure",
+        "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/fc053175-6c7b-49e0-bd47-99320014d24e"
+      },
+      {
+        "name": "Cloudflare Pages",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/500f61a3-3c93-4502-905a-e807981107ba"
+      }
+    ],
+    "note": "Branch Workers failure had no diagnostic annotations; preview and all five production-master checks succeeded. No check override used."
+  }
+}

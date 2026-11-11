@@ -1,0 +1,186 @@
+{
+  "method": "CUA DOM measurements and local-preview screenshots",
+  "views": [
+    {
+      "page": "what-are-parachute-pants",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-parachute-pants",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-baggy-pants",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-baggy-pants",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-jogger-pants",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-jogger-pants",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-is-athleisure",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-is-athleisure",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "acubi-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "acubi-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "gorpcore-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "gorpcore-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "downtown-girl-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "downtown-girl-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "model-off-duty-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "model-off-duty-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "sporty-chic-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "sporty-chic-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "blokecore-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "blokecore-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    }
+  ],
+  "interaction": "Mobile parachute FAQ opens and complete answer remains visible"
+}

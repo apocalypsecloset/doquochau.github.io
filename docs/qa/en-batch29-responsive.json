@@ -1,0 +1,186 @@
+{
+  "method": "CUA browser DOM measurements and screenshots of local preview",
+  "views": [
+    {
+      "page": "alternative-cafe-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 850,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "alternative-cafe-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "alternative-wedding-guest-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "alternative-wedding-guest-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "alternative-beach-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "alternative-beach-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "airport-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "airport-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "femme-fatale-aesthetic-style-guide",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "femme-fatale-aesthetic-style-guide",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-low-rise-pants",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-are-low-rise-pants",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-is-a-crop-top",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "what-is-a-crop-top",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "leggings-outfit-ideas-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "leggings-outfit-ideas-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "parachute-pants-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 640,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "parachute-pants-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "baggy-pants-outfits-women",
+      "frame_width": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_article_image_width": 480.65625,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    },
+    {
+      "page": "baggy-pants-outfits-women",
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_article_image_width": 343,
+      "tables": "848px within 848px wrapper on desktop; 650px within 341px auto-scrolling wrapper on mobile"
+    }
+  ],
+  "interaction": "Baggy mobile FAQ opened and complete visible answer verified"
+}

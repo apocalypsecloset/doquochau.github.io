@@ -1,0 +1,413 @@
+{
+  "applied": true,
+  "pages": 29,
+  "links": 52,
+  "changes": [
+    {
+      "path": "en/blog/alternative-cafe-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "Dark Feminine reference"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/badgirl-fashion-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "Explore Dark Feminine →"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/boho-chic-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/parisian-chic.html",
+          "new": "/en/blog/parisian-chic-style-guide.html",
+          "label": "Parisian Chic: A Practical Styling Guide"
+        },
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "Geek Chic: Bookish Fashion References and Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/casual-chic-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/parisian-chic.html",
+          "new": "/en/blog/parisian-chic-style-guide.html",
+          "label": "Parisian Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/classic-style-women-guide.html",
+      "links": [
+        {
+          "old": "/blog/parisian-chic.html",
+          "new": "/en/blog/parisian-chic-style-guide.html",
+          "label": "Parisian Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "Dark Feminine"
+        },
+        {
+          "old": "/blog/cutecore.html",
+          "new": "/en/blog/cutecore-style-guide.html",
+          "label": "Cutecore"
+        },
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "What Is Dark Feminine? Wardrobe and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/cyber-y2k-style-outfits.html",
+      "links": [
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "What Is McBling? Early-2000s Glamour and Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-academia-outfits-alternative-style.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "What Is Dark Feminine? Wardrobe and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-feminine-guides.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "what dark feminine style means"
+        },
+        {
+          "old": "/blog/mob-wife-aesthetic-la-gi.html",
+          "new": "/en/blog/mob-wife-aesthetic-style-guide.html",
+          "label": "Mob Wife Aesthetic: Statement Outerwear, Leather, and Gold Jewelry Explore substantial coats, leather, animal patterns, gold jewelry, and deliberate power references without relying on a complete costume."
+        },
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "Dark Feminine Is Not a Trend: An Editorial Perspective Explore darker wardrobe foundations, corset-inspired tops, boots, satin, leather, lace, and contrasts between softness and structure."
+        },
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "what dark feminine style means"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-feminine-outfit-ideas.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "dark feminine"
+        },
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "what dark feminine style means"
+        },
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "What Is Dark Feminine? Wardrobe and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/dark-y2k-vs-y2k.html",
+      "links": [
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "McBling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/devilcore-aesthetic-outfits.html",
+      "links": [
+        {
+          "old": "/blog/kidcore.html",
+          "new": "/en/blog/kidcore-style-guide.html",
+          "label": "What Is Kidcore? Colors, References, and Outfits"
+        },
+        {
+          "old": "/blog/barbiecore.html",
+          "new": "/en/blog/barbiecore-style-guide.html",
+          "label": "What Is Barbiecore? Aesthetic and Outfit References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/downtown-girl-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl"
+        },
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl Aesthetic: Restrained Visual References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/gurokawa-creepy-cute-outfits.html",
+      "links": [
+        {
+          "old": "/blog/cutecore.html",
+          "new": "/en/blog/cutecore-style-guide.html",
+          "label": "what Cutecore means"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-style-a-corset-top.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "What Is Dark Feminine? Wardrobe and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/ivy-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "What Is McBling? Early-2000s Fashion References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl"
+        },
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/morute-aesthetic-outfits.html",
+      "links": [
+        {
+          "old": "/blog/cutecore.html",
+          "new": "/en/blog/cutecore-style-guide.html",
+          "label": "Cutecore"
+        },
+        {
+          "old": "/blog/cutecore.html",
+          "new": "/en/blog/cutecore-style-guide.html",
+          "label": "What Is Cutecore? Aesthetic and Outfit References"
+        },
+        {
+          "old": "/blog/barbiecore.html",
+          "new": "/en/blog/barbiecore-style-guide.html",
+          "label": "What Is Barbiecore? Aesthetic and Outfit References"
+        },
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "What Is Geek Chic? Scholarly References in Fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/office-siren-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "Geek Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/preppy-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "Geek Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/rockabilly-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "What Is McBling? Early-2000s Fashion References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/sporty-chic-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/parisian-chic.html",
+          "new": "/en/blog/parisian-chic-style-guide.html",
+          "label": "Parisian Chic: Styling References and Everyday Outfits"
+        },
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "Geek Chic: Academic References and Outfit Ideas"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-does-aesthetic-mean-fashion.html",
+      "links": [
+        {
+          "old": "/blog/barbiecore.html",
+          "new": "/en/blog/barbiecore-style-guide.html",
+          "label": "Barbiecore"
+        },
+        {
+          "old": "/blog/cutecore.html",
+          "new": "/en/blog/cutecore-style-guide.html",
+          "label": "Cutecore"
+        },
+        {
+          "old": "/blog/kidcore.html",
+          "new": "/en/blog/kidcore-style-guide.html",
+          "label": "Kidcore"
+        },
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "McBling"
+        },
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl Aesthetic: Restrained Styling and Its Limits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-a-capsule-wardrobe.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "What Is Dark Feminine? Wardrobe and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-indie-sleaze.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "Dark Feminine"
+        },
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "McBling"
+        },
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "clean girl aesthetic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-minimalist-fashion.html",
+      "links": [
+        {
+          "old": "/blog/clean-girl-aesthetic-la-gi.html",
+          "new": "/en/blog/clean-girl-aesthetic-style-guide.html",
+          "label": "Clean Girl"
+        },
+        {
+          "old": "/blog/parisian-chic.html",
+          "new": "/en/blog/parisian-chic-style-guide.html",
+          "label": "Parisian Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-y2k-fashion.html",
+      "links": [
+        {
+          "old": "/blog/barbiecore.html",
+          "new": "/en/blog/barbiecore-style-guide.html",
+          "label": "Barbiecore"
+        },
+        {
+          "old": "/blog/mcbling.html",
+          "new": "/en/blog/mcbling-style-guide.html",
+          "label": "What Is McBling? Early-2000s Glamour and Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-black-blazer-outfits.html",
+      "links": [
+        {
+          "old": "/blog/geek-chic.html",
+          "new": "/en/blog/geek-chic-style-guide.html",
+          "label": "Geek Chic"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-leather-jacket-outfits.html",
+      "links": [
+        {
+          "old": "/blog/dark-feminine-is-not-a-trend.html",
+          "new": "/en/blog/dark-feminine-explained-wardrobe.html",
+          "label": "what Dark Feminine style means"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}

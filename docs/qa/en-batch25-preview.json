@@ -1,0 +1,116 @@
+{
+  "base": "https://e7ce8e6e.doquochau-github-io.pages.dev",
+  "checked": 22,
+  "results": [
+    {
+      "path": "en/blog/what-are-mary-jane-shoes.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/how-to-style-leg-warmers.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/coquette-vs-dark-coquette.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-indie-sleaze.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-techwear.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/cyber-y2k-style-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/what-is-visual-kei.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/devilcore-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/morute-aesthetic-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog/gurokawa-creepy-cute-outfits.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/giay-mary-jane-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/leg-warmers-la-gi-cach-phoi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/coquette-la-gi-dark-coquette.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/indie-sleaze-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/techwear-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/cyber-y2k-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/visual-kei-la-gi.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/devil-core.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/morute.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "blog/gurokawa.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "en/blog.html",
+      "exact": true,
+      "error": null
+    },
+    {
+      "path": "sitemap.xml",
+      "exact": true,
+      "error": null
+    }
+  ]
+}

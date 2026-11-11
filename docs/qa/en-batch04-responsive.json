@@ -1,0 +1,170 @@
+{
+  "checks": [
+    {
+      "view": "cybergoth-style-outfits-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "scene-style-fashion-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "what-is-egirl-style-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 850
+    },
+    {
+      "view": "alternative-layering-outfits-women-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "how-to-wash-black-clothes-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "goth-nail-designs-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "goth-hairstyles-women-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "build-a-dark-aesthetic-wardrobe-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 640
+    },
+    {
+      "view": "alternative-fashion-for-beginners-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 850
+    },
+    {
+      "view": "alternative-fashion-accessories-1440",
+      "viewport": 1440,
+      "document_width": 1425,
+      "scroll_width": 1425,
+      "h1": 1,
+      "max_image_width": 850
+    },
+    {
+      "view": "cybergoth-style-outfits-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "scene-style-fashion-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "what-is-egirl-style-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "alternative-layering-outfits-women-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "how-to-wash-black-clothes-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "goth-nail-designs-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "goth-hairstyles-women-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "build-a-dark-aesthetic-wardrobe-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "alternative-fashion-for-beginners-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    },
+    {
+      "view": "alternative-fashion-accessories-390",
+      "viewport": 390,
+      "document_width": 375,
+      "scroll_width": 375,
+      "h1": 1,
+      "max_image_width": 343
+    }
+  ],
+  "scene_mobile_tables": {
+    "container_width": 341,
+    "content_width": 650,
+    "overflow_x": "auto"
+  },
+  "scene_faq_expansion": true
+}

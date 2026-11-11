@@ -1,0 +1,53 @@
+{
+  "commit": "796fd146ee310ab63d1e3b0b3cfc0b0e6c6f6bf4",
+  "master": [
+    {
+      "name": "Workers Builds: doquochau-github-io",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/fd091c1c-eb89-4de3-9160-b49bde719720"
+    },
+    {
+      "name": "report-build-status",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41768944712/job/126373965288"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41768944712/job/126373965075"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/b665cfdc-8b56-491f-adb3-34ced9ce55ee"
+    },
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/41768944712/job/126373853784"
+    }
+  ],
+  "branch": {
+    "commit": "aa8973fcfea94a5371c10593981aa512c6a8d986",
+    "checks": [
+      {
+        "name": "Workers Builds: doquochau-github-io",
+        "status": "completed",
+        "conclusion": "failure",
+        "details_url": "https://dash.cloudflare.com/fd143e2c5d9dffea640b4e534d3c8962/workers/services/view/doquochau-github-io/production/builds/ccf51cf3-0ea0-463c-b743-9b8d815b0b63"
+      },
+      {
+        "name": "Cloudflare Pages",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://dash.cloudflare.com/?to=/fd143e2c5d9dffea640b4e534d3c8962/pages/view/doquochau-github-io/ace85b18-ff39-412e-895a-684e5d8d830b"
+      }
+    ],
+    "note": "Branch Workers failed with zero diagnostic annotations; Pages preview succeeded. All five checks on the production-master commit succeeded. No override used."
+  }
+}

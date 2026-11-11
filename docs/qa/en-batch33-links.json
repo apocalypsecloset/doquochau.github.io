@@ -1,0 +1,408 @@
+{
+  "applied": true,
+  "pages": 29,
+  "links": 51,
+  "changes": [
+    {
+      "path": "en/blog/airport-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Proportions: Shoulder and Lower-Body Balance"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alt-fashion-size-guide-online.html",
+      "links": [
+        {
+          "old": "/blog/cach-phoi-do-cho-nguoi-beo-bung-nu.html",
+          "new": "/en/blog/outfits-fuller-stomach-women.html",
+          "label": "outfit proportions and styling for a fuller midsection"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-beach-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Proportions: Shoulder and Lower-Body Balance"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-concert-outfits-for-women.html",
+      "links": [
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "Breaking In New Boots"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-fashion-accessories.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-cho-nguoi-gay-alt-fashion.html",
+          "new": "/en/blog/slim-frame-alternative-outfits-women.html",
+          "label": "styling for slim proportions"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-going-out-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+          "new": "/en/blog/petite-alternative-outfits-women.html",
+          "label": "alternative outfits for shorter women"
+        },
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nguoi-map.html",
+          "new": "/en/blog/plus-size-alternative-outfits-women.html",
+          "label": "alternative outfits for plus-size women"
+        },
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+          "new": "/en/blog/petite-alternative-outfits-women.html",
+          "label": "Height-related proportions →"
+        },
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nguoi-map.html",
+          "new": "/en/blog/plus-size-alternative-outfits-women.html",
+          "label": "Fit and body proportions →"
+        },
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+          "new": "/en/blog/petite-alternative-outfits-women.html",
+          "label": "Alternative Outfits for Shorter Women: Proportion Choices"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/alternative-t-shirt-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "Choosing a Well-Fitting Baby Tee on Shopee"
+        },
+        {
+          "old": "/blog/phoi-do-cho-nguoi-gay-alt-fashion.html",
+          "new": "/en/blog/slim-frame-alternative-outfits-women.html",
+          "label": "Styling Ideas for Slim Women: Balance and Personal Expression"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/baddie-streetwear-guides.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "Choosing Baggy Trousers for Shorter Wearers"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/baggy-pants-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "baggy-pants guide for shorter people"
+        },
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "baby-tee fit guide"
+        },
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "Baggy Pants for Shorter Wearers: Length and Fit"
+        },
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "Baggy Pants for Shorter Wearers: Length and Fit"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/combat-boots-vs-platform-boots.html",
+      "links": [
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "Breaking In New Boots"
+        },
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Removing Boot Odor"
+        },
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Removing Boot Odor Without Damaging the Material"
+        },
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "How to Break In New Leather Boots Safely"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/egirl-alt-girl-guides.html",
+      "links": [
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "Choosing the Right Baby Tee Fit for E-Girl Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/flared-pants-outfits-women.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+          "new": "/en/blog/petite-alternative-outfits-women.html",
+          "label": "Alternative Outfits for Shorter Women"
+        },
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Outfit Guide"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/flared-skirt-outfit-ideas.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Outfit Guide"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/goth-guides.html",
+      "links": [
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Managing Boot Odor Without Damaging the Shape"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-style-a-line-skirts.html",
+      "links": [
+        {
+          "old": "/blog/cach-phoi-do-cho-nguoi-beo-bung-nu.html",
+          "new": "/en/blog/outfits-fuller-stomach-women.html",
+          "label": "outfit proportions and styling for a fuller midsection"
+        },
+        {
+          "old": "/blog/phoi-do-dang-qua-le.html",
+          "new": "/en/blog/pear-shaped-outfit-guide.html",
+          "label": "pear-shape outfit proportions"
+        },
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Outfit Guide"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-style-womens-boots.html",
+      "links": [
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "How to Remove Boot Odor Without Damaging the Material"
+        },
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "How to Break In New Leather Boots Safely"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-wash-black-clothes.html",
+      "links": [
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Removing Boot Odor"
+        },
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Removing Boot Odor Without Damaging Leather"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/leather-jacket-clothing-care.html",
+      "links": [
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Removing Boot Odor Without Damaging the Material"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/model-off-duty-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "baggy-pants length and fit"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/nylon-vs-twill-cargo-pants.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-nu-ca-tinh-cho-nu-lun.html",
+          "new": "/en/blog/petite-alternative-outfits-women.html",
+          "label": "Alternative Outfits for Shorter Women Guide"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/off-the-shoulder-top-outfits.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-dang-qua-le.html",
+          "new": "/en/blog/pear-shaped-outfit-guide.html",
+          "label": "Pear-Shape Outfit Proportions: Shoulders, Waist, and Hips"
+        },
+        {
+          "old": "/blog/phoi-do-dang-tam-giac-nguoc.html",
+          "new": "/en/blog/inverted-triangle-outfit-guide.html",
+          "label": "Inverted-Triangle Outfit Proportions: Upper and Lower Balance"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/punk-grunge-guides.html",
+      "links": [
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "Breaking In New Boots Without Damaging the Leather"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-are-baggy-pants.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "baggy pants for shorter people"
+        },
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "baggy pants for shorter people"
+        },
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "Baggy Pants for Shorter Wearers: Length and Fit"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-a-crop-top.html",
+      "links": [
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "Choosing a Baby Tee Online: Shape and Measurements"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-crop-top-outfits.html",
+      "links": [
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "Choosing a Baby Tee Fit on Shopee"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-footwear-guides.html",
+      "links": [
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "new-boot break-in guide"
+        },
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "boot odor guide"
+        },
+        {
+          "old": "/blog/cach-lam-mem-boots-moi.html",
+          "new": "/en/blog/how-to-break-in-new-boots.html",
+          "label": "Breaking In New Boots Without Damaging the Leather Introduce suitable boots gradually, assess rubbing points and socks, and distinguish material stiffness from an incorrect size."
+        },
+        {
+          "old": "/blog/cach-khu-mui-boots.html",
+          "new": "/en/blog/how-to-remove-boot-odor.html",
+          "label": "Managing Boot Odor Without Damaging the Shape Explore drying, interior and insole care, and odor prevention with precautions around excessive heat and harsh chemicals."
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-straight-tailored-trouser-outfits.html",
+      "links": [
+        {
+          "old": "/blog/phoi-do-dang-qua-le.html",
+          "new": "/en/blog/pear-shaped-outfit-guide.html",
+          "label": "pear-shape outfit proportions"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-tops-styling-guides.html",
+      "links": [
+        {
+          "old": "/blog/ao-baby-tee-form-dep-tren-shopee.html",
+          "new": "/en/blog/buying-baby-tees-shopee-fit-guide.html",
+          "label": "Finding Well-Fitting Baby Tees on Shopee Evaluate shoulders, bust, top length, fabric, stretch, real photographs, and reviews when choosing a baby tee on Shopee."
+        }
+      ]
+    },
+    {
+      "path": "en/blog/womens-trouser-styling-guides.html",
+      "links": [
+        {
+          "old": "/blog/quan-baggy-cho-nguoi-thap.html",
+          "new": "/en/blog/baggy-pants-petite-fit-guide.html",
+          "label": "Baggy Trousers for Shorter Wearers: Choosing the Proportions Assess rise, crotch depth, leg width, and length through shape comparisons, measurement checks, and actual photographs when shopping online."
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}

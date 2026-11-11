@@ -1,0 +1,298 @@
+{
+  "applied": true,
+  "pages": 21,
+  "links": 37,
+  "changes": [
+    {
+      "path": "en/blog/acubi-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/ulzzang-style.html",
+          "new": "/en/blog/ulzzang-korean-casual-style.html",
+          "label": "Ulzzang Style"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/casual-chic-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/ulzzang-style.html",
+          "new": "/en/blog/ulzzang-korean-casual-style.html",
+          "label": "Ulzzang Style"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/classic-style-women-guide.html",
+      "links": [
+        {
+          "old": "/blog/1930s-fashion.html",
+          "new": "/en/blog/1930s-fashion-silhouette-guide.html",
+          "label": "1930s fashion"
+        },
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "New Look"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/fashion-aesthetic-directory.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "Japanese Streetwear: Context and Outfit Principles Explore Harajuku and Ura-Harajuku references, layering, silhouette, vintage and sneakers in contemporary women’s outfits."
+        },
+        {
+          "old": "/blog/1930s-fashion.html",
+          "new": "/en/blog/1930s-fashion-silhouette-guide.html",
+          "label": "1930s Fashion: Silhouettes and Contemporary References Read natural waists, bias-cut gowns, changing shoulder shapes and Hollywood glamour in period context."
+        },
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "Dior’s New Look: The 1947 Silhouette in Context Explore Christian Dior, the Bar ensemble, defined waists, full skirts, postwar debates and the collection’s influence."
+        },
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s Women’s Fashion: Silhouettes and Outfit References Explore New Look influence, full and pencil skirts, sheath dresses, suits and sportswear."
+        },
+        {
+          "old": "/blog/hippie-style.html",
+          "new": "/en/blog/hippie-counterculture-fashion-style.html",
+          "label": "Hippie Style: History and Modern Outfit References Explore cultural context, shapes, colors, fabrics and considered contemporary interpretations."
+        },
+        {
+          "old": "/blog/chicano-style.html",
+          "new": "/en/blog/chicano-style-history-outfits.html",
+          "label": "Chicano Style: Cultural Context and Women’s Outfit References Understand pachuco and zoot-suit context, selected garments and intentional contemporary proportions."
+        },
+        {
+          "old": "/blog/ulzzang-style.html",
+          "new": "/en/blog/ulzzang-korean-casual-style.html",
+          "label": "Ulzzang Style: Korean Internet Context and Outfit References Explore early-2000s Korean internet imagery and contemporary interpretations of its clothing references."
+        }
+      ]
+    },
+    {
+      "path": "en/blog/flared-skirt-outfit-ideas.html",
+      "links": [
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/harajuku-fashion-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "Japanese Streetwear"
+        },
+        {
+          "old": "/blog/hippie-style.html",
+          "new": "/en/blog/hippie-counterculture-fashion-style.html",
+          "label": "What Is Hippie Style? Counterculture and Fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/how-to-style-midi-skirts.html",
+      "links": [
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s fashion"
+        },
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "New Look fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/ivy-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "What Is New Look? Dior and the 1947 Silhouette"
+        },
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s Fashion: Women's Silhouettes and Outfit References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/mori-kei-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "What Is Japanese Streetwear? Street Fashion References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/old-money-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/1930s-fashion.html",
+          "new": "/en/blog/1930s-fashion-silhouette-guide.html",
+          "label": "1930s fashion"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/ouji-fashion-guide.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "What Is Japanese Streetwear? Street Fashion References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/power-dressing-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "What Is New Look? Dior and the 1947 Silhouette"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/rockabilly-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s fashion"
+        },
+        {
+          "old": "/blog/hippie-style.html",
+          "new": "/en/blog/hippie-counterculture-fashion-style.html",
+          "label": "What Is Hippie Style? Its Fashion References and Outfits"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/vintage-style-guide.html",
+      "links": [
+        {
+          "old": "/blog/1930s-fashion.html",
+          "new": "/en/blog/1930s-fashion-silhouette-guide.html",
+          "label": "1930s fashion"
+        },
+        {
+          "old": "/blog/new-look-fashion.html",
+          "new": "/en/blog/dior-new-look-1947-silhouette.html",
+          "label": "New Look"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-are-baggy-pants.html",
+      "links": [
+        {
+          "old": "/blog/chicano-style.html",
+          "new": "/en/blog/chicano-style-history-outfits.html",
+          "label": "Chicano Style"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-does-aesthetic-mean-fashion.html",
+      "links": [
+        {
+          "old": "/blog/ulzzang-style.html",
+          "new": "/en/blog/ulzzang-korean-casual-style.html",
+          "label": "Ulzzang Style"
+        },
+        {
+          "old": "/blog/hippie-style.html",
+          "new": "/en/blog/hippie-counterculture-fashion-style.html",
+          "label": "Hippie Style and Its Fashion References"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-does-local-brand-mean-vietnam.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "Japanese Streetwear"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-streetwear.html",
+      "links": [
+        {
+          "old": "/blog/chicano-style.html",
+          "new": "/en/blog/chicano-style-history-outfits.html",
+          "label": "Chicano Style"
+        },
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "Japanese Streetwear"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-sustainable-fashion.html",
+      "links": [
+        {
+          "old": "/blog/1930s-fashion.html",
+          "new": "/en/blog/1930s-fashion-silhouette-guide.html",
+          "label": "1930s Fashion: Silhouettes and Modern Outfit Ideas"
+        },
+        {
+          "old": "/blog/1950s-fashion.html",
+          "new": "/en/blog/1950s-womens-fashion-guide.html",
+          "label": "1950s Fashion: Silhouettes and Women's Outfit Ideas"
+        },
+        {
+          "old": "/blog/ulzzang-style.html",
+          "new": "/en/blog/ulzzang-korean-casual-style.html",
+          "label": "What Is Ulzzang Style? Korean Fashion and Styling"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/what-is-techwear.html",
+      "links": [
+        {
+          "old": "/blog/japanese-streetwear.html",
+          "new": "/en/blog/japanese-streetwear-outfit-guide.html",
+          "label": "Japanese Streetwear"
+        }
+      ]
+    },
+    {
+      "path": "en/blog/wide-leg-jeans-outfits-dark-y2k.html",
+      "links": [
+        {
+          "old": "/blog/chicano-style.html",
+          "new": "/en/blog/chicano-style-history-outfits.html",
+          "label": "Chicano Style"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}
