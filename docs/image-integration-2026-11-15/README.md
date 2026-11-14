@@ -38,3 +38,11 @@ The 32 temporary substitutions were visually reviewed in two contact sheets. She
 - `git diff --check`: passes.
 
 A local Chromium render could not start because the execution environment rejects its process socket. Responsive rendering and deployed branch checks must be verified before merge. No merge performed. Full visual semantic review of the other 1,173 images is not claimed; all 1,205 files were decoded and technically checked.
+
+## Branch publication checks
+
+Initial commit `2335e9dcccd6b89ee10e41f98de23017a5519466`: Cloudflare Pages deployment succeeded at https://ccbd2d4f.doquochau-github-io.pages.dev . All 440 deployed HTML files were fetched and match reviewed local bytes (`preview-html-qa.json`). A sample relative image request on this preview domain returns 404, while the exact production-domain image returns HTTP 200 from R2; preview image routing is therefore not equivalent to production. A responsive visual pass is still pending.
+
+The Website quality shop tests and static site check passed. Translation gates passed through batch38; batch39 failed only the two source hashes for Solarpunk and White on White, which changed when image comments were replaced. Both source locks are refreshed and both TSV tables are reindexed against exact source strings, preserving all preexisting translations and adding only localized image labels. No test is removed or bypassed. The batch39 check now passes locally (`batch39-qa.json`). Existing EN data-source-sha256 attributes retain their historical translation provenance; no extra HTML changes are made.
+
+A separate Workers Builds check failed without diagnostic annotations on the initial branch commit. Do not represent this as an all-green release or merge until that check and visual review are resolved.
