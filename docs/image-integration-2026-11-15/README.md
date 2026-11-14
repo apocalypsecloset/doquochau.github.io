@@ -6,7 +6,7 @@ Approved scope: 220 Vietnamese articles and their 220 existing English counterpa
 
 All 1,205 expected production image URLs were fetched after the latest upload: HTTP 200, Content-Type image/webp, x-ac-storage r2. Every file decoded at 1080×1920. See `url-audit.json` for SHA-256 and results. This verifies the exact public paths, not an inventory of unrelated bucket objects.
 
-2,380 image insertions (1,190 per language). Existing images and covers remain. New image src URLs use the production domain so branch previews load the same R2 resources. Existing CSS classes are reused; body images load lazily, covers eagerly with high priority. Captions/alt are localized conservative topic labels.
+2,380 image insertions (1,190 per language). Existing images and covers remain. New image src URLs use the production domain so branch previews load the same R2 resources. A browser preview exposed cover overflow caused by the legacy flex frame; the final CSS addition limits the portrait to the frame (desktop max-height 720px, responsive full ratio on mobile) and stacks its caption below it. Existing CSS classes are reused; body images load lazily, covers eagerly with high priority. Captions/alt are localized conservative topic labels.
 
 22 comments intentionally remain: 10 duplicate-image positions and one clearly off-topic position per language. No duplicate mapped image hash is inserted within an article.
 
@@ -26,7 +26,7 @@ All 32 temporary substitutes were visually reviewed in two contact sheets. Sherp
 
 Added 436 missing URLs; two VI/EN pairs already existed. All 440 URLs appear exactly once, with lastmod 2026-11-15. The 436 newly published pages change robots from noindex, follow to index, follow to align with their sitemap inclusion. Preview-domain noindex headers stay enabled. Sitemap now contains 1,029 URLs.
 
-All other bytes outside the inserted image figures and explicitly approved robots change remain identical to original master on 440 articles. Slugs, canonicals, titles, descriptions, hreflang, CTA, original images, article text and CSS are unchanged. See `preservation-qa.json`.
+All other bytes outside the inserted image figures and explicitly approved robots change remain identical to original master on 440 articles. Slugs, canonicals, titles, descriptions, hreflang, CTA, original images, article text are unchanged. Original CSS rules stay unchanged; a narrowly scoped appended rule constrains only new R2 covers and places their captions below the image. See `preservation-qa.json`.
 
 `data/r2-220-publication.json` explicitly lists approved new publications. Sitemap gates require the union of the original translation inventory and these 220 pairs, with uniqueness and canonical checks; original 216-row inventory remains untouched. Batch39 source locks are refreshed for Solarpunk and White on White. Reindexed TSV preserves all 247 preexisting translations.
 
