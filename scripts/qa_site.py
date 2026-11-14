@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote,urljoin,urlsplit
 from bs4 import BeautifulSoup
-from translation_inventory import rows
+from translation_inventory import rows,publication_rows
 ROOT=Path(__file__).resolve().parents[1];BASE='https://apocalypsecloset.com';errors=[]
 def check(ok,message):
  if not ok:errors.append(message)
@@ -54,6 +54,13 @@ for row in rows():
  check(en in pages and vi in pages,'Missing bilingual pair '+row['vi_url'])
  check(row['en_url'] in urls and row['vi_url'] in urls,'Bilingual sitemap pair '+row['vi_url'])
 check(len(rows())==218,'Expected original 216 plus two explicit extensions')
+for row in publication_rows():
+ for lang in ['vi','en']:
+  url=row[lang+'_url'];p,_=target(url,'index.html')
+  check(url in urls and p in pages,'Approved R2 article missing from sitemap '+url)
+  if p in pages:
+   check(pages[p].select_one('link[rel=canonical]').get('href')==url,'R2 article canonical '+url)
+
 check(len(list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open())))==216,'Original inventory altered')
 headers=(ROOT/'_headers').read_text();block=''
 for line in headers.splitlines():

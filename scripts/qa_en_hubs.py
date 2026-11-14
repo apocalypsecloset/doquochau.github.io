@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlsplit
 from en_translate_hubs import ROOT,source,VI
 import xml.etree.ElementTree as ET
-from translation_inventory import rows as inventory_rows,normalize_approved_maintenance
+from translation_inventory import sitemap_vi_urls,rows as inventory_rows,normalize_approved_maintenance
 configs=json.loads((ROOT/'data/en-translations'/(sys.argv[1]+'.json')).read_text());errors=[];results=[]
 if '--hubs-only' in sys.argv:configs=[c for c in configs if c.get('source_kind')=='hub']
 assert configs and all(c.get('source_kind')=='hub' for c in configs),'Hub gate requires explicit hub configs'
@@ -55,7 +55,7 @@ for c in configs:
  check(normalize_approved_maintenance(re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',current,flags=re.S))==normalize_approved_maintenance(baseline),slug+': VI preservation outside approved footer maintenance')
  results.append(dict(vi_slug=c['vi_slug'],en_slug=slug,source_segments=len(texts),en_words=len(a.get_text(' ',strip=True).split()),cards=len(cards),images=len(a.select('img')),headings=len(a.select('h2,h3'))))
 rows=list(csv.DictReader((ROOT/'data/en-216-keyword-intent-audit.csv').open()));check(len(rows)==216,'216 source rows')
-urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')];check(len(urls)==len(set(urls)),'sitemap duplicates');check({r['vi_url'] for r in inventory_rows()}=={u for u in urls if '/blog/' in u and '/en/' not in u},'Complete VI sitemap inventory')
+urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')];check(len(urls)==len(set(urls)),'sitemap duplicates');check(sitemap_vi_urls()=={u for u in urls if '/blog/' in u and '/en/' not in u},'Complete VI sitemap inventory')
 journal=(ROOT/'en/blog.html').read_text()
 index=BeautifulSoup(journal,'html.parser');cards=index.select('a.card');grid_cards=index.select('#latest .cards a.card')
 check(len(cards)==len(grid_cards),'Journal cards must all be in the reading grid')

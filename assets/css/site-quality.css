@@ -13,3 +13,8 @@
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #9b2f58;outline-offset:4px}
 @media(max-width:768px){.ac-reading-path{padding:16px;margin:24px 0}.article-content table,.hub-main table{display:block;max-width:100%;overflow-x:auto}.article-content>p,.article-content>ul,.article-content>ol{font-size:16px;line-height:1.75}.ac-verified-looks .related-outfit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related-outfit-copy{min-width:0;overflow-wrap:anywhere}.ac-parent-links{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* R2 covers inserted in the 2026-11-15 batch: preserve full portrait and caption. */
+.apcl-standard-cover:has(>img[src^="https://apocalypsecloset.com/images/blog-covers/"]){flex-direction:column!important}
+.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]{display:block;width:auto;max-width:100%;height:auto;max-height:720px;object-fit:contain;margin:0 auto;min-width:0}
+.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]+figcaption{width:100%;box-sizing:border-box;padding:12px 16px;text-align:center;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:768px){.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]{max-height:none}}

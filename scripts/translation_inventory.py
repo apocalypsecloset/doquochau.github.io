@@ -1,5 +1,5 @@
 """Original 216 pairs stay separate from explicitly listed later translations."""
-import csv
+import csv,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def rows():
@@ -10,3 +10,15 @@ def rows():
 def normalize_approved_maintenance(text):
     """Only the audited retired footer fragment is normalized for legacy source parity."""
     return text.replace('/#outfit-grid','/phoi-do-nu-ca-tinh.html#chon-phong-cach')
+
+def publication_rows():
+    """The explicitly approved 220 R2 article pairs, including two prior publications."""
+    published=json.loads((ROOT/'data/r2-220-publication.json').read_text())
+    assert len(published)==220,'Expected 220 approved R2 article pairs'
+    for lang in ['vi','en']:
+        assert len({r[lang+'_url'] for r in published})==220,'Duplicate publication URL'
+    return published
+
+def sitemap_vi_urls():
+    """Require all original pairs and every explicitly approved publication."""
+    return {r['vi_url'] for r in rows()} | {r['vi_url'] for r in publication_rows()}

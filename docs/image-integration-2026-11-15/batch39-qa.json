@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "vi_slug": "solarpunk",
+      "en_slug": "solarpunk-fashion-aesthetic-guide",
+      "source_text_segments": 146,
+      "en_words": 2403,
+      "headings": 16,
+      "images": 4,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "white-on-white",
+      "en_slug": "white-on-white-outfit-guide",
+      "source_text_segments": 109,
+      "en_words": 1588,
+      "headings": 16,
+      "images": 11,
+      "tables": 0,
+      "faqs": 3
+    }
+  ],
+  "errors": []
+}
