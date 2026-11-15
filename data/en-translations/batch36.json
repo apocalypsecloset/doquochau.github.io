@@ -6,7 +6,7 @@
     "description": "Understand Mob Wife through glamour, visual weight and texture, with practical warm-weather adaptations and distinctions from related aesthetics.",
     "primary_intent": "Mob Wife glamour and visual-weight interpretation; Dark Feminine definition, outfit specialist and navigation hub stay separate.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "8ed21799e7cdb84e3cc094385e2fada20e2fc57cb2509efaf2bf9fdfeb56c38d",
+    "source_sha256": "f7ca90c5adaed3c5843cd1981e335e1fd57e5d333a0457056fde5af7628551e4",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "Mục lục": "On this page"
@@ -19,7 +19,7 @@
     "description": "Explore Clean Girl outfit proportions, coordinated colors and useful basics, with distinctions from Minimalism, Quiet Luxury and Old Money.",
     "primary_intent": "Clean Girl visual editing and coordinated presentation; not Minimalist design, Normcore ordinary dressing, Quiet Luxury or Old Money specialist.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "f18ca593e7a8761f2eadaed6f02f9bafd4279443218bec82c7884a36f568c91b",
+    "source_sha256": "4edbc961d736d7b7ef272a7627a9ed86a8d167615ee77ceb5b5640f104774ef9",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "Bảng màu và chất liệu Clean Girl": "Clean Girl colors and materials",
@@ -33,7 +33,7 @@
     "description": "Understand Dark Feminine through silhouette, surface contrast and wardrobe roles, with clear distinctions from Goth and related fashion labels.",
     "primary_intent": "Current source is a full definition and wardrobe framework despite historical essay slug/title in CSV; distinct from Dark Feminine navigation hub and seven-formula outfit specialist.",
     "role": "DEFINITION_WARDROBE",
-    "source_sha256": "b085cac83d82fa333cd80cfbd1d6407cdc43605fb98c426580b758ebde38bdc3",
+    "source_sha256": "8eeeafa1f8bd2754626543a931e21b19f33357c33f1605b700d3ac36f451a478",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "Bảng xây wardrobe Dark Feminine": "Dark Feminine wardrobe roles",
@@ -47,7 +47,7 @@
     "description": "Understand occupational burnout, its work-related context and professional support options; simple clothing choices are convenience, not treatment.",
     "primary_intent": "Occupational-burnout information and reflective work-context discussion; optional wardrobe decision simplification is not another fashion capsule guide or treatment claim.",
     "role": "EDITORIAL_WELLBEING",
-    "source_sha256": "d83229da54bdeac291507e60df09c873407a4fab3680841d5621cbc2b27e9483",
+    "source_sha256": "b3d6eb66080958a2d5551e7f39438dc0543f6cd51d2bab415041ad35ff843ef5",
     "published_date": "2026-11-05",
     "attribute_translations": {},
     "internal_link_overrides": {
@@ -61,7 +61,7 @@
     "description": "Build non-gory Cutecore outfits through cute focal pieces, coordinated colors and adaptable proportions, with distinctions from related aesthetics.",
     "primary_intent": "Non-gory cute motif and outfit framework; childhood-nostalgia Kidcore, Coquette romance, Fairycore nature and darker variants remain distinct.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "5756010c5d50512d907901df0240343865cbca717bf4e8165be6ae82377c0b0b",
+    "source_sha256": "c95a3f45164e8f431aa6bfe8aaa98cd571e37105db8133e8db1ad266370830b4",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -72,7 +72,7 @@
     "description": "Explore Kidcore through childhood nostalgia, primary colors, denim, graphics and craft details, with six adaptable outfit formulas.",
     "primary_intent": "Childhood nostalgia, play and craft in adult styling; not general Cutecore cuteness, historical vintage or Y2K technology and pop references.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "00e4e69a86b565a8d2731abbbcfb32dab9c41c24ee7ff841c98c5f1e8a151883",
+    "source_sha256": "635c092465f01cd2549d4d5b689af1c82543659205e497a919bc93d40409b320",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Kidcore với các aesthetic gần": "Kidcore and related aesthetics compared"
@@ -85,7 +85,7 @@
     "description": "Use Barbie references, pink intensity, expressive silhouettes and playful accessories to build outfits suited to your wardrobe and setting.",
     "primary_intent": "Specific Barbie and doll-glamour references; generic cute motifs, Coquette romance and period-specific Y2K or McBling remain separate.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "3328e2b88ec5fea50973442c4b85db3bf03af9bf4175bb64054e8430cd3e0b58",
+    "source_sha256": "43153a8e63bbe6d26182d1e21de06cff3de3385e1642a8e141f0c10f98a694ec",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -96,7 +96,7 @@
     "description": "Understand McBling through velour, sparkle, graphics and celebrity street imagery, with outfit formulas distinct from futuristic Y2K references.",
     "primary_intent": "Approximate early/mid-2000s celebrity glamour, velour, branding and shine; distinct from broader Y2K, Cyber Y2K, Dark Y2K and Baddie hub.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "3c0c0c68610f78a9867aa8b8dcdfc30f05eb8eeadffe28dca226460e1b4b4717",
+    "source_sha256": "7c7b5b905660b95688b4eed97267655cce5eb38eb1741f386c4e38d99605cdf3",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -107,7 +107,7 @@
     "description": "Explore Parisian Chic as a fashion archetype through considered fit, contrasting shapes, reusable basics and seven practical outfit formulas.",
     "primary_intent": "Media-shaped Parisienne styling archetype and casual/polished contrast; not a demographic claim or duplicate of Minimalist, Classic, Quiet Luxury or Casual Chic.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "c6fe910397c9ba04fc3a594bfb1ec5db9715b6be308588db9de8a21268beffd5",
+    "source_sha256": "cc1e3b7b9cd946b78faefb763def770313eb6a0a6e72543676be6da4aebd76f9",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -118,7 +118,7 @@
     "description": "Style bookish references with shirts, cardigans, optional eyewear and deliberate proportions, with seven outfit formulas and warm-weather adaptations.",
     "primary_intent": "Bookish functional separates and deliberate imperfect proportions; dated literary-chic coverage is context, distinct from Preppy, Office Siren and Light Academia.",
     "role": "STYLE_SPECIALIST",
-    "source_sha256": "ab6e44a5903aed1f775cfa489e6e08b49331f0621bb621c5fecfbd6470ed5411",
+    "source_sha256": "3cc3ea72fd87c78fb5ce92379f26dfbfef144d1d730e005e92b2b49f77708bb1",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   }

@@ -24,6 +24,8 @@ jobs:
         env:
           NODE_PATH: /tmp/ac-shop-tests/node_modules
       - run: python scripts/qa_site.py
+      - name: Schema, reviewed image alts and performance maintenance
+        run: python scripts/qa_schema_pod_performance.py
       - name: Audit repair preservation and regression checks
         run: python scripts/qa_audit_followup.py
       - name: R2 image SEO and sitemap coverage

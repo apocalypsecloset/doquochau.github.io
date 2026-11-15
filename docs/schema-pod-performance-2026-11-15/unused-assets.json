@@ -1,0 +1,80 @@
+{
+  "method": "No basename reference in HTML/CSS/JS/Python/CJS; no active JS prefix reference; exclude compiled CSS source dependencies. No redirect fallback removed.",
+  "deleted": [
+    {
+      "path": "assets/css/ac-maintenance-20260812.css",
+      "bytes": 997,
+      "sha256": "6ad2bc65118c4acef938f39d770a287571c35a256077b3631b034dfabff89f5d"
+    },
+    {
+      "path": "assets/css/outfit-base.min.css",
+      "bytes": 16166,
+      "sha256": "18783f5975e11a20b8f41506b5fcf386aef298bc9838b2ed6d38153802509145"
+    },
+    {
+      "path": "assets/css/perf-blog-components-20260921.css",
+      "bytes": 16837,
+      "sha256": "0a1382ceeba184d2cbe6371cb1a767a4be55a0fa3407e4e84417061b0c7ec61f"
+    },
+    {
+      "path": "assets/css/outfit-stylist-v2.css",
+      "bytes": 14130,
+      "sha256": "d84c8a1be0653e96589a2e65bb02fc7251f4fa42c442a0b98639fd438762e522"
+    },
+    {
+      "path": "assets/css/fourthwall-home-spotlight.css",
+      "bytes": 4337,
+      "sha256": "40d97ab2e4ae16a28ea08d9fdf60a1a30eea802911f1b628f82e2f9ec9bfbeb9"
+    },
+    {
+      "path": "assets/css/topical-map-20260731.min.css",
+      "bytes": 6547,
+      "sha256": "0af7bc312a588988f3a5dfca823b80bd03707832b4e2dcc1ca81e805678d4fc7"
+    },
+    {
+      "path": "assets/css/perf-blog-components-legacy-20260921.css",
+      "bytes": 16744,
+      "sha256": "2ff27cb2c97303dc3ee274d53fa4898b438a372fdae23e90776ddd3e949595d4"
+    },
+    {
+      "path": "assets/css/perf-layout-trio-legacy-20260921.css",
+      "bytes": 20222,
+      "sha256": "8d81ea56c6fd4d02b636236cc73faed4e9586b129d82fb918d17992991fbd8ef"
+    },
+    {
+      "path": "assets/js/outfits-home.min.js",
+      "bytes": 63429,
+      "sha256": "3319dc1644545ff0b8854d83b07fa766f9b28f92844a505484e370dce0f472f1"
+    },
+    {
+      "path": "assets/js/homepage-gallery.min.js",
+      "bytes": 7792,
+      "sha256": "d5935c8418acd239d1c3106d4f1c075ef91dfb76f0bea2046b1a2b68940468f7"
+    },
+    {
+      "path": "assets/js/outfit-builder-v1.js",
+      "bytes": 7645,
+      "sha256": "f370118fa74deb37f55c9af724c4f40f1c15c8a592c3b07437f3ef2536fc4270"
+    },
+    {
+      "path": "assets/js/outfit-commerce.min.js",
+      "bytes": 3338,
+      "sha256": "406fe49f9fc54bc384025ad30539a462fc00e5d0f32c2ba2fc53abce37365884"
+    },
+    {
+      "path": "assets/js/fourthwall-home-spotlight.js",
+      "bytes": 7427,
+      "sha256": "dfb4885b28118370e05ca8565b1e728351476cf6b8f74d468e37ae042839faf1"
+    },
+    {
+      "path": "assets/js/pod-outfit-archive.js",
+      "bytes": 5356,
+      "sha256": "6ffb09aa001bc647f52cef5a96dfe35476e92925eb5db1d42dab2f29e223619f"
+    },
+    {
+      "path": "assets/js/homepage-runtime-20260807.js",
+      "bytes": 16358,
+      "sha256": "c6e308cc9970dd8f908e0eee3eea666accd5edce912a1f3e56b4b38a2fa84a66"
+    }
+  ]
+}

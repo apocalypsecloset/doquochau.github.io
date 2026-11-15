@@ -6,7 +6,7 @@
     "description": "Build plus-size alternative outfits through fit, drape, layers, color and movement, with eight formulas and practical online measurement checks.",
     "primary_intent": "Whole-outfit plus-size fit and composition; stomach-specific fit, shape-specific proportions and item styling retain separate targets.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "2a6886acf1a54f196d956022bb0aa3c3a5029eb7102a1849266a236e7f6be809",
+    "source_sha256": "31e857c4c1a17286b5b5a040f37df3963398c7a939522ffe6f1e86fe528ffa66",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Explore petite alternative outfits through waist placement, garment lengths, volume, layers and shoes, without restricting styles by height.",
     "primary_intent": "General petite alternative composition and vertical proportions; baggy-pants buying measurements belong to the petite baggy specialist.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "a370357245b5d6352a0180958c377ad4d36ceb5005af0cda0938fd504015fab6",
+    "source_sha256": "34b4e2017afcc74c514c8d219498f0f92e6e8ce7d34abbd03a702cc6f8dff19e",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Choose volume, texture and layers for a slim frame across E-Girl, Goth, Punk and other alternative styles, with comfortable proportion options.",
     "primary_intent": "Optional volume distribution on slim frames; separate from plus size, body-shape shoulder-to-hip guides and height-specific proportions.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "663eec65f397e85087c87a2c6c0e637430d8f875f1fc7a9b1c6efce53c14ad8d",
+    "source_sha256": "5f931171fadf6a99d570c08ab5f8abdd166eff0f3bd7d1f13efda514a3658b0c",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Assess waistbands, top hems, drape and open layers around a fuller midsection, with eight outfit ideas and movement checks for comfortable fit.",
     "primary_intent": "Midsection waistband, hem and torso interactions regardless of size; broader plus-size outfit guide remains separate.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "51b56ed7054f373f0478f4ee5fa09992b334d3e588f82c2e9b7c1f4875af1652",
+    "source_sha256": "33395bdc8a8905b57bafb6eeb7ab757c9e08917734eddf00105cd33af8f74fe4",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore balance, curve emphasis and column silhouettes for pear-shaped proportions using necklines, drape, color, footwear and comfortable fit.",
     "primary_intent": "Hips visually wider than shoulders: optional shoulder-to-hip balance or emphasis; separate from clothing size and the inverse relationship.",
     "role": "BODY_PROPORTION_GUIDE",
-    "source_sha256": "f78c32070c9cc9932c4648d089689228f27487e6c8dc08f7c3fc39e3c210a121",
+    "source_sha256": "aa3eaa89353dd8a7d7fb6977cfd273f5d758f142a90f96ea522efc2c99ed0675",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Style broader-shoulder proportions through necklines, lower-body volume, layers and focal points, with balance, emphasis and column options.",
     "primary_intent": "Shoulders visually wider than hips: optional lower-body presence or shoulder emphasis, distinct from pear shape and petite vertical fit.",
     "role": "BODY_PROPORTION_GUIDE",
-    "source_sha256": "76a71f2c0c14c40a8cd87b2aa748924ff9fb578bb5941a67cbe14daa6626a5eb",
+    "source_sha256": "f1ce613184819a933af7eea6c1d3158629ca9dc9d688ee7c8a6823e765f7329a",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Compare rise, inseam, pocket placement, leg width and hems when buying baggy pants for a petite frame, including shoes, reviews and alterations.",
     "primary_intent": "Petite baggy trouser selection by rise, inseam and pattern placement; baggy definition, general outfits and broad petite styling remain separate.",
     "role": "BUYING_FIT_GUIDE",
-    "source_sha256": "2c5655697f9a8e2444c38f257646653fc2023be122eb410c2474971449a03944",
+    "source_sha256": "200b271e942b60309a1ef37e3812c274becdb43a4632b6eecc4c4739a2a0daeb",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Address boot odor through material-compatible drying, lining and insole care, removable absorbers and better rest between wears.",
     "primary_intent": "Boot interior odor and moisture cycle, distinct from new-boot stiffness, leather upper care and outfit styling.",
     "role": "FOOTWEAR_CARE_GUIDE",
-    "source_sha256": "914001ef4f502af83636c7f776a1dbc8299e3ed816dfe929681eb2c8cb38a65a",
+    "source_sha256": "a101d801d18ac1d2f9993c21f75e7180ea40b814e68b553ed2aba7585b47e9f5",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Check boot fit before gradual wear, assess rubbing and material limits, and avoid heat or soaking shortcuts when breaking in new boots.",
     "primary_intent": "New-boot stiffness and initial comfortable wear, not interior deodorizing, upper maintenance or Combat versus Platform purchase comparison.",
     "role": "FOOTWEAR_CARE_GUIDE",
-    "source_sha256": "fc537f55baa2c9b5a5d5bce0845ec3d0074e98ae742b7f1cb4f060eac8eceb62",
+    "source_sha256": "c1cc7b721febcc606371ab9749dd2c3bae1da81e21a39d9339142c9dc6b5b570",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Compare baby-tee measurements, knit construction, graphics, customer reviews and exchange information when assessing Shopee listings.",
     "primary_intent": "Baby-tee listing assessment on Shopee; separate from crop-top definition, generic online sizing and general or Gothic graphic-tee outfits.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "dc586ae54f2a692563413b20d717e4f5072c747573dca231cc3f41b8497cdb6c",
+    "source_sha256": "9981f8163ca8287db71c41f72e530afbda8e8d08f34aaf7ed344898f9ea1fe9a",
     "published_date": "2026-11-04"
   }
 ]

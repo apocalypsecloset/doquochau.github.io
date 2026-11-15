@@ -1,0 +1,1298 @@
+[
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "grunge-la-gi-khac-gi-punk",
+    "before": "e3e477b64c1bf370b62401d837e8f5edaf449968215a3c222d71aba0aec4ba66",
+    "after": "877fece020b6406829cd2c10f634e881137f87d11ff5f28e7224191c6ac1c507"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "soft-grunge-aesthetic-la-gi",
+    "before": "2cfb4e24ea6af36af917fd6642172ba75e84a8c05ee816fd1812532a19f9d65d",
+    "after": "f9a28312e75d5c36e71d8cae5951aebe2ac41ca8f049b49a6d968237176a0a2b"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "phoi-do-grunge-nu",
+    "before": "a2b21d8b1444ea6ed4d4dae1d55ef771df282bd8a47b71e31b0964831ce16a01",
+    "after": "cd1161da3e23fabe06253202107e46635339e4a3badbb97da8ead931eef18ca4"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "phoi-do-voi-ao-thun-nu",
+    "before": "6e52f64db8665d9940dd9cadebc84f7c5699a9307c3009a9d66177c53249660d",
+    "after": "365bdb6f63ed99ae5c69ec12e9ea96f549bdbd808e1605325cb9f4614cb46560"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "witch-aesthetic-whimsigoth-la-gi",
+    "before": "27d0327d38a3b0b00881a9f2b06fd471e59d5d4ca136ee8443aa4b4b56084e62",
+    "after": "f31538bdce14953598dc1fc9bc67855c5b82ce3c2d77004ce2168c58948e57ed"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "goth-aesthetic-huong-dan-day-du",
+    "before": "c4d909f630102c8c6a5d502565278daa46d7d886b2dd6cbe77df29ee6f859994",
+    "after": "45aa91da7c85a1cefa315e11aa197a5358e9cb2aeec9afe44e09cd943a0d29f0"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "fairy-grunge-la-gi",
+    "before": "aedc6e0ac38cd1ce339a31a50da2ed548e3ff63e62e390fbe906df39d811fe27",
+    "after": "c2929218b06eb02392574425adfca4508f46637667724f13484930d3de7a1568"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "romantic-goth-la-gi",
+    "before": "1b432fa4565000ebfe1ca0da25dfe0babe0fb4a2c8588f68d1e0226b8198c1bc",
+    "after": "a2c56e919daafa9c03a31e982eee1cfa9c227f3706624e9bc43f372c7b5b1dd3"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "trad-goth-la-gi-traditional-goth-style",
+    "before": "28eb7162111f519db442fd49839830dbb010d856ece1b6ea6f246c57230edc15",
+    "after": "dda56dda220f684829e0c1983c383c9870ebc3c2750d4e1a61d8936aeaf10174"
+  },
+  {
+    "manifest": "data/en-translations/batch02.json",
+    "vi_slug": "nu-metal-aesthetic-la-gi",
+    "before": "f4232906fa54e4221ca88c21fb418ff0e2dcc70d8396a65b455f161f53d7d1df",
+    "after": "83b3e4551d09610c3481f0d6843b2049a1d9e3cfdcdecc22abc0debb3b5865b5"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "nu-goth-la-gi-phong-cach-nu-goth",
+    "before": "6b3b09278814d51a15306562cfa409eecef761dc095a779ba9567d9d636588fc",
+    "after": "ffed911cc1e7ec5a13c4b4710f7c342a778b751f1c7a3ad40d5e34bcf97b7daa"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "vampire-goth-la-gi-vampire-goth-aesthetic",
+    "before": "f72f3d057809f8f7cf531822fba28f93ae471f2eb96a90569fcea97a460b77e2",
+    "after": "e496ce9984527e6425e5fd20dc3129fc5dd68ae9b9683b5ed8efa8b180b04b36"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "pastel-goth-cyber-goth-mall-goth-la-gi",
+    "before": "a5a1b9012b5e8b882f0c78cc981afcaf8f7758c71ede0b92f892a0be0c344e52",
+    "after": "1d755a490c883292429312f418d06d87751a5b2360adcc38145f567ef1c292b0"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "phong-cach-emo-la-gi",
+    "before": "d4e0cbb5d7ed4e6b3f28d9cb2b803bd30e6639034ae9235842dc46103f211a3b",
+    "after": "985391f41f59a4120bbe18e18edb3c0e91555bb939c1c9dfe609e2d3334f8e4f"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "dark-academia-la-gi-phoi-do-badgirl",
+    "before": "5aa70166fbda59ed5a1439658a687e7ba762293f7c1dbea91cec32b3e45a5b70",
+    "after": "080ce00aea3d010ca3a1a21c6aa8529d6d46ff3a65e9a73dc3d10967cf5a47ba"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "phoi-do-voi-ao-luoi-nu",
+    "before": "a7521e3fc2534db70e380b0f35a9edbcf8c5f9b2a0644408d96895ce8f34be03",
+    "after": "f306aafe5eff8183b82d3807e90719a3f9ecb1b70c7f752d7b583265fe1465fa"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "form-oversize-la-gi",
+    "before": "bb1137a4356cd086edc0be4714597a0e9c4c197aef7264f79cd67c23a3d68326",
+    "after": "31dc9dda471e4beeca912fff60173f7f1f5a846eee657222a6765b1a48e0a938"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "ao-hoodie-oversize-nu-phoi-voi-gi",
+    "before": "f07a9f3de9a8bb959b5cc4120fe62dbf89b28d1df903da83fb6132c8c16e924c",
+    "after": "b395f27ce75727ac5080b69514405a4490671cef7cd66fd88dc77ba472d78a10"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "dark-feminine-outfit-phoi-do",
+    "before": "cc9dcd78e699e545451ae0d0169aa0de3b813af97e3c95ce68302348be2a5341",
+    "after": "da83c4601d0f4683e5a74382d71b908ac00a1bcab979578e5e6ddea91705adbe"
+  },
+  {
+    "manifest": "data/en-translations/batch03.json",
+    "vi_slug": "mac-do-den-mua-he-co-nong-khong",
+    "before": "f09a33b53980cef94eee816882620b62259f8fe21548373e8a75262c27a1c305",
+    "after": "7835543319c840b2a5007d58e494b0285f860dfaa11deff046662b892ecb3f90"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "cybergoth",
+    "before": "202f612a390791e662699ac25f54e55ecf1a5f131bda0d13422cb19e14f2aa69",
+    "after": "223c167b4e9a37b98b3df141bffd9129796b00fab772c71246b83121f483c769"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "scene-style-la-gi",
+    "before": "8415a0f66d648294fa62a4e181a229fdcb20bd2cb549fa065cf4b33aa5ebf9a5",
+    "after": "cb4819ca10bcc17404565e0bf3be702074c15afca858ad3201746a0879d39a9a"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "phong-cach-egirl-la-gi",
+    "before": "1ce212646c7f92b5df7cf3df87332689933aa7435926483f95723917d7c92806",
+    "after": "bb8b39a55179de1d189daee29951f24af9666af77e1808c4917077476d5e55ce"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "phoi-do-layering-nu",
+    "before": "da8222952ae9ab02d2294c7d2472eb0edf5a7683e450df65fd2487d1665bc147",
+    "after": "6642e83d2d6b41bcb247e08ba547ff5ceeab590f9a07d316b0bd3ff0635ab2b2"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "cach-giat-do-den-khong-phai-mau",
+    "before": "7078c9fa279c613b086bc13d3031f3f9900a4d5920a29e09aaf7636eb3e4f49d",
+    "after": "df02f76822c5f2eec63aa7c6cbd74ebdc4c608e376a78bbe560eb9cace4aff27"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "goth-nails-mau-nail-phong-cach-goth",
+    "before": "bde8b9d8cb8ddbd024fdc33e298efc0e41ce40cf4072504be7e6ad12b55a6089",
+    "after": "65fb0dbb13d9749c7a329cb34b15c81bc7c26237757eefd16ce5736e39abedf9"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "kieu-toc-goth-goth-hairstyle-nu",
+    "before": "b404fbbbb93f3ff461e38627820a143091ebaf8519c72fa2d401d7c4a0fe49d7",
+    "after": "9e2442dde726b68d9861a732d86372a31b287c5f9039c299b00bfe452ec13a94"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "xay-tu-do-dark-aesthetic",
+    "before": "1f5477880dab2dc14aef3a4faaa8e0cc397c95c37f57f0419e48eadae6245424",
+    "after": "0e27a2c847feae322d4892581407ed6ef60d364b47a8b15a02c548d2e47e4b55"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "phoi-do-alt-fashion-cho-nguoi-moi",
+    "before": "65e7d9be7658054cf0237b0521208cd67fb1046e1ccdccecb9d903ae4e37ce1c",
+    "after": "047c02f1fc803c18cbfd6ec18ca0ee7379b4b0abc90ab2dcf471b647e6cdf0dc"
+  },
+  {
+    "manifest": "data/en-translations/batch04.json",
+    "vi_slug": "phu-kien-alt-fashion-thiet-yeu",
+    "before": "cae26619e34bebae44ca9d06185c95295c18ee1a591499c197ac17449f3fd62f",
+    "after": "6b769a48554193e9460f8f3b93f1c9f94e3e560f4fa9fe7ecae1aa3947fccea4"
+  },
+  {
+    "manifest": "data/en-translations/batch05.json",
+    "vi_slug": "phoi-do-voi-boots-da-nu",
+    "before": "bbfa23b1f22964d5f03d91b44821e9f8854b2b094a1ec05d7166585f133772cc",
+    "after": "b6262e258711348fb63eafd7849c7f5bae61346b55fa457e6b69419436d74150"
+  },
+  {
+    "manifest": "data/en-translations/batch05b.json",
+    "vi_slug": "phoi-do-voi-ao-khoac-da-nu",
+    "before": "7b47cd95f705888c4bd00d8740237b0ee7793f73e394df8ca4ac123a87e25c55",
+    "after": "d46ac85a8b4d4cb2091916092e14a9d3afc7ac3c600449bba1dcc0f016749458"
+  },
+  {
+    "manifest": "data/en-translations/batch07.json",
+    "vi_slug": "punk-makeup-dark-aesthetic",
+    "before": "f968d4e5ab85372833c8d31fd77c05c66ed993907923477681edc72a75dc87ba",
+    "after": "11a5a91e7393c2e5e64e67556280fd99dc64c13d6f8ac37361ba1c4fc9c03d9d"
+  },
+  {
+    "manifest": "data/en-translations/batch08.json",
+    "vi_slug": "phoi-do-voi-quan-cargo-nu",
+    "before": "8455314ef7b2df050816d0b6abc1949b13483b531700dc16fa056358bee8b318",
+    "after": "7b234d67bf4831010438e6307b32f39511d52acb7bc1bc2e02ec6f6159432581"
+  },
+  {
+    "manifest": "data/en-translations/batch09.json",
+    "vi_slug": "quan-cargo-la-gi",
+    "before": "aba18c9a9940efb2598de9d4c8c612f26877c5f62c03960399548ccb47e49a07",
+    "after": "a81e0011210b6908f952408cc673ca02133b5ad24424cbec527ee75f142eac4d"
+  },
+  {
+    "manifest": "data/en-translations/batch10.json",
+    "vi_slug": "phoi-do-voi-quan-da-nu",
+    "before": "157b08302d40400c5604ddbe3cd1fbfe6243ffce740d1e5559940b6372a98fcf",
+    "after": "f68aec1ddf94619140bb7031eb9bdabe88cbf2c6a0e5520772bf3c249f4f1fed"
+  },
+  {
+    "manifest": "data/en-translations/batch11.json",
+    "vi_slug": "cach-chon-size-do-alt-fashion-online",
+    "before": "943f4d213c8d7f1e4e6262dcfd35a72e96a5df158d86a57cdb405a036f104397",
+    "after": "d09ce6625e71761a7e2cd3f56646590bf84d7b034fd403965c144494536b40dd"
+  },
+  {
+    "manifest": "data/en-translations/batch12.json",
+    "vi_slug": "phoi-do-voi-corset-top-nu",
+    "before": "492c816e54f0552969e5bd0609d1630fb1eb95f4ce64349115e851bf84678c47",
+    "after": "43e62c956295de7e84bc65bf7774eb53411ac3945bac8287fa949c3cb5b8d203"
+  },
+  {
+    "manifest": "data/en-translations/batch13.json",
+    "vi_slug": "phoi-do-voi-ao-crop-top-nu",
+    "before": "e20d169f12201576f13faa9422327a43c9eddf8e6da82453c5f450ac39148c67",
+    "after": "bbb253589f708e7bad0e09a51eee4fe5c526e1644fe55e8cfcc240b1ff8851a9"
+  },
+  {
+    "manifest": "data/en-translations/batch14.json",
+    "vi_slug": "unisex-la-gi",
+    "before": "26a8e19741eee650e714d7d10c1ba29662be9d65526a829f8fd84c6243fc61f4",
+    "after": "480662c5754343e4d332773ee1243cf22970f5fbf6a850324a15b4747badde17"
+  },
+  {
+    "manifest": "data/en-translations/batch15.json",
+    "vi_slug": "ootd-la-gi",
+    "before": "ce5b4e038267e88ac79d91cedc93c7a709bd15eeeda4e01765b1002cfb9a5ff2",
+    "after": "29c0f23c7023e509c865526a793b0acda3acd38b2dc548e0e59466fa18e7f5fc"
+  },
+  {
+    "manifest": "data/en-translations/batch16.json",
+    "vi_slug": "outfit-la-gi",
+    "before": "f5607ae2e184d40c941be4b3318c8d0eb5de013c7cf3653c42f04efa89cdc734",
+    "after": "40fcba241e73e76d4bee1f7793b4191a916bd66f38fd0d25ac8751b2f2a74aa4"
+  },
+  {
+    "manifest": "data/en-translations/batch17.json",
+    "vi_slug": "capsule-wardrobe-la-gi",
+    "before": "67b4e743c054dd5dd45a0bec075e457c87ac6661c350cbc02e1f2c4198a1d800",
+    "after": "94cd3140f540add9dc1be971931c9ae5b5b305f873def76e3e9dce1ad28d33b5"
+  },
+  {
+    "manifest": "data/en-translations/batch18.json",
+    "vi_slug": "sustainable-fashion",
+    "before": "df61bd205a2e11cce24de687fe80946cf2f4dfdf52bec78d14902bd4eb85b21f",
+    "after": "70011d2233b14470ff40596fbc1c138f13e78bd9be5af2e4c1b00cebfa0ab297"
+  },
+  {
+    "manifest": "data/en-translations/batch19.json",
+    "vi_slug": "minimalist-style-la-gi",
+    "before": "82260a9a23e603f0f6bb3eb3295e459eac4cafd62e18060df6ad94952e518e2f",
+    "after": "543dd36066ddb35dfef966265dee7a2aa05d4a8bbad10b64ac5c17d1b7afe3d6"
+  },
+  {
+    "manifest": "data/en-translations/batch20.json",
+    "vi_slug": "vay-midi-la-gi",
+    "before": "eb9bcb1b5675be8ede07897481acb1c7d5d072a791a35c7201d60673d716ce31",
+    "after": "8a2d0796cc37c95fc73b892bc26ae8150473d1a45387a2c5ae7867ffaadfda30"
+  },
+  {
+    "manifest": "data/en-translations/batch21.json",
+    "vi_slug": "phoi-do-voi-chan-vay-midi",
+    "before": "a1a263f95965aac3a7de041f5d9f666f343d7aa795fb256d57c797bc23b6465a",
+    "after": "5d9587dec43abd5a5c9fa461962bab67d3e65e533029b6514f95e538a59b303d"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "alt-fashion-la-gi-va-tai-sao-no-quan-trong",
+    "before": "2e230271d4e0cc498328a4b33bd8eb63cc04fc93f64cd68cc27c000f687094b8",
+    "after": "0972db7e58a1fac9d5b3c9c739e62758d6c643f0d37396ac1aad4efa72f0ed41"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "cach-phoi-do-den-khong-nham-chan",
+    "before": "43ae0f373b9a51bf5f0787714918ba5fa8c7f9619f75e4a799ceb38ed53f7dd1",
+    "after": "4a599ea8498d0a73e687e98d4a9fbfc40396f37ccee8291a4200d75fb1bd7ac4"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "y2k-dark-aesthetic-khac-gi-y2k-thuong",
+    "before": "48e37bed25c56e31c416612cb618bd71990cc3ef03cd9c9025c89419467b62cb",
+    "after": "b84d426724bbfb4b08383eb1ce189abe05a598fcc5dff0f32d86084006050200"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "tu-do-alt-fashion-1-trieu",
+    "before": "0012a2cee9b7eab8b98eee043e26bfb3aa25690de226b7e4ed1e79b7401f5433",
+    "after": "59e18983785e3b020f5ebcba3a23c754354d5884c02f88ff8acf5a91c6bfa64d"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "kieu-toc-punk-nu",
+    "before": "dc33246d6b1bb03c989b49f1ab3fd70edfde5196784f96ef09bd9b6beffb9603",
+    "after": "e31453694aa754de3f13d0d1fa5e53b08d019782563ce7287dde4be59126f1e6"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "that-lung-dinh-tan-phoi-do",
+    "before": "1d03b40b79fff1116de668bd8f6e6cdb5ca2c0398421239563eefe3bd96954be",
+    "after": "8872b2cb701316ea704819e81b862e1c54938ce505f6d5f002eec9dcc9cb32aa"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "phoi-do-voi-quan-short-nu",
+    "before": "9ce0b00bf4dc739d2ae1af2f79a71eedceeaf6399109981e6db5b5ba4a3bee41",
+    "after": "82c5c8dad81f83abc36e620b22b5a459d2f447cb9a9ee4a8a59c94067e957440"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "y2k-la-gi-phong-cach-y2k-nu",
+    "before": "6d9b7df68998b7c0fdfb9b03a7a30f3a987539514e92dabc05685f3fdeb13bf2",
+    "after": "e8db2d62da3bb8b434349fbbbd536924127e13ed349951223ed30a7705b184be"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "cach-bao-quan-do-da-nu",
+    "before": "db66aa9dbf24edb8ca6d0fee0c9fd9b356fc04cd5de0325bfa14d23b165fd51d",
+    "after": "397cabcfe1f23a0ca4929814e5bdd42d0030d0dcf5854a9c4c6df2118e77f0d1"
+  },
+  {
+    "manifest": "data/en-translations/batch22.json",
+    "vi_slug": "nhuom-toc-dark-aesthetic",
+    "before": "bfe8d418c9b53c1e4ff396c742b0a62876277e692bc1307b3ea3f25bd9886acd",
+    "after": "28c632413a0761591a471620d3f80e50ff1b9a0bd877e8bc3740bcd7665ddf76"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "arm-warmers-la-gi-cach-phoi",
+    "before": "354f20bc18ced35726f2f4155defe87819d4a0ad821562ac623c98c55cc8fc7f",
+    "after": "3f6956347c2cee8169adc7663b5b2dce4bac0f858424e10d0b4f94fa58c9fb91"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "choker-nu-la-gi-cach-phoi",
+    "before": "3435e30fbdec305d411d26926176ee6c62596a435c54a9caf7ec864e3c9eb399",
+    "after": "14e9bd01fb55a71fa4649939847389704d103049ab72e5c08414567e39212c4b"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "fishnet-tights-la-gi-cach-phoi",
+    "before": "0560824c42bc26961e03d2481c8ba8573478af5d8b37ed3a4ec7eb60ac88f65e",
+    "after": "598df67de68691ef9d156ab206706a5a44fd68068847b611dd13cdc614f0039b"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "combat-boots-hay-platform-boots",
+    "before": "f39d615d0d1264fff0a0f12f8b13a5b47a9849465377373d7835a570d4bce263",
+    "after": "d1bcaff0f06dbb31d6dc077f6703fdd9d47d5e6cb016ad391ada27a9089b2732"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "quan-cargo-vai-du-hay-kaki",
+    "before": "66f6984eafdea47462731d77fbc74938e9988b626e8d2bf25972d1f59f9bed29",
+    "after": "c24e4636c2f03c22fb3c6af241d7089c5dc403a2576f60dbbb9df2432dc13fcc"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "phoi-do-voi-quan-jeans-ong-rong-nu",
+    "before": "dd0cf7f1b38503d19dc09483539ab6f3214fd5d90886ff584cfd4f56997d6f1f",
+    "after": "19bad4e36741370e209739f6e3c7b742ad7e84b125c44bbc78083f310012e46b"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "phoi-do-voi-quan-ong-loe-nu",
+    "before": "478c2d375135ff71f8ebbaa5cf949a46c02839dad41967c363bc57e428780756",
+    "after": "2365cc667dec89ec6df7881723c178665ef5d6f8b613e24ec7d9fe29f3ef7558"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "phoi-do-voi-quan-jogger-nu",
+    "before": "91e64edc5d82c67e67ca679a2b357ded91edba81b81515bcacdef6d291bfe375",
+    "after": "161c732950847604b62c823b78483bccff544895f338b299a653d377ce00bf9c"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "phoi-do-voi-ao-bomber-nu",
+    "before": "87b56645e55394d2c22dc4e97dc1d1d2961b0e3b94f064ac1cbaa3ead7619af1",
+    "after": "218a146e689289774747377cabbc887e3d878aee7bf4af7f02de8a6d2d50bf73"
+  },
+  {
+    "manifest": "data/en-translations/batch23.json",
+    "vi_slug": "phoi-do-voi-chan-vay-dai-den",
+    "before": "68a67f7b8e918a7db3bcb131f93e80721c64a9699cac76899f2f213b7a4e7327",
+    "after": "6dcf77f4ec448e26ec20b1ead82716ad00a8a720979340d5f02af2b0c8fa15dc"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "goth",
+    "before": "5fcdca50e77ed7dba0ccea3b1c2fc663995a6e2019ac6706ba68921298882d01",
+    "after": "63c57519a279e9dc472be9eae9f3d23931e405a14c125c9a0ffa7767c6bf62e7"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "egirl",
+    "before": "678c04f301cfe78dddaf59f9e37571b421fc4dabf30ffad81f69a0806d773fbe",
+    "after": "646cd40110e53b23c43f5ffc95f459efb7a4b25e5197f4dcfad2e3b1e5e68ba9"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "punk-grunge",
+    "before": "64cce2f5703811285230daad81d4585ab5af26eb96d20423319900d7136914e2",
+    "after": "9b6d49892fefb801b23add0a0488240ae49475519e4e21742ce9308d4dcb30c2"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "dark-feminine",
+    "before": "5f2f7dcb4322079f6604138f4410614a6fca6b5fb5ab0f48e98972921e92e9bf",
+    "after": "ae05dc0820318bf63d43bd5fa72d31f97c349e81bf7dc8251493ce6f5a92062b"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "baddie-streetwear",
+    "before": "d9bdd35563ef2af84b59fecb62dc30b7af65f06030e87e411b3360b4d4805469",
+    "after": "b9a9f7d6753659cf73a18daf15fb4e200b89a89359149c6ac2890e7a606a9f61"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "phoi-do-theo-item",
+    "before": "656d9419d0dc46bac7d0e86ce82010be83f5001f7d884062818b2e7d9a6ec2d7",
+    "after": "0561ec8096ce23d474b4b00687895f4d4396eef44fc2781598dabfe4cd4145f2"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "phoi-do-theo-ao-nu",
+    "before": "3e6246409b9653d9d28994593dbc31dc9bb5b00c36c28f561c708d639bc6764f",
+    "after": "4fe1b8bdd6ed5569e6b69b59299700f68b014c2ca120fa838a499d87b77092a5"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "phoi-do-theo-quan-nu",
+    "before": "7a592a4280d9055ede4677a1b46f2f1f363a808f8c037c5370c7b814735a89aa",
+    "after": "3518123a37c25c48db39b4f27968ec75f9267fdb060c4c17c6875bffa6467a1f"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "phoi-do-theo-chan-vay-vay-nu",
+    "before": "83118264d22b008c08ca68eeed2a61a15e43c6d4fae0a9f68c02b2bb1924ea4b",
+    "after": "f13576a5b0c8d987f1860962a46ba8e402dfc5a526301baf4a0cd715c991fc11"
+  },
+  {
+    "manifest": "data/en-translations/batch24.json",
+    "vi_slug": "phoi-do-theo-giay-nu",
+    "before": "db8cce19be3587f7a210191fce3f311cb06346fd20f8a031e591ea4621028147",
+    "after": "8495a4f0f85f3bfc56e36f96e4d8f59560002264bb9457de0ac7fdd19d955eed"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "giay-mary-jane-la-gi",
+    "before": "3f923d31496714627a0f02ee7fa7669e578f24228c437122fe4eab61b178d05f",
+    "after": "a84b58a0863cc6f7ecb32559cda78104799a06fe418338be02d231b6f0c8c454"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "leg-warmers-la-gi-cach-phoi",
+    "before": "b485b56b87e94bd7cab66b1b7a4b7f37b9c2f79fbbd2f54f83fdfbe4af7ae31f",
+    "after": "db2511ce3eb3da1ec6fdf0e0f7d1dd8ea4a7380d4a056b69c1a7a87e489baec6"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "coquette-la-gi-dark-coquette",
+    "before": "4a7d2721315435636e6b4c1fca4c3ca45425a97fea0a1cc38aa272abddf3d480",
+    "after": "94b8fe08405b049651644766226d14de4469af7fe8c244a5598bfd2ea7f5a30a"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "indie-sleaze-la-gi",
+    "before": "99db3ca8c69caab88e0d619f4d4f0138fee12bef448271774e0fd858f43ee1b8",
+    "after": "8b4268bc6b74ca5bc429b38856883be02c536634937f2608bb50a35737683de9"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "techwear-la-gi",
+    "before": "e943955762577bc182a8dde092d254e7af45679b56b7cf0cfe8e193d29a4777e",
+    "after": "c1903ef8719aad0bc88279b800b44845a18ad2829151880802343e7264fcf46b"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "cyber-y2k-la-gi",
+    "before": "b69852adbdeab659daa0dad64149682931dcab1081fd9f3a8eee2b007c28b6ad",
+    "after": "5978d816f338011d557bc4154d8094f6057c55a04cd3ef1a27dc748eaad13602"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "visual-kei-la-gi",
+    "before": "dcecac97abdab8706b22440805c6831139fafbafd3a43f4899c3fe91d9a40322",
+    "after": "965ae941f38dacc8d94e4a2951e7cdfcf53ed0079ced609f441450f6bb8b50af"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "devil-core",
+    "before": "d5e80ca83e482c07a941a6d7cd2d3ee3cc5daf11873185979c14d617462d696f",
+    "after": "a773f94dd1354584ea88cdfbe9319672d4cbb7a5f8a3ba9afb23af7de5065a0c"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "morute",
+    "before": "7c7184959a95d4f866e56e6d4893764320ac32aa1ba1268784988b7cca32c2ec",
+    "after": "dc146e32599871d9c1ec94a473c779cde7136c16bf2c25925e26aebcf2926972"
+  },
+  {
+    "manifest": "data/en-translations/batch25.json",
+    "vi_slug": "gurokawa",
+    "before": "de175d45d392711294db9d15e24770c6213484d8d1493591c84e02e9c2df1ce7",
+    "after": "2adb4d0e34127286fd0ce4dd8803b1e207c223226c25452168a3bfc04d5a0b98"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-chan-vay-da",
+    "before": "ad13c7da9da76c86d3e2869fce946c9e9b78d0f2b7ae593baf997f42c7e664d2",
+    "after": "b5c9c3822fe5d65c45f525871d58f11593879e3d2aa63459a2ffd88a698fa2a2"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-ao-khoac-jean-nu",
+    "before": "472b1cc8a3aa4892d23391f7d25b07ca45f43774d7919975f3ba2ef3a9d6693c",
+    "after": "e855414584740684226adf645dca6ef6a5000fccb01de96540cbd7901e93810b"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-ao-gile-nu",
+    "before": "188a5d75734dc9c2c9857da98a8bce662b178a2c01ee0adf3f223a2e1bf02936",
+    "after": "b3760b6c5ea36b11453cfd74ddb4ee0866678dc96d1cb1e9b088f9ff28d4c3d8"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-chan-vay-xep-ly",
+    "before": "597123ba18e8fda5f37c6b19de1f59760644d15fc9444b0957d875406570eae0",
+    "after": "0d8e05d6a091377ebe828faf43d6c5f2c923b8e9f11b44712c5ab2c2f42befeb"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-vay-ngan-nu",
+    "before": "eefb96ec3b3afc0a900fb05ac933ae369c80990c2976bfb738f4f1828b6f7b61",
+    "after": "46ed175eaaf22298d0bcc5c05351ea4042451a3bd50ace96042828b8591d5e0a"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "slip-dress-la-gi-cach-phoi",
+    "before": "b971df95bc2f0be798d8ad05626314ec83f1d94c63819e290bc83f6ef3d9a45a",
+    "after": "d10b739576eb789451ed4861af7f56ac81e1b0556505dda9a90a38d6b42049f7"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "ballet-flats-la-gi-cach-phoi",
+    "before": "8fcc1e54b5ac9ad6d588a2a2c09ac768e629792c90cdf7d5d7ba89e6e86fe0a9",
+    "after": "890b2679e3d71b3db522a8ceb3b034f4eeec411ea8963339b50521bd6563c67d"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "outfit-nu-ca-tinh-di-concert",
+    "before": "8b4de41b9274ad061def470a83ae642f793940a0b46dcae03fe100d90a486613",
+    "after": "2c46461fece3a145f07396a4dc77f400531cfb734030b67690f6c071495289d2"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "phoi-do-voi-ao-blazer-den-nu",
+    "before": "f703acf6a345c4e7dd1c0f12cdad30f0120e64513b6aa0fba1d113bbca6a9ac4",
+    "after": "0f2064acbc31fe6298533c397935cfd07b36a1d89d5976849765c23fd8a106a2"
+  },
+  {
+    "manifest": "data/en-translations/batch26.json",
+    "vi_slug": "cach-chon-tui-cho-outfit-nu-ca-tinh",
+    "before": "896118eb76479430df247869369fc9d1f5382fb2d55a54d8b271241043db899c",
+    "after": "fd04d7c2325912cf9e34a843947a56e5d56d326b4c740055e78a0973c0625989"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "phoi-do-voi-quan-jean-ong-suong-nu",
+    "before": "ca87e0e92c16a6af961d39c978d8e8033ea28717e567e79045725244bfa363b0",
+    "after": "27249f851c08b838e96b66d1bf7780665da74e87b55a9208d082777103762624"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "phoi-do-voi-chan-vay-dai",
+    "before": "1dcedbb73b3da4bb9a94ec00b84c9ae6835845ad393698d227ef4ca40003a580",
+    "after": "4fe9e3f762b93ad8325a5d9ca182f542b9709ba3d991f8a1824a9fec3b97160a"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "phoi-do-voi-chan-vay-chu-a",
+    "before": "19e660a7911c0e3a1e10f39add66d8fb8e60d654789d82931380e24ed150adde",
+    "after": "793fbc17e468fad5b29b28bfb7440e76ce645875a6aa57a849a62113045c67d8"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "quan-ong-rong-nu-phoi-voi-ao-gi",
+    "before": "66c286c9a9ef351847883e009086135b814f0e4f3875d2418c4e23f424787c4a",
+    "after": "2947479e91a8a4e57667a6474d867798b7cf26e3ddc5b8549939bc3a88bdafa8"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "bodycon-dress-la-gi-cach-phoi",
+    "before": "875af638da74a5cb2b457e1023b9368649499baccf95482fea154e37f0aebf22",
+    "after": "e70f4bb17453b7390a0c6331c82af7da43c8104e2e56ba3e65cb74cc3253bf42"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "babydoll-dress-la-gi-cach-phoi",
+    "before": "c31493777326ab1080e4091d837446a775325358bc36ae2ed2528f2f75140dd8",
+    "after": "043641099b5a77c2b6e0629fb8141fd700156fa3a5bf57415825f194d63be759"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "giay-loafer-nu-la-gi-cach-phoi",
+    "before": "d4609864d2dc0ca7c8f83ee5b4526ebea04d00ecc0da7d08db04c337e5d16798",
+    "after": "2c1a89a725f0a643f8ee6c1d80312b2645d820e292d034fc82feda926425bbeb"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "phoi-do-voi-ao-so-mi-nu",
+    "before": "9cc08259cd098c1c6d98014c546a66dfa94f198cc4a39b5a8d2df587d8527b46",
+    "after": "77ad2e587cdf0eb40401a0432c1bd329fb1ed61368721672129e3a44ce3d5c76"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "chan-vay-tennis-phoi-voi-ao-gi",
+    "before": "a0ea34b9811f2bc93c78959ce521ce017b737a094cc048bfcfa158fa189888d4",
+    "after": "143c9a5c32d043255ab8d85b4d61b6556e185632aa9ff191fe7de343e86fc13d"
+  },
+  {
+    "manifest": "data/en-translations/batch27.json",
+    "vi_slug": "chan-vay-bi-ngo-phoi-voi-ao-gi",
+    "before": "c6023ed8df602faa2aec8ba70e8b6767943e78ff82294c093624d726a1812db2",
+    "after": "6a550f9fa361818d62d5f2dab98f5ac721728612633698f4738c3243c6890955"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-chan-vay-jean-ngan",
+    "before": "2fa50b7a57dab3cf4811585474b35aacb00f3e4743f16515b077110c14ef0304",
+    "after": "7aeafc9850027115bb6635d2a7bf021cdd30ae90e51ee3797f2db10108f4f644"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-chan-vay-jean-dai",
+    "before": "cbe47e104b3d56de3d7895c30b6a84d76a8024731844174890645d2e428e4914",
+    "after": "fea13439eddd7879e5a0d335067c51efc8e5941f67c370f5e57fb52ac575e28c"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-chan-vay-xoe",
+    "before": "d847b638d6f0a96d1d36b7289507eaf1ac195cb0aedc690a90bd0fb9d0e48af7",
+    "after": "178c45369f9d6500e072d72b0f23ea34d8070cc47c2114ae2255feccd3e682a7"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-chan-vay-duoi-ca",
+    "before": "46f76ef734903746f36ee98b0b3b1076930e95e1a486adc77ed8cd110ebe4695",
+    "after": "101227999aa63f9011acfce4e54d5e8ce0442cebee151a0340028e3d16ada232"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-ao-tre-vai-nu",
+    "before": "bf8857474f9a415f6ccc80e50a372d9bb1555871dadb0583db7ac4458287e45f",
+    "after": "3a761017c6ddb677aa6f215cc10f20a96225f17414484cf6c88a9b00d06379d1"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "ao-ong-nu-phoi-voi-gi",
+    "before": "dc1c05ea4bfe51042de64cef4c3a8dccb922d2073e17c857d9bcc845107b1d13",
+    "after": "3e06c6e063487316ccbe11d926bf933213dc7e35f95988007274f427ccd88dfe"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-nu-ca-tinh-mua-he",
+    "before": "838b0ebdcc8b74d1584644be0469257ccdb24a11d01fd250ab1806f006cbc658",
+    "after": "694dced68e1e0f70d050631b9769a51df3fb6ac8654f5549d3ebbd4a04a60144"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-nu-ca-tinh-di-choi",
+    "before": "586b4788f8f7d65414b778ec6c5de8b945881c2505421a7afc498b988dcb38a7",
+    "after": "8ccd20ea9d20f26e028c70f4cf3e15b879a5c49387677c7aada0d99f82da67e1"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "outfit-di-choi-dem-badgirl",
+    "before": "0bd71cac472a99a84fa114498e06bafe8db1f4b2cafe2c141a5b6b384d3eff58",
+    "after": "3d18045b35fb1f062cd923e5cdc1446958c421307b84fa7f4a797ae7382c24f4"
+  },
+  {
+    "manifest": "data/en-translations/batch28.json",
+    "vi_slug": "phoi-do-voi-quan-tay-ong-suong-nu",
+    "before": "280f973f3fbfec39f4792b32f024f185ace73ca4681ad80e34d2a676c9aa48ed",
+    "after": "4667f021425037cf7d1ef320dfd5cc98e1e6ea2daf5676c2a2f1f4f897cfde58"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "badgirl-outfit-di-cafe",
+    "before": "fe3dac7aaf0f62257bf61cdd18aea3396f98bfc6537218b152a671c0cb3ed4f8",
+    "after": "730b1d2921b970a0dfb8f796987bb5168cdef3b750e6a711dc07ffd0c9695a32"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "outfit-di-dam-cuoi-nu-ca-tinh",
+    "before": "565dcad684cb536ded88fd79af609cacad9a9bbb3cbb30e3cd0009e3c6b89ce5",
+    "after": "0a2468feff6d650bdd48d7931d80cdc52e03d098a4a84cf18eb95ddb192a46ac"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "outfit-di-bien-cho-nu-ca-tinh",
+    "before": "c173c0d8415e11d74334fb0758cc39a1e4ea6a13480fc9d40bec2466e969077c",
+    "after": "b5e06d9d61f9c4835d2fd68974d56a2c6de0562479385ce2637fdc819bf90ec3"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "outfit-san-bay-nu",
+    "before": "b159b0afb6a54e245d76487dfefc283157c4878225ce32d75416b06439eb3a97",
+    "after": "fee032fc44d6a9dd8eeabc3429d2919ca4ce3c46b820f1fa7ccda4acdb7e057c"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "femme-fatale-aesthetic-la-gi",
+    "before": "7927b6d56e4c3af014cae17bd7b6e0632addbee1da47bcce7541c92505d71c67",
+    "after": "e00c765453579af75296aaad65b1523932f00eab7e99fc14aba331b149db122f"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "quan-cap-tre-la-gi",
+    "before": "557157f83744233614dbb05b74cbe92158fb7a5f1d375e0dffc42c9de9157e37",
+    "after": "de7023325ae74775f98d0ee3ecf2dd0a67a0c9cf357d22b4a6aef3191f27ed24"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "croptop-la-gi",
+    "before": "a58ff08c8d6a7e31f14ba0b852163289604d4abc604c9be6e18914aee006af77",
+    "after": "22b468e0f78db6ae2a0ca34867b4de1dffdd6a74e05fff8863fb4162ae860785"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "phoi-do-voi-quan-legging-nu",
+    "before": "2f815ee7e69bec84180687bc7a4a1864cb33d0bef3ca4eafe70492265203f7eb",
+    "after": "658a8d532a53f9e69a3d1a4c54bbb67bbdeec6c7e1351027efd38e23eb23ae48"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "phoi-do-voi-quan-parachute-nu",
+    "before": "b2432655c8289f71f6997e27d70af3d9bf1908f0632a031ed222914f03070a89",
+    "after": "b6825634f2abed28ebe53f2b9643843e5c04eb449c8c34c84ffe2a5a57d47548"
+  },
+  {
+    "manifest": "data/en-translations/batch29.json",
+    "vi_slug": "quan-baggy-phoi-voi-ao-gi",
+    "before": "860630c9182ec507c92851000724a013e32d3731dd84ba7df720ab5b6304cad3",
+    "after": "10a8fd59472635ae1cf490a652a287ac06b80ab8e616dd1f26a9d45e3fc7f21f"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "quan-parachute-la-gi",
+    "before": "a22296f4ff378046970b41adbf0f26b72661adffc30b0ca2cc7ecc9430adf961",
+    "after": "17345d9288904d3ccc96afa6c38072d59f179957291d4b0530706321649006c7"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "quan-baggy-la-gi",
+    "before": "e62d95b2b7cdd41e7745fedcb5ab9c521d4c78f1c0808c23c85078da1cf08b6e",
+    "after": "a10416e8083eaa584e1fb72126e83138f1333a8bd524e5c7b9dac7c3bcb76cc0"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "quan-jogger-la-gi",
+    "before": "b26aa1f21331c39950b74728858d54b095c73dbd36525c91ad81bad20f1f6558",
+    "after": "8afab357cce720fbfdf9cc40617d1dfcbe04dbe3fd59eb3a5f0b31c7e7a47a80"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "athleisure-la-gi",
+    "before": "f579b8736075fdb9ff96c39fc78062f2bf19726b48c4355381d7d9ed2cc32587",
+    "after": "2f15f0529549f8bf0a89f6cdab228b5742744c8ddfdefbb4a008a966d9441baf"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "acubi-style-la-gi",
+    "before": "ded84d372410f0a7338b88150e8650874cdf3bbdf9768671edbf25dc63310522",
+    "after": "320dc35dce05903f4597393d6852892a0d868cca265e2f7754d5c86a73fb9c73"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "gorpcore-la-gi",
+    "before": "0609a470fdc21d9c1dffe13801b8d3300720f7ade5d50a653905809b8acc85c1",
+    "after": "b2ca10d2e788b0311ec7f6022aefc9bf2e00bffb83aad22395f80c9ca183e373"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "downtown-girl-la-gi",
+    "before": "acffa534422a68b25d5c50ed30ebdf97f3f6b843ca040e7f91fd09dbb818f716",
+    "after": "9f4447c431d53567150459c267b161260b8b68fb079784fc0f9547738f1a37f1"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "model-off-duty-la-gi",
+    "before": "74666f4ba41787aa6468aa71809ee177e44cada4b269975d1fd666d194d7b25f",
+    "after": "a05e7bf85fb7442f45142286a60c0499f9b55426f0ffa87ba8a4b7e16fc312dd"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "sporty-chic-la-gi",
+    "before": "92eca3625d5fc947347e20a88cb6f65d1a6edff1b591a87d5da1aa2ace88eaa7",
+    "after": "076e769c2197bcbe9e8a3cda90c1f6bfbee8ef5dd90f8d9af7fa77aff5fb73d3"
+  },
+  {
+    "manifest": "data/en-translations/batch30.json",
+    "vi_slug": "blokecore-la-gi",
+    "before": "0f2609fd0dccc4469befb374626c687967c90418fee390327ff7225ce4770624",
+    "after": "db59ca5f2a2d15f68f36e1c782def2b7b0f1030cf35b850b6ce6f9dddb8ce18b"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "office-siren-la-gi",
+    "before": "65199362bbbf5ea87cbfa241659a9d3b89b08977992aa4cd30599e7d4bc664dd",
+    "after": "7568e72aeba889080f9847ea557bb61488a1ae3a84111025afe47d5a71af73dd"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "avant-garde-fashion-la-gi",
+    "before": "f00a7b10bda74be5009078057ff524bcad4b5145cc0b668d78f06479346e2b3a",
+    "after": "0d67abb9ee930d976d2775ea8862b94174c47c397a32d14618839655791f4fb4"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "rockabilly",
+    "before": "20f650cb738609eab08aa0438737c66f3a43a76bb64172e8644aa05c7ce65c09",
+    "after": "5da7bf858c75e5d1d70e0b716a64cc35d8ac503463653498df1c34ddad18d13e"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "light-academia-la-gi",
+    "before": "79d0e60ae8de72d53b04ff2c974ec8ac73d1e93af475fb5dabd83b9b4962491d",
+    "after": "37510f74e8c72ef3ed340ad4e6dc276e8e22bf7704946de4a395f40afb4d158b"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "fairycore-la-gi",
+    "before": "2c49b3e2bf68887f6fd114de291a3bc18b27920a541b210ed4fa103c52ceb8ef",
+    "after": "8e52ad320529bc65b1ac35aa51811c58a92d0792ae2f14d09faa0683844c3577"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "angelcore-la-gi",
+    "before": "0423a7ab2b624deddc2119395c643f8f25ac42ca19c0cc364230a7c604ef93f6",
+    "after": "396ee4cf7d8c7105753c6b01485a74c55e60b797025689e13bac793093e7ddc7"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "mermaidcore-la-gi",
+    "before": "a03d5257f18baa8693910031a577278f6e040a5959b5ad4c7c1c754d0bb9b6c7",
+    "after": "e9459ff6932b320220807049c45a1aaee687a3d3f4c1dee3a189cb58cd2d7a23"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "mori-kei",
+    "before": "55eb166caa62fad6ea018a627ee86c55439ee893fc66466a0dd4b5cf433c7573",
+    "after": "f2c8d3825d18b693da46d66079b9b0a4bf29befbe81b2115be1b83298076665d"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "ouji-fashion",
+    "before": "db4273210694bb97418cf063cd4ddded102f5d878c0e303b85f8652259d00e90",
+    "after": "266135100b81c7d392af3c178ae50aaf3f31143da01c53f8aa92506339890f60"
+  },
+  {
+    "manifest": "data/en-translations/batch31.json",
+    "vi_slug": "cottagecore-la-gi",
+    "before": "b652c8c46e7755fa5a5d66625be52d53a514ec1b56ed5e8ab2441e64b7aabda3",
+    "after": "2902f1f4dce19cc1a4312c89bd924c88bd9abb23f8ccdba6fe19bb29d5d8a592"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "business-casual-la-gi",
+    "before": "e137fce70d143a8c6f281258d404de124754f57d81a56208bd08a7f2fa5e6664",
+    "after": "d01438b3f817a294fb5d3337a9c7b169a2fdf1494be5a9b40b61c25c1df1e383"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "smart-casual-la-gi",
+    "before": "f805460bf45717a087dab2e8a2e2e69bad84f27853e610ba76938abdc26cf485",
+    "after": "474178eec569ab52e0ee9b44f3d664d0a651ca23f2fa538e4a51f17459bbf366"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "power-dressing",
+    "before": "128534e131ac8fe1b1de759370ef3d22bfc2da8f3c84e403b4a367e27dd11113",
+    "after": "952f92c754adbeab972c551c93caec2bf7cd0d654fbbd66ebc7ff7147d4d8395"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "preppy-style-la-gi",
+    "before": "b8e46330922a286b8b82b5102a40f50f3d164e0a263a323632c500aa3f587037",
+    "after": "47ef00827a1e5f96d896939aaa4b6008d670002185dc833a310d49b7fb3fc60c"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "ivy-style",
+    "before": "4780ef504f2408a6d5a2a9caa062e4a1da8fa893d5f25909b0b47eba858f39c8",
+    "after": "b0c9abef2e46435138718411c178ec1f4f2aa274ccafec06184f75a6ab3d5b24"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "classic-style-la-gi",
+    "before": "1ceed257e16a3722664e37d4895de2a01cd740094d9af360a81f6bac8cda1dca",
+    "after": "eacffa4f710c153bf644cd391326585e543755a5425e8f0855bba197a506d697"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "casual-chic-la-gi",
+    "before": "80207b808dce378ba12225f4bd028b363a8b9f07fd6343522573889ec08f943d",
+    "after": "de89fbc78379d704ff36c7ff0c586bd23a4a2ca577a4ad41d28266c1c9500d64"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "quiet-luxury-la-gi",
+    "before": "67995e84097cb99a0fe03c1d861e9a038976bac3d46f960e1fd35e76dbc2038d",
+    "after": "2c1898db97c09219e9fca77d361aef6ae4563c9829de0f5c28f253cabd6a783c"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "old-money-la-gi",
+    "before": "9820573ffee1c841e6322aa110773f3fd975cdf75642b15fb463d594c52ec2df",
+    "after": "6494be2abfc2e0b1333c11aaca616498936131b8c0b3dbe345e5e771f91f8400"
+  },
+  {
+    "manifest": "data/en-translations/batch32.json",
+    "vi_slug": "balletcore-la-gi",
+    "before": "2c35141cb3ba593be92a662548d0d00b840f6947c21cab05898de780f48a1114",
+    "after": "62226144da758f08ee6d7d52a6dfa4b24e17163d01d4de886496143cfd3a70f5"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "phoi-do-nu-ca-tinh-cho-nguoi-map",
+    "before": "2a6886acf1a54f196d956022bb0aa3c3a5029eb7102a1849266a236e7f6be809",
+    "after": "31e857c4c1a17286b5b5a040f37df3963398c7a939522ffe6f1e86fe528ffa66"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "phoi-do-nu-ca-tinh-cho-nu-lun",
+    "before": "a370357245b5d6352a0180958c377ad4d36ceb5005af0cda0938fd504015fab6",
+    "after": "34b4e2017afcc74c514c8d219498f0f92e6e8ce7d34abbd03a702cc6f8dff19e"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "phoi-do-cho-nguoi-gay-alt-fashion",
+    "before": "663eec65f397e85087c87a2c6c0e637430d8f875f1fc7a9b1c6efce53c14ad8d",
+    "after": "5f931171fadf6a99d570c08ab5f8abdd166eff0f3bd7d1f13efda514a3658b0c"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "cach-phoi-do-cho-nguoi-beo-bung-nu",
+    "before": "51b56ed7054f373f0478f4ee5fa09992b334d3e588f82c2e9b7c1f4875af1652",
+    "after": "33395bdc8a8905b57bafb6eeb7ab757c9e08917734eddf00105cd33af8f74fe4"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "phoi-do-dang-qua-le",
+    "before": "f78c32070c9cc9932c4648d089689228f27487e6c8dc08f7c3fc39e3c210a121",
+    "after": "aa3eaa89353dd8a7d7fb6977cfd273f5d758f142a90f96ea522efc2c99ed0675"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "phoi-do-dang-tam-giac-nguoc",
+    "before": "76a71f2c0c14c40a8cd87b2aa748924ff9fb578bb5941a67cbe14daa6626a5eb",
+    "after": "f1ce613184819a933af7eea6c1d3158629ca9dc9d688ee7c8a6823e765f7329a"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "quan-baggy-cho-nguoi-thap",
+    "before": "2c5655697f9a8e2444c38f257646653fc2023be122eb410c2474971449a03944",
+    "after": "200b271e942b60309a1ef37e3812c274becdb43a4632b6eecc4c4739a2a0daeb"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "cach-khu-mui-boots",
+    "before": "914001ef4f502af83636c7f776a1dbc8299e3ed816dfe929681eb2c8cb38a65a",
+    "after": "a101d801d18ac1d2f9993c21f75e7180ea40b814e68b553ed2aba7585b47e9f5"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "cach-lam-mem-boots-moi",
+    "before": "fc537f55baa2c9b5a5d5bce0845ec3d0074e98ae742b7f1cb4f060eac8eceb62",
+    "after": "c1cc7b721febcc606371ab9749dd2c3bae1da81e21a39d9339142c9dc6b5b570"
+  },
+  {
+    "manifest": "data/en-translations/batch33.json",
+    "vi_slug": "ao-baby-tee-form-dep-tren-shopee",
+    "before": "dc586ae54f2a692563413b20d717e4f5072c747573dca231cc3f41b8497cdb6c",
+    "after": "9981f8163ca8287db71c41f72e530afbda8e8d08f34aaf7ed344898f9ea1fe9a"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "set-do-nu-ca-tinh-shopee",
+    "before": "21423bb5c37878f98a83bed7b0063cff317f8eba39e32f024cc4a0a69522435a",
+    "after": "2528cfe4baa7d5069cf03fd34d9d9fc30d533134ab11ee65128e6bad2bcf2bee"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "outfit-nu-ca-tinh-duoi-500k",
+    "before": "46529166d39ead9b4768c61453ee3d74a69091e9b3480f8e6a1b0cddc91847a7",
+    "after": "777dba1ad8d546ca87d46cb4cf19a288ba50318f731d10164f9f5ba0d1e02101"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "quan-cargo-nu-mua-o-dau",
+    "before": "eaf65adad856d3561b674626e9d306ed210fe37f6897c71ad6acb3301e6af12d",
+    "after": "c32eb2a27ec56d27944f45aef4839cf2c9cdf1328d49efd38ceeac33ab5ee879"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "boots-de-cao-nu-duoi-500k",
+    "before": "7fa81e2ccb920617f03a3e451b5d508bdf2fa4d178cb9ed3c2f2e9d4f8531d95",
+    "after": "801c5f3b822aa28703032d38b102f0d28694ba8589533dd48b7080d0b181e596"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "phu-kien-egirl-mua-o-dau",
+    "before": "69febed1c45b831e4c52eefa551c7b6d78ac37affc2555f8288584947f77e21e",
+    "after": "dd28a140b69a80bbef31b4c6cdaac8733ea2455ee3ed06d42f314fafb1c11ef9"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "do-goth-nu-mua-o-dau",
+    "before": "1b53f001d316c832576e10195df5fdae946999db242e0dd26c4d8a6fc956c6fd",
+    "after": "2a8374e15ce8870ccd5e3a864dca698dbd7c61be4147c948fa68d8aea3c38c3c"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "outfit-egirl-duoi-500k",
+    "before": "d065f9be9c7b8d5c9bfb88886b186f18fc8d2f776c1d2f76924047a52fa81a1c",
+    "after": "52c8189d3d9a2c120189b0399a8bbdcd40fbf6e8177a8d0831e8c8c3eccef0e8"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "set-baddie-duoi-700k",
+    "before": "e19af05e026660c6704172c01ee173f9887ed789d8ec2976127247ac7782aa50",
+    "after": "bff472b3b4555b5d85bd44f63fb9a3b16775bd1770c03bce75eb35aa9beda501"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "ao-corset-nu-mua-o-dau",
+    "before": "5b2f8014f5a9fd67829275ab65ed72905e486b99f00c9ecd418b80b6b040d75a",
+    "after": "63c7c3c218d8750889a4d8ee126baf4d8aae65f94e837f69b7f0c31d496b6726"
+  },
+  {
+    "manifest": "data/en-translations/batch34.json",
+    "vi_slug": "ao-khoac-da-nu-mua-o-dau",
+    "before": "c34dd6a5c4cbd53c9c093539f408fb6c6072a027a9a66488e1a88fa8ee972ef3",
+    "after": "c580e1d2c01632afdf75945b9589f1b7068dac6bd399cd6d225dbf499e5f06d6"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "ao-khoac-bomber-nu-mua-o-dau",
+    "before": "a4d2f407ee3dfcbb59fdc0df5f39d49e6b96542d518ccb80726b13a6c59a61b4",
+    "after": "18d088af91b3384a459970c665024b83e3c7bbd2b5dc7415378abfa4006ff16a"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "aesthetic-la-gi",
+    "before": "f5d9baf4d5a1844f1264f8baa8748b1dc76f7114256b25dce68de9e64e0239c0",
+    "after": "72cc867df0894aadd8734dcca3dc4c5aa8c27b508af0c6bcdeea40cbcde7a90e"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "streetwear-la-gi",
+    "before": "7e4a2d15df7924ed1894ec6ecb3c25c146673f7f5f4c2793d3729ce1c9404baf",
+    "after": "be4b6f64dce0cb75425cef34f47edca993bb5bbafddbc40b3bd575207285af4f"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "local-brand-la-gi",
+    "before": "95ba5427893fb51527b54a96594a78dc7feb2d3227390ac85872b8caef6e6b3f",
+    "after": "a44c8139907fb61811b25177275a13a9c64804a542ad42566e58c188f739101f"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "cach-tao-moodboard-thoi-trang",
+    "before": "f1e014f038152c2f43ea65ad2c91c73d19c20fef994e4fb7f021e18bb278c067",
+    "after": "ff89a15f2626523379672289c2e1540976358b9412099c78a0d658971f8c0a0e"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "cach-chup-anh-ootd-dep-bang-dien-thoai",
+    "before": "b35de052cb3517ddc21c7191c47f42ce59a2e7c4beebf15bfab5756afd1cf16e",
+    "after": "c67d449f5aeaee47bbc75cf41641e808daad87e6d44a671dfcd4724d06e822a6"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "badgirl",
+    "before": "1eb5e0141d023500ab3b109c44ab6c7db0086612dc5d6b64b355bddf1264dbf0",
+    "after": "cc53b70f115bf03746fb9f5008a2608be49e5532d8a664d8c705ef763961eb16"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "normcore-la-gi",
+    "before": "878d7947d1d624102fdfcaf4c9114a43532f640d846ca18756a4156e12af0501",
+    "after": "73bf667a6e7ee9d5747aee23bbfa29683fb7efe14ee13913e07090367d0fc414"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "vintage-style-la-gi",
+    "before": "831a714656d3e045ea285e439bfd14d78e82f21857a4d5785548fe4c7ee078d4",
+    "after": "badcbd7da6164f75c6ec1c7bd765e82227249180a89c5ee1bd6d30519c38347a"
+  },
+  {
+    "manifest": "data/en-translations/batch35.json",
+    "vi_slug": "boho-chic-la-gi",
+    "before": "7ea212b93608e75d69c72cd73583b18e42a042873893578acb5dd5151437945c",
+    "after": "6cf367307a42f9d5c3fbe47b91991eca400828593c56ec1abedf5858a61ba5b3"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "mob-wife-aesthetic-la-gi",
+    "before": "8ed21799e7cdb84e3cc094385e2fada20e2fc57cb2509efaf2bf9fdfeb56c38d",
+    "after": "f7ca90c5adaed3c5843cd1981e335e1fd57e5d333a0457056fde5af7628551e4"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "clean-girl-aesthetic-la-gi",
+    "before": "f18ca593e7a8761f2eadaed6f02f9bafd4279443218bec82c7884a36f568c91b",
+    "after": "4edbc961d736d7b7ef272a7627a9ed86a8d167615ee77ceb5b5640f104774ef9"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "dark-feminine-is-not-a-trend",
+    "before": "b085cac83d82fa333cd80cfbd1d6407cdc43605fb98c426580b758ebde38bdc3",
+    "after": "8eeeafa1f8bd2754626543a931e21b19f33357c33f1605b700d3ac36f451a478"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "the-art-of-burning-out",
+    "before": "d83229da54bdeac291507e60df09c873407a4fab3680841d5621cbc2b27e9483",
+    "after": "b3d6eb66080958a2d5551e7f39438dc0543f6cd51d2bab415041ad35ff843ef5"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "cutecore",
+    "before": "5756010c5d50512d907901df0240343865cbca717bf4e8165be6ae82377c0b0b",
+    "after": "c95a3f45164e8f431aa6bfe8aaa98cd571e37105db8133e8db1ad266370830b4"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "kidcore",
+    "before": "00e4e69a86b565a8d2731abbbcfb32dab9c41c24ee7ff841c98c5f1e8a151883",
+    "after": "635c092465f01cd2549d4d5b689af1c82543659205e497a919bc93d40409b320"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "barbiecore",
+    "before": "3328e2b88ec5fea50973442c4b85db3bf03af9bf4175bb64054e8430cd3e0b58",
+    "after": "43153a8e63bbe6d26182d1e21de06cff3de3385e1642a8e141f0c10f98a694ec"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "mcbling",
+    "before": "3c0c0c68610f78a9867aa8b8dcdfc30f05eb8eeadffe28dca226460e1b4b4717",
+    "after": "7c7b5b905660b95688b4eed97267655cce5eb38eb1741f386c4e38d99605cdf3"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "parisian-chic",
+    "before": "c6fe910397c9ba04fc3a594bfb1ec5db9715b6be308588db9de8a21268beffd5",
+    "after": "cc1e3b7b9cd946b78faefb763def770313eb6a0a6e72543676be6da4aebd76f9"
+  },
+  {
+    "manifest": "data/en-translations/batch36.json",
+    "vi_slug": "geek-chic",
+    "before": "ab6e44a5903aed1f775cfa489e6e08b49331f0621bb621c5fecfbd6470ed5411",
+    "after": "3cc3ea72fd87c78fb5ce92379f26dfbfef144d1d730e005e92b2b49f77708bb1"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "mua-sam-alt-fashion",
+    "before": "f99dd317286ded5a7a980ca69f53c458f53bd4cb1e282fd3a921d421adb2e881",
+    "after": "c0c579e87f4d0d5460fd6df45b9c0bd6ebfe8c8957fb98c6ac3a85cad8b0f79d"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "aesthetic-dictionary",
+    "before": "ff058981fc3e0585a284fbcf9c9cba8061497521660d7fdee482b8965d9368ea",
+    "after": "957053195fdba84608fd2e873211301c211711b619eceb459a92b995d8a372f0"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "phu-kien-thoi-trang-nu-ca-tinh",
+    "before": "b455b8cb4ee6812220ec57209278c976c44eb1af1416578f5ca9d7ae6e95efca",
+    "after": "674366650688156d320ee438f603dcfc3cb0386a987dca722c3fd0e1e308c54c"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "gyaru",
+    "before": "3ad74db94b7fef5cb2f6d461c1be7af0fb97402715a4bbd7434e1365dff229ed",
+    "after": "8f5df6bb30ec9b7b0331f87e293e6545263c19bd2e83791e43c1b2b893f06ad3"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "harajuku-style",
+    "before": "0b318154167adcb5af1bb6c095853e97e63b9091ab404d2bb6d71e30efddff89",
+    "after": "1e9a89b871a13b9d138d7ed6bd1466aa27de355c603d3d944759faf00ea2232c"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "ganguro",
+    "before": "1082d0ca6aa7ac5337d822dcbe96c1a4b722ad032b2f59ea087d6fa94996da3d",
+    "after": "0b019dc031210626b2dbc1575e2f4a1513b5e22d841a7405c6d3070a469acc3c"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "kogal",
+    "before": "506b4d0e4b4976e89ca97cb857d5e7a135c969a806cd36c42166d1f8fab6a158",
+    "after": "8e33686e47f1503aa44c7b59c0376d50332c093d8dc21654ec23e01e665d835a"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "amekaji",
+    "before": "3681a214356f17ad1b346d69b47854098bad6d76d4dbc6bf6c50360834f068e7",
+    "after": "4516023bf7e07f2be510e1e643b0074b119c7d6dbce27ef4f7fb52e390ae48d9"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "heisei-retro",
+    "before": "ce870a1e4b1886bd91d80f87bafdda92b403d386a253941cd8e519e7e7b0fafd",
+    "after": "004e559362a05e789bf4920aa598e0dddc90defb7909e5bf2f4ebb74c5083d86"
+  },
+  {
+    "manifest": "data/en-translations/batch37.json",
+    "vi_slug": "hime-gyaru",
+    "before": "012b1e59ac5c55fd773dfb31e6245db7aa60786d9e4ba25e183a8d8e8141dd06",
+    "after": "47211a3f5a4a7f38993167527457ede63a7f51aa5642810d72e59999ea1eb01a"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "chicano-style",
+    "before": "68855e41a21900b937143da158faf411bb61c113818a7fbd623f1bd120e8e80f",
+    "after": "777ccd710fe7eabb0568af6503cd5da5caf775a1d1ff2dc984cabba86c770da5"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "hippie-style",
+    "before": "2a8ac9c806fe4938356e60e013fb97928b5df6e9cad887c537e30ea46c13c1a9",
+    "after": "8f41abc76c4c5971e0cc9d29fd703d6d1a0f72a22f07e2fa3e8807922a578f18"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "new-look-fashion",
+    "before": "8d59fddcab5cd8782fb4faca614ccf3b7fe9f85b6ee2ca4e512840daa4613f24",
+    "after": "f48543c1db1697ffc341e0ab71fc76ff7a255e3c5555daf9a0c8e1cfeba39a39"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "ulzzang-style",
+    "before": "93c6f6875cc75b2e26e89fa321722dc2942c999a724a7c9118ba7bcdbcc63fb5",
+    "after": "7a588989e57fbf8d96369c4159ad3e15328e7ae090c74994e11136aa2135aeea"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "1950s-fashion",
+    "before": "8d0476fa1a9b38f8ec1fab6978d8b8a7d60878d1f68c928d0f1f3f4e84b2a60f",
+    "after": "007485294e433a33b06bb12e3e0642c24b6af54307178c4802b4522d00806509"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "japanese-streetwear",
+    "before": "6b9aa17a1b3cd68a1eb929ae9f065025b833770296ef270eda6271a15947245a",
+    "after": "14cb790eaa98fca502c07dfe3e04afcc952fe128c017e71344cddfa4c30313b8"
+  },
+  {
+    "manifest": "data/en-translations/batch38.json",
+    "vi_slug": "1930s-fashion",
+    "before": "547887690f70ec1294525db9623666b95d57d4e4a1d9d53ae80d6ab0892a793a",
+    "after": "adb81401597130ea4cc7cfb6dd2dd41d933035d41701a10cce521d56a3fc41f5"
+  },
+  {
+    "manifest": "data/en-translations/batch39.json",
+    "vi_slug": "solarpunk",
+    "before": "6fba2967acbd0b6063e22fc9e871e19139365bd61e35b53463653fcf7afe29a3",
+    "after": "3851e3ec5f23a7a0e8ef44cd78a9f78de71b76b151f00d533f8db5627fe76c54"
+  },
+  {
+    "manifest": "data/en-translations/batch39.json",
+    "vi_slug": "white-on-white",
+    "before": "4ec104005cbfeee82f1ee2d82e7c881b74cdc88c65bbe5a79d32bfee96975e35",
+    "after": "e2d7e718964e84761718a1fe722b8a7c664160a361249939c2411ef82ba13d70"
+  }
+]

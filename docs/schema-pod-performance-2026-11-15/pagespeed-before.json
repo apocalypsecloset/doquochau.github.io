@@ -1,0 +1,17 @@
+{
+  "url": "https://pagespeed.web.dev/analysis/https-apocalypsecloset-com-blog-html/35de98jukg?form_factor=mobile",
+  "page": "https://apocalypsecloset.com/blog.html",
+  "mobile": {
+    "performance": 87,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "FCP": "3.1 s",
+    "LCP": "3.1 s",
+    "TBT": "20 ms",
+    "CLS": 0,
+    "speedIndex": "3.6 s"
+  },
+  "fieldData": "No Data",
+  "observed": "2026-11-15"
+}

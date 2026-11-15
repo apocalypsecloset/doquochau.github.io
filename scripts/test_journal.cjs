@@ -24,3 +24,18 @@ test('journal exposes every article without JavaScript and supports pagination, 
   while(!more.hidden)more.click();assert.equal(visible().length,438);
  } finally {dom.window.close();}
 });
+test('Vietnamese journal reconstructs every original search string and retains load more and reset',()=>{
+ const {execFileSync}=require('node:child_process');
+ const old=new JSDOM(execFileSync('git',['show','22b72f2:blog.html'],{cwd:root,encoding:'utf8',maxBuffer:2e6}));
+ const expected=new Map([...old.window.document.querySelectorAll('#post-grid a.post-card')].map(c=>[c.getAttribute('href'),c.dataset.search]));
+ const dom=new JSDOM(fs.readFileSync(path.join(root,'blog.html'),'utf8'),{url:'https://apocalypsecloset.com/blog.html',runScripts:'outside-only'});
+ try{
+  const w=dom.window,d=w.document;w.scrollTo=()=>{};
+  const code=[...d.querySelectorAll('script:not([src])')].find(s=>s.textContent.includes('const BATCH = 12;')).textContent;
+  w.eval(code);const cards=[...d.querySelectorAll('#post-grid a.post-card')];assert.equal(cards.length,expected.size);
+  assert.ok(cards.every(c=>c.dataset.search===expected.get(c.getAttribute('href'))));
+  const visible=()=>cards.filter(c=>!c.hidden);assert.equal(visible().length,12);d.getElementById('load-more-btn').click();assert.equal(visible().length,18);
+  const input=d.getElementById('post-search');input.value='polyester';input.dispatchEvent(new w.Event('input'));assert.ok(visible().length>0);assert.ok(visible().every(c=>c.dataset.search.includes('polyester')));
+  input.value='';input.dispatchEvent(new w.Event('input'));assert.equal(visible().length,12);
+ }finally{dom.window.close();old.window.close();}
+});
