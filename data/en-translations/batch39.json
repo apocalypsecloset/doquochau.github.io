@@ -6,7 +6,7 @@
     "description": "Explore solarpunk ideas, natural colors, practical layers and six everyday outfit formulas, with distinctions from cyberpunk and cottagecore.",
     "primary_intent": "Ecological future aesthetics translated into wardrobe choices; distinct from sustainable-fashion lifecycle advice and cottagecore nostalgia.",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "c28cf4b3d267a96e91b872e1b7920cd9b01cfeeca6f2f0b7dfdf60099a225624",
+    "source_sha256": "317f83468934643fcd10a01b567aa4d426ed6150421f0e065d7a07f566939c20",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -17,7 +17,7 @@
     "description": "Build all-white outfits through undertones, fabric texture and clear proportions, with four practical formulas and accessories that finish the look.",
     "primary_intent": "All-white tonal outfit styling across texture and proportion; distinct from minimalism as a complete wardrobe philosophy.",
     "role": "OUTFIT_STYLE_GUIDE",
-    "source_sha256": "a60a1df6be0e2967a7b917982af3802c398e92b0f5e0c1e9cf0fb2dad6ff7af2",
+    "source_sha256": "95c4d8d72de521a31b35cb41644d37f751583835dc8888b469fb1b6fefd472f6",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   }
