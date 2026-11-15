@@ -17,7 +17,7 @@
     "description": "Find specialist guides to alternative fashion, Japanese subcultures, historical clothing and internet aesthetics through a structured fashion directory.",
     "role": "NAVIGATION_HUB",
     "primary_intent": "Style-name lookup and guide navigation, separate from what-aesthetic-means definition and every individual style specialist.",
-    "source_sha256": "ca0d2950298519f0c90c76384a5d6a04664bbebb7b10abc0979995fe221a88e0",
+    "source_sha256": "ff058981fc3e0585a284fbcf9c9cba8061497521660d7fdee482b8965d9368ea",
     "published_date": "2026-11-05",
     "source_kind": "hub"
   },
@@ -28,7 +28,7 @@
     "description": "Choose accessory placement, proportion and visual weight, then explore focused guides to chokers, fishnets, belts, bags, chains and warmers.",
     "role": "ACCESSORIES_HUB",
     "primary_intent": "Accessory decision framework and navigation; not the dedicated necklace, choker, bag, belt, chain or leg/arm warmer specialists.",
-    "source_sha256": "3dd85512e68823702ec115eb1462b67b2cdfc5119056e0ec2ae188fab77a3fbe",
+    "source_sha256": "b455b8cb4ee6812220ec57209278c976c44eb1af1416578f5ca9d7ae6e95efca",
     "published_date": "2026-11-05",
     "source_kind": "hub"
   },

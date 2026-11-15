@@ -22,3 +22,11 @@ def publication_rows():
 def sitemap_vi_urls():
     """Require all original pairs and every explicitly approved publication."""
     return {r['vi_url'] for r in rows()} | {r['vi_url'] for r in publication_rows()}
+
+def catalog_urls(lang):
+    """Every published translation plus the two original English-only articles."""
+    assert lang in ['vi','en']
+    urls={r[lang+'_url'] for r in rows()+publication_rows()}
+    if lang=='en':
+        urls.update('https://apocalypsecloset.com/en/blog/'+slug+'.html' for slug in ['how-to-style-gothic-graphic-tees','goth-vs-grunge-style'])
+    return urls
