@@ -7,7 +7,7 @@
     "primary_intent": "Goth collection navigation; definition pillar, substyles and graphic tee styling remain separate",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "5fcdca50e77ed7dba0ccea3b1c2fc663995a6e2019ac6706ba68921298882d01"
+    "source_sha256": "63c57519a279e9dc472be9eae9f3d23931e405a14c125c9a0ffa7767c6bf62e7"
   },
   {
     "vi_slug": "egirl",
@@ -17,7 +17,7 @@
     "primary_intent": "Alt Girl umbrella and E-Girl collection navigation; E-Girl definition and Scene or Y2K specialists separate",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "678c04f301cfe78dddaf59f9e37571b421fc4dabf30ffad81f69a0806d773fbe"
+    "source_sha256": "646cd40110e53b23c43f5ffc95f459efb7a4b25e5197f4dcfad2e3b1e5e68ba9"
   },
   {
     "vi_slug": "punk-grunge",
@@ -27,7 +27,7 @@
     "primary_intent": "Punk and Grunge collection navigation, not another Goth vs Grunge or Grunge vs Punk comparison",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "64cce2f5703811285230daad81d4585ab5af26eb96d20423319900d7136914e2"
+    "source_sha256": "9b6d49892fefb801b23add0a0488240ae49475519e4e21742ce9308d4dcb30c2"
   },
   {
     "vi_slug": "dark-feminine",
@@ -37,7 +37,7 @@
     "primary_intent": "Dark Feminine collection navigation, separate from seven-formula outfit specialist and editorial essay",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "5f2f7dcb4322079f6604138f4410614a6fca6b5fb5ab0f48e98972921e92e9bf"
+    "source_sha256": "ae05dc0820318bf63d43bd5fa72d31f97c349e81bf7dc8251493ce6f5a92062b"
   },
   {
     "vi_slug": "baddie-streetwear",
@@ -47,7 +47,7 @@
     "primary_intent": "Baddie streetwear collection navigation, separate from Badgirl definition, occasion outfits and item specialists",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "d9bdd35563ef2af84b59fecb62dc30b7af65f06030e87e411b3360b4d4805469"
+    "source_sha256": "b9a9f7d6753659cf73a18daf15fb4e200b89a89359149c6ac2890e7a606a9f61"
   },
   {
     "vi_slug": "phoi-do-theo-item",
@@ -57,7 +57,7 @@
     "primary_intent": "Top-level garment-guide directory; routes to category hubs rather than duplicating individual item answers",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "656d9419d0dc46bac7d0e86ce82010be83f5001f7d884062818b2e7d9a6ec2d7"
+    "source_sha256": "0561ec8096ce23d474b4b00687895f4d4396eef44fc2781598dabfe4cd4145f2"
   },
   {
     "vi_slug": "phoi-do-theo-ao-nu",
@@ -67,7 +67,7 @@
     "primary_intent": "Upper-body garment navigation; tee article and gothic graphic tee specialist retain distinct styling intents",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "3e6246409b9653d9d28994593dbc31dc9bb5b00c36c28f561c708d639bc6764f"
+    "source_sha256": "4fe1b8bdd6ed5569e6b69b59299700f68b014c2ca120fa838a499d87b77092a5"
   },
   {
     "vi_slug": "phoi-do-theo-quan-nu",
@@ -77,7 +77,7 @@
     "primary_intent": "Trouser category navigation; construction definitions, fabric comparisons and outfit formulas remain separate",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "7a592a4280d9055ede4677a1b46f2f1f363a808f8c037c5370c7b814735a89aa"
+    "source_sha256": "3518123a37c25c48db39b4f27968ec75f9267fdb060c4c17c6875bffa6467a1f"
   },
   {
     "vi_slug": "phoi-do-theo-chan-vay-vay-nu",
@@ -87,7 +87,7 @@
     "primary_intent": "Skirt and dress category navigation; long black, denim, mini, midi and pleated specialists retain own targets",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "83118264d22b008c08ca68eeed2a61a15e43c6d4fae0a9f68c02b2bb1924ea4b"
+    "source_sha256": "f13576a5b0c8d987f1860962a46ba8e402dfc5a526301baf4a0cd715c991fc11"
   },
   {
     "vi_slug": "phoi-do-theo-giay-nu",
@@ -97,6 +97,6 @@
     "primary_intent": "Footwear navigation across definition, comparison, styling and care; combat-platform comparison remains separate",
     "role": "CATEGORY_HUB",
     "source_kind": "hub",
-    "source_sha256": "db8cce19be3587f7a210191fce3f311cb06346fd20f8a031e591ea4621028147"
+    "source_sha256": "8495a4f0f85f3bfc56e36f96e4d8f59560002264bb9457de0ac7fdd19d955eed"
   }
 ]

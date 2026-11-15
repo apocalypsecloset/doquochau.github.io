@@ -1,3 +1,4 @@
+from reviewed_maintenance import predecessor
 from audit_metadata import approved
 """Release gate for complete translated collection hubs and their bilingual routes."""
 import json,csv,re,sys,hashlib,subprocess,posixpath
@@ -52,6 +53,8 @@ for c in configs:
  check(v.select_one('link[rel=canonical]')['href']==viurl,slug+': VI self canonical')
  for lang,href in [('en',url),('vi',viurl)]:check(bool(v.select_one(f'link[rel=alternate][hreflang={lang}][href="{href}"]')),slug+': reciprocal '+lang)
  baseline=subprocess.check_output(['git','show','HEAD:blog/'+c['vi_slug']+'.html'],cwd=ROOT).decode()
+ baseline=predecessor('blog/'+c['vi_slug']+'.html',baseline)
+ current=predecessor('blog/'+c['vi_slug']+'.html',current)
  baseline=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',baseline,flags=re.S)
  check(normalize_approved_maintenance(re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',current,flags=re.S))==normalize_approved_maintenance(baseline),slug+': VI preservation outside approved footer maintenance')
  results.append(dict(vi_slug=c['vi_slug'],en_slug=slug,source_segments=len(texts),en_words=len(a.get_text(' ',strip=True).split()),cards=len(cards),images=len(a.select('img')),headings=len(a.select('h2,h3'))))

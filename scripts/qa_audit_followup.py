@@ -3,10 +3,12 @@ import re,json,subprocess,sys,html
 from pathlib import Path
 from bs4 import BeautifulSoup
 from audit_metadata import approved
+from reviewed_maintenance import predecessor
 ROOT=Path(__file__).resolve().parents[1];BASELINE='490cb5f';D=ROOT/'docs/audit-followup-2026-11-15';errors=[];checked=0
 before=json.loads((D/'before.json').read_text());duplicates={r['page']:r['image'] for r in json.loads((D/'duplicate-images.json').read_text())}
 paths=set(subprocess.check_output(['git','diff','--name-only',BASELINE],cwd=ROOT,text=True).splitlines())
 def body(raw,path,old=False):
+ if not old:raw=predecessor(path,raw)
  raw=raw[raw.index('<body'):]
  raw=re.sub(r'<script\b[^>]*\bsrc=[\"\x27]https://static\.cloudflareinsights\.com/[^>]*></script>','',raw,flags=re.I)
  raw=raw.replace('href="/en/"','href="/"').replace('https://twitter.com/intent/tweet','https://x.com/intent/post')
@@ -42,7 +44,7 @@ for path in sorted(paths):
    faq=next((n for n in nodes if n.get('@type')=='FAQPage'),None)
    if faq:
     pairs=[]
-    for section in s.select('.seo-faq'):
+    for section in s.select('.seo-faq,.faq-section'):
      for detail in section.select('details'):
       if detail.summary and detail.p:pairs.append((detail.summary.get_text(' ',strip=True),detail.p.get_text(' ',strip=True)))
      if not section.select('details'):

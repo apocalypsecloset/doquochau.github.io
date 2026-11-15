@@ -63,3 +63,14 @@ test('transient saved-cart failure preserves the ID, expiry clears it',async()=>
   h.setFailure(410);h.w.document.querySelector('#ac-cart-retry').click();await tick();await tick();assert.equal(h.w.localStorage.getItem('ac_fourthwall_cart_id'),'');
  }finally{h.dom.window.close();}
 });
+
+test('static catalog remains readable without JavaScript and live schema uses real available prices',()=>{
+ const d=new JSDOM(fs.readFileSync(path.join(root,'index.html'),'utf8')).window.document;
+ assert.equal(d.querySelectorAll('#ac-product-grid .ac-static-product').length,2);
+ assert.ok([...d.querySelectorAll('#ac-product-grid article')].every(c=>c.querySelector('img[src]')&&c.querySelector('a[href*="fourthwall.com/products/"]')&&c.textContent.includes('29.99')));
+ const raw=JSON.parse(d.getElementById('ac-product-schema').textContent);assert.equal(raw['@graph'].length,2);
+ const result=model.productSchema(product(),'https://shop.example/products/test');
+ assert.equal(result.offers.lowPrice,'29.99');assert.equal(result.offers.highPrice,'31.99');assert.equal(result.offers.offerCount,3);assert.equal(result.offers.priceCurrency,'USD');
+ const empty={...product(),variants:product().variants.map(v=>({...v,stock:{type:'SOLD_OUT'}}))};
+ assert.equal(model.productSchema(empty,'https://shop.example/products/test').offers,undefined);
+});

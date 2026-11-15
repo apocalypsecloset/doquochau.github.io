@@ -239,6 +239,9 @@ function createDemoCard(product,slot){
   return card;
 }
 function paintCatalog(products, featured){
+  const structured=document.getElementById('ac-product-schema');
+  if(structured)structured.textContent=JSON.stringify({'@context':'https://schema.org','@graph':products.map(p=>model.productSchema(p,SHOP+'/products/'+encodeURIComponent(p.slug)))});
+
   const showDemo = isLayoutPreview() && products.length < 6;
   const fillers=showDemo
     ? Array.from({length:6-products.length},(_,i)=>createDemoCard(featured,i+1))

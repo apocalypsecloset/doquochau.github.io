@@ -48,6 +48,20 @@
     return {currency:v.unitPrice.currency||'USD',value:Math.round(Number(v.unitPrice.value)*quantity*100)/100,
       items:[ecommerceItem(v,quantity,name)]};
   }
+  function productSchema(product,url){
+    const list=available(product),currency=list[0]?.unitPrice?.currency;
+    const priced=list.filter(v=>v.unitPrice.currency===currency);
+    const result={'@type':'Product','@id':'https://apocalypsecloset.com/#product-'+product.slug,
+      name:product.name,url,image:photos(product.images),brand:{'@id':'https://apocalypsecloset.com/#organization'},
+      color:colors(product),size:[...new Set(list.map(size))]};
+    if(priced.length&&currency){
+      const prices=priced.map(v=>Number(v.unitPrice.value));
+      result.offers={'@type':'AggregateOffer',url,priceCurrency:currency,
+        lowPrice:String(Math.min(...prices)),highPrice:String(Math.max(...prices)),
+        offerCount:priced.length,availability:'https://schema.org/InStock'};
+    }
+    return result;
+  }
   const expired=error=>[404,410].includes(Number(error?.status));
-  return {color,size,available,colors,sizes,variant,photos,colorPhotos,cartItems,total,ecommerceItem,eventForVariant,expired};
+  return {color,size,available,colors,sizes,variant,photos,colorPhotos,cartItems,total,ecommerceItem,eventForVariant,expired,productSchema};
 });

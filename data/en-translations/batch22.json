@@ -6,7 +6,7 @@
     "description": "Understand alternative fashion as an umbrella for personal style, with Goth, Punk, Grunge and E-Girl references, visual signals and practical starting points.",
     "primary_intent": "Broad alternative-style definition and cultural umbrella; beginner action workflow and navigation dictionary remain distinct",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "2e230271d4e0cc498328a4b33bd8eb63cc04fc93f64cd68cc27c000f687094b8"
+    "source_sha256": "0972db7e58a1fac9d5b3c9c739e62758d6c643f0d37396ac1aad4efa72f0ed41"
   },
   {
     "vi_slug": "cach-phoi-do-den-khong-nham-chan",
@@ -15,7 +15,7 @@
     "description": "Give black outfits depth through seven techniques using texture, silhouette, tonal differences, jewelry, layers and negative space.",
     "primary_intent": "All-black outfit technique and seven approaches; laundry, thermal comfort and general multilayer geometry remain separate",
     "role": "TECHNIQUE_GUIDE",
-    "source_sha256": "43ae0f373b9a51bf5f0787714918ba5fa8c7f9619f75e4a799ceb38ed53f7dd1"
+    "source_sha256": "4a599ea8498d0a73e687e98d4a9fbfc40396f37ccee8291a4200d75fb1bd7ac4"
   },
   {
     "vi_slug": "y2k-dark-aesthetic-khac-gi-y2k-thuong",
@@ -24,7 +24,7 @@
     "description": "Compare Dark Y2K with broader Y2K styling through color, proportions and hardware, with five outfit formulas and practical wardrobe adaptations.",
     "primary_intent": "Dark Y2K versus broader Y2K styling comparison; Cyber Y2K specialist retains futuristic definition intent",
     "role": "COMPARISON",
-    "source_sha256": "48e37bed25c56e31c416612cb618bd71990cc3ef03cd9c9025c89419467b62cb"
+    "source_sha256": "b84d426724bbfb4b08383eb1ce189abe05a598fcc5dff0f32d86084006050200"
   },
   {
     "vi_slug": "tu-do-alt-fashion-1-trieu",
@@ -33,7 +33,7 @@
     "description": "Plan a small alternative wardrobe within a VND 1 million ceiling using existing pieces, purchase roles, fit checks and a reserve for contingencies.",
     "primary_intent": "Fixed VND budget allocation model with reuse, not current price listings or broad long-term wardrobe foundations",
     "role": "BUDGET_GUIDE",
-    "source_sha256": "0012a2cee9b7eab8b98eee043e26bfb3aa25690de226b7e4ed1e79b7401f5433"
+    "source_sha256": "59e18983785e3b020f5ebcba3a23c754354d5884c02f88ff8acf5a91c6bfa64d"
   },
   {
     "vi_slug": "kieu-toc-punk-nu",
@@ -42,7 +42,7 @@
     "description": "Explore nine Punk hairstyle directions, from shags, mullets and choppy bobs to braids and temporary streaks, with flexible levels of commitment.",
     "primary_intent": "Punk cut and styling silhouette specialist; Goth hair and general dye technique retain separate targets",
     "role": "BEAUTY_GUIDE",
-    "source_sha256": "dc33246d6b1bb03c989b49f1ab3fd70edfde5196784f96ef09bd9b6beffb9603"
+    "source_sha256": "e31453694aa754de3f13d0d1fa5e53b08d019782563ce7287dde4be59126f1e6"
   },
   {
     "vi_slug": "that-lung-dinh-tan-phoi-do",
@@ -51,7 +51,7 @@
     "description": "Style studded belts by width, placement and hardware intensity through eight outfit formulas for Punk, Goth and broader alternative wardrobes.",
     "primary_intent": "Studded belt waist hardware specialist; general accessories and choker guide remain separate",
     "role": "ACCESSORY_GUIDE",
-    "source_sha256": "1d03b40b79fff1116de668bd8f6e6cdb5ca2c0398421239563eefe3bd96954be"
+    "source_sha256": "8872b2cb701316ea704819e81b862e1c54938ce505f6d5f002eec9dcc9cb32aa"
   },
   {
     "vi_slug": "phoi-do-voi-quan-short-nu",
@@ -60,7 +60,7 @@
     "description": "Pair denim, cargo, biker and tailored shorts with tops, shoes and layers through seven alternative outfit formulas and practical coverage choices.",
     "primary_intent": "Shorts-specific outfit proportions; trousers and mini skirt guides remain distinct",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "9ce0b00bf4dc739d2ae1af2f79a71eedceeaf6399109981e6db5b5ba4a3bee41"
+    "source_sha256": "82c5c8dad81f83abc36e620b22b5a459d2f447cb9a9ee4a8a59c94067e957440"
   },
   {
     "vi_slug": "y2k-la-gi-phong-cach-y2k-nu",
@@ -69,7 +69,7 @@
     "description": "Understand Y2K fashion through millennium-era proportions, denim, pop futurism and five wearable outfits, with distinctions from Dark and Cyber Y2K.",
     "primary_intent": "Mainstream Y2K definition and wardrobe; Dark Y2K comparison and Cyber Y2K specialist separate",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "6d9b7df68998b7c0fdfb9b03a7a30f3a987539514e92dabc05685f3fdeb13bf2"
+    "source_sha256": "e8db2d62da3bb8b434349fbbbd536924127e13ed349951223ed30a7705b184be"
   },
   {
     "vi_slug": "cach-bao-quan-do-da-nu",
@@ -78,7 +78,7 @@
     "description": "Identify leather, PU and suede before choosing suitable cleaning, drying and storage, with material-specific guidance for jackets, trousers and boots.",
     "primary_intent": "Leather and coated-clothing care; leather styling, boot odor and shopping remain separate",
     "role": "CARE_GUIDE",
-    "source_sha256": "db66aa9dbf24edb8ca6d0fee0c9fd9b356fc04cd5de0325bfa14d23b165fd51d"
+    "source_sha256": "397cabcfe1f23a0ca4929814e5bdd42d0030d0dcf5854a9c4c6df2118e77f0d1"
   },
   {
     "vi_slug": "nhuom-toc-dark-aesthetic",
@@ -87,6 +87,6 @@
     "description": "Compare black, wine, violet and other dark hair colors, realistic maintenance, strand and skin tests, and decisions about lightening or salon help.",
     "primary_intent": "Hair coloring and maintenance; Goth and Punk haircut specialists separate",
     "role": "BEAUTY_GUIDE",
-    "source_sha256": "bfe8d418c9b53c1e4ff396c742b0a62876277e692bc1307b3ea3f25bd9886acd"
+    "source_sha256": "28c632413a0761591a471620d3f80e50ff1b9a0bd877e8bc3740bcd7665ddf76"
   }
 ]
