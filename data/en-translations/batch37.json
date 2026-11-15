@@ -39,7 +39,7 @@
     "description": "Understand Gyaru through hair, makeup, clothing, footwear and finish, with an overview of its branches and six adaptable outfit formulas.",
     "role": "SUBCULTURE_OVERVIEW",
     "primary_intent": "Broad Gyaru definition and visual system; Ganguro contrast, Kogal uniforms, Hime princess and Amekaji Americana remain separate specialists.",
-    "source_sha256": "12d9270bf352830010a4e0da2c946c65c52af233a34e898ff460143bb1d46d2b",
+    "source_sha256": "3ad74db94b7fef5cb2f6d461c1be7af0fb97402715a4bbd7434e1365dff229ed",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Gyaru với các phong cách gần": "Gyaru compared with related styles"
@@ -52,7 +52,7 @@
     "description": "Explore Harajuku as a diverse street-fashion environment, with identity, layering and contrast frameworks and six practical outfit combinations.",
     "role": "CULTURAL_OVERVIEW",
     "primary_intent": "Place-based Harajuku ecosystem and diverse self-expression; not a replacement for Gyaru, Visual Kei, Lolita or Japanese urban streetwear.",
-    "source_sha256": "a064bcfb0268cfa7c865dfa3e46cfbd1f38a5a1b5ca853505a7fdf07a921ea20",
+    "source_sha256": "0b318154167adcb5af1bb6c095853e97e63b9091ab404d2bb6d71e30efddff89",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Harajuku với các hệ thời trang liên quan": "Harajuku and related fashion systems compared"
@@ -65,7 +65,7 @@
     "description": "Understand late-1990s Ganguro through contrasting hair, makeup and clothing, with cultural context, outfit ideas and UV-conscious reinterpretations.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "Ganguro historical high-contrast beauty and fashion; distinguish broad Gyaru, uniform Kogal and later Yamanba/Manba, no tanning prescription.",
-    "source_sha256": "35b548b66ab3b4883e579bbe1be33e2d5d25ba267ed9ea0ba8cc736eb454a8dc",
+    "source_sha256": "1082d0ca6aa7ac5337d822dcbe96c1a4b722ad032b2f59ea087d6fa94996da3d",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -76,7 +76,7 @@
     "description": "Explore Kogal history, loose socks and personalized uniform codes, with six adult outfit interpretations and distinctions from Ganguro and Preppy.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "1990s Shibuya uniform customization and loose-sock history; contemporary adult interpretations, not generic Preppy or sexualized schoolgirl costumes.",
-    "source_sha256": "636203004dd741f311cdf1beb770ee0b65b0870e2afc5d66a65bea8d6a191566",
+    "source_sha256": "506b4d0e4b4976e89ca97cb857d5e7a135c969a806cd36c42166d1f8fab6a158",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -87,7 +87,7 @@
     "description": "Build Amekaji Gyaru outfits with denim, plaid, graphic tees and considered beauty styling, with everyday proportions and warm-weather adaptations.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "Amekaji Gyaru casual Americana plus gal finish, not broad Japanese menswear Amekaji/Ametora history or general streetwear.",
-    "source_sha256": "75f2bc00132346a8f3d9d00afeb6277175f4cbb0f4e7dfd098c284ab9d664dd1",
+    "source_sha256": "3681a214356f17ad1b346d69b47854098bad6d76d4dbc6bf6c50360834f068e7",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -98,7 +98,7 @@
     "description": "Interpret Japanese Heisei-era nostalgia through fashion, compact technology and character details, with clear distinctions from Y2K, Gyaru and Kogal.",
     "role": "PERIOD_NOSTALGIA",
     "primary_intent": "Japanese period-memory umbrella and consumer objects; distinguish millennium futurism, Gyaru subculture and Kogal uniforms. Survey statistics explicitly dated and sample-specific.",
-    "source_sha256": "71e971cffda27d831b5743f96802a5eb903fbde7d6872d6ba6b4df5edfe401c5",
+    "source_sha256": "ce870a1e4b1886bd91d80f87bafdda92b403d386a253941cd8e519e7e7b0fafd",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -109,7 +109,7 @@
     "description": "Explore Princess Gyaru hair, makeup, lace and coordinated accessories, with six outfit formulas and distinctions from Lolita and casual Himekaji.",
     "role": "SUBSTYLE_SPECIALIST",
     "primary_intent": "Princess Gyaru full beauty-and-decoration system, separate from independent Lolita and softer Himekaji; not general Gyaru definition.",
-    "source_sha256": "e31486f7a044b3d7b9eef747af6e6322b8f70d85fe68e1af72271f68ab517f74",
+    "source_sha256": "012b1e59ac5c55fd773dfb31e6245db7aa60786d9e4ba25e183a8d8e8141dd06",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   }

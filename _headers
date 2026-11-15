@@ -4,3 +4,13 @@ https://:project.pages.dev/*
 
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex, nofollow
+
+# Internal reports and source tools may remain deployable but must not be indexed.
+/docs/*
+  X-Robots-Tag: noindex
+/data/*
+  X-Robots-Tag: noindex
+/scripts/*
+  X-Robots-Tag: noindex
+/cloudflare/*
+  X-Robots-Tag: noindex

@@ -16,7 +16,7 @@
     "description": "Adapt personal alternative style to the actual wedding invitation, setting and activities through six garment and footwear formulas.",
     "primary_intent": "Personal alternative styling within the actual wedding invitation and dress code; not generic night-out",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "ceef43094e160a793390d9e8c09c0d5f6df8015ca40bd1f8e33d3453e655c977",
+    "source_sha256": "565dcad684cb536ded88fd79af609cacad9a9bbb3cbb30e3cd0009e3c6b89ce5",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Plan alternative beach outfits for walking, changing, cafés and evening stops through fabric, footwear, coverage and packing choices.",
     "primary_intent": "Beach activities, heat, wind, sand and packing; not general summer outfit overview",
     "role": "OCCASION_GUIDE",
-    "source_sha256": "751b8c3869eee8b27c097d6ab02977b63b6d3e04cfd8bef6a032e9d6ab7c4a17",
+    "source_sha256": "c173c0d8415e11d74334fb0758cc39a1e4ea6a13480fc9d40bec2466e969077c",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore a noir-inspired styling interpretation through tailoring, contrast, seven outfit formulas and a clear Dark Feminine distinction.",
     "primary_intent": "Character and visual-code aesthetic guide; distinguish broad dark feminine mood and practical dark feminine outfit specialist",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "b5b0289bd3e541276351bd69d52acf3d09b35763f23c72888734bdca76afea1a",
+    "source_sha256": "7927b6d56e4c3af014cae17bd7b6e0632addbee1da47bcce7541c92505d71c67",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Understand low-rise construction, front and back rise, waistband stability and measurements before choosing a trouser silhouette.",
     "primary_intent": "Waist rise definition and fit; distinguish specific denim/cargo styles and styling formulas",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "3ae990494255a8cdaacb2a4f7352c3478f8dfca346a41a31db313528f1486acc",
+    "source_sha256": "557157f83744233614dbb05b74cbe92158fb7a5f1d375e0dffc42c9de9157e37",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Understand cropped length, compare baby tees, tube tops and structured tops, and assess garment dimensions and preferred coverage.",
     "primary_intent": "Cropped-length definition and construction; existing crop-top outfit article remains styling target",
     "role": "DEFINITION_GUIDE",
-    "source_sha256": "127e31b2996624cd796f49aaeb987e389f1ad6b5b480102aa9d4f1af93f10f42",
+    "source_sha256": "a58ff08c8d6a7e31f14ba0b852163289604d4abc604c9be6e18914aee006af77",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Style leggings through opacity, top length, structured layers and footwear, with flared-leg comparisons and everyday fit checks.",
     "primary_intent": "Close-fitting stretch leggings and layering/coverage choices; not jogger/athleisure overview",
     "role": "ITEM_GUIDE",
-    "source_sha256": "5c99e9699db6f77516f8e37f68267dc2031bf55c4d1d43d1decaabee7b8551e6",
+    "source_sha256": "2f815ee7e69bec84180687bc7a4a1864cb33d0bef3ca4eafe70492265203f7eb",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Compare tops, outer layers and footwear against parachute-pants volume through eight formulas, three Closet looks and hem checks.",
     "primary_intent": "Parachute fabric, adjustable volume and proportions; definition article remains separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "af5212bafb10c391b138f77fa6e97acefc9cf119661fbdaaa7747f122452d45a",
+    "source_sha256": "b2432655c8289f71f6997e27d70af3d9bf1908f0632a031ed222914f03070a89",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Style baggy trousers through top endings, denim wash, layers and footwear, with five Closet examples and three reusable outfit routes.",
     "primary_intent": "Roomy trouser volume and top lengths; distinguish baggy definition, wide-leg and straight-leg specialists",
     "role": "ITEM_GUIDE",
-    "source_sha256": "37907948d6430effdc6f83c6c26e2d9e1d3c7fa60a1011b3b48a6e3f7c427552",
+    "source_sha256": "860630c9182ec507c92851000724a013e32d3731dd84ba7df720ab5b6304cad3",
     "published_date": "2026-11-04"
   }
 ]

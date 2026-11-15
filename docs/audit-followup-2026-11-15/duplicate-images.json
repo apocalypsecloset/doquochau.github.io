@@ -1,0 +1,52 @@
+[
+  {
+    "page": "blog/y2k-la-gi-phong-cach-y2k-nu.html",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-13-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "blog/streetwear-la-gi.html",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "blog/dark-feminine-is-not-a-trend.html",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "blog/office-siren-la-gi.html",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "blog/quan-parachute-la-gi.html",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "en/blog/dark-feminine-explained-wardrobe.html",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-04-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "en/blog/what-is-y2k-fashion.html",
+    "image": "/images/badgirl-outfits/badgirl-e-girl-look-13-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "en/blog/office-siren-style-guide.html",
+    "image": "/images/badgirl-outfits/badgirl-dark-feminine-look-29-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "en/blog/what-is-streetwear.html",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-02-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  },
+  {
+    "page": "en/blog/what-are-parachute-pants.html",
+    "image": "/images/badgirl-outfits/badgirl-baddie-streetwear-look-28-full-outfit.webp",
+    "action": "Remove repeated related-card thumbnail; preserve primary image, linked card and all text."
+  }
+]

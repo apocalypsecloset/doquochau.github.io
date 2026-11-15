@@ -1,3 +1,4 @@
+from audit_metadata import approved
 """Release gate for complete translated collection hubs and their bilingual routes."""
 import json,csv,re,sys,hashlib,subprocess,posixpath
 from pathlib import Path
@@ -17,9 +18,9 @@ for c in configs:
  url='https://apocalypsecloset.com/en/blog/'+slug+'.html';viurl='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html'
  check(hashlib.sha256(raw.encode()).hexdigest()==c['source_sha256'],slug+': source hash')
  check(s.html['lang']=='en' and len(s.select('h1'))==1,slug+': language/H1')
- check(s.title.get_text()==c['title']+' | Apocalypse Closet',slug+': title')
- check(s.select_one('meta[name=description]')['content']==c['description'],slug+': meta')
- for k in ['og:description','twitter:description']:check(s.select_one('meta[property="'+k+'"],meta[name="'+k+'"]')['content']==c['description'],slug+': '+k)
+ check(s.title.get_text()==approved('en/blog/'+slug+'.html','title',c['title']+' | Apocalypse Closet'),slug+': title')
+ check(s.select_one('meta[name=description]')['content']==approved('en/blog/'+slug+'.html','description',c['description']),slug+': meta')
+ for k in ['og:description','twitter:description']:check(s.select_one('meta[property="'+k+'"],meta[name="'+k+'"]')['content']==approved('en/blog/'+slug+'.html','description',c['description']),slug+': '+k)
  check(s.select_one('link[rel=canonical]')['href']==url,slug+': self canonical')
  check(not s.select('meta[name=robots][content*=noindex]'),slug+': indexability')
  for lang,href in [('en',url),('vi',viurl)]:check(bool(s.select_one(f'link[rel=alternate][hreflang={lang}][href="{href}"]')),slug+': alternate '+lang)

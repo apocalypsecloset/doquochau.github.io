@@ -6,7 +6,7 @@
     "description": "Style arm warmers with tube tops, baby tees, dresses and wide trousers through nine outfit ideas, deliberate texture and practical fit checks.",
     "primary_intent": "Detachable arm sleeve styling and fit, not knitting patterns or general alternative accessories",
     "role": "ACCESSORY_GUIDE",
-    "source_sha256": "325836a502a8eed5e64a5810a5f0cd0c518d4f9eb5623de5770e7e4b4ef4bc67"
+    "source_sha256": "354f20bc18ced35726f2f4155defe87819d4a0ad821562ac623c98c55cc8fc7f"
   },
   {
     "vi_slug": "choker-nu-la-gi-cach-phoi",
@@ -33,7 +33,7 @@
     "description": "Compare combat uppers and platform soles through fit, weight, pitch, wardrobe use and buying checks, including designs that combine both.",
     "primary_intent": "Combat upper versus platform sole comparison and buying decision; boot outfit specialist remains separate",
     "role": "COMPARISON",
-    "source_sha256": "23199bda744bdb252771e45c3764b52bfdcb63945c9e5122732a495a072eb680"
+    "source_sha256": "f39d615d0d1264fff0a0f12f8b13a5b47a9849465377373d7835a570d4bce263"
   },
   {
     "vi_slug": "quan-cargo-vai-du-hay-kaki",
@@ -42,7 +42,7 @@
     "description": "Compare nylon-style and cotton or blended twill cargos through drape, airflow, pockets, seams, care and practical online-buying checks.",
     "primary_intent": "Cargo fabric selection comparison; cargo definition, outfits and seller-shopping guide separate",
     "role": "COMPARISON",
-    "source_sha256": "388416eb80ccb21465e21ac9436007feedcbae935446c0baf664b2003bade2a7"
+    "source_sha256": "66f6984eafdea47462731d77fbc74938e9988b626e8d2bf25972d1f59f9bed29"
   },
   {
     "vi_slug": "phoi-do-voi-quan-jeans-ong-rong-nu",
@@ -60,7 +60,7 @@
     "description": "Pair flared trousers and jeans with tees, bodysuits, corset tops and layers, balancing flare position, rise, hem length and shoes.",
     "primary_intent": "Fitted upper leg widening near knee: flare-specific outfit geometry, not general wide legs",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "2837f83cdc01119cc2b67e72780851abd36232e6c0fe7cedb0c83bdc996219ae"
+    "source_sha256": "478c2d375135ff71f8ebbaa5cf949a46c02839dad41967c363bc57e428780756"
   },
   {
     "vi_slug": "phoi-do-voi-quan-jogger-nu",
@@ -69,7 +69,7 @@
     "description": "Style joggers with crops, graphic tees, bombers and shirts through eight formulas that balance cuffs, upper volume and everyday footwear.",
     "primary_intent": "Jogger outfit construction around cuff taper and layers; jogger definition and airport outfits separate",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "4ff0cefec89800a1b707b2742cdf1d25c926c4d92482450aa2431dad3f9ea3b7"
+    "source_sha256": "91e64edc5d82c67e67ca679a2b357ded91edba81b81515bcacdef6d291bfe375"
   },
   {
     "vi_slug": "phoi-do-voi-ao-bomber-nu",
@@ -78,7 +78,7 @@
     "description": "Balance bomber length and sleeve volume with nine outfits using jeans, cargos, joggers, skirts and manageable inner layers.",
     "primary_intent": "Bomber outfit volume and layer geometry; bomber seller/fit buying guide separate",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "4176683139a20519655bc57d03bfe627140cdba0407307c3c53a347652008ae8"
+    "source_sha256": "87b56645e55394d2c22dc4e97dc1d1d2961b0e3b94f064ac1cbaa3ead7619af1"
   },
   {
     "vi_slug": "phoi-do-voi-chan-vay-dai-den",
@@ -87,6 +87,6 @@
     "description": "Pair long black skirts with fitted tees, knits, corset tops, graphics and outerwear through ten formulas with clear surfaces and hem-to-shoe balance.",
     "primary_intent": "Long black skirt color-specific outfit capsule; general long skirt form and midi definition separate",
     "role": "ITEM_OUTFIT_GUIDE",
-    "source_sha256": "0271c45c2cf8f7d5df7d8f6dbf78aa8c790a79e5a3e7f28e545cfd5614310ff8"
+    "source_sha256": "68a67f7b8e918a7db3bcb131f93e80721c64a9699cac76899f2f213b7a4e7327"
   }
 ]

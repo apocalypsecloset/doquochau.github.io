@@ -1,3 +1,4 @@
+from audit_metadata import approved
 """Verify full source parity, routing and bilingual safety for translation batches."""
 import sys,json,re,csv,hashlib,posixpath,subprocess
 from pathlib import Path
@@ -36,8 +37,8 @@ for c in configs:
  check(s.html['lang']=='en',slug+': lang')
  check(len(s.select('h1'))==1,slug+': H1 count')
  check(s.select_one('link[rel=canonical]')['href']==url,slug+': canonical')
- check(s.title.get_text()==c['title']+' | Apocalypse Closet',slug+': title')
- check(s.select_one('meta[name=description]')['content']==c['description'],slug+': meta')
+ check(s.title.get_text()==approved('en/blog/'+slug+'.html','title',c['title']+' | Apocalypse Closet'),slug+': title')
+ check(s.select_one('meta[name=description]')['content']==approved('en/blog/'+slug+'.html','description',c['description']),slug+': meta')
  for lang,href in [('en',url),('vi','https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html')]:
   check(bool(s.select_one(f'link[rel=alternate][hreflang={lang}][href="{href}"]')),slug+': hreflang '+lang)
  check(len(a.select('p'))==len(orig.select('p'))+len(parts[1].select('p'))+2,slug+': paragraph parity')

@@ -24,6 +24,8 @@ jobs:
         env:
           NODE_PATH: /tmp/ac-shop-tests/node_modules
       - run: python scripts/qa_site.py
+      - name: Audit repair preservation and regression checks
+        run: python scripts/qa_audit_followup.py
       - name: R2 image SEO and sitemap coverage
         run: python scripts/qa_r2_image_seo.py
       - name: Full translated article and hub gates

@@ -6,7 +6,7 @@
     "description": "Explore Chicano fashion through Mexican-American history, structured volume and workwear, with five contemporary outfit interpretations.",
     "primary_intent": "Mexican-American/Chicano cultural history and structured workwear proportions; not generic Streetwear or a costume/stereotype checklist.",
     "role": "CULTURAL_STYLE_SPECIALIST",
-    "source_sha256": "580e6d5b5e06750ac4813f2d3c1dc58d1b5afa5bbd32f9e2fdc1a60f73e4f769",
+    "source_sha256": "68855e41a21900b937143da158faf411bb61c113818a7fbd623f1bd120e8e80f",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -17,7 +17,7 @@
     "description": "Understand late-1960s and early-1970s hippie fashion through flow, craft and reuse, with six outfits and distinctions from Boho Chic.",
     "primary_intent": "Hippie counterculture, anti-fashion, craft and reuse; distinct from polished Boho Chic, broad Vintage and rural-romantic Cottagecore.",
     "role": "HISTORICAL_STYLE_SPECIALIST",
-    "source_sha256": "b05110a5b5b38f0eb689cd6abcfbf23dd197c7a34d6bfc697dc666edba2f5b75",
+    "source_sha256": "2a8ac9c806fe4938356e60e013fb97928b5df6e9cad887c537e30ea46c13c1a9",
     "published_date": "2026-11-05",
     "attribute_translations": {
       "So sánh Hippie với các phong cách gần": "Hippie compared with related styles"
@@ -30,7 +30,7 @@
     "description": "Explore Dior's 1947 New Look, the Bar suit's construction and postwar controversy, with contemporary interpretations of its proportions.",
     "primary_intent": "Dior 1947 debut and Bar construction/controversy; separate from complete 1950s overview, corset-item styling and broad Vintage.",
     "role": "HISTORICAL_EVENT_SPECIALIST",
-    "source_sha256": "91129b23b8a4447995bcc28a4351c8c1bf4b195332de8e226dc99f92228f13c8",
+    "source_sha256": "8d59fddcab5cd8782fb4faca614ccf3b7fe9f85b6ee2ca4e512840daa4613f24",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -41,7 +41,7 @@
     "description": "Separate ulzzang's Korean internet origins from its later casual-fashion label, with six outfit formulas and no body or skin-color requirements.",
     "primary_intent": "Korean internet image/beauty origins and later international clothing label; not all K-fashion, Acubi layers, Clean Girl polish or body eligibility.",
     "role": "CULTURAL_STYLE_SPECIALIST",
-    "source_sha256": "12e4644dc792474899509d9a39da243a2cf15f87bc8c6e720a2342e4cd805fcb",
+    "source_sha256": "93c6f6875cc75b2e26e89fa321722dc2942c999a724a7c9118ba7bcdbcc63fb5",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -52,7 +52,7 @@
     "description": "Explore full skirts, sheaths, suits, sportswear and later 1950s shapes, with six contemporary outfits beyond a single New Look silhouette.",
     "primary_intent": "Complete 1950s womenswear range and evolving occasion-based shapes; broader than Dior 1947 New Look and distinct from timeless Classic or generic Vintage.",
     "role": "HISTORICAL_PERIOD_OVERVIEW",
-    "source_sha256": "12b86ade24d1cfe502d35b5098721108fe6f51ad77ce1920a35552eed03e6190",
+    "source_sha256": "8d0476fa1a9b38f8ec1fab6978d8b8a7d60878d1f68c928d0f1f3f4e84b2a60f",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -63,7 +63,7 @@
     "description": "Build Japanese streetwear-inspired outfits through silhouette, layered lengths, vintage and considered selection, with six adaptable combinations.",
     "primary_intent": "Japan-context urban streetwear, Ura-Hara selection and layering; distinguish global Streetwear and Harajuku ecosystem including non-streetwear subcultures.",
     "role": "REGIONAL_STREETWEAR_SPECIALIST",
-    "source_sha256": "4313f8c94b225dc9edd859ae1f2862f8cac31fe7a4a5e69df16097a8ca502eb0",
+    "source_sha256": "6b9aa17a1b3cd68a1eb929ae9f065025b833770296ef270eda6271a15947245a",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   },
@@ -74,7 +74,7 @@
     "description": "Understand natural waists, bias-cut gowns, daytime tailoring and Hollywood references, with six ways to interpret 1930s proportions today.",
     "primary_intent": "1930s natural-waist elongated bias drape and changing shoulders; not 1920s flapper, postwar New Look full skirts or generic Vintage.",
     "role": "HISTORICAL_PERIOD_OVERVIEW",
-    "source_sha256": "230d7d51dccf2718c298eb2b173faedec3bab0fb9454610033c181ec3e5a7c8f",
+    "source_sha256": "547887690f70ec1294525db9623666b95d57d4e4a1d9d53ae80d6ab0892a793a",
     "published_date": "2026-11-05",
     "attribute_translations": {}
   }

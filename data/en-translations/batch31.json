@@ -6,7 +6,7 @@
     "description": "Explore fitted blazers, pencil skirts and slim glasses, then adapt Office Siren proportions to your wardrobe and actual workplace requirements.",
     "primary_intent": "Fashion aesthetic around tailored lines, neckline and accessories; separate from Corporate Goth workplace specialist and actual business dress codes",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "62e8d53796e8dd305a557c807bd68498798559d3a85a10d4b79627d3472de4d3",
+    "source_sha256": "65199362bbbf5ea87cbfa241659a9d3b89b08977992aa4cd30599e7d4bc664dd",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Understand rockabilly music and clothing references, compare Greaser and Psychobilly, and build rebel-denim or pin-up-inspired outfits.",
     "primary_intent": "Rockabilly cultural and visual references; distinguish Punk, generic vintage and broad 1950s fashion",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "0527abe14b8ea72d5fbb3f4e3d374c6926fbe2f9fea0d2b34d5bf3792b8f82bb",
+    "source_sha256": "20f650cb738609eab08aa0438737c66f3a43a76bb64172e8644aa05c7ce65c09",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore nature-inspired Fairycore through lace, knits, sheer layers and movement, including dark palettes and distinctions from Fairy Grunge.",
     "primary_intent": "Fairy-inspired nature imagery and styling; distinguish existing Fairy Grunge/Fairy Goth and broader Cottagecore",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "9c360fbb45dfdad8cef2e455ee0b9304b15893b267d60cd6b674d510e7ef53d5",
+    "source_sha256": "2c49b3e2bf68887f6fd114de291a3bc18b27920a541b210ed4fa103c52ceb8ef",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Understand Mori Kei layering, natural colors and soft silhouettes, with six outfit routes, warm-weather adaptations and related-style comparisons.",
     "primary_intent": "Mori Kei cultural and layered forest-inspired wardrobe references; distinguish Cottagecore and Fairycore labels",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "ae5e65991a4de9b7cf2852af11fe124cee54ad6a47d2c4d2b4b0cb9a78208723",
+    "source_sha256": "55eb166caa62fad6ea018a627ee86c55439ee893fc66466a0dd4b5cf433c7573",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Build an Ouji coordinate through blouses, waistcoats, shorts or trousers and footwear, with five outfit routes and clear Lolita distinctions.",
     "primary_intent": "Japanese princely fashion vocabulary and proportions; distinguish Victorian Goth and Lolita-related comparisons",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "504d33ea6d65dca3a738c6a4361a81e9a38ffd1e5dff3cbd24e2453e5e68c546",
+    "source_sha256": "db4273210694bb97418cf063cd4ddded102f5d878c0e303b85f8652259d00e90",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Explore Cottagecore textures, florals and soft silhouettes, with everyday formulas, dark palettes and practical adaptations for humid weather.",
     "primary_intent": "Rural/romantic visual wardrobe vocabulary; distinguish Mori Kei history, Fairycore imagery and Dark Academia",
     "role": "AESTHETIC_GUIDE",
-    "source_sha256": "d4da66c9c7990a230b3a44e73be18fa67ea4684612c24ed114b9d62117a2943e",
+    "source_sha256": "b652c8c46e7755fa5a5d66625be52d53a514ec1b56ed5e8ab2441e64b7aabda3",
     "published_date": "2026-11-04"
   }
 ]
