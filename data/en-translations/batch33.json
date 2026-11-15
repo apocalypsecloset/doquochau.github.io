@@ -6,7 +6,7 @@
     "description": "Build plus-size alternative outfits through fit, drape, layers, color and movement, with eight formulas and practical online measurement checks.",
     "primary_intent": "Whole-outfit plus-size fit and composition; stomach-specific fit, shape-specific proportions and item styling retain separate targets.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "17869bbd1c2d7adbe4482a34fc073c5a29792438d1f7a475e0a2b541d6bf8e14",
+    "source_sha256": "2a6886acf1a54f196d956022bb0aa3c3a5029eb7102a1849266a236e7f6be809",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Explore petite alternative outfits through waist placement, garment lengths, volume, layers and shoes, without restricting styles by height.",
     "primary_intent": "General petite alternative composition and vertical proportions; baggy-pants buying measurements belong to the petite baggy specialist.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "7f6c79344c153062b7e51d8943a09b2728ee371a30c4d0af826238a901200be3",
+    "source_sha256": "a370357245b5d6352a0180958c377ad4d36ceb5005af0cda0938fd504015fab6",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Choose volume, texture and layers for a slim frame across E-Girl, Goth, Punk and other alternative styles, with comfortable proportion options.",
     "primary_intent": "Optional volume distribution on slim frames; separate from plus size, body-shape shoulder-to-hip guides and height-specific proportions.",
     "role": "OUTFIT_FIT_GUIDE",
-    "source_sha256": "414f5a3d71d556c18f1429cada95a67412249ca350e9bca980978587ce3dbaef",
+    "source_sha256": "663eec65f397e85087c87a2c6c0e637430d8f875f1fc7a9b1c6efce53c14ad8d",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Compare rise, inseam, pocket placement, leg width and hems when buying baggy pants for a petite frame, including shoes, reviews and alterations.",
     "primary_intent": "Petite baggy trouser selection by rise, inseam and pattern placement; baggy definition, general outfits and broad petite styling remain separate.",
     "role": "BUYING_FIT_GUIDE",
-    "source_sha256": "c8a9fa388147947e5766a2d04ecee41465a50915b303ff069a2f9083ec02839d",
+    "source_sha256": "2c5655697f9a8e2444c38f257646653fc2023be122eb410c2474971449a03944",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Address boot odor through material-compatible drying, lining and insole care, removable absorbers and better rest between wears.",
     "primary_intent": "Boot interior odor and moisture cycle, distinct from new-boot stiffness, leather upper care and outfit styling.",
     "role": "FOOTWEAR_CARE_GUIDE",
-    "source_sha256": "573ca261e2c1fcb8cb7efdf209c1db00463b28cf9d002f422fae7272b40e7d53",
+    "source_sha256": "914001ef4f502af83636c7f776a1dbc8299e3ed816dfe929681eb2c8cb38a65a",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Check boot fit before gradual wear, assess rubbing and material limits, and avoid heat or soaking shortcuts when breaking in new boots.",
     "primary_intent": "New-boot stiffness and initial comfortable wear, not interior deodorizing, upper maintenance or Combat versus Platform purchase comparison.",
     "role": "FOOTWEAR_CARE_GUIDE",
-    "source_sha256": "0243d2dd6464158034c0581d2716f167bc151d64cbce039736ee530e24336b04",
+    "source_sha256": "fc537f55baa2c9b5a5d5bce0845ec3d0074e98ae742b7f1cb4f060eac8eceb62",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Compare baby-tee measurements, knit construction, graphics, customer reviews and exchange information when assessing Shopee listings.",
     "primary_intent": "Baby-tee listing assessment on Shopee; separate from crop-top definition, generic online sizing and general or Gothic graphic-tee outfits.",
     "role": "BUYING_GUIDE",
-    "source_sha256": "38d6cba493b77e4af6e3064a926ef793ac53f304c605d0e0d50491358462a8ee",
+    "source_sha256": "dc586ae54f2a692563413b20d717e4f5072c747573dca231cc3f41b8497cdb6c",
     "published_date": "2026-11-04"
   }
 ]

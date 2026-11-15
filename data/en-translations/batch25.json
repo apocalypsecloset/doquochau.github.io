@@ -6,7 +6,7 @@
     "description": "Recognize Mary Jane instep straps, compare flats and boots, and choose fit, materials, socks and outfit proportions.",
     "primary_intent": "Footwear construction and styling specialist; broader footwear directory and boot comparison separate",
     "role": "ITEM_GUIDE",
-    "source_sha256": "60aaa3cfd637f1c765ddc437bb9410d516c89990962f382a624b574a59f58f5b"
+    "source_sha256": "3f923d31496714627a0f02ee7fa7669e578f24228c437122fe4eab61b178d05f"
   },
   {
     "vi_slug": "leg-warmers-la-gi-cach-phoi",
@@ -15,7 +15,7 @@
     "description": "Style leg warmers through length, gathering, color and footwear, with eight outfit formulas and practical warm-weather choices.",
     "primary_intent": "Lower-leg volume and footwear accessory specialist; arm warmers and Balletcore definition distinct",
     "role": "ACCESSORY_GUIDE",
-    "source_sha256": "8f397f3a89302f570764924386f107d190c36baabbd25f6c4e09b3473b98090a"
+    "source_sha256": "b485b56b87e94bd7cab66b1b7a4b7f37b9c2f79fbbd2f54f83fdfbe4af7ae31f"
   },
   {
     "vi_slug": "coquette-la-gi-dark-coquette",
@@ -24,7 +24,7 @@
     "description": "Understand Coquette and Dark Coquette through bows, lace, palettes and practical outfits, with distinctions from Balletcore and Dark Feminine.",
     "primary_intent": "Coquette definition plus pastel/dark comparison; Dark Feminine hub and outfit specialist separate",
     "role": "STYLE_COMPARISON",
-    "source_sha256": "e17cf0e28e5089a11baea579d0f0b8ae7c63b4c2b13741d17f8c4eb1c1b31a0a"
+    "source_sha256": "4a7d2721315435636e6b4c1fca4c3ca45425a97fea0a1cc38aa272abddf3d480"
   },
   {
     "vi_slug": "indie-sleaze-la-gi",
@@ -33,7 +33,7 @@
     "description": "Explore Indie Sleaze music and nightlife references, slim denim, worn textures, four outfits, photography and qualified revival claims.",
     "primary_intent": "Retrospective indie nightlife styling and photography; Grunge-Punk and Y2K definitions distinct",
     "role": "SUBSTYLE_GUIDE",
-    "source_sha256": "a6b7e44a2279777b8013ed015b74a1b00fe3d4c56e8b07ff69b5270c1833260a"
+    "source_sha256": "99db3ca8c69caab88e0d619f4d4f0138fee12bef448271774e0fd858f43ee1b8"
   },
   {
     "vi_slug": "techwear-la-gi",
@@ -42,7 +42,7 @@
     "description": "Evaluate techwear through materials, movement, pockets, layers and weather specifications rather than decorative straps or a futuristic image.",
     "primary_intent": "Function-first technical clothing evaluation; Cyber Y2K visual styling and Gorpcore outdoor context separate",
     "role": "FUNCTION_GUIDE",
-    "source_sha256": "5127cc58fb60b8c7d684ea407edb2c073b8112b23a406a034b101a4f1920afc3"
+    "source_sha256": "e943955762577bc182a8dde092d254e7af45679b56b7cf0cfe8e193d29a4777e"
   },
   {
     "vi_slug": "cyber-y2k-la-gi",
@@ -60,7 +60,7 @@
     "description": "Understand Visual Kei through Japanese music and visual personas, then adapt hair, layers and eight outfit formulas for everyday settings.",
     "primary_intent": "Japanese music-scene visual presentation specialist; Goth and Scene retain their own cultural targets",
     "role": "SUBCULTURE_GUIDE",
-    "source_sha256": "0197415ffc1b2419d1aa1aafd79ec1b92ccfc35bbf17093dc33f1b0f06875020"
+    "source_sha256": "dcecac97abdab8706b22440805c6831139fafbafd3a43f4899c3fe91d9a40322"
   },
   {
     "vi_slug": "devil-core",
@@ -69,7 +69,7 @@
     "description": "Explore Devilcore as an informal motif-based aesthetic through five outfit routes, red-black contrast and selected infernal details.",
     "primary_intent": "Infernal motif-led micro-aesthetic; general Goth, Emo and mystical Whimsigoth separate",
     "role": "MICRO_AESTHETIC_GUIDE",
-    "source_sha256": "59090548fd96cd15a28189a109c421c76f19d33ed3947d3424619b0d1dbfabf8"
+    "source_sha256": "d5e80ca83e482c07a941a6d7cd2d3ee3cc5daf11873185979c14d617462d696f"
   },
   {
     "vi_slug": "morute",
@@ -78,7 +78,7 @@
     "description": "Explore Morute through faded palettes, delicate and worn textures, six adult outfit ideas and clothing-based contrasts without harmful imagery.",
     "primary_intent": "Morbid-cute aged texture and community usage; Coquette, Soft Goth and Gurokawa motif system distinct",
     "role": "MICRO_AESTHETIC_GUIDE",
-    "source_sha256": "19e2b03edd3cbee61497d8e6d2559e6de246d3ec6a5d0fbd4930fb9b748d3c3a"
+    "source_sha256": "7c7184959a95d4f866e56e6d4893764320ac32aa1ba1268784988b7cca32c2ec"
   },
   {
     "vi_slug": "gurokawa",
@@ -87,6 +87,6 @@
     "description": "Balance kawaii and stylized grotesque motifs through six outfits, graphic tees, DIY accessories and practical levels of visual emphasis.",
     "primary_intent": "Kawaii-grotesque graphics and DIY styling; Morute aged texture and Pastel Goth specialist separate",
     "role": "MICRO_AESTHETIC_GUIDE",
-    "source_sha256": "0a62ccfcbeeee396616c425c522f347b31c2752e5546154e17425cee445b76ac"
+    "source_sha256": "de175d45d392711294db9d15e24770c6213484d8d1493591c84e02e9c2df1ce7"
   }
 ]

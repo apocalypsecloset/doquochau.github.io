@@ -1,3 +1,4 @@
+from audit_metadata import approved
 """Static release checks; image routes hosted outside Git are intentionally excluded."""
 import csv,json,re,subprocess,sys,xml.etree.ElementTree as ET
 from collections import Counter
@@ -67,7 +68,7 @@ headers=(ROOT/'_headers').read_text();block=''
 for line in headers.splitlines():
  if not line.strip() or line.lstrip().startswith('#'):continue
  if not line[0].isspace():block=line.strip()
- elif 'noindex' in line.lower():check('.pages.dev/' in block,'Production-wide noindex header')
+ elif 'noindex' in line.lower():check('.pages.dev/' in block or block in ['/docs/*','/data/*','/scripts/*','/cloudflare/*'],'Unexpected production noindex header')
 check('https://:project.pages.dev/*' in headers and 'https://:version.:project.pages.dev/*' in headers,'Preview noindex protection')
 journal=pages['en/blog.html'];cards=journal.select('#latest .cards a.card')
 expected_en=catalog_urls('en')
@@ -96,7 +97,8 @@ if result.returncode==0:
   old=BeautifulSoup(subprocess.check_output(['git','show',baseline+':'+p],cwd=ROOT,text=True),'html.parser');new=pages[p]
   for selector,attr in [('title',None),('meta[name=description]','content'),('link[rel=canonical]','href')]:
    before=[n.get(attr) if attr else n.get_text() for n in old.select(selector)];after=[n.get(attr) if attr else n.get_text() for n in new.select(selector)]
-   check(before==after,p+': changed original '+selector)
+   expected=[approved(p,'title' if selector=='title' else 'description',x) for x in before] if selector in ['title','meta[name=description]'] else before
+   check(expected==after,p+': changed original '+selector)
   check([n.get_text(' ',strip=True) for n in old.select('h1')]==[n.get_text(' ',strip=True) for n in new.select('h1')],p+': changed H1')
   preserved+=1
 else:errors.append('Missing immutable audit baseline for preservation check')

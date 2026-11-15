@@ -6,7 +6,7 @@
     "description": "Assess workplace requirements, fit, coverage and footwear, with five women’s Business Casual combinations and distinctions from Smart Casual.",
     "primary_intent": "Workplace formality and practical garment choices; Corporate Goth and Office Siren retain their aesthetic-specific intents",
     "role": "DRESS_CODE_GUIDE",
-    "source_sha256": "d53b67a3e4587df956685b46d5e946c3eafae40084e010ea6a88579269c7bcc8",
+    "source_sha256": "e137fce70d143a8c6f281258d404de124754f57d81a56208bd08a7f2fa5e6664",
     "published_date": "2026-11-04"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Use occasion, role, formality and garment finish to build women’s Smart Casual outfits, including denim, dark palettes and warm-weather layers.",
     "primary_intent": "Mixed-formality dress guidance by setting; separate from Business Casual work context and Casual Chic visual finish",
     "role": "DRESS_CODE_GUIDE",
-    "source_sha256": "bcbfb1c715fac867179ddecf6c2cadc0bb673aba5e9648bbc1392963fde7628a",
+    "source_sha256": "f805460bf45717a087dab2e8a2e2e69bad84f27853e610ba76938abdc26cf485",
     "published_date": "2026-11-04"
   },
   {
@@ -26,7 +26,7 @@
     "description": "Explore tailoring, scale and finish through six power-dressing formulas, historical context and distinctions from Office Siren and work dress codes.",
     "primary_intent": "Clothing and perceived authority through silhouette/context; Office Siren internet persona remains narrower",
     "role": "STYLE_GUIDE",
-    "source_sha256": "b6ff03d0c317a5f89876a4532e5c8163251a16651a95eb02674f3363983ff9a1",
+    "source_sha256": "128534e131ac8fe1b1de759370ef3d22bfc2da8f3c84e403b4a367e27dd11113",
     "published_date": "2026-11-04"
   },
   {
@@ -36,7 +36,7 @@
     "description": "Understand collars, knits, pleats and sporting details, with five women’s Preppy outfit formulas and clear Ivy, Old Money and Academia boundaries.",
     "primary_intent": "Uniform and collegiate style vocabulary; Ivy historical reference and Academia specialists remain separate",
     "role": "STYLE_GUIDE",
-    "source_sha256": "bd5cc31525bc3ae09bffbf65640fec2d0dd2250a02280b9593033e8590a07a63",
+    "source_sha256": "b8e46330922a286b8b82b5102a40f50f3d164e0a263a323632c500aa3f587037",
     "published_date": "2026-11-04"
   },
   {
@@ -46,7 +46,7 @@
     "description": "Explore Ivy’s campus garment history, relaxed tailoring and six women’s outfit formulas, with Preppy comparisons and warm-weather adaptations.",
     "primary_intent": "Ivy League style context and wardrobe references; broader Preppy overview retains its own primary target",
     "role": "STYLE_GUIDE",
-    "source_sha256": "176e84b8c2d0a70b95d0b49c064954ba6e4ce4276e692e30fef4a8856d076020",
+    "source_sha256": "4780ef504f2408a6d5a2a9caa062e4a1da8fa893d5f25909b0b47eba858f39c8",
     "published_date": "2026-11-04"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Build repeatable Classic outfits through familiar cuts, clear proportions and useful wardrobe roles, including dark palettes and practical garment checks.",
     "primary_intent": "Classic-style wardrobe lines and repeated garment relationships; separate from vintage-period dressing and quiet-luxury material claims",
     "role": "STYLE_GUIDE",
-    "source_sha256": "64d686ee2515627148f571a59ae579a7b7a0ae4fe78feeda74eea56a9e54385e",
+    "source_sha256": "1ceed257e16a3722664e37d4895de2a01cd740094d9af360a81f6bac8cda1dca",
     "published_date": "2026-11-04"
   },
   {
@@ -66,7 +66,7 @@
     "description": "Use existing everyday clothes with deliberate proportions, textures and finishing details, through seven Casual Chic formulas and practical wardrobe planning.",
     "primary_intent": "Relaxed-polished visual styling; distinguish dress-code guidance and minimalist wardrobe philosophy",
     "role": "STYLE_GUIDE",
-    "source_sha256": "8ebe51bd36ff713f81232aae4621a003cd13a12f678affb446d96eb6bdc362c0",
+    "source_sha256": "80207b808dce378ba12225f4bd028b363a8b9f07fd6343522573889ec08f943d",
     "published_date": "2026-11-04"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Assess cut, construction, fit and expected use beyond branding, with dark Quiet Luxury palettes, garment checklists and cost-per-wear examples.",
     "primary_intent": "Understated quality and assessing garments; separate from Old Money social imagery and general Classic Style",
     "role": "STYLE_GUIDE",
-    "source_sha256": "cd99fb6b76382657b55a260535e0c8892c1f26cd0906ecf90a105381ecf92b2f",
+    "source_sha256": "67995e84097cb99a0fe03c1d861e9a038976bac3d46f960e1fd35e76dbc2038d",
     "published_date": "2026-11-04"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Distinguish inherited-wealth imagery from actual status, compare adjacent aesthetics and build five Old Money-inspired outfits from useful garments.",
     "primary_intent": "Old Money visual references and historical/social limitations; avoid presenting price or class as identity proof",
     "role": "STYLE_GUIDE",
-    "source_sha256": "17790055345686afe9301c91023fccc467de26766e7617f8da9321db8fdf741f",
+    "source_sha256": "9820573ffee1c841e6322aa110773f3fd975cdf75642b15fb463d594c52ec2df",
     "published_date": "2026-11-04"
   },
   {
@@ -96,7 +96,7 @@
     "description": "Explore wraps, tulle, flats and movement through wearable Balletcore combinations, dark palettes and distinctions from Coquette and Sporty Chic.",
     "primary_intent": "Ballet-rehearsal clothing references; separate from ballet-flat garment guide, Angelcore and Coquette",
     "role": "STYLE_GUIDE",
-    "source_sha256": "be6534be7b4593079348196bff6f46c2f67408bc592ad03b2de2a2fb19ec2c12",
+    "source_sha256": "2c35141cb3ba593be92a662548d0d00b840f6947c21cab05898de780f48a1114",
     "published_date": "2026-11-04"
   }
 ]
