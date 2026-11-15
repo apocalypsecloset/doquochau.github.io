@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote,urljoin,urlsplit
 from bs4 import BeautifulSoup
-from translation_inventory import rows,publication_rows
+from translation_inventory import rows,publication_rows,catalog_urls
 ROOT=Path(__file__).resolve().parents[1];BASE='https://apocalypsecloset.com';errors=[]
 def check(ok,message):
  if not ok:errors.append(message)
@@ -69,8 +69,21 @@ for line in headers.splitlines():
  elif 'noindex' in line.lower():check('.pages.dev/' in block,'Production-wide noindex header')
 check('https://:project.pages.dev/*' in headers and 'https://:version.:project.pages.dev/*' in headers,'Preview noindex protection')
 journal=pages['en/blog.html'];cards=journal.select('#latest .cards a.card')
-check(len(cards)==220 and len({a['href'] for a in cards})==220,'English Journal count/duplicates')
-check([int(a.select_one('.eyebrow').get_text().split('/')[0]) for a in cards]==list(range(1,221)),'English Journal order')
+expected_en=catalog_urls('en')
+check(len(cards)==len(expected_en) and {urljoin(BASE,a['href']) for a in cards}==expected_en,'English Journal published coverage/duplicates')
+check([int(a.select_one('.eyebrow').get_text().split('/')[0]) for a in cards]==list(range(1,len(expected_en)+1)),'English Journal order')
+# Both journal indexes must expose every publication as a real HTML anchor.
+for lang,index in [('vi','blog.html'),('en','en/blog.html')]:
+ expected=catalog_urls(lang)
+ visible={urljoin(BASE+'/'+index,a['href']) for a in pages[index].select('a[href]')}
+ check(expected<=visible,index+': missing published article links')
+# Prevent orphan regressions across all published blog URLs, excluding hreflang/sitemap.
+incoming={u:set() for u in catalog_urls('vi')|catalog_urls('en')}
+for page,soup in pages.items():
+ for anchor in soup.select('a[href]'):
+  destination=urljoin(BASE+'/'+page,anchor['href']).split('#')[0].split('?')[0]
+  if destination in incoming and destination!=BASE+'/'+page:incoming[destination].add(page)
+check(all(incoming.values()),'Published article without incoming HTML anchors')
 # Keep this check scoped to immutable SEO fields of existing pages. Content maintenance is checked separately.
 baseline='a43f1b532bc7939f91fd4ef32472acf7215f1cd6'
 result=subprocess.run(['git','cat-file','-e',baseline],cwd=ROOT,capture_output=True)
