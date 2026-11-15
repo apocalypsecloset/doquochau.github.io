@@ -5,7 +5,8 @@ from pathlib import Path
 from urllib.parse import unquote,urljoin,urlsplit
 from bs4 import BeautifulSoup
 from translation_inventory import rows,publication_rows,catalog_urls
-ROOT=Path(__file__).resolve().parents[1];BASE='https://apocalypsecloset.com';errors=[]
+from journal_order import errors as journal_order_errors
+ROOT=Path(__file__).resolve().parents[1];BASE='https://apocalypsecloset.com';errors=journal_order_errors()
 def check(ok,message):
  if not ok:errors.append(message)
 pages={p.relative_to(ROOT).as_posix():BeautifulSoup(p.read_text(),'html.parser') for p in ROOT.rglob('*.html') if '.git' not in p.parts and 'node_modules' not in p.parts}
