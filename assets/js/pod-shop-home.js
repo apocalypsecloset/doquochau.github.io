@@ -46,6 +46,8 @@ function say(element, value){ if(element) element.textContent=value; }
 function money(amount,currency){const n=Number(amount);return Number.isFinite(n) ? new Intl.NumberFormat('en-US',{style:'currency',currency:currency||'USD'}).format(n):'Price at checkout';}
 function errorFallback(message){
   say(status,message || 'Products are temporarily unavailable. You can shop securely on Fourthwall.');
+  // Preserve the verified static catalog when the live API cannot connect.
+  if(grid.querySelector('.ac-static-product')) return;
   grid.replaceChildren();
   const box=document.createElement('div');box.className='ac-collection-fallback';
   const h=document.createElement('strong');h.textContent='SILENT CHAOS — GOTHIC ANGEL TEE';
