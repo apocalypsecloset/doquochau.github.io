@@ -1,0 +1,16 @@
+/* Discovery UI is scoped to the journal hub; article typography stays intact. */
+.journal-topics{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.journal-topics[hidden],#journal-reset[hidden]{display:none!important}
+.journal-topics button,#journal-reset{font:600 14px/1.5 Arial,Helvetica,sans-serif;min-height:44px;padding:9px 16px;background:#171311;color:#f0ece4;border:1px solid #8e7568;cursor:pointer}
+.journal-topics button[aria-pressed=true]{background:#f0ece4;color:#171311;border-color:#f0ece4}
+.journal-topics button:hover{border-color:#e05444}
+.journal-controls label{font:600 16px/1.5 Arial,Helvetica,sans-serif}
+#journal-search{font:400 16px/1.5 Arial,Helvetica,sans-serif;min-height:48px}
+#journal-count{font:400 15px/1.6 Arial,Helvetica,sans-serif;color:#d2c3b8}
+#journal-reset{background:transparent;text-decoration:underline;text-underline-offset:4px}
+.journal-featured .card{border-top:2px solid #e05444}
+.journal-featured .card h3{font-size:clamp(25px,3vw,34px);line-height:1.2}
+.journal-featured .card p{font:400 16px/1.6 Arial,Helvetica,sans-serif}
+.journal-featured .eyebrow{font-size:12px}
+.journal-topics button:focus-visible,#journal-reset:focus-visible{outline:2px solid #f0ece4;outline-offset:3px}
+@media(max-width:590px){.journal-topics{gap:7px}.journal-topics button{padding-inline:12px}.journal-featured{padding-top:34px}.journal-featured .cards{grid-template-columns:1fr}}

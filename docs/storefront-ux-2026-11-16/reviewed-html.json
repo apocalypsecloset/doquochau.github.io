@@ -1,0 +1,10 @@
+{
+  "index.html": {
+    "before": "8b007563e28b717c2df83fe99b44589c3699182eecd1d9823fd9b8f073e5d403",
+    "after": "15781eab47c86d7e0cb3ab33713f811c95c294a79efd20e0f96477db1188d365"
+  },
+  "en/blog.html": {
+    "before": "b50f8f6fada5a8b7491db7773120a2c059adcc1ce0135e45e6a91108f25bc56f",
+    "after": "2c0cc27e18ac53280491997bb7a932c786a20b65bbfdf63c8fdc978aba61aa78"
+  }
+}

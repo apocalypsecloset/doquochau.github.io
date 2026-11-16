@@ -1,4 +1,5 @@
 """Check the real consent migration, unchanged editorial bytes and policy parity."""
+from storefront_ux_release import original as ux_original
 import hashlib,json,re,subprocess,sys,xml.etree.ElementTree as ET
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -12,6 +13,7 @@ for p in ROOT.rglob('*.html'):
  for t in s.find_all('script'):
   if re.search(r'gtag\s*\(\s*["\x27](?:config|js)["\x27]',t.get_text()):errors.append(rel+': legacy inline Google initializer')
  if rel in review:
+  raw=ux_original(rel,raw)
   old=subprocess.check_output(['git','show',BASE+':'+rel],cwd=ROOT,text=True);o=BeautifulSoup(old,'html.parser')
   if hashlib.sha256(raw.encode()).hexdigest()!=review[rel]['after']:errors.append(rel+': reviewed bytes changed')
   if hashlib.sha256(old.encode()).hexdigest()!=review[rel]['before']:errors.append(rel+': baseline lock')

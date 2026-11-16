@@ -35,6 +35,7 @@ let currentCart = null;
 let cartNeedsRefresh = false;
 let featuredProduct = null;
 const variantNames = new Map();
+const variantPhotos = new Map();
 const viewedProducts = new Set();
 if(!grid || !dialog || !bagButton || !API || !model) return;
 function track(name,payload){
@@ -133,6 +134,66 @@ function el(tag, cls, txt){
   return e;
 }
 function priceOf(v){return money(v.unitPrice?.value,v.unitPrice?.currency);}
+function shortName(name){return String(name||'Apocalypse Closet item').replace(/\s*\|\s*Apocalypse Closet$/i,'').replace('Gothic Angel Graphic Tee','Angel Tee').replace('Gothic Graphic Tee','Graphic Tee');}
+const chartSlugs=new Set(['silent-chaos-gothic-angel-graphic-tee-apocalypse-closet','thorn-heart-gothic-graphic-tee-apocalypse-closet']);
+function sizeGuideLink(product){
+  const a=el('a','ac-size-link','Size guide ↗');
+  a.href=chartSlugs.has(product.slug)?'#size-guide':SHOP+'/products/'+encodeURIComponent(product.slug);
+  if(chartSlugs.has(product.slug))a.dataset.sizeGuide=product.slug;
+  return a;
+}
+function renderSizeChoices(select,product){
+  if(!select._choices){
+    const field=el('fieldset','ac-size-choices');
+    const legend=el('legend','','SIZE');field.append(legend);
+    const link=sizeGuideLink(product);field.append(link);
+    select.closest('label').hidden=true;select.closest('label').after(field);select.hidden=true;
+    select._choices=field;
+  }
+  const field=select._choices;
+  field.querySelectorAll('label').forEach(n=>n.remove());
+  [...select.options].filter(o=>o.value).forEach(o=>{
+    const label=el('label','ac-size-choice');
+    const radio=el('input');radio.type='radio';radio.name='size-'+(select.id||product.id||product.slug);
+    radio.value=o.value;radio.checked=select.value===o.value;radio.disabled=select.disabled;
+    radio.setAttribute('aria-label',o.value);radio.title=o.textContent;
+    const text=el('span','',o.value);label.append(radio,text);field.append(label);
+    radio.addEventListener('change',()=>{select.value=radio.value;select.dispatchEvent(new Event('change',{bubbles:true}));});
+  });
+}
+function syncSizeChoices(select){
+  select._choices?.querySelectorAll('input').forEach(r=>{r.checked=r.value===select.value;});
+}
+function registerVariants(product){
+  (product.variants||[]).forEach(v=>{
+    variantNames.set(v.id,product.name);
+    const photos=model.colorPhotos(product,model.color(v),v);if(photos[0])variantPhotos.set(v.id,photos[0]);
+  });
+}
+// Exact charts verified independently for both current products on Fourthwall.
+function setupUnits(container){
+  const controls=container.querySelector('.ac-unit-switch');if(!controls)return;
+  controls.hidden=false;
+  const choose=unit=>{
+    container.querySelectorAll('[data-measurements]').forEach(n=>n.hidden=n.dataset.measurements!==unit);
+    controls.querySelectorAll('[data-unit]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.unit===unit)));
+  };
+  controls.addEventListener('click',e=>{const b=e.target.closest('[data-unit]');if(b)choose(b.dataset.unit);});choose('cm');
+}
+const sizeDialog=document.querySelector('#ac-size-dialog');
+setupUnits(document.querySelector('#size-guide'));
+document.addEventListener('click',event=>{
+  const link=event.target.closest('[data-size-guide]');
+  if(!link||!chartSlugs.has(link.dataset.sizeGuide)||!sizeDialog?.showModal)return;
+  event.preventDefault();
+  const copy=document.querySelector('#size-guide .ac-size-content').cloneNode(true);
+  copy.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));
+  document.querySelector('#ac-size-dialog-content').replaceChildren(copy);setupUnits(copy);
+  say(document.querySelector('#ac-size-dialog-title'),link.dataset.sizeGuide.startsWith('thorn-heart')?'THORN HEART / SIZE GUIDE':'SILENT CHAOS / SIZE GUIDE');
+  if(!sizeDialog.open)sizeDialog.showModal();
+});
+document.querySelector('#ac-size-close')?.addEventListener('click',()=>sizeDialog.close());
+sizeDialog?.addEventListener('click',event=>{if(event.target===sizeDialog)sizeDialog.close();});
 function fillSizes(select,product,color,preserve){
   const options=model.sizes(product,color);
   const previous=preserve||'';
@@ -140,6 +201,7 @@ function fillSizes(select,product,color,preserve){
   options.forEach(v=>select.add(new Option(model.size(v)+' · '+priceOf(v),model.size(v))));
   if(options.some(v=>model.size(v)===previous))select.value=previous;
   select.disabled=!options.length;
+  renderSizeChoices(select,product);
 }
 function fillColors(select,product){
   select.replaceChildren();
@@ -167,7 +229,7 @@ function variantLabel(v){
   return [col,size].filter(Boolean).join(' / ') || v.attributes?.description || v.name || 'One size';
 }
 function createCard(p,index){
-  variants(p).forEach(v=>variantNames.set(v.id,p.name));
+  registerVariants(p);
   const card=el('article','ac-product-card');
   const media=el('div','ac-product-media');
   const photo=el('a','ac-product-image');
@@ -175,8 +237,9 @@ function createCard(p,index){
   photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' on Fourthwall');media.append(photo);
   const body=el('div','ac-product-body');
   body.append(el('p','ac-product-type','APOCALYPSE CLOSET / ORIGINAL'));
-  const title=el('h3','ac-product-title');const link=el('a','',p.name);link.href=photo.href;title.append(link);body.append(title);
+  const title=el('h3','ac-product-title');const link=el('a','',shortName(p.name));link.href=photo.href;title.append(link);body.append(title);
   const min=lowest(p),price=el('strong','ac-product-price',min?'FROM '+priceOf(min):'Unavailable');body.append(price);
+  body.append(el('p','ac-product-fit',model.colors(p).join(' / ')+' · Made to order'));
   const controls=el('div','ac-variant-controls');
   const colorLabel=el('label','ac-variant-field','COLOR');
   const color=el('select','ac-product-color');color.setAttribute('aria-label','Choose color for '+p.name);colorLabel.append(color);
@@ -186,11 +249,13 @@ function createCard(p,index){
   const buy=el('button','ac-product-add','ADD TO BAG');buy.type='button';
   const note=el('p','ac-product-status','Choose color and size · Checkout by Fourthwall');note.setAttribute('role','status');
   fillColors(color,p);fillSizes(size,p,color.value);
+  colorLabel.hidden=color.options.length===1;
   function refresh(colorChanged){
     if(colorChanged)fillSizes(size,p,color.value,size.value);
     const v=model.variant(p,color.value,size.value);
     say(price,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
-    buy.disabled=!v;
+    buy.disabled=busy||!v;
+    syncSizeChoices(size);
     paintCardPhotos(media,p,color.value,v);
     say(note,!color.options.length?'Currently unavailable':v?'Selected '+color.value+' / '+model.size(v):'Choose a size for '+color.value+'.');
   }
@@ -200,62 +265,17 @@ function createCard(p,index){
     const v=model.variant(p,color.value,size.value);
     if(!v){say(note,'Please choose color and size.');size.focus();return;}
     await addToCart(v,buy,note,p.name);
+    buy.disabled=!model.variant(p,color.value,size.value);
   });
   body.append(buy,note);card.append(media,body);refresh(false);return card;
 }
-/**
- * Preview-only grid slots: 5 additional visual cards built from the existing
- * Silent Chaos images. Never invent inventory, prices, variant IDs or checkout.
- * These placeholders disappear on production and as real catalog items arrive.
- */
-function isLayoutPreview(){
-  return location.hostname.endsWith('.pages.dev') || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-}
-function createDemoCard(product,slot){
-  const card=el('article','ac-product-card ac-product-card--demo');
-  card.setAttribute('data-layout-preview','true');
-  const media=el('div','ac-product-media');
-  const imageBox=el('div','ac-product-image');
-  const images=productPhotos(product);
-  const photoIndex=images.length ? [1,4,7,10,13][(slot-1)%5] % images.length : -1;
-  if(photoIndex>=0){
-    const photo=document.createElement('img');
-    photo.src=images[photoIndex]; photo.loading='lazy';photo.decoding='async';
-    photo.alt='Alternate mockup view of the existing Silent Chaos tee — layout demo '+slot;
-    photo.width=560;photo.height=640;
-    imageBox.append(photo);
-  }else imageBox.append(el('span','ac-product-image-placeholder','SILENT CHAOS'));
-  imageBox.append(el('span','ac-product-flag ac-product-flag--demo','LAYOUT DEMO'));
-  media.append(imageBox);
-  const body=el('div','ac-product-body');
-  body.append(el('p','ac-product-type','DESIGN SLOT '+String(slot+1).padStart(2,'0')+' / PREVIEW'));
-  const title=el('h3','ac-product-title','SILENT CHAOS / MOCKUP '+String(slot).padStart(2,'0'));
-  body.append(title,el('strong','ac-product-price ac-demo-price','COMING SOON'));
-  const purchase=el('div','ac-product-purchase');
-  const button=el('button','ac-product-add ac-demo-button','PREVIEW ONLY');
-  button.type='button';button.disabled=true;
-  button.title='Layout demonstration. This is not a separately purchasable product.';
-  purchase.append(button);
-  body.append(purchase,el('p','ac-product-status','Same shirt, another photo · Not for sale'));
-  card.append(media,body);
-  return card;
-}
-function paintCatalog(products, featured){
+function paintCatalog(products){
   const structured=document.getElementById('ac-product-schema');
   if(structured)structured.textContent=JSON.stringify({'@context':'https://schema.org','@graph':products.map(p=>model.productSchema(p,SHOP+'/products/'+encodeURIComponent(p.slug)))});
-
-  const showDemo = isLayoutPreview() && products.length < 6;
-  const fillers=showDemo
-    ? Array.from({length:6-products.length},(_,i)=>createDemoCard(featured,i+1))
-    : [];
-  grid.replaceChildren(...products.map(createCard),...fillers);
-  grid.classList.toggle('is-single',products.length===1&&!showDemo);
-  grid.classList.toggle('is-demo',showDemo);
-  say(status,showDemo
-    ? products.length+' LIVE DESIGN'+(products.length>1?'S':'')+' · '+fillers.length+' DEMO SLOTS · PREVIEW ONLY'
-    : products.length+' LIVE DROPS');
-  const notice=document.querySelector('#ac-demo-note');
-  if(notice) notice.hidden=!showDemo;
+  grid.replaceChildren(...products.map(createCard));
+  grid.classList.toggle('is-single',products.length===1);
+  grid.classList.toggle('is-pair',products.length===2);
+  say(status,products.length+' LIVE DESIGN'+(products.length===1?'':'S')+' · PRICES IN USD');
   const items=products.map(p=>{const v=lowest(p);return v?model.ecommerceItem(v,1,p.name):null;}).filter(Boolean);
   if(items.length)track('view_item_list',{item_list_id:'home_catalog',item_list_name:'Home catalog',items});
 }
@@ -276,7 +296,7 @@ function paintHero(product){
       information.append(panel);
     });
   }
-  variants(product).forEach(v=>variantNames.set(v.id,product.name));
+  registerVariants(product);
   if(!viewedProducts.has(product.id||product.slug)){
     const first=lowest(product);
     if(first){viewedProducts.add(product.id||product.slug);track('view_item',model.eventForVariant(first,1,product.name));}
@@ -285,6 +305,7 @@ function paintHero(product){
   fillColors(heroColor,product);
   if(model.colors(product).includes(previousColor))heroColor.value=previousColor;
   fillSizes(heroSize,product,heroColor.value,previousSize);
+  heroColor.closest("label").hidden=heroColor.options.length===1;
   const min=lowest(product);
   function refresh(colorChanged){
     if(colorChanged)fillSizes(heroSize,product,heroColor.value,heroSize.value);
@@ -295,7 +316,8 @@ function paintHero(product){
       const img=el('img');img.src=urls[0];img.alt=product.name+' — '+heroColor.value;
       img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;heroVisual.append(img);
     }else heroVisual.append(el('div','ac-visual-placeholder','PHOTO PENDING — '+heroColor.value));
-    heroAdd.disabled=!v;
+    heroAdd.disabled=busy||!v;
+    syncSizeChoices(heroSize);
     say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
     say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product on Fourthwall.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
     renderLookbook(product,heroColor.value,v);
@@ -305,6 +327,7 @@ function paintHero(product){
     const v=model.variant(product,heroColor.value,heroSize.value);
     if(!v){say(heroStatus,'Please choose color and size.');heroSize.focus();return;}
     await addToCart(v,heroAdd,heroStatus,product.name);
+    heroAdd.disabled=!model.variant(product,heroColor.value,heroSize.value);
   };
   refresh(false);
 }
@@ -362,9 +385,11 @@ function displayCart(cart){
   retryVisible(false);updateCount(cart);cartList.replaceChildren();
   model.cartItems(cart).forEach(item=>{
     const v=item.variant,q=Number(item.quantity||0);if(!v)return;
-    const li=el('li','');const details=el('div','');
+    const li=el('li','');const details=el('div','ac-cart-item-details');
+    const src=model.photos(v.images)[0]||variantPhotos.get(v.id);
+    if(src){const image=el('img','ac-cart-photo');image.src=src;image.alt=shortName(variantNames.get(v.id)||v.name)+' — '+model.color(v);image.width=76;image.height=96;image.loading='lazy';image.decoding='async';li.append(image);}else li.classList.add('ac-cart-no-photo');
     const name=variantNames.get(v.id)||v.name||'Apocalypse Closet item';
-    details.append(el('strong','',name),el('div','ac-cart-variant',[model.color(v),model.size(v)].join(' / ')));
+    details.append(el('strong','',shortName(name)),el('div','ac-cart-variant',[model.color(v),model.size(v)].join(' / ')));
     const controls=el('div','ac-cart-quantity');
     const label=el('label','','QUANTITY');
     const input=el('input');input.type='number';input.min='1';input.max='99';input.step='1';input.value=String(q);
@@ -382,6 +407,7 @@ function displayCart(cart){
   say(subtotal,money(cartTotal(cart),'USD'));
   checkout.href=SHOP+'/checkout/?'+new URLSearchParams({cartCurrency:'USD',cartId:cart.id||''}).toString();
   checkout.hidden=!cart.id||!countItems(cart);
+  document.querySelector('#ac-continue-shopping').hidden=false;
   say(cartStatus,countItems(cart)?'Shipping and any applicable taxes are calculated during secure checkout.':'Your bag is empty.');
 }
 async function changeCart(item,quantity){
@@ -447,12 +473,14 @@ checkout.addEventListener('click',event=>{
   if(busy||checkout.getAttribute('aria-disabled')==='true'||!currentCart?.id||!countItems(currentCart)){event.preventDefault();return;}
   track('begin_checkout',{currency:'USD',value:cartTotal(currentCart),items:model.cartItems(currentCart).filter(i=>i.variant).map(i=>model.ecommerceItem(i.variant,i.quantity,variantNames.get(i.variant.id)))});
 });
+document.querySelector('#ac-continue-shopping')?.addEventListener('click',()=>dialog.close());
 document.querySelector('#ac-cart-close')?.addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
 mobileToggle?.addEventListener('click',()=>{
   const open=nav.classList.toggle('is-open');
   mobileToggle.setAttribute('aria-expanded',String(open));
 });
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav?.classList.contains('is-open')){nav.classList.remove('is-open');mobileToggle?.setAttribute('aria-expanded','false');mobileToggle?.focus();}});
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('is-open');mobileToggle?.setAttribute('aria-expanded','false');}));
 const stored=getStoredCart();
 if(stored){

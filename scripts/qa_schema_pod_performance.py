@@ -1,5 +1,6 @@
 from privacy_release import original as privacy_original
 """Verify the authorized schema, image and performance maintenance on real pages."""
+from storefront_ux_release import original as ux_original
 import json,re,hashlib,subprocess,sys,collections
 from pathlib import Path
 from urllib.parse import urljoin
@@ -44,7 +45,7 @@ for p in sorted(ROOT.rglob('*.html')):
   old=BeautifulSoup(subprocess.check_output(['git','show','22b72f2:'+rel],cwd=ROOT,text=True),'html.parser')
   for selector,attr in [('link[rel=canonical]','href'),('meta[name=robots]','content')]:check([n.get(attr) for n in s.select(selector)]==[n.get(attr) for n in old.select(selector)],rel+': original '+selector)
   check(s.title.get_text()==old.title.get_text(),rel+': original title');check(headline==old.h1.get_text(' ',strip=True),rel+': original H1')
-  if rel not in ['index.html','about.html','en/about.html','privacy.html','en/privacy.html'] and s.main and old.main:check(s.main.get_text(' ',strip=True)==old.main.get_text(' ',strip=True),rel+': main visible text preserved')
+  if rel not in ['index.html','about.html','en/about.html','privacy.html','en/privacy.html'] and s.main and old.main:check(BeautifulSoup(ux_original(rel,raw),'html.parser').main.get_text(' ',strip=True)==old.main.get_text(' ',strip=True),rel+': main visible text preserved')
  counts['pages']+=1
 check(len(altrows)==871,'All 871 reviewed assets represented');check(len(changes)==1742,'Expected bilingual reviewed alt placements')
 for row in altrows:check(row['width']>0 and row['height']>0 and len(row['sha256'])==64,'Reviewed image decode evidence '+row['url'])

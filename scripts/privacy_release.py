@@ -1,4 +1,5 @@
 """Exact reviewed consent-only successors for historical editorial hash gates."""
+from storefront_ux_release import original as ux_original
 import hashlib,json,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -21,6 +22,7 @@ def migrate(raw):
  return raw
 
 def original(path,raw):
+ raw=ux_original(path,raw)
  manifest=D/'reviewed-html.json'
  if not manifest.exists():return raw
  if 'manifest' not in CACHE:CACHE['manifest']=json.loads(manifest.read_text())

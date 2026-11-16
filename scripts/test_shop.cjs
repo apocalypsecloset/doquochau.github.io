@@ -83,3 +83,38 @@ test('static catalog remains readable without JavaScript and live schema uses re
  assert.match(w.document.querySelector('#ac-catalog-status').textContent,/unavailable/i);
  }finally{dom.window.close();}
 });
+
+test('visible size buttons select exact variants and preserve color-specific selection',async()=>{
+ const h=await boot();try{
+  const d=h.w.document,hero=d.querySelector('.ac-hero-buy-actions');
+  assert.equal(d.querySelectorAll('[data-layout-preview]').length,0);
+  assert.equal(hero.querySelectorAll('input[type=radio]').length,1); // sold-out Black XL excluded
+  hero.querySelector('input[value=S]').click();
+  assert.equal(d.querySelector('#ac-hero-size').value,'S');
+  assert.equal(d.querySelector('#ac-hero-add').disabled,false);
+  const card=d.querySelector('.ac-product-card'),color=card.querySelector('.ac-product-color');
+  color.value='White';color.dispatchEvent(new h.w.Event('change'));
+  card.querySelector('input[value=XL]').click();
+  assert.equal(card.querySelector('.ac-product-size').value,'XL');
+  assert.equal(card.querySelector('.ac-product-price').textContent,'$31.99');
+  card.querySelector('.ac-product-add').click();await tick();await tick();
+  assert.equal(h.cart().items[0].variant.id,'white-xl');
+  assert.equal(d.querySelector('.ac-cart-photo').src,white);
+  assert.equal(d.querySelector('#ac-continue-shopping').hidden,false);
+  d.querySelector('#ac-continue-shopping').click();assert.equal(d.querySelector('#ac-cart-dialog').open,false);
+ }finally{h.dom.window.close();}
+});
+test('verified guide opens for current products and switches between supplier cm and inch data',async()=>{
+ const h=await boot();try{
+  const d=h.w.document,guide=d.querySelector('#ac-size-dialog');
+  d.querySelector('.ac-variant-heading [data-size-guide]').click();
+  assert.equal(guide.open,true);
+  const rows=unit=>[...guide.querySelectorAll(`[data-measurements="${unit}"] tbody tr`)].map(r=>r.textContent);
+  assert.equal(rows('cm').length,7);assert.equal(rows('cm')[0],'S684641');
+  assert.equal(rows('in')[6],'4XL33.529.824.6');
+  guide.querySelector('[data-unit=in]').click();
+  assert.equal(guide.querySelector('[data-measurements=in]').hidden,false);
+  assert.equal(guide.querySelector('[data-measurements=cm]').hidden,true);
+  d.querySelector('#ac-size-close').click();assert.equal(guide.open,false);
+ }finally{h.dom.window.close();}
+});

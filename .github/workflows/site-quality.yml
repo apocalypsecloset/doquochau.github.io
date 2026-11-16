@@ -25,6 +25,8 @@ jobs:
           NODE_PATH: /tmp/ac-shop-tests/node_modules
       - name: Consent, policy translations and exact editorial preservation
         run: python scripts/qa_privacy_policies.py
+      - name: Storefront UX, size guide and immutable SEO
+        run: python scripts/qa_storefront_ux.py
       - run: python scripts/qa_site.py
       - name: Schema, reviewed image alts and performance maintenance
         run: python scripts/qa_schema_pod_performance.py

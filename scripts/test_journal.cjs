@@ -39,3 +39,21 @@ test('Vietnamese journal reconstructs every original search string and retains l
   input.value='';input.dispatchEvent(new w.Event('input'));assert.equal(visible().length,12);
  }finally{dom.window.close();old.window.close();}
 });
+
+test('topic shortcuts combine with search, reset, pagination and retained article URLs',()=>{
+ const dom=new JSDOM(fs.readFileSync(path.join(root,'en/blog.html'),'utf8'),{runScripts:'outside-only'});
+ try{
+  const w=dom.window,d=w.document,cards=[...d.querySelectorAll('#latest .cards a.card')];
+  const urls=cards.map(c=>c.getAttribute('href'));
+  w.eval(fs.readFileSync(path.join(root,'assets/js/journal-discovery.js'),'utf8'));
+  const visible=()=>cards.filter(c=>!c.hidden);
+  d.querySelector('[data-topic=gothic]').click();
+  assert.ok(visible().length>0);assert.ok(visible().every(c=>/goth|whimsigoth/i.test(c.textContent)));
+  assert.equal(d.querySelector('[data-topic=gothic]').getAttribute('aria-pressed'),'true');
+  const input=d.querySelector('#journal-search');input.value='romantic';input.dispatchEvent(new w.Event('input'));
+  assert.ok(visible().length>0);assert.ok(visible().every(c=>/romantic/i.test(c.textContent)));
+  d.querySelector('#journal-reset').click();assert.equal(visible().length,24);assert.equal(input.value,'');
+  assert.equal(d.querySelector('[data-topic=all]').getAttribute('aria-pressed'),'true');
+  assert.deepEqual(cards.map(c=>c.getAttribute('href')),urls);
+ }finally{dom.window.close();}
+});
