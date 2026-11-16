@@ -1,3 +1,4 @@
+from privacy_release import original as privacy_original
 """Complete, hash-locked English collection hubs; no article-only extraction."""
 from pathlib import Path
 from bs4 import BeautifulSoup,Comment
@@ -6,7 +7,7 @@ import csv,json,hashlib,re,posixpath,sys
 from en_translate import ROOT,VI
 
 def source(slug):
- raw=(ROOT/'blog'/f'{slug}.html').read_text()
+ raw=privacy_original('blog/'+slug+'.html',(ROOT/'blog'/f'{slug}.html').read_text())
  raw=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',raw,flags=re.S)
  s=BeautifulSoup(raw,'html.parser');main=s.main;assert main and main.h1
  texts=[]

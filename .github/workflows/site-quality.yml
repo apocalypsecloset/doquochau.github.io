@@ -20,9 +20,11 @@ jobs:
           node-version: '24'
       - run: python -m pip install -r scripts/requirements-en.txt
       - run: npm install --prefix /tmp/ac-shop-tests jsdom@31.0.0 --no-audit --no-fund
-      - run: node --test scripts/test_shop.cjs scripts/test_journal.cjs
+      - run: node --test scripts/test_shop.cjs scripts/test_journal.cjs scripts/test_privacy.cjs
         env:
           NODE_PATH: /tmp/ac-shop-tests/node_modules
+      - name: Consent, policy translations and exact editorial preservation
+        run: python scripts/qa_privacy_policies.py
       - run: python scripts/qa_site.py
       - name: Schema, reviewed image alts and performance maintenance
         run: python scripts/qa_schema_pod_performance.py
