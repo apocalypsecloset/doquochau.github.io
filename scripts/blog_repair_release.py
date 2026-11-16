@@ -80,6 +80,11 @@ def original(path,raw):
  assert digest(CACHE[key])==row['before'],path
  return CACHE[key]
 if __name__=='__main__':
+ existing=D/'reviewed-html.json'
+ if existing.exists():
+  reviewed=json.loads(existing.read_text())
+  assert all(digest((ROOT/path).read_text())==row['after'] for path,row in reviewed.items()),'Release changed; inspect and QA before replaying'
+  print(json.dumps({'already_applied':True,'pages':len(reviewed)}));raise SystemExit(0)
  manifest={};counts=Counter()
  for p in sorted(list((ROOT/'blog').glob('*.html'))+list((ROOT/'en/blog').glob('*.html'))):
   path=p.relative_to(ROOT).as_posix();raw=p.read_text();after,changes=repair(path,raw)
