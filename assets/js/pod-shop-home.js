@@ -3,7 +3,7 @@
 'use strict';
 const API = String(window.AC_FOURTHWALL && window.AC_FOURTHWALL.apiBase || '').replace(/\/+$/, '');
 const model = window.ACShopModel;
-const SHOP = 'https://apocalypse-closet-shop.fourthwall.com';
+const SHOP = 'https://shop.apocalypsecloset.com';
 const FEATURED_SLUG = 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
 const grid = document.querySelector('#ac-product-grid');
 const status = document.querySelector('#ac-catalog-status');
