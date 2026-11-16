@@ -21,7 +21,7 @@
   },
   "index.html": {
     "before": "dd389aab1c348b367c6e57cc6ec64baa6d72cca8f53b9e75aec63a9f8c85806e",
-    "after": "b9451928e6c46440d5c6389cf7af6d05292fefdf6e58e446deb2296f83009fb5"
+    "after": "59afff037c07d24fb57d33f5b66fe28b914192572d7c23dace988563b5874969"
   },
   "privacy.html": {
     "before": "ce25c5b5caa6d450a46effc62eb8f85230c2544e6b464cec4c715aa3231185c4",
@@ -605,7 +605,7 @@
   },
   "en/privacy.html": {
     "before": "7b66d993e4f63fedaf958b4f361850025eed7efb22ed63e05c6fe3fa6d937135",
-    "after": "b124970d3d40a1a59289344afcfbe216c60c9a6f09c1ae428267989cb031f242"
+    "after": "e85cd32231b4ace9d410d3ff42d4e66bc4e29f9f3e5fb47fef7ec84a0bfc973e"
   },
   "en/blog.html": {
     "before": "aef4348cfa51ab43ce1ed7c73cfb2deb15a56ad8414533330ccbb0c0816328bb",
