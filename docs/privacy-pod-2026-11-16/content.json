@@ -1,0 +1,262 @@
+{
+  "privacy": [
+    {
+      "id": "operator",
+      "vi": [
+        "Ai vận hành và liên hệ",
+        "Apocalypse Closet vận hành nội dung phối đồ, tính năng Closet và giới thiệu thiết kế POD trên website này. Gửi câu hỏi hoặc yêu cầu về dữ liệu do chúng tôi xử lý tới <a href=\"mailto:apocalypsecloset@gmail.com\">apocalypsecloset@gmail.com</a>. Chính sách này áp dụng cho website Apocalypse Closet; đơn hàng Fourthwall và Shopee có chính sách riêng."
+      ],
+      "en": [
+        "Operator and contact",
+        "Apocalypse Closet operates this website’s fashion editorial, Closet features and presentation of original POD designs. Send questions or requests about data we handle to <a href=\"mailto:apocalypsecloset@gmail.com\">apocalypsecloset@gmail.com</a>. This policy covers our website; Fourthwall and Shopee orders have separate policies."
+      ]
+    },
+    {
+      "id": "data",
+      "vi": [
+        "Thông tin được xử lý",
+        "Khi bạn chọn đăng nhập, Firebase Authentication xử lý thông tin tài khoản; website có thể dùng tên hiển thị, email, ảnh đại diện và mã người dùng. Outfit bạn lưu được đồng bộ bằng Cloud Firestore. Tin nhắn hỗ trợ chứa thông tin bạn gửi. Khi bạn đồng ý analytics, GA4 đo lượt xem trang và một số tương tác. Dữ liệu kỹ thuật này không được mô tả là hoàn toàn ẩn danh. Không nhập thông tin nhạy cảm vào ô tìm kiếm."
+      ],
+      "en": [
+        "Information processed",
+        "When you choose to sign in, Firebase Authentication handles account information; the website may use your display name, email, profile image and user ID. Cloud Firestore synchronizes saved outfits. Support messages contain what you send. If you allow analytics, GA4 measures page views and selected interactions. This technical data is not described as wholly anonymous. Do not enter sensitive information in search fields."
+      ]
+    },
+    {
+      "id": "purposes",
+      "vi": [
+        "Mục đích và nhà cung cấp",
+        "Chúng tôi dùng dữ liệu để cung cấp tài khoản, tủ đồ, giỏ hàng, hỗ trợ và bảo vệ website; analytics tùy chọn giúp đánh giá việc sử dụng nội dung. Google/Firebase cung cấp xác thực, lưu trữ và analytics; Cloudflare cung cấp mạng phân phối nội dung, bảo mật và tuyến API của shop. Nhà cung cấp có thể nhận IP, thông tin thiết bị và dữ liệu cần cho dịch vụ. Xem <a href=\"https://policies.google.com/privacy\">Google Privacy</a> và <a href=\"https://www.cloudflare.com/privacypolicy/\">Cloudflare Privacy</a>."
+      ],
+      "en": [
+        "Purposes and providers",
+        "Data supports accounts, saved outfits, the shopping bag, support and site security; optional analytics helps assess use of our content. Google/Firebase provides authentication, storage and analytics. Cloudflare provides content delivery, security and the shop API route. Providers may receive IP addresses, device information and data needed for their service. See <a href=\"https://policies.google.com/privacy\">Google Privacy</a> and <a href=\"https://www.cloudflare.com/privacypolicy/\">Cloudflare Privacy</a>."
+      ]
+    },
+    {
+      "id": "cookies",
+      "vi": [
+        "Cookie và lựa chọn analytics",
+        "Lưu trữ cần thiết phục vụ phiên đăng nhập, tủ đồ, mã giỏ hàng và lựa chọn cookie. GA4 không được tải hoặc gửi sự kiện trước khi bạn chọn cho phép phân tích. Bạn có thể chọn “Chỉ cần thiết” mà vẫn đọc bài và mua hàng. Mở “Cài đặt cookie” ở cuối trang để đổi lựa chọn; rút đồng ý sau khi GA4 đã tải sẽ tải lại trang để dừng analytics. Tín hiệu Global Privacy Control giữ analytics tắt. Website không xin phép lưu trữ quảng cáo hay cá nhân hóa quảng cáo."
+      ],
+      "en": [
+        "Cookies and analytics choices",
+        "Necessary storage supports sign-in, saved outfits, the cart ID and cookie choices. GA4 is not loaded and analytics events are not sent before you allow analytics. “Necessary only” still permits reading and shopping. Use “Cookie settings” at the bottom of a page to change your choice; withdrawing after GA4 has loaded reloads the page to stop analytics. Global Privacy Control keeps analytics off. This website does not request advertising storage or ad personalization."
+      ]
+    },
+    {
+      "id": "orders",
+      "vi": [
+        "Đơn hàng Fourthwall và link Shopee",
+        "Fourthwall là bên bán và merchant of record của đơn POD trên cửa hàng Fourthwall. Họ xử lý checkout và dữ liệu đơn; chúng tôi có thể nhận thông tin khách hàng/đơn hàng để quản lý shop và hỗ trợ. Thông tin thẻ được nhập tại checkout Fourthwall. Xem <a href=\"https://fourthwall.com/legal/merchandise-privacy-policy\">Merchandise Privacy Policy</a>. Một số link Shopee là affiliate; sau khi nhấp, Shopee hoặc mạng affiliate có thể dùng cookie và dữ liệu giới thiệu để ghi nhận hoa hồng. Lựa chọn cookie tại đây không điều khiển website bên ngoài."
+      ],
+      "en": [
+        "Fourthwall orders and Shopee links",
+        "Fourthwall is the seller and merchant of record for POD orders in our Fourthwall store. It handles checkout and order data; we may receive customer/order details for shop management and support. Card details are entered at Fourthwall checkout. See its <a href=\"https://fourthwall.com/legal/merchandise-privacy-policy\">Merchandise Privacy Policy</a>. Some Shopee links are affiliate links; after a click, Shopee or its affiliate network may use cookies and referral data for commission attribution. Our cookie choice does not control external websites."
+      ]
+    },
+    {
+      "id": "retention",
+      "vi": [
+        "Lưu trữ và xử lý quốc tế",
+        "Lựa chọn cookie hết hạn sau 180 ngày. Cookie analytics do cấu hình này tạo có thời hạn tối đa 180 ngày và không tự gia hạn qua mỗi lượt xem. Dữ liệu tài khoản/Closet được giữ để phục vụ tài khoản cho tới khi được xóa hoặc yêu cầu xóa được xử lý; việc lưu dữ liệu hỗ trợ phụ thuộc mục đích giải quyết yêu cầu và nghĩa vụ áp dụng. Thời hạn dữ liệu tại nhà cung cấp còn phụ thuộc cấu hình dịch vụ của họ. Nhà cung cấp có thể xử lý dữ liệu tại nhiều quốc gia; chúng tôi không khẳng định toàn bộ dữ liệu nằm tại Việt Nam."
+      ],
+      "en": [
+        "Retention and international processing",
+        "Cookie choices expire after 180 days. Analytics cookies created by this configuration have a maximum 180-day lifetime without renewal on every view. Account/Closet data is retained to serve the account until deleted or a deletion request is processed; support retention depends on resolving the request and applicable obligations. Provider-side retention also depends on service configuration. Providers may process data in multiple countries; we do not claim all data stays in Vietnam."
+      ]
+    },
+    {
+      "id": "rights",
+      "vi": [
+        "Kiểm soát và yêu cầu của bạn",
+        "Bạn có thể xóa outfit đã lưu trong Closet, đăng xuất và đổi lựa chọn cookie. Liên hệ email trên để yêu cầu truy cập, sửa hoặc xóa dữ liệu tài khoản; chúng tôi cần xác minh người yêu cầu. Nếu luật áp dụng cho bạn quy định quyền phản đối, hạn chế xử lý, nhận bản sao/chuyển dữ liệu hoặc khiếu nại tới cơ quan có thẩm quyền, bạn có thể nêu quyền đó trong yêu cầu. Việc rút đồng ý không xóa dữ liệu đã được xử lý trước đó; hãy gửi yêu cầu xóa nếu cần. Yêu cầu về giao dịch Fourthwall gửi qua <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">hỗ trợ đơn hàng Fourthwall</a>."
+      ],
+      "en": [
+        "Your controls and requests",
+        "You can remove saved outfits in Closet, sign out and change cookie choices. Email us to request account-data access, correction or deletion; we need to verify the requester. Where applicable law provides rights to object, restrict processing, obtain/transfer data or complain to an authority, identify that right in your request. Withdrawal does not erase information already processed; request deletion separately where needed. For Fourthwall transaction requests use <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">Fourthwall order support</a>."
+      ]
+    },
+    {
+      "id": "children",
+      "vi": [
+        "Trẻ em và cập nhật",
+        "Website không hướng tới trẻ dưới 13 tuổi. Nếu bạn cho rằng trẻ đã cung cấp dữ liệu, hãy liên hệ để chúng tôi xem xét xóa. Người chưa đủ tuổi tự giao kết mua hàng cần người giám hộ theo quy định áp dụng. Chính sách và ngày cập nhật được công bố ở đây khi có thay đổi."
+      ],
+      "en": [
+        "Children and updates",
+        "This website is not directed to children under 13. Contact us if you believe a child provided data so we can review deletion. Anyone below the applicable age to purchase independently needs a guardian. Changes and the update date will be published here."
+      ]
+    },
+    {
+      "id": "terms-of-service",
+      "vi": [
+        "Điều khoản và chính sách mua hàng",
+        "Điều khoản sử dụng được công bố riêng tại <a href=\"/terms.html\">Điều khoản</a>. Xem <a href=\"/shipping.html\">Giao hàng</a> và <a href=\"/returns.html\">Đổi trả & hoàn tiền</a> cho đơn POD. Các quyền bắt buộc theo luật áp dụng không bị loại trừ bởi các trang này."
+      ],
+      "en": [
+        "Terms and shopping policies",
+        "Website terms are published separately at <a href=\"/en/terms.html\">Terms</a>. Read <a href=\"/en/shipping.html\">Shipping</a> and <a href=\"/en/returns.html\">Returns & refunds</a> for POD orders. These pages do not exclude mandatory rights under applicable law."
+      ]
+    }
+  ],
+  "policies": {
+    "terms": {
+      "vi": [
+        "Điều khoản sử dụng",
+        "Điều khoản website Apocalypse Closet, tài khoản Closet, nội dung phối đồ và mối quan hệ giữa đơn POD Fourthwall với liên kết mua sắm bên ngoài."
+      ],
+      "en": [
+        "Website Terms",
+        "Terms for Apocalypse Closet editorial, Closet accounts and links, with the separate Fourthwall terms governing POD purchases."
+      ],
+      "sections": [
+        {
+          "id": "scope",
+          "vi": [
+            "Phạm vi",
+            "Apocalypse Closet cung cấp nội dung thời trang, tủ đồ cá nhân và giới thiệu thiết kế POD. Dùng website hợp pháp; không truy cập tài khoản người khác, gây gián đoạn hệ thống hoặc sao chép nội dung để mạo nhận là tác giả. Các nhận xét phối đồ là thông tin tham khảo, không bảo đảm độ vừa vặn hoặc kết quả mua hàng."
+          ],
+          "en": [
+            "Scope",
+            "Apocalypse Closet provides fashion editorial, personal Closet features and original POD designs. Use the site lawfully; do not access another person’s account, disrupt systems or copy content to misrepresent authorship. Styling guidance is informational and does not guarantee fit or a purchase outcome."
+          ]
+        },
+        {
+          "id": "accounts",
+          "vi": [
+            "Tài khoản và quyền riêng tư",
+            "Bảo vệ tài khoản của bạn, chỉ lưu thông tin bạn được quyền sử dụng. Có thể yêu cầu hỗ trợ/xóa dữ liệu qua email liên hệ. Xem <a href=\"/privacy.html\">Quyền riêng tư</a> để biết cách xử lý dữ liệu và lựa chọn cookie. Chúng tôi có thể hạn chế hành vi lạm dụng gây hại cho tính năng tài khoản."
+          ],
+          "en": [
+            "Accounts and privacy",
+            "Protect your account and submit only information you may use. Contact us for support/deletion requests. See <a href=\"/en/privacy.html\">Privacy</a> for data practices and cookie controls. We may restrict abuse that harms account features."
+          ]
+        },
+        {
+          "id": "purchases",
+          "vi": [
+            "Mua hàng và website bên ngoài",
+            "Đơn trên cửa hàng Fourthwall là giao dịch với Fourthwall theo <a href=\"https://fourthwall.com/legal/merchandise-terms-of-service\">Merchandise Terms</a> tại checkout. Kiểm tra sản phẩm, size, giá, tiền tệ và tổng thanh toán trước khi đặt. Link Shopee là sản phẩm bên ngoài, có thể là affiliate; người bán/Shopee xử lý giao dịch đó. Hai kênh mua hàng có chính sách riêng."
+          ],
+          "en": [
+            "Purchases and external websites",
+            "Purchases in the Fourthwall store are transactions with Fourthwall under its checkout <a href=\"https://fourthwall.com/legal/merchandise-terms-of-service\">Merchandise Terms</a>. Check the product, size, price, currency and total before ordering. Shopee links lead to external items and may be affiliate links; Shopee/the seller handles those purchases under separate policies."
+          ]
+        },
+        {
+          "id": "contact",
+          "vi": [
+            "Liên hệ và cập nhật",
+            "Gửi góp ý nội dung hoặc tài khoản tới <a href=\"mailto:apocalypsecloset@gmail.com\">apocalypsecloset@gmail.com</a>. Đơn POD dùng <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">kênh hỗ trợ Fourthwall</a>. Xem thêm <a href=\"/shipping.html\">Giao hàng</a> và <a href=\"/returns.html\">Đổi trả</a>. Thay đổi được ghi ngày cập nhật. Các quyền bắt buộc của người tiêu dùng vẫn được áp dụng."
+          ],
+          "en": [
+            "Contact and updates",
+            "For editorial or account queries email <a href=\"mailto:apocalypsecloset@gmail.com\">apocalypsecloset@gmail.com</a>. For POD orders use <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">Fourthwall support</a>. See <a href=\"/en/shipping.html\">Shipping</a> and <a href=\"/en/returns.html\">Returns</a>. Changes carry an update date. Mandatory consumer rights remain applicable."
+          ]
+        }
+      ]
+    },
+    "shipping": {
+      "vi": [
+        "Giao hàng POD",
+        "Thông tin sản xuất theo đơn, ước tính vận chuyển, phí giao hàng và theo dõi đơn POD Apocalypse Closet qua Fourthwall."
+      ],
+      "en": [
+        "POD Shipping",
+        "Production, checkout delivery estimates, shipping charges and tracking for Apocalypse Closet made-to-order products on Fourthwall."
+      ],
+      "sections": [
+        {
+          "id": "estimates",
+          "vi": [
+            "Sản xuất và ước tính giao",
+            "Sản phẩm POD được làm theo đơn; thời gian sản xuất tách biệt với thời gian vận chuyển. Hãy xem ước tính cho sản phẩm, địa chỉ nhận và phương thức giao tại checkout Fourthwall. Đây là ước tính, không phải cam kết giao vào một ngày cố định. Mùa cao điểm, địa điểm và hải quan có thể ảnh hưởng. Không dùng một mốc giao hàng chung cho mọi quốc gia."
+          ],
+          "en": [
+            "Production and delivery estimates",
+            "POD products are made to order; production time is separate from transit. Check Fourthwall’s estimate for your product, destination and delivery method at checkout. It is an estimate, not a guaranteed arrival date. Peak demand, destination and customs can affect timing. There is no single worldwide delivery promise."
+          ]
+        },
+        {
+          "id": "costs",
+          "vi": [
+            "Phí và địa chỉ",
+            "Kiểm tra địa chỉ, khả năng giao tới nơi nhận, phí vận chuyển, thuế và thông báo phí nhập khẩu tại checkout trước khi thanh toán. Chúng tôi không hứa giao miễn phí toàn cầu. Đơn có thể được giao thành nhiều kiện. Xem <a href=\"https://help.fourthwall.com/frequently-asked-questions/shipping-and-orders/shipping-and-delivery-expectations\">hướng dẫn giao hàng Fourthwall</a>."
+          ],
+          "en": [
+            "Charges and address",
+            "Before paying, check your address, destination availability, shipping charges, taxes and any import-fee notice at checkout. We do not promise worldwide free shipping. An order may arrive in separate parcels. See <a href=\"https://help.fourthwall.com/frequently-asked-questions/shipping-and-orders/shipping-and-delivery-expectations\">Fourthwall shipping guidance</a>."
+          ]
+        },
+        {
+          "id": "tracking",
+          "vi": [
+            "Theo dõi và cần hỗ trợ",
+            "Dùng email xác nhận và trang trạng thái đơn để theo dõi. Nếu cần sửa địa chỉ hoặc đơn trễ, liên hệ <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">Fourthwall support</a> kèm mã đơn; khả năng sửa phụ thuộc giai đoạn sản xuất/giao. Đừng gửi thông tin thẻ trong email. Xem <a href=\"/returns.html\">Đổi trả & hoàn tiền</a>."
+          ],
+          "en": [
+            "Tracking and support",
+            "Use your confirmation email and order-status page for tracking. For address changes or delays, contact <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">Fourthwall support</a> with the order number; changes depend on production/dispatch status. Do not email card details. See <a href=\"/en/returns.html\">Returns & refunds</a>."
+          ]
+        }
+      ]
+    },
+    "returns": {
+      "vi": [
+        "Đổi trả & hoàn tiền POD",
+        "Cách yêu cầu hỗ trợ lỗi in hoặc sản phẩm hỏng, sửa/hủy đơn và quyền rút khỏi hợp đồng áp dụng cho đơn POD qua Fourthwall."
+      ],
+      "en": [
+        "POD Returns & Refunds",
+        "How to request help for damaged or misprinted POD items, order changes and applicable withdrawal rights through Fourthwall."
+      ],
+      "sections": [
+        {
+          "id": "quality",
+          "vi": [
+            "Lỗi in hoặc sản phẩm hỏng",
+            "Theo chính sách Fourthwall, liên hệ hỗ trợ trong 30 ngày từ khi giao đối với lỗi sản phẩm. Chuẩn bị mã đơn và ảnh rõ vùng lỗi trên mặt phẳng đủ sáng. Fourthwall xem xét thay thế hoặc hoàn tiền theo điều khoản áp dụng; không tự gửi trả hàng khi chưa được hướng dẫn. Xem <a href=\"https://help.fourthwall.com/frequently-asked-questions/shipping-and-orders/returns-refunds-and-quality-issues\">hướng dẫn lỗi chất lượng</a>."
+          ],
+          "en": [
+            "Misprints or damaged products",
+            "Under Fourthwall’s policy, contact support within 30 days of delivery for product defects. Provide the order number and clear, well-lit photos of the problem. Fourthwall reviews replacement or refund under the applicable terms. Do not ship an item back without instructions. See its <a href=\"https://help.fourthwall.com/frequently-asked-questions/shipping-and-orders/returns-refunds-and-quality-issues\">quality-issue guidance</a>."
+          ]
+        },
+        {
+          "id": "changes",
+          "vi": [
+            "Đổi ý, chọn sai size và sửa đơn",
+            "Chính sách POD thông thường không nhận trả hàng chỉ vì đổi ý hoặc chọn sai size, trừ khi luật áp dụng yêu cầu khác. Kiểm tra bảng size trước khi đặt. Muốn sửa/hủy, dùng liên kết trong email xác nhận và liên hệ hỗ trợ sớm; không bảo đảm thay đổi khi đơn đã vào sản xuất."
+          ],
+          "en": [
+            "Change of mind, sizing and order changes",
+            "The standard made-to-order policy excludes general change-of-mind and sizing returns, except where applicable law requires otherwise. Check measurements before ordering. For changes/cancellation, use the confirmation-email link and contact support promptly; changes are not guaranteed once production starts."
+          ]
+        },
+        {
+          "id": "withdrawal",
+          "vi": [
+            "Quyền rút khỏi hợp đồng",
+            "Khách EU, EEA và UK có thể có quyền rút khỏi hợp đồng với hàng đủ điều kiện trong 14 ngày từ khi nhận hàng; nếu giao tách kiện, tính từ món cuối. Việc là hàng làm theo đơn không tự loại bỏ quyền này. Điều kiện và ngoại lệ nằm trong <a href=\"https://fourthwall.com/legal/merchandise-terms-of-service\">Merchandise Terms</a>. Fourthwall xử lý yêu cầu qua <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">hỗ trợ đơn hàng</a>; các quyền bắt buộc không bị giới hạn bởi trang này."
+          ],
+          "en": [
+            "Statutory withdrawal rights",
+            "EU, EEA and UK consumers may withdraw from eligible goods within 14 days of delivery, or the last item in a split order. Made-to-order status alone does not remove this right. Conditions and exceptions are in the <a href=\"https://fourthwall.com/legal/merchandise-terms-of-service\">Merchandise Terms</a>. Fourthwall handles requests through <a href=\"https://apocalypse-closet-shop.fourthwall.com/contact\">order support</a>. This page does not limit mandatory rights."
+          ]
+        },
+        {
+          "id": "refunds",
+          "vi": [
+            "Xử lý hoàn tiền",
+            "Fourthwall và nhà cung cấp thanh toán xử lý khoản hoàn được chấp thuận. Thời gian tiền về phụ thuộc phương thức thanh toán và ngân hàng; theo dõi thông báo của đơn, không có cam kết mọi khoản hoàn về ngay. Chính sách này dành cho đơn Fourthwall, không áp dụng cho link Shopee."
+          ],
+          "en": [
+            "Refund handling",
+            "Fourthwall and its payment provider process approved refunds. Posting time depends on the payment method/bank; follow your order notification rather than assuming an instant credit. This policy concerns Fourthwall orders, not Shopee purchases."
+          ]
+        }
+      ]
+    }
+  }
+}

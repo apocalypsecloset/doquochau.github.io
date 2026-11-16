@@ -1,3 +1,4 @@
+from privacy_release import POLICIES
 """Check audit fixes against the exact pre-maintenance publication."""
 import re,json,subprocess,sys,html
 from pathlib import Path
@@ -21,6 +22,7 @@ def body(raw,path,old=False):
  return raw
 for path in sorted(paths):
  if not path.endswith('.html'):continue
+ if path in POLICIES and path not in before:continue
  raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASELINE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
  if body(raw,path)!=body(old,path,True):errors.append(path+': body changed outside exact permitted repairs')
  for selector,attr in [('link[rel=canonical]','href'),('meta[name=robots]','content')]:
