@@ -1,0 +1,3503 @@
+{
+  "blog/1920s-fashion.html": {
+    "before": "a39c177235bfe9508099788ef6ebfa735de950d724e6c510371152fcdb0e339d",
+    "after": "0a615411689c2db817ef1260c639bf01c6825104888317eafaa7d408385e6f17",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/anime-outfit.html": {
+    "before": "d27658d70bff3e05b4478b6e03862573992deeca35841aaa4956f065ee546064",
+    "after": "cb86b80a67c1b1ea67228d3b79498aed185b32639247d9e0d3031c8642a24fb6",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/ao-anime-nu.html": {
+    "before": "2fb0db1654ac8054dc8672abd367bca508e41fc3966af70e108b8fff69aa226c",
+    "after": "ea92eab5634715279721235f0161c731633d77c3e22d3893cd1e14e8bc513187",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-ba-lo-nu.html": {
+    "before": "1fb6053ec635a772117c3ba8a27864b2d95cb012852c06dbbd85e1e64553b20b",
+    "after": "8d37b5d8839fbfb6e0f1950aee9fa58426c2ca42e3a904bb4d01f41ba5ce7711",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-cardigan-nu.html": {
+    "before": "64189e622a280f32f6ee993642bc764b2ae23590ce5a979da2e902d7a61f69d1",
+    "after": "bf017533fef6a438a8c5598e94da5b8a606406e68dd8f5327b49b622b8dafb97",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-chong-nang-nu.html": {
+    "before": "de5e049373ab6ddee34ec463ca59aba42607645c989060ae447cd5d876f5955a",
+    "after": "119f8cc49fe1b8241052374c877725bf70fd2e74d33c07b6c973c8bb4ebf6621",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ao-da-nu-dang-ngan.html": {
+    "before": "95dc5dca25231e8f42b39c753bae72397c0b4a6bc7bd29c5778511cddd556bd8",
+    "after": "f0bbc3799fbd992d802fbd9de3b00f58b59dace7e28779572059b41f036dfa24",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ao-da-tweed-nu.html": {
+    "before": "2fea8bb02d9d1404ad381dbda60839f2fd1295e02b7b7286d548b24608e4c89e",
+    "after": "3ecc8bf6612f0f158e14c3d738214e0f3b65a348124d00ad3ea708abd56c6811",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-dai-tet.html": {
+    "before": "9afb4cde89b1c6591cc11bb90ae8ac812cd3c3feb88b2bf2ed6f76c4e7bd674b",
+    "after": "ab41d6ccdc26b9f327fc69e77e11a21e284f49b117e45c4ccfcf8748f6fe538f",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-dai-tim-phoi-quan-mau-gi.html": {
+    "before": "bfb0e369365f3b7cf40732b5860e92209b366788a0f9854043034ee4b99a157d",
+    "after": "5305882a68a72c26193907e90aa766f17cbcc46780d91af1a52aa9a933178d8d",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-den-phoi-quan-mau-gi.html": {
+    "before": "e700273e2522ba43c74d204266178d7e3a2a0a8926b3b36d8a096f3f895c5a8d",
+    "after": "024986867eabc91d18bb7b3451e354b335f52a9cc52adf914e96730c7009346b",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-do-phoi-quan-mau-gi.html": {
+    "before": "16c438d45c5d7b9337f3a59ce79b23c335ad2eb5bd920246fe9adec6d04b3038",
+    "after": "f43c6fc1bbadf5517cb8ac92dfbd6881de6dec1e20a83a6cdbd554617dfbd80f",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/ao-flannel.html": {
+    "before": "e309d8f37c6cca2fe7d6a4d65973999321adcfc33518d3064dcb45d28c70bc12",
+    "after": "e3869f1321b2e5d9f1e88d77378651ad1a88bde8eebd33ba63b121b819155e3f",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-giu-nhiet-lot-ni.html": {
+    "before": "34ee39c2f05d5ffd8cd26193b31aad93bb12e892a9a387b3b3f74c414041a15c",
+    "after": "5a6c019f18d127727c7d95ebb8d68c34e55c4d7bac163fb1ac4aa8cf2459d333",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-henley.html": {
+    "before": "343e3a2904718d9cd172deac9859de50bb0f3691ee101743233b5811336f2694",
+    "after": "c1618631cb2c24dd45337a06b319e362ec1371fa1b54a780f756b0c0c8cf0bfc",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ao-hong-phoi-quan-mau-gi.html": {
+    "before": "ec1148d9d7e3d45654801fda9d8afe13c9c19bb9543331a91b4d16aae0f070e8",
+    "after": "13987fb3d60f63a2850002ac674d9d4062eb45e63c7a8552c6323e05ecef9c7f",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/ao-jersey.html": {
+    "before": "d9a353c921269adeaa264c3888e88d750ddcd46458844a6511ab84a197cf1027",
+    "after": "a8ea9f9e1cae416c77dc666d1c69347c298d084d9d5f0bf499f9913118a94ba3",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ao-khoac-gio-nu-han-quoc.html": {
+    "before": "7087c49bf6095dc803f6e6b80b389aa731196d8c2d46715ad81ac5d6ede7b9d8",
+    "after": "c4ff2a474d3f15130fbff5f3aafda18d3a0cff291c70a16cfb15047a78d2a940",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-kieu-dep.html": {
+    "before": "4d84e85c050541ddf84d0cfc3788f67a5b37c82388c23f07dfa036ace2e6be33",
+    "after": "9219872bafe022f1462f8b5c6821b7827894b751866274889658b324ec20617b",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-mangto-nu.html": {
+    "before": "2af2c5887cd7fe1cfdaab95dfcc39e35f9de8c6cd6358baaea238564498af614",
+    "after": "ec496df99d2391b5306f3bdbbf7f371971530723dfd2c01e390029dd8e9cb82c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-nau-phoi-quan-mau-gi.html": {
+    "before": "a1edfd42e306191d0206478b85355efda31bf30f411776d7457ca27b7233c2be",
+    "after": "465d28b33d1b201441b5e538dea86f00d4d7d023a3eb410a8031c4088739717b",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-ni-nu.html": {
+    "before": "929e5d7e23be01ed018690c5e59d15917ff6b64225c010a85245f071fcbf467b",
+    "after": "a8e25abd86bd91d886f957bbe1a2b7bcabbcd555a15511ff7bbdd4fa6ac3e65a",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-parka-nu.html": {
+    "before": "ae2a637279bc86aabfe414cc5220f8067e29f5d3ff33219719d62d7114208188",
+    "after": "18aa723b4cfe9f740a80d075dbca9c27e15e0ee9bb85a02e6c7949fb92d71495",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-phao-nu.html": {
+    "before": "bbd7be245cd1dc4e99e40a38cf11a9162e7848684dfec2da662664a5b0e36cba",
+    "after": "2bad2027e6100bbe9e56415ac03c2daac6f21eee031fff4ec991fca472aebbc9",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-polo-nu.html": {
+    "before": "6303897de1921070121cec4bef6fb75deba1558e90930e1f8bce3897e92dd614",
+    "after": "04fe38aab4bf7c62c3e6726ee3368327a61092499ac3638807b4ecd7e1e12454",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-raglan-nu.html": {
+    "before": "9e805d2334a8e5afa71d83e879698177359a04d7165ecca09bc74b65f55fb80f",
+    "after": "2bc18dc9491916692c14937ab730e5132c18fd836874d6d6cf3a865dcd014a2f",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-singlet-la-gi.html": {
+    "before": "3035b92c3d9d7f246761fe7293da078e785998f4dc0dc24102e0dd79a6b45e19",
+    "after": "4e9b9d2db1f37c64d9571596c5ac056af1ddaaf069b967db03fa775002c02523",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ao-so-mi-co-tau.html": {
+    "before": "94eb132528f52fa6fde89a81bd6e3593f9ab99ff5cd81f5396ee109a1bdb5f3a",
+    "after": "70bd648e53c7d4b8086a41178f369b22490ddc36f8578d6aeb282fac4afae8ce",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-the-thao-nu.html": {
+    "before": "a4ee8fc2372fc4d5d079bae04116b70d515d18dd5ab1d46b4809c803fbab7eb2",
+    "after": "99a3369936d58745d0a948a7c5b21887978fe26d837fd0d7d1ed75e78fec0bf7",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-tim-phoi-quan-mau-gi.html": {
+    "before": "d6dbb49051646b337a96025b428e277d1e6003803f79cf297d039d498ac65b03",
+    "after": "1e78e5f58c1af6f29d75f5b948441ad72fd0c649c9a7feabedf87e419cdd3c15",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-vang-phoi-quan-mau-gi.html": {
+    "before": "bcd23e70a94f21b1d83c6a56a0a7011ae250e8f3b919cca6ed2a7ad334dca45d",
+    "after": "2dccefa285bdc0049380273ffe9d3f8f2ae2ed3c816e3035d61c012cd4eb4f7c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/ao-xam-phoi-quan-mau-gi.html": {
+    "before": "38cd32d85124f4d70cc31dc86e2575e3bb77817e6300d16707ee9baa8a5dfb27",
+    "after": "bdda8adf35e7d98bee86ab66376e5a46c2288d8197e2848edeab7cca490ee2bd",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/ao-xanh-duong-mac-voi-quan-mau-gi.html": {
+    "before": "e0a0816a5c296c07a7bfe72c33396473904ce07f8c1a864ff9c0a11a19653585",
+    "after": "04d2944c17e240cc503e50cad933e9e78068edd0a53a5d11260c7e0cbfc43703",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/ao-xanh-reu-phoi-quan-mau-gi.html": {
+    "before": "3a80c30226156e8de322066f27251e17eb65c6ff1f372810068377b1a773201a",
+    "after": "16fef0f14115fbd989ffcbbbea7811aa61a840f366fb3574ac4d6f3a1b73a4d3",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/atompunk.html": {
+    "before": "23281dd8c8075c428adcf5886bdcdb18128c351ac3009c78ddab9994a1d769e9",
+    "after": "9140e433303866b341700e19dc85e3a4ae56a030943b7aae309203f8d7ca64e4",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/auth-la-gi.html": {
+    "before": "4e8901e4174a870ec8b271f0f343aaad62ae6428dac013b55b044140fe93f8c8",
+    "after": "a8f10d59b0e8b13d9c272c610e579610907134b6d4b984fc46dcb5f666538cc7",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/avant-garde-fashion-la-gi.html": {
+    "before": "7f37f2ee2a6f29bdaabac15c3a47133d8b6c381fb565e5e00b0f15338971912e",
+    "after": "d473f605c829997e953424f6a7161aba974968423fcbfe00e518732a77fbf401",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/banh-xe-mau-sac.html": {
+    "before": "95011eef660adafa912729559178651f3bdde55a0f29141c8f384248ac799f15",
+    "after": "5cb286a5a67e1cb27c9c1d30167736b71e551f9ee23321ff82a1f09232a3ae13",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/biopunk.html": {
+    "before": "ccf103842ad3e6af7349915f78e719fefed5a74307a92bc4966d5c9dce499172",
+    "after": "93a81c2bae97a8a99c18306af05995e798a341baee7da0adb6611d6d9ffa1671",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/blouse.html": {
+    "before": "a269af15c2da05e71417c02fb9f14283d259853041feb96749c0535e90286131",
+    "after": "d60f2aacd0ea5660f33aeea8d3375ccf92b0c3f99f18356273f901ed0e7dfa02",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/bo-vest-nu-cong-so.html": {
+    "before": "7a036339ca3951a3e88e336c9be8d5f8f8eb33ae920a632652d7a55958e86b73",
+    "after": "e8428a9a3b3e1c6c33fcec2e29abaf815fdbb81c9e01749edf954fbb5a097e36",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/bong-tai-bac.html": {
+    "before": "7511fe526866685d493de5f575e913a400d771a4151fd4d5ca7a0d775e730ed1",
+    "after": "eeec86c164f9f2e78b01f4f1b4c08d06635168a631e07af08d1b3eeafbe019d9",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/bong-tai-nu.html": {
+    "before": "be957077abc7670727461c2bbfebf2008b45f91292f23f8169c35fa82276680f",
+    "after": "a80981618ee1c5ea8a723d55654c2cb13ffaae7bd5174e5dde13c819be23e9b3",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/bong-tai-tron.html": {
+    "before": "99f1f7fdf0ceb8685c79da6e9365f0dbd337df820f34ca0d893cb11d3573d05c",
+    "after": "9d4c82d33872f45689b7543b83f56d17ab4aa31a2b49624326e8fc933fb5c149",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/boutique-la-gi.html": {
+    "before": "1a4bce9d8a531b61f43c838de58d933ae36371b5a9821c6efb7bb8af36b5849c",
+    "after": "49e7ae71de4ab35b4bba213b758f16105abcd133144d8eb40de07f64fc732955",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/butterfly-haircut.html": {
+    "before": "5144b2c1e837aa8f09416eb3cf4d4e7d672b646dffff9c4738dd1a3682bd1f13",
+    "after": "34dc75c0822b9a9803dc01fa1f4a04103bd351e1a2d75080767950e5d1cfab9c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/cac-loai-vai-len.html": {
+    "before": "f6402f3d4011c7e58b42224436400832c8158fa47b9041c116ab0dd3a751bea0",
+    "after": "fc1f90798cb45d6d9d0457562ab744ee1b1c45f07b1c9276e8222ad924a7a397",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/cac-loai-vai.html": {
+    "before": "ba12e4cf7e2c74188cbe44a7b2e2291281af5becf3b5275c24f328f0eeb2baff",
+    "after": "51a23e3e6395b1404269fd39e225865ef289643c0e60bdbc26966a4320b7e355",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/cach-buoc-day-giay-the-thao.html": {
+    "before": "86be3599d40086835884610a836f28d7eb788c0d30cf612fbe0568cba5baa3fa",
+    "after": "811a08e8a180438a6a1fe072e52ff24c26ddfdc92d90d640ddb50549012a7850",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/cach-chon-kinh-phu-hop-voi-khuon-mat-nu.html": {
+    "before": "6ba17b3962caab7e94020b25b4ea645f83e72c228c3354e4946d30bdece3784a",
+    "after": "a76b332911070d88fb8ac6aeae1f6950c7136b4403df3d01f80c7a2e5b30156e",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/cach-gap-ao-len.html": {
+    "before": "91e0f8ca926eaab3a074cb86727563e27c3afa6b0d57287d3dc46ef1a6d90fc8",
+    "after": "599bb7c350ddb02805a54137cd3ed5ddf35cb9ddd631cfde5a359c48995105c7",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/cach-gap-quan-ao.html": {
+    "before": "7efd7232de82657b364168e08f81df592f7e7239d165f4184ed740d3112209ed",
+    "after": "6eae73ecce8cceeb6194f6707b949dbcd29f3afee38b0bc77ad37ee4c0ad9fe1",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/cach-len-lai-quan-jean.html": {
+    "before": "f0e378647220e77397921ae313980537925088612c13d383a8c483880cd5b32d",
+    "after": "27389f5ff199dae2ce246776fdb430b30f5b6cd576f3a7eb323d3375c896edd9",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/cach-phoi-do-voi-ao-len-nu.html": {
+    "before": "515397f58aa22455f7c97b7e2ed641f847504ad95181d83150b37856d299c7ec",
+    "after": "0ca7d0d3a7cb195b8cdbfaa70e92c45964e758fc59c8986ae0057a2f28991df8",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/cach-phoi-do-voi-chan-vay-tang-ngan.html": {
+    "before": "cc37a17cf42c7017291404c7f40489e2516df58d4526dff5d7258478e4c4aab1",
+    "after": "3a97bfb8117f8c95283c685071c9cd787af0bb4ecccfdf880f6447c54958d8a9",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/cach-so-vin-ao-so-mi.html": {
+    "before": "1243b2d303eff1b05fb649d9ab9c66654dfc45a8eb2855cc812cd740d25bb055",
+    "after": "755ed80a183269ee83e968bb1d9301e2db73fecb4e6e05360f1ad24ad9633e1b",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/cach-xan-tay-ao-so-mi-nu.html": {
+    "before": "bc9cd711ccd85fc4d880fb37ce1ad672be89be3deeed22715f74e59b78dd4687",
+    "after": "d91d56094a7e28e25e7d1254f9986ccd06e814ea78e83c4170cef9a212fc5f4d",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/capsule-wardrobe-la-gi.html": {
+    "before": "883b3bc22d82f099bd37728d4f462353d9542d5ca82f2c324697490e20988231",
+    "after": "2ad0f25fdb6f6be365904714f3f989d0e7db7311ee7360cb879baa37aa92f157",
+    "changes": {
+      "faq_consolidated": true
+    }
+  },
+  "blog/chan-vay-but-chi.html": {
+    "before": "22d0d147ab6303886878a7d764309a790dd977e3e65a6164f6fc42172971e456",
+    "after": "80d79c9d99efd7bb2b93b978408eff2eac4f2edfacd28de4c427cd523ec1a1cb",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/chan-vay-do-do-ket-hop-voi-ao-mau-gi.html": {
+    "before": "73943b94542b706a0a1d7ce9c9a2a435c7b0c8b37195ba0ea51db9b171876a5f",
+    "after": "9f1e7558c4f417a15e72e191464e057790876924997804609e8be4ea885d8e47",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/chan-vay-hoa-nhi-dang-dai-phoi-voi-ao-gi.html": {
+    "before": "7e3e68ea955d134baaf44df0a1c67ff6e08a58103ae41140a633fed3f06a1d9d",
+    "after": "a3591154ef2590a010552d086921a393b9c1ef69e613ac5d546727cc88f99031",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/chan-vay-lua-phoi-voi-ao-gi.html": {
+    "before": "efc894edbf1277c21cdcb523bd3e2e235b34e22427dc29777affe618f5bb04e8",
+    "after": "b40114e7a358c40f8c1ca22fa3d1fde6bf20a6e1569496d0295db9dadb11ca1c",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/chan-vay-nau-phoi-ao-mau-gi.html": {
+    "before": "7cb9d932790becb4f07052d2268ab2c19509a5cf7fb224804e1bdf3758917a36",
+    "after": "e018659467dfb9bdbba2a4df4c477439a8a1f1d46c93d3ac4ea4dc6697bad604",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/chan-vay-vang-phoi-ao-mau-gi.html": {
+    "before": "b94fa933e4e519c5e9c681a1e1857075a3695290c789315c20a562f24a79838e",
+    "after": "f32546dc207aac44f99fdea71f844b8a615b4768397859f8ac170b416eea0867",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/chat-vai-poplin.html": {
+    "before": "26bf77751be0d176f9387ed6ae94f4b8516c2c7acac3aac6839c1ec19704ac44",
+    "after": "c8fa8e206b95c5c696e2e3dad47cbede9f04d22c15ba8a5699ecf609faadc453",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/chat-vai-umi.html": {
+    "before": "7b96dfefff590b2d558e5c8359e544438cbbd8ac4a66ef74356d101aea6bc2b7",
+    "after": "c350fe691d61e2eea37b1be0b9634c8d9516fc66d68631830a0187ad6123df9b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/chiffon-la-vai-gi.html": {
+    "before": "c9ae5e721de595e948b0c791c215a7f62b443390e181c29a2e859fe2b3329632",
+    "after": "e8e87f2aefb3d3d4dbc180d4ac47d9eef7071ddc79e03a39943fff2d79b94b77",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/chup-anh-ao-dai-tet.html": {
+    "before": "9264fc484345c0012222dcc60e1d54d4921a73eef99e73e464b0b060e1bce196",
+    "after": "9799bd32ab8e3acc5f9f4592aabea461decc2ac81c952a5fd03cad1f05969dee",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/cravat-la-gi.html": {
+    "before": "5f900ae77edade0188ae428d4ebd60fe2dfac2fff4b70d3d6b8e04b21f1eb34d",
+    "after": "b7d22c47a543a23ea6f6461f9b581cb45e3bea522547a9b781ced463424e22b7",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/cuban-shirt.html": {
+    "before": "56a78254bff0275822a478eda67a0feca8533efdc48a7fd5a52da6307dc3d244",
+    "after": "6ee8e2230b1dd8898f69f0b137ff500196d34da50d5962fa7e09f1ffa24f5cd5",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/da-lon.html": {
+    "before": "3fef01c6360ec84372a98606bf9dcb9322364d9aeb2d91523b242ac2ac416b36",
+    "after": "05280548829f08143077d3962c454abbd5dacde948b52c6428473b93f73ac99e",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/da-ngam-mac-mau-gi.html": {
+    "before": "98873ae59c8f6d20a31c4240e9fc6bb29f7c1119d5811797e0748b3e9dfa2a75",
+    "after": "8af3fd226df5812a23bc995e532190d1d7154251b10864fb0a18631e47bef7d7",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/dam-cham-bi-co-dien.html": {
+    "before": "a305803f6ef1f03a1329b647e01cdeb02440ea7a77eea63830df85fe8936cbcd",
+    "after": "edd41c80fdc6a7bf43db75b982eae1ead3f804d6692198ccfb65e11bec919719",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/dam-hoa-nhi.html": {
+    "before": "dfb9971afe3095a709fbcaf52af527a1cfe207d6070f0546de5f63327a7d548f",
+    "after": "871b6801e48139b4effbc3fc0df5e4dc1b0a5d79d9af07f7e36d0b02511ef2f7",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/dam-hong.html": {
+    "before": "0756b7e233c98d86d13e9a3b95e6f2781ef29d57c48391116e250b72fab9ef01",
+    "after": "e273ba9b4f24ece290b351f13f7c7346304c1d0ad1f99d0efb22b543150c3d99",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/dam-trang-co-dien.html": {
+    "before": "fef6f276e2e832f758b80e6d985be09870e988503f28785dfe06288aa3b36be6",
+    "after": "3ebfbbcda9d556f0d519400b1bc54f185c8d99b9efde4e7e526e7fbd6d602de4",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/day-chuyen-bac-cho-nu.html": {
+    "before": "4dea713ec9c3e196393ac5c4d81d0350155b96877084aeb0495375b79d83ceb4",
+    "after": "0940c9f69c310d533e11e90e5040a1f09470b7e0ab60ffd0142a0ad09af36956",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/denim-on-denim.html": {
+    "before": "48904c06ac5a2c5480201e3b331db99fb4e210186e21b98e504ef25c4bb33bc8",
+    "after": "db7f5da6d9a47bf84ed51afd558b736df51d989cdcc550b7495cca2781eee064",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/dep-quai-hau-nu.html": {
+    "before": "c328e89455808bd3b380887534a88721eda23b46a2e9b663dd39406820fd973a",
+    "after": "48e11b1218dac9eb9a6eeb2aed778dc8e3403270bf34a215495055dd2d5cbfda",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/di-ba-na-hill-mac-gi.html": {
+    "before": "c450f6decb6f3ec10d12116ef17091ec16d774a33b39a04fbf9e27693e6840d2",
+    "after": "8d4e35995b7de8b7d3d1017ac82bfb69e785802bc28aac7e545a56cc52a55789",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/di-du-dam-hoi-nen-mac-gi-nu.html": {
+    "before": "5733b1f4a839203c983fb2e7a38500d42fa016d4013512ca966c929664de162e",
+    "after": "05642ba3eab7c0625d42bb62cc5ea979b50c04fb5ce725828b20c7b115f8e339",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/di-ha-giang-mac-gi.html": {
+    "before": "f27032cb24ac188819ed2b358e7e16e019a1ff5a59e48619e5efb24c91ffa9f9",
+    "after": "6242068419e0fc9b49bf438a55814c5fcf41b042c2e7cf04e8f15216df0707be",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/di-hoi-an-mac-gi.html": {
+    "before": "66827caa638a09013afaabd393236c2cae53c172ce25644b84b4eb9516f233b3",
+    "after": "2ff7c5bb8ed68c67eb4ae7de9ebbb857d8efa066d7188e042e81fc01a2e87043",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/di-hue-mac-gi.html": {
+    "before": "669e3031cc15cddd8d13b44d923cf38ba56b44193b8da9a3a18393c81b5f181b",
+    "after": "0c5d316c30f80778ca4a63c6e7403bb497da1854554d94ceba7db0d91cacb435",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/dieselpunk.html": {
+    "before": "66bf602d53196f3ade7e269bb7b362955dbfc70de19598f3f6dde03f40cb05a3",
+    "after": "6b2f05042759759977877646fc45665f362df53ecef995dff6e44d40552dcdad",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/dress-code-la-gi.html": {
+    "before": "d5fe31743cc3df1607e5397377c17f4fc03ad9a365d3e0a16ea777fc7c0dd5cd",
+    "after": "74239e048b8550a6d72e49925fc767dd5a348e5eb8186771621a7c876eb53d56",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/edgy-fashion-style.html": {
+    "before": "e3ad7197d50a2a5aca5aea7662a2699b577063ba9c55ba5863c87777b422eb2e",
+    "after": "f2cf83c8ba2af0ae203e07d5adedc084680c0cdd38cf77e486275319cee7ae69",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/giay-cao-got-de-vuong.html": {
+    "before": "95f22caa532665ae959703d9a59aad9544b513cc3666dbf8ae5f39c8e7884608",
+    "after": "8903187edc9be44c62b14d4062056de7df27a68caa40835f97cc98d58bfcdc0f",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/giay-cao-got-trang.html": {
+    "before": "f2d26fe90b4c17bc6bb74ee1f2f80057842338df1ef2bf72f7a54991bfc75f24",
+    "after": "e81d510b4ea0b83ff61e01f6f1ec9800b13597e885bdb7b3526658a0de6d9602",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/giay-cao-got.html": {
+    "before": "e82f311c768b3a621ecbd86b8d9d44a9d1ed8ad140d73e510e5a4b46ab1d3c87",
+    "after": "ebf9628f6a4133968085106d7c3a0c4fc58bc6a45d7d3da4656ad5dd6a74885c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/giay-chay-bo-nu.html": {
+    "before": "1decdf038353bcf28f1a1399b7bb4cb7de608ee586016aa9b0974dc497e6727b",
+    "after": "304a69167c9b2509714e1ed4a66195646e4aa91f9aee1901c407a6eef7289181",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/giay-cong-so-nu.html": {
+    "before": "ef83ebcece44d7fd8fec497a44dd31bcf140a1e01c163eca061b27fcdd497892",
+    "after": "0fdf0a8dfe1907866d17f586be3365a63b2a05db7f9fabe8ed55eca11261ab5f",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/giay-custom.html": {
+    "before": "9675528853af111775a2855e8f4503f32970e88cff1812713a146e11c7ea0a06",
+    "after": "049c416578fc22215652e1d245b7fea525e347b17f8ea551b38a89a010f0535a",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/giay-di-bo-nu.html": {
+    "before": "0b6244c10baa7efd9aafcac6cc5eba278e3032432150138dedd39b8c9b14f059",
+    "after": "622a9957b39d53198365a771eb482b1240b4958a5875ae0ec96148832d6b28f5",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/giay-loi-nuoc-chong-nuoc.html": {
+    "before": "6f1c237cfe5bda92fab07dfab0f7eb2d8a263ddf69ab8995c01c289ffc1db81d",
+    "after": "b9478ad8b78e67de4e04be267fdcd8da3123194c659c36551b59a6e08a602c16",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/giay-oxford-nu.html": {
+    "before": "b2211b4ccd081c90e8eba76a44d906a6e967c5e34d67395e3587a61bf1cee938",
+    "after": "824278603eb8e732ef73afbb75b6c1050f0ca7711cece59c3cbb2fcb7ec479ec",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/giay-sneaker-nu.html": {
+    "before": "fc50d2abd69f533c7c264ac0471d448a5a93d95066863fdb252c62d4c873a99e",
+    "after": "c3bbe51b79956aec3b0144bea04d9059cb80752e4fcbc833ccc8cff944913c96",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/giay-suc-nu.html": {
+    "before": "db65099794ce209935850c4a26718928c991945a4d9dc235d79cabddfee2db21",
+    "after": "2f13878943e6231469dbe5ee629b5d8bb5564fe774e46f5cca3cf320294d114a",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/giay-tap-gym-nu.html": {
+    "before": "621019044584db8f01dd6a8adfa2b2cdfe5c7af2fb91148b6ae0fed4c6d2d30d",
+    "after": "6d18f85b5810ac2456000dab14b69da9bf31c3560fce6d415e5a11caa71e3c55",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/gong-kinh-can-nu.html": {
+    "before": "4cad114550f22d1059f7197dde2b76d68710f251517c9743443886aa3dd0c57c",
+    "after": "cb9694ae808d820bce5c793c06034f5c4ffb71fd989fa33dc0579997e4ea0f64",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/gong-kinh-oval.html": {
+    "before": "4d02ee354e48ad11cd87657d47fd4858fed699d8f706d2975834f36d3dabe05f",
+    "after": "8bdd1946ae7699c47d1c2d495c4f17dd66b91290ac001202452fa5f435090b5a",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/gong-kinh-titanium.html": {
+    "before": "5042dd01ac193306d5280c6feef3fef84f89bd8652890f1a90dd6428e9754718",
+    "after": "2e499ff5a16a8ec6e85e8fd08a649a95204b4cd3271c5f84e48c6e7da32d9b8a",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/gong-mat-meo.html": {
+    "before": "d9d4324a35a5f8615b2217f845a143116fa70b57aa8042fd9ccd19d26af4065f",
+    "after": "2e9f9fe5fcbacf259ee7710010e61070b268fabd7d0f03c4d358459455940b33",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/harrington-jacket.html": {
+    "before": "15da1f6abb4c99ed44f5727f22282150270f480dd35487f19dea6e934ff82b14",
+    "after": "900389456721242e93b2ef2a96ae32c818a4478281d00f4da257d8ffb8876590",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/high-fashion.html": {
+    "before": "94e7ad31e655f90829bfdfa95867a8292362d3408b89f070d1afe6aba9c1792d",
+    "after": "50de46d0848e30400275c472447c53b7b9f239ec1951c30ae316ed9f2d5fc5da",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/hime-cut.html": {
+    "before": "6068042cd730eda39d0d1f0423cb91bb759451feda5f64ffa09ac5271cf5ad4b",
+    "after": "903ac85458f95de802339d76fe354f6c9b995b65fd382146cdc430ed0da8fd56",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/himekaji.html": {
+    "before": "8cfd623ec3ff65a8aed01c6a709464805993575782bc72a7422fce9a9e2cf10e",
+    "after": "e74bfcfadd62009900a380e52add0c0768e508e8ab32468bd17e6d11f138a88a",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/hipster-style.html": {
+    "before": "dce61f3a13cd227776235c78ad38f88326ecfa35fe30be1dec56a4a6a2fa0cf6",
+    "after": "7e555ce86b8b0571bc9f04065fa79dedeadf01304ba338556e7918532a4bc2fc",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/khan-quang-co-nu.html": {
+    "before": "e663ba82b5765706870590e57e3e1e6dd7b3ac905b74a6a2f3ee59c165a6fda5",
+    "after": "a73226a47d15e870c2c67dff82f0d6c06582bc658ea843714c2419ac73a5067e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/khuyen-tai-kep.html": {
+    "before": "beca6a5346242f3071abdfc3add88116ab6956c9425ce419af11216cd6e148cb",
+    "after": "3eb0b647b2a833fa66daa609781f267782070f14cc3cd17ecec6e1a794813d9b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/kieu-toc-di-dam-cuoi.html": {
+    "before": "4273388a42d3230e0d4f58bf28bbbc5f9939d3ed7c88375d00c3395af6da028a",
+    "after": "895c7dddb7c6427e221a8dd7ddca822205cd9973b2000e6d07b0e4773b53e7de",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/kieu-toc-mac-ao-dai.html": {
+    "before": "8468b9f2df3945a11b9b14df29a1b2f9a1ed0cd0b838e580635fe4d41e000316",
+    "after": "fc3aac0067f22dea89fa004f788e89883af180a96775c60a7d278b975f96e474",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/kinh-gong-tron.html": {
+    "before": "c192a786d3d4bbc8f622d79c3bb9f98db519deae11c26ae7007580e04f8d3811",
+    "after": "b54370075b4f7cb6a7deb07dcfac51700345e40a35f356ee0464df031c709e0e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/kinh-gong-vuong.html": {
+    "before": "f3e1076ab95ba0ae607feaf55ab4fb5f98c92bb5873a218dd2fd840ff65addc1",
+    "after": "3184905b413d67466c82d8ea2e27c0d74b5f1f98eeef129e934b34c153376891",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/kinh-khong-gong.html": {
+    "before": "ddf9c0c2ad5e102900a2ac34f8bc62ab8b3ed0a614ab62979a4fb1ec7f6de39d",
+    "after": "380f92593974c194a4bb1c56558cf0af4ef6966bc5efceff31dcc787eea539da",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/kinh-nua-gong.html": {
+    "before": "aca94996689a1cd1278c5164c714fde964b0e593d4b4f2696914e58909a2351f",
+    "after": "34d31f37ca0d0611c0350f95e578e9eb25398656fd97864380ce9dfe0248f915",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/like-auth-la-gi.html": {
+    "before": "7d49e86ba41b434ec23308d29ff4828683207d065a267f65d5b006b39bc670d4",
+    "after": "bab74344aa7068bbe6ccfa7a18af026d732b25315104d78af184c1c2590730df",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/mac-ao-dai-di-giay-gi.html": {
+    "before": "308a24b39eef39b86818b52e9470c7a67ad19346ff0d61344b4ea3d136294860",
+    "after": "a7e8749c53491f5689987ac2469f3ca0a5421aa81c2fa332ef6f06095801aee6",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mau-be-la-mau-gi.html": {
+    "before": "61adf41f05d1584b838dccaa2c9cd7413e2f5e5d40b88c134c71a332ed106313",
+    "after": "340e5d44d52f26b3dff664f593b8198b2a3e6bc4e6ce25100f92bb1bb2a9d0d9",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/mau-cam-phoi-voi-mau-gi.html": {
+    "before": "8c3554b02d4fbd2183b11b123e9a6096774248c5e1075a955e228950158ae8ef",
+    "after": "13781b8dd04a51c2443d1cacdb1aecbd64f172d34be753b60e1108436c21e209",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mau-dam-nhung-sang-trong.html": {
+    "before": "d8f47a7e73a4cce4d6e34af92469c42b6cbd37519e3841b8412ad3bb27d402d3",
+    "after": "2b2856fbe927115683acbdb0c6d8d3cb05100476eaa2f3f5b70b944f0ad57ea3",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/mau-do-phoi-voi-mau-gi.html": {
+    "before": "5a534d5ad2df4a1466164a8965df653eb64f082d7ce5c3911b6eaee8f6e0560c",
+    "after": "7582c3db1c979095bc93dc927c3f62c0c868728c229007ee2f6834dd1751fd3b",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/mau-ghi.html": {
+    "before": "290f95f3f677a58e4e9e083e3408fc6441a7866f75457e4f4de92833b806f8ec",
+    "after": "ce051e27b262869fd72e8d987a48269da1dd615f878a93963ee5a6d46c9cec28",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mau-hong-ket-hop-voi-mau-gi.html": {
+    "before": "7ab9bfa8fdcdd4e6ce00ec7c13da15ba616414d357f78625f678ae5ff993ea1f",
+    "after": "d595595277fa8138e5c5bb85b54747bdd3574fec5bace613522dc53cf27ca0c4",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/mau-nau-phoi-voi-mau-gi.html": {
+    "before": "6be70ca860751c837a7dedaf85b92f5b84aca6720baa16efac5b0602e2f872e6",
+    "after": "49022e389b9ddf58bba847155b66edadb2f1fcee344fb22badbe455ca7e4035b",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/mau-neon.html": {
+    "before": "d44377c44de47bc1f1ca58539d082e8913e4c1db46d30497d6474e920baf100a",
+    "after": "db201cb8ec3fe864b3f067f9479fa3d9c1681bf962d945f03b50b27871fefbbe",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mau-pastel-la-gi.html": {
+    "before": "cc1e7c97326b406eb8d13d005a79ae5a6035a8fe38ce1227ad22cdcd5f5c5adf",
+    "after": "f71fd7f430e7364b4b61d290091c843e666b43865caa78aa89d0c0186a7c980b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mau-thien-thanh.html": {
+    "before": "7a715597d28891c4636634caead54475406e2556ba3fc54bc7a41aa48114fafb",
+    "after": "31f53496f00328bbe1701f36eb4b4c624eb9f2b81f1f0cf195fc897290f8070a",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mau-tim-phoi-voi-mau-gi.html": {
+    "before": "e4e9cb5a9ba87716915cb54f9c23cdb380180879314b32b3eae9f3b800d5b583",
+    "after": "dfb10f4f810d194dd31b4436bec7d87fac62f1c3da829d33e52e18c4fa7ef1d6",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mau-vang-phoi-voi-mau-gi.html": {
+    "before": "53b19191ded84bcd7574908e8b3c0d0da56d55ddea2853debbc731e52d2b46ce",
+    "after": "7a525e1f8303f2e65780e760603edc58d4f870c94d2099eded0feb111946d6bb",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/mau-xam-phoi-voi-mau-gi.html": {
+    "before": "0936566f68f094b2a908188aa676b8ab2a40918595348b4981f7dc42d8504211",
+    "after": "224a50f6933c4425755d51e69b22d31ea04e7ed822706babf210d9711d28255e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mau-xanh-coban-phoi-voi-mau-gi.html": {
+    "before": "d17c2f2ceaec15aeeac2e7af4cfd267293026c1b3ca0d77c984743b1bd590129",
+    "after": "3e66ed9e483e38f8c664dadeb42c0a42b4b97f9fd8db43066fe9cb48bc67fffa",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mau-xanh-duong-phoi-voi-mau-gi.html": {
+    "before": "5f89bb15870d9deca05227610d61015e8c771d30af62b9134f436bb7b7d1ec06",
+    "after": "cbdb772b64e2887a0b30599ef6d6d474df83fedb6fe5526d07aa97808718b5ee",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/mau-xanh-navy-la-mau-gi.html": {
+    "before": "3777e8404e45546edbe3c9160ad5e0f32be4caf6d2673f7072007e27e56bfa1d",
+    "after": "06ee1e88669d2c33abc9574700f4100eb70aa9a8783c8c351aef8601f76a8585",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/maximalist-style.html": {
+    "before": "2ca8f5fa2ca4f734d6106e0efe30d78cda55f06ecbe45edba1f3b74949decaf6",
+    "after": "d114de57ee5b547e1d5ba0cfbafd3ec38291f2a2831759c3baabf7c4d2ba2a6e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mieng-lot-got-giay-bi-rong.html": {
+    "before": "5c26b51e96cb037a100e14deccd21efcda4382ab02e8d51ee334f0cd8d37c25b",
+    "after": "5e43b978241f8a33c4047428eba77e4679f11dc63d2f6e830b1a28ded59b1c4f",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/mu-beret-nu.html": {
+    "before": "87c22b56942bb8f090d1c003f1f5a0cbc60153c730e4af43d5c41fa51904d27e",
+    "after": "739881bfc295ed00e16891e3d70f40210ce8857e4538530f5763c7aec19aa160",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mu-fedora.html": {
+    "before": "f00370e1bc4b0dbf1c40932547935820b55d8cb7f6e0311f1152ee9c9bca4ec0",
+    "after": "0413414e1773fc7a42f4ccc9d4908b04bec9f72dd9e025ceca7caa17cd4ff26b",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/mu-luoi-trai-nu.html": {
+    "before": "e895f7b4e150dc08a615761c72a40712944bd9031a331392eb93e81620250b59",
+    "after": "9b09e9e060d7d342fbe627da9e1fee1e4dfe166858e30214ead7a77c5d3e981a",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/mu-snapback.html": {
+    "before": "3d7cce4106dac7def2fafff7f1a77194588250e8b790422ac40f8fd2b17bd793",
+    "after": "9525bc70a16c3436580cae9a389285375e461c32e915b8487842bcf2426fb7e5",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/nhan-bac-nu.html": {
+    "before": "bccb18c103f4c2dfdd65caa11f7dd705f40a5119d8d2c327f6dd761f1c18b5e0",
+    "after": "71626a141db78081ded2ebb6410721f5c2e06dc7797726f37c4eb5003385343e",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/nhan-nu.html": {
+    "before": "716aaa246134e244c088a3c76baffec10cbfe7e51cb0e579eda58ef387834f68",
+    "after": "d4540a0c245da006404f0f45d3cf1194e70880ccaf922e2a8cc6477c7c38a2cf",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/nhung-mau-dam-so-mi-dep-nhat.html": {
+    "before": "4b62934a7e70c896f87b091cdef8301ada2ca0e8d62c8c0ecbdc51d10e5123d1",
+    "after": "dc33eaedea33015ab96b27f5100906969b6cfa0f163c3d8e84cb6ca2009a41e0",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/outerwear.html": {
+    "before": "3e22ccebaa3adb68f1764e1efb0aa8c6f0d720c8026eb77b812906304b157b05",
+    "after": "6d799f836cae617415c821f2613bec1b4850fc832ffce64a7cbb0353e219aeeb",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/outfit-di-da-lat-cho-nu.html": {
+    "before": "4522edc6b451f24429594ad63565adc613517014330413d480816ca2b5f1e194",
+    "after": "157c3a5a1403423dc7d4513ce7ff29559903fc78a6ebf62aaf2164044a44a488",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/outfit-di-ta-xua.html": {
+    "before": "eb300464236cd6f7fb333699bc962e8e42c1c19094b19a7c0d2e2cc5e2766e75",
+    "after": "baec276a5ed5ef1eeffafc9da75081cd25ecc1421ce132be4ecff909133b85c3",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/outfit-mua-dong-nu.html": {
+    "before": "fc6bbdd8ce457b93a9c49a815ce4c06e6f3d49497066e1bc0697fc4d192600c2",
+    "after": "e993e9aa72dd003b02b35cd327954cb00b09b5aaeff4e9f98b01fbf99a2d4697",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/outfit-tet.html": {
+    "before": "145c3247dca6ad41165e720ff7c3076acb0e296fa3ce63f177b76e05599aac3e",
+    "after": "a9c2680d22c1f0ee593e6e9a94e562f7daf64a39cc9eacc3ad1c3d6a4b8334e0",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/phoi-ao-co-lo-nu.html": {
+    "before": "1a9b83ec35456a6fbfec29b6561b1688b87c33bde9b90a4f604db69f0058309f",
+    "after": "1f48d5e7805fe8447a3e19024789c1705af6c747ba8c323bb5593200720b0131",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/phoi-do-voi-ao-long-cuu.html": {
+    "before": "c51876229919d74ad79e9bd614f358629382f4660b05541d3a07f63ef9b796e2",
+    "after": "480cafebf1f6b2431150be8e44c72c9816cf2fb77acfea769777ae601919f557",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/phoi-do-voi-chan-vay-trang-dai.html": {
+    "before": "9b2f4d51e455583ce3ec6226f362ef5a567f336b240359fbe6d7fbc22ec8e000",
+    "after": "904afd47f5a4a82e8ca3edef647586cb3c12bbce7ede6d1212ff8c1d51dd6b4e",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/phong-cach-basic.html": {
+    "before": "3606d5a813969a01469d2193dc5ba6b704e3ed58965e67f746b34eed6529d9a8",
+    "after": "1e1ef631f423a2e83dbab8d6d269733d2203c83620fe025147ac3e288fa9a4cd",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/phong-cach-workwear.html": {
+    "before": "c6e8894d791c5ede2da2c8e73e0e29f88b1fa1cd87ade5507eb2081d16d64487",
+    "after": "19b07e965cc5b219dd6c3ea7235531391df68f4a0b9993cbfb5eb407c610e30e",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/pink-aesthetic.html": {
+    "before": "56156b6cf934cec873b87fdacd063574a1664d426769115af59b97beed19463d",
+    "after": "91327c9962d8cd7379dd948787e39ac5c97568a9c9c6e3a9f30e37fee1f87cb3",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/platform-shoes.html": {
+    "before": "c9c436cc744756b14cc8e3e75d0e3419eed5e9730d53b3864fbbaaef0bebaf20",
+    "after": "43f38d7eaaa2dd8061932dddf472aac31431da5a0b68b1a619ab902c8deec318",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/polyester-la-gi.html": {
+    "before": "8d048b9e8558f999cb022f3f64277d62a8ca68895e558b8c8491d94adcc37793",
+    "after": "c9e10e25dbef7dda163e342a735022562cb9f5b1a206ba2d5ceb4061c0db16d9",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/pyjama.html": {
+    "before": "4d92bd6b7e9a82c761fdbaa8fea05d728275b8f160ac8a2fbc42be99da906cef",
+    "after": "07a7c5bddf9cbcfbc4bac4de8a53746d48808b2d3457d4f0f77e373d8152a691",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/qipao.html": {
+    "before": "d0073c8eb70a0d0c35c69d141e34de0eb6742c7c6d3401f2b627714f6e872f88",
+    "after": "16352df6a6fcd14a3dd0ca0114b2770f6279a7546bc003553909b89dc75b484c",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/quan-den-phoi-ao-mau-gi.html": {
+    "before": "43c51e44f4da57ec69ee0a84dc9cf4c7942d1000298c3a482ab587102472c287",
+    "after": "757b155cdf64a2b058e7ba611838234893354df6207990193ed7614cfbcd0e34",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-gia-vay-mac-voi-ao-gi.html": {
+    "before": "bb1254cd6f3efb14444c1debaf6f7a5bc8cd48338de7879d3906b7a4994a3656",
+    "after": "72b1cf4008f80237ce32a3e2176220491355929131080105557c4fca13412a7c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-hong-phoi-ao-mau-gi.html": {
+    "before": "7469c1ca70e637008ca64ad8e0aaf26a69c32954514faede8ba927da63a8032c",
+    "after": "3ee0f249269f5582fa6d3ee06c2ad70b6bf7e654664dd3345108fdccfd2860e2",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/quan-jeans-skinny.html": {
+    "before": "7d8046f5ae19d47e73b6678a36eb5e1cd4d5fb5e5f9ecac36269ba663c5b78ab",
+    "after": "ff8b7493fe1e7330cc20eeb47449b838e5ba320ac1355ecbd2fd0ac800ab173b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/quan-kaki-nu.html": {
+    "before": "0a6f09d2203f9e43e9abff0521ffc87da2a209ea14256c92f6a57c28f43d62c4",
+    "after": "be8fbbe99b87e090c824fc2ac4aedfb58e6cd4200f9f0e04f19abafc927b80d3",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/quan-ke-soc-trang-den-mac-voi-ao-gi.html": {
+    "before": "1c6eae0bf8ebea82f8fe610b44327fdd688de9915beb10812f31ba530bb0ceb1",
+    "after": "54745fa05a41e86fb17761e3a8f3e31c3507481947ed7a8c9a9c0135e479964e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/quan-mau-be-phoi-ao-mau-gi.html": {
+    "before": "9293cb31030c711ac43c16c2c12a8a72c6868f4030846506341e58b3e70311c9",
+    "after": "8586cd14200e93af641e6e0d7f612493b383dd757b246296aae2393085fc4793",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/quan-nau-phoi-ao-mau-gi.html": {
+    "before": "9c79141fe6954797cc014476f1871aa0492c73196fe6a83cd4db2b1e53f99d09",
+    "after": "92b6b89e380d915a19c928c95d9de1c8407c35c3f503322f756765afd661b372",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/quan-ni-nu-sweatpants.html": {
+    "before": "25117564985b997349163bd750f4fc40c56c41ddfd15c2f7f5edf3d37932839e",
+    "after": "b465c6be7b0355c55e21d11f737158151371966f8ee5549f56f2ee198855af7c",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-ong-con.html": {
+    "before": "1308635191e5d329a2eda34e130b2e2bb2fec12c9a47fabb0cf427c613089804",
+    "after": "bec88ddb047f549e299f5e1db4ccb64345a6526eb7adf1e251f750339e521e7f",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/quan-ong-cong.html": {
+    "before": "cf4834e5ab233ddf3d5719d5fe31060d3ae96751b7f254b52501252994019d42",
+    "after": "cdb6a9c04cd6e938c3c2960f78322bcccc8c7c38103e95feeb79357ddfe296c1",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/quan-slim-fit.html": {
+    "before": "dac56f480bb72d6c88b1872067adda924d75a580b56046b15e113c11cb152a69",
+    "after": "6051c20ab9c7a03e92195aa1e15043240a6def58c4305d952a4224382277ec6b",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-the-thao-nu.html": {
+    "before": "37368f576ba6b00b1ded2d0f1367db64e6ade2aca433f3da99210a6d9b1cb48b",
+    "after": "7f37049da881cda749bdacdb4d15de40630d82735bc43d7ea7b24c3de96f88e1",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-tim-phoi-ao-mau-gi.html": {
+    "before": "d48dd8ebab45901d39cd92ec740c1c0b4509eead751b3c97a55367bf1bdf8245",
+    "after": "6544426d0cc6ed70890d4d724b9121289961f242a25c3edcc35d51dcdad4fd15",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-trang-phoi-ao-mau-gi.html": {
+    "before": "a7d2c8ec36ceebf24e7c02a0e98b989a10ce28dcc0b18806d7ab35a22623bed7",
+    "after": "ac03ff605a9cb2807810b533b09efa7b84bbf562b634d69b231e6b69d5a1fd03",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/quan-vang-phoi-ao-mau-gi.html": {
+    "before": "b57b95dfd74f39cd1be94ca58384c73f7201a887f926652fe74b08e70f0c33e4",
+    "after": "aaa5d4a10e9261bf78872cb0cbc6fbd42369c630ff50ca17a5abf8b78368bf44",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/quan-xam-phoi-ao-mau-gi.html": {
+    "before": "8da76a8450f8f343d2425ca8fbde42281d7cfc4b33ea6e044583dada906427df",
+    "after": "02a53f27d91804cedef3b698f599865a5b329e821448601052a82b4580af83ce",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/quan-xanh-den-phoi-ao-mau-gi.html": {
+    "before": "ccf38e8ead8b4f4dfdd9ee0d69c0849635a861a5f53488cb5a8852d316f51eb7",
+    "after": "ec425f7f3770c1df89725893b3a9e82f9dd8cf378fdea86b2086b3feb9e21e85",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/quan-xanh-reu-phoi-ao-mau-gi.html": {
+    "before": "225724f05a55f59a682c7ce9e0440d5a1934ff19d8ef70c86f2a4c53e314f6af",
+    "after": "fd3e80467886475067788598a853438bc77f9a85ac0d2f05e6a5cbdea8623a60",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/quan-yem-nu.html": {
+    "before": "5708a6b02a9c644ad69e016513d322f07676070cc6a74ed689583d7eb432ff4c",
+    "after": "5bb4566344fa0e6b72bdb5e624bc76e36b2d63c13cb0c8e046d114f6748f5844",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/rave-outfits.html": {
+    "before": "0478085c823ed20e327aa4263f171ec44b2eaa5fb8241815f1d09b35a41a178f",
+    "after": "dc68ae7bdc6da797e3a3939047e46159d3e1bb620a0ca9e84b4540c607ea8ef3",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/rock-chic.html": {
+    "before": "b45b4b028d9af142355b793570616d5a0dd10907fd1c951b1feb8be080f4786e",
+    "after": "432f049293c44d0df4bdd7b74d424dbcda350a6db9890be74140b852f4578e8b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/ryousangata.html": {
+    "before": "ba737f98f3f3493b63dca01b7851860b3ef253882dada7d648c8ceeeb30918a2",
+    "after": "c9a32880d3b66283eb4d0448754f9535ce17d57585652628bee2d302eace9cd7",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/solarpunk.html": {
+    "before": "c02e6abd9ee1b2404c9e4e87db1bcc48531de26c5e8e2bb0a8756968462f8aff",
+    "after": "14aac97f59d25186878c112acde5f1d13b3531f37109e2b28fe475fb73cedd35",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/sold-out-la-gi.html": {
+    "before": "eef13611491bf34529e9ff695b2fd06eddd2ed59b549d22770fde0c226bb25ec",
+    "after": "099782eb9a8ed21c49cd29ca4bda012466394504bdbd2d2a9a2c80c115150e53",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/stockholm-style.html": {
+    "before": "17e88beda2c0c979665be3418fd1a2881a332d29876be86baf66d1910b9ca248",
+    "after": "939f6b2de29126e799037be08cdf4b931f4be716025be06157d8a67d0b8fbd3e",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/tenshi-kaiwai.html": {
+    "before": "61ad6d524ddc12062134f2df679904402f057ff113ba5723a80d17e0a76b38ce",
+    "after": "6e37716cc860515dc47bf961b35fb4918ddd358f50af5cdc9ab95cae3f074bc0",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/that-lung-nu.html": {
+    "before": "a3205f3287891b36ff02c911895ea55d8117552a1b7d88aa600ac6053f518fa7",
+    "after": "d77c90e8d9160eabe67e522653e49ba55a3778818d588727f866ecd01b83e5e5",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/thoi-trang-thap-nien-90-o-viet-nam.html": {
+    "before": "7337db2fad18486130304a9bb9462d035a8dbb885ff61839f9004089d6977238",
+    "after": "f64b06893731694f188e7313b707c0e304918db138c5a2094ddd0e6ee14444b0",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/tie-dye.html": {
+    "before": "ee997105695a66de775fe1da66cbb7cf299a1f8d52ce1aa5b23c97b557bb4da0",
+    "after": "0969f9089598fb9b8f81fd42999accb42123a452de4b556e001654da94fe0d0f",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/trouser-la-quan-gi.html": {
+    "before": "eb4e0ca891bc4854f297724177e65172a60f00362e657964efd55228fe6719c4",
+    "after": "d5427d4a20dd1a51da3dc1ff10bad02f78bd10b090b9a67a6a7210789b066f4e",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/tui-deo-cheo-nu.html": {
+    "before": "df211b2299baf59833a1ab6f87c75e276beae444d2bfc6255f21f3eee2362ebf",
+    "after": "73a357e50e4f5d619a0ccc52a4d1f609dad4aefcc79e6e60e72ddb50c5daafaf",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/tui-messenger.html": {
+    "before": "b0a46b64f65ce3dc3636f243423dd0bd35cc8698e445d87a72dba7846988b62f",
+    "after": "3c667e48ad435e3602cfad5bdf1ee0ca9582700335df91f20f97324df432b7ca",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/tui-tote.html": {
+    "before": "12fe6635514ed8dbfbb386ebdd5c267eb86127aee106e9db072d291e26ffe48f",
+    "after": "22f3cb35b74385f072cc8ede261447c275e36ba9fa0414edd67e76be7349b9e4",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/vai-canvas-la-vai-gi.html": {
+    "before": "7ebb7ac0f16232e0925e7977990c5aec49bb78be90fbdbf1ed54c8367c0ac67d",
+    "after": "bf3456483c0b12de0beeb5a7ba2271ccd2f1fb69b3813612f15eec604241656b",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vai-det-kim.html": {
+    "before": "6ffc309b2c6b3dc8c8e65cac4829085826a0790a4a10ecaafbe67d7d11d00fb2",
+    "after": "4e66f5c0ad269db98cded5974736555fd8493c9ec91203a42bc5ca783204542d",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/vai-flannel.html": {
+    "before": "e15ee36f4b86d30d96626170fcb172901aec2c71b0ca7b24801995ed547e508f",
+    "after": "e4cc01dc3aaf965fe81a9bb2adbe3801c4e815335b156eb9755291a329c09ade",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vai-kaki.html": {
+    "before": "7a6baaa2eb8dda2ddd37ea9ea2e777eb811d3cf85a9223bf2bb79f3661a1624c",
+    "after": "f410e672d083d1a91452e68760fe6aba29dcc108834b801a2672219491f4e875",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "blog/vai-kate-silk.html": {
+    "before": "a281523317db8193b3372f199d3f9c048d9d6d76b0c08c095c9f57895b1b455f",
+    "after": "2cf3a1cc115446f44ac587bd4f435126e968c6d3dc9b7d26396669c5211c0cef",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vai-lanh.html": {
+    "before": "a3c3f7ac818432f37bd204155d8d19d3364600adc00387f31f0eea75fd032d92",
+    "after": "919ce090bbd846e4d5921d56ec4942dd1dfd8d92bf893b81f39445a6b0feafcc",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/vai-me.html": {
+    "before": "a982b8d7183a876c1f55c2e957e2c34d436e3141134bbc6883385052dc5ec868",
+    "after": "d8ea2ab045d34fe0fbd13a9667f1df7c85b0cbb552178d057d02ddd73129f08a",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vai-oxford.html": {
+    "before": "a0bcc3f8d88028304e227340ca95d848869bba16117bf7b06cf23d40d3949f6b",
+    "after": "78700cb0e543c42ec098275eb24d8320d5b6e149b0bb23e832099e9b0e68139f",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vai-spandex.html": {
+    "before": "fccb64d9762238720cd5fbf9dfca928e8f1d2ca331a10575275e3e789d8a52b3",
+    "after": "e7cc170e08830b005cc4195e134914dc90f6c36b45476dcdce40c19b01719e3b",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vai-tweed-la-vai-gi.html": {
+    "before": "038e80dce52891f5fda0baef2a0212a5389783f267b77c6467b415c5d53e9fde",
+    "after": "346ca5d14d9e5269a75a9ca21f4cc25609e1f0ed7d0a624ca6915c45b1fc9360",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vay-cho-nguoi-beo-bung-lun.html": {
+    "before": "b9244aad5047a48f8293290a9486020caf95ef65b069e62da1e68041c5de602a",
+    "after": "11feb8d500edf884ec6daef25dc5f6d7643e9cddad82f8f9503be3a6b766402f",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "blog/vay-chong-nang-jean-tron.html": {
+    "before": "9c5ed0f478eff1c1f27d96db2c10537f3ea18acb991e1680a558bc082011f4e5",
+    "after": "c790e55e1b17bbcb74e28cba357e46b9c6274e0c5c534735ba98e9529f21749d",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vay-da-hoi.html": {
+    "before": "f6a7ce89e60eff620f684672f6ce37855af443bc08fcaebb372cdafe4b8b50b7",
+    "after": "8e82cef5da32587e3cf488f70ac7754ea8895e5e69f119df60cb6dfd2e3b17f1",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vay-den.html": {
+    "before": "dba9de95eed840011fcc6ae1f6dbdea0dfa8f2d511ee118258459551b3feb97e",
+    "after": "19f250f099c5acea53350c84cee24ab57b152f6d643e1cc05af2bfa1423b4885",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vay-di-du-tiec-cuoi-sang-chanh.html": {
+    "before": "889c1a62c645b9f5d2c06e8ece311de30321920ccb3f3d8830477e7f87afe085",
+    "after": "bd89d79e01de949cb96724e28f8594cd0ea92f9ea3b4e929ccc33998365a6eb6",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vay-lien-than-chu-a.html": {
+    "before": "9ae6c4e7c74b7473cd88ea0233a2fff9d10dd9c2fa2c7c931ff020a277e192e7",
+    "after": "ca959ed633769e603972665dfaadf709772daf3508b79a961f41df5ee6b5a9b8",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vay-maxi.html": {
+    "before": "374bba22446f6450ebd50f2c5fa6e55053d96a4526452fef492e2c79ac55134a",
+    "after": "226902cbf191aca80f2858c7d27eeb94307126d563bfc8211089034a8b0461ea",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vay-tua-rua.html": {
+    "before": "ccfa28d32604dd800bf7d2a8bcd45bbb4862f7cc18026e168221a5085e908658",
+    "after": "cde8ca05ce26df92a02a7fb163bcfe2bbcf568ab1808e9a1653cbfa27305fcbb",
+    "changes": {
+      "captions_removed": 2
+    }
+  },
+  "blog/vay-yem-dai.html": {
+    "before": "aec7ed11ae324e9730eb2cba5893329096b6f19f538a6d0e4728be53c8fee812",
+    "after": "c3c299bb52063b7b861d874f09329366a710c3baa78d46ecc193692c4dae5166",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vedette-la-gi.html": {
+    "before": "ffc70607dc90ca82cecf1f31590a00e584e8a481e8ecfd02331d16ec1cc46a0a",
+    "after": "20996338de6ac0681f11d7930a8abe9d9b3febbc3612fbe82bbc43fa58262ccb",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/victorian-fashion.html": {
+    "before": "a23d2f4f1aab7dcd3efb8b8efdc282f251e88806be78a8567725923e641ed063",
+    "after": "48702973d336fdf4273ed07c8599401cd334cf9bac0101f380c5cbceaa903c81",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/victorian-goth.html": {
+    "before": "a15c9a7397edb48bf83350c85ff6748c277e11237902f95f4479597265771aa9",
+    "after": "998c3b45b6b6ec0935fbe8cfdaa26f22bb5e305f0735fe6f5bd2639704d3e600",
+    "changes": {
+      "captions_removed": 5
+    }
+  },
+  "blog/vong-tay-bac-nu.html": {
+    "before": "ed2ce370ccf55907d9af00588ceae2eeb9e4c724ad883e56411e14cac8c57c00",
+    "after": "36c8ba5d1cbfcc44b149393cc0730cdac3fe0f6e496306f75b61cd9c9c4d5d45",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vong-tay-nu.html": {
+    "before": "3449c0cc64736240fbfa07001733c36d59c718cbd7630bff99b333cc50372b88",
+    "after": "34986630ac07a7ee3b08582c2f5261eadc2960814df663e0b58f2d3fed6384f9",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/vong-tay-titan.html": {
+    "before": "6cb91cd37243563cc5de8313f80bb96a0f001e3c0cb386eb87b5e261254ff511",
+    "after": "706a4bdee091f7f4ab2531daa17073a69e7ff5cd417c580bbad609ec32698c4c",
+    "changes": {
+      "captions_removed": 6
+    }
+  },
+  "blog/wafuku.html": {
+    "before": "a2c0fdfbf9a6592f490d6dd71a79046345a839ef58e2b86e48a250a31bfbd228",
+    "after": "f6359198beb7061ae5a8f14d6e24638999ad7484ef0d7be33467971e36821ac2",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/webcore.html": {
+    "before": "1097648c2de388248f06cbb82625e89a87abdec6c3a8026aad6049b215f93a80",
+    "after": "8517e213763c5d33ca0243765587a707e6e3e0ead31457e3e8d87dcd5dcf0759",
+    "changes": {
+      "captions_removed": 4
+    }
+  },
+  "blog/white-on-white.html": {
+    "before": "002bb5b5b33ac699e64126fd58600d84fee74d20ee06c2b0eec835b8acfe286e",
+    "after": "4f6ff5808128aa47831476192d8116df2bc654c2566fe2b09f0d8f9849e726d7",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "en/blog/1920s-fashion.html": {
+    "before": "80f664d087b5ae9e0a79273fd7b8f55f00745099a40e7540ae86e9acbfa8bb48",
+    "after": "08f615312d56763f993af04f51ad8381f569ff0894f5d10c3a6e4820783216da",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/alternative-accessories-guide-directory.html": {
+    "before": "4264b106fddf37db625277743e3c5868af090164bc26c23832c526f9222c5510",
+    "after": "808803e54285f17aeb207b022c09b1c06e9fb1dc8ba27ea544cbd662134c5398",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/alternative-fashion-shopping-guides.html": {
+    "before": "429657eaf297596f73f9b7ca8c1f950212772af5bbae320465178790f39e5215",
+    "after": "b8b3d6392537ce47093d657d990c978da9fc14fede6f9952c776bf6c4348c807",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/alternative-night-out-outfits-women.html": {
+    "before": "926078544e9373d53769b7145ed51039ff653d9ae526eeb3c117969758885615",
+    "after": "5f7d3cf0f01013a365bcc9801e5e02d1739b5f77c9bcb328bbe40968b8fd8bf7",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/anime-outfit.html": {
+    "before": "e44cb9882c74b74e0bc3221ebeebf162b0c6da5d8098c8b32bc6e7e885c465f6",
+    "after": "923072689d31d20f9286b6c2005fdc70114e86ec9e2e8e0f7d95e02a8faaf4ae",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-anime-nu.html": {
+    "before": "cc7934046acd00e815c13bc86548b5af201aee91ea6a08b754b8cd3fb420ea89",
+    "after": "5ee0459b363dada32809d87effa11f379f5ff93823c99bcb52065c4ce92b41ff",
+    "changes": {
+      "links": 8,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-ba-lo-nu.html": {
+    "before": "e8ee72de7971ca19d22634809453a4b4fc0959f410d86d4dafb01953ca69fb1c",
+    "after": "5e326d8767f1612528cc3f186643b36769aab3e5b349ed4443a2585f0d5d30e2",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-cardigan-nu.html": {
+    "before": "16023937a7a22378fb9f56ac72c2f67bffe5d1ea452fa118a95a96f6cb229513",
+    "after": "9729aa843d90db13786352841f221fe054165cede13f9f7738911a699fc62acd",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-chong-nang-nu.html": {
+    "before": "3aec567589f26d65d78e0ea321a91dbf105862f15bcba42d482fa5146e05b5a7",
+    "after": "6cd93046ddd7ea49e546f3faf884b6e77e5e605d849d7f9ad7bd42d390bf958d",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-da-nu-dang-ngan.html": {
+    "before": "dd85e6bbd8f2687dc824f2b6c0409f4219547f8c7060362be8c49dc0191c0a76",
+    "after": "52d6ff60e192d9a98ba7eb94fed5e64de16f71550c56c6087bbd07a82fa8e1aa",
+    "changes": {
+      "links": 7,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-da-tweed-nu.html": {
+    "before": "1d6d53829f77f1fb1e7965c603c0ad058a95b3a516be47f6785fbeb4c464b258",
+    "after": "68b42367c1a34fcbaeb7caf85c84edfc53007f155827366ad872d936a3544d26",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-dai-tet.html": {
+    "before": "df804c0b65f21803546c745162e797a1855ae8ca54aae996146b6841522ff1f6",
+    "after": "7a3fdae80e2f0745cfb0a6bc46a3ec89634cfdd4ea1aaf34ef746a34bfb571cb",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-dai-tim-phoi-quan-mau-gi.html": {
+    "before": "f4725bfb68c5724422ea4b35a75de9e2fdedf461c00582c8d3b6130aedaef0b3",
+    "after": "091bbcebe351c024655d4e83047dfd0d0ebe9cfd390b5e1cd02a0d35c5f74d10",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-den-phoi-quan-mau-gi.html": {
+    "before": "4bfe30c6b4693a292e38aba5a7d3918ae7a37d901a673f8868c8b98fb8b97e4e",
+    "after": "2740fd1ecefdf495b9f9268416c24d8297248a65305d9bee18c06c9a6356551f",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-do-phoi-quan-mau-gi.html": {
+    "before": "0cd29a4d34337bc8cf1b8a57afeaf3974a239ee9048e77de24433966fad9b6dd",
+    "after": "5a5a72eb174e765647054a9b300d25fc35901cd61c1815484e30b0ee505bbad4",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-flannel.html": {
+    "before": "882c622fcdfde0463c9f0a2ee5dda5102e4e8fad4e03e0dcf6a02e7aeed2f52a",
+    "after": "801099935edb6e20b85023428fcee1f5d435bb255681957678feae81d0132b9b",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-giu-nhiet-lot-ni.html": {
+    "before": "97d978bc33d6333c92cc5681f384f36b4087872bd3077d4d8634086990d22565",
+    "after": "0fbae6f5d1409ad8fc7f357a7e20c11daaed4fa043d8e4aac55e3368d12280f7",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-henley.html": {
+    "before": "0a665cc4d737a4275c838ecad09e2741263fde4212fc9be2d2716fa2dcb01f5f",
+    "after": "89ed5bc06ce756a85cbceda4d5e6cf6aca624d5f2509af7886ace77f9a13eeaf",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-hong-phoi-quan-mau-gi.html": {
+    "before": "1f5f96e1a08ab0be1a4375746489d89e04f4874aa1366325e27ce3ff3c662e50",
+    "after": "29b758e387649e3170db0be1d0044d51576622ee5b89fbfad7f0bd74c6df7c9c",
+    "changes": {
+      "links": 7,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-jersey.html": {
+    "before": "3acd581311888a7fb72f0ca9659fd9694e9006cafd5912d3d4e234223f58643b",
+    "after": "256407d2a90384d59b6d1925e2fe5dc6a03630495cec8b2c0e83781a11ffa6d5",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-khoac-gio-nu-han-quoc.html": {
+    "before": "5732fdb32a99d6bbb79e1c4c6533e2fee12b0a96212813cde6da8753af41801f",
+    "after": "078acba25ceb21640d28584ad38a6c98cc7c94207831dfc15bae8988defcc3be",
+    "changes": {
+      "links": 8,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-kieu-dep.html": {
+    "before": "eec9823b197ba871b2c309915f010ddc83a593985f8cfd5428e73f1e400f8c88",
+    "after": "34dbec6d7288f8986c89e68dac4f6fdca4c13321724fd7f5ae3c8a5c175b9762",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-mangto-nu.html": {
+    "before": "64587cc371e2a0a074344d575a4f371f637e4080e4b40b24a25e2c671ce2f6c1",
+    "after": "23f7a9ce2f888f3e2e78f1cb5dc92dc1825104d8eb9142ed6314013e10896ada",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-nau-phoi-quan-mau-gi.html": {
+    "before": "6ef9d7314a132e1ee9717df6208267a44432fb4a29d14dfb5251cc14f4aedac4",
+    "after": "866ee699133d9d87d0ffa3663e913d955364165f06edaa8fffb80bfacb79be22",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-ni-nu.html": {
+    "before": "e93077de3772918b7816912c0a61807a2b9a51470858faa6bebfd009d2614a87",
+    "after": "a553827a43611fe4cbd6b9697d48b8225d7cecb0812b810478749d2f2efee8c5",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-parka-nu.html": {
+    "before": "e85c8c3f411bbabb2a4fe04ee9f1bef9e0147c5aa2b837f8b1a11e6e2bbf1743",
+    "after": "1a4aac083a27b89827a48167097112d0b1da76b67afd928b25dd4852420119e0",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-phao-nu.html": {
+    "before": "bae0e9a33971b6cb106aa38704738f28445147efbc5b34c5b7f6fe6ed1397040",
+    "after": "362cf6c6c3bdf25db5aacd321fb4f51e2e5e03223c432deaa6a41b0de1a49255",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-polo-nu.html": {
+    "before": "089ac7f023ab30dff88397e767fa1e037c351e22b7bcd9ec32f8fbfcefd627f6",
+    "after": "4ba4daa87f72c84d8eb3cf1ae07803eb72ea4544ca57a0dd0f56dd27ae3ab75d",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-raglan-nu.html": {
+    "before": "f7a5fe381ca0ee79d0203be5358a0ddfb85d69cdd9f926507f85689dc3223c78",
+    "after": "362a5cbbee32c64ca46bc95674ed9a4a04264b92cbe1240579df351d119274cb",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-singlet-la-gi.html": {
+    "before": "528ff05a0abf0463358a0c4dce43956947cfd5173ecca14c945e6229fa252c1f",
+    "after": "6bf2999df3e4987fe826905d21ba65f7337a8716277ae3c3fae77ee86461e8b3",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-so-mi-co-tau.html": {
+    "before": "21b2b1054b935876b2f18b053bbc0e870ef7a871b54623bb28a9739c2a4d93da",
+    "after": "ee9b546692e4c74547442d5e5edffb3ca17398f9ceca4f5d87ffaa641ba915c4",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-the-thao-nu.html": {
+    "before": "f8d8cc4f32955a50bddb7c3184bb9c4d90023126a0929c9bd940161d6578a011",
+    "after": "dc558036294df048aa95c11d4bd8c8ef49a9cac4b75d1293817449e3a3f32680",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-tim-phoi-quan-mau-gi.html": {
+    "before": "c1a2a288eb41b6bef3801f42de8d7c25cdd391f4ee0d18d5dcbee40570ce747a",
+    "after": "9b42f47bdb1737544533de95b3960b3b8b3647633db5396474bc7b9a2a1c5721",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-vang-phoi-quan-mau-gi.html": {
+    "before": "2dd4bf7ae787facb5ca5566d853688d3d33049550a15592397852450a80af924",
+    "after": "8d369a3d5d5c70e184bab200a3d9fbe651577b8f1a570f772fe803d0c4873b77",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-xam-phoi-quan-mau-gi.html": {
+    "before": "897d36eca329ed35a197ac7ee44eb79b75a139da9fe2eb75f25afd6eb4c38767",
+    "after": "a376cfc06a9df5217ec8cd36485917da1a914e457e8bfeef4b6c546ddea845ac",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-xanh-duong-mac-voi-quan-mau-gi.html": {
+    "before": "f8a9b26e61b93677fd525b456e9b9d3799e3f020f8667209b4d2ac443365032d",
+    "after": "372ae48048d70dbdd4b9588c6fd980620c0d94581c22d7eeab1cc6942fe8a7d6",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ao-xanh-reu-phoi-quan-mau-gi.html": {
+    "before": "505c51f1aff4d0dce7a8c6743f97ee31faefd4cd4a10e4a4ed60a7c7ca1f3326",
+    "after": "05dfd3eaf05635ad0fb96c78b6a7c267196a3f4ae5ac05a692ebaaec86e854c0",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/atompunk.html": {
+    "before": "06f97d5daee3a18ef84d4b90714730006534e3e12cc9fb7793ab6eaebbec33d2",
+    "after": "c591e2f5f94fe657745776dc4778c5cf3cfad0b035a73f5d936a1d03a39b20d3",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/auth-la-gi.html": {
+    "before": "a9656f847f1db80dbe51364fa221d2b5b4d7d5a83096552f9cbc188bf571b5f0",
+    "after": "61439e9ce1ec2e1195061629203c6c07aecf3ab8e03ace44ff6d0ba0524532cf",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/avant-garde-fashion-guide.html": {
+    "before": "12131587bcbd7c3913efe07d545c2e21771d99cfa4c88d540451d97427b67f82",
+    "after": "2299d7476adaaf215d84367d2d60a6bc6c9bf49e542dac1bfd3a74d9a2cdd099",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "en/blog/baddie-streetwear-guides.html": {
+    "before": "ec7a79b7663eba4d55e5722bf295c42c3e0d315aa1310151105ee5ae5ca4479c",
+    "after": "f7460fe4a28d9444a08e199dc32498a73e2b84fe98dec7466e8172b493558124",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/banh-xe-mau-sac.html": {
+    "before": "da17f7ecb004dc539f27df1b6a33aab6a3b7f3b2ac7fa0c7f975de5fa31bb441",
+    "after": "b5f4969f12ee6d924abd0c1e16efb588df4f3028f5dedeffca16166d032a0b52",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/biopunk.html": {
+    "before": "7995825f4ffe4f4711f9fbd3e70dc72703e4b9899bce9579d40723ec13f43078",
+    "after": "d484fbb563cd147c042f7118798bda3363339522372c7add29d5adfc55d015c6",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/blouse.html": {
+    "before": "30bf63330207648ffa16ae02b3d50484aa8b39e7ced075a4fc48aedee1ef665b",
+    "after": "8d8843fb42cdda1056718285eec7c77d7efab162d8ebbddf1d4db06bd53f3b45",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/bo-vest-nu-cong-so.html": {
+    "before": "fe36cf8bfb36babc2d27b9a7f5b19fdf63ee9fdd213a72812c91ff476773303d",
+    "after": "47962e7305fb81aa6728a34bbd5a6589a7369444b3212f12046e90873a3962a8",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/bong-tai-bac.html": {
+    "before": "0cb8d7dffb22c9d500362286c0b882079926bf7f88340e8ce70f49c64215a934",
+    "after": "cde50f58a60b9549435734c1e7e5d1b72790f7b57971f007cbe97d589638d948",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/bong-tai-nu.html": {
+    "before": "d2954e3f93b9128f4b3767a2bcd4bcbb8109e365a99b4553b3cf108576e6be82",
+    "after": "67e9fe414a2dc0d5196c0f8c544efa2e7419135686c7ffc428ad849256984943",
+    "changes": {
+      "links": 2,
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/bong-tai-tron.html": {
+    "before": "ebab162e8ca05acba37ed716ac16d590f7acc4fb0fbf71c3d2192cd0e37ddac5",
+    "after": "39fc652a9693391fc9e1ae8191bce048fd13c66432f23050cd5ef925915dbe2b",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/boutique-la-gi.html": {
+    "before": "8aa8add7031dfa3c0a3f132f95d262fa27cb3358dd4181dfb2d2d1b98696000d",
+    "after": "b1ea45a746dcedc7797cb3009fe3f2f968ac5feedb465cd27373f3c0c5776970",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/butterfly-haircut.html": {
+    "before": "06297faef7961a5aa6468d3bbe67b4ea9262402a7b28d410b9d07298c3a59c73",
+    "after": "21254620f9ccb6c5e0ae59f2c8663ae12295e23ae2f340e003f247e6fed98e86",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cac-loai-vai-len.html": {
+    "before": "44dfeabd99bb99759d583b49355d24bd3f085d58a703dbe3453fef0908a2617f",
+    "after": "2916a6af9c68ff7dda60a9955d50b6cbf5a583e620970d1f55bc78a7abf46216",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cac-loai-vai.html": {
+    "before": "b68c0733236a713f23b6250d73a9d7a0b2ac11afcaa6296a2a6652758adea62a",
+    "after": "225fcba9cbea0ebf4b79015407788816d067a04b8cfe84a0d23c01312f84ae83",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-buoc-day-giay-the-thao.html": {
+    "before": "1e7e18fcf6798aadb4dcc5e619fef21e156b47551404b444f2374d8f5e4dfbd0",
+    "after": "cf67a6e79065508abfa7755175fcfed0f7a81493a587661a770de4f0b4f1f5d1",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-chon-kinh-phu-hop-voi-khuon-mat-nu.html": {
+    "before": "8587ecf3c4cc23e4eff104e83ebd322dd91fa51d6aa1067ec765b9e938e036df",
+    "after": "0541a59687477e4690a0ce2fa0d035685f6e2ae1fb14b4aea6cd0250c498d1e6",
+    "changes": {
+      "links": 4,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-gap-ao-len.html": {
+    "before": "b46d6b2857739b056a6399ca87a53ac775a36d605e76d3d469bb5a705af5d601",
+    "after": "c100d359aef4ea234d9f6f023cf456e097d0c48d2c3aeccfd4c5799424397920",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-gap-quan-ao.html": {
+    "before": "ea3aa4c51b81d42a1136d411eb23c50085280ce8598d05ad02d8171fabc29bc6",
+    "after": "46fc1bd1ccbca8bf357d691add0950292e99a54b348b21e641ee129c20ee71c3",
+    "changes": {
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-len-lai-quan-jean.html": {
+    "before": "1b3195358310c9505fe19a6bc5707b0615abd76e04bf2eb117421b8f094fbddd",
+    "after": "3826407ecf1e2d42eef8e4c77b48a22d1e947592c8238391ba4ee143d185e5b0",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-phoi-do-voi-ao-len-nu.html": {
+    "before": "4ee1f837bfe810cd6f5836c2949ba3b1db08ffd05c9136910e4feaa7629b5869",
+    "after": "172c0c6014567dee802d8f5d37e9366c2a9c02700e4eea10717f32926c1cea1b",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-phoi-do-voi-chan-vay-tang-ngan.html": {
+    "before": "f24f219c2d3a8bcc13b67937cacab20e500d6d0b3c67b7efe819b703e2213336",
+    "after": "ee771c813a29f01475a95e0bca4cee65f7c6d6276a5e72baa1b7cba71f069fee",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-so-vin-ao-so-mi.html": {
+    "before": "c9a912b2f94b441211e851f69d50f092d25cb9f57f4aca1b3ba5ee029d3884f6",
+    "after": "31d8b46588c6b6be36e8092c5ca2e4d7059cd6d50660de272aad20d26010d66c",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-that-khan-quang-co-dai-cho-nu.html": {
+    "before": "7af639333a9d64cd49a982eb9e56f0ad46cd6efa4030f98e0a3da1a47b47a225",
+    "after": "b714a91753688de2ba8ed1864426e836a36c4c87ae569c0a71b272ae55f7545f",
+    "changes": {
+      "links": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cach-xan-tay-ao-so-mi-nu.html": {
+    "before": "364ff9ea41a667cab6205f5401cf2bf5af1628b201feabd585e2c89edab9febe",
+    "after": "76ae6cb314d03901a24162edd522852f4a0dd7652335aba0a76e71f54ea64fe7",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-but-chi.html": {
+    "before": "32e9d0f849c2dbdcdcf21e76bdeb46bcc119f46f16fded17a686221f259ee743",
+    "after": "45e156503798331c92c8e826c25b19ad49bbb081bf7d04b6dfd9c70b8cff984a",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-do-do-ket-hop-voi-ao-mau-gi.html": {
+    "before": "a72cf8e5db313a9d5395a536803cf10452cb0ef5670c5f1851b8aa682706a914",
+    "after": "1963fcd548097ba228d562696adad34e4b7fabb7382ccf6bcecf12b496ce8a14",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-hoa-nhi-dang-dai-phoi-voi-ao-gi.html": {
+    "before": "4581aa681c04bf0350394c46d7bb97ffc808074b00853bd228279a90593d6bdd",
+    "after": "3000928305b3f868db356754fb2d27ce717d23cfcd5d241e573aaf33526f8a10",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-lua-phoi-voi-ao-gi.html": {
+    "before": "05345d76170260fc3e6d246493690fd88040142a6caa4c5cf2989ecb14b0aa61",
+    "after": "3a3cdd1b19212d56f661cff712863c4cda71d7c2b84a7f22cb2a396cd0e40e5e",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-nau-phoi-ao-mau-gi.html": {
+    "before": "df92fc131bbd4505066df2c5f4a5bf3671e09c6d158e582df7c31b0b80efca07",
+    "after": "09db877b429e8e4e9f8a20093309426553af7ff90269e72243b6b84bad04b1d5",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chan-vay-vang-phoi-ao-mau-gi.html": {
+    "before": "fcb900f3089e23d56ff5fc6a68a49bf4e6b0c071b25b50c9b267e65fc7fbab7f",
+    "after": "0a8ed6197148292c3eb34c47765c679e19d70a775af5a37a44a0f1374b9521a1",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chat-vai-poplin.html": {
+    "before": "3e93e9ee409234a439d0ca2d240a42a8687a0d8e0f3569053815633ef676f5da",
+    "after": "672ac068d8cb925f76521eab96649cecc77a28d991f524ba69e7bd4886d90a88",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chat-vai-umi.html": {
+    "before": "f3222d19c031dab4a2e0d1a0015034eb4eec126e1192eb6415bea3e031d10836",
+    "after": "44da1e2ac0c09dc7c00cae34d71ea8bce3dd206fb3c510ebf197e69bea45d10b",
+    "changes": {
+      "links": 7,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chiffon-la-vai-gi.html": {
+    "before": "68aa6e04a8bf7fde735ed0c77fb055837f819768fc7d824025de699687bc4752",
+    "after": "8ac16341ef2c83392cca3436535d8c2d39c075d2bee472cbff85ad40881df01e",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/chup-anh-ao-dai-tet.html": {
+    "before": "781c1b46053cb6fc3441f6da4c6166299987193703635b02df2e2e95d297c110",
+    "after": "b22725b19b00ab2b439d7389c8a95166faebdd12e66c6516b2d83f8bfe4d4be0",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cravat-la-gi.html": {
+    "before": "2e65ab6d2b189159f70ed31b5ee7e49a1df755b651b8845d0fa81adacd73308c",
+    "after": "ed3d657baf17c64f142d8407d592ca731bcb22181c37f6f796806f59b4e6f80c",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/cuban-shirt.html": {
+    "before": "ff3583dc0c850dfe99a2ccca4edc61c3a018f7382cdf1b69bac98905d641a34b",
+    "after": "2b59d6d921ded55fc8dab91cb54f22f963fc000c690a34b7d02f32011a923d06",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/da-lon.html": {
+    "before": "b1e548baf5f0661d730bb1ae36e85edb6ca227c55bf195550981a15c8ee4dc69",
+    "after": "9ec124f832b76e69592cfbc8111a1f460b3e4dc45773787a3390bb6d57ba2ae8",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/da-ngam-mac-mau-gi.html": {
+    "before": "9c1b6ec39e993f71640fb1e806642cc90735d4a10ea2c7b33912eef03169cbbf",
+    "after": "f4ac2d81c8c6b7bd25fccc99aae540c45718dfcf502d45c0b18de13414436ae4",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dam-cham-bi-co-dien.html": {
+    "before": "ef658f46021ebd05f2dcf758be6f0259d5e246142272de614ca88a7660b90d28",
+    "after": "196076348a0d6c15628771fbb4e5c5ea37e8317f7c852d32dafc33978415f665",
+    "changes": {
+      "links": 6,
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dam-hoa-nhi.html": {
+    "before": "c79efa1e57dc86e170dc1fadca2cd07ba71289deadcd5c5ce5db2eb9bec13f0d",
+    "after": "ca1ef10145055141db5c9af016cc7ba78965541167c275941996db69013515fc",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dam-hong.html": {
+    "before": "5af7d38dd33675ddcf8fea7804d65a00d6de39c512f4077376858c426171727c",
+    "after": "3884677502830ba649d7fd9f539ea762c13b3dc708b482f9d039f0bb5a034dd1",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dam-trang-co-dien.html": {
+    "before": "5e430d88770c66a95ca160d9cfc0ae4cda3e416238cea6f010fefb7552702156",
+    "after": "169775389743d042d22249a802f8b44267b09473868e8e9be7f58b581711e5ef",
+    "changes": {
+      "links": 7,
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dark-feminine-guides.html": {
+    "before": "dcce99f9a7068c80fd22757b67f748052f81aa88c18ae1853b98345bdcf83dbc",
+    "after": "e775fbbfb9a5b234835c04d2d8c67222e7aec14ea2a4ef3f1e21831c0d9442e5",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/day-chuyen-bac-cho-nu.html": {
+    "before": "3c6b6e43822d877d755574028fd24ce08d0ef93ab2c10c52154f8c3cdddd2d32",
+    "after": "f9f090da44a14b1850d49afecc265b930beb4ae90da1e7e87a1610bd85e130b8",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/denim-on-denim.html": {
+    "before": "b603075269379a92030767d3a858682d382717c2d53454506b3dc822a75ea210",
+    "after": "60c7c9be06a98799ddddd7ac337359758aa2507d581f9c208321713004f53580",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dep-quai-hau-nu.html": {
+    "before": "06f2c8eb3824cb91b8cfcaebb552cc1259f93a3feb6554cedd52426741d980a1",
+    "after": "52e96263dd8f42387e8511e5ad6a0667a368a94c2bd3e1e34ec1ba3f76e98a66",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/di-ba-na-hill-mac-gi.html": {
+    "before": "2639e968f86191df3d0d1749cdb5c02a1ae7a17de9ce916d711a6b50b318896c",
+    "after": "65ebb03254c45188d81de8f370be1f6bc830763c8ce97296d8871c7333aff2ca",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/di-du-dam-hoi-nen-mac-gi-nu.html": {
+    "before": "4a0ac47b8aa3ef56c2a464d6b8ade18ad182d6d9e9e9de41a5a98735a6a29f9a",
+    "after": "986e47d2052a8ae63fd2553692da4ba76c6d0d37537e0f51cccc1b334f6ea9bf",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/di-ha-giang-mac-gi.html": {
+    "before": "6b3990c2e1ce58d9e6231ea18a42fd56f0d9b13b9fdb594fdb71d8d923587efa",
+    "after": "ef9619fa68c72f85b5b86ec7cac759237c7ef2f2a4af4128a773225a4f6f2a62",
+    "changes": {
+      "links": 8,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/di-hoi-an-mac-gi.html": {
+    "before": "940c2eb0a5f2dbe42e3bbd17daec518fc4d6343dcd763c0a693d06d2e2bfbe2c",
+    "after": "fe34c8902061eee3e452a64eaa157a5a0d5a49b782353d77dca3698c9af3914d",
+    "changes": {
+      "links": 9,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/di-hue-mac-gi.html": {
+    "before": "29d1d95d44dc35ab5cc59cd1de5c016641e2fd4fc0d6aa264314fdac146cff86",
+    "after": "88b1a61e44efcb0d0c18e629f149138c44e8c4e152233cc24191a9e52ec38e79",
+    "changes": {
+      "links": 8,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dieselpunk.html": {
+    "before": "ead13a9a8fd3605985c601b2b237af8b0c552ce1500d30f37f00c1fa25d7dfc5",
+    "after": "435562defa7ae6905d8259f32da0a001311e4e01add6d0a9982bc118a195e4fc",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/dress-code-la-gi.html": {
+    "before": "3559bfe293b8c2b007fa87362f1da7614d667204b7e9998c018a4636f5435c8d",
+    "after": "8754e949cf1fe408ad4530c48b2e0e195d684846e586bf5650644103de68ccb0",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/edgy-fashion-style.html": {
+    "before": "143e9479963095cf33ea881eb4a92ecb372008a7ddb4cd4484c15bcaedf0ed64",
+    "after": "c7331df518f396ab03c056b16c6b96a7e9bfbe7edebdba8ed9bd1ae751cffda9",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/egirl-alt-girl-guides.html": {
+    "before": "4ca59887cf2277fe8e8035f527d5b7a1a36583f73b8bfd23c3f4217b69f17514",
+    "after": "20464d16469a6789202bd9806c6082e9143d15e69732581435566482b48ccf4f",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/fashion-aesthetic-directory.html": {
+    "before": "e63edcad9eb059d74ea7b3e6dcdd625f695ff306fdbd3b1712caa4754b37b550",
+    "after": "4b145c8624cc3422f7d60813088d9b48865fea7e0c64101c06f48c079f0e2a92",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-cao-got-de-vuong.html": {
+    "before": "ae7f9f7363861e4e4aefaee59f9c5c34f0ad02a880efb4e91e8845eb0c077646",
+    "after": "a980ff58e0457613ac69cd6607a744126f73277329d2eb2b36357a1281b43875",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-cao-got-trang.html": {
+    "before": "f536245edb85f9c401a50a073026416ac4739678cf103bffc86c1c9169caa03e",
+    "after": "ae80515b2fa56f11f12390d707467f55da767039b573d6db5866e7ba8cff450e",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-cao-got.html": {
+    "before": "78d8de8f043d399e802ee10a98fab4181479d6bc35a1247b3b60c9ad99524a02",
+    "after": "4c11f34121e47b63a0a080ec39b8318ab36b7c59452eac638aa9ab1b5fd17832",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-chay-bo-nu.html": {
+    "before": "5e91404bf1e1ac53cae75ef83291740953cde3aa1fd124cf176886f50a2ac036",
+    "after": "2c40f1002c232fc31b637a54c73555fbbf356643bdd1dd81b9e1ad4a61b4c74d",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-cong-so-nu.html": {
+    "before": "4af45e33f0ba79e65740487bca354fc00d58e18a10aef4fe2593f9fcebaa3011",
+    "after": "2ca1939a063b1fadfc4d9ece08abc36cbd5104275220573b318103f63962daf3",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-custom.html": {
+    "before": "53aa599705a4cf8f60eb99b03fb114aeae7ee6dd7bac3f6d1d8ffe9e837807f0",
+    "after": "fe6b2c13fb414caa6e1af99a59050f784417698ba2191e8853791651032e445c",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-di-bo-nu.html": {
+    "before": "dc8d208f0884d53d84ac3fb5b9e72bb4855ea9d5999b17a73c4b8f14f889cfb9",
+    "after": "f84e788dc9a366c1f95f0a8a7043cb66bb2a37367cd0f42908828495cf5c5dde",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-loi-nuoc-chong-nuoc.html": {
+    "before": "49cb57029221829a51e9504632026678fdeeab1367e0fa6f79479840d513f5a3",
+    "after": "5c7fcf263d413b29506dbc35507676e3ca5ceef13c4302ac4e692fad49dca094",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-oxford-nu.html": {
+    "before": "6488802c2a27fb5fb6df8e6c0682c175a7e0dba057886b9e6ea05f70458d5733",
+    "after": "30cfcaf9325554d943f5687b2483328de39644978d18a3e6161c1eafc74b8607",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-sneaker-nu.html": {
+    "before": "429f60e67a3077a6447cf093e0d996733297874e5306cbebcfbc0b9f49c3f516",
+    "after": "206fd35f1a32d9268dac0cfdf0d6c3c474e1a283ec084628218ea7d86decd5ae",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-suc-nu.html": {
+    "before": "bf313ca27f8449fbfac40ab42aec886fe313e0d1491ee96b99025054f37b366c",
+    "after": "0a88f10ed7226b67124cc4847b1f69608cb6165fd2026b1968cec313a023b8b8",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/giay-tap-gym-nu.html": {
+    "before": "10d47ac2dcfa6903b3c4d29e6fe6426aed77631141c6f81acef447b4a94ae800",
+    "after": "7c0879a116680c76d604b797e1fbfbd0e26485cd2fc458f1207ffeb0a56a0302",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/gong-kinh-can-nu.html": {
+    "before": "9c00cd2b5e42101d8b18f29e24ffb0d211f6b0564621cbea382d354356f23556",
+    "after": "90b8a4d0f677137d6422f09864ec600c77d21463556c74a008cd5598d44670c3",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/gong-kinh-oval.html": {
+    "before": "ec1e3970ae6d9af40063cebcdec045422d20441d6a4a19c2458c42018acfe53b",
+    "after": "1eefbd5d2c0512df87313443fc6bcc706d03be7e0bb7938218c96404448a42a1",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/gong-kinh-titanium.html": {
+    "before": "cd034164804c4181463f6c00363d0d9a11bc39e8dd829192e536cadd55a8dccc",
+    "after": "a5c3d3ca30986ed0377b1763b3f152776e250de3db9d2c68e6976a1604f01d96",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/gong-mat-meo.html": {
+    "before": "7d39ec004fd16426c5e2b305d999c7f14a48ab65abcb8fa30167587b5cc004fe",
+    "after": "585e5ada39b86375346cfdb8ee0fb712e17d4024f4a0d944e5ea764c25f7e90f",
+    "changes": {
+      "links": 1,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/goth-guides.html": {
+    "before": "fb5872c16831e90a86dd89ce8808da9550339b0fc791fe62eeb28758b38362a6",
+    "after": "54d438b89c40ab91a094a8edd2eaf7946b441efda6e7180856a0272b6933cfdf",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/harrington-jacket.html": {
+    "before": "557b51fb78a9b1b4e45d7e64a898e7acf0e88550f9a11dfdd6fda22e365a12df",
+    "after": "c8274a26f982e524e93791ae8d04cbb53da2b64f6dc17afa681482d8f9d0319b",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/high-fashion.html": {
+    "before": "1366eca30aa825b33f9782c8ac2c9bf955b32bde0a310e3c2d1e303daeec9b81",
+    "after": "face8e5c8dc66e4a8ef2457de94f834cc8e7d1f543176fd3c0ffcb2a1bd4a7ef",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/hime-cut.html": {
+    "before": "7db24ad481439db9afed8e7c2d33a7349430532e3fe4393486459afe121b6e18",
+    "after": "10be56283558239a7ef1b183d81f623c9bfaf1be5d9629cc7bf17fd5fbafcac5",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/himekaji.html": {
+    "before": "daa7387451c2227ff50e7872093847218c5e8c3ccdc7669d582570e2ae50b2f2",
+    "after": "ed821cca045b9830f58ae30d21041de26167eaabae552979f3eefe2234153a07",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/hipster-style.html": {
+    "before": "393e684ba7246a10aca9a0d65d99cdd8c31bfc9d57254ae5557cdc9a50b41a5b",
+    "after": "81425f3f4ae398d32db7b46785108abf8d63b5bc904722691be93b16528b4c37",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/khan-quang-co-nu.html": {
+    "before": "d4adea785128023e57cd92266e28319f47179f896d8b9141631a0185f23bcb5e",
+    "after": "5fa275baff45dabd2f638fac5b43884bf70b7e8e00ad049960282d42447afe58",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/khuyen-tai-kep.html": {
+    "before": "c67b05e951d1968447f4aded432969169a09895a3efea618d6155f0ed54b4912",
+    "after": "bb45cb8f888c33a18dc61681584e9a8f3ff6c4768d3270ac5b424922a1357139",
+    "changes": {
+      "links": 4,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kieu-toc-di-dam-cuoi.html": {
+    "before": "c25ee7699823710b02f867b63db259939939c3c5a13b24f8134d37b32b5a016d",
+    "after": "d1719929f10d30c1fd6ce5ed672cc5f641189d0db6fbb76627a6dfafe84101af",
+    "changes": {
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kieu-toc-mac-ao-dai.html": {
+    "before": "2f17c19d13650ad7f3f06ce9bbb4dff616fd865e5c15ab7037c24761cd7c15dd",
+    "after": "7c0c3545e70e3414c52729c3b09de549170475821e32ded2a6774c19a785e8e8",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kinh-gong-tron.html": {
+    "before": "67f8eec073be9e2d2f45a338ec72696a382b8d8ec28ef791e77ccfb27b3eacf1",
+    "after": "3417bce365538f6bfe05314927555ea073106151843e8ef52cf38b67d0e047cf",
+    "changes": {
+      "links": 2,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kinh-gong-vuong.html": {
+    "before": "25f754d26a57d3902e7146e7552e836f775fc3bcdf58dafc14210448e79dedab",
+    "after": "df22cf596d8a3ab6f7f20fa8a75fb2748e3bdbb5d37ede1619c0ad03425ca356",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kinh-khong-gong.html": {
+    "before": "720fb307d75a3b0597ee5ca4e6437ad767d54a2f3d4a42bc169bc38e21309be6",
+    "after": "39e7cf94b87da68e76af085121c9952a81eaad13725d749325dfdc63f001beca",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/kinh-nua-gong.html": {
+    "before": "9b5545b4f85f37c7beee248c37876f222de60a82c51089470c8431719df390c4",
+    "after": "299db0a556e838b78900fa7f4afb366b7d4b9f8f81f667db8dbfee76979568dc",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/like-auth-la-gi.html": {
+    "before": "93110d5167b8ddc81dae3b14997a96291dd84f1aa813ad3bbf77bc2601629cdc",
+    "after": "ab60c84504168cddfb7b26eabcfe097bc331ec118b14ec074a30943ac833941b",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mac-ao-dai-di-giay-gi.html": {
+    "before": "3c8545b9c95aaf4485939729a053be3b8035b0a2f7594b60ce7a92c9feba9343",
+    "after": "1dcd0e28de51c52289b6f558743426cbe45e14a3e086b7417083398e77065a72",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-be-la-mau-gi.html": {
+    "before": "6ce2610c9c4f8637f2f76cc0560a4507b9c1ed73eef00e7d4ce0a68930f49903",
+    "after": "4d7e7e232d46974607fb6eccedebe406c6a3bc10c2fd2c4dc7ddadb8894bb71e",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-cam-phoi-voi-mau-gi.html": {
+    "before": "d4d79091d29e05764dd68830bdfeda52ece26e2c04cc28cd968e991d9135256f",
+    "after": "12556245f9b9c5b1b5cf3a38d05de657b9ec15d6d89e5fe8f80007a5938389de",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-dam-nhung-sang-trong.html": {
+    "before": "1e8e01c505306fea66c158426168503ad61d6ece77a2326c841e3a526a15ae4f",
+    "after": "07a4ffe51800f48c2540f2bfdedf817245193d458d65b0e98519786d1d9fdb26",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-do-phoi-voi-mau-gi.html": {
+    "before": "0d61e30c7f5e68d630bf9388a621902e13ac1e2fb75121ca4b472f0571fa8782",
+    "after": "a3a2e69e8f11ca26015306ca91b3b7307ff90c3ed4595143053b30c55cf84936",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-ghi.html": {
+    "before": "88dd3ee480f1c5d3daa2d7609ab7f4a441241ab96d2f0a0b4a9b1b25674d7e2a",
+    "after": "fe8a6fa5098b4b9999404dcc5f14593e6bf99b8b4ae56d179421724c35dadda4",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-hong-ket-hop-voi-mau-gi.html": {
+    "before": "b5f70edea44a553fff5e48fd3fec9da251f02b58b62c0097ea658946f916f8d7",
+    "after": "b96049bae1fde8f7839d3e4207a09d94d2a03556b33ee36b5823e7da8238a186",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-nau-phoi-voi-mau-gi.html": {
+    "before": "b21fabc2762a7c2becd6873eb6eef94cc160944d91ae8283f4a757e41ae3675b",
+    "after": "db2d48131a2b2bb048cdcc77699bd65e60e1b69c67140b0ed4dabf70c28e1336",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-neon.html": {
+    "before": "b43c960bdff9e1902b3a9b3eda2237cddb24427242bd86dd65fb60c812adfab7",
+    "after": "730cdb6ebeb6b145aba44201f2351286c8bdf220612ea697d54a4c447721095d",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-pastel-la-gi.html": {
+    "before": "47d29005e374794de2bd097d7be800a018c222c61a0782f953052572f575fd18",
+    "after": "8a73957479d88648999c7dc75e2bb25c179d251e1f7db186c11a1501d604daba",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-thien-thanh.html": {
+    "before": "c6e42a7163b1992b17840fcf94de047a0d9b6f7a25f94337edc6932d8eaf34ef",
+    "after": "a4d7c4cb27a1172196ae9e4954e2050389e29068111a2ac01ada0da8e5533ae7",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-tim-phoi-voi-mau-gi.html": {
+    "before": "59f5e26b6b5ed087bf8a730e7bdfa8698d62ada1ea25bbf975b717d54f7d477b",
+    "after": "1ec7e6421eb50893cceec24096eef17259f4c5bc745ab7336f2dd36d30352254",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-vang-phoi-voi-mau-gi.html": {
+    "before": "a2068346b791c72046818add3396911ef5a4deeb41f776dcd16cd27a9a152cf9",
+    "after": "396ae17c3b0e3276745abe63e9e122a13f578cb7ac54252c562aaca94beda603",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-xam-phoi-voi-mau-gi.html": {
+    "before": "aa89e256da1855661d477cd099e9a492d10b3635ed75d03dd7ed3c4c362cd21b",
+    "after": "fd85f3f57c75f5d60e5223f566d22aa17a2611351c58a291a32623f284ce56e5",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-xanh-coban-phoi-voi-mau-gi.html": {
+    "before": "ca5f40acaea35fb3774bf68496fb669d745c306c112eff7c4d2ce2e14eed639f",
+    "after": "905de4cb7eed33eebe0a7aee35e0652b2b106ae44fd5c8b7e69921cb9bcdeec9",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-xanh-duong-phoi-voi-mau-gi.html": {
+    "before": "a84338dcb8dae4d5649097909cb520fe72cbe4ca7ddddaa282a4a5857a8a4f43",
+    "after": "f0800cbc081158db4fed189d576d44f6daa0174aa992b78861a82b35e52c25c5",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mau-xanh-navy-la-mau-gi.html": {
+    "before": "92978dce658cdf101ca2fce53787ef7c073e809b28e3fef6acf0dbe1fc18d39c",
+    "after": "c19afc63abaaf1839b4772ca8da8ecf21d99ef31a0fe0abe5fca3cb90045d0b7",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/maximalist-style.html": {
+    "before": "c6fa6dc05cb425f925df1783b5f6e2581da743e0f250fab0a1241e0f27e75dff",
+    "after": "c9fac66972c363bb6ca6089e8cae6a7dcc43c7678e992099ae79eebf05246c51",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mieng-lot-got-giay-bi-rong.html": {
+    "before": "63070ef5b8b84211a53cef057219e7f1aa6ff38e5bebffb725b71c19a4b7ba16",
+    "after": "b0b5329429896d3a5dccffa2e1fb65e74ace74c27602c5a5f3303a8ee51fbdc8",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mu-beret-nu.html": {
+    "before": "4b5dd49cbef97f7d6362cbf984758397dbd7d000860f6457a65c14b013fe175d",
+    "after": "5adf30f5791e6a8625ec3427b09040a0fdef57c0b1908bc3d05c94de15483e19",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mu-fedora.html": {
+    "before": "9cb9d5d8731ae61b194c17ab3681ae0845ec2d27f8c13478cec5a2ba69b1c98f",
+    "after": "ebe055860dd356065532f340a9f5ef1dd0fa92d9c791cdbfc146b8c701372352",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mu-luoi-trai-nu.html": {
+    "before": "a879fbac8679d81e0fffb1fe91d3c659479f6bf97b1004c3ea35ea5be31cbac1",
+    "after": "4c5c058e824eaad1e761e3daafe441e9b42aa29c27a089b1f7c2d8e47d8258dc",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/mu-snapback.html": {
+    "before": "6e1f188acc1163051393ee2cf06820af28368618ab06afe56bbb4b676a4ea7a3",
+    "after": "c99c37a2e55768e2488e11a4deadd39136fb729a95d77ccbea897ab7f3027124",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/nhan-bac-nu.html": {
+    "before": "af3cee9f57fd731916067eea6a863e2d2b3a99073d54b9bc827d62e490f72a17",
+    "after": "af5cd43bb1f38f2f5c0542497755513e0b87338f868a71d9e9991057717a7364",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/nhan-nu.html": {
+    "before": "67ab8e2a6daaab69a9badae3c91d559606c305e99ea0baf814787ae2ddeea512",
+    "after": "7b40b8f753e92bbaf5aa2588228e7a95eed14a71c2830f679629ea31e0bb28c6",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/nhung-mau-dam-so-mi-dep-nhat.html": {
+    "before": "f81de3950dabf84bd6e352d139071c3a568b9afc32f5d6f33f3d0a73f5231d98",
+    "after": "2deed2841c89a438f876ba1ee2f44f43b02036b329c9725168b7f30515061b90",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/outerwear.html": {
+    "before": "bffc3595fe01413358b8172038323e1613a0d922b8aa5a23feaa77d665c9da84",
+    "after": "aee1cb3d327f4cae522e09fa23269cecf698385bee8cedc2556e9d046e316c10",
+    "changes": {
+      "links": 8,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/outfit-di-da-lat-cho-nu.html": {
+    "before": "eb0e22f66f3ada8c40600d1497cdf069e2c9f64326a56aef45629676587c1035",
+    "after": "6d4500b3bffe99714dd8ec0ad46a3cc2b4888a79352d87a4e14e1442c4f99bfa",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/outfit-di-ta-xua.html": {
+    "before": "2d7e4c2e90e16de5ef999b87e4ec4c44a4263f00b5e6f83d33051bc54edf7800",
+    "after": "ac37378cdbf3a9c0a3ef223458a2774906b0fbbed9a5570818f18e5424b8bc63",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/outfit-mua-dong-nu.html": {
+    "before": "99fcafddb11f4bc20ff481ba19e278a9fdd8bc7190cf385117175b3a50279481",
+    "after": "110f52b39c7e13909659b7beec34b7bed4d31673fb6da0c7d9eda03304c57208",
+    "changes": {
+      "links": 7,
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/outfit-tet.html": {
+    "before": "a46ebf222cbe70c25b30b2707f41a1a67d080332414990de5b7686dc4085a898",
+    "after": "924f68eb7c9f8ae5343bd093fb7b775eeb6942ba973502a7ccd39dc20bc0fa44",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/phoi-ao-co-lo-nu.html": {
+    "before": "51df7b2b56f51723da6b4271c2f63f0c622b5103d8cfb73afee880909f80eaf2",
+    "after": "61a1e64efee13ff3cba089cb7feeed851677349af2c3cf3390b3e9a7ea052adf",
+    "changes": {
+      "links": 6,
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/phoi-do-voi-ao-long-cuu.html": {
+    "before": "6c7d3c4dc2fac70083853a0ab3cac7a09871a91815cef6a02d266396d67ecf3e",
+    "after": "7c5d46075f196a3f01b77fb29a1e4a44d96a09397f46dd77357754c81c162b2e",
+    "changes": {
+      "links": 7,
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/phoi-do-voi-chan-vay-trang-dai.html": {
+    "before": "a65e59884fc821831a19d0fca7d666090ab1723087dcb8942ecf56d5de6b4bd8",
+    "after": "5d6846f68ef20dc040fe0206b5e2e3b0d34f7271cb60d1d4f753eb1e37052118",
+    "changes": {
+      "links": 4,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/phong-cach-basic.html": {
+    "before": "61009d6454f4af92f110bcb7bb114873d1f9280c60fbef8436686ed595a901e1",
+    "after": "b505fd8c8461ccc0039ec24a57f0082ea2b2a326def46cb3306d31da812d2c6d",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/phong-cach-workwear.html": {
+    "before": "f3289fd280b35ab33627dcf956c6e3c655a549134062406da1957eafb07ea38c",
+    "after": "dfde427c3ba60a79de7e4786546f3895dfb9a0939dfa1e2b7b2e883a2de4a0cf",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/pink-aesthetic.html": {
+    "before": "c88a9bc6d4728d5b99c3bfc00ceec8ad33dfef4b1c1035a6e349c3dfb7fb5993",
+    "after": "1d52d4a4cf6f6381f097d671827bdadb0577cf914a66201d898f20bafbfc8799",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/platform-shoes.html": {
+    "before": "d9209ea72d121766526fdf2f9dcf378fc2436d886dd0766cf9230aff30cdf254",
+    "after": "7e676dc238031870410da55a9044a9ace3d3abeae115df5ca5ffd121bb28ef22",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/polyester-la-gi.html": {
+    "before": "6f527a7280bdfcfe10bea943dcfcc7fa67bd29e98972984d17a7a1e28f61dc85",
+    "after": "ce166de50ad3b12cf1495dd31ec10bb336b4f5fcdeeda0c5fef30f63a88a2259",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/punk-grunge-guides.html": {
+    "before": "ae8cb9de9cea251bf4282f3bcda98b73037b7c8983d7837bf459fa5d6402670d",
+    "after": "bd678ea9cd0bde1da6d125453da7d095186694476806fe2ac01ea8506f9538c8",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/pyjama.html": {
+    "before": "172d5b2bef7693ebd4bb4b6d76ecbefa75ffb496e785b373e5e39cde640beed8",
+    "after": "ed556366250880f9043443c02e64dadb0791debc5983991d337ef8c0145ea3bb",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/qipao.html": {
+    "before": "8da25b83d4ba6660c9063fca077e6a36e8ce4741052f37744eb09c1754ec3c48",
+    "after": "1a5de63223fd7a56ea0f1327b106d3e20ceeed12788484f4931ca15232c7f2d5",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-bermuda-nu.html": {
+    "before": "1aa05c616c005337fb3936da8e2cb0c03e5c876d426f6ba8cc6dfef76b3e3fc1",
+    "after": "4844ef96445c49dd339c7142680340a25db913bda0ccf6e7a87ecaee4e331382",
+    "changes": {
+      "links": 7,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-den-phoi-ao-mau-gi.html": {
+    "before": "571eaad06fb8cff64ff7617270b866e358a4d42e68616e0b58f27976553a7d0b",
+    "after": "ac7eae57b1d67844ac1a2a5e44c0a47a024b61fb003b0d359d1c14571ba93bd0",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-gia-vay-mac-voi-ao-gi.html": {
+    "before": "3dc4aa149172fc2c688d712060833ed58627a734167f3ef8555d7949661388d4",
+    "after": "f8901383e012db7941be23ee71ba6dec9f25d414805de6abd224b64eda4ba632",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-hong-phoi-ao-mau-gi.html": {
+    "before": "b06989f31913d78a540d023d69b2d914b4cef7c5df53bf52cce82d6e13243592",
+    "after": "940435f743983ddd0780d939d25dcf6efbb45aa829ac5a5d12841974873d65da",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-jeans-skinny.html": {
+    "before": "6365222d1fad8bbc7f1636a5cc5a7aeafb81bb0048c27dd69212661bc65faac1",
+    "after": "3749a0cc18903deb3f60ed74ed2aff3427b61f929304bf48c20ebaf03eab2dee",
+    "changes": {
+      "links": 8,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-kaki-nu.html": {
+    "before": "47672b11b82f4bdc4272df7b5e6755177b3732c32d817b775815b308d3ec4ea8",
+    "after": "6cc58dd70c425702831bf7e61d2512cc8e7d327806a62d406c187c1b1e3feef1",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-ke-soc-trang-den-mac-voi-ao-gi.html": {
+    "before": "bc0f57e2030fae052749304a6fe068bff69b669dc49fec3924f51f0a513453a8",
+    "after": "1dbde8f9161a20d13cf7bdd1e54879ec693bd83c009945a7327bf4fc642455f5",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-mau-be-phoi-ao-mau-gi.html": {
+    "before": "520f0c783cda8f107076e7d3f99ab68cb2cef843f4084e26942c422fdbd71138",
+    "after": "1b37562064101c9f0a7a6fdff259ea992d718fc267b35d86991fb592f4412591",
+    "changes": {
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-nau-phoi-ao-mau-gi.html": {
+    "before": "365e093def4b788c320760528a5466921d0dedacc771765ce037036329a4d7b3",
+    "after": "6aaa87fce6c0fb48521f2f90ccc54fc09d4477c8c5a057b3bb56a289a32ada54",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-ni-nu-sweatpants.html": {
+    "before": "a7d4c1061a4e97b660b6ebf821fa667d503783e8957dc65f0b98170e4744c111",
+    "after": "0f382087524c0ddaddac659d4bbb2048565155c20a24afd2221d665b3b3c178c",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-ong-con.html": {
+    "before": "de32aa4abbd7b6ea3bb54711420876f8e7f6eb8826b810891871c02a608dbc78",
+    "after": "1a23e68a8f272feb172c4b67a3e8920d7c78d7edd17259ecea709fc1d60bbb96",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-ong-cong.html": {
+    "before": "29b6756d424f2ef22979bf7c3419f50902487763cb13250fb71056f3addb3b92",
+    "after": "bd5eab72282cf8186ed6b390b7fa2425240c3f880ea61f42302e3f6983c5f80d",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-slim-fit.html": {
+    "before": "f540bfd3d51c9410829361f5df210d6c4e52c8b6c19aa16a80200ed3011000ae",
+    "after": "2dd32e0fc56658041ca1700cfb64850c0ba8f1ba2dab1dbd3774af0205679209",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-the-thao-nu.html": {
+    "before": "abcc2003648786357191e1b2e3de7870ce0bb78b162f13dbe153e37debb7fe9e",
+    "after": "83de6df76bf1f205b70611dd889e505cf5daff6df699bf1a9b6ddef2ee1bda6c",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-tim-phoi-ao-mau-gi.html": {
+    "before": "cda795e41d363807f084c6157cda49fc3db5306754680a441163acffb7a6cd61",
+    "after": "5b77d1f70b2b8a3364d6274c82b7d859f835c6493857e28c54600fdfb25f23e3",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-trang-phoi-ao-mau-gi.html": {
+    "before": "45fb6da30356c49c0ce80c90866db6cb9f32ea8e21434beaee31ed97d679d6ee",
+    "after": "057e93903f93525ad3bb7d1418a119cc25a0022c9a558fd1312bda9c9d5486d3",
+    "changes": {
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-vang-phoi-ao-mau-gi.html": {
+    "before": "f7c167eb7fbd549f54e725d806fd8ad876d52045aa92544e06fb9dfc047be27c",
+    "after": "7c7efa129c1083dacbbc413e78ba111006ae00c90e6dca4712647043aa4490d8",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-xam-phoi-ao-mau-gi.html": {
+    "before": "f38a5538ca62294c2447a140a7d3fbadab29a7fa0f1e023f44321aac7aac1975",
+    "after": "20e55b961e82de88ced011d653e38189aa21c7beb5a84189eae50aba002affd3",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-xanh-den-phoi-ao-mau-gi.html": {
+    "before": "53bc796f47ef6fe80f7d75a08e8609169fe6f4f15b57a25f36da738d7641b713",
+    "after": "25f1d0247f28320861046a972a807221c9a1cf8d08cf42c76f499a3c743e9f2e",
+    "changes": {
+      "links": 7,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-xanh-reu-phoi-ao-mau-gi.html": {
+    "before": "cb98756d3ed3dd8cfa7e06c0c4636e50f079283beceeaffff6fb0a7f7fc4ddb7",
+    "after": "10a6bc17f210b5a2e3a2439592fef5d02ebad6e7fa2ee51da896897f897f24c5",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/quan-yem-nu.html": {
+    "before": "dc143d7eb5de0b158b6486dea5df75d669d9346541e7fd57d1810e0b3e2b8972",
+    "after": "0b7d0d0e475120384c243b8fb3bd6fbbd322a40d53dbe3913e4f9d3d292820ce",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/rave-outfits.html": {
+    "before": "ad49832de7f0587a1aca7a376099a0078233201d3d49eaed47aea71750fb5fa0",
+    "after": "d6390939a4dadbf383b2ed55afd838ec201c706b56d3a016bfd7068bb6aee690",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/rock-chic.html": {
+    "before": "7b5686ee582d6b7f5f5e9f8ea28944ec536829175e2b2060576d8e29d451fd36",
+    "after": "bd18a4ea4a47c74835a1faf167ace8cabd99448874a6cc4a0f86514d985ed5ad",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/ryousangata.html": {
+    "before": "4c60efffcae3f96dc61abebbebb3cabe9b682ba47713d7945a4fe52d9b3a33ef",
+    "after": "0418bd9cac0227808bebaac960f1ad95bb332ef46409631de61773290b139a76",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/solarpunk-fashion-aesthetic-guide.html": {
+    "before": "dbec039fefb6daea1324fa2e36ac611260ba189e591e55d943375fa084c9aff9",
+    "after": "e5addcd4781f93aa1d7def3fd3638c746a9072e3801770990ebc175f20fb6a6d",
+    "changes": {
+      "captions_removed": 1
+    }
+  },
+  "en/blog/sold-out-la-gi.html": {
+    "before": "07c2804543582268ddbb1ca792af0fd787dd500f2f2d9b8a7217637ca2fa3dda",
+    "after": "1bc82d95bb13a253f4ae79174ed45cbc191db96412a858df0999ab5b9e8f6dc4",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/stockholm-style.html": {
+    "before": "ae1034a0290e2f4a5bf589dc2cad61ad08024304d6c7b378816d35b2bed12441",
+    "after": "1e47f398d0b6ec5b431a524474fec5242c5ad4b038c33052bc0009f9b5a8cdfc",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/tenshi-kaiwai.html": {
+    "before": "8231c1b06b962eee6e5398533fd1bec8ea45664aa45eedbbb9bfda59d509aa7b",
+    "after": "778d8f7c8ba56363d33462e46894439f73a0e056b40ddf7b329c197815bc646c",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/that-lung-nu.html": {
+    "before": "f47c8d53c0569121e17fdec5910f2a02e92395a51cdc0f7f0b6773dca194aa4c",
+    "after": "e5d1b14982fdddc4c5cd526ce0080dedacc472922ec0719fdc5ebd007c39d46b",
+    "changes": {
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/thoi-trang-thap-nien-90-o-viet-nam.html": {
+    "before": "1d572d5b332abcfaa98963dd15e69ceb89f86eb29b821dc09c245a51f78a9589",
+    "after": "7ef68f9df72f39c31b02436d29698a5b0531897952b4d28a32ed61bce5f17afc",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/tie-dye.html": {
+    "before": "f6f284882f79acc0ff5cf9dbc318c08c807cd6ceab99c0f823a5441f54097a78",
+    "after": "85899cdc6eb4f36a96966d5e5d69490e7d438b7f5329aaf63d84e46539e8314f",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/trouser-la-quan-gi.html": {
+    "before": "c74b1a158a64020001ebfa10a0932c15eb3fa0612e6fa97a0a3e0341606244da",
+    "after": "e6a5eed2040ce3c5cbda9bea701cc8c98f1294c83a3f80bea5c777371d8f8943",
+    "changes": {
+      "links": 1,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/tui-deo-cheo-nu.html": {
+    "before": "6721d7497a1eab828ac95acda8800cf7771011f1972b46443a4272b833d6d01e",
+    "after": "06c58d0e465093208dea1e8d986a71c404ff85d52343a16919700c40b5d0b65d",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/tui-messenger.html": {
+    "before": "885a6c6b6993769ef21dd5a561313d65efbe3a1bad2b55e0a0f1ceb44e358c35",
+    "after": "768a532ae6a38b49d56582847627949b178a6e2204bc7cb899166acb0af3b1f4",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/tui-tote.html": {
+    "before": "8b7cebc5fb35b2418aad2096975f937c9f4c70c46e36f09a2b565ca0899765d7",
+    "after": "65b2f81b9d3933125030b26011e9c2d4e7b12797127441a1c609cf72b48ade11",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-canvas-la-vai-gi.html": {
+    "before": "b536cb130da09cbf3f4509b62338eac3b18214d69504247774ed1f4753767c77",
+    "after": "f66a8ecb4f5a82378b585d641e719ae48bbb1617064733aa282214a1504e570f",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-det-kim.html": {
+    "before": "01083fb93d8447bc96ed2c0bf8f4e1b5b6acaccad9f97cbac63ec547207bcad6",
+    "after": "688f67b5d4ce3fcb93096b0eae7613c324c03c9d688a5c647283f828db9884ae",
+    "changes": {
+      "links": 6,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-flannel.html": {
+    "before": "17c2f21d898c06124ef239ad029288f74923ea51d2d34b826bcb95298fd5bd45",
+    "after": "c153ab287aa2c22124bbe7f0ba3e233612b65c0a8fe8dee2f61d2271aab8b59c",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-kaki.html": {
+    "before": "f4309af6f0d8d081bd7f669fa0796e9a71830726b85be1a36a1d576dcd74656e",
+    "after": "182f97c9e9fab9bfa9657fa4e4d4e3b355e41d7b67135293feeb509ff0e0b02a",
+    "changes": {
+      "links": 6,
+      "captions_removed": 1,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-kate-silk.html": {
+    "before": "f6575e66fe33137c8cbbb5024af5ff8f34d004e220c841d98631030be2e317f6",
+    "after": "9889423f334c03f19f94931c14725cff37be0bc395fec1252771b524a2408e67",
+    "changes": {
+      "links": 6,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-lanh.html": {
+    "before": "d882421df7e9b9f9ec9433cf8a37a45a51d3ebf3dd4d418dbc2aaced89061496",
+    "after": "49b1dad1f35f97d68f87ea9826b12291d9a1089377f808c6305ca96112af408b",
+    "changes": {
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-me.html": {
+    "before": "25736ac189606d99ee98411e91facb516d44ddfedd53847699cde5ab789299cd",
+    "after": "1efb8ccd5bd3f5fd33808522f787dcb3b7f52cab27bab01e608828f3fb05e72a",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-oxford.html": {
+    "before": "66bc7b6eddeb49fd43f94744525c16170d2c5cd6bf6f6fa6635d46863658d903",
+    "after": "e21c928c7aba6836aaa6eddf16a435bc29cf20988d963fa98c0472a16c3ef8b6",
+    "changes": {
+      "links": 1,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-spandex.html": {
+    "before": "17c218314c40cb2aec8e5847461a554e49314c8a1e55b6c8435144f6bf942522",
+    "after": "4a00ad339c9410ed92b6fa27103995e0e128113553fb7e257caefe2ba7d21fd4",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vai-tweed-la-vai-gi.html": {
+    "before": "e2864f3b2e6c2f66c508de810b87b447b0d924cccfa055ddb91d2bbe7223e4b7",
+    "after": "cbff4fc51e2ce7fbb7102902a79db8644f263f1587be1e09667bdb30ca5ecbc6",
+    "changes": {
+      "links": 7,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-cho-nguoi-beo-bung-lun.html": {
+    "before": "480d2d861f6e8c3fef5ffa0db756aee04db6efa6a91b1e942770ec3a2cb66af1",
+    "after": "78594f0ae6cd29f945fc6a6cf06c3a2bcd52a0479ca75ef7cf90ff140bd7f1ee",
+    "changes": {
+      "links": 7,
+      "captions_removed": 3,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-chong-nang-jean-tron.html": {
+    "before": "60fabcc3db5d9f5927d3a5c626b299bee3bb7a49aad02bd2a06dd7ca811f8030",
+    "after": "c506b2de4402efaeb06d67bb3b5a79e0eae74b47a87f7105c878253f43e7e794",
+    "changes": {
+      "links": 6,
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-da-hoi.html": {
+    "before": "ffa30329d6fee03259eb076de6d5b385e7da2b79d82847cc5e7f9e53c6a98a87",
+    "after": "0521b2164094e8e6faf093618a4a391da61e2879644cb720cc0cde8d3c00a975",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-den.html": {
+    "before": "65ebe7fcefcc86c5c7fdef56765ec0fae181ce6d17a1e01c71a0a65afced57da",
+    "after": "ffafd42086caf4fe3bcfb9c17299e26fdb9bb2bf8a5eb2f0438dfc9851128969",
+    "changes": {
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-di-du-tiec-cuoi-sang-chanh.html": {
+    "before": "2fcd721e69188c4d15cb4c8b7d109758101212d8a73b44455667fb373ebb3418",
+    "after": "8bf002d2232b6937ddbd5e8099c0f4e48408ee9cd1b410b9e94307214e1e8678",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-lien-than-chu-a.html": {
+    "before": "36c1503afd836202258454d473b004ca14e08ec28e802741cee0ada8a844bb87",
+    "after": "57f1f66211fa432a219cc72053110a752866ffb04fc9988b72fd88fb7e589b9c",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-maxi.html": {
+    "before": "d39a50dc84de0af601c205e1008619da5f85a0e6183ec9f5b1a5c26c80bc5c1e",
+    "after": "09112ef160199e374ad08d3141f5f82e0af86120b4e75210dfb8340210be1add",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-tua-rua.html": {
+    "before": "2e17b678958c120a0a0efb9071915745d18e6a93bce44f98e236418c1459c17f",
+    "after": "333bcc87d8810ec68b12084a87d7cd46d6c57383a9137932816f583a631bd015",
+    "changes": {
+      "links": 6,
+      "captions_removed": 2,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vay-yem-dai.html": {
+    "before": "a015e8b1fc17742db29708d5dc391d8674e38bc8cf9d2e7832b93d52cbf83070",
+    "after": "d57645524ce53c1d1e3f77246eb1e1bc54ea5acac4199fa8989491489220d4a6",
+    "changes": {
+      "links": 7,
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vedette-la-gi.html": {
+    "before": "b52f76fa08a6ed306211a9fbe0cebe17e653a8fd1dd9f46ba97b5938ea31fff8",
+    "after": "e8f115b161a62add0694a190834409c8e6c9b93f4620dbff3461d1f42abea7f6",
+    "changes": {
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/victorian-fashion.html": {
+    "before": "e4593107dd873a0c4dc63454603df2d9b78003bdaeafab619b36cf5284c1611e",
+    "after": "af6b61a2e70aa0c2ca8c4f727ef8e93f35c16424ec6139c3b62feef3a3e28fa8",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/victorian-goth.html": {
+    "before": "26b4d62c35bdb788bb8b0525574c7386dbb3ac3d9fb83a5ad7e1f54c0d017433",
+    "after": "e1806a11394dce3ea80449ad0d592b69073d21a2efb4772c336e11f27b4155f0",
+    "changes": {
+      "captions_removed": 5,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vong-tay-bac-nu.html": {
+    "before": "8a7ca4c91b20e83a5f4de04e12ee48e39e89399e7274f7f8f5d9e4ec1d3f32a5",
+    "after": "d52465aa3899b649f5052c38a7a553b78e48b190a88bc89de1aa8730c50d712f",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vong-tay-nu.html": {
+    "before": "7edc2bbbcd2e1bf47fb4e4ba324d0e015e009ccedd975f7a556ea471e0b6ca5a",
+    "after": "7746e3c63e6ca1e5d93a11310ebf819fc3f89b485382799f2f40841fa51d60c5",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/vong-tay-titan.html": {
+    "before": "6d3fb69ce25e466af8eb70684eca737313944d781b26640c1549b625047fd2cc",
+    "after": "e525c7e97bedb1098163cf2451ac976ef03c219f54835f37c8732a34f78ddeb5",
+    "changes": {
+      "links": 6,
+      "captions_removed": 6,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/wafuku.html": {
+    "before": "5efe340b7c97b64d98e6a86ffd02d38bdef302027b3718585cb96aef0a4dd20e",
+    "after": "81e11301def936cf47f6987a0fc979aa71bb218558789d027ef9ce90ce37dc3b",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/webcore.html": {
+    "before": "fa9a879555cafa0ef75382b6fa52f3a24008c2424915478dd119f1bac0cd48ab",
+    "after": "f024ea27d5b5b263524e6e02c749e458fbc82254fe68727482f338a9856632d6",
+    "changes": {
+      "captions_removed": 4,
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/what-is-a-capsule-wardrobe.html": {
+    "before": "00fcae5ff95f32f15f9e6347d3d5c03b0baac73750eca8f5bbab5b24cf83f323",
+    "after": "216dccd3310ba6aef63ac6c0804afeedc38971875a0710f691dd021ee4045425",
+    "changes": {
+      "faq_consolidated": true
+    }
+  },
+  "en/blog/white-on-white-outfit-guide.html": {
+    "before": "6a7d08d48b171f4189c75f1dd2843d0c41582e26762a4348f8400b6d9a57ab66",
+    "after": "1e1b66fcc1986100ea52cba6a22c5f447f23e396ef927f107665f101a9e139b4",
+    "changes": {
+      "captions_removed": 3
+    }
+  },
+  "en/blog/womens-footwear-guides.html": {
+    "before": "8a944f0d8d1215d539dc5bb0ab7eb3d4ac90e593d47baa879b5564be0d501ff2",
+    "after": "a3e4bbcf640a5f264a8e7ff6cfc5244ba70fa7feb3b30c35067f83d443760188",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/womens-item-styling-guides.html": {
+    "before": "bb139f89ad90cce8386cbbd5fa397e989439fdd98c9bebe48b5c807a76106de3",
+    "after": "9001b9e9ff4948f38c5e53d2c62bc86af4b54ab888d8e540e31ce02fd6a94d45",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/womens-skirt-dress-styling-guides.html": {
+    "before": "c9d172f6d01f36eddbc5bd5c7ed66c0adefb5da32f38d290298d79416529401e",
+    "after": "779aa13fec6dcf5f418126da71a485feed15d63008def6b6e57a718954a95352",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/womens-tops-styling-guides.html": {
+    "before": "29244bf1147bbebcc9edfcf4f59d9f1212ba6b286d7a47c673e17c1d51e3f4e3",
+    "after": "92ad796be514fcb27cc03f968dadd5dd395a015cbd05316bdaa59c77aabcc111",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  },
+  "en/blog/womens-trouser-styling-guides.html": {
+    "before": "b66429d3b465b6ea6337e86474c87646c033c7cda35deb8e172f2971e5ffa350",
+    "after": "2d7315968d61323fbbb32de04b3819529cdb731d9d51a8e205b2d1a0dfe998da",
+    "changes": {
+      "compact_en_app_cta": true
+    }
+  }
+}

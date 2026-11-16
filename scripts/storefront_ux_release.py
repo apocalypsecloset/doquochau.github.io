@@ -3,6 +3,7 @@
 Only the two UI hubs are eligible. New semantic checks inspect actual HTML.
 Unknown bytes remain unnormalized and fail the historical preservation gates.
 """
+from blog_repair_release import original as blog_original
 import hashlib,json,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -10,6 +11,7 @@ BASE='9c6ab13716fa4a1b8bbe40bc6606398d236c4c56'
 MANIFEST=ROOT/'docs/storefront-ux-2026-11-16/reviewed-html.json'
 CACHE={}
 def original(path,raw):
+ raw=blog_original(path,raw)
  if path not in {'index.html','en/blog.html'} or not MANIFEST.exists():return raw
  if 'manifest' not in CACHE:CACHE['manifest']=json.loads(MANIFEST.read_text())
  row=CACHE['manifest'].get(path)
