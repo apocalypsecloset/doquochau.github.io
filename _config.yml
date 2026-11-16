@@ -1,0 +1,17 @@
+# GitHub Pages builds this repository with Jekyll. Keep internal source and
+# editorial/QA records in Git, but omit them from the published website.
+# Cloudflare Pages uses its own build configuration; _headers remains its
+# noindex fallback for these paths until that output directory is restricted.
+exclude:
+  - docs
+  - data
+  - scripts
+  - cloudflare
+  # Preserve Jekyll's default dependency-directory exclusions.
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
