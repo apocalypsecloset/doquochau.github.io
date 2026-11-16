@@ -51,7 +51,7 @@ test('render color-specific photos, add exact variant, edit quantity and remove'
   d.querySelector('.ac-product-add').click();await tick();await tick();assert.equal(h.cart().items[0].variant.id,'white-xl');assert.equal(d.querySelector('#ac-cart-subtotal').textContent,'$31.99');
   assert.equal(h.events.find(x=>x.name==='add_to_cart').data.value,31.99);
   const qty=d.querySelector('.ac-cart-quantity input');qty.value='2';d.querySelector('.ac-cart-quantity button').click();await tick();await tick();assert.equal(h.cart().items[0].quantity,2);assert.equal(d.querySelector('#ac-cart-subtotal').textContent,'$63.98');
-  assert.match(d.querySelector('#ac-checkout-link').href,/cartCurrency=USD&cartId=test-cart/);
+  assert.match(d.querySelector('#ac-checkout-link').href,/cartCurrency=USD&cartId=test-cart/);assert.equal(new URL(d.querySelector('#ac-checkout-link').href).origin,'https://shop.apocalypsecloset.com');
   [...d.querySelectorAll('.ac-cart-quantity button')].find(b=>b.textContent==='REMOVE').click();await tick();await tick();assert.equal(h.cart().items.length,0);assert.equal(d.querySelector('#ac-cart-button').textContent,'BAG (0)');assert.equal(d.querySelector('#ac-checkout-link').hidden,true);
   assert.deepEqual(h.calls.find(c=>c.pathname.endsWith('/remove')).body,{items:[{variantId:'white-xl',quantity:2}]});
  }finally{h.dom.window.close();}
@@ -67,7 +67,7 @@ test('transient saved-cart failure preserves the ID, expiry clears it',async()=>
 test('static catalog remains readable without JavaScript and live schema uses real available prices',()=>{
  const d=new JSDOM(fs.readFileSync(path.join(root,'index.html'),'utf8')).window.document;
  assert.equal(d.querySelectorAll('#ac-product-grid .ac-static-product').length,2);
- assert.ok([...d.querySelectorAll('#ac-product-grid article')].every(c=>c.querySelector('img[src]')&&c.querySelector('a[href*="fourthwall.com/products/"]')&&c.textContent.includes('29.99')));
+ assert.ok([...d.querySelectorAll('#ac-product-grid article')].every(c=>c.querySelector('img[src]')&&c.querySelector('a[href^="https://shop.apocalypsecloset.com/products/"]')&&c.textContent.includes('29.99')));
  const raw=JSON.parse(d.getElementById('ac-product-schema').textContent);assert.equal(raw['@graph'].length,2);
  const result=model.productSchema(product(),'https://shop.example/products/test');
  assert.equal(result.offers.lowPrice,'29.99');assert.equal(result.offers.highPrice,'31.99');assert.equal(result.offers.offerCount,3);assert.equal(result.offers.priceCurrency,'USD');
