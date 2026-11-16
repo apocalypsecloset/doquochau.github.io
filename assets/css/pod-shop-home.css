@@ -537,3 +537,6 @@ input,button,select{font:inherit}
 }
 .ac-size-inline{margin-top:22px;border-block:1px solid #635044}
 .ac-size-inline>summary{cursor:pointer;min-height:52px;align-content:center;font-size:17px;font-weight:600}
+
+html:has(dialog[open]){overflow:hidden}
+@media(max-width:590px){.ac-size-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.ac-size-choice{max-width:none}}

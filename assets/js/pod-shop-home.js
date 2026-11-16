@@ -254,7 +254,7 @@ function createCard(p,index){
     if(colorChanged)fillSizes(size,p,color.value,size.value);
     const v=model.variant(p,color.value,size.value);
     say(price,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
-    buy.disabled=busy||!v;
+    buy.disabled=!v;
     syncSizeChoices(size);
     paintCardPhotos(media,p,color.value,v);
     say(note,!color.options.length?'Currently unavailable':v?'Selected '+color.value+' / '+model.size(v):'Choose a size for '+color.value+'.');
@@ -316,7 +316,7 @@ function paintHero(product){
       const img=el('img');img.src=urls[0];img.alt=product.name+' — '+heroColor.value;
       img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;heroVisual.append(img);
     }else heroVisual.append(el('div','ac-visual-placeholder','PHOTO PENDING — '+heroColor.value));
-    heroAdd.disabled=busy||!v;
+    heroAdd.disabled=!v;
     syncSizeChoices(heroSize);
     say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
     say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product on Fourthwall.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
