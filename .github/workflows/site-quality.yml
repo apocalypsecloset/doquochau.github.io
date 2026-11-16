@@ -27,6 +27,8 @@ jobs:
         run: python scripts/qa_privacy_policies.py
       - name: Storefront UX, size guide and immutable SEO
         run: python scripts/qa_storefront_ux.py
+      - name: Bilingual blog repairs and immutable SEO
+        run: python scripts/qa_blog_repair.py
       - run: python scripts/qa_site.py
       - name: Schema, reviewed image alts and performance maintenance
         run: python scripts/qa_schema_pod_performance.py

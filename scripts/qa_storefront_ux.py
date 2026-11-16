@@ -32,5 +32,9 @@ for path,row in manifest.items():
    check((ROOT/n['href'].split('#')[0].lstrip('/')).is_file(),'Style guide target exists: '+n['href'])
 # No article edits can hide behind the hub-only history normalization.
 changed=subprocess.check_output(['git','diff','--name-only',BASE],cwd=ROOT,text=True).splitlines()
-check(not any(p.startswith(('blog/','en/blog/')) for p in changed),'Published article bodies unchanged')
+from blog_repair_release import original as blog_original
+for p in changed:
+ if p.startswith(('blog/','en/blog/')):
+  current=(ROOT/p).read_text();expected=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT,text=True)
+  check(blog_original(p,current)==expected,p+': article changed beyond reviewed bilingual repairs')
 print(json.dumps({'ui_pages':len(manifest),'errors':errors},indent=2));sys.exit(bool(errors))

@@ -1,3 +1,4 @@
+from blog_repair_release import original as blog_original
 from audit_metadata import approved
 """Verify full source parity, routing and bilingual safety for translation batches."""
 import sys,json,re,csv,hashlib,posixpath,subprocess
@@ -30,7 +31,7 @@ errors=[];results=[]
 def check(ok,message):
  if not ok:errors.append(message)
 for c in configs:
- slug=c['en_slug'];s=BeautifulSoup((ROOT/'en/blog'/f'{slug}.html').read_text(),'html.parser');a=s.article
+ slug=c['en_slug'];s=BeautifulSoup(blog_original('en/blog/'+slug+'.html',(ROOT/'en/blog'/f'{slug}.html').read_text()),'html.parser');a=s.article
  raw,original,parts,texts=source(c['vi_slug']);orig=parts[3]
  check(hashlib.sha256(raw.encode()).hexdigest()==c['source_sha256'],slug+': source hash')
  url='https://apocalypsecloset.com/en/blog/'+slug+'.html'
