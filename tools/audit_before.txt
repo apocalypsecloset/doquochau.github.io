@@ -1,0 +1,69 @@
+==============================================================================
+Bài VI: 436 | stub redirect bỏ qua: 9
+Link ngữ cảnh tới bài khác/bài: min 0, TB 4.6, max 18
+Cụm: Aesthetic/Style=126, Ao=49, Phoi-mau=47, Vay-dam=32, Phu-kien=31, Quan=31, Outfit-core=27, Dia-diem-dip=23, Giay=20, Vai=20, Cham-soc=12, Toc-lam-dep=9, Kinh=9
+==============================================================================
+[PASS] G1 link gãy / link vào redirect
+[FAIL] G2 bài có <2 link ngữ cảnh tới bài blog khác  (10)
+        - blog/mori-kei.html
+        - blog/morute.html
+        - blog/phoi-do-theo-ao-nu.html
+        - blog/phoi-do-theo-chan-vay-vay-nu.html
+        - blog/phoi-do-theo-quan-nu.html
+        - blog/quan-jogger-la-gi.html
+[FAIL] G3 bài không có link ngữ cảnh vào từ bài khác  (211)
+        - blog/1920s-fashion.html
+        - blog/anime-outfit.html
+        - blog/ao-anime-nu.html
+        - blog/ao-ba-lo-nu.html
+        - blog/ao-chong-nang-nu.html
+        - blog/ao-da-nu-dang-ngan.html
+[FAIL] G4 hub trỏ đủ xuống con + con trỏ lên hub  (21)
+        - Aesthetic/Style: hub thiếu 28 bài con (vd ['1920s-fashion', 'anime-outfit'])
+        - Aesthetic/Style: 6 bài con không link lên hub (vd ['dieselpunk', 'do-goth-nu-mua-o-dau'])
+        - Ao: hub thiếu 31 bài con (vd ['ao-anime-nu', 'ao-cardigan-nu'])
+        - Ao: 3 bài con không link lên hub (vd ['ao-corset-nu-mua-o-dau', 'form-oversize-la-gi'])
+        - Cham-soc: CHƯA CÓ HUB
+        - Dia-diem-dip: CHƯA CÓ HUB
+[FAIL] G5 bài không có link ngang cùng cụm trong thân bài  (112)
+        - phoi-do-theo-ao-nu
+        - phoi-do-voi-ao-blazer-den-nu
+        - phoi-do-voi-ao-luoi-nu
+        - phoi-do-voi-ao-tre-vai-nu
+        - pyjama
+        - goth-nails-mau-nail-phong-cach-goth
+[FAIL] G6 cặp áo<->quần cùng màu chưa link hai chiều  (7)
+        - ao-vang-phoi-quan-mau-gi <-> quan-vang-phoi-ao-mau-gi
+        - ao-xanh-reu-phoi-quan-mau-gi <-> quan-xanh-reu-phoi-ao-mau-gi
+        - ao-nau-phoi-quan-mau-gi <-> quan-nau-phoi-ao-mau-gi
+        - ao-xam-phoi-quan-mau-gi <-> quan-xam-phoi-ao-mau-gi
+        - ao-tim-phoi-quan-mau-gi <-> quan-tim-phoi-ao-mau-gi
+        - ao-hong-phoi-quan-mau-gi <-> quan-hong-phoi-ao-mau-gi
+[FAIL] G7 câu chứa link có chữ hub/trang trụ cột/bổ trợ  (79)
+        - aesthetic-dictionary: Trang này là từ điển / trang tra cứu: dùng để tra cứu tên các aestheti
+        - alt-fashion-la-gi-va-tai-sao-no-quan-trong: Vì vậy, câu hỏi hữu ích không phải “món này có phải Alt không?” mà là 
+        - alt-fashion-la-gi-va-tai-sao-no-quan-trong: Vì vậy, câu hỏi hữu ích không phải “món này có phải Alt không?” mà là 
+        - alt-fashion-la-gi-va-tai-sao-no-quan-trong: Vì vậy, câu hỏi hữu ích không phải “món này có phải Alt không?” mà là 
+        - ao-anime-nu: Hub phối đồ theo áo nữ giúp bạn xác định vai trò của phom và chiều dài
+        - ao-khoac-da-nu-mua-o-dau: Nếu áo đạt fit nhưng bạn chưa biết cách đưa nó vào tủ đồ hiện tại, đừn
+[FAIL] G8 anchor generic/rỗng  (2)
+        - badgirl: Xem thêm về Dark Feminine →
+        - badgirl: Xem thêm về Goth Aesthetic →
+[FAIL] G9 một đích bị link >1 lần trong cùng bài  (63)
+        - 1930s-fashion -> new-look-fashion
+        - acubi-style-la-gi -> phoi-do-layering-nu
+        - aesthetic-dictionary -> aesthetic-la-gi
+        - aesthetic-la-gi -> preppy-style-la-gi
+        - aesthetic-la-gi -> sporty-chic-la-gi
+        - aesthetic-la-gi -> techwear-la-gi
+[FAIL] G10 cùng 1 anchor lặp >5 lần cho cùng 1 đích  (59)
+        - 25x "item guide áo nữ" -> phoi-do-theo-ao-nu
+        - 23x "hướng dẫn phụ kiện nữ cá tính" -> phu-kien-thoi-trang-nu-ca-tinh
+        - 20x "cách tạo moodboard thời trang" -> cach-tao-moodboard-thoi-trang
+        - 19x "hướng dẫn layering nữ" -> phoi-do-layering-nu
+        - 19x "phối layering nữ" -> phoi-do-layering-nu
+        - 18x "item guide quần nữ" -> phoi-do-theo-quan-nu
+[FAIL] G11 bài có >12 link tới bài khác (quá dày)  (1)
+        - baddie-streetwear
+==============================================================================
+KẾT QUẢ: 10 gate chưa đạt

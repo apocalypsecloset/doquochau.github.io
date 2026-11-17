@@ -1,0 +1,34 @@
+[
+  {
+    "cluster": "Phoi-mau",
+    "slug": "phoi-mau-quan-ao-nu",
+    "authored_words": 1331,
+    "children": 41,
+    "contextual_blog_links": 5,
+    "card_links": 37
+  },
+  {
+    "cluster": "Dia-diem-dip",
+    "slug": "chon-trang-phuc-nu-theo-dia-diem-va-dip",
+    "authored_words": 1371,
+    "children": 23,
+    "contextual_blog_links": 6,
+    "card_links": 18
+  },
+  {
+    "cluster": "Cham-soc",
+    "slug": "cach-cham-soc-do-nu",
+    "authored_words": 1401,
+    "children": 11,
+    "contextual_blog_links": 6,
+    "card_links": 6
+  },
+  {
+    "cluster": "Toc-lam-dep",
+    "slug": "chon-toc-va-makeup-theo-trang-phuc",
+    "authored_words": 1362,
+    "children": 9,
+    "contextual_blog_links": 9,
+    "card_links": 1
+  }
+]
