@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: '24'
       - run: python -m pip install -r scripts/requirements-en.txt
+      - name: Batch40 complete collections and exact head-only VI successors
+        run: python scripts/qa_batch40.py
       - name: Exact VI link-fix successors and unreleased EN source locks
         run: python scripts/qa_link_fix.py
       - name: Vietnamese internal links

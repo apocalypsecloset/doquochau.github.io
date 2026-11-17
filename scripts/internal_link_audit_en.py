@@ -16,6 +16,10 @@ VI_HUBS = {
     'Vay-dam': 'phoi-do-theo-chan-vay-vay-nu', 'Giay': 'phoi-do-theo-giay-nu',
     'Phu-kien': 'phu-kien-thoi-trang-nu-ca-tinh', 'Vai': 'cac-loai-vai',
     'Kinh': 'cach-chon-kinh-phu-hop-voi-khuon-mat-nu',
+    'Phoi-mau': 'phoi-mau-quan-ao-nu',
+    'Dia-diem-dip': 'chon-trang-phuc-nu-theo-dia-diem-va-dip',
+    'Cham-soc': 'cach-cham-soc-do-nu',
+    'Toc-lam-dep': 'chon-toc-va-makeup-theo-trang-phuc',
     # add the 4 new hubs here once they have EN pages: 'Phoi-mau': '...', 'Dia-diem-dip': '...',
     # 'Cham-soc': '...', 'Toc-lam-dep': '...'
 }

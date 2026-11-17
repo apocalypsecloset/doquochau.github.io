@@ -1,6 +1,6 @@
 # NHIỆM VỤ EN: đồng bộ cấu trúc link nội bộ sang bản tiếng Anh
 
-Repo: apocalypsecloset.com. Bản VI (`/blog/*.html`) đã được sửa xong và đạt `scripts/internal_link_audit.py` (nếu file này còn ở `tools/`, xem Pha E1). Giờ làm bản EN (`/en/blog/*.html`: 425 bài + 13 hub `main.en-hub`) cho **cùng cấu trúc topical map**, bằng tiếng Anh tự nhiên.
+Repo: apocalypsecloset.com. Bản VI (`/blog/*.html`) đã được sửa xong và đạt `scripts/internal_link_audit.py` (E1 đã chuyển audit và dữ liệu làm việc vào vị trí hiện tại). Giờ làm bản EN (`/en/blog/*.html`: 425 bài + 13 hub `main.en-hub`) cho **cùng cấu trúc topical map**, bằng tiếng Anh tự nhiên.
 
 KHÔNG sửa: `/blog/*.html` (VI), ảnh, title/H1/meta/canonical của trang đã có, `docs/qa/*`. Ngoại lệ duy nhất ở VI: thêm `<link rel="alternate" hreflang="en">` cho 4 hub VI mới theo đúng quy trình `scripts/sync_en_batch.py`.
 
@@ -27,7 +27,7 @@ Dừng ở đây. Tôi sẽ trả lời "duyệt re-baseline" hoặc hướng kh
 Hub VI mới: Phối màu, Địa điểm/dịp, Chăm sóc đồ, Tóc & làm đẹp. Làm đúng quy trình batch24: template `main.en-hub`, hub-card cho 100% bài con **đã có bản EN**, CollectionPage + ItemList + BreadcrumbList khớp card nhìn thấy, self-canonical, hreflang hai chiều với hub VI, title/H1/meta tiếng Anh duy nhất, đăng ký `sitemap.xml`, `en/blog.html`, `search-index.js` nếu quy trình hiện tại yêu cầu. Tạo `data/en-translations/batch40.json` theo đúng định dạng batch hub. Nội dung là bản chuyển thể thật (≥1.000 từ), không phải dịch máy rồi dán, không bịa dữ kiện. Điền 4 hub vào `VI_HUBS` trong `scripts/internal_link_audit_en.py`. Chạy `qa_en_hubs.py` và `qa_en_translations.py batch40` đến khi pass.
 
 ## Pha E3 — Phản chiếu link VI sang EN
-Nguồn sự thật: file `link_changes.csv` của lần sửa VI (xem `data/link-fix-2026-11-17/` hoặc `tools/`) và trạng thái hiện tại của các bài VI.
+Nguồn sự thật: file `link_changes.csv` của lần sửa VI (xem `data/link-fix-2026-11-17/`) và trạng thái hiện tại của các bài VI.
 - Với mỗi bài EN có bản VI, mọi link ngữ cảnh trong bài VI tới một bài VI **đã có bản EN** phải có link tương ứng trong bài EN trỏ `/en/blog/<en-slug>.html` kèm `hreflang="en"`. Ghép VI→EN bằng hreflang hoặc `scripts/translation_inventory.py`.
 - Câu chứa link: viết lại bằng tiếng Anh tự nhiên theo ý của câu VI, KHÔNG dịch từng chữ, KHÔNG dùng khuôn chung. Mỗi câu viết riêng theo đoạn văn xung quanh.
 - Nếu đích VI chưa có bản EN: bỏ qua link đó (không link sang VI trong thân bài EN, không bịa trang).

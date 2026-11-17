@@ -10,7 +10,7 @@ def check(ok,msg):
 manifest=json.loads(MANIFEST.read_text())
 check(set(manifest)=={'index.html','en/blog.html'},'Only authorized hubs in UI manifest')
 for path,row in manifest.items():
- raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True)
+ raw=historical(path,(ROOT/path).read_text());old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True)
  check(hashlib.sha256(raw.encode()).hexdigest()==row['after'],path+': UI release hash')
  check(hashlib.sha256(old.encode()).hexdigest()==row['before'],path+': UI baseline hash')
  s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')

@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "vi_slug": "ootd-la-gi",
+      "en_slug": "what-does-ootd-mean",
+      "source_text_segments": 102,
+      "en_words": 1728,
+      "headings": 12,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "what-does-ootd-mean: source hash"
+  ]
+}

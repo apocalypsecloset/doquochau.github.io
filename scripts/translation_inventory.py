@@ -28,6 +28,8 @@ def catalog_urls(lang):
     """Every published translation plus the two original English-only articles."""
     assert lang in ['vi','en']
     urls={r[lang+'_url'] for r in rows()+publication_rows()}
+    from link_fix_release import hub_publication_rows
+    urls.update(r[lang+'_url'] for r in hub_publication_rows())
     if lang=='en':
         urls.update('https://apocalypsecloset.com/en/blog/'+slug+'.html' for slug in ['how-to-style-gothic-graphic-tees','goth-vs-grunge-style'])
     return urls

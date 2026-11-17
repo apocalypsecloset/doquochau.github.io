@@ -1,0 +1,737 @@
+[
+  {
+    "id": 0,
+    "vi": "MÀU SẮC & TỦ ĐỒ",
+    "en": null
+  },
+  {
+    "id": 1,
+    "vi": "Phối màu quần áo nữ: Chọn bảng màu từ tủ đồ đang có",
+    "en": null
+  },
+  {
+    "id": 2,
+    "vi": "Một màu có thể dễ mặc với chiếc áo này nhưng khó ghép với chiếc quần khác. Khác biệt nằm ở diện tích màu, độ sáng, bề mặt và vị trí trên cơ thể. Thay vì học thuộc danh sách màu hợp nhau, hãy bắt đầu từ món đang có, xác định điều muốn giữ rồi thử từng thay đổi nhỏ. Hướng dẫn này giúp bạn chọn đúng bài theo vấn đề: chưa biết sắc màu, đang tìm quần cho áo, muốn đổi áo cho quần hoặc cần cân cả bộ.",
+    "en": null
+  },
+  {
+    "id": 3,
+    "vi": "Chọn vấn đề bạn đang cần",
+    "en": null
+  },
+  {
+    "id": 4,
+    "vi": "Nhìn sắc độ trước khi đặt tên màu",
+    "en": null
+  },
+  {
+    "id": 5,
+    "vi": "Chọn một màu chính và chừa chỗ cho phần còn lại",
+    "en": null
+  },
+  {
+    "id": 6,
+    "vi": "Đã có áo: kiểm tra cả màu lẫn đường gấu",
+    "en": null
+  },
+  {
+    "id": 7,
+    "vi": "Đã có quần: đổi từng áo trên cùng một nền",
+    "en": null
+  },
+  {
+    "id": 8,
+    "vi": "Màu chân váy cần được đọc cùng bề mặt",
+    "en": null
+  },
+  {
+    "id": 9,
+    "vi": "Phối gần mặt và phối cả cây một màu",
+    "en": null
+  },
+  {
+    "id": 10,
+    "vi": "Lưu công thức đã mặc được, không chỉ ảnh đẹp",
+    "en": null
+  },
+  {
+    "id": 11,
+    "vi": "Đặt món đồ dưới ánh sáng ban ngày dịu, cạnh một bề mặt ít màu, rồi xem nó sáng hay tối, rực hay trầm. Một chiếc áo hồng bụi và áo hồng neon cùng mang tên hồng nhưng cần mức tương phản khác nhau. Ảnh chụp qua bộ lọc có thể làm sắc xanh đổi hướng hoặc làm màu kem thành trắng. Khi mua để ghép với đồ sẵn có, ảnh của chính hai món cạnh nhau thường hữu ích hơn hai ảnh sản phẩm từ hai cửa hàng khác nhau.",
+    "en": null
+  },
+  {
+    "id": 12,
+    "vi": "Nếu cần hiểu quan hệ giữa những nhóm màu,",
+    "en": null
+  },
+  {
+    "id": 13,
+    "vi": "đọc bánh xe màu sắc",
+    "en": null
+  },
+  {
+    "id": 14,
+    "vi": "trước khi chọn cặp thử. Hãy xem đó như công cụ gợi ý, rồi đưa lựa chọn về chiếc áo thật. Màu gần nhau có thể tạo cảm giác liền mạch; màu cách xa nhau có thể làm điểm nhấn rõ hơn. Không có quan hệ màu nào tự bảo đảm một bộ đồ đẹp nếu phom, bề mặt và hoàn cảnh vẫn chưa phù hợp với điều bạn muốn mặc.",
+    "en": null
+  },
+  {
+    "id": 15,
+    "vi": "Màu be là màu gì? Cách nhận biết và phối đồ",
+    "en": "What Color Is Beige? Recognize Shades and Style Them"
+  },
+  {
+    "id": 16,
+    "vi": "Nhận biết màu be, beige và phân biệt với kem, ivory, taupe, nude. Cách xem sắc ngả, ánh sáng, chất liệu và ứng dụng vào trang phục hằng ngày.",
+    "en": "Identify beige through lightness, undertone and fabric rather than a name alone. Compare cream, ivory, taupe and nude, then try four practical outfit combinations."
+  },
+  {
+    "id": 17,
+    "vi": "Màu ghi là màu gì? Phân biệt ghi, xám và các sắc độ",
+    "en": "What Color Is Ghi? Understanding Gray Shades in Clothing"
+  },
+  {
+    "id": 18,
+    "vi": "Phân biệt ghi và xám, ghi sáng, ghi đậm, ghi xanh, ghi chì và ghi muối tiêu. Cách so sắc ngả, bề mặt vải, ánh sáng khi chọn quần áo.",
+    "en": "Understand Vietnamese ghi and xám color labels through lightness, undertone and surface. Compare blue-gray, greige, silver and heather before buying clothing."
+  },
+  {
+    "id": 19,
+    "vi": "Màu xanh navy là màu gì? Cách nhận biết và phối đồ",
+    "en": "What Color Is Navy Blue? Identify It and Style Outfits"
+  },
+  {
+    "id": 20,
+    "vi": "Nhận biết xanh navy, phân biệt với đen, cobalt và xanh denim. Cách chọn áo, quần, váy navy và phối màu theo tủ đồ thực tế.",
+    "en": "Distinguish navy from black, cobalt and denim through real-light comparisons. Choose its wardrobe role and style tops, trousers and skirts with intentional contrast."
+  },
+  {
+    "id": 21,
+    "vi": "Màu thiên thanh là gì? Cách phối trang phục xanh sáng",
+    "en": "What Is Sky Blue? Styling Light-Blue Clothing"
+  },
+  {
+    "id": 22,
+    "vi": "Nhận diện màu thiên thanh trong trang phục; thử bảng màu xanh sáng với kem, xám, nâu, denim và đen, kèm cách chọn áo và phụ kiện.",
+    "en": "Understand the sky-blue label and try five palettes with ivory, gray, brown, denim and black. Adapt by top shape and check real color, light and coverage."
+  },
+  {
+    "id": 23,
+    "vi": "Màu pastel là gì? Bảng màu và cách phối đồ nữ",
+    "en": "What Are Pastel Colors? A Palette and Women's Outfit Guide"
+  },
+  {
+    "id": 24,
+    "vi": "Hiểu màu pastel, phân biệt các sắc hồng, tím, mint và xanh nhạt. Gợi ý phối với màu trung tính, màu đen và cách tránh outfit nhạt nhòa.",
+    "en": "Understand pastel shades and combine them with neutrals, black or another pastel. Compare color area, texture and contrast, with a practical palette table."
+  },
+  {
+    "id": 25,
+    "vi": "Xanh neon và màu neon: Cách phối nổi bật mà không rối",
+    "en": "How to Wear Neon Colors: Outfit Ideas for Neon Green and More"
+  },
+  {
+    "id": 26,
+    "vi": "Xanh neon là màu gì? Phân biệt các sắc neon, chọn màu nền, diện tích màu và công thức phối áo, quần, giày, túi dễ áp dụng.",
+    "en": "Style neon green, pink, yellow, or blue with neutrals and denim. Choose how much color to show and try four outfits using pieces you own."
+  },
+  {
+    "id": 27,
+    "vi": "Màu chính không nhất thiết là màu sáng nhất; đó có thể là mảng lớn nhất như quần nâu, đầm đen hoặc áo khoác xanh. Chọn món ấy làm mốc và giữ các món khác đơn giản trong lần thử đầu. Khi cả áo lẫn quần đều nhiều họa tiết, bạn khó biết mình đang thích cách ghép màu hay chỉ thích từng món riêng lẻ. Thử với đồ trơn giúp tách vấn đề trước khi thêm hoa văn, trang sức hoặc túi có màu nổi.",
+    "en": null
+  },
+  {
+    "id": 28,
+    "vi": "Với màu vàng, đỏ, tím hoặc xanh rực, hãy quyết định bạn muốn làm màu dịu lại hay giữ nó nổi bật. Một phần dưới tối có thể tạo nền sâu; một phần dưới sáng lại làm tổng thể mở hơn. Cùng một cặp màu vẫn thay đổi rõ khi đổi tỷ lệ diện tích. Áo đỏ nhỏ dưới blazer đen khác với áo khoác đỏ phủ gần hết thân trên, dù danh sách màu hoàn toàn giống nhau. Chụp hai phương án trong cùng điều kiện để so đúng điều đã thay.",
+    "en": null
+  },
+  {
+    "id": 29,
+    "vi": "Màu cam phối với màu gì? Cách phối trang phục hài hòa",
+    "en": "What Colors Go with Orange? Build Balanced Outfits"
+  },
+  {
+    "id": 30,
+    "vi": "Gợi ý phối màu cam với kem, nâu, denim, navy và đen; chọn sắc cam, tỷ lệ mảng màu và công thức trang phục theo hoàn cảnh.",
+    "en": "Pair peach, vivid or earthy orange with neutrals, denim, navy, pink or green. Adjust contrast and color area, then build three outfits from your wardrobe."
+  },
+  {
+    "id": 31,
+    "vi": "Màu đỏ phối với màu gì? Cách cân outfit nổi bật",
+    "en": "What Colors Go with Red? Balance a Standout Outfit"
+  },
+  {
+    "id": 32,
+    "vi": "Phối màu đỏ với kem, xám, đen, denim, navy và nâu; chọn sắc đỏ, diện tích và vị trí điểm nhấn để xây outfit theo mức nổi bật mong muốn.",
+    "en": "Combine red with ivory, cream, gray, black, denim, navy or brown. Explore pink and green, choose red's placement and fix intensity through area and texture."
+  },
+  {
+    "id": 33,
+    "vi": "Màu hồng kết hợp với màu gì thì đẹp? Phối theo sắc độ",
+    "en": "What Colors Go with Pink? Style Outfits by Shade"
+  },
+  {
+    "id": 34,
+    "vi": "Màu hồng kết hợp với màu gì thì đẹp? Gợi ý phối hồng phấn, hồng đất và hồng đậm với màu nền, điểm nhấn và tỷ lệ dễ áp dụng.",
+    "en": "Pair pale, deep or vivid pink with cream, gray, denim, navy, brown or black. Explore red and green accents and adjust area, placement and texture for balance."
+  },
+  {
+    "id": 35,
+    "vi": "Màu nâu phối với màu gì? Gợi ý bảng màu trang phục",
+    "en": "What Colors Go with Brown? Build a Clothing Palette"
+  },
+  {
+    "id": 36,
+    "vi": "Xây bảng màu nâu với kem, đen, xanh, olive và hồng; phân biệt sắc nâu, phối nhiều mức đậm nhạt và chọn màu theo tủ đồ thật.",
+    "en": "Combine brown with cream, white, black, denim, blue, olive or pink. Compare brown shades, vary lightness and texture and test reusable whole-outfit palettes."
+  },
+  {
+    "id": 37,
+    "vi": "Màu tím phối với màu gì? Từ tím nhạt đến tím đậm",
+    "en": "What Colors Go with Purple? From Pale to Deep Shades"
+  },
+  {
+    "id": 38,
+    "vi": "Phối tím nhạt, tím đậm và hồng tím với màu nền phù hợp; gợi ý áo cho chân váy tím, tỷ lệ màu, texture và cách thử outfit.",
+    "en": "Pair purple with ivory, cream, gray, black, denim or brown, then explore pink, green and yellow. Adjust shade, area and texture for tops, skirts and accessories."
+  },
+  {
+    "id": 39,
+    "vi": "Màu vàng phối với màu gì? Công thức cho trang phục nữ",
+    "en": "What Colors Go with Yellow? Women's Outfit Formulas"
+  },
+  {
+    "id": 40,
+    "vi": "Màu vàng phối với trắng, đen, xám, denim hay nâu thế nào? Gợi ý theo vàng nhạt, mù tạt, vàng chanh và cách cân màu trong trang phục.",
+    "en": "Pair yellow with neutrals, denim, navy, brown, green or purple. Choose your yellow shade and color area first, then adapt outfits for tops, trousers and dresses."
+  },
+  {
+    "id": 41,
+    "vi": "Màu xám phối với màu gì? Bảng phối màu quần áo nữ",
+    "en": "What Colors Go with Gray? A Women's Outfit Palette"
+  },
+  {
+    "id": 42,
+    "vi": "Cách phối màu xám, ghi sáng và xám than với trắng, đen, xanh, hồng, đỏ, vàng, nâu. Gợi ý diện tích màu và phối cả bộ xám có chiều sâu.",
+    "en": "Build gray outfit palettes with neutrals, denim, navy, pink, red, yellow or brown. Compare undertones and textures, then test color areas in your wardrobe."
+  },
+  {
+    "id": 43,
+    "vi": "Màu xanh coban phối với màu gì? Gợi ý cho áo và quần",
+    "en": "What Colors Go With Cobalt Blue? Outfit Ideas for Tops and Pants"
+  },
+  {
+    "id": 44,
+    "vi": "Màu xanh coban phối với màu gì đẹp? Nhận biết với navy, chọn trắng, đen, xám, kem và nâu; công thức cho áo, quần cùng cách cân phụ kiện.",
+    "en": "Pair cobalt blue with white, black, gray, cream, or brown. Try tonal blues and small bright accents, and balance fabrics, layers, and accessories."
+  },
+  {
+    "id": 45,
+    "vi": "Màu xanh dương phối với màu gì? Cách phối đồ nữ",
+    "en": "What Colors Go with Blue? Women's Outfit Combinations"
+  },
+  {
+    "id": 46,
+    "vi": "Gợi ý phối xanh dương nhạt, xanh da trời và xanh đậm với trắng, kem, xám, đen, nâu hoặc màu nổi; kèm công thức trang phục nữ dễ thử.",
+    "en": "Pair light, deep or vivid blue with neutrals, brown and pink, or add small red, orange and yellow accents. Compare color area, shape and texture in real outfits."
+  },
+  {
+    "id": 47,
+    "vi": "Trước khi tìm quần, mặc áo theo cách bạn định sử dụng: thả ngoài, sơ vin hoặc mở cúc trên lớp nền. Điểm kết thúc của áo làm thay đổi diện tích màu nhìn thấy. Nếu áo dài che gần hết cạp, màu quần chỉ xuất hiện thành một khối ở dưới; khi sơ vin, đường phân chia hai màu rõ hơn. Vì vậy, một cặp trông chưa cân lúc thả áo có thể hoạt động sau khi chỉnh gấu, không nhất thiết phải đổi màu ngay.",
+    "en": null
+  },
+  {
+    "id": 48,
+    "vi": "Với",
+    "en": null
+  },
+  {
+    "id": 49,
+    "vi": "chọn quần cho áo đen",
+    "en": null
+  },
+  {
+    "id": 50,
+    "vi": ", hãy thử một quần sáng, một quần denim và một quần tối có sẵn rồi so cả ba. Cách thử tương tự cũng hữu ích với áo màu khác, nhưng cần giữ nguyên sắc áo thực tế. Áo xanh rêu không nên được thay bằng ảnh xanh navy chỉ vì cùng gọi là xanh. Nếu chiếc áo có cổ, viền hoặc hình in màu khác, tính cả chi tiết ấy vào tổng thể thay vì chỉ nhìn màu nền.",
+    "en": null
+  },
+  {
+    "id": 51,
+    "vi": "Áo đỏ phối quần màu gì? Cách cân màu cho outfit nữ",
+    "en": "What Color Pants Go with a Red Top? Outfit Ideas for Women"
+  },
+  {
+    "id": 52,
+    "vi": "Áo đỏ phối quần màu gì? Gợi ý đen, kem, xám, denim, navy và nâu theo đỏ tươi, đỏ đô, đỏ mận; cân phom và phụ kiện.",
+    "en": "Pair a red top with black, ivory, gray, denim, navy, brown, or beige. Choose by shade, fabric, and fit, then try three outfits."
+  },
+  {
+    "id": 53,
+    "vi": "Áo hồng phối quần màu gì? Chọn theo từng sắc hồng",
+    "en": "What Color Pants Go with a Pink Top? Pairings by Shade"
+  },
+  {
+    "id": 54,
+    "vi": "Áo hồng phối quần màu gì? Gợi ý trắng, xám, đen, denim, nâu và xanh navy theo hồng phấn, hồng đất, hồng đậm và hoàn cảnh mặc.",
+    "en": "Pair blush, dusty pink, and vivid pink tops with white, gray, black, denim, navy, or brown pants. Try three outfits for different occasions."
+  },
+  {
+    "id": 55,
+    "vi": "Áo nâu phối quần màu gì? Outfit từ sáng đến trầm",
+    "en": "What Color Pants Go with a Brown Top? Light to Dark Outfits"
+  },
+  {
+    "id": 56,
+    "vi": "Áo nâu phối quần màu gì? Thử kem, đen, denim, xám và xanh rêu; chọn theo sắc nâu, phom áo và năm outfit nữ dễ phối lại từ tủ đồ sẵn có.",
+    "en": "Pair brown tops with ivory, cream, black, gray, denim, navy or earthy colors. Compare shades, proportions and accessories through five outfit ideas."
+  },
+  {
+    "id": 57,
+    "vi": "Áo tím phối quần màu gì? Chọn theo sắc tím và hoàn cảnh",
+    "en": "What Color Pants Go With a Purple Top?"
+  },
+  {
+    "id": 58,
+    "vi": "Áo tím phối quần màu gì dễ mặc? Gợi ý trắng, đen, xám, be, denim và nâu; cách chọn cho tím nhạt, tím đậm, tím than cùng giày và phụ kiện.",
+    "en": "Pair lavender, plum, and deep blue-purple tops with white, black, gray, beige, denim, or brown pants. Choose by contrast, cut, and occasion."
+  },
+  {
+    "id": 59,
+    "vi": "Áo vàng phối quần màu gì? Công thức theo sắc vàng",
+    "en": "What Color Pants Go with a Yellow Top? Pairings by Shade"
+  },
+  {
+    "id": 60,
+    "vi": "Chọn quần trắng, đen, xám, navy, denim và nâu cho áo vàng nhạt, vàng tươi, vàng mù tạt; cân màu, độ rộng và phụ kiện theo dịp.",
+    "en": "Pair pale, bright, and mustard yellow tops with white, denim, navy, gray, black, or brown pants. Try three outfits for different plans."
+  },
+  {
+    "id": 61,
+    "vi": "Áo xám phối quần màu gì? Cách mặc không đơn điệu",
+    "en": "What Color Pants Go with a Gray Top? Outfits with Dimension"
+  },
+  {
+    "id": 62,
+    "vi": "Áo xám phối quần màu gì? Chọn đen, kem, denim hoặc màu nhấn; phối áo thun, hoodie và sơ mi xám theo độ sáng, phom và bề mặt vải.",
+    "en": "Style gray tops with black, ivory, denim, navy, beige or accent colors. Balance lightness, texture and fit across T-shirt, hoodie and shirt outfits."
+  },
+  {
+    "id": 63,
+    "vi": "Áo xanh dương mặc với quần màu gì? Gợi ý cho nữ",
+    "en": "What Color Pants Go With a Blue Top?"
+  },
+  {
+    "id": 64,
+    "vi": "Áo xanh dương mặc với quần màu gì? Chọn đen, trắng, kem, xám, denim, navy hoặc nâu theo sắc áo, form và hoàn cảnh sử dụng.",
+    "en": "Pair a blue top with black, white, cream, gray, denim, navy, or brown pants. Choose by shade, cut, and occasion."
+  },
+  {
+    "id": 65,
+    "vi": "Áo xanh rêu phối quần màu gì? Cách chọn cho nữ",
+    "en": "What Color Pants Go With a Moss Green Top?"
+  },
+  {
+    "id": 66,
+    "vi": "Áo xanh rêu phối quần màu gì? Thử kem, be, đen, xám, denim và nâu theo sắc rêu; cân form áo, màu giày và túi để dễ mặc.",
+    "en": "Try cream, beige, black, gray, denim, or brown with a moss green top. Choose by undertone, fit, and how you plan to style your shoes and bag."
+  },
+  {
+    "id": 67,
+    "vi": "Áo dài tím phối quần màu gì? Chọn theo sắc tím",
+    "en": "What Color Pants Go With a Purple Ao Dai?"
+  },
+  {
+    "id": 68,
+    "vi": "Gợi ý quần trắng, kem, đen, cùng tông và màu nhấn cho áo dài tím; cân độ bóng, độ rộng, chiều dài và phụ kiện theo hoàn cảnh.",
+    "en": "Pair a purple ao dai with white, ivory, black, or tonal purple pants. Compare shades, drape, sheen, and fit with the shoes you plan to wear."
+  },
+  {
+    "id": 69,
+    "vi": "Giữ chiếc quần cố định và thử lần lượt những áo có độ dài gần nhau trước. Khi cùng lúc đổi màu, đổi phom và đổi giày, bạn khó nhận ra yếu tố nào tạo khác biệt. Với quần sáng, kiểm tra cả độ xuyên thấu và phần áo sơ vin; màu áo đậm có thể hiện qua lớp vải mỏng. Với quần có túi hộp hoặc nhiều đường may, áo ít chi tiết thường giúp bạn đánh giá cặp màu rõ hơn trong lần thử đầu tiên.",
+    "en": null
+  },
+  {
+    "id": 70,
+    "vi": "Đừng kết luận màu áo không hợp chỉ vì dáng áo chưa đúng ý. Cùng màu trắng, sơ mi đứng và áo thun rủ có thể tạo hai tỷ lệ khác hẳn trên quần hồng hoặc quần xanh rêu. Hãy tách câu hỏi thành hai bước: thích tương quan màu chưa, rồi thích đường dáng chưa. Sau khi chốt được một phương án thuận tiện, mới thử phụ kiện để nối các mảng. Bạn không cần tìm một chiếc túi lặp đúng mọi màu xuất hiện trên bộ đồ.",
+    "en": null
+  },
+  {
+    "id": 71,
+    "vi": "Quần đen phối áo màu gì? Công thức outfit nữ",
+    "en": "What Color Tops Go with Black Pants? Outfit Ideas for Women"
+  },
+  {
+    "id": 72,
+    "vi": "Quần đen phối áo màu gì? Gợi ý trắng, kem, pastel, đỏ rượu, rêu và nâu; công thức riêng cho jeans, quần tây và cargo đen.",
+    "en": "Pair black jeans, tailored trousers, or cargos with white, cream, pastels, burgundy, olive, or brown. Try five outfits and adjust the fit and shoes."
+  },
+  {
+    "id": 73,
+    "vi": "Quần hồng phối áo màu gì? Cách cân sắc độ cho nữ",
+    "en": "What Color Top Goes with Pink Pants? A Women's Styling Guide"
+  },
+  {
+    "id": 74,
+    "vi": "Quần hồng phối áo màu gì? Gợi ý áo trắng, xám, đen, navy và nâu theo sắc hồng; cân phom quần, giày và phụ kiện để dễ mặc.",
+    "en": "Match pink pants with ivory, gray, black, navy or brown tops. Balance shades, silhouettes, shoes and bags with practical outfit ideas."
+  },
+  {
+    "id": 75,
+    "vi": "Quần màu be phối áo màu gì? Gợi ý outfit nữ",
+    "en": "What Color Top Goes with Beige Pants? Women's Outfit Ideas"
+  },
+  {
+    "id": 76,
+    "vi": "Gợi ý áo trắng, đen, nâu, navy và xanh nhạt cho quần be, quần kem; điều chỉnh theo phom quần, cách sơ vin, giày và độ tương phản.",
+    "en": "Choose tops for beige or cream pants using shade, contrast and trouser fit. Try neutrals, blue, olive, pink and deep red, then check shoes, hems and coverage."
+  },
+  {
+    "id": 77,
+    "vi": "Quần nâu phối áo màu gì? Công thức dễ áp dụng cho nữ",
+    "en": "What Color Top Goes with Brown Pants? Women's Outfit Ideas"
+  },
+  {
+    "id": 78,
+    "vi": "Quần nâu phối áo màu gì? Gợi ý trắng, kem, đen, xanh nhạt và cách cân sắc nâu, phom quần, giày, túi cho đi học, đi làm, đi chơi.",
+    "en": "Pair brown pants with white, cream, black, pale blue, pink or richer colors. Adjust for chocolate, caramel and gray-brown shades, trouser shape and occasion."
+  },
+  {
+    "id": 79,
+    "vi": "Quần tím phối áo màu gì? Công thức từ nhẹ đến nổi bật",
+    "en": "What Color Tops Go with Purple Pants? Pairings by Shade"
+  },
+  {
+    "id": 80,
+    "vi": "Quần tím phối áo màu gì? Thử trắng, kem, xám, đen, denim và pastel theo sắc tím, phom quần, chất vải để chọn bộ phối từ nhẹ nhàng đến nổi bật.",
+    "en": "Pair lavender, plum, and inky-purple pants with white, cream, gray, black, denim, or pastels. Choose the contrast, fit, and shoes you like."
+  },
+  {
+    "id": 81,
+    "vi": "Quần trắng phối áo màu gì? Gợi ý outfit nữ",
+    "en": "What Color Top Goes with White Pants? Women's Outfit Ideas"
+  },
+  {
+    "id": 82,
+    "vi": "Chọn áo cho quần trắng, quần trắng ống rộng và jeans trắng; phối màu sáng, tối, họa tiết, đồng màu và kiểm tra lớp trong trước khi mặc.",
+    "en": "Choose dark, pale, vivid or white tops for white trousers and jeans. Balance wide legs and top length, then check lining, transparency, tucked fabric and shoes."
+  },
+  {
+    "id": 83,
+    "vi": "Quần vàng phối áo màu gì? Cách phối đồ nữ dễ mặc",
+    "en": "What Color Tops Go with Yellow Pants? Outfit Ideas for Women"
+  },
+  {
+    "id": 84,
+    "vi": "Quần vàng phối áo màu gì? Chọn trắng, kem, đen, navy, denim hoặc nâu theo vàng bơ, vàng tươi, vàng đất và phom quần thực tế.",
+    "en": "Style butter yellow, lemon, mustard, ochre, and golden-tan pants with tops in white, navy, denim, brown, and more. Try four outfit ideas."
+  },
+  {
+    "id": 85,
+    "vi": "Quần xám phối áo màu gì? Cách phối quần ghi cho nữ",
+    "en": "What Color Top Goes with Gray Pants? Women's Styling Guide"
+  },
+  {
+    "id": 86,
+    "vi": "Quần xám phối áo trắng, đen, kem hay màu nổi? Cách chọn theo sắc ghi sáng, xám than, quần jeans, kaki và quần ống rộng nữ.",
+    "en": "Pair gray pants with white, black, cream, blue, pink or burgundy. Compare gray depths and undertones, then adjust tops for jeans, chinos and wide-leg trousers."
+  },
+  {
+    "id": 87,
+    "vi": "Quần xanh đen phối áo màu gì? 7 cách phối cho nữ",
+    "en": "What Color Top Goes With Dark Navy Pants? 7 Outfit Ideas for Women"
+  },
+  {
+    "id": 88,
+    "vi": "Quần xanh đen phối áo trắng, kem, xám, đen hay màu nhấn? Chọn sắc độ, phom áo, giày và phụ kiện theo hoàn cảnh mặc.",
+    "en": "Try white, cream, gray, black, blue, pink, or burgundy with dark navy pants. Adjust the top, shoes, and accessories to the cut and occasion."
+  },
+  {
+    "id": 89,
+    "vi": "Quần xanh rêu phối áo màu gì? Gợi ý outfit nữ",
+    "en": "What Color Top Goes with Moss-Green Pants? Women's Outfits"
+  },
+  {
+    "id": 90,
+    "vi": "Quần xanh rêu phối áo màu gì? Chọn trắng ngà, đen, be, hồng bụi theo sắc rêu; gợi ý outfit nữ với quần kaki, cargo và quần âu.",
+    "en": "Pair moss-green trousers with ivory, black, gray, beige, dusty pink, burgundy or navy. Compare undertones and adapt tops for chinos, cargos and softer cuts."
+  },
+  {
+    "id": 91,
+    "vi": "Chân váy đỏ đô bằng nhung, satin và cotton có thể phản sáng rất khác nhau. Nếu chỉ lấy một ô màu trên màn hình để tìm áo, bạn dễ bỏ qua yếu tố khiến chiếc váy thật nổi hoặc trầm hơn dự kiến. Đặt áo lên váy, nhìn từ xa rồi thử khi mặc để quan sát nếp gấp. Các nếp gấp tạo vùng sáng tối, làm màu không còn phẳng như ảnh sản phẩm. Khi váy đã có nhiều độ bóng, áo lì là một phương án đáng thử.",
+    "en": null
+  },
+  {
+    "id": 92,
+    "vi": "Với chân váy vàng hoặc nâu, kiểm tra vùng tiếp giáp giữa gấu áo và cạp trước khi thêm thắt lưng. Một đường kim loại sáng ở eo sẽ làm ranh giới màu rõ hơn, trong khi áo gần màu váy có thể tạo mảng nối dài. Chọn theo hiệu ứng bạn thích thay vì coi một cách là bắt buộc. Bài theo màu bên dưới giúp thu hẹp lựa chọn; nếu vấn đề chính là độ xòe hoặc chiều dài, hãy giải quyết phom trước rồi quay lại bảng màu.",
+    "en": null
+  },
+  {
+    "id": 93,
+    "vi": "Chân váy đỏ đô kết hợp với áo màu gì? Gợi ý dễ thử",
+    "en": "What Color Top Goes With a Burgundy Skirt?"
+  },
+  {
+    "id": 94,
+    "vi": "Chân váy đỏ đô kết hợp với áo màu gì? Thử trắng, kem, xám, đen, denim, navy và hồng nhạt theo độ sáng, chất vải và phom của từng món.",
+    "en": "Try ivory, cream, gray, black, denim blue, navy, or soft pink with a burgundy skirt. Choose the contrast, fabric finish, and fit you want."
+  },
+  {
+    "id": 95,
+    "vi": "Chân váy nâu phối áo màu gì? Cách phối theo sắc độ",
+    "en": "What Color Top Goes with a Brown Skirt? Style by Shade"
+  },
+  {
+    "id": 96,
+    "vi": "Chân váy nâu phối áo màu gì? Chọn màu áo theo nâu sáng, nâu chocolate và nâu lạnh; cân chất liệu, giày và tỷ lệ trang phục.",
+    "en": "Pair brown skirts with cream, black, pale blue, denim, olive or pink. Adapt top shape and length to A-line, fitted or pleated skirts and check shoes in motion."
+  },
+  {
+    "id": 97,
+    "vi": "Chân váy vàng phối áo màu gì? Cân sắc vàng và tỷ lệ",
+    "en": "What Color Top Goes With a Yellow Skirt?"
+  },
+  {
+    "id": 98,
+    "vi": "Chân váy vàng phối áo màu gì? Gợi ý trắng, đen, xám, kem, nâu và xanh; cách chọn theo vàng nhạt, vàng tươi, vàng mù tạt và phom váy.",
+    "en": "Style pale, bright, or mustard yellow skirts with six top colors. Choose by cut and fabric, then balance the shoes, bag, and outer layer."
+  },
+  {
+    "id": 99,
+    "vi": "Khi cân nhắc màu gần mặt, thử dưới điều kiện bạn thường xuất hiện và giữ makeup, ánh sáng tương đối ổn định. Đừng dùng một tấm ảnh thiếu sáng để kết luận mình chỉ được mặc một nhóm màu. Hướng dẫn",
+    "en": null
+  },
+  {
+    "id": 100,
+    "vi": "thử màu cho da ngăm",
+    "en": null
+  },
+  {
+    "id": 101,
+    "vi": "giúp tập trung vào tương phản và sở thích thay vì biến màu da thành giới hạn. Bạn vẫn có thể dùng màu thích ở quần, túi hoặc lớp ngoài nếu chưa muốn đặt mảng lớn sát mặt.",
+    "en": null
+  },
+  {
+    "id": 102,
+    "vi": "Mặc cả cây trắng hoặc cả cây màu tối không có nghĩa mọi món phải giống hệt sắc độ. Với",
+    "en": null
+  },
+  {
+    "id": 103,
+    "vi": "phối trắng có chiều sâu",
+    "en": null
+  },
+  {
+    "id": 104,
+    "vi": ", hãy nhìn khác biệt giữa bề mặt lì, dệt nổi và hơi bóng. Chênh lệch nhỏ có thể khiến từng lớp hiện rõ mà vẫn giữ cảm giác thống nhất. Nếu đã có tóc nhuộm nổi hoặc makeup đậm, phần",
+    "en": null
+  },
+  {
+    "id": 105,
+    "vi": "cân tóc với trang phục",
+    "en": null
+  },
+  {
+    "id": 106,
+    "vi": "giúp xem màu ngoài quần áo như một phần của cùng tổng thể.",
+    "en": null
+  },
+  {
+    "id": 107,
+    "vi": "Sau mỗi lần thử, ghi lại tên món cụ thể, cách sơ vin, đôi giày và nơi đã mặc. Một ghi chú như áo hồng bụi với jeans xanh đậm dễ dùng lại hơn nhận xét chung rằng hồng hợp xanh. Nếu hai màu gần nhau nhưng chưa đúng ý, ghi rõ điều khó chịu: quá ít tương phản, bề mặt tranh nhau hay tỷ lệ bị chia khúc. Lần sau bạn có thể sửa đúng một biến thay vì bắt đầu lại từ đầu hoặc mua thêm cả bộ.",
+    "en": null
+  },
+  {
+    "id": 108,
+    "vi": "Giữ một công thức nền sáng, một nền tối và một công thức có màu nhấn là cách khởi đầu gọn. Mỗi công thức nên dùng được với ít nhất một lịch trình thật trong tuần của bạn. Khi muốn mở rộng, thay một món bằng sắc gần nó hoặc đổi vị trí màu nhấn. Những bài trong từng nhóm ở trên phục vụ bước lựa chọn cụ thể; mục tiêu cuối vẫn là bộ đồ mặc thuận tiện, có tỷ lệ bạn thích và không phụ thuộc hoàn toàn vào ảnh tham khảo.",
+    "en": null
+  },
+  {
+    "id": 109,
+    "vi": "Mục lục hướng dẫn",
+    "en": null
+  },
+  {
+    "id": 110,
+    "vi": "Trang phục màu be và cách so sánh với màu trắng hoặc kem",
+    "en": "Beige clothing compared with white and cream shades"
+  },
+  {
+    "id": 111,
+    "vi": "Trang phục màu ghi và sự khác nhau giữa các sắc xám",
+    "en": "Grey clothing and the differences between grey shades"
+  },
+  {
+    "id": 112,
+    "vi": "Trang phục xanh navy với tông xanh đậm",
+    "en": "Navy clothing in deep blue tones"
+  },
+  {
+    "id": 113,
+    "vi": "Trang phục màu xanh thiên thanh với tông xanh nhạt dịu",
+    "en": "Sky-blue clothing in soft pale blue shades"
+  },
+  {
+    "id": 114,
+    "vi": "Áo pastel trong trang phục thường ngày",
+    "en": "Pastel tops styled with casual outfits"
+  },
+  {
+    "id": 115,
+    "vi": "Cận cảnh trang phục màu neon nổi bật bên cạnh các món đồ tối màu",
+    "en": "Close-up of bright neon clothing alongside dark pieces"
+  },
+  {
+    "id": 116,
+    "vi": "Áo màu cam phối quần dài dáng rộng",
+    "en": "Orange tops styled with wide-leg trousers"
+  },
+  {
+    "id": 117,
+    "vi": "Áo đỏ phối quần dài và phụ kiện trong trang phục thường ngày",
+    "en": "Red tops styled with trousers and accessories in casual outfits"
+  },
+  {
+    "id": 118,
+    "vi": "Cận cảnh áo hồng phối cùng các lớp trang phục trung tính",
+    "en": "Close-up of pink tops combined with neutral outfit layers"
+  },
+  {
+    "id": 119,
+    "vi": "Áo nâu phối cùng trang phục tông trung tính",
+    "en": "Brown tops styled with neutral clothing"
+  },
+  {
+    "id": 120,
+    "vi": "Áo tím phối trang phục trung tính",
+    "en": "Purple tops styled with neutral clothing"
+  },
+  {
+    "id": 121,
+    "vi": "Trang phục màu vàng trong cách phối thường ngày",
+    "en": "Yellow clothing styled in everyday outfits"
+  },
+  {
+    "id": 122,
+    "vi": "Trang phục màu xám phối cùng các món đồ trung tính",
+    "en": "Grey outfits combined with neutral pieces"
+  },
+  {
+    "id": 123,
+    "vi": "Trang phục xanh cobalt phối các tông màu trung tính",
+    "en": "Cobalt blue clothing styled with neutral tones"
+  },
+  {
+    "id": 124,
+    "vi": "Áo sơ mi xanh dương phối quần dài",
+    "en": "Blue shirts styled with trousers"
+  },
+  {
+    "id": 125,
+    "vi": "Áo đỏ phối quần dài dáng rộng",
+    "en": "Red tops styled with wide-leg trousers"
+  },
+  {
+    "id": 126,
+    "vi": "Áo hồng phối quần dáng rộng màu sáng, đen hoặc denim xanh",
+    "en": "Pink tops styled with light-colored, black or blue denim trousers"
+  },
+  {
+    "id": 127,
+    "vi": "Áo nâu phối quần dài dáng rộng",
+    "en": "Brown tops styled with wide-leg trousers"
+  },
+  {
+    "id": 128,
+    "vi": "Áo tím phối quần dáng rộng trong trang phục thường ngày",
+    "en": "Purple tops styled with wide-leg trousers in casual outfits"
+  },
+  {
+    "id": 129,
+    "vi": "Áo sơ mi vàng phối quần dài sáng màu",
+    "en": "Yellow shirts styled with light-colored trousers"
+  },
+  {
+    "id": 130,
+    "vi": "Áo xám phối quần dài dáng rộng",
+    "en": "Grey tops styled with wide-leg trousers"
+  },
+  {
+    "id": 131,
+    "vi": "Áo xanh dương phối quần dài dáng rộng",
+    "en": "Blue tops styled with wide-leg trousers"
+  },
+  {
+    "id": 132,
+    "vi": "Áo xanh rêu phối quần dài dáng rộng",
+    "en": "Olive-green tops styled with wide-leg trousers"
+  },
+  {
+    "id": 133,
+    "vi": "Áo dài tím phối quần sáng màu hoặc quần đen",
+    "en": "Purple ao dai styled with light-colored or black trousers"
+  },
+  {
+    "id": 134,
+    "vi": "Quần đen ống rộng phối áo trơn",
+    "en": "Black wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 135,
+    "vi": "Quần hồng ống rộng phối áo trơn",
+    "en": "Pink wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 136,
+    "vi": "Quần be ống rộng phối cùng áo trơn",
+    "en": "Beige wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 137,
+    "vi": "Quần nâu ống rộng phối áo trơn",
+    "en": "Brown wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 138,
+    "vi": "Quần tím phối áo trơn và các lớp áo khoác",
+    "en": "Purple trousers styled with plain tops and outer layers"
+  },
+  {
+    "id": 139,
+    "vi": "Quần trắng ống rộng phối áo trơn",
+    "en": "White wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 140,
+    "vi": "Quần vàng ống rộng phối áo trơn",
+    "en": "Yellow wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 141,
+    "vi": "Quần xám ống rộng phối trang phục thường ngày",
+    "en": "Grey wide-leg trousers styled with casual outfits"
+  },
+  {
+    "id": 142,
+    "vi": "Quần xanh navy ống rộng phối áo trơn",
+    "en": "Navy wide-leg trousers styled with plain tops"
+  },
+  {
+    "id": 143,
+    "vi": "Quần xanh rêu dáng rộng phối áo trơn",
+    "en": "Olive-green relaxed trousers styled with plain tops"
+  },
+  {
+    "id": 144,
+    "vi": "Chân váy đỏ rượu dáng dài phối áo trơn",
+    "en": "Long burgundy skirts styled with plain tops"
+  },
+  {
+    "id": 145,
+    "vi": "Chân váy nâu dáng dài có nếp nhún",
+    "en": "Long brown skirts with gathered folds"
+  },
+  {
+    "id": 146,
+    "vi": "Chân váy vàng dáng xòe phối áo trơn",
+    "en": "Yellow flared skirts styled with plain tops"
+  }
+]

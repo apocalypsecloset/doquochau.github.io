@@ -8,6 +8,7 @@ from urllib.parse import urlsplit
 from en_translate_hubs import ROOT,source,VI
 import xml.etree.ElementTree as ET
 from translation_inventory import sitemap_vi_urls,rows as inventory_rows,normalize_approved_maintenance
+from link_fix_release import hub_contract
 configs=json.loads((ROOT/'data/en-translations'/(sys.argv[1]+'.json')).read_text());errors=[];results=[]
 if '--hubs-only' in sys.argv:configs=[c for c in configs if c.get('source_kind')=='hub']
 assert configs and all(c.get('source_kind')=='hub' for c in configs),'Hub gate requires explicit hub configs'
@@ -15,7 +16,7 @@ def check(ok,msg):
  if not ok:errors.append(msg)
 external=lambda root:sorted(a['href'] for a in root.select('a[href]') if urlsplit(a['href']).scheme and urlsplit(a['href']).netloc!='apocalypsecloset.com')
 for c in configs:
- slug=c['en_slug'];raw,vi,orig,texts=source(c['vi_slug']);s=BeautifulSoup((ROOT/'en/blog'/f'{slug}.html').read_text(),'html.parser');a=s.main
+ slug=c['en_slug'];raw,vi,orig,texts=source(c['vi_slug']);s=BeautifulSoup(hub_contract('en/blog/'+slug+'.html',(ROOT/'en/blog'/f'{slug}.html').read_text()),'html.parser');a=s.main
  url='https://apocalypsecloset.com/en/blog/'+slug+'.html';viurl='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html'
  check(hashlib.sha256(raw.encode()).hexdigest()==c['source_sha256'],slug+': source hash')
  check(s.html['lang']=='en' and len(s.select('h1'))==1,slug+': language/H1')

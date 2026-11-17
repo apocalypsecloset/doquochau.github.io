@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-mau-quan-ao-nu",
+      "en_slug": "womens-color-coordination-guides",
+      "authored_words": 1540,
+      "child_cards": 41,
+      "tsv_segments": 147
+    },
+    {
+      "vi_slug": "chon-trang-phuc-nu-theo-dia-diem-va-dip",
+      "en_slug": "occasion-destination-outfit-guides",
+      "authored_words": 1486,
+      "child_cards": 23,
+      "tsv_segments": 92
+    },
+    {
+      "vi_slug": "cach-cham-soc-do-nu",
+      "en_slug": "womens-clothing-care-guides",
+      "authored_words": 1654,
+      "child_cards": 11,
+      "tsv_segments": 61
+    },
+    {
+      "vi_slug": "chon-toc-va-makeup-theo-trang-phuc",
+      "en_slug": "alternative-hair-makeup-guides",
+      "authored_words": 1583,
+      "child_cards": 9,
+      "tsv_segments": 47
+    }
+  ],
+  "old_translation_source_successors_released": 0,
+  "errors": []
+}

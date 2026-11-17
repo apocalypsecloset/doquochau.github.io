@@ -10,7 +10,7 @@ import sys
 import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urljoin, urlsplit
 from bs4 import BeautifulSoup
-from link_fix_release import ROOT, manifest, digest, historical, added_successor
+from link_fix_release import ROOT, manifest, digest, historical, added_successor, batch40_previous, approved_file_bytes
 
 M = manifest()
 assert M['baseline']=='9e16c2012f417cf5e4634b1c771a2c5d773e1ee8'
@@ -88,11 +88,11 @@ protected=['title','h1','meta','link[rel=canonical]','link[hreflang]',
            '.ac-reading-path','.seo-faq','.ac-sources']
 modified=added=extra_images=extra_headings=0
 for path,row in M['files'].items():
-    raw=(ROOT/path).read_bytes();current=raw.decode('utf-8').replace('\r\n','\n')
-    check(hashlib.sha256(raw).hexdigest() in [row['after_sha256'],row['after_crlf_sha256']],path+': exact successor file SHA-256')
+    raw=(ROOT/path).read_bytes();actual=raw.decode('utf-8').replace('\r\n','\n');current=batch40_previous(path,actual)
+    check(approved_file_bytes(path,raw),path+': exact successor file SHA-256')
     check(digest(current)==row['after_sha256'],path+': exact successor text SHA-256')
-    check(historical(path,current+' ')==current+' ',path+': unknown trailing-byte mutation rejected')
-    check(not added_successor(path,current+' '),path+': unknown new-file mutation rejected')
+    check(historical(path,actual+' ')==actual+' ',path+': unknown trailing-byte mutation rejected')
+    check(not added_successor(path,actual+' '),path+': unknown new-file mutation rejected')
     if path=='blog.html':
         before=BeautifulSoup(old[M['baseline']+':'+path],'lxml');after=BeautifulSoup(current,'lxml')
         oldcards={a['href']:str(a) for a in before.select('#post-grid a.post-card')}
@@ -142,7 +142,7 @@ check(not git('diff','--name-only',M['vi_release_commit'],'--','docs/qa').strip(
 from privacy_release import original as translation_original
 source_mismatches=0;source_count=0
 for p in sorted((ROOT/'data/en-translations').glob('batch*.json')):
-    if p.stem=='batch05b':continue
+    if p.stem in ['batch05b','batch40']:continue # E2 has a separate new-source contract, never re-baselines an old batch.
     for c in json.loads(p.read_text(encoding='utf-8')):
         path='blog/'+c['vi_slug']+'.html'
         raw=translation_original(path,(ROOT/path).read_text(encoding='utf-8'))

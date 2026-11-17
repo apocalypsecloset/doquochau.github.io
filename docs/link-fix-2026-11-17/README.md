@@ -41,3 +41,7 @@ E0 evidence is in `data/en-link-e0-2026-11-17/`; E0b command outputs are in `dat
 ## E1 archive locations
 
 The active audits are now `scripts/internal_link_audit.py` and `scripts/internal_link_audit_en.py`. The VI task is `docs/CODEX_TASK.md`; historical work files and `link_changes.csv` are archived byte-for-byte under `data/link-fix-2026-11-17/`. References to `tools/` inside frozen patch evidence and old reports describe their original Git locations, not runnable current entrypoints. No new `/tools/*` header rule was added. Local dependencies moved to ignored `.venv/site-packages`.
+
+## E2 checkpoint
+
+Batch40 is complete under the four user-selected EN slugs. The four VI bodies remain unchanged; the user separately approved the marked vi/en head pair. `batch40-release.json` adds exact E2 successors without changing this directory's original release manifest. `qa_batch40.py` independently checks the actual full directories and their 84 child cards; the translated source-parity snapshots remain exact and contain the original 62 cards. All ten general gates and 19 Node tests pass locally. Batch19 and batch40 pass; the same 36 historical translation batches remain red before E3. See `docs/en-translation-batch40.md` and `data/en-batch40-2026-11-17/E2_REPORT.md`. E3 has not started.

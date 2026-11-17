@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-boots-da-nu",
+      "en_slug": "how-to-style-womens-boots",
+      "source_text_segments": 140,
+      "en_words": 1991,
+      "headings": 15,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "how-to-style-womens-boots: source hash"
+  ]
+}

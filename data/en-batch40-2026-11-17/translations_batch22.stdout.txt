@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "vi_slug": "alt-fashion-la-gi-va-tai-sao-no-quan-trong",
+      "en_slug": "what-is-alt-style",
+      "source_text_segments": 145,
+      "en_words": 1801,
+      "headings": 13,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "cach-phoi-do-den-khong-nham-chan",
+      "en_slug": "black-outfits-women-texture-proportions",
+      "source_text_segments": 147,
+      "en_words": 1721,
+      "headings": 18,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "y2k-dark-aesthetic-khac-gi-y2k-thuong",
+      "en_slug": "dark-y2k-vs-y2k",
+      "source_text_segments": 178,
+      "en_words": 2046,
+      "headings": 22,
+      "images": 5,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "tu-do-alt-fashion-1-trieu",
+      "en_slug": "alternative-wardrobe-vnd-one-million",
+      "source_text_segments": 164,
+      "en_words": 1730,
+      "headings": 15,
+      "images": 4,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "kieu-toc-punk-nu",
+      "en_slug": "punk-hairstyles-women",
+      "source_text_segments": 170,
+      "en_words": 1697,
+      "headings": 21,
+      "images": 8,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "that-lung-dinh-tan-phoi-do",
+      "en_slug": "how-to-style-studded-belts",
+      "source_text_segments": 132,
+      "en_words": 1621,
+      "headings": 30,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-short-nu",
+      "en_slug": "shorts-outfits-women",
+      "source_text_segments": 135,
+      "en_words": 1547,
+      "headings": 18,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "y2k-la-gi-phong-cach-y2k-nu",
+      "en_slug": "what-is-y2k-fashion",
+      "source_text_segments": 130,
+      "en_words": 1494,
+      "headings": 18,
+      "images": 5,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cach-bao-quan-do-da-nu",
+      "en_slug": "leather-jacket-clothing-care",
+      "source_text_segments": 88,
+      "en_words": 1361,
+      "headings": 11,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "nhuom-toc-dark-aesthetic",
+      "en_slug": "dark-aesthetic-hair-color",
+      "source_text_segments": 89,
+      "en_words": 1645,
+      "headings": 10,
+      "images": 8,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "what-is-alt-style: source hash",
+    "black-outfits-women-texture-proportions: source hash",
+    "dark-y2k-vs-y2k: source hash",
+    "alternative-wardrobe-vnd-one-million: source hash",
+    "punk-hairstyles-women: source hash",
+    "how-to-style-studded-belts: source hash",
+    "shorts-outfits-women: source hash",
+    "what-is-y2k-fashion: source hash",
+    "leather-jacket-clothing-care: source hash",
+    "dark-aesthetic-hair-color: source hash"
+  ]
+}
