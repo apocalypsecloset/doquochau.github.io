@@ -7,11 +7,12 @@ from bs4 import BeautifulSoup
 from blog_repair_release import ROOT,BASE,D,CSS,digest,repair,original,mapping
 from translation_inventory import catalog_urls
 from fix_schema_consistency import faq_pairs
+from link_fix_release import historical
 errors=[];counts=Counter();manifest=json.loads((D/'reviewed-html.json').read_text())
 def check(ok,msg):
  if not ok:errors.append(msg)
 for path,row in manifest.items():
- raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
+ raw=historical(path,(ROOT/path).read_text());old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
  check(digest(old)==row['before'] and digest(raw)==row['after'],path+': exact release hashes')
  expected,changes=repair(path,old)
  check(raw==expected and changes==row['changes'],path+': only deterministic scoped edits')

@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "vi_slug": "giay-mary-jane-la-gi",
+      "en_slug": "what-are-mary-jane-shoes",
+      "source_text_segments": 243,
+      "en_words": 2404,
+      "headings": 22,
+      "images": 8,
+      "tables": 4,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "leg-warmers-la-gi-cach-phoi",
+      "en_slug": "how-to-style-leg-warmers",
+      "source_text_segments": 145,
+      "en_words": 1673,
+      "headings": 30,
+      "images": 5,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "coquette-la-gi-dark-coquette",
+      "en_slug": "coquette-vs-dark-coquette",
+      "source_text_segments": 179,
+      "en_words": 2001,
+      "headings": 19,
+      "images": 10,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "indie-sleaze-la-gi",
+      "en_slug": "what-is-indie-sleaze",
+      "source_text_segments": 172,
+      "en_words": 1889,
+      "headings": 18,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "techwear-la-gi",
+      "en_slug": "what-is-techwear",
+      "source_text_segments": 176,
+      "en_words": 1627,
+      "headings": 23,
+      "images": 3,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cyber-y2k-la-gi",
+      "en_slug": "cyber-y2k-style-outfits",
+      "source_text_segments": 163,
+      "en_words": 1762,
+      "headings": 28,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "visual-kei-la-gi",
+      "en_slug": "what-is-visual-kei",
+      "source_text_segments": 161,
+      "en_words": 1924,
+      "headings": 36,
+      "images": 5,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "devil-core",
+      "en_slug": "devilcore-aesthetic-outfits",
+      "source_text_segments": 135,
+      "en_words": 1666,
+      "headings": 22,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "morute",
+      "en_slug": "morute-aesthetic-outfits",
+      "source_text_segments": 135,
+      "en_words": 1639,
+      "headings": 24,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "gurokawa",
+      "en_slug": "gurokawa-creepy-cute-outfits",
+      "source_text_segments": 178,
+      "en_words": 1739,
+      "headings": 25,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "what-are-mary-jane-shoes: source hash",
+    "how-to-style-leg-warmers: source hash",
+    "coquette-vs-dark-coquette: source hash",
+    "what-is-indie-sleaze: source hash",
+    "what-is-techwear: source hash",
+    "cyber-y2k-style-outfits: source hash",
+    "what-is-visual-kei: source hash",
+    "devilcore-aesthetic-outfits: source hash",
+    "morute-aesthetic-outfits: source hash",
+    "gurokawa-creepy-cute-outfits: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "results": [
+    {
+      "vi_slug": "office-siren-la-gi",
+      "en_slug": "office-siren-style-guide",
+      "source_text_segments": 185,
+      "en_words": 2578,
+      "headings": 26,
+      "images": 8,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "avant-garde-fashion-la-gi",
+      "en_slug": "avant-garde-fashion-guide",
+      "source_text_segments": 126,
+      "en_words": 1808,
+      "headings": 24,
+      "images": 7,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "rockabilly",
+      "en_slug": "rockabilly-style-guide",
+      "source_text_segments": 166,
+      "en_words": 2079,
+      "headings": 26,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "light-academia-la-gi",
+      "en_slug": "light-academia-style-guide",
+      "source_text_segments": 150,
+      "en_words": 1764,
+      "headings": 24,
+      "images": 6,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "fairycore-la-gi",
+      "en_slug": "fairycore-style-guide",
+      "source_text_segments": 170,
+      "en_words": 2034,
+      "headings": 43,
+      "images": 5,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "angelcore-la-gi",
+      "en_slug": "angelcore-style-guide",
+      "source_text_segments": 139,
+      "en_words": 1811,
+      "headings": 27,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "mermaidcore-la-gi",
+      "en_slug": "mermaidcore-style-guide",
+      "source_text_segments": 152,
+      "en_words": 1861,
+      "headings": 32,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "mori-kei",
+      "en_slug": "mori-kei-style-guide",
+      "source_text_segments": 144,
+      "en_words": 1819,
+      "headings": 23,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "ouji-fashion",
+      "en_slug": "ouji-fashion-guide",
+      "source_text_segments": 160,
+      "en_words": 1965,
+      "headings": 22,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "cottagecore-la-gi",
+      "en_slug": "cottagecore-style-guide",
+      "source_text_segments": 152,
+      "en_words": 1918,
+      "headings": 16,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    }
+  ],
+  "errors": [
+    "office-siren-style-guide: source hash",
+    "avant-garde-fashion-guide: source hash",
+    "avant-garde-fashion-guide: figcaption parity 6/5",
+    "rockabilly-style-guide: source hash",
+    "light-academia-style-guide: source hash",
+    "fairycore-style-guide: source hash",
+    "angelcore-style-guide: source hash",
+    "mermaidcore-style-guide: source hash",
+    "mori-kei-style-guide: source hash",
+    "ouji-fashion-guide: source hash",
+    "cottagecore-style-guide: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}

@@ -5,11 +5,12 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from audit_metadata import approved
 from reviewed_maintenance import predecessor
+from link_fix_release import historical,added_successor
 ROOT=Path(__file__).resolve().parents[1];BASELINE='490cb5f';D=ROOT/'docs/audit-followup-2026-11-15';errors=[];checked=0
 before=json.loads((D/'before.json').read_text());duplicates={r['page']:r['image'] for r in json.loads((D/'duplicate-images.json').read_text())}
 paths=set(subprocess.check_output(['git','diff','--name-only',BASELINE],cwd=ROOT,text=True).splitlines())
 def body(raw,path,old=False):
- if not old:raw=predecessor(path,raw)
+ if not old:raw=predecessor(path,historical(path,raw))
  raw=raw[raw.index('<body'):]
  raw=re.sub(r'<script\b[^>]*\bsrc=[\"\x27]https://static\.cloudflareinsights\.com/[^>]*></script>','',raw,flags=re.I)
  raw=raw.replace('href="/en/"','href="/"').replace('https://twitter.com/intent/tweet','https://x.com/intent/post')
@@ -23,7 +24,9 @@ def body(raw,path,old=False):
 for path in sorted(paths):
  if not path.endswith('.html'):continue
  if path in POLICIES and path not in before:continue
- raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASELINE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
+ raw=(ROOT/path).read_text()
+ if added_successor(path,raw):continue # Independent exact new-hub contract: qa_link_fix.py.
+ old=subprocess.check_output(['git','show',BASELINE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
  if body(raw,path)!=body(old,path,True):errors.append(path+': body changed outside exact permitted repairs')
  for selector,attr in [('link[rel=canonical]','href'),('meta[name=robots]','content')]:
   if [n.get(attr) for n in s.select(selector)]!=[n.get(attr) for n in o.select(selector)]:errors.append(path+': changed '+selector)

@@ -3,6 +3,7 @@ import hashlib,json,subprocess,sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 from storefront_ux_release import BASE,MANIFEST
+from link_fix_release import historical,added_successor
 ROOT=Path(__file__).resolve().parents[1];errors=[]
 def check(ok,msg):
  if not ok:errors.append(msg)
@@ -35,6 +36,8 @@ changed=subprocess.check_output(['git','diff','--name-only',BASE],cwd=ROOT,text=
 from blog_repair_release import original as blog_original
 for p in changed:
  if p.startswith(('blog/','en/blog/')):
-  current=(ROOT/p).read_text();expected=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT,text=True)
+  current=(ROOT/p).read_text()
+  if added_successor(p,current):continue # Exact new-hub contract is enforced by qa_link_fix.py.
+  current=historical(p,current);expected=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT,text=True)
   check(blog_original(p,current)==expected,p+': article changed beyond reviewed bilingual repairs')
 print(json.dumps({'ui_pages':len(manifest),'errors':errors},indent=2));sys.exit(bool(errors))

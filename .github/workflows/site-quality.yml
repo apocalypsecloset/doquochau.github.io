@@ -19,6 +19,10 @@ jobs:
         with:
           node-version: '24'
       - run: python -m pip install -r scripts/requirements-en.txt
+      - name: Exact VI link-fix successors and unreleased EN source locks
+        run: python scripts/qa_link_fix.py
+      - name: Vietnamese internal links
+        run: python tools/internal_link_audit.py --root .
       - run: npm install --prefix /tmp/ac-shop-tests jsdom@31.0.0 --no-audit --no-fund
       - run: node --test scripts/test_shop.cjs scripts/test_journal.cjs scripts/test_privacy.cjs
         env:
@@ -36,13 +40,27 @@ jobs:
         run: python scripts/qa_audit_followup.py
       - name: R2 image SEO and sitemap coverage
         run: python scripts/qa_r2_image_seo.py
-      - name: Full translated article and hub gates
+  english-translations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements-en.txt
+      - name: Full translated article and hub gates (no early successor release)
         run: |
           python - <<'PY'
           import subprocess,sys
           from pathlib import Path
+          failed=[]
           for manifest in sorted(Path('data/en-translations').glob('batch*.json')):
               if manifest.stem == 'batch05b':
                   continue
-              subprocess.run([sys.executable,'scripts/qa_en_translations.py',manifest.stem],check=True)
+              result=subprocess.run([sys.executable,'scripts/qa_en_translations.py',manifest.stem])
+              if result.returncode: failed.append(manifest.stem)
+          print('FAILED EN BATCHES:',len(failed),', '.join(failed))
+          sys.exit(bool(failed))
           PY

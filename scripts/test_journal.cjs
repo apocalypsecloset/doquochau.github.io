@@ -32,8 +32,13 @@ test('Vietnamese journal reconstructs every original search string and retains l
  try{
   const w=dom.window,d=w.document;w.scrollTo=()=>{};
   const code=[...d.querySelectorAll('script:not([src])')].find(s=>s.textContent.includes('const BATCH = 12;')).textContent;
-  w.eval(code);const cards=[...d.querySelectorAll('#post-grid a.post-card')];assert.equal(cards.length,expected.size);
-  assert.ok(cards.every(c=>c.dataset.search===expected.get(c.getAttribute('href'))));
+  w.eval(code);const cards=[...d.querySelectorAll('#post-grid a.post-card')];
+  const added=['/blog/phoi-mau-quan-ao-nu.html','/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html','/blog/cach-cham-soc-do-nu.html','/blog/chon-toc-va-makeup-theo-trang-phuc.html'];
+  assert.equal(expected.size,423);assert.equal(cards.length,427);
+  assert.deepEqual(cards.filter(c=>!expected.has(c.getAttribute('href'))).map(c=>c.getAttribute('href')).sort(),[...added].sort());
+  const originalCards=cards.filter(c=>expected.has(c.getAttribute('href')));assert.equal(originalCards.length,expected.size);
+  assert.equal(new Set(cards.map(c=>c.getAttribute('href'))).size,427);
+  assert.ok(originalCards.every(c=>c.dataset.search===expected.get(c.getAttribute('href'))));
   const visible=()=>cards.filter(c=>!c.hidden);assert.equal(visible().length,12);d.getElementById('load-more-btn').click();assert.equal(visible().length,18);
   const input=d.getElementById('post-search');input.value='polyester';input.dispatchEvent(new w.Event('input'));assert.ok(visible().length>0);assert.ok(visible().every(c=>c.dataset.search.includes('polyester')));
   input.value='';input.dispatchEvent(new w.Event('input'));assert.equal(visible().length,12);

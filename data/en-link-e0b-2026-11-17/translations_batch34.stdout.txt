@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "vi_slug": "set-do-nu-ca-tinh-shopee",
+      "en_slug": "alternative-outfit-sets-shopee",
+      "source_text_segments": 148,
+      "en_words": 1828,
+      "headings": 16,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "outfit-nu-ca-tinh-duoi-500k",
+      "en_slug": "alternative-outfits-vnd-500000",
+      "source_text_segments": 183,
+      "en_words": 1807,
+      "headings": 16,
+      "images": 7,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quan-cargo-nu-mua-o-dau",
+      "en_slug": "buying-womens-cargo-pants",
+      "source_text_segments": 158,
+      "en_words": 1693,
+      "headings": 13,
+      "images": 7,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "boots-de-cao-nu-duoi-500k",
+      "en_slug": "platform-boots-under-vnd-500000",
+      "source_text_segments": 186,
+      "en_words": 1858,
+      "headings": 14,
+      "images": 8,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phu-kien-egirl-mua-o-dau",
+      "en_slug": "buying-egirl-accessories",
+      "source_text_segments": 182,
+      "en_words": 1742,
+      "headings": 17,
+      "images": 4,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "do-goth-nu-mua-o-dau",
+      "en_slug": "buying-goth-clothing-women",
+      "source_text_segments": 179,
+      "en_words": 1734,
+      "headings": 10,
+      "images": 3,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "outfit-egirl-duoi-500k",
+      "en_slug": "egirl-outfits-vnd-500000",
+      "source_text_segments": 186,
+      "en_words": 1807,
+      "headings": 18,
+      "images": 5,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "set-baddie-duoi-700k",
+      "en_slug": "baddie-outfits-vnd-700000",
+      "source_text_segments": 177,
+      "en_words": 1931,
+      "headings": 22,
+      "images": 3,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "ao-corset-nu-mua-o-dau",
+      "en_slug": "buying-corsets-corset-tops",
+      "source_text_segments": 142,
+      "en_words": 1585,
+      "headings": 12,
+      "images": 8,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "ao-khoac-da-nu-mua-o-dau",
+      "en_slug": "buying-womens-leather-jackets",
+      "source_text_segments": 200,
+      "en_words": 1861,
+      "headings": 14,
+      "images": 5,
+      "tables": 3,
+      "faqs": 5
+    }
+  ],
+  "errors": [
+    "alternative-outfit-sets-shopee: source hash",
+    "alternative-outfits-vnd-500000: source hash",
+    "buying-womens-cargo-pants: source hash",
+    "platform-boots-under-vnd-500000: source hash",
+    "buying-egirl-accessories: source hash",
+    "buying-goth-clothing-women: source hash",
+    "egirl-outfits-vnd-500000: source hash",
+    "baddie-outfits-vnd-700000: source hash",
+    "buying-corsets-corset-tops: source hash",
+    "buying-womens-leather-jackets: source hash"
+  ]
+}

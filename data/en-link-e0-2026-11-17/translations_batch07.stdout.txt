@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "vi_slug": "punk-makeup-dark-aesthetic",
+      "en_slug": "punk-makeup-dark-aesthetic-guide",
+      "source_text_segments": 166,
+      "en_words": 1980,
+      "headings": 21,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    }
+  ],
+  "errors": [
+    "punk-makeup-dark-aesthetic-guide: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}

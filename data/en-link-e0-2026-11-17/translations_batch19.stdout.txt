@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "vi_slug": "minimalist-style-la-gi",
+      "en_slug": "what-is-minimalist-fashion",
+      "source_text_segments": 130,
+      "en_words": 2064,
+      "headings": 16,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    }
+  ],
+  "errors": [
+    "Complete VI sitemap inventory"
+  ]
+}

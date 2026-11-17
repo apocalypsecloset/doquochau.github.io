@@ -21,7 +21,8 @@ def publication_rows():
 
 def sitemap_vi_urls():
     """Require all original pairs and every explicitly approved publication."""
-    return {r['vi_url'] for r in rows()} | {r['vi_url'] for r in publication_rows()}
+    from link_fix_release import added_vi_urls
+    return {r['vi_url'] for r in rows()} | {r['vi_url'] for r in publication_rows()} | added_vi_urls()
 
 def catalog_urls(lang):
     """Every published translation plus the two original English-only articles."""
