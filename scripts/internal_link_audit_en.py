@@ -8,42 +8,18 @@ Cluster of an EN page = cluster of its VI counterpart (from hreflang vi).
 import argparse, collections, csv, glob, os, re, sys
 from urllib.parse import unquote, urljoin, urlparse
 from bs4 import BeautifulSoup
+from internal_link_audit import RULES as VI_RULES, HUBS as CURRENT_VI_HUBS, cluster as vi_cluster
 
 DOMAIN = 'apocalypsecloset.com'
-# cluster -> VI hub slug (EN hub is found through hreflang). Keep in sync with the VI audit script.
-VI_HUBS = {
-    'Aesthetic/Style': 'aesthetic-dictionary', 'Ao': 'phoi-do-theo-ao-nu', 'Quan': 'phoi-do-theo-quan-nu',
-    'Vay-dam': 'phoi-do-theo-chan-vay-vay-nu', 'Giay': 'phoi-do-theo-giay-nu',
-    'Phu-kien': 'phu-kien-thoi-trang-nu-ca-tinh', 'Vai': 'cac-loai-vai',
-    'Kinh': 'cach-chon-kinh-phu-hop-voi-khuon-mat-nu',
-    'Phoi-mau': 'phoi-mau-quan-ao-nu',
-    'Dia-diem-dip': 'chon-trang-phuc-nu-theo-dia-diem-va-dip',
-    'Cham-soc': 'cach-cham-soc-do-nu',
-    'Toc-lam-dep': 'chon-toc-va-makeup-theo-trang-phuc',
-    # add the 4 new hubs here once they have EN pages: 'Phoi-mau': '...', 'Dia-diem-dip': '...',
-    # 'Cham-soc': '...', 'Toc-lam-dep': '...'
-}
+# User-approved classification alignment. EN hubs are found through hreflang;
+# use the same reviewed topical map as VI, including Outfit-core.
+VI_HUBS = dict(CURRENT_VI_HUBS)
 STYLE_SUBHUBS = ['goth', 'punk-grunge', 'egirl', 'dark-feminine', 'badgirl', 'baddie-streetwear']
-RULES = [
- ('Cham-soc', r'^(cach-bao-quan|cach-giat|cach-khu-mui|cach-lam-mem|cach-gap|cach-buoc-day|cach-len-lai|cach-so-vin|cach-xan-tay|mieng-lot|giay-loi-nuoc)'),
- ('Phoi-mau', r'(phoi-quan-mau-gi|phoi-ao-mau-gi|phoi-voi-mau-gi|ket-hop-voi-mau-gi|mac-voi-quan-mau-gi|-la-mau-gi|^mau-|phoi-voi-ao-gi$|ket-hop-voi-ao-mau-gi|banh-xe-mau-sac|nhung-mau-dam)'),
- ('Vai', r'^(vai-|cac-loai-vai|chat-vai|polyester|chiffon|da-lon|da-ngam|tie-dye|trouser-la)'),
- ('Kinh', r'(kinh-|gong-|chon-kinh)'),
- ('Phu-kien', r'(bong-tai|nhan-|vong-tay|day-chuyen|choker|khuyen-tai|khan-quang|that-khan|that-lung|mu-|tui-|ao-ba-lo|cravat|arm-warmers|leg-warmers|phu-kien|cach-chon-tui|fishnet)'),
- ('Toc-lam-dep', r'(kieu-toc|nhuom-toc|butterfly-haircut|hime-cut|goth-nails|punk-makeup)'),
- ('Dia-diem-dip', r'(^di-|outfit-di-|outfit-san-bay|outfit-tet|ao-dai-tet|chup-anh-ao-dai|mac-ao-dai|outfit-mua-dong|outfit-nu-ca-tinh-di-concert|phoi-do-nu-ca-tinh-di-choi|phoi-do-nu-ca-tinh-mua-he|badgirl-outfit-di-cafe|outfit-di-choi-dem|vay-di-du|rave-outfits|mac-do-den-mua-he)'),
- ('Giay', r'(^giay-|^dep-|boots|platform-shoes|ballet-flats|combat-boots)'),
- ('Quan', r'(^quan-|phoi-do-voi-quan|phoi-do-theo-quan|denim-on-denim)'),
- ('Vay-dam', r'(^vay-|^dam-|chan-vay|phoi-do-voi-vay|dress-la-gi|slip-dress|babydoll|bodycon|qipao|ao-dai-tim)'),
- ('Ao', r'(^ao-|phoi-do-voi-ao|phoi-do-theo-ao|blouse|outerwear|croptop|bo-vest|harrington|cuban-shirt|form-oversize|pyjama|phoi-ao-co-lo|corset-top)'),
- ('Outfit-core', r'(phoi-do-theo-item|outfit-la-gi|ootd-la-gi|moodboard|cach-chup-anh-ootd|capsule-wardrobe|layering|^set-|tu-do-alt|duoi-500k|cho-nguoi|nu-ca-tinh-cho|cach-phoi-do-den|cach-chon-size|mua-sam-alt|local-brand|auth-la-gi|like-auth|sold-out|boutique|unisex|dress-code)'),
-]
+# The fourteen gate implementations and thresholds below are unchanged.
+RULES = list(VI_RULES)
+
 def cluster(slug):
-    if slug == 'phoi-do-theo-giay-nu': return 'Giay'
-    if slug == 'phoi-do-theo-item': return 'Outfit-core'
-    for n, r in RULES:
-        if re.search(r, slug): return n
-    return 'Aesthetic/Style'
+    return vi_cluster(slug)
 
 MODULES = {'ac-reading-path','ac-locale-link','ac-sources','article-nav','article-tags','share-links','related-outfit-grid',
     'ac-pinterest-links','toc','article-toc','micro-cta','ac-topic-route','ac-parent-links','buy-filter','hub-locale','ac-mini-links'}
