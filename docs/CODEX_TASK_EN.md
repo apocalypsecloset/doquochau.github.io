@@ -64,3 +64,7 @@ E1 rồi E2; chưa làm E3 khi chưa được duyệt. Batch40 dùng các slug `
 Người dùng đã nói “duyệt E3, làm tiếp”. E3 đã hoàn tất tại commit nội dung `59bf0e34903667bb233882195ffe007210886501`: 644 link ngữ cảnh, 203 card và 27 đoạn đồng bộ link có sẵn; 414 file EN, 416 TSV bổ sung, 210 successor nguồn có điều kiện. Hash và TSV/manifest cũ giữ nguyên. Hai job Website quality cùng 38 batch dịch EN đều PASS tại run `44110748229`. Báo cáo: `data/en-link-e3-2026-11-17/E3_REPORT.md` và `CI_REPORT.json`.
 
 Chưa làm E4/E5 hoặc merge. Audit còn E9=31, E11=90, E12=51, E13=1; chờ chỉ dẫn tiếp theo của người dùng trước khi triển khai pha mới.
+
+## Cập nhật E4 — 2026-11-17
+
+Người dùng đã nói “tiếp E4”. E4 hoàn tất sửa 187 file EN với 215 TSV bổ sung: gỡ 100 thẻ link dư, sửa 25 đoạn có thuật ngữ xuất bản, đổi 176 anchor và thêm 3 link theo ngữ cảnh. EN đạt 14/14 gate, VI đạt 11/11; parity ngữ cảnh 100%. Toàn bộ hash cũ được giữ nguyên; manifest E4 chỉ bổ sung successor chính xác. Báo cáo tại `data/en-link-e4-2026-11-17/E4_REPORT.md`. E4 là pha cuối được định nghĩa trong tài liệu này; chưa merge.

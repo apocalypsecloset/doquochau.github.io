@@ -1,0 +1,32 @@
+==============================================================================
+EN: 425 bài + 17 hub | VI: 440 trang | ghép được VI↔EN: 440
+Link ngữ cảnh tới bài EN khác/bài: min 2, TB 6.1, max 12
+==============================================================================
+[PASS] E1 link gãy
+[PASS] E2 bài EN <2 link ngữ cảnh tới bài EN khác
+[PASS] E3 bài EN không có link ngữ cảnh vào từ bài EN khác
+[PASS] E4 hub EN trỏ đủ xuống con + con trỏ lên hub
+[PASS] E5 bài EN không có link ngang cùng cụm
+[PASS] E6 parity với VI: EN phải có ≥80% link tới bản EN của các đích VI
+[PASS] E7 link ngữ cảnh EN còn trỏ sang bản VI dù đã có bản EN
+[PASS] E8 anchor EN chứa ký tự tiếng Việt (ngoài tên riêng)
+[FAIL] E9 chữ hub/pillar/cornerstone trong câu có link  (27)
+        - bong-tai-bac: "hub" in: Online, request worn images and measurements without treating the model's ear as
+        - boutique-la-gi: "hub" in: These assess a store's information quality. Clear limits may help more than blan
+        - cach-buoc-day-giay-the-thao: "hub" in: When buying replacements, check dimensions, material, tip photos and return term
+        - cach-gap-quan-ao: "hub" in: Before buying drawer organizers, measure the folded garments and the actual draw
+        - chan-vay-lua-phoi-voi-ao-gi: "hub" in: With light or patterned skirts, keep the top simple and repeat one skirt color i
+        - cravat-la-gi: "hub" in: Before ordering, ask for length, width at the broad end and material information
+[PASS] E10 anchor generic/rỗng
+[PASS] E11 một đích bị link >1 lần trong cùng bài
+[FAIL] E12 cùng anchor lặp >5 lần cho cùng 1 đích  (43)
+        - 26x "online sizing guide" -> alt-fashion-size-guide-online
+        - 17x "aesthetic dictionary" -> fashion-aesthetic-directory
+        - 15x "layering outfits for women" -> alternative-layering-outfits-women
+        - 15x "layering women’s outfits" -> alternative-layering-outfits-women
+        - 14x "streetwear" -> what-is-streetwear
+        - 13x "women's layering guide" -> alternative-layering-outfits-women
+[PASS] E13 bài EN có >12 link tới bài EN khác
+[PASS] E14 bài EN không ghép được bản VI (ngoài 2 bài EN gốc đã biết)
+==============================================================================
+KẾT QUẢ: 2 gate chưa đạt

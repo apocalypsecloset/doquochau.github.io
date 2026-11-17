@@ -1,9 +1,10 @@
-"""Validate actual E3 HTML/TSV changes before any historical successor view is used."""
+"""Validate E3 HTML/TSVs, recognizing only exact later successors before original checks."""
 import collections,csv,io,json,re,subprocess,sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 import internal_link_audit_en as A
 from en_link_fix_release import ROOT,manifest,digest,predecessors,english_previous,source_previous,qualified
+from en_e4_release import previous as e4_previous
 M=manifest();assert M and M['phase']=='E3'
 assert M['baseline']=='a0272175089f56498bfecc40961a21baeb46fcf2'
 assert M['source_baseline']=='9e16c2012f417cf5e4634b1c771a2c5d773e1ee8'
@@ -12,6 +13,9 @@ def check(ok,message):
  if not ok:errors.append(message)
 def text(raw):return BeautifulSoup(raw,'html.parser').get_text(' ',strip=True)
 old=predecessors();en=A.parse(str(ROOT),'en/blog');vi=A.parse(str(ROOT),'blog')
+# Recheck the immutable E3 version only when the actual E4 successor is pinned;
+# qa_en_link_e4 independently verifies the current HTML before this CI step.
+en={p:BeautifulSoup(e4_previous(p,(ROOT/p).read_text(encoding='utf-8')),'lxml') for p in en}
 en2vi={p:A.hreflang(s,'vi') for p,s in en.items()};v2e={v:p for p,v in en2vi.items() if v in vi}
 ep,ea=A.extract(en,['article.editorial','main.en-hub','article']);vp,va=A.extract(vi,['article.article-content'])
 vtext={p:s.get_text(' ',strip=True) for p,s in vi.items()}
@@ -19,7 +23,7 @@ all_tables={p.relative_to(ROOT).as_posix() for p in (ROOT/'data/en-translations/
 check(all_tables==set(M['tables']),'All supplemental TSVs explicitly pinned')
 context_ids=[];nav_cards=0;sync_count=0
 for path,row in M['files'].items():
- raw=(ROOT/path).read_text(encoding='utf-8');before=old[M['baseline']+':'+path]
+ raw=e4_previous(path,(ROOT/path).read_text(encoding='utf-8'));before=old[M['baseline']+':'+path]
  check(digest(before)==row['before_sha256'],path+': exact original HTML')
  check(digest(raw)==row['after_sha256'] and qualified(path,raw),path+': current HTML and paired TSV/VI hashes')
  check(english_previous(path,raw)==before,path+': exact EN successor recognized')

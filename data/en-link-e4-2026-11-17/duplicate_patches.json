@@ -1,0 +1,758 @@
+[
+  {
+    "source": "en/blog/1930s-fashion-silhouette-guide.html",
+    "vi_source": "blog/1930s-fashion.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/dior-new-look-1947-silhouette.html\" hreflang=\"en\">New Look 1947</a> is not simply a more luxurious 1930s silhouette. It changes the relationship between a narrow waist and full skirt. A fluid bias slip is not automatically New Look; a very full calf-length skirt and tightly defined waist do not represent the typical 1930s line.</p>",
+    "en_after": "<p>New Look 1947 is not simply a more luxurious 1930s silhouette. It changes the relationship between a narrow waist and full skirt. A fluid bias slip is not automatically New Look; a very full calf-length skirt and tightly defined waist do not represent the typical 1930s line.</p>",
+    "removed_ids": "[8]",
+    "tsv": "data/en-translations/internal-links/e4/1930s-fashion-silhouette-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/acubi-style-guide.html",
+    "vi_source": "blog/acubi-style-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>The tank edge, cardigan neckline, and fastening line create several boundaries without requiring thick layers. Inspect the actual knit or jersey and how it drapes. The <a href=\"/en/blog/alternative-layering-outfits-women.html\" hreflang=\"en\">women's layering guide</a> explains how visible gaps and hems organize combinations.</p>",
+    "en_after": "<p>The tank edge, cardigan neckline, and fastening line create several boundaries without requiring thick layers. Inspect the actual knit or jersey and how it drapes. The women's layering guide explains how visible gaps and hems organize combinations.</p>",
+    "removed_ids": "[20]",
+    "tsv": "data/en-translations/internal-links/e4/acubi-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/alternative-layering-outfits-women.html",
+    "vi_source": "blog/phoi-do-layering-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For a mainly black wardrobe, layering also helps prevent flatness. Read <a href=\"/en/blog/black-outfits-women-texture-proportions.html\" hreflang=\"en\">how to style all-black outfits</a> for a closer look at surface contrast, proportions, and accessories in all-black outfits.</p>",
+    "en_after": "<p>For a mainly black wardrobe, layering also helps prevent flatness. Read how to style all-black outfits for a closer look at surface contrast, proportions, and accessories in all-black outfits.</p>",
+    "removed_ids": "[154]",
+    "tsv": "data/en-translations/internal-links/e4/alternative-layering-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/alternative-outfits-vnd-500000.html",
+    "vi_source": "blog/outfit-nu-ca-tinh-duoi-500k.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>The <a href=\"/en/blog/egirl-outfits-vnd-500000.html\" hreflang=\"en\">E-Girl outfits below VND 500,000</a> covers that style’s purchasing priorities separately.</p>",
+    "en_after": "<p>The E-Girl outfits below VND 500,000 covers that style’s purchasing priorities separately.</p>",
+    "removed_ids": "[210]",
+    "tsv": "data/en-translations/internal-links/e4/alternative-outfits-vnd-500000.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/alternative-wardrobe-vnd-one-million.html",
+    "vi_source": "blog/tu-do-alt-fashion-1-trieu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This approach reduces impulse purchases and supplies real information about fit, preferences, and daily use. For planning beyond this first budget, read <a href=\"/en/blog/build-a-dark-aesthetic-wardrobe.html\" hreflang=\"en\">Building a Dark Aesthetic Wardrobe</a> for the longer-term stage.</p>",
+    "en_after": "<p>This approach reduces impulse purchases and supplies real information about fit, preferences, and daily use. For planning beyond this first budget, read Building a Dark Aesthetic Wardrobe for the longer-term stage.</p>",
+    "removed_ids": "[254]",
+    "tsv": "data/en-translations/internal-links/e4/alternative-wardrobe-vnd-one-million.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baddie-outfits-vnd-700000.html",
+    "vi_source": "blog/set-baddie-duoi-700k.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This article focuses on <strong>Baddie outfit below VND 700,000</strong>. For several styles at a lower budget, see <a href=\"/en/blog/alternative-outfits-vnd-500000.html\" hreflang=\"en\">alternative outfits below VND 500,000</a>; for evaluating a marketplace bundle, see <a href=\"/en/blog/alternative-outfit-sets-shopee.html\" hreflang=\"en\">alternative outfit sets on Shopee</a>.</p>",
+    "en_after": "<p>This article focuses on <strong>Baddie outfit below VND 700,000</strong>. For several styles at a lower budget, see alternative outfits below VND 500,000; for evaluating a marketplace bundle, see <a href=\"/en/blog/alternative-outfit-sets-shopee.html\" hreflang=\"en\">alternative outfit sets on Shopee</a>.</p>",
+    "removed_ids": "[506]",
+    "tsv": "data/en-translations/internal-links/e4/baddie-outfits-vnd-700000.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baddie-outfits-vnd-700000.html",
+    "vi_source": "blog/set-baddie-duoi-700k.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This differs from <a href=\"/en/blog/alternative-outfits-vnd-500000.html\" hreflang=\"en\">alternative outfits below VND 500,000</a>: that guide spans several styles, while this one focuses on <strong>Baddie below VND 700,000</strong> and the purchase creating its main silhouette.</p>",
+    "en_after": "<p>This differs from alternative outfits below VND 500,000: that guide spans several styles, while this one focuses on <strong>Baddie below VND 700,000</strong> and the purchase creating its main silhouette.</p>",
+    "removed_ids": "[501]",
+    "tsv": "data/en-translations/internal-links/e4/baddie-outfits-vnd-700000.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baggy-pants-outfits-women.html",
+    "vi_source": "blog/quan-baggy-phoi-voi-ao-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For shorter wearers, leg length and crotch placement deserve their own assessment rather than a top-only solution. Read <a href=\"/en/blog/baggy-pants-petite-fit-guide.html\" hreflang=\"en\">Baggy Pants for Shorter Wearers: Length and Fit</a> for that specialist question. This page keeps the broader outfit focus without assigning every body the same formula.</p>",
+    "en_after": "<p>For shorter wearers, leg length and crotch placement deserve their own assessment rather than a top-only solution. Read Baggy Pants for Shorter Wearers: Length and Fit for that specialist question. This page keeps the broader outfit focus without assigning every body the same formula.</p>",
+    "removed_ids": "[551]",
+    "tsv": "data/en-translations/internal-links/e4/baggy-pants-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baggy-pants-outfits-women.html",
+    "vi_source": "blog/quan-baggy-phoi-voi-ao-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If the pair is roomy through the entire leg, some styling questions overlap with <a href=\"/en/blog/wide-leg-jeans-outfits-dark-y2k.html\" hreflang=\"en\">wide-leg jeans</a>. Keep the terms distinct: baggy emphasizes room and a relaxed shape, while wide-leg emphasizes leg width; a design can combine them. The article on <a href=\"/en/blog/what-are-baggy-pants.html\" hreflang=\"en\">what baggy pants are</a> explains construction in more detail.</p>",
+    "en_after": "<p>If the pair is roomy through the entire leg, some styling questions overlap with <a href=\"/en/blog/wide-leg-jeans-outfits-dark-y2k.html\" hreflang=\"en\">wide-leg jeans</a>. Keep the terms distinct: baggy emphasizes room and a relaxed shape, while wide-leg emphasizes leg width; a design can combine them. The article on what baggy pants are explains construction in more detail.</p>",
+    "removed_ids": "[549]",
+    "tsv": "data/en-translations/internal-links/e4/baggy-pants-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baggy-pants-petite-fit-guide.html",
+    "vi_source": "blog/quan-baggy-cho-nguoi-thap.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This article complements the guide to <a href=\"/en/blog/baggy-pants-outfits-women.html\" hreflang=\"en\">what to wear with baggy pants</a>. On a shorter frame, check the <strong>horizontal breaks</strong> : a hidden waistband, mid-hip top hem and stacked ankle can divide the lower silhouette several times.</p>",
+    "en_after": "<p>This article complements the guide to what to wear with baggy pants. On a shorter frame, check the <strong>horizontal breaks</strong> : a hidden waistband, mid-hip top hem and stacked ankle can divide the lower silhouette several times.</p>",
+    "removed_ids": "[563]",
+    "tsv": "data/en-translations/internal-links/e4/baggy-pants-petite-fit-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/baggy-pants-petite-fit-guide.html",
+    "vi_source": "blog/quan-baggy-cho-nguoi-thap.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Before buying, ask where the waistband, crotch, pockets, widest area and hem will sit, rather than whether your height permits the garment. The guide to <a href=\"/en/blog/what-are-baggy-pants.html\" hreflang=\"en\">what baggy pants are</a> explains the basic construction; this article addresses fit decisions for shorter frames. Once fit is established, use the <a href=\"/en/blog/baggy-pants-outfits-women.html\" hreflang=\"en\">women’s baggy-pants outfit guide</a> for the broader top, shoe and layering combinations.</p>",
+    "en_after": "<p>Before buying, ask where the waistband, crotch, pockets, widest area and hem will sit, rather than whether your height permits the garment. The guide to what baggy pants are explains the basic construction; this article addresses fit decisions for shorter frames. Once fit is established, use the <a href=\"/en/blog/baggy-pants-outfits-women.html\" hreflang=\"en\">women’s baggy-pants outfit guide</a> for the broader top, shoe and layering combinations.</p>",
+    "removed_ids": "[561]",
+    "tsv": "data/en-translations/internal-links/e4/baggy-pants-petite-fit-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/balletcore-style-guide.html",
+    "vi_source": "blog/balletcore-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Prioritize expected wear rather than a required list. Flats can combine with cropped trousers, minis or dresses; a finer cardigan may be more practical than several tulle layers in heat. The guides to <a href=\"/en/blog/how-to-style-ballet-flats.html\" hreflang=\"en\">styling ballet flats</a> and <a href=\"/en/blog/how-to-style-leg-warmers.html\" hreflang=\"en\">leg warmers</a> cover those individual garments, while this article remains the broader aesthetic guide.</p>",
+    "en_after": "<p>Prioritize expected wear rather than a required list. Flats can combine with cropped trousers, minis or dresses; a finer cardigan may be more practical than several tulle layers in heat. The guides to styling ballet flats and leg warmers cover those individual garments, while this article remains the broader aesthetic guide.</p>",
+    "removed_ids": "[575, 574]",
+    "tsv": "data/en-translations/internal-links/e4/balletcore-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/black-outfits-women-texture-proportions.html",
+    "vi_source": "blog/cach-phoi-do-den-khong-nham-chan.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This article addresses a specific styling purpose and supports the broader <a href=\"/phoi-do-nu-ca-tinh.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Expressive Women's Outfits (Vietnamese)</a>collection. See also <a href=\"/en/blog/alternative-going-out-outfits-women.html\" hreflang=\"en\">going-out outfits</a>, <a href=\"/en/blog/alternative-summer-outfits-women.html\" hreflang=\"en\">summer outfits</a> and <a href=\"/en/blog/alternative-outfits-vnd-500000.html\" hreflang=\"en\">outfits under VND 500,000</a>.</p>",
+    "en_after": "<p>This article addresses a specific styling purpose and supports the broader <a href=\"/phoi-do-nu-ca-tinh.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Expressive Women's Outfits (Vietnamese)</a>collection. See also going-out outfits, summer outfits and <a href=\"/en/blog/alternative-outfits-vnd-500000.html\" hreflang=\"en\">outfits under VND 500,000</a>.</p>",
+    "removed_ids": "[608, 607]",
+    "tsv": "data/en-translations/internal-links/e4/black-outfits-women-texture-proportions.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/black-outfits-women-texture-proportions.html",
+    "vi_source": "blog/cach-phoi-do-den-khong-nham-chan.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>In Vietnam, thick layers are often unnecessary. Mesh, sheer shirts, thin cardigans, and open shirts can add depth with less bulk. Our guide to <a href=\"/en/blog/alternative-layering-outfits-women.html\" hreflang=\"en\">layering outfits for women</a> explains layer lengths, thickness, and materials in greater detail.</p>",
+    "en_after": "<p>In Vietnam, thick layers are often unnecessary. Mesh, sheer shirts, thin cardigans, and open shirts can add depth with less bulk. Our guide to layering outfits for women explains layer lengths, thickness, and materials in greater detail.</p>",
+    "removed_ids": "[598]",
+    "tsv": "data/en-translations/internal-links/e4/black-outfits-women-texture-proportions.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/bomber-jacket-outfits-women.html",
+    "vi_source": "blog/phoi-do-voi-ao-bomber-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If the jacket cut is still undecided, read the <a href=\"/en/blog/buying-womens-bomber-jackets.html\" hreflang=\"en\">Women's Bomber Buying Guide</a> before constructing outfits around it.</p>",
+    "en_after": "<p>If the jacket cut is still undecided, read the Women's Bomber Buying Guide before constructing outfits around it.</p>",
+    "removed_ids": "[637]",
+    "tsv": "data/en-translations/internal-links/e4/bomber-jacket-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/business-casual-women-guide.html",
+    "vi_source": "blog/business-casual-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/smart-casual-women-guide.html\" hreflang=\"en\">Smart Casual</a> can apply to dinners, events, dates or creative settings as well as some workplaces. This guide uses Business Casual more narrowly for work. The categories overlap, and neither label automatically permits jeans: the host or employer, role and activities decide the appropriate interpretation.</p>",
+    "en_after": "<p>Smart Casual can apply to dinners, events, dates or creative settings as well as some workplaces. This guide uses Business Casual more narrowly for work. The categories overlap, and neither label automatically permits jeans: the host or employer, role and activities decide the appropriate interpretation.</p>",
+    "removed_ids": "[689]",
+    "tsv": "data/en-translations/internal-links/e4/business-casual-women-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/buying-egirl-accessories.html",
+    "vi_source": "blog/phu-kien-egirl-mua-o-dau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><strong>Individual accessory guides:</strong> <a href=\"/en/blog/how-to-style-arm-warmers.html\" hreflang=\"en\">Arm Warmers</a>, <a href=\"/en/blog/how-to-style-fishnet-tights.html\" hreflang=\"en\">Fishnet Tights</a>, <a href=\"/en/blog/how-to-style-leg-warmers.html\" hreflang=\"en\">Leg Warmers</a> and <a href=\"/en/blog/how-to-style-studded-belts.html\" hreflang=\"en\">Studded Belts</a>.</p>",
+    "en_after": "<p><strong>Individual accessory guides:</strong> <a href=\"/en/blog/how-to-style-arm-warmers.html\" hreflang=\"en\">Arm Warmers</a>, Fishnet Tights, Leg Warmers and Studded Belts.</p>",
+    "removed_ids": "[730, 728, 729]",
+    "tsv": "data/en-translations/internal-links/e4/buying-egirl-accessories.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/buying-womens-cargo-pants.html",
+    "vi_source": "blog/quan-cargo-nu-mua-o-dau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This is a buying guide. Outfit formulas remain in <a href=\"/en/blog/womens-cargo-pants-outfits.html\" hreflang=\"en\">women’s cargo-pants styling</a>, while the separate definition guide explains construction and cuts. <a href=\"/en/blog/what-are-cargo-pants.html\" hreflang=\"en\">what cargo pants are</a>.</p>",
+    "en_after": "<p>This is a buying guide. Outfit formulas remain in <a href=\"/en/blog/womens-cargo-pants-outfits.html\" hreflang=\"en\">women’s cargo-pants styling</a>, while the separate definition guide explains construction and cuts. what cargo pants are.</p>",
+    "removed_ids": "[749]",
+    "tsv": "data/en-translations/internal-links/e4/buying-womens-cargo-pants.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/buying-womens-cargo-pants.html",
+    "vi_source": "blog/quan-cargo-nu-mua-o-dau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p class=\"ac-intent-lock\"><strong>This guide: </strong> focuses on <strong>where and how to buy women’s cargo pants</strong> by comparing channels, listings, reviews and seller information. For the material choice, see <a href=\"/en/blog/nylon-vs-twill-cargo-pants.html\" hreflang=\"en\">nylon versus twill cargos</a>.</p>",
+    "en_after": "<p class=\"ac-intent-lock\"><strong>This guide: </strong> focuses on <strong>where and how to buy women’s cargo pants</strong> by comparing channels, listings, reviews and seller information. For the material choice, see nylon versus twill cargos.</p>",
+    "removed_ids": "[743]",
+    "tsv": "data/en-translations/internal-links/e4/buying-womens-cargo-pants.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/buying-womens-leather-jackets.html",
+    "vi_source": "blog/ao-khoac-da-nu-mua-o-dau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Oversized does not simply mean buying two sizes up. A drafted roomy cut considers shoulders, armholes, sleeves and body together. A larger regular size may lengthen sleeves without giving the proportions you want. Prioritize <strong>finished garment measurements</strong>. For combinations after purchase, see <a href=\"/en/blog/womens-leather-jacket-outfits.html\" hreflang=\"en\">women’s leather-jacket outfit ideas</a>.</p>",
+    "en_after": "<p>Oversized does not simply mean buying two sizes up. A drafted roomy cut considers shoulders, armholes, sleeves and body together. A larger regular size may lengthen sleeves without giving the proportions you want. Prioritize <strong>finished garment measurements</strong>. For combinations after purchase, see women’s leather-jacket outfit ideas.</p>",
+    "removed_ids": "[755]",
+    "tsv": "data/en-translations/internal-links/e4/buying-womens-leather-jackets.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/coquette-vs-dark-coquette.html",
+    "vi_source": "blog/coquette-la-gi-dark-coquette.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For the corset-inspired combinations used here, continue to <a href=\"/en/blog/how-to-style-a-corset-top.html\" hreflang=\"en\">women's corset-top outfit guide</a> for practical formulas. For a warmer, mystical direction alongside romantic details, <a href=\"/en/blog/witch-aesthetic-vs-whimsigoth.html\" hreflang=\"en\">Witch Aesthetic vs. Whimsigoth</a> provides a useful next route.</p>",
+    "en_after": "<p>For the corset-inspired combinations used here, continue to women's corset-top outfit guide for practical formulas. For a warmer, mystical direction alongside romantic details, Witch Aesthetic vs. Whimsigoth provides a useful next route.</p>",
+    "removed_ids": "[955, 956]",
+    "tsv": "data/en-translations/internal-links/e4/coquette-vs-dark-coquette.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/coquette-vs-dark-coquette.html",
+    "vi_source": "blog/coquette-la-gi-dark-coquette.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<td><a href=\"/en/blog/balletcore-style-guide.html\" hreflang=\"en\">Balletcore</a></td>",
+    "en_after": "<td>Balletcore</td>",
+    "removed_ids": "[949]",
+    "tsv": "data/en-translations/internal-links/e4/coquette-vs-dark-coquette.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/cottagecore-style-guide.html",
+    "vi_source": "blog/cottagecore-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For related but distinct nature-associated styles, <a href=\"/en/blog/fairycore-style-guide.html\" hreflang=\"en\">Fairycore</a> leans further toward fantasy, <a href=\"/en/blog/mori-kei-style-guide.html\" hreflang=\"en\">Mori Kei</a> emphasizes forest-inspired layering, and <a href=\"/en/blog/light-academia-style-guide.html\" hreflang=\"en\">Light Academia</a> moves toward brighter academic references. The separate guides clarify these directions instead of treating every soft or vintage-inspired outfit as one category.</p>",
+    "en_after": "<p>For related but distinct nature-associated styles, <a href=\"/en/blog/fairycore-style-guide.html\" hreflang=\"en\">Fairycore</a> leans further toward fantasy, Mori Kei emphasizes forest-inspired layering, and <a href=\"/en/blog/light-academia-style-guide.html\" hreflang=\"en\">Light Academia</a> moves toward brighter academic references. The separate guides clarify these directions instead of treating every soft or vintage-inspired outfit as one category.</p>",
+    "removed_ids": "[971]",
+    "tsv": "data/en-translations/internal-links/e4/cottagecore-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/dark-feminine-explained-wardrobe.html",
+    "vi_source": "blog/dark-feminine-is-not-a-trend.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<td>A strong reference rather than the whole aesthetic. See <a href=\"/en/blog/femme-fatale-aesthetic-style-guide.html\" hreflang=\"en\">Femme Fatale aesthetic</a>.</td>",
+    "en_after": "<td>A strong reference rather than the whole aesthetic. See Femme Fatale aesthetic.</td>",
+    "removed_ids": "[1059]",
+    "tsv": "data/en-translations/internal-links/e4/dark-feminine-explained-wardrobe.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/dark-feminine-outfit-ideas.html",
+    "vi_source": "blog/dark-feminine-outfit-phoi-do.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> we focus on constructing outfits through proportions, materials, layers, shoes and accessories. For definitions, influences and visual codes, explore <a href=\"/en/blog/dark-feminine-explained-wardrobe.html\" hreflang=\"en\">what dark feminine style means</a> as a separate introduction.</p>",
+    "en_after": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> we focus on constructing outfits through proportions, materials, layers, shoes and accessories. For definitions, influences and visual codes, explore what dark feminine style means as a separate introduction.</p>",
+    "removed_ids": "[1074]",
+    "tsv": "data/en-translations/internal-links/e4/dark-feminine-outfit-ideas.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/denim-mini-skirt-outfits.html",
+    "vi_source": "blog/phoi-do-voi-chan-vay-jean-ngan.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Short skirts also include plaid, satin, leather, knit, and layered constructions. The <a href=\"/en/blog/alternative-mini-skirt-outfits.html\" hreflang=\"en\">alternative mini skirt outfits</a> guide covers that broader length category; this article focuses on short denim.</p>",
+    "en_after": "<p>Short skirts also include plaid, satin, leather, knit, and layered constructions. The alternative mini skirt outfits guide covers that broader length category; this article focuses on short denim.</p>",
+    "removed_ids": "[1103]",
+    "tsv": "data/en-translations/internal-links/e4/denim-mini-skirt-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/downtown-girl-style-guide.html",
+    "vi_source": "blog/downtown-girl-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Compared with <a href=\"/en/blog/model-off-duty-style-guide.html\" hreflang=\"en\">Model Off-Duty</a>, this Downtown Girl interpretation emphasizes more washed or layered surfaces. Beside <a href=\"/en/blog/what-is-indie-sleaze.html\" hreflang=\"en\">Indie Sleaze</a>, it has a less nightlife-focused starting point. Compared with <a href=\"/en/blog/clean-girl-aesthetic-style-guide.html\" hreflang=\"en\">Clean Girl</a>, it makes more use of visibly textured denim and knitwear. These are overlapping editorial distinctions, not rules for people or bodies.</p>",
+    "en_after": "<p>Compared with Model Off-Duty, this Downtown Girl interpretation emphasizes more washed or layered surfaces. Beside <a href=\"/en/blog/what-is-indie-sleaze.html\" hreflang=\"en\">Indie Sleaze</a>, it has a less nightlife-focused starting point. Compared with <a href=\"/en/blog/clean-girl-aesthetic-style-guide.html\" hreflang=\"en\">Clean Girl</a>, it makes more use of visibly textured denim and knitwear. These are overlapping editorial distinctions, not rules for people or bodies.</p>",
+    "removed_ids": "[1182]",
+    "tsv": "data/en-translations/internal-links/e4/downtown-girl-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/fairy-grunge-style-outfits.html",
+    "vi_source": "blog/fairy-grunge-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>An outfit with abundant velvet, celestial motifs, crystals and large jewelry moves toward <a href=\"/en/blog/witch-aesthetic-vs-whimsigoth.html\" hreflang=\"en\">Whimsigoth</a>. If fairy elements fade and tees, plaid, denim, knits and boots lead, explore <a href=\"/en/blog/soft-grunge-wardrobe-outfits.html\" hreflang=\"en\">Soft Grunge</a>. If woodland imagery, flowers, sheer fabric and freshness matter more than worn texture, <a href=\"/en/blog/fairycore-style-guide.html\" hreflang=\"en\">Fairycore</a> may be the closer description.</p>",
+    "en_after": "<p>An outfit with abundant velvet, celestial motifs, crystals and large jewelry moves toward <a href=\"/en/blog/witch-aesthetic-vs-whimsigoth.html\" hreflang=\"en\">Whimsigoth</a>. If fairy elements fade and tees, plaid, denim, knits and boots lead, explore <a href=\"/en/blog/soft-grunge-wardrobe-outfits.html\" hreflang=\"en\">Soft Grunge</a>. If woodland imagery, flowers, sheer fabric and freshness matter more than worn texture, Fairycore may be the closer description.</p>",
+    "removed_ids": "[1227]",
+    "tsv": "data/en-translations/internal-links/e4/fairy-grunge-style-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/fairy-grunge-style-outfits.html",
+    "vi_source": "blog/fairy-grunge-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Compared with <a href=\"/en/blog/fairycore-style-guide.html\" hreflang=\"en\">Fairycore</a>, fairy grunge often reduces bright pastels, fresh florals and pristine effects in favor of earthy brown, moss green, smoky grey and faded black. Compared with conventional <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">Grunge</a> , it retains movement through sheer fabric, lace, asymmetric skirts or organic details. The same combat boots can suggest grunge with flannel and ripped jeans, or fairy grunge beside soft skirts and thin textures.</p>",
+    "en_after": "<p>Compared with <a href=\"/en/blog/fairycore-style-guide.html\" hreflang=\"en\">Fairycore</a>, fairy grunge often reduces bright pastels, fresh florals and pristine effects in favor of earthy brown, moss green, smoky grey and faded black. Compared with conventional Grunge , it retains movement through sheer fabric, lace, asymmetric skirts or organic details. The same combat boots can suggest grunge with flannel and ripped jeans, or fairy grunge beside soft skirts and thin textures.</p>",
+    "removed_ids": "[1222]",
+    "tsv": "data/en-translations/internal-links/e4/fairy-grunge-style-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/ganguro-gyaru-fashion-makeup.html",
+    "vi_source": "blog/ganguro.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Ganguro is only one part of Gyaru. Use the <a href=\"/en/blog/gyaru-style-guide.html\" hreflang=\"en\">Gyaru overview</a> for the broader picture.</p>",
+    "en_after": "<p>Ganguro is only one part of Gyaru. Use the Gyaru overview for the broader picture.</p>",
+    "removed_ids": "[1278]",
+    "tsv": "data/en-translations/internal-links/e4/ganguro-gyaru-fashion-makeup.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/ganguro-gyaru-fashion-makeup.html",
+    "vi_source": "blog/ganguro.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Ganguro does not represent all Gyaru. If <a href=\"/en/blog/gyaru-style-guide.html\" hreflang=\"en\">Gyaru</a> is the broader subculture, Ganguro is one branch or period whose striking visual codes outsiders often mistakenly apply to the entire scene. This specialist guide examines <strong>Ganguro, Ganguro Gyaru and Ganguro makeup</strong>.</p>",
+    "en_after": "<p>Ganguro does not represent all Gyaru. If Gyaru is the broader subculture, Ganguro is one branch or period whose striking visual codes outsiders often mistakenly apply to the entire scene. This specialist guide examines <strong>Ganguro, Ganguro Gyaru and Ganguro makeup</strong>.</p>",
+    "removed_ids": "[1272]",
+    "tsv": "data/en-translations/internal-links/e4/ganguro-gyaru-fashion-makeup.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/gorpcore-style-guide.html",
+    "vi_source": "blog/gorpcore-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Gorpcore and <a href=\"/en/blog/what-is-techwear.html\" hreflang=\"en\">Techwear</a> overlap in materials and utility. Here Gorpcore starts from more explicit outdoor references, while the Techwear specialist explores urban clothing systems. Neither needs to be limited to one color palette or a rigid list of products.</p>",
+    "en_after": "<p>Gorpcore and Techwear overlap in materials and utility. Here Gorpcore starts from more explicit outdoor references, while the Techwear specialist explores urban clothing systems. Neither needs to be limited to one color palette or a rigid list of products.</p>",
+    "removed_ids": "[1375]",
+    "tsv": "data/en-translations/internal-links/e4/gorpcore-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/goth-hairstyles-women.html",
+    "vi_source": "blog/kieu-toc-goth-goth-hairstyle-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Smooth straight hair, a center part, or a low ponytail provides a restrained direction. It suits <a href=\"/en/blog/nu-goth-style-outfits.html\" hreflang=\"en\">Nu Goth</a>, Dark Feminine styling, and clean all-black silhouettes. With very sleek hair, one sharp makeup or accessory detail can distinguish the look from general minimalism.</p>",
+    "en_after": "<p>Smooth straight hair, a center part, or a low ponytail provides a restrained direction. It suits Nu Goth, Dark Feminine styling, and clean all-black silhouettes. With very sleek hair, one sharp makeup or accessory detail can distinguish the look from general minimalism.</p>",
+    "removed_ids": "[1402]",
+    "tsv": "data/en-translations/internal-links/e4/goth-hairstyles-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/goth-hairstyles-women.html",
+    "vi_source": "blog/kieu-toc-goth-goth-hairstyle-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/trad-goth-hair-makeup-outfits.html\" hreflang=\"en\">Trad Goth</a> retains that approach most visibly, while Romantic, Nu, and Vampire Goth can use softer or more controlled hair. Long waves, sharp bobs, half-up styles, dark wolf cuts, and low ponytails can all work when their contrast and styling connect to the wider look.</p>",
+    "en_after": "<p>Trad Goth retains that approach most visibly, while Romantic, Nu, and Vampire Goth can use softer or more controlled hair. Long waves, sharp bobs, half-up styles, dark wolf cuts, and low ponytails can all work when their contrast and styling connect to the wider look.</p>",
+    "removed_ids": "[1399]",
+    "tsv": "data/en-translations/internal-links/e4/goth-hairstyles-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/goth-nail-designs.html",
+    "vi_source": "blog/goth-nails-mau-nail-phong-cach-goth.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This article focuses specifically on <strong>Goth nail designs and nail art</strong> and choosing practical options. Definitions, history, and Goth branches belong in the <a href=\"/en/blog/goth-guides.html\" hreflang=\"en\">Goth / Gothic hub</a>; for outfit examples, browse the <a href=\"/style/goth.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Women's Goth Outfit Collection (Vietnamese)</a>.</p>",
+    "en_after": "<p>This article focuses specifically on <strong>Goth nail designs and nail art</strong> and choosing practical options. Definitions, history, and Goth branches belong in the Goth / Gothic hub; for outfit examples, browse the <a href=\"/style/goth.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Women's Goth Outfit Collection (Vietnamese)</a>.</p>",
+    "removed_ids": "[1406]",
+    "tsv": "data/en-translations/internal-links/e4/goth-nail-designs.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/how-to-style-long-skirts.html",
+    "vi_source": "blog/phoi-do-voi-chan-vay-dai.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This article covers <strong>long skirts in general</strong>. For black styling, explore <a href=\"/en/blog/long-black-skirt-outfits.html\" hreflang=\"en\">long black skirt</a>. For denim, explore <a href=\"/en/blog/long-denim-skirt-outfits.html\" hreflang=\"en\">long denim skirt</a>. For fold construction, explore <a href=\"/en/blog/how-to-style-pleated-skirts.html\" hreflang=\"en\">pleated skirts</a>. A narrower specialist can provide more specific decisions once the material or main shape is known.</p>",
+    "en_after": "<p>This article covers <strong>long skirts in general</strong>. For black styling, explore long black skirt. For denim, explore long denim skirt. For fold construction, explore <a href=\"/en/blog/how-to-style-pleated-skirts.html\" hreflang=\"en\">pleated skirts</a>. A narrower specialist can provide more specific decisions once the material or main shape is known.</p>",
+    "removed_ids": "[1588, 1589]",
+    "tsv": "data/en-translations/internal-links/e4/how-to-style-long-skirts.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/how-to-wash-black-clothes.html",
+    "vi_source": "blog/cach-giat-do-den-khong-phai-mau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For everyday use of black clothing, read <a href=\"/en/blog/is-black-clothing-hotter-in-summer.html\" hreflang=\"en\">whether black clothing feels hotter in summer</a> for material choices in Vietnam's climate, or <a href=\"/en/blog/black-outfits-women-texture-proportions.html\" hreflang=\"en\">how to style all-black outfits</a> for outfit styling rather than garment care.</p>",
+    "en_after": "<p>For everyday use of black clothing, read whether black clothing feels hotter in summer for material choices in Vietnam's climate, or <a href=\"/en/blog/black-outfits-women-texture-proportions.html\" hreflang=\"en\">how to style all-black outfits</a> for outfit styling rather than garment care.</p>",
+    "removed_ids": "[1655]",
+    "tsv": "data/en-translations/internal-links/e4/how-to-wash-black-clothes.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/how-to-wash-black-clothes.html",
+    "vi_source": "blog/cach-giat-do-den-khong-phai-mau.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Do not apply a textile washing routine unchanged to leather jackets, trousers, or boots. Read <a href=\"/en/blog/leather-jacket-clothing-care.html\" hreflang=\"en\">Women's Leather Clothing Care</a>; for boot odors, see <a href=\"/en/blog/how-to-remove-boot-odor.html\" hreflang=\"en\">Removing Boot Odor</a> for separate guidance on drying, linings, and materials.</p>",
+    "en_after": "<p>Do not apply a textile washing routine unchanged to leather jackets, trousers, or boots. Read Women's Leather Clothing Care; for boot odors, see <a href=\"/en/blog/how-to-remove-boot-odor.html\" hreflang=\"en\">Removing Boot Odor</a> for separate guidance on drying, linings, and materials.</p>",
+    "removed_ids": "[1653]",
+    "tsv": "data/en-translations/internal-links/e4/how-to-wash-black-clothes.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/is-black-clothing-hotter-in-summer.html",
+    "vi_source": "blog/mac-do-den-mua-he-co-nong-khong.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>To help preserve the color of clothes you already own, read <a href=\"/en/blog/how-to-wash-black-clothes.html\" hreflang=\"en\">how to wash black clothes without fading</a> . Summer wear, perspiration and sunlight can affect garments over time. For looser summer silhouettes, explore <a href=\"/en/blog/wide-leg-jeans-outfits-dark-y2k.html\" hreflang=\"en\">women's wide-leg jeans outfits</a> and <a href=\"/en/blog/shorts-outfits-women.html\" hreflang=\"en\">women's shorts outfits</a> as starting points.</p>",
+    "en_after": "<p>To help preserve the color of clothes you already own, read how to wash black clothes without fading . Summer wear, perspiration and sunlight can affect garments over time. For looser summer silhouettes, explore <a href=\"/en/blog/wide-leg-jeans-outfits-dark-y2k.html\" hreflang=\"en\">women's wide-leg jeans outfits</a> and <a href=\"/en/blog/shorts-outfits-women.html\" hreflang=\"en\">women's shorts outfits</a> as starting points.</p>",
+    "removed_ids": "[1666]",
+    "tsv": "data/en-translations/internal-links/e4/is-black-clothing-hotter-in-summer.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/japanese-streetwear-outfit-guide.html",
+    "vi_source": "blog/japanese-streetwear.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/what-is-streetwear.html\" hreflang=\"en\">Streetwear</a> is global. When traditional clothing details appear, study <a href=\"/en/blog/wafuku.html\" hreflang=\"en\">Wafuku garment construction</a> separately rather than folding that clothing system into contemporary streetwear by default. Japanese streetwear is one contextual interpretation where imported American references, domestic labels, designer clothing and subcultures intersect. <a href=\"/en/blog/harajuku-fashion-style-guide.html\" hreflang=\"en\">Harajuku Style</a> is broader in a geographic and subcultural direction, encompassing systems that are not necessarily streetwear.</p>",
+    "en_after": "<p><a href=\"/en/blog/what-is-streetwear.html\" hreflang=\"en\">Streetwear</a> is global. When traditional clothing details appear, study <a href=\"/en/blog/wafuku.html\" hreflang=\"en\">Wafuku garment construction</a> separately rather than folding that clothing system into contemporary streetwear by default. Japanese streetwear is one contextual interpretation where imported American references, domestic labels, designer clothing and subcultures intersect. Harajuku Style is broader in a geographic and subcultural direction, encompassing systems that are not necessarily streetwear.</p>",
+    "removed_ids": "[1676]",
+    "tsv": "data/en-translations/internal-links/e4/japanese-streetwear-outfit-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/jogger-outfits-women.html",
+    "vi_source": "blog/phoi-do-voi-quan-jogger-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Alternative or Baddie styling does not require many logos. Black or charcoal joggers, a compact top, shoulder bag, and clear shoe shape can be enough. For construction, see <a href=\"/en/blog/what-are-jogger-pants.html\" hreflang=\"en\">What Are Joggers? Guide</a>; here, the focus is <strong>women's jogger outfits</strong>.</p>",
+    "en_after": "<p>Alternative or Baddie styling does not require many logos. Black or charcoal joggers, a compact top, shoulder bag, and clear shoe shape can be enough. For construction, see What Are Joggers? Guide; here, the focus is <strong>women's jogger outfits</strong>.</p>",
+    "removed_ids": "[1680]",
+    "tsv": "data/en-translations/internal-links/e4/jogger-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/mob-wife-aesthetic-style-guide.html",
+    "vi_source": "blog/mob-wife-aesthetic-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><strong>Related reading:</strong> <a href=\"/en/blog/how-to-style-bodycon-dresses.html\" hreflang=\"en\">Bodycon Dresses</a> and <a href=\"/en/blog/femme-fatale-aesthetic-style-guide.html\" hreflang=\"en\">Femme Fatale Aesthetic</a>.</p>",
+    "en_after": "<p><strong>Related reading:</strong> <a href=\"/en/blog/how-to-style-bodycon-dresses.html\" hreflang=\"en\">Bodycon Dresses</a> and Femme Fatale Aesthetic.</p>",
+    "removed_ids": "[1954]",
+    "tsv": "data/en-translations/internal-links/e4/mob-wife-aesthetic-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/model-off-duty-style-guide.html",
+    "vi_source": "blog/model-off-duty-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/clean-girl-aesthetic-style-guide.html\" hreflang=\"en\">Clean Girl</a> can share many basics while emphasizing a smoother presentation. <a href=\"/en/blog/quiet-luxury-style-guide.html\" hreflang=\"en\">Quiet Luxury</a> places more attention on understated material and finish in this comparison. <a href=\"/en/blog/downtown-girl-style-guide.html\" hreflang=\"en\">Downtown Girl</a> adds more washed surfaces and layering in this guide's interpretation. These are overlapping labels; the off-duty approach need not sit at one fixed point between them.</p>",
+    "en_after": "<p>Clean Girl can share many basics while emphasizing a smoother presentation. <a href=\"/en/blog/quiet-luxury-style-guide.html\" hreflang=\"en\">Quiet Luxury</a> places more attention on understated material and finish in this comparison. Downtown Girl adds more washed surfaces and layering in this guide's interpretation. These are overlapping labels; the off-duty approach need not sit at one fixed point between them.</p>",
+    "removed_ids": "[1964, 1962]",
+    "tsv": "data/en-translations/internal-links/e4/model-off-duty-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/nylon-vs-twill-cargo-pants.html",
+    "vi_source": "blog/quan-cargo-vai-du-hay-kaki.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For evaluating sellers, read <a href=\"/en/blog/buying-womens-cargo-pants.html\" hreflang=\"en\">Where to Buy Women's Cargos</a>. For cargo, parachute, and baggy definitions, return to <a href=\"/en/blog/what-are-cargo-pants.html\" hreflang=\"en\">What Are Cargo Pants?</a>. Once the trousers are chosen, the <a href=\"/en/blog/womens-cargo-pants-outfits.html\" hreflang=\"en\">Women's Cargo Outfit Guide</a> covers tops and shoes rather than unnecessary additional purchases.</p>",
+    "en_after": "<p>For evaluating sellers, read <a href=\"/en/blog/buying-womens-cargo-pants.html\" hreflang=\"en\">Where to Buy Women's Cargos</a>. For cargo, parachute, and baggy definitions, return to What Are Cargo Pants?. Once the trousers are chosen, the <a href=\"/en/blog/womens-cargo-pants-outfits.html\" hreflang=\"en\">Women's Cargo Outfit Guide</a> covers tops and shoes rather than unnecessary additional purchases.</p>",
+    "removed_ids": "[2035]",
+    "tsv": "data/en-translations/internal-links/e4/nylon-vs-twill-cargo-pants.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/office-siren-style-guide.html",
+    "vi_source": "blog/office-siren-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For a more practical starting point around dress formality, read <a href=\"/en/blog/business-casual-women-guide.html\" hreflang=\"en\">Business Casual</a> and <a href=\"/en/blog/smart-casual-women-guide.html\" hreflang=\"en\">Smart Casual</a>. To explore the wider relationship between clothing and the impression of authority, see <a href=\"/en/blog/power-dressing-style-guide.html\" hreflang=\"en\">Power Dressing</a>; for more explicit dark-aesthetic references adapted to work clothing, <a href=\"/en/blog/corporate-goth-office-outfits.html\" hreflang=\"en\">Corporate Goth</a> is the more specific guide.</p>",
+    "en_after": "<p>For a more practical starting point around dress formality, read Business Casual and <a href=\"/en/blog/smart-casual-women-guide.html\" hreflang=\"en\">Smart Casual</a>. To explore the wider relationship between clothing and the impression of authority, see Power Dressing; for more explicit dark-aesthetic references adapted to work clothing, Corporate Goth is the more specific guide.</p>",
+    "removed_ids": "[2059, 2061, 2062]",
+    "tsv": "data/en-translations/internal-links/e4/office-siren-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/office-siren-style-guide.html",
+    "vi_source": "blog/office-siren-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If your main aim is dressing appropriately for work, start with <a href=\"/en/blog/business-casual-women-guide.html\" hreflang=\"en\">Business Casual</a> and add one or two Office Siren references where the setting permits. If you want to explore how silhouette communicates authority, <a href=\"/en/blog/power-dressing-style-guide.html\" hreflang=\"en\">Power Dressing</a> provides the broader framework. For darker, sharper office clothing that retains recognizable Goth references, see <a href=\"/en/blog/corporate-goth-office-outfits.html\" hreflang=\"en\">Corporate Goth</a>.</p>",
+    "en_after": "<p>If your main aim is dressing appropriately for work, start with Business Casual and add one or two Office Siren references where the setting permits. If you want to explore how silhouette communicates authority, Power Dressing provides the broader framework. For darker, sharper office clothing that retains recognizable Goth references, see Corporate Goth.</p>",
+    "removed_ids": "[2055, 2056, 2057]",
+    "tsv": "data/en-translations/internal-links/e4/office-siren-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/old-money-style-guide.html",
+    "vi_source": "blog/old-money-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Old Money and <a href=\"/en/blog/dark-academia-outfits-alternative-style.html\" hreflang=\"en\">Dark Academia</a> can share tailoring, knits and traditional colors. Dark Academia often gives more weight to darker literary imagery, while Old Money styling foregrounds imagined restrained leisure. These are tendencies rather than exclusive rules. <a href=\"/en/blog/quiet-luxury-style-guide.html\" hreflang=\"en\">Quiet Luxury</a> shares restraint but need not use elite-sport, campus or country-club references. <a href=\"/en/blog/preppy-style-guide.html\" hreflang=\"en\">Preppy</a> shares polos, Oxford shirts, cardigans and loafers, while allowing a broader set of collegiate or schoolwear interpretations.</p>",
+    "en_after": "<p>Old Money and <a href=\"/en/blog/dark-academia-outfits-alternative-style.html\" hreflang=\"en\">Dark Academia</a> can share tailoring, knits and traditional colors. Dark Academia often gives more weight to darker literary imagery, while Old Money styling foregrounds imagined restrained leisure. These are tendencies rather than exclusive rules. Quiet Luxury shares restraint but need not use elite-sport, campus or country-club references. <a href=\"/en/blog/preppy-style-guide.html\" hreflang=\"en\">Preppy</a> shares polos, Oxford shirts, cardigans and loafers, while allowing a broader set of collegiate or schoolwear interpretations.</p>",
+    "removed_ids": "[2066]",
+    "tsv": "data/en-translations/internal-links/e4/old-money-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/parachute-pants-outfits-women.html",
+    "vi_source": "blog/phoi-do-voi-quan-parachute-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This specialist focuses on <strong>parachute-pants outfit combinations</strong>. For construction, fit, fabric, and the distinction from cargo pants or joggers, read <a href=\"/en/blog/what-are-parachute-pants.html\" hreflang=\"en\">what parachute pants are</a>.</p>",
+    "en_after": "<p>This specialist focuses on <strong>parachute-pants outfit combinations</strong>. For construction, fit, fabric, and the distinction from cargo pants or joggers, read what parachute pants are.</p>",
+    "removed_ids": "[2117]",
+    "tsv": "data/en-translations/internal-links/e4/parachute-pants-outfits-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/pastel-goth-vs-cybergoth-vs-mall-goth.html",
+    "vi_source": "blog/pastel-goth-cyber-goth-mall-goth-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For the broader foundation, begin with <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">what goth style means</a>. For the futuristic branch, explore <a href=\"/en/blog/cybergoth-style-outfits.html\" hreflang=\"en\">Cybergoth</a>; for lighter everyday gothic styling, see <a href=\"/en/blog/soft-goth-style-outfits.html\" hreflang=\"en\">Soft Goth</a>. If band tees, worn textures and early-2000s alternative streetwear appeal most, the guide to <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">grunge vs. punk</a> helps separate overlapping references.</p>",
+    "en_after": "<p>For the broader foundation, begin with what goth style means. For the futuristic branch, explore Cybergoth; for lighter everyday gothic styling, see Soft Goth. If band tees, worn textures and early-2000s alternative streetwear appeal most, the guide to grunge vs. punk helps separate overlapping references.</p>",
+    "removed_ids": "[2141, 2142, 2144, 2143]",
+    "tsv": "data/en-translations/internal-links/e4/pastel-goth-vs-cybergoth-vs-mall-goth.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/pastel-goth-vs-cybergoth-vs-mall-goth.html",
+    "vi_source": "blog/pastel-goth-cyber-goth-mall-goth-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Looking only at shared boots, eyeliner and black clothing can obscure those differences. Here they are treated as <strong>three fashion or aesthetic labels for comparison</strong>, without claiming identical connections to traditional goth music subculture. For that broader foundation, see <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">what goth style means</a>; this article stays focused on the three-way comparison.</p>",
+    "en_after": "<p>Looking only at shared boots, eyeliner and black clothing can obscure those differences. Here they are treated as <strong>three fashion or aesthetic labels for comparison</strong>, without claiming identical connections to traditional goth music subculture. For that broader foundation, see what goth style means; this article stays focused on the three-way comparison.</p>",
+    "removed_ids": "[2133]",
+    "tsv": "data/en-translations/internal-links/e4/pastel-goth-vs-cybergoth-vs-mall-goth.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/pastel-goth-vs-cybergoth-vs-mall-goth.html",
+    "vi_source": "blog/pastel-goth-cyber-goth-mall-goth-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This guide focuses on <strong>telling them apart</strong>through palette, silhouette, materials, accessories, cultural context and neighboring styles. For a broader foundation, begin with <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">what goth style means</a>; specialist guides such as <a href=\"/en/blog/cybergoth-style-outfits.html\" hreflang=\"en\">Cybergoth</a> explore individual directions in greater detail.</p>",
+    "en_after": "<p>This guide focuses on <strong>telling them apart</strong>through palette, silhouette, materials, accessories, cultural context and neighboring styles. For a broader foundation, begin with <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">what goth style means</a>; specialist guides such as Cybergoth explore individual directions in greater detail.</p>",
+    "removed_ids": "[2132]",
+    "tsv": "data/en-translations/internal-links/e4/pastel-goth-vs-cybergoth-vs-mall-goth.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/preppy-style-guide.html",
+    "vi_source": "blog/preppy-style-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Read <a href=\"/en/blog/old-money-style-guide.html\" hreflang=\"en\">What Is Old Money Style?</a> and <a href=\"/en/blog/dark-academia-outfits-alternative-style.html\" hreflang=\"en\">What Is Dark Academia?</a> to distinguish these directions instead of assigning every brown blazer and loafer outfit to one label.</p>",
+    "en_after": "<p>Read What Is Old Money Style? and <a href=\"/en/blog/dark-academia-outfits-alternative-style.html\" hreflang=\"en\">What Is Dark Academia?</a> to distinguish these directions instead of assigning every brown blazer and loafer outfit to one label.</p>",
+    "removed_ids": "[2247]",
+    "tsv": "data/en-translations/internal-links/e4/preppy-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/punk-hairstyles-women.html",
+    "vi_source": "blog/kieu-toc-punk-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This guide focuses on <strong>women's Punk hairstyles</strong> and practical ways to wear them. Broader definitions, history, and Punk or Grunge outfits belong in the <a href=\"/en/blog/punk-grunge-guides.html\" hreflang=\"en\">Punk / Grunge hub</a>.</p>",
+    "en_after": "<p>This guide focuses on <strong>women's Punk hairstyles</strong> and practical ways to wear them. Broader definitions, history, and Punk or Grunge outfits belong in the Punk / Grunge hub.</p>",
+    "removed_ids": "[2264]",
+    "tsv": "data/en-translations/internal-links/e4/punk-hairstyles-women.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/quiet-luxury-style-guide.html",
+    "vi_source": "blog/quiet-luxury-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/old-money-style-guide.html\" hreflang=\"en\">Old Money</a> uses imagined heritage and leisure references, including traditional knits, tailoring and loafers. Quiet Luxury more specifically emphasizes understated cut and finish. A modern black jacket without country-club imagery can fit that visual direction. Neither appearance establishes actual wealth or inherited status.</p>",
+    "en_after": "<p>Old Money uses imagined heritage and leisure references, including traditional knits, tailoring and loafers. Quiet Luxury more specifically emphasizes understated cut and finish. A modern black jacket without country-club imagery can fit that visual direction. Neither appearance establishes actual wealth or inherited status.</p>",
+    "removed_ids": "[2436]",
+    "tsv": "data/en-translations/internal-links/e4/quiet-luxury-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/scene-style-fashion.html",
+    "vi_source": "blog/scene-style-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/what-is-egirl-style.html\" hreflang=\"en\">E-Girl</a> is a later internet aesthetic shaped more by TikTok, Instagram, and gaming communities than MySpace. It can borrow from Scene, Emo, and Punk through graphic tees, plaid skirts, striped layers, chokers, chains, and colorful hair. Makeup, cropped silhouettes, and combinations of influences often vary more freely.</p>",
+    "en_after": "<p>E-Girl is a later internet aesthetic shaped more by TikTok, Instagram, and gaming communities than MySpace. It can borrow from Scene, Emo, and Punk through graphic tees, plaid skirts, striped layers, chokers, chains, and colorful hair. Makeup, cropped silhouettes, and combinations of influences often vary more freely.</p>",
+    "removed_ids": "[2476]",
+    "tsv": "data/en-translations/internal-links/e4/scene-style-fashion.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/scene-style-fashion.html",
+    "vi_source": "blog/scene-style-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>These are visual tendencies, not rigid rules about people or music taste. Read <a href=\"/en/blog/what-is-emo-style.html\" hreflang=\"en\">What Is Emo Style?</a> for the Emo timeline and why reducing Emo to a black uniform is also an oversimplification.</p>",
+    "en_after": "<p>These are visual tendencies, not rigid rules about people or music taste. Read What Is Emo Style? for the Emo timeline and why reducing Emo to a black uniform is also an oversimplification.</p>",
+    "removed_ids": "[2475]",
+    "tsv": "data/en-translations/internal-links/e4/scene-style-fashion.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/smart-casual-women-guide.html",
+    "vi_source": "blog/smart-casual-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If an event includes clients or a formal presentation, check whether a more polished shoe, fabric or layer would suit it. For office-specific considerations, read <a href=\"/en/blog/business-casual-women-guide.html\" hreflang=\"en\">What Is Business Casual?</a> rather than imposing one standard on every occasion.</p>",
+    "en_after": "<p>If an event includes clients or a formal presentation, check whether a more polished shoe, fabric or layer would suit it. For office-specific considerations, read What Is Business Casual? rather than imposing one standard on every occasion.</p>",
+    "removed_ids": "[2510]",
+    "tsv": "data/en-translations/internal-links/e4/smart-casual-women-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/soft-grunge-wardrobe-outfits.html",
+    "vi_source": "blog/soft-grunge-aesthetic-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/fairy-grunge-style-outfits.html\" hreflang=\"en\">Fairy Grunge</a> leans toward fantasy, organic textures and flowing dresses or layers. <a href=\"/en/blog/soft-goth-style-outfits.html\" hreflang=\"en\">Soft Goth</a> keeps goth as its main reference, with more pronounced black, lace, mesh and gothic cues. Meanwhile, <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">Grunge</a> has a stronger music history and anti-fashion foundation than internet-born soft grunge. These distinctions help you choose materials and combinations deliberately.</p>",
+    "en_after": "<p><a href=\"/en/blog/fairy-grunge-style-outfits.html\" hreflang=\"en\">Fairy Grunge</a> leans toward fantasy, organic textures and flowing dresses or layers. <a href=\"/en/blog/soft-goth-style-outfits.html\" hreflang=\"en\">Soft Goth</a> keeps goth as its main reference, with more pronounced black, lace, mesh and gothic cues. Meanwhile, Grunge has a stronger music history and anti-fashion foundation than internet-born soft grunge. These distinctions help you choose materials and combinations deliberately.</p>",
+    "removed_ids": "[2526]",
+    "tsv": "data/en-translations/internal-links/e4/soft-grunge-wardrobe-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/sporty-chic-style-guide.html",
+    "vi_source": "blog/sporty-chic-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Sporty Chic emphasizes visual composition, while <a href=\"/en/blog/what-is-athleisure.html\" hreflang=\"en\">what athleisure means</a> examines opacity, seams, pockets, recovery, and changes during longer wear. Use that separate guide when the question is how sportswear-associated garments function across the day.</p>",
+    "en_after": "<p>Sporty Chic emphasizes visual composition, while what athleisure means examines opacity, seams, pockets, recovery, and changes during longer wear. Use that separate guide when the question is how sportswear-associated garments function across the day.</p>",
+    "removed_ids": "[2554]",
+    "tsv": "data/en-translations/internal-links/e4/sporty-chic-style-guide.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/trad-goth-hair-makeup-outfits.html",
+    "vi_source": "blog/trad-goth-la-gi-traditional-goth-style.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If your interest is primarily visual, the description <strong>Trad Goth-inspired</strong> can make that reference clear. To explore traditional, nu, romantic and soft goth together, return to <a href=\"/en/blog/goth-guides.html\" hreflang=\"en\">the Goth / Gothic guide hub</a> or <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">Goth Style guide</a>.</p>",
+    "en_after": "<p>If your interest is primarily visual, the description <strong>Trad Goth-inspired</strong> can make that reference clear. To explore traditional, nu, romantic and soft goth together, return to <a href=\"/en/blog/goth-guides.html\" hreflang=\"en\">the Goth / Gothic guide hub</a> or Goth Style guide.</p>",
+    "removed_ids": "[2594]",
+    "tsv": "data/en-translations/internal-links/e4/trad-goth-hair-makeup-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/trad-goth-hair-makeup-outfits.html",
+    "vi_source": "blog/trad-goth-la-gi-traditional-goth-style.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>The key distinction is <strong>lineage</strong>: traditional goth looks toward early-1980s scene visuals, while nu goth, soft goth and romantic goth organize dark fashion differently. Our <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">Goth Style guide</a> provides the broader definition; this article focuses on traditional goth.</p>",
+    "en_after": "<p>The key distinction is <strong>lineage</strong>: traditional goth looks toward early-1980s scene visuals, while nu goth, soft goth and romantic goth organize dark fashion differently. Our Goth Style guide provides the broader definition; this article focuses on traditional goth.</p>",
+    "removed_ids": "[2586]",
+    "tsv": "data/en-translations/internal-links/e4/trad-goth-hair-makeup-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/vampire-goth-style-outfits.html",
+    "vi_source": "blog/vampire-goth-la-gi-vampire-goth-aesthetic.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Remember that <strong>goth as a subculture</strong> is broader than a clothing aesthetic. Vampire goth is a useful visual styling label rather than a replacement for music history, community or other goth branches. This article focuses on vampire-inspired outfits; our <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">goth style guide</a> covers the broader foundation.</p>",
+    "en_after": "<p>Remember that <strong>goth as a subculture</strong> is broader than a clothing aesthetic. Vampire goth is a useful visual styling label rather than a replacement for music history, community or other goth branches. This article focuses on vampire-inspired outfits; our goth style guide covers the broader foundation.</p>",
+    "removed_ids": "[2700]",
+    "tsv": "data/en-translations/internal-links/e4/vampire-goth-style-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-are-cargo-pants.html",
+    "vi_source": "blog/quan-cargo-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This page explains what cargos are and how to choose them. For specific outfit combinations, see <a  hreflang=\"en\" href=\"/en/blog/womens-cargo-pants-outfits.html\">women's cargo pants outfit ideas</a>; for shopping decisions, read <a hreflang=\"en\" href=\"/en/blog/buying-womens-cargo-pants.html\">where to buy women's cargo pants</a>.</p>",
+    "en_after": "<p>This page explains what cargos are and how to choose them. For specific outfit combinations, see <a  hreflang=\"en\" href=\"/en/blog/womens-cargo-pants-outfits.html\">women's cargo pants outfit ideas</a>; for shopping decisions, read where to buy women's cargo pants.</p>",
+    "removed_ids": "[2828]",
+    "tsv": "data/en-translations/internal-links/e4/what-are-cargo-pants.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-does-aesthetic-mean-fashion.html",
+    "vi_source": "blog/aesthetic-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>An aesthetic is more than a palette. These three systems illustrate contrasting ways of organizing an outfit: <a href=\"/en/blog/preppy-style-guide.html\" hreflang=\"en\">Preppy</a> uses collegiate references and garment structure; <a href=\"/en/blog/sporty-chic-style-guide.html\" hreflang=\"en\">Sporty Chic</a> uses sports-inspired pieces and movement-oriented combinations; <a href=\"/en/blog/what-is-techwear.html\" hreflang=\"en\">Techwear</a> assesses functional materials, storage and weather protection rather than assuming a technical appearance proves performance.</p>",
+    "en_after": "<p>An aesthetic is more than a palette. These three systems illustrate contrasting ways of organizing an outfit: Preppy uses collegiate references and garment structure; Sporty Chic uses sports-inspired pieces and movement-oriented combinations; Techwear assesses functional materials, storage and weather protection rather than assuming a technical appearance proves performance.</p>",
+    "removed_ids": "[2867, 2868, 2869]",
+    "tsv": "data/en-translations/internal-links/e4/what-does-aesthetic-mean-fashion.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-alt-style.html",
+    "vi_source": "blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>On a small budget, avoid buying an entire set because its listing says Alt. Prioritize reusable pieces: distinctive bottoms such as cargos, wide jeans, or a mini skirt; a textured or graphic top; then footwear and accessories. Ask whether it works in three outfits, suits your preferred proportions, and remains useful without accessories. For a practical sequence, see <a href=\"/en/blog/alternative-fashion-for-beginners.html\" hreflang=\"en\">Alternative Fashion for Beginners</a>.</p>",
+    "en_after": "<p>On a small budget, avoid buying an entire set because its listing says Alt. Prioritize reusable pieces: distinctive bottoms such as cargos, wide jeans, or a mini skirt; a textured or graphic top; then footwear and accessories. Ask whether it works in three outfits, suits your preferred proportions, and remains useful without accessories. For a practical sequence, see Alternative Fashion for Beginners.</p>",
+    "removed_ids": "[2937]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-alt-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-alt-style.html",
+    "vi_source": "blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Once a pattern appears, choose a starting direction and develop it gradually. Explore <a href=\"/en/blog/egirl-alt-girl-guides.html\" hreflang=\"en\">E-Girl / Alt Girl</a>, <a href=\"/style/goth.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Goth (Vietnamese)</a>, <a href=\"/style/punk.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Punk (Vietnamese)</a>, <a href=\"/style/dark-feminine.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Dark Feminine (Vietnamese)</a> and the <a href=\"/en/blog/badgirl-fashion-style-guide.html\" hreflang=\"en\" style=\"color:var(--red);text-decoration:none;\">Badgirl Aesthetic Guide</a> for possible directions. Adding one or two useful pieces at a time can help a wardrobe grow around existing clothes.</p>",
+    "en_after": "<p>Once a pattern appears, choose a starting direction and develop it gradually. Explore E-Girl / Alt Girl, <a href=\"/style/goth.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Goth (Vietnamese)</a>, <a href=\"/style/punk.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Punk (Vietnamese)</a>, <a href=\"/style/dark-feminine.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">Dark Feminine (Vietnamese)</a> and the <a href=\"/en/blog/badgirl-fashion-style-guide.html\" hreflang=\"en\" style=\"color:var(--red);text-decoration:none;\">Badgirl Aesthetic Guide</a> for possible directions. Adding one or two useful pieces at a time can help a wardrobe grow around existing clothes.</p>",
+    "removed_ids": "[2932]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-alt-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-an-outfit.html",
+    "vi_source": "blog/outfit-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>OOTD stands for 'Outfit of the Day': the look you wear on a particular day. For details about OOTD meaning, where people post their looks and how daily outfit photos help develop personal style, see the dedicated guide <a  hreflang=\"en\" href=\"/en/blog/what-does-ootd-mean.html\">what OOTD means</a>. On Instagram, TikTok and Pinterest, an OOTD usually shows what someone actually wears for coffee, school, work, an evening out or a photo walk.</p>",
+    "en_after": "<p>OOTD stands for 'Outfit of the Day': the look you wear on a particular day. For details about OOTD meaning, where people post their looks and how daily outfit photos help develop personal style, see the dedicated guide what OOTD means. On Instagram, TikTok and Pinterest, an OOTD usually shows what someone actually wears for coffee, school, work, an evening out or a photo walk.</p>",
+    "removed_ids": "[2946]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-an-outfit.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-athleisure.html",
+    "vi_source": "blog/athleisure-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Put simply, test activewear for the activity, athleisure for the planned day, and <a href=\"/en/blog/sporty-chic-style-guide.html\" hreflang=\"en\">Sporty Chic guide</a> for the finish you want in that setting. Compare <a href=\"/en/blog/fashion-aesthetic-directory.html\" hreflang=\"en\">style names through their outfit finish</a> before adding accessories, distinguishing practical clothing needs from the aesthetic label. A fashion label alone answers none of those practical questions.</p>",
+    "en_after": "<p>Put simply, test activewear for the activity, athleisure for the planned day, and Sporty Chic guide for the finish you want in that setting. Compare <a href=\"/en/blog/fashion-aesthetic-directory.html\" hreflang=\"en\">style names through their outfit finish</a> before adding accessories, distinguishing practical clothing needs from the aesthetic label. A fashion label alone answers none of those practical questions.</p>",
+    "removed_ids": "[2953]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-athleisure.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-athleisure.html",
+    "vi_source": "blog/athleisure-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>An outfit need not contain every feature. One starting point is <strong>one or two sportswear-associated pieces</strong> combined with deliberate proportions, layers, and accessories. When the main question becomes visual polish rather than sustained everyday use, compare the <a href=\"/en/blog/sporty-chic-style-guide.html\" hreflang=\"en\">Sporty Chic guide</a> for that emphasis. The terms overlap rather than forming rigid categories.</p>",
+    "en_after": "<p>An outfit need not contain every feature. One starting point is <strong>one or two sportswear-associated pieces</strong> combined with deliberate proportions, layers, and accessories. When the main question becomes visual polish rather than sustained everyday use, compare the Sporty Chic guide for that emphasis. The terms overlap rather than forming rigid categories.</p>",
+    "removed_ids": "[2952]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-athleisure.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-egirl-style.html",
+    "vi_source": "blog/phong-cach-egirl-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> explains <strong>what e-girl means</strong>, its background, visual vocabulary, wardrobe, and styling. Browse all related guides and outfits in <a href=\"/en/blog/egirl-alt-girl-guides.html\" hreflang=\"en\">E-Girl / Alt Girl — Guide Collection</a>; for outfit examples alone, visit <a href=\"/style/egirl.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">E-Girl looks (Vietnamese)</a>.</p>",
+    "en_after": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> explains <strong>what e-girl means</strong>, its background, visual vocabulary, wardrobe, and styling. Browse all related guides and outfits in E-Girl / Alt Girl — Guide Collection; for outfit examples alone, visit <a href=\"/style/egirl.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">E-Girl looks (Vietnamese)</a>.</p>",
+    "removed_ids": "[2959]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-egirl-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-emo-style.html",
+    "vi_source": "blog/phong-cach-emo-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>The useful distinction is the <strong>frame of reference</strong>rather than exclusive ownership of a garment. Emo has a particular musical and subcultural history; e-girl is a highly remixable internet aesthetic. Explore <a href=\"/en/blog/what-is-egirl-style.html\" hreflang=\"en\">our e-girl style guide</a> and <a href=\"/style/egirl.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">E-Girl / Alt Girl Looks (Vietnamese)</a> for the broader visual context.</p>",
+    "en_after": "<p>The useful distinction is the <strong>frame of reference</strong>rather than exclusive ownership of a garment. Emo has a particular musical and subcultural history; e-girl is a highly remixable internet aesthetic. Explore our e-girl style guide and <a href=\"/style/egirl.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">E-Girl / Alt Girl Looks (Vietnamese)</a> for the broader visual context.</p>",
+    "removed_ids": "[2973]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-emo-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-goth-style.html",
+    "vi_source": "blog/goth-aesthetic-huong-dan-day-du.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For a more restrained setting, tailoring keeps the outfit structured while dark colors, silver jewelry, pointed shoes or a defined bag retain the mood. Read <a href=\"/en/blog/corporate-goth-office-outfits.html\" hreflang=\"en\">Corporate Goth</a> for workplace-specific advice.</p>",
+    "en_after": "<p>For a more restrained setting, tailoring keeps the outfit structured while dark colors, silver jewelry, pointed shoes or a defined bag retain the mood. Read Corporate Goth for workplace-specific advice.</p>",
+    "removed_ids": "[2993]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-goth-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-goth-style.html",
+    "vi_source": "blog/goth-aesthetic-huong-dan-day-du.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Comfortable, wearable boots and well-fitting bottoms often deserve priority over a large accessory set. For purchase decisions, use <a href=\"/en/blog/buying-goth-clothing-women.html\" hreflang=\"en\">our women's goth shopping guide</a> to assess sizing, material and listings.</p>",
+    "en_after": "<p>Comfortable, wearable boots and well-fitting bottoms often deserve priority over a large accessory set. For purchase decisions, use our women's goth shopping guide to assess sizing, material and listings.</p>",
+    "removed_ids": "[2992]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-goth-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-goth-style.html",
+    "vi_source": "blog/goth-aesthetic-huong-dan-day-du.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> we explain goth style, its visual language and practical applications. For shopping advice, see <a href=\"/en/blog/buying-goth-clothing-women.html\" hreflang=\"en\">Where to Buy Women's Goth Clothes</a>. To explore the full collection, visit <a href=\"/en/blog/goth-guides.html\" hreflang=\"en\">the Goth / Gothic guide hub</a>.</p>",
+    "en_after": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> we explain goth style, its visual language and practical applications. For shopping advice, see <a href=\"/en/blog/buying-goth-clothing-women.html\" hreflang=\"en\">Where to Buy Women's Goth Clothes</a>. To explore the full collection, visit the Goth / Gothic guide hub.</p>",
+    "removed_ids": "[2983]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-goth-style.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-grunge-style-vs-punk.html",
+    "vi_source": "blog/grunge-la-gi-khac-gi-punk.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>To put the ideas into practice, see <a href=\"/en/blog/grunge-outfits-women-layering.html\" hreflang=\"en\">our grunge outfit guide for women</a> or <a href=\"/style/punk.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">the Punk / Grunge look collection (Vietnamese)</a>.</p>",
+    "en_after": "<p>To put the ideas into practice, see our grunge outfit guide for women or <a href=\"/style/punk.html\" hreflang=\"vi\" lang=\"vi\" title=\"Vietnamese reference\">the Punk / Grunge look collection (Vietnamese)</a>.</p>",
+    "removed_ids": "[3005]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-grunge-style-vs-punk.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-indie-sleaze.html",
+    "vi_source": "blog/indie-sleaze-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>For related Grunge and Punk distinctions, read <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">what Grunge means and how it differs from Punk</a> . For outerwear guidance, read <a href=\"/en/blog/womens-leather-jacket-outfits.html\" hreflang=\"en\">women's leather jacket outfits</a> .</p>",
+    "en_after": "<p>For related Grunge and Punk distinctions, read <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">what Grunge means and how it differs from Punk</a> . For outerwear guidance, read women's leather jacket outfits .</p>",
+    "removed_ids": "[3029]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-indie-sleaze.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-indie-sleaze.html",
+    "vi_source": "blog/indie-sleaze-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Compare <a href=\"/en/blog/hipster-style.html\" hreflang=\"en\">Hipster Style&#x27;s surrounding references</a> through the complete proportions and setting rather than a tee shared with another nostalgic direction. After reading <a href=\"/en/blog/what-is-y2k-fashion.html\" hreflang=\"en\">what Y2K fashion means</a> , think of Indie Sleaze as a neighboring nostalgia direction with more worn texture and nightlife references, rather than the single successor to Y2K.</p>",
+    "en_after": "<p>Compare <a href=\"/en/blog/hipster-style.html\" hreflang=\"en\">Hipster Style&#x27;s surrounding references</a> through the complete proportions and setting rather than a tee shared with another nostalgic direction. After reading what Y2K fashion means , think of Indie Sleaze as a neighboring nostalgia direction with more worn texture and nightlife references, rather than the single successor to Y2K.</p>",
+    "removed_ids": "[3020]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-indie-sleaze.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-indie-sleaze.html",
+    "vi_source": "blog/indie-sleaze-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> understand Indie Sleaze and build adaptable combinations. For related foundations, explore <a href=\"/en/blog/what-is-grunge-style-vs-punk.html\" hreflang=\"en\">Grunge vs. Punk</a> or <a href=\"/en/blog/what-is-y2k-fashion.html\" hreflang=\"en\">what Y2K fashion means</a>.</p>",
+    "en_after": "<p class=\"definition-intent-lock\"><strong>In this guide: </strong> understand Indie Sleaze and build adaptable combinations. For related foundations, explore Grunge vs. Punk or <a href=\"/en/blog/what-is-y2k-fashion.html\" hreflang=\"en\">what Y2K fashion means</a>.</p>",
+    "removed_ids": "[3015]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-indie-sleaze.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/what-is-visual-kei.html",
+    "vi_source": "blog/visual-kei-la-gi.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Compare these directions through context and recognizable features. <a href=\"/en/blog/what-is-goth-style.html\" hreflang=\"en\">Goth Style</a> covers Goth; <a href=\"/en/blog/scene-style-fashion.html\" hreflang=\"en\">What Is Scene Style?</a> covers Scene. This article addresses Visual Kei's music and visual context alongside editorial outfit adaptations.</p>",
+    "en_after": "<p>Compare these directions through context and recognizable features. Goth Style covers Goth; <a href=\"/en/blog/scene-style-fashion.html\" hreflang=\"en\">What Is Scene Style?</a> covers Scene. This article addresses Visual Kei's music and visual context alongside editorial outfit adaptations.</p>",
+    "removed_ids": "[3074]",
+    "tsv": "data/en-translations/internal-links/e4/what-is-visual-kei.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/womens-cargo-pants-outfits.html",
+    "vi_source": "blog/phoi-do-voi-quan-cargo-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>Our <a hreflang=\"en\" href=\"/en/blog/what-are-cargo-pants.html\">cargo-pants definition guide</a> explains their design and fit; the <a hreflang=\"en\" href=\"/en/blog/buying-womens-cargo-pants.html\">women's cargo-pants shopping guide</a> helps with purchase decisions. Here we focus on <strong>styling women's cargo pants</strong>through tops, shoes, layers and proportion.</p>",
+    "en_after": "<p>Our <a hreflang=\"en\" href=\"/en/blog/what-are-cargo-pants.html\">cargo-pants definition guide</a> explains their design and fit; the women's cargo-pants shopping guide helps with purchase decisions. Here we focus on <strong>styling women's cargo pants</strong>through tops, shoes, layers and proportion.</p>",
+    "removed_ids": "[3142]",
+    "tsv": "data/en-translations/internal-links/e4/womens-cargo-pants-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/womens-cargo-pants-outfits.html",
+    "vi_source": "blog/phoi-do-voi-quan-cargo-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p><a href=\"/en/blog/what-are-cargo-pants.html\" hreflang=\"en\">What are cargo pants?</a> explains their structure and fit; <a href=\"/en/blog/buying-womens-cargo-pants.html\" hreflang=\"en\">our guide to buying women's cargo pants</a> covers product selection. This article focuses on styling cargo pants into outfits: tops, shoes, layers and proportions.</p>",
+    "en_after": "<p>What are cargo pants? explains their structure and fit; <a href=\"/en/blog/buying-womens-cargo-pants.html\" hreflang=\"en\">our guide to buying women's cargo pants</a> covers product selection. This article focuses on styling cargo pants into outfits: tops, shoes, layers and proportions.</p>",
+    "removed_ids": "[3139]",
+    "tsv": "data/en-translations/internal-links/e4/womens-cargo-pants-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/womens-leather-jacket-outfits.html",
+    "vi_source": "blog/phoi-do-voi-ao-khoac-da-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If you want to take the look further into head-to-toe leather, the <a hreflang=\"en\" href=\"/en/blog/womens-leather-pants-outfits.html\">women's leather trousers outfit guide</a> shows how to style leather bottoms without overdoing the look, including combinations with the jacket you already own.</p>",
+    "en_after": "<p>If you want to take the look further into head-to-toe leather, the women's leather trousers outfit guide shows how to style leather bottoms without overdoing the look, including combinations with the jacket you already own.</p>",
+    "removed_ids": "[3236]",
+    "tsv": "data/en-translations/internal-links/e4/womens-leather-jacket-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/womens-leather-pants-outfits.html",
+    "vi_source": "blog/phoi-do-voi-quan-da-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>If you want to build a coordinated leather outfit from top to bottom, read <a  hreflang=\"en\" href=\"/en/blog/womens-leather-jacket-outfits.html\">women's leather-jacket outfit guide</a> to learn which jacket to pair with the trousers, and <a  hreflang=\"en\" href=\"/en/blog/how-to-style-womens-boots.html\">women's boots outfit styling</a> to complete the footwear. If you prefer layered Grunge rather than a clean leather look, read <a  hreflang=\"en\" href=\"/en/blog/grunge-outfits-women-layering.html\">the women's Grunge outfit guide</a> for a different approach to dark aesthetics. If you're building an alternative wardrobe from scratch, <a  hreflang=\"en\" href=\"/en/blog/build-a-dark-aesthetic-wardrobe.html\">the dark aesthetic wardrobe guide</a> can help you decide whether leather trousers belong among your first purchases.</p>",
+    "en_after": "<p>If you want to build a coordinated leather outfit from top to bottom, read women's leather-jacket outfit guide to learn which jacket to pair with the trousers, and <a  hreflang=\"en\" href=\"/en/blog/how-to-style-womens-boots.html\">women's boots outfit styling</a> to complete the footwear. If you prefer layered Grunge rather than a clean leather look, read <a  hreflang=\"en\" href=\"/en/blog/grunge-outfits-women-layering.html\">the women's Grunge outfit guide</a> for a different approach to dark aesthetics. If you're building an alternative wardrobe from scratch, <a  hreflang=\"en\" href=\"/en/blog/build-a-dark-aesthetic-wardrobe.html\">the dark aesthetic wardrobe guide</a> can help you decide whether leather trousers belong among your first purchases.</p>",
+    "removed_ids": "[3249]",
+    "tsv": "data/en-translations/internal-links/e4/womens-leather-pants-outfits.duplicates.tsv"
+  },
+  {
+    "source": "en/blog/womens-straight-leg-jeans-outfits.html",
+    "vi_source": "blog/phoi-do-voi-quan-jean-ong-suong-nu.html",
+    "kind": "duplicate-or-density",
+    "en_before": "<p>This section focuses on <strong>straight-leg denim</strong>. Explore wider volume in <a href=\"/en/blog/wide-leg-jeans-outfits-dark-y2k.html\" hreflang=\"en\">wide-leg jeans</a>; relaxed baggy proportions in <a href=\"/en/blog/baggy-pants-outfits-women.html\" hreflang=\"en\">baggy trouser outfits</a>; and a widening lower leg in <a href=\"/en/blog/flared-pants-outfits-women.html\" hreflang=\"en\">flared trousers</a>. Each silhouette deserves its own proportion decisions.</p>",
+    "en_after": "<p>This section focuses on <strong>straight-leg denim</strong>. Explore wider volume in wide-leg jeans; relaxed baggy proportions in <a href=\"/en/blog/baggy-pants-outfits-women.html\" hreflang=\"en\">baggy trouser outfits</a>; and a widening lower leg in <a href=\"/en/blog/flared-pants-outfits-women.html\" hreflang=\"en\">flared trousers</a>. Each silhouette deserves its own proportion decisions.</p>",
+    "removed_ids": "[3285]",
+    "tsv": "data/en-translations/internal-links/e4/womens-straight-leg-jeans-outfits.duplicates.tsv"
+  }
+]

@@ -20,6 +20,8 @@ def predecessors():
   size=int(header[2]);offset=end+1;result[ref]=data[offset:offset+size].decode('utf-8').replace('\r\n','\n');offset+=size+1
  return result
 def qualified(path,raw):
+ from en_e4_release import previous as e4_previous
+ raw=e4_previous(path,raw)
  release=manifest();row=release['files'].get(path) if release else None
  if not row or digest(raw)!=row['after_sha256']:return False
  if row['before_sha256']==row['after_sha256']:return False
@@ -32,6 +34,8 @@ def qualified(path,raw):
  return bool(row['tsvs'])
 def english_previous(path,raw):
  """Unknown EN, VI or TSV bytes cannot obtain a historical view."""
+ from en_e4_release import previous as e4_previous
+ raw=e4_previous(path,raw)
  if not qualified(path,raw):return raw
  release=manifest();before=predecessors()[release['baseline']+':'+path]
  assert digest(before)==release['files'][path]['before_sha256'],path
