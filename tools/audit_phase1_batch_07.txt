@@ -1,0 +1,66 @@
+==============================================================================
+Bài VI: 436 | stub redirect bỏ qua: 9
+Link ngữ cảnh tới bài khác/bài: min 0, TB 4.6, max 12
+Cụm: Aesthetic/Style=126, Ao=49, Phoi-mau=47, Vay-dam=32, Phu-kien=31, Quan=31, Outfit-core=27, Dia-diem-dip=23, Giay=20, Vai=20, Cham-soc=12, Toc-lam-dep=9, Kinh=9
+==============================================================================
+[PASS] G1 link gãy / link vào redirect
+[FAIL] G2 bài có <2 link ngữ cảnh tới bài blog khác  (10)
+        - blog/mori-kei.html
+        - blog/morute.html
+        - blog/phoi-do-theo-ao-nu.html
+        - blog/phoi-do-theo-chan-vay-vay-nu.html
+        - blog/phoi-do-theo-quan-nu.html
+        - blog/quan-jogger-la-gi.html
+[FAIL] G3 bài không có link ngữ cảnh vào từ bài khác  (211)
+        - blog/1920s-fashion.html
+        - blog/anime-outfit.html
+        - blog/ao-anime-nu.html
+        - blog/ao-ba-lo-nu.html
+        - blog/ao-chong-nang-nu.html
+        - blog/ao-da-nu-dang-ngan.html
+[FAIL] G4 hub trỏ đủ xuống con + con trỏ lên hub  (21)
+        - Aesthetic/Style: hub thiếu 28 bài con (vd ['1920s-fashion', 'anime-outfit'])
+        - Aesthetic/Style: 6 bài con không link lên hub (vd ['dieselpunk', 'do-goth-nu-mua-o-dau'])
+        - Ao: hub thiếu 31 bài con (vd ['ao-anime-nu', 'ao-cardigan-nu'])
+        - Ao: 3 bài con không link lên hub (vd ['ao-corset-nu-mua-o-dau', 'form-oversize-la-gi'])
+        - Cham-soc: CHƯA CÓ HUB
+        - Dia-diem-dip: CHƯA CÓ HUB
+[FAIL] G5 bài không có link ngang cùng cụm trong thân bài  (112)
+        - ao-ba-lo-nu
+        - phu-kien-alt-fashion-thiet-yeu
+        - morute
+        - new-look-fashion
+        - phoi-do-dang-qua-le
+        - phoi-do-dang-tam-giac-nguoc
+[FAIL] G6 cặp áo<->quần cùng màu chưa link hai chiều  (7)
+        - ao-nau-phoi-quan-mau-gi <-> quan-nau-phoi-ao-mau-gi
+        - ao-xanh-reu-phoi-quan-mau-gi <-> quan-xanh-reu-phoi-ao-mau-gi
+        - ao-vang-phoi-quan-mau-gi <-> quan-vang-phoi-ao-mau-gi
+        - ao-den-phoi-quan-mau-gi <-> quan-den-phoi-ao-mau-gi
+        - ao-hong-phoi-quan-mau-gi <-> quan-hong-phoi-ao-mau-gi
+        - ao-tim-phoi-quan-mau-gi <-> quan-tim-phoi-ao-mau-gi
+[FAIL] G7 câu chứa link có chữ hub/trang trụ cột/bổ trợ  (13)
+        - punk-makeup-dark-aesthetic: Về bối cảnh, Punk makeup không tách rời hoàn toàn khỏi thời trang. Nó 
+        - pyjama: Nếu hai phần cơ thể cần hai size khác nhau, tìm nơi cho chọn size từng
+        - quan-kaki-nu: Trong mô tả cửa hàng, “suông” có thể chỉ nhiều mức rộng. Hỏi chiều rộn
+        - quan-kaki-nu: Túi có cấu trúc giữ nét gọn khi quần mềm, còn túi mềm có thể làm bộ đồ
+        - quan-ong-rong-nu-phoi-voi-ao-gi: Nếu bạn đang phân vân giữa nhiều form quần khác nhau, xem thêm Item Gu
+        - tie-dye: Kiểm tra cả đường may và độ cân của thân áo, không chỉ soi màu. Họa ti
+[PASS] G8 anchor generic/rỗng
+[FAIL] G9 một đích bị link >1 lần trong cùng bài  (10)
+        - phu-kien-egirl-mua-o-dau -> that-lung-dinh-tan-phoi-do
+        - phu-kien-egirl-mua-o-dau -> fishnet-tights-la-gi-cach-phoi
+        - phu-kien-egirl-mua-o-dau -> leg-warmers-la-gi-cach-phoi
+        - punk-grunge -> grunge-la-gi-khac-gi-punk
+        - quan-baggy-cho-nguoi-thap -> quan-baggy-phoi-voi-ao-gi
+        - quan-cargo-nu-mua-o-dau -> quan-cargo-la-gi
+[FAIL] G10 cùng 1 anchor lặp >5 lần cho cùng 1 đích  (43)
+        - 13x "hướng dẫn phụ kiện nữ cá tính" -> phu-kien-thoi-trang-nu-ca-tinh
+        - 12x "chọn size đồ online" -> cach-chon-size-do-alt-fashion-online
+        - 12x "phối layering nữ" -> phoi-do-layering-nu
+        - 12x "cách tạo moodboard thời trang" -> cach-tao-moodboard-thoi-trang
+        - 11x "hướng dẫn layering nữ" -> phoi-do-layering-nu
+        - 11x "mặc đồ đen mùa hè có nóng không" -> mac-do-den-mua-he-co-nong-khong
+[PASS] G11 bài có >12 link tới bài khác (quá dày)
+==============================================================================
+KẾT QUẢ: 8 gate chưa đạt
