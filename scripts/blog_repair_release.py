@@ -70,6 +70,8 @@ def repair(path,raw):
  return raw,changes
 
 def original(path,raw):
+ from en_link_fix_release import english_previous
+ raw=english_previous(path,raw)
  manifest=D/'reviewed-html.json'
  if not manifest.exists():return raw
  if 'review' not in CACHE:CACHE['review']=json.loads(manifest.read_text())

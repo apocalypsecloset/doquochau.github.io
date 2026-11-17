@@ -1,0 +1,25 @@
+"""Literal sentences authored after reviewing each frozen English paragraph and VI context."""
+SENTENCES = {
+0: 'Compare the waist placement with <a href="/en/blog/1920s-fashion.html" hreflang="en">1920s silhouette references</a> before treating the two decades as one vintage look.',
+1: 'Use <a href="/en/blog/fashion-aesthetic-directory.html" hreflang="en">fashion across different eras</a> to compare waist height, skirt length and volume on similar examples.',
+2: 'Set these changing outlines beside the <a href="/en/blog/fashion-aesthetic-directory.html" hreflang="en">fashion references by period</a> to separate an era label from the particular shape you want to wear.',
+3: 'Compare <a href="/en/blog/fashion-aesthetic-directory.html" hreflang="en">adjacent fashion aesthetics</a> before letting a trend label decide which proportions are worth keeping.',
+4: 'Check an <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">occasion-based travel plan</a> against walking time and shoe removal before choosing a bulkier pair.',
+5: 'An <a href="/en/blog/outfit-di-da-lat-cho-nu.html" hreflang="en">outfit plan for Da Lat</a> helps you decide which destination layer can be worn in transit instead of packed separately.',
+6: 'Match the layer with the <a href="/en/blog/quan-ni-nu-sweatpants.html" hreflang="en">fit of women\'s sweatpants</a>, checking the waistband and cuffs while you sit in the proposed outfit.',
+7: 'Separate the look into <a href="/en/blog/womens-item-styling-guides.html" hreflang="en">individual garment choices</a> before comparing the fit requirements of the set as a whole.',
+8: 'For the base layer, use the <a href="/en/blog/ao-ba-lo-nu.html" hreflang="en">tank-top fit checks</a> to compare coverage and armholes before adding an overshirt.',
+9: 'The <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">destination and activity guides</a> help you put the journey, changing facilities and rest stops into one clothing plan.',
+10: 'An <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">outing plan by setting</a> keeps the bag and footwear relevant if the cafe visit continues into another activity.',
+11: 'Compare <a href="/en/blog/combat-boots-vs-platform-boots.html" hreflang="en">combat versus platform boots</a> for sole height and weight before deciding which pair to test for a long standing schedule.',
+12: 'Use <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">occasion-specific outfit planning</a> to organize venue checks before choosing a layer you can remove and carry through the show.',
+13: 'Assess <a href="/en/blog/alternative-accessories-guide-directory.html" hreflang="en">accessories in the whole outfit</a> before deciding whether the frames or the hair should lead near your face.',
+14: 'Choose the <a href="/en/blog/that-lung-nu.html" hreflang="en">belt\'s role and placement</a> before increasing the hardware, so it connects the outfit instead of adding another competing accent.',
+15: 'The <a href="/en/blog/womens-item-styling-guides.html" hreflang="en">garment-led outfit routes</a> let you test a proposed key piece against familiar clothes before treating it as a separate purchase.',
+16: 'A <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">plan for each destination</a> helps establish carrying needs and walking time before the bag is chosen just for its size or shape.',
+17: 'Revisit the <a href="/en/blog/wide-leg-jeans-outfits-dark-y2k.html" hreflang="en">wide-leg jeans styling options</a> to reuse a structured or lace top without making every dinner outfit a skirt combination.',
+18: 'Assign each layer a role with the <a href="/en/blog/womens-item-styling-guides.html" hreflang="en">item-by-item outfit guide</a>, then remove one piece to see whether it contributed structure or merely extra bulk.',
+19: 'Use an <a href="/en/blog/occasion-destination-outfit-guides.html" hreflang="en">evening itinerary outfit plan</a> to check the footwear against every planned stop before making the bag the leading accent.',
+}
+PARAGRAPH = {116: 6, 130: 6, 179: 10, 180: 8, 182: 3,
+             535: 6, 546: 11, 560: 14, 562: 25, 563: 12, 564: 9}

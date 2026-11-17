@@ -129,18 +129,19 @@ for repair in M['image_sitemap_repairs']:
     for url,sha in repair['asset_map_sha256'].items():
         check(url in assets and assets[url]['status']==200 and assets[url]['sha256']==sha,repair['file']+': existing image evidence '+url)
 
-# Crucially, no normalization is inserted into the translation-source call chain.
-# Original source locks, TSVs and EN HTML remain frozen until explicit E3 approval.
+# The E0b record remains immutable. Only the separately approved E3 exact,
+# paired HTML/TSV successor can expose an old EN view to historical checks.
 assert M['en_source_successors']=={},'E0b must not release translation-source successors'
 names=git('ls-tree','-r','--name-only',M['vi_release_commit'],'--','data/en-translations','en/blog').decode().splitlines()
 history=git('ls-tree','-r','--name-only',M['vi_release_commit'],'--','docs').decode().splitlines()
 history=[p for p in history if p.endswith('/reviewed-html.json') or p.endswith('/source-hashes.json')]
 names+=history
 freeze=blobs([M['vi_release_commit']+':'+p for p in names])
-for p in names:check((ROOT/p).read_text(encoding='utf-8')==freeze[M['vi_release_commit']+':'+p],p+': EN/TSV/manifest frozen before E3')
+from en_link_fix_release import english_previous, source_previous, manifest as en_e3_manifest
+for p in names:check(english_previous(p,(ROOT/p).read_text(encoding='utf-8'))==freeze[M['vi_release_commit']+':'+p],p+': frozen original or exact approved E3 predecessor')
 check(not git('diff','--name-only',M['vi_release_commit'],'--','docs/qa').strip(),'Existing docs/qa evidence unchanged')
 from privacy_release import original as translation_original
-source_mismatches=0;source_count=0
+source_mismatches=0;source_count=0;approved_e3_sources=0
 for p in sorted((ROOT/'data/en-translations').glob('batch*.json')):
     if p.stem in ['batch05b','batch40']:continue # E2 has a separate new-source contract, never re-baselines an old batch.
     for c in json.loads(p.read_text(encoding='utf-8')):
@@ -148,11 +149,15 @@ for p in sorted((ROOT/'data/en-translations').glob('batch*.json')):
         raw=translation_original(path,(ROOT/path).read_text(encoding='utf-8'))
         raw=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',raw,flags=re.S)
         source_count+=1;source_mismatches+=digest(raw)!=c['source_sha256']
-check((source_count,source_mismatches)==(215,210),'Translation source locks must still reject the 210 unreleased VI successors')
+        current=(ROOT/path).read_text(encoding='utf-8')
+        approved_e3_sources+=source_previous(path,current)!=current
+check((source_count,source_mismatches)==(215,210),'All 215 original source locks retained; 210 raw VI successors still differ')
+check(approved_e3_sources==(210 if en_e3_manifest() else 0),'E3 source release must be complete and paired')
 
 report=dict(modified_vi_articles=modified,new_vi_hubs=added,exact_logged_spans=span_count,
             new_or_replaced_internal_link_occurrences_checked=new_links,original_protected_nodes_unchanged=True,
             added_navigation_card_images=extra_images,added_navigation_card_headings=extra_headings,
-            source_hash_entries=source_count,unreleased_source_hash_mismatches=source_mismatches,
+            source_hash_entries=source_count,raw_source_hash_mismatches=source_mismatches,
+            approved_e3_source_successors=approved_e3_sources,
             historical_hashes_unchanged=True,errors=errors)
 print(json.dumps(report,ensure_ascii=False,indent=2));sys.exit(bool(errors))

@@ -40,6 +40,8 @@ def approved_file_bytes(path, raw):
 
 def hub_contract(path, raw):
     """Exact E2 full-directory successor of its fully translated source-parity DOM."""
+    from en_link_fix_release import english_previous
+    raw=english_previous(path,raw)
     release=batch40_manifest()
     row=release['files'].get(path) if release else None
     if not row or row['kind']!='added' or digest(raw)!=row['after_sha256']:return raw
@@ -55,6 +57,8 @@ def hub_publication_rows():
 
 def historical(path, raw):
     """Recognize only a pinned existing-file successor; reject all unknown bytes."""
+    from en_link_fix_release import english_previous
+    raw=english_previous(path,raw)
     raw = batch40_previous(path,raw)
     row = manifest()['files'].get(path)
     if not row or row['kind'] != 'modified' or digest(raw) != row['after_sha256']:
