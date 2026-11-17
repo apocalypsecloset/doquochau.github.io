@@ -7,7 +7,9 @@ import csv,json,hashlib,re,posixpath,sys
 from en_translate import ROOT,VI
 
 def source(slug):
- raw=privacy_original('blog/'+slug+'.html',(ROOT/'blog'/f'{slug}.html').read_text())
+ from en_link_fix_release import source_previous
+ path='blog/'+slug+'.html'
+ raw=privacy_original(path,source_previous(path,(ROOT/path).read_text()))
  raw=re.sub(r'<!-- AC-EN-BATCH[0-9]{2}-START -->.*?<!-- AC-EN-BATCH[0-9]{2}-END -->','',raw,flags=re.S)
  s=BeautifulSoup(raw,'html.parser');main=s.main;assert main and main.h1
  texts=[]

@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "vi_slug": "solarpunk",
+      "en_slug": "solarpunk-fashion-aesthetic-guide",
+      "source_text_segments": 151,
+      "en_words": 2399,
+      "headings": 16,
+      "images": 4,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "white-on-white",
+      "en_slug": "white-on-white-outfit-guide",
+      "source_text_segments": 104,
+      "en_words": 1486,
+      "headings": 16,
+      "images": 6,
+      "tables": 0,
+      "faqs": 3
+    }
+  ],
+  "errors": [
+    "solarpunk-fashion-aesthetic-guide: source hash",
+    "solarpunk-fashion-aesthetic-guide: figcaption parity 3/2",
+    "white-on-white-outfit-guide: source hash",
+    "white-on-white-outfit-guide: figcaption parity 5/2",
+    "Complete VI sitemap inventory"
+  ]
+}

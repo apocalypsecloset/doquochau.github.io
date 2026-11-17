@@ -1,0 +1,14 @@
+fatal: path 'blog/cach-cham-soc-do-nu.html' exists on disk, but not in '490cb5f'
+Traceback (most recent call last):
+  File "C:\Users\admin\OneDrive\Documents\ChatGPT\fix internal link\doquochau.github.io\scripts\qa_audit_followup.py", line 26, in <module>
+    raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASELINE+':'+path],cwd=ROOT,text=True);s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
+                                    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'show', '490cb5f:blog/cach-cham-soc-do-nu.html']' returned non-zero exit status 128.

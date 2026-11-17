@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "phase": "E2",
+  "baseline": "61515ae93c1bf4e2a7105616ae2b145a244fe0d3",
+  "files": {
+    "en/blog.html": {
+      "kind": "modified",
+      "before_sha256": "6f16d958438d8c9f067eac957ce4a31ecfe14e84ca73a9c631efd6a1abac8e7d",
+      "after_sha256": "df69121bfb17527aa3dff316b063b8ab46d8ddcb36d36122d2601d4b7508fe75",
+      "after_crlf_sha256": "2752f26b041aede08669d9dd1bf4cf0616b5535c93f86b6a3a0202668c8c12c2"
+    },
+    "sitemap.xml": {
+      "kind": "modified",
+      "before_sha256": "5295bcdc265a0ec243131e4c3dc54bf7f46fbf8d9cffabcf7e80ef1ac93e9274",
+      "after_sha256": "1d10e1b65691284db6bac261672214299debb9354b3bf1d69ec51c1c9294e21d",
+      "after_crlf_sha256": "697e3446c46ed3cbff1a2cd42cef949c6b5d9bf98a79d3e0203b6771c3080663"
+    },
+    "blog/phoi-mau-quan-ao-nu.html": {
+      "kind": "modified",
+      "before_sha256": "da8c061df23f9b9fa8f3bf6c2b9b3a91250a309c0f950cb3a616e2e3da89d50d",
+      "after_sha256": "b4551cdb289e2c026ab73b4a1917c23f816119c04b9293392c4c24e647519b14",
+      "after_crlf_sha256": "6ef4d2ff311cbe5cd06278aba4134c2271ebfbfdb66e5146c8f6ed985e858d21"
+    },
+    "blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html": {
+      "kind": "modified",
+      "before_sha256": "1b157484da7d6f69dc986d180a62219378aa9a26880df41ae6ea6e9b2ebf3314",
+      "after_sha256": "c9c9f27f9eefebb2b95e0518d249733af49305ef518d4052034e445a73f2cf80",
+      "after_crlf_sha256": "e22f39f45fa8658017051e6e7330abdc1bf93b57ec78ee11281a88a82c611131"
+    },
+    "blog/cach-cham-soc-do-nu.html": {
+      "kind": "modified",
+      "before_sha256": "590a0ba475ecbd7170ab4eeb695712e48ca9e98da51a1733a580543b8b7c5f0d",
+      "after_sha256": "280180c5d7dc20eec792e76ce8f4f420e2e80d2ed1fb45f90cebf5cd7f6e9526",
+      "after_crlf_sha256": "389e46d91a0a834002a8c6c7d3d7b3d73d6e58eeb13c254acfc55fc48f50c5fe"
+    },
+    "blog/chon-toc-va-makeup-theo-trang-phuc.html": {
+      "kind": "modified",
+      "before_sha256": "df611b871122b7781495577d69b70e3edf4dd49454a0215eacec06f0252031fa",
+      "after_sha256": "7e3e8b6f3ba60de2e84e3770270f34c481cf70bef6855a231eee0630263563c4",
+      "after_crlf_sha256": "dc5e3cfd7fe8c85f9e599f53377ad2d885ddaeb9ac509f91dfa429f168535892"
+    },
+    "en/blog/womens-color-coordination-guides.html": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "5808e08c501b17bf864d83883894b6b607b71d40f69494ecccbd328a0d3f961d",
+      "after_crlf_sha256": "eef45659d09640740049956539bb587f0cb8e83fa2deb0a184aee5d0eb6520e3"
+    },
+    "en/blog/occasion-destination-outfit-guides.html": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "c93a7082703108938bc03fc94707e53f1cea6b13552ead2474c4f085524ff68c",
+      "after_crlf_sha256": "36a4aa99afc533ce84c52818eb82aee5b24dfe53c498555e8b4494fc5b2f807b"
+    },
+    "en/blog/womens-clothing-care-guides.html": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "379ca274d8fc4210a4647b7d0b534e27e1278b30af7d342dfa52c8dbc63a3e70",
+      "after_crlf_sha256": "dbcfcbf94ac7b5641b090ed32ddabab2cc815aaeec99f9a6f734fed69eab515d"
+    },
+    "en/blog/alternative-hair-makeup-guides.html": {
+      "kind": "added",
+      "before_sha256": null,
+      "after_sha256": "d68d3f1936998ec221a82d83b726af203dc7dc28b3adea5c56950113f93dc0e4",
+      "after_crlf_sha256": "56a2fdc139d3159d0e87483d68986627598ef0ae0c553773ad0f2cde7df9ecaf"
+    }
+  },
+  "pairs": [
+    {
+      "vi_url": "https://apocalypsecloset.com/blog/phoi-mau-quan-ao-nu.html",
+      "en_url": "https://apocalypsecloset.com/en/blog/womens-color-coordination-guides.html"
+    },
+    {
+      "vi_url": "https://apocalypsecloset.com/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html",
+      "en_url": "https://apocalypsecloset.com/en/blog/occasion-destination-outfit-guides.html"
+    },
+    {
+      "vi_url": "https://apocalypsecloset.com/blog/cach-cham-soc-do-nu.html",
+      "en_url": "https://apocalypsecloset.com/en/blog/womens-clothing-care-guides.html"
+    },
+    {
+      "vi_url": "https://apocalypsecloset.com/blog/chon-toc-va-makeup-theo-trang-phuc.html",
+      "en_url": "https://apocalypsecloset.com/en/blog/alternative-hair-makeup-guides.html"
+    }
+  ],
+  "parity_snapshots": "data/en-batch40-2026-11-17/source_parity_snapshots.json",
+  "parity_sha256": {
+    "en/blog/womens-color-coordination-guides.html": "09e7b310f7faa048c20b4e136cfb76e84c55d397f37d057607e951fa1229f077",
+    "en/blog/occasion-destination-outfit-guides.html": "4b963dd28b89d09b36b3f4507749c756e63a7a3993e8102496a3b76142e18e92",
+    "en/blog/womens-clothing-care-guides.html": "1170a5253ebc5a5c3d6df6bdb988b231215bb98b9e1c0b4bd12861933d8b6b92",
+    "en/blog/alternative-hair-makeup-guides.html": "b6a9647c88e6828b18c4941a256019529ca3ba6cf41784335a16a0dde2fac83e"
+  },
+  "data_sha256": {
+    "data/en-translations/batch40.json": "04e452da632eb53dfbd511e07b5b1976ae04222cd66c690d4807c8d9bfe8c483",
+    "data/en-translations/phoi-mau-quan-ao-nu.tsv": "a3014bc46d292c3b246281d7101abfbe4281a340611445a590529e72c44f8d1d",
+    "data/en-translations/chon-trang-phuc-nu-theo-dia-diem-va-dip.tsv": "d4f9c29af8e5fb6fa9c44576084fd3aff054d349155df4cbe736eaa24d447642",
+    "data/en-translations/cach-cham-soc-do-nu.tsv": "0caf128d48387fdc86dd7bae00a64aae17ccf1787e1b4bcba34fa8633c4772c8",
+    "data/en-translations/chon-toc-va-makeup-theo-trang-phuc.tsv": "c60097c8360f23775462af5df5eaeae36b90a53038eed2316e7941b34dc04117"
+  },
+  "english_journal": {
+    "count": 442,
+    "old_count": 438,
+    "latest_date": "2026-11-17",
+    "first_url": "/en/blog/womens-color-coordination-guides.html"
+  },
+  "translation_source_successors": {}
+}

@@ -4,6 +4,7 @@ import hashlib,json,re,subprocess,sys,xml.etree.ElementTree as ET
 from pathlib import Path
 from bs4 import BeautifulSoup
 from privacy_release import ROOT,BASE,D,migrate,POLICIES,CORE
+from link_fix_release import historical
 errors=[];review=json.loads((D/'reviewed-html.json').read_text());content=json.loads((D/'content.json').read_text());count=0
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
@@ -13,7 +14,7 @@ for p in ROOT.rglob('*.html'):
  for t in s.find_all('script'):
   if re.search(r'gtag\s*\(\s*["\x27](?:config|js)["\x27]',t.get_text()):errors.append(rel+': legacy inline Google initializer')
  if rel in review:
-  raw=ux_original(rel,raw)
+  raw=ux_original(rel,historical(rel,raw))
   old=subprocess.check_output(['git','show',BASE+':'+rel],cwd=ROOT,text=True);o=BeautifulSoup(old,'html.parser')
   if hashlib.sha256(raw.encode()).hexdigest()!=review[rel]['after']:errors.append(rel+': reviewed bytes changed')
   if hashlib.sha256(old.encode()).hexdigest()!=review[rel]['before']:errors.append(rel+': baseline lock')

@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "vi_slug": "badgirl-outfit-di-cafe",
+      "en_slug": "alternative-cafe-outfits-women",
+      "source_text_segments": 146,
+      "en_words": 1890,
+      "headings": 19,
+      "images": 8,
+      "tables": 1,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "outfit-di-dam-cuoi-nu-ca-tinh",
+      "en_slug": "alternative-wedding-guest-outfits-women",
+      "source_text_segments": 190,
+      "en_words": 2115,
+      "headings": 21,
+      "images": 8,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "outfit-di-bien-cho-nu-ca-tinh",
+      "en_slug": "alternative-beach-outfits-women",
+      "source_text_segments": 139,
+      "en_words": 2037,
+      "headings": 38,
+      "images": 5,
+      "tables": 0,
+      "faqs": 3
+    },
+    {
+      "vi_slug": "outfit-san-bay-nu",
+      "en_slug": "airport-outfits-women",
+      "source_text_segments": 168,
+      "en_words": 1846,
+      "headings": 35,
+      "images": 5,
+      "tables": 0,
+      "faqs": 0
+    },
+    {
+      "vi_slug": "femme-fatale-aesthetic-la-gi",
+      "en_slug": "femme-fatale-aesthetic-style-guide",
+      "source_text_segments": 199,
+      "en_words": 2089,
+      "headings": 20,
+      "images": 6,
+      "tables": 3,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "quan-cap-tre-la-gi",
+      "en_slug": "what-are-low-rise-pants",
+      "source_text_segments": 171,
+      "en_words": 1861,
+      "headings": 14,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "croptop-la-gi",
+      "en_slug": "what-is-a-crop-top",
+      "source_text_segments": 222,
+      "en_words": 1995,
+      "headings": 20,
+      "images": 8,
+      "tables": 4,
+      "faqs": 6
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-legging-nu",
+      "en_slug": "leggings-outfit-ideas-women",
+      "source_text_segments": 179,
+      "en_words": 1967,
+      "headings": 19,
+      "images": 6,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "phoi-do-voi-quan-parachute-nu",
+      "en_slug": "parachute-pants-outfits-women",
+      "source_text_segments": 190,
+      "en_words": 1913,
+      "headings": 25,
+      "images": 6,
+      "tables": 3,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quan-baggy-phoi-voi-ao-gi",
+      "en_slug": "baggy-pants-outfits-women",
+      "source_text_segments": 234,
+      "en_words": 2595,
+      "headings": 26,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "alternative-cafe-outfits-women: source hash",
+    "alternative-wedding-guest-outfits-women: source hash",
+    "alternative-beach-outfits-women: source hash",
+    "airport-outfits-women: source hash",
+    "femme-fatale-aesthetic-style-guide: source hash",
+    "what-are-low-rise-pants: source hash",
+    "what-is-a-crop-top: source hash",
+    "leggings-outfit-ideas-women: source hash",
+    "parachute-pants-outfits-women: source hash",
+    "baggy-pants-outfits-women: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}

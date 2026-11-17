@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from fix_schema_consistency import faq_pairs
+from link_fix_release import historical
 ROOT=Path(__file__).resolve().parents[1];D=ROOT/'docs/schema-pod-performance-2026-11-15';BASE='https://apocalypsecloset.com';ORG=BASE+'/#organization';WEB=BASE+'/#website';errors=[];counts=collections.Counter()
 reviewed=json.loads((D/'reviewed-html.json').read_text());altrows=json.loads((D/'reviewed-alts.json').read_text());alts={r['url']:r for r in altrows};changes=json.loads((D/'alt-changes.json').read_text())
 def check(ok,msg):
@@ -41,11 +42,11 @@ for p in sorted(ROOT.rglob('*.html')):
   src=urljoin(url,im['src']);row=alts.get(src)
   if row:check(im.get('alt')==row['en' if lang=='en' else 'vi'],rel+': reviewed image alt '+src);counts['reviewed_alt_occurrences']+=1
  if rel in reviewed:
-  check(hashlib.sha256(privacy_original(rel,raw).encode()).hexdigest()==reviewed[rel]['after'],rel+': reviewed HTML changed')
+  check(hashlib.sha256(privacy_original(rel,historical(rel,raw)).encode()).hexdigest()==reviewed[rel]['after'],rel+': reviewed HTML changed')
   old=BeautifulSoup(subprocess.check_output(['git','show','22b72f2:'+rel],cwd=ROOT,text=True),'html.parser')
   for selector,attr in [('link[rel=canonical]','href'),('meta[name=robots]','content')]:check([n.get(attr) for n in s.select(selector)]==[n.get(attr) for n in old.select(selector)],rel+': original '+selector)
   check(s.title.get_text()==old.title.get_text(),rel+': original title');check(headline==old.h1.get_text(' ',strip=True),rel+': original H1')
-  if rel not in ['index.html','about.html','en/about.html','privacy.html','en/privacy.html'] and s.main and old.main:check(BeautifulSoup(ux_original(rel,raw),'html.parser').main.get_text(' ',strip=True)==old.main.get_text(' ',strip=True),rel+': main visible text preserved')
+  if rel not in ['index.html','about.html','en/about.html','privacy.html','en/privacy.html'] and s.main and old.main:check(BeautifulSoup(ux_original(rel,historical(rel,raw)),'html.parser').main.get_text(' ',strip=True)==old.main.get_text(' ',strip=True),rel+': main visible text preserved')
  counts['pages']+=1
 check(len(altrows)==871,'All 871 reviewed assets represented');check(len(changes)==1742,'Expected bilingual reviewed alt placements')
 for row in altrows:check(row['width']>0 and row['height']>0 and len(row['sha256'])==64,'Reviewed image decode evidence '+row['url'])

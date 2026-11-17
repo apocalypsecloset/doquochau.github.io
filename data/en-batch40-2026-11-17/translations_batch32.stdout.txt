@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "vi_slug": "business-casual-la-gi",
+      "en_slug": "business-casual-women-guide",
+      "source_text_segments": 151,
+      "en_words": 1817,
+      "headings": 15,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "smart-casual-la-gi",
+      "en_slug": "smart-casual-women-guide",
+      "source_text_segments": 196,
+      "en_words": 2006,
+      "headings": 17,
+      "images": 3,
+      "tables": 3,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "power-dressing",
+      "en_slug": "power-dressing-style-guide",
+      "source_text_segments": 157,
+      "en_words": 1915,
+      "headings": 25,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "preppy-style-la-gi",
+      "en_slug": "preppy-style-guide",
+      "source_text_segments": 189,
+      "en_words": 1932,
+      "headings": 16,
+      "images": 3,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "ivy-style",
+      "en_slug": "ivy-style-guide",
+      "source_text_segments": 168,
+      "en_words": 1984,
+      "headings": 22,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "classic-style-la-gi",
+      "en_slug": "classic-style-women-guide",
+      "source_text_segments": 135,
+      "en_words": 1826,
+      "headings": 16,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "casual-chic-la-gi",
+      "en_slug": "casual-chic-style-guide",
+      "source_text_segments": 127,
+      "en_words": 1739,
+      "headings": 13,
+      "images": 6,
+      "tables": 0,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quiet-luxury-la-gi",
+      "en_slug": "quiet-luxury-style-guide",
+      "source_text_segments": 203,
+      "en_words": 1988,
+      "headings": 17,
+      "images": 3,
+      "tables": 3,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "old-money-la-gi",
+      "en_slug": "old-money-style-guide",
+      "source_text_segments": 205,
+      "en_words": 2393,
+      "headings": 21,
+      "images": 6,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "balletcore-la-gi",
+      "en_slug": "balletcore-style-guide",
+      "source_text_segments": 147,
+      "en_words": 2028,
+      "headings": 19,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    }
+  ],
+  "errors": [
+    "business-casual-women-guide: source hash",
+    "smart-casual-women-guide: source hash",
+    "power-dressing-style-guide: source hash",
+    "preppy-style-guide: source hash",
+    "ivy-style-guide: source hash",
+    "casual-chic-style-guide: source hash",
+    "quiet-luxury-style-guide: source hash",
+    "old-money-style-guide: source hash",
+    "balletcore-style-guide: source hash"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "baseline": "a0272175089f56498bfecc40961a21baeb46fcf2",
+  "vi_pages": 440,
+  "classification_mismatches_after": 0,
+  "classification_changes": [
+    {
+      "vi": "blog/ao-ba-lo-nu.html",
+      "before": "Phu-kien",
+      "after": "Ao"
+    },
+    {
+      "vi": "blog/cach-cham-soc-do-nu.html",
+      "before": "Aesthetic/Style",
+      "after": "Cham-soc"
+    },
+    {
+      "vi": "blog/chan-vay-bi-ngo-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/chan-vay-hoa-nhi-dang-dai-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/chan-vay-lua-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/chan-vay-tennis-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/chon-toc-va-makeup-theo-trang-phuc.html",
+      "before": "Aesthetic/Style",
+      "after": "Toc-lam-dep"
+    },
+    {
+      "vi": "blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html",
+      "before": "Aesthetic/Style",
+      "after": "Dia-diem-dip"
+    },
+    {
+      "vi": "blog/da-ngam-mac-mau-gi.html",
+      "before": "Vai",
+      "after": "Phoi-mau"
+    },
+    {
+      "vi": "blog/giay-loi-nuoc-chong-nuoc.html",
+      "before": "Cham-soc",
+      "after": "Giay"
+    },
+    {
+      "vi": "blog/mau-dam-nhung-sang-trong.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/nhung-mau-dam-so-mi-dep-nhat.html",
+      "before": "Phoi-mau",
+      "after": "Vay-dam"
+    },
+    {
+      "vi": "blog/phoi-do-dang-qua-le.html",
+      "before": "Aesthetic/Style",
+      "after": "Outfit-core"
+    },
+    {
+      "vi": "blog/phoi-do-dang-tam-giac-nguoc.html",
+      "before": "Aesthetic/Style",
+      "after": "Outfit-core"
+    },
+    {
+      "vi": "blog/phoi-mau-quan-ao-nu.html",
+      "before": "Aesthetic/Style",
+      "after": "Phoi-mau"
+    },
+    {
+      "vi": "blog/quan-baggy-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Quan"
+    },
+    {
+      "vi": "blog/quan-ong-rong-nu-phoi-voi-ao-gi.html",
+      "before": "Phoi-mau",
+      "after": "Quan"
+    },
+    {
+      "vi": "blog/trouser-la-quan-gi.html",
+      "before": "Vai",
+      "after": "Quan"
+    },
+    {
+      "vi": "blog/white-on-white.html",
+      "before": "Aesthetic/Style",
+      "after": "Phoi-mau"
+    }
+  ],
+  "hub_map_equal": true,
+  "rules_equal": true,
+  "all_gate_code_and_thresholds_byte_identical": true,
+  "all_other_functions_ast_identical": true
+}

@@ -1,0 +1,27 @@
+✔ journal exposes every article without JavaScript and supports pagination, search and reset (790.6314ms)
+✔ Vietnamese journal reconstructs every original search string and retains load more and reset (852.1771ms)
+✔ topic shortcuts combine with search, reset, pagination and retained article URLs (179.5232ms)
+✔ unknown choice blocks pageview, interaction and Google script, with equal choices (287.5398ms)
+✔ reject persists, purges only GA cookies and leaves account/cart usable (57.8337ms)
+✔ accept starts one Google tag; pre-consent events never replay; ads remain denied (53.6887ms)
+✔ withdrawal disables all event callers and clears analytics cookies (43.881ms)
+✔ valid stored approval starts; expired/malformed/future choices do not (142.828ms)
+✔ cross-tab rejection turns off analytics and does not erase essential storage (38.7925ms)
+✔ GPC, preview hosts, and denied storage never cause implicit analytics (92.6149ms)
+✔ Vietnamese controls open settings and reject without blocking content (96.8277ms)
+✔ color/size uses actual stock and never borrows another color photo (3.3213ms)
+✔ added value belongs to the added item, not the pre-existing bag (0.5305ms)
+✔ render color-specific photos, add exact variant, edit quantity and remove (553.3731ms)
+✔ transient saved-cart failure preserves the ID, expiry clears it (135.8596ms)
+✔ static catalog remains readable without JavaScript and live schema uses real available prices (71.3345ms)
+✔ catalog failure preserves static product cards and direct store links (80.4767ms)
+✔ visible size buttons select exact variants and preserve color-specific selection (109.2547ms)
+✔ verified guide opens for current products and switches between supplier cm and inch data (87.1319ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4860.8019

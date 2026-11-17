@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "vi_slug": "capsule-wardrobe-la-gi",
+      "en_slug": "what-is-a-capsule-wardrobe",
+      "source_text_segments": 120,
+      "en_words": 1909,
+      "headings": 17,
+      "images": 6,
+      "tables": 1,
+      "faqs": 3
+    }
+  ],
+  "errors": [
+    "what-is-a-capsule-wardrobe: source hash",
+    "what-is-a-capsule-wardrobe: paragraph parity",
+    "what-is-a-capsule-wardrobe: h2 parity 15/14",
+    "what-is-a-capsule-wardrobe: details parity 4/1"
+  ]
+}

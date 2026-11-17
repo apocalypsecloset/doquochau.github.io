@@ -1,0 +1,10 @@
+warning: in the working copy of '.github/workflows/site-quality.yml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/alternative-accessories-guide-directory.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/cac-loai-vai.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/cach-chon-kinh-phu-hop-voi-khuon-mat-nu.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/fashion-aesthetic-directory.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/womens-footwear-guides.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/womens-item-styling-guides.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/womens-skirt-dress-styling-guides.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/womens-tops-styling-guides.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'en/blog/womens-trouser-styling-guides.html', LF will be replaced by CRLF the next time Git touches it

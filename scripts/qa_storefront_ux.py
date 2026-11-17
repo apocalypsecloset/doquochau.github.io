@@ -3,13 +3,14 @@ import hashlib,json,subprocess,sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 from storefront_ux_release import BASE,MANIFEST
+from link_fix_release import historical,added_successor
 ROOT=Path(__file__).resolve().parents[1];errors=[]
 def check(ok,msg):
  if not ok:errors.append(msg)
 manifest=json.loads(MANIFEST.read_text())
 check(set(manifest)=={'index.html','en/blog.html'},'Only authorized hubs in UI manifest')
 for path,row in manifest.items():
- raw=(ROOT/path).read_text();old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True)
+ raw=historical(path,(ROOT/path).read_text());old=subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT,text=True)
  check(hashlib.sha256(raw.encode()).hexdigest()==row['after'],path+': UI release hash')
  check(hashlib.sha256(old.encode()).hexdigest()==row['before'],path+': UI baseline hash')
  s=BeautifulSoup(raw,'html.parser');o=BeautifulSoup(old,'html.parser')
@@ -35,6 +36,8 @@ changed=subprocess.check_output(['git','diff','--name-only',BASE],cwd=ROOT,text=
 from blog_repair_release import original as blog_original
 for p in changed:
  if p.startswith(('blog/','en/blog/')):
-  current=(ROOT/p).read_text();expected=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT,text=True)
+  current=(ROOT/p).read_text()
+  if added_successor(p,current):continue # Exact new-hub contract is enforced by qa_link_fix.py.
+  current=historical(p,current);expected=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT,text=True)
   check(blog_original(p,current)==expected,p+': article changed beyond reviewed bilingual repairs')
 print(json.dumps({'ui_pages':len(manifest),'errors':errors},indent=2));sys.exit(bool(errors))

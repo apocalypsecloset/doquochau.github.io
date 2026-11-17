@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-corset-top-nu",
+      "en_slug": "how-to-style-a-corset-top",
+      "source_text_segments": 88,
+      "en_words": 1786,
+      "headings": 12,
+      "images": 7,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "how-to-style-a-corset-top: source hash"
+  ]
+}

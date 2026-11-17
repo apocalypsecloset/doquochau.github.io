@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "vi_slug": "quan-cargo-la-gi",
+      "en_slug": "what-are-cargo-pants",
+      "source_text_segments": 131,
+      "en_words": 1946,
+      "headings": 17,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "what-are-cargo-pants: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}

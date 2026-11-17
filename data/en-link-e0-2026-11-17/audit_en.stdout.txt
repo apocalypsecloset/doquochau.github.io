@@ -1,0 +1,74 @@
+==============================================================================
+EN: 425 bài + 13 hub | VI: 440 trang | ghép được VI↔EN: 436
+Link ngữ cảnh tới bài EN khác/bài: min 0, TB 4.5, max 13
+==============================================================================
+[PASS] E1 link gãy
+[FAIL] E2 bài EN <2 link ngữ cảnh tới bài EN khác  (9)
+        - en/blog/alternative-outfit-sets-shopee.html
+        - en/blog/corporate-goth-office-outfits.html
+        - en/blog/goth-vs-grunge-style.html
+        - en/blog/how-to-style-gothic-graphic-tees.html
+        - en/blog/mori-kei-style-guide.html
+        - en/blog/morute-aesthetic-outfits.html
+[FAIL] E3 bài EN không có link ngữ cảnh vào từ bài EN khác  (211)
+        - en/blog/1920s-fashion.html
+        - en/blog/anime-outfit.html
+        - en/blog/ao-anime-nu.html
+        - en/blog/ao-ba-lo-nu.html
+        - en/blog/ao-chong-nang-nu.html
+        - en/blog/ao-da-nu-dang-ngan.html
+[FAIL] E4 hub EN trỏ đủ xuống con + con trỏ lên hub  (21)
+        - Aesthetic/Style: hub EN thiếu 28 bài con (vd ['1920s-fashion', 'anime-outfit'])
+        - Aesthetic/Style: 8 bài con EN không link lên hub (vd ['buying-goth-clothing-women', 'corporate-goth-office-outfits'])
+        - Ao: hub EN thiếu 31 bài con (vd ['ao-anime-nu', 'ao-cardigan-nu'])
+        - Ao: 3 bài con EN không link lên hub (vd ['buying-corsets-corset-tops', 'pyjama'])
+        - Cham-soc: chưa khai báo hub VI trong VI_HUBS
+        - Dia-diem-dip: chưa khai báo hub VI trong VI_HUBS
+[FAIL] E5 bài EN không có link ngang cùng cụm  (171)
+        - alternative-outfit-sets-shopee
+        - boutique-la-gi
+        - dress-code-la-gi
+        - what-is-a-capsule-wardrobe
+        - goth-nail-designs
+        - punk-makeup-dark-aesthetic-guide
+[FAIL] E6 parity với VI: EN phải có ≥80% link tới bản EN của các đích VI  (126)
+        - 1930s-fashion-silhouette-guide: thiếu 1/4 link so với bản VI (vd ['1920s-fashion'])
+        - angelcore-style-guide: thiếu 1/4 link so với bản VI (vd ['tenshi-kaiwai'])
+        - ao-anime-nu: thiếu 2/8 link so với bản VI (vd ['ao-jersey', 'anime-outfit'])
+        - ao-ba-lo-nu: thiếu 2/6 link so với bản VI (vd ['alternative-beach-outfits-women', 'ao-singlet-la-gi'])
+        - ao-cardigan-nu: thiếu 3/7 link so với bản VI (vd ['di-ba-na-hill-mac-gi', 'cach-phoi-do-voi-ao-len-nu'])
+        - ao-dai-tim-phoi-quan-mau-gi: thiếu 2/6 link so với bản VI (vd ['mau-tim-phoi-voi-mau-gi', 'ao-dai-tet'])
+[FAIL] E7 link ngữ cảnh EN còn trỏ sang bản VI dù đã có bản EN  (4)
+        - corporate-goth-office-outfits -> blog/corporate-goth-la-gi.html
+        - corporate-goth-office-outfits -> blog/corporate-goth-la-gi.html
+        - soft-goth-style-outfits -> blog/soft-goth-la-gi.html
+        - soft-goth-style-outfits -> blog/soft-goth-la-gi.html
+[FAIL] E8 anchor EN chứa ký tự tiếng Việt (ngoài tên riêng)  (1)
+        - soft-goth-style-outfits: Soft Goth Là Gì? Cách Phối Goth Mềm Hơn
+[FAIL] E9 chữ hub/pillar/cornerstone trong câu có link  (35)
+        - bong-tai-bac: "hub" in: Online, request worn images and measurements without treating the model's ear as
+        - boutique-la-gi: "hub" in: These assess a store's information quality. Clear limits may help more than blan
+        - cach-buoc-day-giay-the-thao: "hub" in: When buying replacements, check dimensions, material, tip photos and return term
+        - cach-gap-quan-ao: "hub" in: Before buying drawer organizers, measure the folded garments and the actual draw
+        - chan-vay-lua-phoi-voi-ao-gi: "hub" in: With light or patterned skirts, keep the top simple and repeat one skirt color i
+        - cravat-la-gi: "hub" in: Before ordering, ask for length, width at the broad end and material information
+[PASS] E10 anchor generic/rỗng
+[FAIL] E11 một đích bị link >1 lần trong cùng bài  (90)
+        - 1930s-fashion-silhouette-guide -> dior-new-look-1947-silhouette
+        - acubi-style-guide -> alternative-layering-outfits-women
+        - alternative-layering-outfits-women -> black-outfits-women-texture-proportions
+        - alternative-outfits-vnd-500000 -> egirl-outfits-vnd-500000
+        - alternative-wardrobe-vnd-one-million -> build-a-dark-aesthetic-wardrobe
+        - baddie-outfits-vnd-700000 -> alternative-outfits-vnd-500000
+[FAIL] E12 cùng anchor lặp >5 lần cho cùng 1 đích  (52)
+        - 26x "online sizing guide" -> alt-fashion-size-guide-online
+        - 19x "aesthetic dictionary" -> fashion-aesthetic-directory
+        - 16x "layering outfits for women" -> alternative-layering-outfits-women
+        - 15x "layering women’s outfits" -> alternative-layering-outfits-women
+        - 14x "women's layering guide" -> alternative-layering-outfits-women
+        - 14x "streetwear" -> what-is-streetwear
+[FAIL] E13 bài EN có >12 link tới bài EN khác  (1)
+        - what-is-goth-style
+[PASS] E14 bài EN không ghép được bản VI (ngoài 2 bài EN gốc đã biết)
+==============================================================================
+KẾT QUẢ: 11 gate chưa đạt

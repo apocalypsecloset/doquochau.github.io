@@ -1,0 +1,17 @@
+{
+  "results": [
+    {
+      "vi_slug": "phoi-do-voi-quan-da-nu",
+      "en_slug": "womens-leather-pants-outfits",
+      "source_text_segments": 92,
+      "en_words": 1728,
+      "headings": 13,
+      "images": 6,
+      "tables": 0,
+      "faqs": 4
+    }
+  ],
+  "errors": [
+    "womens-leather-pants-outfits: source hash"
+  ]
+}

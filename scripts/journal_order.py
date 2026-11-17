@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urljoin,urlsplit
 from bs4 import BeautifulSoup
 from translation_inventory import rows,publication_rows
+from link_fix_release import hub_publication_rows
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://apocalypsecloset.com'
 
@@ -34,7 +35,7 @@ def publication_dates():
     for c in cards(vi_raw,'vi'):
         node=BeautifulSoup(c,'html.parser');text=node.select_one('.card-meta').select('span')[-1].get_text(strip=True)
         dates[href(c,'vi')]=datetime.strptime(text,'%d %b %Y').date().isoformat()
-    for row in rows()+publication_rows():
+    for row in rows()+publication_rows()+hub_publication_rows():
         if row['vi_url'] in dates:dates[row['en_url']]=dates[row['vi_url']]
     for c in cards((ROOT/'en/blog.html').read_text(),'en'):
         url=href(c,'en')

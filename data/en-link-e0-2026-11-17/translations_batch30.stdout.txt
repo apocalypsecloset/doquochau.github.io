@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "vi_slug": "quan-parachute-la-gi",
+      "en_slug": "what-are-parachute-pants",
+      "source_text_segments": 185,
+      "en_words": 1900,
+      "headings": 17,
+      "images": 4,
+      "tables": 3,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quan-baggy-la-gi",
+      "en_slug": "what-are-baggy-pants",
+      "source_text_segments": 170,
+      "en_words": 1745,
+      "headings": 15,
+      "images": 6,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "quan-jogger-la-gi",
+      "en_slug": "what-are-jogger-pants",
+      "source_text_segments": 177,
+      "en_words": 1717,
+      "headings": 15,
+      "images": 5,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "athleisure-la-gi",
+      "en_slug": "what-is-athleisure",
+      "source_text_segments": 191,
+      "en_words": 1918,
+      "headings": 16,
+      "images": 6,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "acubi-style-la-gi",
+      "en_slug": "acubi-style-guide",
+      "source_text_segments": 164,
+      "en_words": 1892,
+      "headings": 23,
+      "images": 9,
+      "tables": 1,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "gorpcore-la-gi",
+      "en_slug": "gorpcore-style-guide",
+      "source_text_segments": 185,
+      "en_words": 2050,
+      "headings": 21,
+      "images": 7,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "downtown-girl-la-gi",
+      "en_slug": "downtown-girl-style-guide",
+      "source_text_segments": 180,
+      "en_words": 1883,
+      "headings": 17,
+      "images": 7,
+      "tables": 1,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "model-off-duty-la-gi",
+      "en_slug": "model-off-duty-style-guide",
+      "source_text_segments": 189,
+      "en_words": 1894,
+      "headings": 20,
+      "images": 7,
+      "tables": 2,
+      "faqs": 5
+    },
+    {
+      "vi_slug": "sporty-chic-la-gi",
+      "en_slug": "sporty-chic-style-guide",
+      "source_text_segments": 192,
+      "en_words": 1818,
+      "headings": 22,
+      "images": 3,
+      "tables": 2,
+      "faqs": 4
+    },
+    {
+      "vi_slug": "blokecore-la-gi",
+      "en_slug": "blokecore-style-guide",
+      "source_text_segments": 168,
+      "en_words": 1933,
+      "headings": 22,
+      "images": 6,
+      "tables": 2,
+      "faqs": 6
+    }
+  ],
+  "errors": [
+    "what-are-parachute-pants: source hash",
+    "what-are-baggy-pants: source hash",
+    "what-are-jogger-pants: source hash",
+    "what-is-athleisure: source hash",
+    "acubi-style-guide: source hash",
+    "gorpcore-style-guide: source hash",
+    "downtown-girl-style-guide: source hash",
+    "model-off-duty-style-guide: source hash",
+    "sporty-chic-style-guide: source hash",
+    "blokecore-style-guide: source hash",
+    "Complete VI sitemap inventory"
+  ]
+}
