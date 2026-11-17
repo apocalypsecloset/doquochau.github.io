@@ -34,6 +34,6 @@ Website quality now exposes independent VI/general and English translation jobs.
 - Stop and report VI/general CI at E0b. E1 cleanup and E2 hub creation follow only after that checkpoint; do not start E3 without explicit approval.
 - Use batch40; batch39 already contains Solarpunk and White on White.
 - EN hub slugs: `womens-color-coordination-guides`, `occasion-destination-outfit-guides`, `womens-clothing-care-guides`, `alternative-hair-makeup-guides`.
-- Replace the EN audit with the user's revised version exempting each page's own VI original from E7/E8. The copy available in Downloads at E0b start was still byte-identical to the old version; do not manufacture a replacement or claim the new file was received.
+- Received the user's revised `internal_link_audit_en (1).py` and copied it byte-for-byte to `scripts/internal_link_audit_en.py` (SHA-256 `446ae17c22190d7de3851af134736dccf774430c528ef1ddaf4b14fabfa40e4c`). E7/E8 exempt each page's own VI original. The original E0 baseline and audit script remain archived unchanged; the revised audit output is recorded separately.
 
 E0 evidence is in `data/en-link-e0-2026-11-17/`; E0b command outputs are in `data/en-link-e0b-2026-11-17/`. Work artifacts have not yet been moved out of `tools/` (E1).

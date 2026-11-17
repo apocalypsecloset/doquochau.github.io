@@ -58,7 +58,7 @@ report+='''
 - Chưa E2: chưa tạo hub EN hay batch40, chưa sửa hreflang VI.
 - Chưa E3: chưa sửa câu EN, TSV hoặc chấp nhận source successor của bất kỳ batch nào.
 - Chưa merge E0b vào master; PR chỉ dùng để review và chạy CI.
-- Bản audit EN mới chưa có ở đường dẫn được cung cấp: file Downloads vẫn có SHA-256 `8557b8429a361e853f3abf506cfe75e446c69c72d9e848c5ab853feb709a7ad3`, giống bản E0 cũ. Đã hỏi đường dẫn bản mới; không tự viết bản thay thế. Bản cũ không được dùng để thay cho bản mới trong E0b.
+- Đã nhận bản audit EN mới từ `internal_link_audit_en (1).py`, SHA-256 `446ae17c22190d7de3851af134736dccf774430c528ef1ddaf4b14fabfa40e4c`, và chép nguyên byte vào `scripts/internal_link_audit_en.py`. Bản mới báo E7/E8 PASS, còn 9 gate chưa đạt. Baseline E0 được giữ nguyên; output mới lưu riêng trong `audit_en_revised.txt`/`.csv`.
 
 Các lựa chọn E2 đã ghi nhận đúng yêu cầu: batch40; `womens-color-coordination-guides`, `occasion-destination-outfit-guides`, `womens-clothing-care-guides`, `alternative-hair-makeup-guides`.
 
