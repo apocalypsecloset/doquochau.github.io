@@ -1,0 +1,1101 @@
+PROPOSED 365 EDGES 267 SOURCE FILES
+OVER NEW-LINK BUDGET: []
+OVER 12 PROSE TARGETS: []
+REMAINING ORPHANS: []
+REMAINING REAL SIBLINGS: []
+REMAINING THIN: []
+
+0 1930s-fashion -> 1920s-fashion [p10]
+<p>Đây là các dấu hiệu thường gặp trong thời trang thập niên 1930, không phải danh sách phải mặc cùng lúc. Một day dress có eo tự nhiên và chi tiết vai đã có thể gợi thời kỳ này mà không cần thêm satin hoặc trang trí Art Deco.</p>
+
+1 1950s-fashion -> new-look-fashion [p4]
+<p>The Met mô tả Balenciaga năm 1952 là một trong những người thách thức thành công New Look bằng silhouette khác. Các thay đổi ấy dễ nhận ra hơn khi tra <a href="/blog/aesthetic-dictionary.html">những hướng thẩm mỹ thời trang</a> và đặt ảnh có cùng góc chụp cạnh nhau. V&amp;A cũng xem sack dress 1957 là một bước quan trọng vì nó loại bỏ waist và báo trước shift dress/mini dress sau này. Điều này cho thấy thập niên 50 vừa tôn vinh hourglass vừa chuẩn bị phá bỏ nó.</p>
+
+2 angelcore-la-gi -> tenshi-kaiwai [p14]
+<p><a href="../blog/coquette-la-gi-dark-coquette.html">Coquette Style</a> thường xoay quanh nơ, lace, corset references, romantic femininity và cách xử lý “girlish” có chủ đích. Angelcore có thể dùng lace và nơ, nhưng trọng tâm là lightness, celestial imagery và ethereal texture. Nếu outfit có nhiều bow, ribbon, rosette hơn sheer và glow, nó thường đọc sang Coquette nhanh hơn.</p>
+
+3 anime-outfit -> ao-anime-nu [p15]
+<p>Với váy, hãy chọn chiều dài phù hợp nơi đến và thử cả khi ngồi. Bài <a href="/blog/phoi-do-voi-chan-vay-xep-ly.html">chân váy xếp ly phối với áo gì</a> đi sâu vào độ rộng ly và chiều dài gấu. Để đi học thật, ưu tiên nội quy của trường; cảm hứng học đường trong anime không thay thế quy định trang phục ngoài đời.</p>
+
+4 ao-anime-nu -> anime-outfit [p23]
+<p>Thử cảm giác của mảng in lớn khi áo được mặc, nếu cửa hàng cho phép. Bề mặt có thể cho cảm giác khác phần vải trơn; mức dễ chịu phụ thuộc chính sản phẩm và người mặc. Không có căn cứ để hứa mọi áo in anime đều thoáng, không bong hoặc không phai trong mọi điều kiện.</p>
+
+5 ao-anime-nu -> ao-jersey [p16]
+<p>Quần rộng tạo khối ở nửa dưới, nên hãy xem áo có quá dài hoặc dồn ở cạp không. Bạn có thể chọn áo gọn, áo ngắn hoặc một phom rộng có chiều dài chủ động. Guide <a href="/blog/phoi-do-theo-quan-nu.html">phối đồ theo phom quần nữ</a> giúp chọn cạp và ống trước khi thêm lớp.</p>
+
+6 ao-ba-lo-nu -> ao-singlet-la-gi [p15]
+<p>Áo quá dài che gần hết khóa và cạp tạo tỷ lệ khác áo ngắn. Nếu bạn thích dáng thả, hãy giữ nó có chủ đích và chọn giày đủ hiện diện. Không cần sửa mọi outfit thành công thức eo cao, chân dài.</p>
+
+7 ao-ba-lo-nu -> outfit-di-bien-cho-nu-ca-tinh [p13]
+<p>Đi sneaker khi cần di chuyển nhiều, hoặc đổi sang loafer để phần chân có hình khối khác. Thắt lưng chỉ cần thiết nếu bạn muốn nhấn đường cạp hoặc giữ quần. Bạn không phải thêm mọi phụ kiện xuất hiện trong ảnh tham khảo để công thức hoạt động.</p>
+
+8 ao-cardigan-nu -> ao-da-tweed-nu [p15]
+<p>Muốn phân biệt váy chữ A, ôm và xếp ly trước khi chọn áo, xem <a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">hướng dẫn form chân váy và độ dài</a>. Đừng mặc định mọi chiếc váy ngắn đều phối cardigan giống nhau; cấu trúc thân váy mới là yếu tố quyết định lượng khối cần cân.</p>
+
+9 ao-cardigan-nu -> cach-phoi-do-voi-ao-len-nu [p20]
+<p>Trước khi mặc ra ngoài, thử ngồi, đeo túi và lên xuống bậc thấp. Gấu áo không nên bị kẹt dưới người khi đứng dậy hoặc quệt vào vật dụng quanh bạn. Nếu di chuyển bằng xe máy, chọn độ dài có thể thu gọn an toàn, tránh để vạt áo rủ gần bộ phận chuyển động.</p>
+
+10 ao-cardigan-nu -> di-ba-na-hill-mac-gi [p25]
+<p>Đừng coi mọi áo được gọi là áo khoác len đều có cùng thành phần. Đọc nhãn để biết sợi, sau đó kiểm tra độ dày, cấu trúc dệt và cảm giác khi mặc. Một chiếc nhìn mỏng trong ảnh vẫn có thể tạo cảm giác bí nếu form sát hoặc lớp trong cũng kín và dày.</p>
+
+11 ao-chong-nang-nu -> ao-khoac-gio-nu-han-quoc [p12]
+<p>Hãy thử với bộ trang phục khiến bạn khó khoác ngoài nhất: sơ mi tay phồng, áo thun rộng hoặc một lớp đồng phục. Nếu chỉ thử trên áo hai dây mỏng, bạn có thể đánh giá sai khoảng rộng cần thiết ở bắp tay và vai. Một chiếc áo vừa thân nhưng bó nách vẫn sẽ gây bất tiện khi dùng hằng ngày.</p>
+
+12 ao-da-nu-dang-ngan -> ao-mangto-nu [p17]
+<p>Muốn đổi phom quần theo tủ đồ, xem <a href="/blog/phoi-do-theo-quan-nu.html">cách chọn guide phối quần nữ</a>. Đừng chỉ lấy công thức áo ngắn đi với cạp cao rồi áp cho mọi mẫu: độ dài áo, độ cao cạp và chiều dài thân trên cần được nhìn cùng nhau.</p>
+
+13 ao-da-tweed-nu -> ao-cardigan-nu [p9]
+<p>Áo tweed ngắn tay có thể được dùng như lớp ngoài nhẹ về diện tích che phủ, nhưng không tự động mát. Xem độ dày, lớp lót và khoảng rộng cánh tay. Với kiểu này, chọn lớp trong có tay hay không có tay theo thiết kế, rồi kiểm tra các mép có bị dồn gần nách không.</p>
+
+14 ao-dai-tet -> ao-dai-tim-phoi-quan-mau-gi [p13]
+<p>Khi thử hồng, xanh, vàng hoặc be, đặt vải gần mặt trong ánh sáng tự nhiên và quan sát toàn bộ bộ đồ. Màu chụp trên điện thoại hoặc dưới đèn cửa hàng có thể khác lúc ra ngoài. Hãy chọn sắc bạn thích và thấy dễ sử dụng, không mặc định da sáng luôn thuộc tông lạnh hoặc da ngăm luôn phải tránh màu nhạt.</p>
+
+15 ao-dai-tim-phoi-quan-mau-gi -> ao-dai-tet [p18]
+<p>Quần rộng và rủ là một phương án quen thuộc để thử với áo dài, nhưng độ rộng cụ thể phải đi cùng chiều dài tà và nhu cầu di chuyển. Quần quá rộng hoặc quá dài so với cách bạn bước có thể gây vướng. Quần quá chật lại làm mất độ thoải mái ở hông và gối.</p>
+
+16 ao-dai-tim-phoi-quan-mau-gi -> mau-tim-phoi-voi-mau-gi [p13]
+<p>Nếu hai màu gần nhau nhưng không khớp, thử tăng khoảng cách sáng tối có chủ đích thay vì cố tìm một màu gần hơn trên màn hình. Chẳng hạn, áo tím trung bình đi với quần tím nhạt rõ ràng có thể dễ đọc hơn hai sắc chỉ lệch nhẹ dưới một loại đèn.</p>
+
+17 ao-den-phoi-quan-mau-gi -> quan-den-phoi-ao-mau-gi [p13]
+<p>Một bộ cho môi trường làm việc linh hoạt là sơ mi đen, quần xám sáng có ly, giày bệt và túi đứng. Hãy kiểm tra quy định nơi đến, cổ áo và độ che phủ. Màu trung tính giúp phối dễ hơn nhưng không tự bảo đảm mọi thiết kế đều phù hợp công sở.</p>
+
+18 ao-do-phoi-quan-mau-gi -> mau-do-phoi-voi-mau-gi [p17]
+<p>Với đỏ mận, quần xám hoặc navy là hai phương án để so với nâu. Chọn một cặp khiến bạn thấy dễ mặc rồi thử trong lịch trình thật. Không cần đưa ra một quy tắc rằng sắc da nào bị cấm dùng cặp màu nào; mục tiêu là mức tương phản và điểm nhấn bạn muốn.</p>
+
+19 ao-flannel -> cuban-shirt [p15]
+<p>Nếu áo ngoài dài và rộng, thử tee vừa cạp để phần giữa bộ đồ rõ hơn. Không nhất thiết chọn áo ôm sát. Điều quan trọng là lớp trong không bị nhồi thành nếp dưới nách và bạn vẫn thấy thoải mái khi cởi lớp flannel.</p>
+
+20 ao-giu-nhiet-lot-ni -> outfit-di-ta-xua [p15]
+<p>Bắt đầu bằng lớp giữ nhiệt làm nền, thêm một lớp giữa nếu cần, rồi chọn lớp ngoài phù hợp hoàn cảnh. Không phải ngày nào cũng cần đủ ba lớp. Bài <a href="/blog/phoi-do-layering-nu.html">phối đồ nhiều lớp</a> giúp bạn xác định chức năng và độ rộng từng lớp trước khi phối màu hoặc thêm phụ kiện.</p>
+
+21 ao-giu-nhiet-lot-ni -> phoi-ao-co-lo-nu [p16]
+<p>Áo ngoài cần có đủ chỗ cho lớp trong mà không làm bạn khó đưa tay hoặc đóng khóa. Thử cả bộ cùng lúc, đặc biệt khi áo giữ nhiệt có mặt trong dày hơn áo thun thường. Một chiếc khoác vừa trên áo mỏng chưa chắc vẫn thuận tiện khi bạn đổi sang lớp nền dày.</p>
+
+22 ao-henley -> ao-polo-nu [p8]
+<p>Áo rộng cho cảm giác khác khi tay, vai và thân cùng tăng thể tích. Hãy phân biệt phom rộng có chủ đích với chiếc áo chỉ dài hơn mong muốn. Gấu quá dài có thể che phần cạp hoặc túi quần bạn muốn làm điểm nhấn; thử sơ vin một phần, hoặc chọn mẫu ngắn hơn thay vì cuộn gấu liên tục.</p>
+
+23 ao-hong-phoi-quan-mau-gi -> mau-hong-ket-hop-voi-mau-gi [p16]
+<p>Áo hồng đất với quần nâu tạo bảng màu ấm theo cảm nhận thị giác, nhưng hai sắc gần nhau có thể khiến ranh giới áo và quần mờ đi. Nếu muốn thấy eo rõ, chọn quần tối hơn áo hoặc dùng đường cắt áo gọn. Nếu thích một khối liền, bạn có thể giữ độ chênh thấp có chủ đích.</p>
+
+24 ao-hong-phoi-quan-mau-gi -> quan-hong-phoi-ao-mau-gi [p20]
+<p>Hồng với đỏ hoặc tím tạo những hướng khác, nhưng cần xem chính xác sắc áo và quần. Bạn có thể thử bằng cách đặt đồ cạnh nhau trước rồi mặc toàn bộ. Không cần mua ngay một chiếc quần mới chỉ vì một cặp màu đẹp trong ảnh đã được xử lý ánh sáng.</p>
+
+25 ao-jersey -> ao-anime-nu [p15]
+<p>Ở khí hậu nóng, xem cả lớp lót và độ dày hình in. Vải có lỗ nhìn thấy không tự động bảo đảm toàn chiếc áo thoáng, vì lớp dưới có thể kín. Nếu có thể thử, mặc vài phút và vận động nhẹ sẽ cho thông tin hữu ích hơn chỉ chạm tay vào một góc vải.</p>
+
+26 ao-khoac-gio-nu-han-quoc -> ao-chong-nang-nu [p14]
+<p>Kéo khóa nhiều lần để kiểm tra độ trơn và khả năng kẹt lớp vải bên trong. Nhìn phần che khóa ở gần cằm nếu áo có cổ cao. Dây rút, đầu khóa và các chi tiết treo nên được kiểm tra khi bạn di chuyển, nhất là nếu mang cùng túi hoặc dây đeo khác.</p>
+
+27 ao-khoac-gio-nu-han-quoc -> di-ha-giang-mac-gi [p16]
+<p>Với khí hậu nóng ẩm, hãy cân việc bạn sẽ mặc áo liên tục hay chỉ khoác khi cần. Một mẫu dễ cởi và cất có thể phù hợp hơn mẫu dày cố định nếu lịch trình thay đổi nhiều. Đừng chọn áo quá dày chỉ vì muốn nó giữ phom như ảnh chụp trong thời tiết lạnh.</p>
+
+28 ao-kieu-dep -> blouse [p14]
+<p>Nếu định mặc dưới blazer hay cardigan, thử cả hai món cùng lúc. Hướng dẫn <a href="/blog/phoi-do-layering-nu.html">layering nữ theo độ dày và chiều dài</a> giúp phân biệt áo đẹp khi mặc riêng với áo thật sự hoạt động như một lớp trong.</p>
+
+29 ao-mangto-nu -> ao-da-nu-dang-ngan [p6]
+<p>Người có chiều cao thấp vẫn có thể mặc áo dài. Điều cần thử là vai, độ rộng thân và vị trí gấu so với giày. Một áo dài nhưng gọn ở vai có thể dễ cân hơn áo ngắn mà rộng quá nhiều. Không có chiều cao tối thiểu áp dụng cho mọi kiểu măng tô.</p>
+
+30 ao-mangto-nu -> outfit-di-da-lat-cho-nu [p15]
+<p>Giày có thể là loafer, boots hoặc kiểu khác phù hợp thời tiết và quãng đường đi. Điều cần kiểm tra là khoảng lộ giữa váy với giày và độ rộng ống boots, không phải mặc định măng tô ngắn luôn đi cùng một loại giày.</p>
+
+31 ao-nau-phoi-quan-mau-gi -> mau-nau-phoi-voi-mau-gi [p14]
+<p>Chọn sơ mi vừa vai hoặc rộng có chủ đích, quần thẳng và ít túi nổi. Xám nhạt tạo khoảng sáng nhưng vẫn giữ bảng màu dịu. Bạn có thể cài áo gọn hoặc mở vài nút cổ theo mức thoải mái, không cần thêm nơ hay dây chuyền lớn để bộ đồ có điểm nhấn.</p>
+
+32 ao-nau-phoi-quan-mau-gi -> quan-nau-phoi-ao-mau-gi [p8]
+<p>Đây là công thức đi học hoặc đi cà phê dễ dùng. Chọn áo có độ dài phù hợp với cạp, để ngoài nếu gấu gọn hoặc sơ vin khi muốn rõ phần eo. Jeans ống thẳng giữ được độ thoải mái mà không bắt phần áo phải thật ôm.</p>
+
+33 ao-ni-nu -> phoi-do-voi-ao-long-cuu [p13]
+<p>Kiểu mở khóa phù hợp khi bạn muốn tháo lớp ngoài mà không kéo áo qua đầu. Kiểm tra khóa chạy trơn và thân áo có bị gợn mạnh khi đóng. Lớp trong cần đủ hoàn chỉnh để mặc một mình, bởi bạn có thể cởi áo khoác khi vào nơi ấm hơn hoặc khi vận động.</p>
+
+34 ao-ong-nu-phoi-voi-gi -> phoi-do-voi-ao-tre-vai-nu [p8]
+<p>Maxi skirt kéo đường dọc xuống thấp, trong khi tube top mở vai. Công thức này hợp Dark Feminine nếu váy rủ; hợp Grunge hơn nếu skirt có texture hoặc layer.</p>
+
+35 ao-parka-nu -> ao-phao-nu [p13]
+<p>Khi mua online, đối chiếu số đo thành phẩm theo <a href="/blog/cach-chon-size-do-alt-fashion-online.html">guide chọn size đồ online</a>. Chú ý ngang ngực, vai, bắp tay và chiều dài sau. Không tự tăng một cỡ chỉ vì đây là áo khoác; mẫu vốn rộng có thể đã có khoảng dư cho lớp trong.</p>
+
+36 ao-phao-nu -> ao-parka-nu [p16]
+<p>Mặc chiếc áo trong gần với dự định sử dụng khi thử phao. Nếu thường dùng knit hoặc fleece, thử với tee mỏng có thể khiến bạn chọn thiếu khoảng ở vai và ngực. Ngược lại, tăng size quá nhiều để dự phòng có thể làm tay dài và cổ lệch.</p>
+
+37 ao-phao-nu -> outfit-mua-dong-nu [p18]
+<p>Khi mua online, phân biệt số đo cơ thể với số đo thành phẩm. Đo chiếc khoác đang vừa là một mốc tham khảo tốt khi hai mẫu có cấu trúc gần nhau. Xem <a href="/blog/cach-chon-size-do-alt-fashion-online.html">hướng dẫn chọn size online</a> để đọc bảng chính xác hơn thay vì chọn theo cân nặng đơn lẻ.</p>
+
+38 ao-polo-nu -> ao-henley [p9]
+<p>Khi muốn so với các kiểu áo khác, <a href="/blog/phoi-do-theo-ao-nu.html">các kiểu áo nữ</a> giúp chuyển từ tên món sang vấn đề thực tế như chiều dài, độ rộng và lớp mặc cùng.</p>
+
+39 ao-raglan-nu -> ao-the-thao-nu [p15]
+<p>Với chân váy thẳng, raglan rộng vừa tạo phần trên thư thả mà đường váy vẫn rõ. Nếu váy dài, chọn giày và độ dài gấu để bước không vướng. Không cần thêm giày thể thao chỉ vì áo mang kiểu tay thường gặp trên áo thể thao; giày kín mũi gọn cũng có thể đổi hướng bộ đồ.</p>
+
+40 ao-singlet-la-gi -> ao-ba-lo-nu [p12]
+<p>Singlet và tank top có vùng nghĩa chồng lấn. Trong mua sắm thời trang, không nên chia cứng rằng singlet luôn là áo lót còn tank top luôn là áo mặc ngoài. Cách đặt tên của từng nhãn hàng có thể khác nhau; cấu trúc cổ, nách, thân và chất liệu mới là căn cứ chọn đồ.</p>
+
+41 ao-so-mi-co-tau -> blouse [p18]
+<p>Với váy có bề mặt bóng, áo cổ tàu lì tạo khác biệt rõ mà không cần thêm màu. Ngược lại, áo bắt sáng nên đi cùng phần dưới đơn giản hơn nếu bạn muốn cổ và nẹp làm trung tâm. Đừng suy ra chất liệu chỉ từ ảnh; hãy đọc thành phần và hướng dẫn chăm sóc của sản phẩm.</p>
+
+42 ao-the-thao-nu -> ao-raglan-nu [p17]
+<p>Quan sát cổ, gấu và lớp trong khi bạn đưa tay lên, bước ngang hoặc đổi hướng nhẹ. Áo không nên hạn chế vai hay khiến bạn phải kéo gấu giữa các động tác. Nếu thích phom rộng, chọn độ rộng có chủ đích và kiểm tra xem vải có che mặt lúc cúi không.</p>
+
+43 ao-tim-phoi-quan-mau-gi -> mau-tim-phoi-voi-mau-gi [p16]
+<p>Ưu tiên ghi sáng, trắng ngà, kem hoặc denim xanh nhạt nếu muốn nhẹ nhàng. Dùng nâu chocolate hoặc đen khi bạn muốn màu áo nổi rõ. Sự khác biệt nằm ở tương phản, không phải tím nhạt chỉ được mặc với màu nhạt. Một chiếc áo nhỏ gọn đi với quần tối rộng có thể rất rõ tỷ lệ.</p>
+
+44 ao-tim-phoi-quan-mau-gi -> quan-tim-phoi-ao-mau-gi [p18]
+<p>Quần trắng hoặc kem làm áo tím đậm nổi bật; quần đen, xám than và nâu giữ bảng màu trầm. Nếu áo tím vừa đậm vừa bóng, hạn chế quần có nhiều khóa, túi hoặc đường cắt phức tạp. Ánh phản chiếu trên áo đã là một dạng điểm nhấn ngay cả khi áo không có họa tiết.</p>
+
+45 ao-vang-phoi-quan-mau-gi -> mau-vang-phoi-voi-mau-gi [p15]
+<p>Vàng nhạt với đen lại tạo cảm giác khác vàng tươi với đen. Hãy thử cả chất vải: áo lì trên quần có bề mặt rõ hoặc áo mềm trên quần đứng sẽ thay đổi cách nhìn. Không cần gán một phong cách cố định cho cặp màu trước khi xem phom thực tế.</p>
+
+46 ao-vang-phoi-quan-mau-gi -> quan-vang-phoi-ao-mau-gi [p12]
+<p>Denim đậm tạo nền sâu hơn và có thể làm áo vàng nhạt tách rõ. Nếu áo rộng và quần cũng rộng, để một điểm gọn ở cạp hoặc tay áo để thử cân khối. Guide <a href="/blog/phoi-do-theo-quan-nu.html">chọn ống và cạp quần</a> giúp chọn kiểu ống, cạp và độ dài trước khi đổi màu.</p>
+
+47 ao-xam-phoi-quan-mau-gi -> mau-xam-phoi-voi-mau-gi [p16]
+<p>Chọn quần suông hoặc cargo ít chi tiết để thử trước. Nếu áo và quần đều đậm, một đường cạp rõ hoặc khác biệt bề mặt giúp phân lớp. Túi đen trơn và giày tối giữ bảng màu tập trung; không nhất thiết phải thêm trắng nếu bạn thích cảm giác trầm.</p>
+
+48 ao-xam-phoi-quan-mau-gi -> quan-xam-phoi-ao-mau-gi [p15]
+<p>Loafer hoặc giày bệt có phom rõ sẽ hoàn thiện bộ đồ. Nếu nơi đến yêu cầu trang phục cụ thể, xem quy định về cổ, tay và mức che phủ. Màu trung tính không tự bảo đảm một thiết kế phù hợp mọi văn phòng hay sự kiện.</p>
+
+49 ao-xanh-duong-mac-voi-quan-mau-gi -> mau-xanh-duong-phoi-voi-mau-gi [p14]
+<p>Áo xanh nhạt với quần navy tạo độ tương phản vừa phải mà vẫn giữ cùng họ màu. Với áo xanh đậm, thử quần navy dưới ánh sáng nơi sẽ mặc để xem hai sắc có tách nhau như mong muốn. Nếu muốn gần như đồng màu, dùng khác biệt nhỏ về texture và đường cắt để bộ đồ vẫn có chiều sâu.</p>
+
+50 ao-xanh-reu-phoi-quan-mau-gi -> quan-xanh-reu-phoi-ao-mau-gi [p11]
+<p>Denim xanh tạo một mảng màu khác rõ với áo rêu, thuận tiện cho bộ đồ đi chơi. Jeans xanh vừa ít wash là cách thử đầu tiên nếu bạn chưa biết chọn độ tương phản. Với jeans sáng, phần dưới thu hút mắt hơn; với jeans tối, áo rêu sáng có cơ hội làm điểm chính.</p>
+
+51 atompunk -> dieselpunk [p16]
+<p>Hãy giữ một liên hệ với quá khứ qua cổ áo, đường eo hoặc phom váy, rồi thêm yếu tố gợi tương lai. Nếu cả bộ chỉ còn chất bạc và dáng thể thao hiện đại, liên tưởng có thể chuyển sang một hướng khác. Bạn có thể dùng <a href="/blog/aesthetic-dictionary.html">Aesthetic Dictionary</a> để đối chiếu các tên phong cách, nhưng không cần ép outfit vào một nhãn duy nhất.</p>
+
+52 auth-la-gi -> like-auth-la-gi [p11]
+<p>Với cửa hàng bán lại, hãy kiểm tra thông tin liên hệ, cách mô tả tình trạng và chính sách xử lý khi sản phẩm không đúng cam kết. Đánh giá của khách có thể giúp nhận diện vấn đề về giao hàng hoặc dịch vụ, nhưng không tự xác thực từng món đang được bán. Danh tiếng là một phần của đánh giá, không thay được hồ sơ sản phẩm.</p>
+
+53 avant-garde-fashion-la-gi -> high-fashion [p20]
+<p>Giảm cường độ không có nghĩa là bỏ concept. Hãy giữ một biến số khác thường và đưa phần còn lại về familiar. Nếu jacket đã sculptural, dùng tee trơn và quần suông. Nếu quần có pleat cực rộng, top có thể fitted. Nếu layer sheer dài là hero, footwear và bag nên có shape dễ hiểu.</p>
+
+54 babydoll-dress-la-gi-cach-phoi -> vay-yem-dai [p19]
+<p>Đừng chỉ nhìn ảnh người mẫu. Hãy tìm số đo ngang ngực, chiều dài từ vai xuống gấu và vị trí seam dưới ngực nếu có. Với form không nhấn eo, số đo ngực và armhole thường quan trọng hơn vòng eo. Nếu dress có smocking, đọc thông tin độ co giãn thay vì tự động xuống size để váy “ôm hơn”.</p>
+
+55 banh-xe-mau-sac -> mau-cam-phoi-voi-mau-gi [p16]
+<p>Với bộ bốn, cách bắt đầu thuận tiện là chọn một món họa tiết đã chứa bốn màu rồi lấy một màu trong đó cho món trơn còn lại. Ví dụ, áo có mảng đỏ, xanh lá, cam và xanh dương có thể đi với phần dưới thiên xanh dương. Bạn không cần thêm giày cam, túi đỏ và khăn xanh chỉ để nhắc lại mọi màu.</p>
+
+56 banh-xe-mau-sac -> mau-neon [p20]
+<p>Một túi rất sáng trên nền áo tối cũng tạo điểm màu rõ, nhưng diện tích nhỏ sẽ cho hiệu ứng khác hai mảng áo và quần lớn. Nếu mới làm quen, bắt đầu từ phụ kiện rồi tăng dần. Không có mức độ nổi bật nào là bắt buộc; hãy chọn mức bạn thấy muốn mặc lại.</p>
+
+57 barbiecore -> pink-aesthetic [p15]
+<p>Nếu bạn không thích pink, hãy dùng white + silver + aqua, lilac hoặc black rồi giữ silhouette và playful accessory. Barbiecore không phải bài kiểm tra “ai mặc hồng nhiều hơn”.</p>
+
+58 biopunk -> solarpunk [p18]
+<p>Bộ này phù hợp buổi đi chơi trong thời tiết mát hoặc không gian có điều hòa. Ngày nóng, có thể dùng một áo kín với mảng phối lưới sẵn, tránh phải chồng thêm lớp chỉ để giữ hiệu ứng.</p>
+
+59 blouse -> ao-kieu-dep [p20]
+<p>Hãy xem cổ, tay và chiều dài áo có vai trò gì khi lớp ngoài xuất hiện. Với cổ nơ, lớp ngoài nên để đủ khoảng cho nơ nằm thuận. Với tay phồng, áo khoác cần đủ chỗ hoặc bạn có thể chọn gile nếu bối cảnh phù hợp, thay vì nhồi tay áo vào một ống tay chật.</p>
+
+60 blouse -> ao-so-mi-co-tau [p6]
+<p>Tay phồng tạo thể tích ở thân trên, nhưng không bắt buộc người mặc phải có một vóc dáng cụ thể. Chọn mức phồng bạn thích rồi cân với phần dưới. Nếu muốn áo là điểm chính, thử quần hoặc váy có đường nét gọn, tránh để cả cổ, tay và cạp đều nhiều chi tiết cạnh tranh.</p>
+
+61 bodycon-dress-la-gi-cach-phoi -> chan-vay-but-chi [p19]
+<p>Bodycon sáng màu không khó mặc, chỉ làm texture và đường may nhìn rõ hơn. Nếu thích white, cream hoặc pastel, hãy chọn fabric dày vừa và chú ý lining. Thay vì che giấu, hãy coi bề mặt vải là một phần thiết kế.</p>
+
+62 bodycon-dress-la-gi-cach-phoi -> outfit-di-dam-cuoi-nu-ca-tinh [p14]
+<p>Ưu tiên mobility: slit, stretch và độ rộng gấu. Nếu dress bám quá sát đến mắt cá mà không có độ co giãn, trải nghiệm mặc thực tế có thể kém dù ảnh đứng đẹp.</p>
+
+63 boho-chic-la-gi -> hippie-style [p11]
+<p><strong>5. Camisole + quần wide-leg linen + vòng cổ dài.</strong> Nhẹ, dễ đi biển hoặc resort nhưng vẫn dùng được trong thành phố.</p>
+
+64 bong-tai-bac -> bong-tai-nu [p16]
+<p><a href="https://apocalypsecloset.com/blog/phu-kien-thoi-trang-nu-ca-tinh.html">Hướng dẫn phụ kiện nữ cá tính</a> giúp phân vai từng món theo vùng cơ thể. Bông tai thuộc vùng quanh mặt, nên cần được nhìn cùng tóc, kính và cổ áo trước khi quyết định thêm vòng cổ.</p>
+
+65 boutique-la-gi -> local-brand-la-gi [p11]
+<p>Với hàng vintage hoặc secondhand, đặc điểm đã qua sử dụng và thời kỳ của sản phẩm là vấn đề khác. Một boutique có thể bán đồ cũ được tuyển chọn, nhưng bản thân tên boutique không cho biết món nào mới, món nào cũ, đã sửa ở đâu hay có dấu vết sử dụng gì.</p>
+
+66 boutique-la-gi -> sold-out-la-gi [p19]
+<p>Cũng cần phân biệt hàng có sẵn, đặt trước và làm theo yêu cầu. Ba trường hợp có thể khác về thời gian giao, khả năng sửa và điều kiện đổi. Đừng để một ảnh lookbook khiến bạn bỏ qua thời điểm mình cần sử dụng món đồ, nhất là khi mua cho sự kiện.</p>
+
+67 butterfly-haircut -> hime-cut [p13]
+<p>Chọn vài ảnh cùng một mục tiêu, thay vì mỗi ảnh một kiểu tóc khác nhau. Một ảnh cho phần trước, một ảnh cho đường viền sau và một ảnh thể hiện độ dài có thể đủ. Phương pháp <a href="/blog/cach-tao-moodboard-thoi-trang.html">lọc ảnh tham khảo bằng moodboard</a> cũng dùng được ở đây: ghi rõ mình thích chi tiết nào trong từng ảnh.</p>
+
+68 cac-loai-vai-len -> cach-gap-ao-len [p16]
+<p>Khi gặp tên “len nhung”, đừng vội coi đó là một nguồn sợi độc lập. Tên bán hàng có thể đang nhấn vào cảm giác hoặc bề mặt. Hãy yêu cầu ảnh cận hai mặt vải, nhãn thành phần và mô tả cấu trúc. Nếu chỉ có tên gọi mà không có thông số, bạn chưa đủ căn cứ để xác định nguyên liệu.</p>
+
+69 cac-loai-vai-len -> vai-flannel [p15]
+<p>So hai sản phẩm bằng cùng bộ câu hỏi: cái nào dễ chịu khi tiếp xúc, cái nào giữ được phom bạn muốn, cái nào đáp ứng nhãn giặt trong điều kiện của bạn? Đừng dùng một đặc tính như mềm lúc chạm tay để đại diện cho toàn bộ chất lượng. Đường may và độ vừa cũng tham gia vào giá trị sử dụng.</p>
+
+70 cac-loai-vai-len -> vai-tweed-la-vai-gi [p12]
+<p>Với món bề mặt nhiều lông nổi, cân nhắc cách bạn sẽ sử dụng: đeo túi có cạnh cứng, mặc dưới áo ôm hay dùng riêng làm lớp ngoài. Kiểm tra nhãn và cảm giác khi thử. Không cần loại bỏ một chất liệu chỉ vì bề mặt khác thói quen, nhưng nên biết nó có hợp lịch sinh hoạt của mình không.</p>
+
+71 cach-bao-quan-do-da-nu -> cach-khu-mui-boots [p13]
+<p>Mùi ẩm thường xuất hiện sau thời gian dài cất trong không gian kín hoặc thiếu thông gió. Phơi đồ ở nơi thoáng gió, tránh nắng trực tiếp, trong vài giờ là đủ để mùi bay đi tự nhiên. Đặt túi baking soda hoặc túi thơm nhỏ bên trong áo, quần (gấp lỏng) hoặc boots trong lúc cất giữ giúp hút ẩm và khử mùi liên tục, không chỉ xử lý một lần.</p>
+
+72 cach-bao-quan-do-da-nu -> da-lon [p10]
+<p>Nguyên tắc chung quan trọng nhất: dùng túi vải cotton hoặc túi đựng chuyên dụng có lỗ thoáng khí để cất giữ, tránh tuyệt đối túi nhựa kín hơi trong thời gian dài. Da cần trao đổi không khí; túi nhựa giữ ẩm bên trong và tạo điều kiện cho nấm mốc phát triển. Nếu sống ở khí hậu ẩm, đặt thêm một túi hút ẩm (silica gel) nhỏ bên trong túi đựng hoặc tủ đồ.</p>
+
+73 cach-buoc-day-giay-the-thao -> mieng-lot-got-giay-bi-rong [p12]
+<p>Trước khi ra ngoài, đi vài bước trong nhà, đổi hướng và thử ngồi xuống. Dừng để chỉnh nếu cảm thấy cấn ở một điểm. Với hoạt động thể thao chuyên biệt, hãy theo hướng dẫn của nhà sản xuất giày hoặc người hướng dẫn phù hợp; cách xỏ dây thời trang không thay thế việc chọn đúng giày cho hoạt động.</p>
+
+74 cach-cham-soc-do-nu -> chiffon-la-vai-gi [p11]
+<p>Chỉnh trang phục trước gương cần đi cùng thử chuyển động. Một cách sơ vin đẹp lúc đứng có thể kéo thân áo khi bạn ngồi; một nếp xắn tay có thể bị bó ở khuỷu lúc gập. Kiểm tra độ vừa trước rồi mới chọn thao tác. Nếu áo đã căng vai hoặc hàng cúc bị kéo, nhồi thêm vải ở cạp không giải quyết được nguyên nhân. Tương tự, gấu quần chạm đất vì chiều dài không phù hợp khác với hiện tượng dồn vải do ống quá hẹp ở cổ giày.</p>
+
+75 cach-cham-soc-do-nu -> vai-lanh [p7]
+<p>Chọn chỗ cất theo cấu tạo và trọng lượng của món đồ, không chỉ theo màu. Áo dệt kim nặng có thể cần được gấp thay vì treo lâu trên móc hẹp. Quần có đường ly hoặc váy nhiều lớp lại cần cách đặt để không tạo thêm nếp gập khó xử lý. Đo ngăn và món đồ sau khi gấp trước khi mua hộp chia. Một ngăn đầy quá mức khiến việc lấy đồ kéo theo cả chồng, làm các nếp vừa xếp mất tác dụng ngay sau vài lần dùng.</p>
+
+76 cach-cham-soc-do-nu -> vai-tweed-la-vai-gi [p8]
+<p>Với <a href="/blog/cach-gap-ao-len.html">gấp áo len giữ dáng</a>, hãy nâng đỡ cả phần thân thay vì kéo một vai để nhấc áo. Cách gấp quần áo nói chung nên phục vụ việc nhìn thấy và lấy đúng món. Nếu tủ nhỏ, phân nhóm theo hoạt động thường dùng trước rồi mới chia sâu theo màu. Chỉ cất lâu khi món đã khô phù hợp; đồ vừa mặc trong một ngày ẩm cần được kiểm tra trước khi đặt cạnh những món sạch. Túi cất không thay thế cho bước làm khô và vệ sinh.</p>
+
+77 cach-gap-ao-len -> vai-det-kim [p14]
+<p>Khi chọn mẫu dùng thường xuyên, <a href="https://apocalypsecloset.com/blog/ao-cardigan-nu.html">hướng dẫn áo cardigan nữ</a> giúp cân độ dài và cấu trúc. Khả năng cất gọn là một tiêu chí thực tế bên cạnh cách phối, nhất là khi tủ của bạn có ít kệ.</p>
+
+78 cach-gap-quan-ao -> chat-vai-umi [p9]
+<p>Lấy hết đồ trong túi, đặt quần phẳng và chỉnh hai ống không bị xoắn. Dùng <a href="/blog/cach-cham-soc-do-nu.html">chăm trang phục từ cách cất</a> để chọn vị trí ngăn phù hợp với khối quần sau khi gấp. Gấp đôi theo chiều dọc để hai ống nằm chồng, rồi chỉnh phần đáy nhô ra vào trong nếu cần tạo khối gọn. Với quần dày, đừng để mọi phần cạp, túi và khóa cùng dồn thành một đầu quá cao.</p>
+
+79 cach-gap-quan-ao -> vai-kaki [p12]
+<p>Muốn phân loại tủ theo form quần thay vì chỉ theo màu, dùng <a href="/blog/phoi-do-theo-quan-nu.html">phân biệt các phom quần</a> để nhận diện những nhóm bạn đang có. Bạn sẽ dễ đặt quần đi làm, quần casual và quần có cấu trúc đặc biệt vào những khu cất phù hợp.</p>
+
+80 cach-gap-quan-ao -> vai-spandex [p20]
+<p>Không cần chọn một phương pháp cho cả vali. Bạn có thể cuộn áo mềm trong túi phân loại, xếp sơ mi và quần âu thành lớp riêng, đặt đồ có cấu trúc ở nơi ít bị ép. Túi phân loại giúp tách nhóm và lấy đồ, nhưng không tự bảo đảm quần áo không nhăn.</p>
+
+81 cach-giat-do-den-khong-phai-mau -> chat-vai-poplin [p8]
+<p>Dùng nhiều detergent hơn không đồng nghĩa sạch hơn. Nếu lượng chất giặt vượt quá khả năng xả của máy, cặn có thể lưu lại trên sợi vải và làm bề mặt tối màu trông mờ hoặc xám. Khi đó người mặc dễ tưởng áo đã bạc màu và tiếp tục đổi sang chất giặt mạnh hơn, khiến vấn đề trở nên khó chẩn đoán hơn.</p>
+
+82 cach-giat-do-den-khong-phai-mau -> tie-dye [p6]
+<p>Nếu có vết bẩn, xử lý cục bộ trước thay vì tăng nhiệt độ hoặc chọn chu trình mạnh cho cả mẻ. Dùng sản phẩm phù hợp với loại vết bẩn và loại vải, thử ở vùng khuất nếu cần, rồi làm theo nhãn sản phẩm. Tránh đổ chất tẩy chlorine trực tiếp lên đồ đen vì chỉ một vùng bị mất màu cũng có thể khiến món đồ trông loang vĩnh viễn.</p>
+
+83 cach-giat-do-den-khong-phai-mau -> vai-me [p10]
+<p>Chọn gentle/delicate hoặc chu trình ngắn khi phù hợp để giảm thời gian và cường độ ma sát. Với vết bẩn nặng, xử lý cục bộ trước thay vì mặc định tăng nhiệt cho cả mẻ.</p>
+
+84 cach-khu-mui-boots -> polyester-la-gi [p13]
+<p><strong>Cách gọn nhất:</strong> cho một lượng vừa phải baking soda vào túi vải mỏng, túi lọc giấy hoặc khăn giấy gói kín, đặt vào lòng boots khi giày đã khô bề mặt và để vài giờ hoặc qua đêm. Sáng hôm sau lấy túi ra và tiếp tục hong thoáng.</p>
+
+85 cach-khu-mui-boots -> vai-canvas-la-vai-gi [p10]
+<p>Đừng mang lại ngay chỉ vì bề mặt ngoài đã khô. Boots cổ cao và lining dày cần thời gian thoát ẩm lâu hơn sneaker. Nếu bạn thường mang boots nhiều ngày liên tục, luân phiên hai đôi có thể hiệu quả hơn việc tăng lượng spray khử mùi.</p>
+
+86 cach-len-lai-quan-jean -> cach-gap-quan-ao [p15]
+<p>Cách này thuận hơn với ống gần thẳng và lượng rút vừa phải. Giữ nguyên đường may gấu cũ, tạo một nếp thu ngang phía trên nó để phần thừa nằm ở mặt trong. Nguyên tắc gập rồi khâu sát lai cũ được trình bày trong <a href="https://hellosewing.com/how-to-hem-jeans/">hướng dẫn giữ gấu của Hello Sewing</a>; bản khâu tay cần thêm thời gian kiểm soát lớp vải.</p>
+
+87 cach-phoi-do-voi-ao-len-nu -> ao-cardigan-nu [p14]
+<p>Nếu áo dài và bạn muốn thả ngoài, chọn gấu có vị trí rõ rồi nhìn ngang xem có làm thân trên quá dài không. Một chiếc áo gần ngang hông có thể cho cảm giác thả lỏng; áo dài hơn nhiều cần cân lại giày và phần cổ để bộ đồ không mất hình dáng.</p>
+
+88 cach-phoi-do-voi-chan-vay-tang-ngan -> phoi-do-voi-chan-vay-xep-ly [p4]
+<p>Tee trắng hoặc kem với chân váy tầng màu tối tạo hai mảng rõ. Chọn tay áo và thân áo có lượng vải bạn thấy thuận tiện. Tee rộng vẫn dùng được, nhưng cần xem nó có phủ hết tầng đầu và làm vùng eo thành nhiều lớp chồng không.</p>
+
+89 cach-so-vin-ao-so-mi -> cach-xan-tay-ao-so-mi-nu [p9]
+<p>Đứng nghiêng để kiểm tra mặt sau có dài quá mức bạn muốn không. Cách này không tự làm mọi áo rộng trở nên gọn: phần vai, tay và thân sau vẫn giữ thể tích ban đầu. Nếu cả bộ nhiều vải, cần xem thêm phom quần hoặc chiều dài áo.</p>
+
+90 cach-so-vin-ao-so-mi -> vai-oxford [p16]
+<p>Quan sát qua quần hoặc váy có vải mỏng. Nếp gập trong cạp đôi khi in thành mảng ở hông; khi đó, thử giảm lượng vải, chuyển sang sơ vin trước hoặc chọn lớp dưới có cấu tạo khác. Siết cạp hơn có thể làm nếp in rõ thêm.</p>
+
+91 cach-xan-tay-ao-so-mi-nu -> cach-so-vin-ao-so-mi [p17]
+<p><strong>Áo mềm rủ:</strong> đỡ cả vòng tay áo khi tạo nếp, tránh chỉ kéo mặt trước. Thử ít vòng và độ cao vừa phải. Nếu nếp khó giữ, hãy chấp nhận hiệu ứng mềm hoặc chọn kiểu áo khác cho ngày cần cổ tay thật gọn.</p>
+
+92 cach-xan-tay-ao-so-mi-nu -> vai-flannel [p14]
+<p>Xắn cao tạo nhiều khối quanh tay hơn xắn thấp. Nếu sơ mi đã rất rộng, phần tay cuộn dày có thể làm tổng thể nặng. Bạn có thể chọn ít vòng hơn, dùng áo vải nhẹ hơn hoặc giữ tay nguyên, thay vì cố theo cùng cách của một ảnh tham khảo.</p>
+
+93 cach-xan-tay-ao-so-mi-nu -> vai-kate-silk [p13]
+<p>Đừng kéo một cuộn vải chặt qua khuỷu bằng lực. Hãy tháo bớt nếp hoặc quay lại kiểu thấp hơn. Áo cần cho phép bạn co tay tự nhiên; dấu hằn rõ, cảm giác bó hoặc phải giữ tay ở một tư thế là tín hiệu nên điều chỉnh.</p>
+
+94 capsule-wardrobe-la-gi -> dress-code-la-gi [p15]
+<p>Nếu bạn sống ở nơi nóng, hãy để áo khoác nặng là item dùng theo dịp, không phải nền hằng ngày. Foundation nên gồm top mát, quần form đẹp, phụ kiện mạnh và giày đủ thoải mái. Capsule wardrobe tốt là tủ đồ bạn thật sự mặc được, không phải chỉ đẹp trong moodboard.</p>
+
+95 chan-vay-but-chi -> bodycon-dress-la-gi-cach-phoi [p13]
+<p>Không nên tự khâu kín phần xẻ chỉ vì muốn kín hơn mà chưa kiểm tra chức năng của nó. Với gấu hẹp, thao tác đó có thể làm bước đi khó hơn. Nếu muốn chỉnh, trao đổi với thợ về khả năng giữ khoảng cử động hoặc chọn ngay một thiết kế có cấu trúc phù hợp hơn.</p>
+
+96 chan-vay-do-do-ket-hop-voi-ao-mau-gi -> mau-do-phoi-voi-mau-gi [p22]
+<p>Chân váy đỏ đô chữ A, tee kem, sneaker và túi trơn là một điểm bắt đầu. Chỉnh vạt áo để cạp không bị cộm, rồi thử ngồi và bước. Nếu có nhiều việc phải mang theo, chọn túi theo nhu cầu thật, sau đó cân lại màu thay vì dùng túi quá nhỏ chỉ vì hình ảnh.</p>
+
+97 chan-vay-nau-phoi-ao-mau-gi -> mau-nau-phoi-voi-mau-gi [p12]
+<p>Hồng phấn đi với nâu đậm cho một bảng màu mềm nhưng vẫn rõ hai mảng. Nếu không thích cảm giác quá dịu, chọn áo có đường cắt gọn hoặc túi có phom cứng. Không cần đổi màu hồng chỉ vì muốn cá tính hơn; cách tạo khối có thể làm việc đó.</p>
+
+98 chan-vay-vang-phoi-ao-mau-gi -> mau-vang-phoi-voi-mau-gi [p23]
+<p>Bạn có thể đối chiếu thêm <a href="https://apocalypsecloset.com/blog/phoi-do-theo-chan-vay-vay-nu.html">các hướng dẫn về phom và độ dài chân váy</a>. Khi đổi từ váy mini sang midi hoặc maxi, hãy thử lại cả áo lẫn giày; một công thức màu không bảo đảm tỷ lệ vẫn giữ nguyên.</p>
+
+99 chat-vai-poplin -> cach-giat-do-den-khong-phai-mau [p14]
+<p>Khi chọn áo màu đen, đừng dùng màu sắc làm tiêu chí duy nhất. Bài <a href="/blog/mac-do-den-mua-he-co-nong-khong.html">mặc đồ đen mùa hè có nóng không</a> bàn thêm về vải, phom và điều kiện sử dụng. Với poplin, hãy đem những yếu tố đó vào việc so sánh từng mẫu, thay vì gắn một nhãn luôn mát hoặc luôn nóng cho cả nhóm.</p>
+
+100 chat-vai-poplin -> vai-lanh [p12]
+<p>Với áo vừa người, quan sát vùng ngực, bắp tay và lưng khi chuyển động. Các nếp kéo căng hoặc hàng cúc bị banh có thể liên quan đến kích cỡ và thiết kế, không phải lỗi của tên vải. Bài <a href="/blog/cach-chon-size-do-alt-fashion-online.html">phân biệt bảng số đo</a> giúp bạn phân biệt số đo cơ thể với số đo áo để tìm nguyên nhân phù hợp.</p>
+
+101 chat-vai-poplin -> vai-oxford [p18]
+<p>Với áo khoác mở ngoài áo thun, phần cổ và nẹp tạo hai đường dọc rõ. Bạn có thể chọn lớp trong gọn để áo ngoài chuyển động thuận tiện. Tham khảo <a href="/blog/phoi-do-layering-nu.html">cân độ dày các lớp</a> để cân độ dày giữa các lớp; thêm nhiều lớp chưa chắc làm trang phục thú vị hơn nếu chúng dồn vải ở nách và vai.</p>
+
+102 chat-vai-umi -> cach-gap-quan-ao [p15]
+<p>Ở phần ống, chọn theo hình dáng bạn muốn và đôi giày sẽ mang. Quần ống suông, ống rộng hay ôm gọn cần mức dư khác nhau. Guide <a href="/blog/phoi-do-theo-quan-nu.html">chọn quần theo tổng thể</a> giúp nhìn cạp, ống và chiều dài như một tổng thể thay vì chọn mỗi màu quần.</p>
+
+103 chat-vai-umi -> vai-kate-silk [p14]
+<p>Tiếp theo là hông và đùi. Túi bị banh, đường may kéo chéo hoặc vải căng rõ có thể cho thấy mẫu này chưa phù hợp về size hoặc phom. Nếu eo vừa nhưng đùi chật, tăng size có thể làm eo rộng quá; khi đó đổi kiểu cắt đáng cân nhắc hơn cố giữ đúng mẫu ban đầu.</p>
+
+104 chiffon-la-vai-gi -> cach-cham-soc-do-nu [p16]
+<p>Với áo chỉ dùng chiffon ở tay hoặc vai, hãy đọc nhãn cả thân chính và phần phối nếu có. Cách chăm sóc cần phù hợp với toàn bộ sản phẩm. <a href="/blog/phoi-do-theo-ao-nu.html">chọn phom áo sau chất liệu</a> giúp bạn chọn theo phom sau khi đã hiểu cấu tạo vải.</p>
+
+105 chiffon-la-vai-gi -> polyester-la-gi [p5]
+<p>Chiffon có họa tiết vẫn có thể xuyên thấu; hình in không phải lớp lót. Đặc biệt kiểm tra vùng giữa hai họa tiết, nẹp nút và đường sườn. Bạn được chọn mức che phủ theo sở thích và hoàn cảnh, nhưng nên biết trước thay vì phát hiện khi đã ra ngoài.</p>
+
+106 choker-nu-la-gi-cach-phoi -> day-chuyen-bac-cho-nu [p3]
+<p>Không cần chọn độ rộng dựa trên quy tắc “cổ ngắn/cổ dài phải đeo gì”. Nếu mục tiêu của bạn là tạo khoảng cổ thoáng hơn, bản mảnh và neckline mở sẽ giúp; nếu muốn phần cổ thành focal point, bản rộng lại đúng. Đây là lựa chọn hiệu ứng, không phải cách “sửa” cơ thể.</p>
+
+107 chup-anh-ao-dai-tet -> giay-cao-got-trang [p15]
+<p>Nếu muốn giữ tà, nâng vừa đủ để không quét đất hoặc mắc giày. Không cần tung cao liên tục: động tác lớn có thể làm tà che người, làm lộ phần bạn không muốn hoặc khiến hình khác ý tưởng ban đầu. Chụp vài lượt rồi xem lại, tránh lặp rất nhiều lần mà chưa kiểm tra kết quả.</p>
+
+108 combat-boots-hay-platform-boots -> platform-shoes [p4]
+<p>Nếu phần mũi cũng được nâng đáng kể, bàn chân có thể nằm phẳng hơn so với đôi gót cao nhưng mũi thấp. Các hướng <a href="/blog/phoi-do-theo-giay-nu.html">chọn giày theo khối lượng</a> giúp bạn đặt độ chênh đế cạnh khả năng di chuyển và tỷ lệ outfit. Khi listing có ảnh ngang, hãy nhìn chênh lệch mũi–gót thay vì chỉ nhìn chiều cao ở gót.</p>
+
+109 coquette-la-gi-dark-coquette -> ryousangata [p11]
+<p>Đây là điểm quan trọng nhất: nếu bạn đã có một chiếc corset top trong tủ đồ, bạn đã đi được hơn nửa đường đến dark coquette. Corset là item trung tâm của cả hai — coquette pastel lẫn dark coquette đều xây quanh silhouette này, khác nhau chủ yếu ở màu sắc và phần phối cùng.</p>
+
+110 cravat-la-gi -> khan-quang-co-nu [p15]
+<p>Họa tiết nhỏ tạo nhịp gần, còn sọc lớn hoặc hình nổi bật sẽ thu hút mắt từ xa. Khi áo đã có sọc, thử cà vạt trơn trước. Nếu muốn phối hai họa tiết, chọn chúng khác nhau đủ về kích thước và giữ màu có liên hệ; không nhất thiết phải dùng mọi màu xuất hiện trên áo.</p>
+
+111 cuban-shirt -> ao-flannel [p14]
+<p>Độ dài áo giúp phân chia outfit trong khi quần giữ phần khối chính. Nếu tay áo cũng rộng, chọn cổ mở vừa và giảm chi tiết túi ngực để thân trên bớt bận. Hãy giơ tay thử: áo ngắn nên đạt mức che phủ bạn mong muốn khi cử động, không chỉ khi đứng yên.</p>
+
+112 cuban-shirt -> phoi-do-nu-ca-tinh-mua-he [p20]
+<p>Không cần ép cổ Cuba đứng như cổ sơ mi công sở. Chính đường ve mở tạo tính thư thả của kiểu áo. Nếu bạn muốn trang trọng hơn, chọn áo trơn, bề mặt gọn và phần dưới có cấu trúc; vẫn cần kiểm tra quy định nơi đến thay vì mặc định mọi sơ mi đều phù hợp mọi môi trường.</p>
+
+113 cutecore -> gurokawa [p18]
+<p>Pastel Goth vẫn cần dark code đủ rõ như black base, gothic symbol hoặc footwear nặng. Cutecore không cần phần dark đó. Còn Cutegore/Gurokawa cố tình đặt cute cạnh horror hoặc grotesque; đó là hướng thẩm mỹ khác với Cutecore dễ thương được trình bày ở đây.</p>
+
+114 cyber-y2k-la-gi -> webcore [p10]
+<p>Black, gunmetal, silver và grey là nền dễ nhất. Bạn có thể tra <a href="/blog/aesthetic-dictionary.html">những aesthetic lấy cảm hứng internet</a> để phân biệt ngôn ngữ tương lai này với các nhánh cũng dùng bạc và đen. White tạo cảm giác clean-tech; navy hoặc charcoal mềm hơn black. Một accent saturated giúp outfit có năng lượng digital nhưng nên chiếm diện tích nhỏ hơn base.</p>
+
+115 da-lon -> vai-canvas-la-vai-gi [p14]
+<p>Đặt món đồ dưới ánh sáng đều, chụp lại tình trạng ban đầu và tìm nhãn chăm sóc. Ghi rõ khu vực bẩn, thời điểm phát hiện và chất đã dính nếu biết. Thông tin này giúp bạn chọn cách xử lý hoặc giải thích với nơi vệ sinh thay vì thử nhiều mẹo liên tiếp.</p>
+
+116 da-ngam-mac-mau-gi -> mau-pastel-la-gi [p12]
+<p>Pastel không tự động khiến người da ngăm trông nhợt nhạt. Một áo tím nhạt có đường cắt gọn và quần sẫm sẽ cho hiệu ứng khác đầm tím rộng toàn bộ. Nếu màu gần mặt chưa đúng ý, thử dùng nó ở chân váy, túi hoặc một lớp áo trong lộ vừa phải.</p>
+
+117 dam-cham-bi-co-dien -> dam-trang-co-dien [p4]
+<p>Đầm đen chấm trắng tạo tương phản rõ và dễ nối với giày đen hoặc túi sáng. Muốn dịu hơn, thử nền nâu với chấm kem hoặc nền xanh đậm với chấm nhỏ. Tên màu trên màn hình chỉ là tham khảo; sắc kem, trắng ngà và trắng sáng có thể khác nhau đáng kể.</p>
+
+118 dam-hoa-nhi -> chan-vay-hoa-nhi-dang-dai-phoi-voi-ao-gi [p12]
+<p>Kiểm tra mép đường xẻ có bị kéo hoặc cuộn khi bước không. Nếu có lớp lót, xem lớp lót kết thúc ở đâu và có làm cản khoảng bước không. Lớp mặc trong nên phù hợp thiết kế thật, không lộ ngoài dự định khi gió hoặc tư thế ngồi làm đường xẻ mở rộng.</p>
+
+119 dam-hoa-nhi -> outfit-tet [p6]
+<p><a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">Hướng dẫn chọn váy theo form và độ dài</a> giúp bạn tìm nhóm phom cần so. Bài này dùng hoa nhí trên đầm liền làm trọng tâm; cách phối áo riêng với chân váy hoa là một bài toán khác, vì thân trên không còn nằm trong cùng một mảng vải.</p>
+
+120 dam-hong -> vay-den [p13]
+<p>Giày đen làm phần chân rõ hơn cạnh váy sáng. Nếu thấy độ tương phản quá đột ngột, có thể lặp đen ở túi nhỏ hoặc áo khoác; không cần lặp thêm ở mọi phụ kiện. Nâu đậm là lựa chọn đáng thử với hồng bụi khi bạn muốn mảng tối ít sắc hơn cảm giác đen tuyền.</p>
+
+121 dam-trang-co-dien -> dam-cham-bi-co-dien [p18]
+<p>Túi nên đủ chứa đồ cần mang mà không làm bạn phải thêm nhiều túi phụ. Dáng nhỏ có cấu trúc giúp nhắc lại sự gọn gàng của đầm; túi mềm tạo cảm giác thư giãn hơn. Nếu túi đã có khóa lớn hoặc họa tiết nổi bật, không cần thêm thắt lưng và trang sức cùng cạnh tranh ở giữa thân.</p>
+
+122 day-chuyen-bac-cho-nu -> choker-nu-la-gi-cach-phoi [p9]
+<p>Choker nằm gần cổ và làm vùng này nổi rõ. Độ vừa cần được kiểm tra khi quay đầu, nói chuyện và ngồi, không chỉ lúc đứng thẳng. Không cố siết để dây giữ đúng vị trí trong ảnh; nếu thiết kế cần quá chặt mới ổn, chọn độ dài hoặc kiểu khác.</p>
+
+123 dep-quai-hau-nu -> di-hue-mac-gi [p13]
+<p>Chú ý phần nối giữa quai và đế. Kiểm tra đường may, chỗ gắn, cạnh và bề mặt tiếp xúc. Một chi tiết trang trí đẹp không nên che khuất vị trí bạn cần quan sát. Nếu mua online, ảnh mặt trên và mặt bên quan trọng không kém ảnh người mẫu mang dép.</p>
+
+124 dep-quai-hau-nu -> giay-loi-nuoc-chong-nuoc [p15]
+<p>Đừng dựa vào lời hứa rằng mọi điểm đau sẽ hết sau vài ngày. Một số cảm giác ban đầu có thể liên quan độ cứng, nhưng sai kích thước hoặc vị trí quai không nên được giải quyết bằng chịu đựng. Hỏi khả năng đổi size và thử lại trước khi dùng ngoài đường.</p>
+
+125 dep-quai-hau-nu -> giay-suc-nu [p26]
+<p>Trang <a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">chọn chân váy theo độ dài và độ xòe</a> giúp bạn phân biệt vấn đề do váy hay do giày. Một sandal phù hợp với váy ôm chưa chắc tạo cùng cảm giác khi đổi sang váy nhiều ly, dù chiều dài hai chiếc tương đương.</p>
+
+126 di-ba-na-hill-mac-gi -> ao-cardigan-nu [p11]
+<p>Cardigan gọn có thể đi cùng đầm hoặc quần; sơ mi khoác ngoài tạo hướng casual; jacket nhẹ cho đường nét khác. Bạn có thể dùng <a href="/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html">chọn lớp theo hoạt động</a> để quyết định áo mang theo phải giữ ấm, dễ cất hay chỉ thay đường dáng. Mức giữ ấm và khả năng ứng phó thời tiết phụ thuộc sản phẩm cụ thể, nên đừng suy ra chỉ từ tên loại áo.</p>
+
+127 di-du-dam-hoi-nen-mac-gi-nu -> nhung-mau-dam-so-mi-dep-nhat [p14]
+<p>Bộ áo quần cùng nhóm màu giúp lựa chọn nhanh, nhưng vẫn nên xem tỷ lệ giữa hai món. Áo dài rộng cùng quần rộng có thể che hết cạp; thử áo ngắn hơn hoặc sơ vin một phần. Với bộ màu nhạt, chọn phụ kiện có đường nét rõ để tổng thể không quá mờ.</p>
+
+128 di-ha-giang-mac-gi -> ao-khoac-gio-nu-han-quoc [p17]
+<p>Váy có gấu dài hoặc nhiều tà cần được thử với giày thực tế. Khi có gió, giữ phụ kiện gọn và kiểm tra mức che phủ. Không nên phụ thuộc vào việc người khác luôn cầm áo khoác hoặc giữ túi để bộ đồ hoạt động. Nếu thời tiết không phù hợp, bộ quần đã chuẩn bị vẫn có thể tạo ảnh đẹp nhờ màu và đường nét rõ.</p>
+
+129 di-hoi-an-mac-gi -> vay-maxi [p12]
+<p>Áo dài và váy dài có thể tạo đường nét bạn thích, nhưng cần thử cả khi di chuyển. Với áo dài, kiểm tra tà và quần theo chiều cao giày thật. Với váy dài, kiểm tra lớp lót, đường xẻ và độ rộng gấu. Đừng chọn một độ dài phải nhấc liên tục nếu bạn dự định đi bộ nhiều giữa các điểm.</p>
+
+130 di-hue-mac-gi -> dep-quai-hau-nu [p14]
+<p>Không có một màu duy nhất luôn chụp đẹp ở Huế. Hãy nhìn nền bạn định đứng trước: nếu nền tối và nhiều chi tiết, một bộ sáng đơn giản có thể giúp đường người rõ; nếu nền sáng, màu đậm hoặc màu khác sắc nền tạo sự tách biệt. Đây là gợi ý bố cục, không phải yêu cầu phải mặc đối lập ở mọi ảnh.</p>
+
+131 dieselpunk -> atompunk [p10]
+<p>Vải twill, denim hoặc canvas có thể phù hợp với hướng đồ lao động, nhưng tên vải không cho biết chính xác độ dày. So với <a href="/blog/aesthetic-dictionary.html">các hướng retro trong từ điển</a>, Dieselpunk cần được nhận ra qua tổ hợp cấu trúc và tham chiếu, không chỉ qua một tên vải. Hãy cầm thử, gập một nếp rồi xem vải rơi ra sao. Quần cần đủ thân vải để giữ đường ống, đồng thời không cứng đến mức khó ngồi.</p>
+
+132 dress-code-la-gi -> capsule-wardrobe-la-gi [p6]
+<p><strong>Điều kiện sử dụng:</strong> ở trong nhà hay ngoài trời, đứng nhiều hay ngồi, có cát, cỏ, cầu thang hoặc di chuyển dài không? Những điều này ảnh hưởng chất liệu, giày và lớp khoác. Chúng không tự xóa yêu cầu trang phục đã ghi.</p>
+
+133 edgy-fashion-style -> rock-chic [p12]
+<p>Cotton mờ đặt cạnh bề mặt phủ bóng tạo khác biệt ngay cả trong cùng màu đen. Denim có vân với áo trơn tạo cảm giác khác denim phối dệt kim thô. Quan sát bề mặt dưới ánh sáng bạn thường xuất hiện: một chiếc quần chỉ bóng nhẹ trong phòng có thể bắt sáng rất mạnh ngoài nắng.</p>
+
+134 fairycore-la-gi -> mermaidcore-la-gi [p11]
+<p>Silver pendant nhỏ, charm lấy cảm hứng lá/hoa, ribbon, hair clip, scarf mỏng, bag texture mềm hoặc belt mảnh đều có thể gợi mood mà không literal. Nếu dùng crystal, chọn một món nhỏ thay vì nhiều vòng và dây treo cùng lúc.</p>
+
+135 giay-cao-got -> giay-cao-got-de-vuong [p18]
+<p>Đọc mặt sàn và lịch trình trước khi chọn sandal mảnh hay pump. Với đầm nhiều chi tiết, giày ít trang trí giúp váy giữ vai trò chính. Với đầm trơn, bề mặt ánh kim hoặc một quai có hình dáng rõ có thể làm điểm nhấn mà không cần tăng chiều cao gót.</p>
+
+136 giay-cao-got-de-vuong -> giay-cao-got [p12]
+<p>Nếu đang cân nhắc nhiều loại giày khác nhau, <a href="https://apocalypsecloset.com/blog/phoi-do-theo-giay-nu.html">nhóm hướng dẫn giày nữ theo outfit</a> giúp so cấu trúc tổng thể. Riêng khi đã chọn gót vuông, hãy quay lại những chi tiết của đúng đôi: lòng giày, mũi, quai, mặt đế và cách chúng làm việc cùng nhau.</p>
+
+137 giay-cao-got-de-vuong -> mac-ao-dai-di-giay-gi [p16]
+<p>Với quần ống thẳng, thử chiều dài để mũi và một phần thân giày xuất hiện theo ý muốn. Nếu gấu kết thúc ở mắt cá, quai và khoảng hở sẽ dễ được nhìn thấy. Một đôi mũi vuông tạo nét hình học rõ; mẫu mũi tròn cho đường chuyển mềm hơn. Chọn theo hiệu ứng bạn muốn, không theo một quy tắc bắt buộc cho vóc dáng.</p>
+
+138 giay-cao-got-trang -> chup-anh-ao-dai-tet [p16]
+<p>Quần kem hoặc trắng tạo một hướng gần màu hơn. So sắc quần với giày dưới ánh sáng thường và xem đường gấu có phủ quá nhiều lên mũi không. Nếu quần dài, độ cao đôi giày cụ thể sẽ ảnh hưởng vị trí gấu; đừng thử độ dài với một đôi khác rồi cho rằng kết quả giống nhau.</p>
+
+139 giay-cao-got-trang -> giay-cong-so-nu [p8]
+<p>Gót mảnh tạo một điểm kết thúc khác gót khối khi nhìn từ bên. Nếu mặc quần rộng hoặc váy có nhiều khối, bạn có thể thích sự tương phản với giày mảnh, hoặc muốn lặp khối bằng gót lớn. Đó là lựa chọn hình ảnh; yêu cầu đi lại và bề mặt sử dụng vẫn cần được giải quyết trước.</p>
+
+140 giay-chay-bo-nu -> giay-tap-gym-nu [p6]
+<p>Nếu muốn một đôi dùng ở nhiều nơi, yêu cầu cần được nói rõ khi tư vấn. “Đa dụng” có thể chỉ nghĩa khác nhau ở từng sản phẩm. Xem hãng mô tả phạm vi nào, không tự mở rộng khả năng của giày sang nền trơn, bùn hoặc địa hình mà tài liệu không đề cập.</p>
+
+141 giay-cong-so-nu -> giay-cao-got-trang [p9]
+<p>Giày bệt có vẻ đơn giản nhưng vẫn khác nhau về độ sâu thân, độ cứng đế và khả năng giữ chân. Giày gót thấp cũng có nhiều hình gót và độ rộng đế tiếp đất. Đừng chọn chỉ vì một đôi ghi “êm” hoặc một đôi không có gót cao; cần thử trên chân trong những động tác thật.</p>
+
+142 giay-custom -> giay-sneaker-nu [p22]
+<p>Thử phối bản màu với ba bộ quần áo đang có. Nếu giày chỉ hợp một bộ, bạn vẫn có thể chọn vì thích, nhưng nên biết điều đó trước khi đầu tư. <a href="/blog/cach-tao-moodboard-thoi-trang.html">lập bảng màu trang phục</a> giúp lọc màu và hình ảnh theo mục tiêu cụ thể.</p>
+
+143 giay-di-bo-nu -> giay-sneaker-nu [p15]
+<p>Đo bàn chân theo hướng dẫn của hãng và xác định bảng dùng chiều dài chân hay chiều dài lót. Nếu có thông tin độ rộng, đối chiếu thêm thay vì chỉ đọc chiều dài. Bài <a href="/blog/cach-chon-size-do-alt-fashion-online.html">cách chọn size đồ và giày online</a> giúp phân biệt cách đọc số đo, nhưng kết luận cuối vẫn phải theo mẫu đang mua.</p>
+
+144 giay-loafer-nu-la-gi-cach-phoi -> giay-oxford-nu [p21]
+<p>Vì vậy, loafer thường cho cảm giác “grounded” hơn, nhất là loại chunky. Mary Jane có thể tạo khoảng hở nhiều hơn và nghiêng sang feminine, doll-like hoặc school-inspired tùy form. Nếu bạn cần nhận biết kỹ kiểu quai, mũi và cách phối riêng, xem <a href="../blog/giay-mary-jane-la-gi.html">Giày Mary Jane Là Gì? Nhận Biết Form Giày Và Cách Phối Theo Style</a>.</p>
+
+145 giay-loi-nuoc-chong-nuoc -> dep-quai-hau-nu [p13]
+<p>Một công thức dễ điều chỉnh là giày đen thấp cổ, quần suông dài vừa tới giày và áo gọn ở vai. Gấu cần được thử trong lúc bước, vì chiều dài đẹp khi đứng có thể chạm đất khi bạn di chuyển. Nếu quần quá dài, chọn chiếc khác hoặc chỉnh gấu phù hợp; xắn tạm một lớp quá dày dễ làm chân quần trở nên nặng nề.</p>
+
+146 giay-oxford-nu -> giay-loafer-nu-la-gi-cach-phoi [p12]
+<p>Nếu không muốn vẻ ngoài quá nghiêm, thay sơ mi cứng bằng áo dệt kim mỏng hoặc áo thun trơn vừa người. Giữ gấu quần gọn và giày sạch để tổng thể vẫn có đường nét. Với quần quá dài, đừng cuộn nhiều lớp chỉ để lộ giày; chỉnh chiều dài hoặc thử một đôi có khối lượng phù hợp hơn sẽ dễ duy trì.</p>
+
+147 giay-sneaker-nu -> giay-custom [p16]
+<p>Váy midi mềm có thể đi cùng sneaker gọn để giảm khối ở chân, hoặc sneaker đế rõ để tạo tương phản mạnh hơn. Hai hướng đều có lý do; điều cần kiểm tra là bạn muốn chiếc váy hay đôi giày làm tâm điểm. Nếu cả váy và giày nhiều chi tiết, túi và áo nên có vai trò rõ hơn.</p>
+
+148 giay-sneaker-nu -> giay-di-bo-nu [p19]
+<p><a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">Các dáng váy nữ</a> giúp chọn theo form cụ thể. Khi đôi giày đã vừa chân nhưng bộ đồ vẫn chưa đúng ý, hãy thử thay chiều dài hoặc độ xòe của váy trước khi kết luận sneaker không hợp mặc cùng váy.</p>
+
+149 giay-suc-nu -> dep-quai-hau-nu [p9]
+<p>Với giày sục độn đế hoặc dép sục đế cao, hỏi chiều cao phần sau và độ dày phần trước nếu thông số có. Hai đôi nhìn cao tương tự có thể tạo độ dốc khác nhau. Đừng chọn chỉ bằng chiều cao muốn thêm mà bỏ qua cách chân nằm trong giày.</p>
+
+150 giay-tap-gym-nu -> giay-chay-bo-nu [p23]
+<p>Cuối cùng, so ít nhất hai lựa chọn bằng cùng một bộ tiêu chí: gót, mũi, bề ngang, thao tác dây và cảm giác khi bước. Không cần chọn đôi nổi tiếng hơn nếu đôi còn lại đáp ứng nhu cầu tốt hơn. Một bảng ghi ngắn sẽ giúp bạn không quên trải nghiệm thử khi xem lại hình sản phẩm trên điện thoại.</p>
+
+151 gong-kinh-can-nu -> gong-kinh-titanium [p14]
+<p>Để nhìn rõ vai trò của kính bên cạnh khuyên, vòng cổ và túi, xem cách phân chia điểm nhấn trong <a href="/blog/phu-kien-thoi-trang-nu-ca-tinh.html">hướng dẫn phụ kiện thời trang nữ cá tính</a>. Kính nằm ngay vùng mặt nên thường cần ít chi tiết hỗ trợ hơn bạn tưởng.</p>
+
+152 gong-kinh-can-nu -> gong-mat-meo [p21]
+<p>Gọng mắt mèo xếch vừa kết hợp váy một màu và tóc vén sau tai giúp chi tiết góc ngoài hiện rõ. Nếu cổ váy đã có nơ hoặc bèo, chọn khuyên nhỏ. Với váy hoàn toàn trơn, khuyên dáng mảnh có thể bổ sung một đường dọc mà không tranh vị trí với kính.</p>
+
+153 gong-kinh-oval -> kinh-gong-tron [p4]
+<p>Viền mảnh để đường oval xuất hiện như một nét, còn viền dày tạo mảng rõ quanh mắt. Nếu bạn thích shape nhưng không muốn kính chiếm phần lớn sự chú ý, có thể giảm độ dày thay vì giảm kích thước liên tục. Ngược lại, muốn tạo điểm nhấn không nhất thiết phải chọn gọng quá lớn; màu và độ dày cũng có tác dụng.</p>
+
+154 gong-kinh-titanium -> gong-kinh-can-nu [p10]
+<p>Gọng tròn tạo một đường cong dễ nhận ra quanh mắt. Muốn cảm giác nhẹ, chọn viền mảnh và kích thước vừa; muốn nổi bật hơn, tăng đường kính mắt hoặc độ tương phản của màu gọng. Không cần áp dụng quy tắc cứng rằng một kiểu khuôn mặt nào không được đeo kính tròn.</p>
+
+155 gorpcore-la-gi -> phong-cach-workwear [p12]
+<p>Giữ bảng màu tối nhưng tạo contrast bằng nylon nhăn, ripstop, mesh hoặc fleece. Shell đen hơi boxy + cargo đen + trail shoe xám thường có chiều sâu hơn một set all-black dùng cùng một bề mặt vải.</p>
+
+156 goth-nails-mau-nail-phong-cach-goth -> punk-makeup-dark-aesthetic [p9]
+<p>Đỏ rượu là màu chuyển rất đẹp giữa Goth và Dark Feminine. Đặt màu nail vào <a href="/blog/chon-toc-va-makeup-theo-trang-phuc.html">cân tóc makeup cùng trang phục</a> để biết vùng nào nên giữ làm điểm nổi chính. Nó tạo cảm giác sâu, trưởng thành, sang hơn đỏ tươi và đặc biệt hợp với nhung, ren đen, da đen hoặc phụ kiện bạc.</p>
+
+157 gurokawa -> morute [p13]
+<p>Black–white–red là palette trực tiếp và horror hơn; pink–lavender–mint đi với black tạo creepy-cute mềm hơn; neon green, purple hoặc slime colors làm outfit gần Harajuku graphic. Gurokawa không bắt buộc pastel — đây là điểm giúp phân biệt nó với nhiều ảnh internet đã “pastel hóa” mọi cute-dark aesthetic.</p>
+
+158 harrington-jacket -> phoi-do-voi-ao-bomber-nu [p3]
+<p>Nếu đang cân nhắc nhiều loại áo khoác, <a href="/blog/phoi-do-theo-ao-nu.html">hướng dẫn chọn áo khoác</a> giúp tìm bài riêng theo kiểu áo. Bài này tập trung vào gấu bo, cổ và chiều dài Harrington, không dùng chung mọi công thức dành cho bomber hoặc áo khoác dài.</p>
+
+159 heisei-retro -> thoi-trang-thap-nien-90-o-viet-nam [p6]
+<p>Khác với một revival chỉ dựa vào người từng sống qua thời kỳ đó, Heisei Retro có hai nhóm người nhìn cùng một món bằng hai cảm xúc khác nhau. Đối chiếu <a href="/blog/aesthetic-dictionary.html">các hướng hoài niệm thời trang</a> giúp bạn tách một món gợi ký ức khỏi cả hệ trang phục của một thời kỳ. Người khoảng 20–30 tuổi có thể thật sự nhớ sticker album, purikura hoặc character goods; người trẻ hơn lại xem chúng như thiết kế lạ so với môi trường smartphone tối giản hiện nay. Chính giao điểm giữa “nhớ thật” và “khám phá lần đầu” tạo vòng lặp nội dung rất mạnh trên mạng xã hội.</p>
+
+160 high-fashion -> avant-garde-fashion-la-gi [p14]
+<p>Một bộ đồ đơn sắc vẫn có nhiều lớp nếu các bề mặt phản ứng khác nhau với ánh sáng. Ngược lại, nhiều màu không tự tạo chiều sâu nếu mọi món đều tranh nhau. Cách đọc này hữu ích cho cả ảnh high fashion lẫn tủ đồ thường ngày, vì nó chuyển sự chú ý từ tên thương hiệu sang quan hệ giữa các món.</p>
+
+161 high-fashion -> vedette-la-gi [p10]
+<p>Để đánh giá tính ứng dụng, hãy hỏi người mặc có thể ngồi, đi, cất giữ và chăm sóc món đồ trong lịch sinh hoạt thật không. Đây là câu hỏi về quan hệ giữa thiết kế và người dùng, không phải lời chê các thiết kế trình diễn. Một món phục vụ ý tưởng sân khấu có thể hoàn thành tốt vai trò của nó dù không phù hợp chuyến đi xe buýt hằng ngày.</p>
+
+162 hime-cut -> butterfly-haircut [p25]
+<p>Khi buộc phần dài, hai mảng ngắn vẫn có thể rơi riêng trước mặt. Hãy thử cách này trước khi quyết định độ dài, vì đó có thể là hình ảnh bạn dùng nhiều nhất trong ngày. Nếu cần gom hết tóc, hỏi khả năng dùng kẹp hoặc chọn phiên bản dài hơn ngay từ đầu.</p>
+
+163 hime-gyaru -> himekaji [p11]
+<p>Himekaji thường được hiểu là “casual princess”: mềm hơn, dễ mặc hằng ngày, ít hair volume và ít deco hơn. Hime Gyaru là full princess transformation, mức styling cao hơn từ tóc tới nails.</p>
+
+164 indie-sleaze-la-gi -> hipster-style [p7]
+<p>Nếu bạn đã đọc bài <a href="../blog/y2k-la-gi-phong-cach-y2k-nu.html">Y2K là gì</a> trên site, có thể hiểu indie sleaze gần như là "đứa em nổi loạn" của Y2K — cùng huyết thống thời đại, nhưng một bên đi tiệc trung tâm thương mại, một bên đi tiệc tầng hầm lúc nửa đêm.</p>
+
+165 japanese-streetwear -> wafuku [p10]
+<p><a href="/blog/streetwear-la-gi.html">Thời trang Streetwear</a> là khái niệm rộng toàn cầu. Japanese Streetwear là một nhánh diễn giải trong bối cảnh Nhật, nơi imported American references, domestic brands, designer fashion và subculture va chạm. <a href="../blog/harajuku-style.html">Harajuku Style</a> lại rộng theo hướng địa điểm/subculture, chứa cả những hệ không phải streetwear.</p>
+
+166 khan-quang-co-nu -> cach-that-khan-quang-co-dai-cho-nu [p13]
+<p>Không có kích thước khăn chuẩn cho mọi chiều cao. Bạn có thể thích hai đầu dừng gần ngực hoặc kéo dài xuống thân áo, tùy tỷ lệ mong muốn. Thử với áo khoác đóng và mở để xem cả hai tình huống. Nếu khăn che hết phần cổ áo đẹp mà bạn muốn giữ, cân nhắc mẫu hẹp hoặc mỏng hơn.</p>
+
+167 khan-quang-co-nu -> cravat-la-gi [p14]
+<p>Khăn trơn giúp thêm một mảng màu rõ vào bộ đồ. Với tủ đồ tối, có thể chọn một sắc tương phản để làm điểm sáng hoặc một sắc gần nhau để nhấn bằng texture. Không cần mua đúng màu từng món; hãy xem chúng cạnh nhau dưới ánh sáng thường để biết độ chênh bạn có thích không.</p>
+
+168 kieu-toc-di-dam-cuoi -> kieu-toc-mac-ao-dai [p17]
+<p>Không có một kiểu tóc duy nhất dành cho mặt tròn. Nếu muốn thêm cảm giác cao ở phần trên, bạn có thể giữ độ phồng nhẹ ở đỉnh; nếu thích đường nét mềm, dùng ngôi lệch hoặc một vài lọn phía trước. Đây là lựa chọn thị giác, không phải điều kiện bắt buộc để khuôn mặt được xem là phù hợp.</p>
+
+169 kieu-toc-mac-ao-dai -> kieu-toc-di-dam-cuoi [p14]
+<p>Búi tóc ngắn mặc áo dài khả thi khi tóc đủ gom và không căng kéo. Thử kiểu gập đuôi nhỏ ở gáy, ghim những phần thừa theo hướng tóc. Nếu không giữ được ổn định khi đi lại, đổi sang bob vén tai hoặc buộc nửa đầu sẽ nhanh và gọn hơn.</p>
+
+170 kinh-gong-tron -> gong-kinh-oval [p17]
+<p>Gọng tối tạo đường viền dễ nhìn, nhất là trên một bộ áo ít chi tiết. Nếu chọn bản dày, thử khuyên nhỏ hoặc tóc gọn để thấy rõ tác động của kính. Sau đó có thể thêm chi tiết, nhưng không cần làm toàn bộ vùng mặt cùng nổi ngay từ đầu.</p>
+
+171 kinh-gong-vuong -> kinh-khong-gong [p13]
+<p>Thử gọng nâu với cardigan kem và chân váy xám. Nếu váy xếp ly có nhiều nhịp dọc, chọn túi trơn để phần kính vẫn rõ. Cardigan chỉ cần khoác hờ hoặc dùng loại mỏng khi thời tiết nóng; bạn không phải thêm nhiều lớp để chiếc kính trông có chủ đích. Giày đế thấp giúp outfit thuận tiện khi đi bộ.</p>
+
+172 kinh-khong-gong -> kinh-gong-vuong [p12]
+<p>Nhìn cả mặt nghiêng trước khi mua. Một mẫu gần như không thấy ở chính diện có thể có càng dày, đầu càng màu hoặc chi tiết trang trí khá rõ. Nếu bạn thường buộc tóc, phần này sẽ hiện diện nhiều hơn. Nếu để tóc xõa, hãy kiểm tra tóc có vướng vào chi tiết nối khi tháo kính hay không.</p>
+
+173 kinh-khong-gong -> kinh-nua-gong [p3]
+<p>Về thị giác, phần khung ít hiện diện giúp đường mắt, trang điểm hoặc hoa tai dễ trở thành điểm chú ý. Tuy vậy, tròng hình học lớn hay càng đính chi tiết vẫn có thể rất nổi bật. Chọn rimless không đồng nghĩa phải theo phong cách tối giản; bạn đang chọn một cách tạo điểm nhấn khác với gọng dày.</p>
+
+174 kinh-nua-gong -> kinh-khong-gong [p11]
+<p>Với kính nửa gọng nữ, nhãn giới tính không đủ quyết định độ vừa. Kích thước, cầu kính, càng và cách đặt trên mặt mới cần được kiểm tra. Một mẫu được xếp trong danh mục khác vẫn có thể hợp về hình thức, nhưng việc dùng thực tế cần dựa trên gọng cụ thể.</p>
+
+175 like-auth-la-gi -> auth-la-gi [p12]
+<p>Ảnh hộp, túi đựng, tem hoặc mã quét là dữ liệu để xem xét, không phải lý do bỏ qua toàn bộ phần còn lại. Việc mở được một trang web khi quét mã chỉ cho bạn biết mã dẫn đến đâu; từ riêng thao tác đó chưa thể suy ra món đang cầm có nguồn gốc gì. Nếu thương hiệu có hướng dẫn kiểm tra cho dòng sản phẩm, hãy làm theo hướng dẫn ấy.</p>
+
+176 local-brand-la-gi -> boutique-la-gi [p3]
+<p>Đừng dùng chữ “local brand” như tem bảo chứng chất lượng. Thương hiệu nội địa vẫn có thể có sản phẩm fit kém hoặc mô tả thiếu; shop bán lại vẫn có thể minh bạch và chăm sóc khách hàng tốt. Quyết định nên dựa trên sản phẩm cụ thể chứ không chỉ nhãn phân loại.</p>
+
+177 mac-ao-dai-di-giay-gi -> giay-cao-got-de-vuong [p20]
+<p>Chọn giày theo bề mặt và quãng đường; mang đôi đã dùng quen nếu có. Kiểm tra chi tiết ở mũi và gót không vướng vải. Nếu lịch chụp có nền cỏ, đường sỏi hoặc gạch không đều, thử phương án phù hợp thay vì quyết định chỉ theo màu áo.</p>
+
+178 mac-do-den-mua-he-co-nong-khong -> phoi-do-nu-ca-tinh-mua-he [p10]
+<p>Với ngày phải đứng nắng lâu, màu xám than, navy hoặc nâu đậm vẫn giữ được dark aesthetic nhưng có thể dễ chịu hơn đen tuyền nếu các yếu tố khác tương đương. Còn trong bóng râm, phòng điều hòa hoặc di chuyển ngắn, chất liệu và form thường đáng ưu tiên hơn việc cố đổi cả tủ đồ sang màu sáng.</p>
+
+179 mac-do-den-mua-he-co-nong-khong -> vay-chong-nang-jean-tron [p9]
+<p>Vì vậy, nếu cần chống nắng thật sự, hãy ưu tiên nhãn <strong>UPF</strong> hoặc vải dệt kín, che phủ đủ da; đừng mặc định một chiếc áo đen mỏng là “áo chống nắng”. Nghiên cứu về quần áo chống UV cũng cho thấy cấu trúc vải là một trong những yếu tố quan trọng nhất, trong khi màu tối chỉ là một lợi thế bổ sung.</p>
+
+180 mau-be-la-mau-gi -> quan-mau-be-phoi-ao-mau-gi [p4]
+<p>Nhạt và sáng không phải lúc nào cũng được shop dùng nhất quán. Có nơi gọi nhạt để nói ít rực, nơi khác dùng để nói gần trắng. Khi cần chọn đúng một phiên bản, hãy gửi ảnh hoặc mã màu sản phẩm kèm mô tả; đừng chỉ nhắn “lấy màu nhạt hơn”.</p>
+
+181 mau-cam-phoi-voi-mau-gi -> banh-xe-mau-sac [p10]
+<p>Nếu dùng navy rất đậm cùng cam rực, hãy kiểm tra trang phục trong ánh sáng nơi bạn sẽ mặc. Một lớp ngoài có thể trông gần đen trong phòng, khiến hiệu ứng mạnh hơn bạn dự kiến. Hãy đánh giá đồ thật khi đứng cạnh nhau, không chỉ dựa vào ô màu trên màn hình.</p>
+
+182 mau-dam-nhung-sang-trong -> vay-da-hoi [p8]
+<p>Không nên chọn nhỏ hơn chỉ để thân đầm trông sát trên ảnh. Một phom đủ chỗ cử động vẫn có thể cho đường nét rõ mà không cần căng vải. Nếu muốn hiểu cách đọc độ dài và điểm ôm, <a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">đọc độ dài và dáng váy</a> giúp so sánh theo cấu tạo.</p>
+
+183 mau-dam-nhung-sang-trong -> vay-di-du-tiec-cuoi-sang-chanh [p16]
+<p><strong>Đầm trơn, cổ đơn giản:</strong> bạn có thể chọn khuyên tai rõ hơn hoặc một vòng cổ gọn làm điểm nhấn. Thử từng món dưới ánh sáng sẽ dùng. Kim loại sáng và bề mặt nhung cùng xuất hiện có thể đã đủ thông tin, không cần thêm túi đính kết lớn.</p>
+
+184 mau-do-phoi-voi-mau-gi -> ao-do-phoi-quan-mau-gi [p15]
+<p>Đỏ tươi trên nền nâu sáng sẽ nổi hơn. Bạn có thể thử khăn đỏ với áo kem và quần nâu, hoặc giày đỏ dưới bộ màu be. Nếu thấy chưa liền mạch, hãy lặp một chút sắc đỏ trong chi tiết nhỏ sẵn có; không cần mua thêm món chỉ để đủ một cặp màu.</p>
+
+185 mau-do-phoi-voi-mau-gi -> chan-vay-do-do-ket-hop-voi-ao-mau-gi [p21]
+<p><strong>Diện tích vừa:</strong> một áo khoác, quần hoặc chân váy đỏ cần được cân bằng với những món còn lại. Hãy chọn nền trung tính trước rồi mới thêm màu thứ ba. Màu nền không nhất thiết phải sáng; nền tối vẫn phù hợp nếu bạn muốn đường ranh và mức tương phản mạnh.</p>
+
+186 mau-ghi -> mau-xam-phoi-voi-mau-gi [p20]
+<p>Khi lưu <a href="/blog/cach-tao-moodboard-thoi-trang.html">bảng tham chiếu màu sắc</a>, hãy đặt ảnh ghi sáng, ghi đậm và ghi xanh thành các mẫu riêng nếu đó là những sắc bạn đang cân nhắc. Việc gom tất cả vào một ô “xám” dễ làm mất chính khác biệt khiến bạn thích một món đồ.</p>
+
+187 mau-hong-ket-hop-voi-mau-gi -> ao-hong-phoi-quan-mau-gi [p9]
+<p>Denim xanh là nền thuận tiện nếu bạn đã có jeans mặc vừa. Các hướng <a href="/blog/phoi-mau-quan-ao-nu.html">cân độ nổi của màu áo</a> giúp bạn chọn wash denim làm nền thay vì để hai vùng cùng cạnh tranh. Hồng đào nhạt với jeans xanh vừa tạo một hướng nhẹ; hồng tươi với jeans tối tạo đường phân chia mạnh hơn. Nếu jeans wash loang rõ, áo trơn sẽ giúp sắc hồng không phải cạnh tranh với nhiều mảng sáng tối.</p>
+
+188 mau-hong-ket-hop-voi-mau-gi -> quan-hong-phoi-ao-mau-gi [p14]
+<p>Đen với hồng nhạt tạo tương phản mạnh về sáng tối; đen với hồng rực tạo một mảng màu rõ trên nền tối. Bạn có thể bắt đầu bằng phụ kiện hồng, rồi tăng diện tích khi đã quen. Không cần thêm nhiều dây, khóa hoặc hình in chỉ để bộ màu có cá tính.</p>
+
+189 mau-nau-phoi-voi-mau-gi -> ao-nau-phoi-quan-mau-gi [p13]
+<p><strong>Nâu và olive:</strong> thử giữ một màu sáng hơn màu còn lại. Áo olive trầm với quần nâu sáng dễ tách mảng hơn hai món đều rất tối. Nếu muốn bộ màu mang cảm giác giản dị, chọn phom trơn và ít chi tiết. Thêm kem ở áo trong hoặc giày khi cần một khoảng sáng.</p>
+
+190 mau-nau-phoi-voi-mau-gi -> chan-vay-nau-phoi-ao-mau-gi [p14]
+<p><strong>Nâu và hồng phấn:</strong> dùng hồng để làm nhẹ một nền nâu đậm. Áo hồng nhạt, chân váy nâu và giày nâu sẫm là một ví dụ. Nếu không thích vẻ mềm toàn bộ, giữ túi có phom rõ hoặc chọn đường cắt áo gọn. Cảm giác của outfit đến từ cả phom lẫn màu.</p>
+
+191 mau-nau-phoi-voi-mau-gi -> quan-nau-phoi-ao-mau-gi [p9]
+<p>Áo nâu với jeans xanh là công thức linh hoạt vì denim có nhiều mức sáng. Dùng <a href="/blog/phoi-mau-quan-ao-nu.html">so màu nền và màu nhấn</a> để quyết định phần sáng nên nằm ở jeans, giày hay áo. Nâu chocolate đi cùng jeans sáng tạo tương phản rõ; nâu nhạt với jeans tối đổi trọng tâm xuống dưới. Chọn giày kem nếu muốn kết thúc nhẹ, hoặc giày tối nếu muốn giữ phần dưới liền mạch.</p>
+
+192 mau-neon -> banh-xe-mau-sac [p11]
+<p>Trắng tạo nền sáng cho neon, phù hợp khi bạn muốn tổng thể nhẹ và rõ đường cắt. Kem khiến bảng màu bớt lạnh, nhưng cần thử cạnh sắc xanh cụ thể thay vì tin mọi màu kem đều hợp. Với denim, màu xanh vừa hoặc tối ít loang là lựa chọn thuận tiện cho bộ đồ thường ngày. Không cần đổi sang denim rách chỉ để outfit có vẻ cá tính hơn.</p>
+
+193 mau-pastel-la-gi -> da-ngam-mac-mau-gi [p12]
+<p>Hồng nhạt với mint có thể đi theo hướng nhẹ nhàng, nhưng nên kiểm tra dưới ánh sáng nơi bạn sẽ mặc. Nếu cả hai đều rất sáng và trang phục không có đường cắt rõ, thêm giày màu trung tính đậm hơn một chút sẽ tạo điểm kết thúc. Không nhất thiết dùng đen nếu bạn muốn giữ cảm giác dịu.</p>
+
+194 mau-thien-thanh -> mau-xanh-coban-phoi-voi-mau-gi [p16]
+<p>Trong diễn giải hình ảnh, xanh sáng gợi trời có thể được dùng để tạo cảm giác thoáng, nhẹ hoặc dịu. Đó là liên tưởng thẩm mỹ, không phải ý nghĩa cố định áp dụng cho mọi người hay mọi bối cảnh. Không nên từ màu áo suy ra tính cách, trạng thái tinh thần hoặc điều may mắn của người mặc.</p>
+
+195 mau-tim-phoi-voi-mau-gi -> ao-dai-tim-phoi-quan-mau-gi [p12]
+<p>Đừng cố ép túi, giày và thắt lưng nâu trùng màu tuyệt đối. Có thể lặp một sắc nâu chính rồi dùng mức đậm khác ở món nhỏ. Khi phụ kiện quá nhiều màu, xem <a href="/blog/phu-kien-thoi-trang-nu-ca-tinh.html">cách chọn phụ kiện nữ cá tính</a> để quyết định món nào nên dẫn dắt, món nào nên lùi về làm nền.</p>
+
+196 mau-tim-phoi-voi-mau-gi -> ao-tim-phoi-quan-mau-gi [p9]
+<p>Để đưa tím vào tủ đồ alt, thử áo tím dưới sơ mi đen mở cúc hoặc phụ kiện tím trên nền đen. Bạn có thể <a href="/blog/phoi-mau-quan-ao-nu.html">chọn vị trí màu tím</a> trước rồi mới quyết định lớp ngoài có cần thêm điểm kim loại hay không. Sau đó kiểm tra xem có thật sự cần thêm nhiều hardware không. <a href="/blog/phoi-do-alt-fashion-cho-nguoi-moi.html">xây tủ đồ Alt cơ bản</a> giúp bạn xây từ phom và món chủ lực, thay vì cho rằng cứ thêm màu tím và đen là hoàn thành một phong cách.</p>
+
+197 mau-tim-phoi-voi-mau-gi -> quan-tim-phoi-ao-mau-gi [p10]
+<p>Denim xanh là lựa chọn thực tế khi bạn đã có jeans mặc vừa. Tím nhạt đi với jeans xanh vừa tạo độ chuyển nhẹ; tím đậm với jeans sáng tách hai phần rõ hơn. Nếu jeans wash mạnh, hãy giữ áo ít chi tiết. Một đôi giày kem có thể nối các mảng sáng mà không cần thêm màu mới.</p>
+
+198 mau-vang-phoi-voi-mau-gi -> ao-vang-phoi-quan-mau-gi [p11]
+<p>Thử công thức áo thun vàng nhạt sơ vin một phần, jeans ống đứng và sneaker trắng. Đường cạp hiện ra giúp phân chia thân trên và dưới, còn sneaker nối với vùng sáng của áo. Nếu không thích sơ vin, chọn áo kết thúc gần cạp hoặc quần có phom phù hợp. Không có thao tác bắt buộc cho mọi cơ thể.</p>
+
+199 mau-vang-phoi-voi-mau-gi -> chan-vay-vang-phoi-ao-mau-gi [p16]
+<p>Với họa tiết có sẵn vàng và xanh hoặc vàng và tím, lấy một màu trong họa tiết làm phần còn lại sẽ dễ bắt đầu. Chẳng hạn chân váy hoa có nền kem, hoa vàng và lá xanh có thể đi với áo xanh trơn. Không cần tìm đúng sắc từng chi tiết; quan trọng là tổng mức sáng tối và mức bận của bộ đồ.</p>
+
+200 mau-vang-phoi-voi-mau-gi -> quan-vang-phoi-ao-mau-gi [p14]
+<p>Hãy bắt đầu bằng chênh lệch diện tích. Một chiếc áo vàng với túi xanh lá dễ kiểm soát hơn áo vàng, quần xanh và giày tím cùng lúc. Nếu muốn mặc hai mảng lớn, chọn một màu dịu hơn để màu còn lại giữ điểm nhìn. Ví dụ vàng nhạt và xanh lá trầm có thể là bước thử trước vàng tươi cùng xanh rực.</p>
+
+201 mau-xam-phoi-voi-mau-gi -> ao-xam-phoi-quan-mau-gi [p7]
+<p>Bề mặt là công cụ quan trọng khi màu gần nhau. Denim washed, dệt kim và vật liệu bóng tạo những vùng nhìn khác nhau. Tuy nhiên, không cần đưa tất cả vào một bộ. Chọn một bề mặt nổi hơn và giữ các món còn lại đơn giản sẽ dễ dùng, đặc biệt khi đi học hoặc làm việc trong thời gian dài.</p>
+
+202 mau-xam-phoi-voi-mau-gi -> mau-ghi [p18]
+<p>Cách dễ bắt đầu là áo xám sáng với quần xám than. Chênh lệch sáng tối giúp người nhìn phân biệt hai phần mà vẫn giữ cùng dải màu. Nếu thêm áo khoác xám trung bình, hãy để các lớp có độ dài rõ. Bài <a href="/blog/phoi-do-layering-nu.html">tách chiều dài từng lớp</a> giải thích cách dùng chiều dài để từng lớp không bị chồng thành khối khó đọc.</p>
+
+203 mau-xam-phoi-voi-mau-gi -> quan-xam-phoi-ao-mau-gi [p12]
+<p>Không cần gắn hồng với một kiểu nữ tính cố định. Áo hồng cùng quần xám rộng và giày có khối tạo cảm giác khác áo hồng với váy xếp ly. Nhìn vào silhouette trước khi chọn phụ kiện. Phần <a href="/blog/phoi-do-theo-quan-nu.html">so sánh phom quần nữ</a> là điểm tham khảo khi muốn đổi tỷ lệ nhưng giữ nguyên bảng màu.</p>
+
+204 mau-xanh-coban-phoi-voi-mau-gi -> mau-thien-thanh [p19]
+<p>Một công thức sáng là quần coban, sơ mi trắng và giày kem. Một công thức trầm hơn là quần coban, áo nâu đậm gọn và giày cùng nhóm nâu. Muốn tăng độ rõ đường nét, thay bằng áo đen và túi đen nhỏ; chỉ cần thay vài món đã tạo cảm giác khác.</p>
+
+205 mau-xanh-coban-phoi-voi-mau-gi -> mau-xanh-duong-phoi-voi-mau-gi [p17]
+<p>Nếu áo có tay phồng hoặc cổ trang trí lớn, quần trơn là nền dễ dùng. Bạn có thể đối chiếu <a href="https://apocalypsecloset.com/blog/phoi-do-theo-ao-nu.html">hướng dẫn chọn phom áo nữ</a> để quyết định phần dưới cần thêm hay giảm thể tích. Màu quần nên được chọn sau khi bạn đã biết đường nét mình muốn giữ.</p>
+
+206 mau-xanh-duong-phoi-voi-mau-gi -> ao-xanh-duong-mac-voi-quan-mau-gi [p14]
+<p>Muốn xanh da trời bớt nhẹ nhàng, phối áo xanh với jeans đen, giày tối và túi gọn. Bạn vẫn giữ được màu sáng quanh mặt nhưng phần dưới có trọng lượng hơn. Nếu áo có bèo hoặc nơ, giảm trang trí ở quần để tránh hai hướng cùng tranh sự chú ý.</p>
+
+207 mau-xanh-duong-phoi-voi-mau-gi -> mau-xanh-coban-phoi-voi-mau-gi [p15]
+<p>Xanh nhạt và hồng nhạt nên có một màu chiếm ưu thế. Chẳng hạn, váy xanh với túi hồng nhỏ sẽ dễ kiểm soát hơn chia đúng nửa cơ thể bằng áo hồng và quần xanh. Nếu thích hai mảng lớn, thử phụ kiện trung tính và giữ chất liệu đơn giản.</p>
+
+208 mau-xanh-duong-phoi-voi-mau-gi -> quan-xanh-den-phoi-ao-mau-gi [p18]
+<p>Xám, nâu đậm và đen tạo bộ đồ trầm hơn khi ghép cùng xanh đậm. Khi ấy, kiểm tra cổ áo, đường cạp và đôi giày để tránh mọi thứ nhập thành một khối. Độ bóng nhẹ của một phụ kiện có thể đủ, không cần đổi sang màu rực nếu không hợp gu.</p>
+
+209 mau-xanh-navy-la-mau-gi -> quan-xanh-den-phoi-ao-mau-gi [p5]
+<p>Với denim, đừng dùng vùng bạc màu làm đại diện cho cả chiếc quần. Xem cả phần đậm và phần wash, bởi nó sẽ tạo nhiều mức sáng hơn một vải navy trơn. Sự khác biệt này có thể hữu ích khi bạn muốn phối hai món gần màu mà vẫn tách được.</p>
+
+210 maximalist-style -> mob-wife-aesthetic-la-gi [p8]
+<p>Maximalist không bắt buộc dùng màu neon. Một bộ nâu, kem và đỏ rượu vẫn có thể phong phú nhờ vân dệt, hình in và trang sức. Nếu thích toàn đen, hãy thử nhiều bề mặt và phom thay vì ép mình sang màu rực. Điều bạn tăng lên là lượng thông tin thị giác, không chỉ độ chói.</p>
+
+211 mermaidcore-la-gi -> fairycore-la-gi [p11]
+<p>Một công thức màu dễ là 70% neutral + 20% water color + 10% shine. Ví dụ charcoal dress + teal sheer layer + silver bag. Tỷ lệ không cần tính tuyệt đối; nó chỉ giúp bạn tránh trường hợp mọi item đều đổi màu/reflective cùng lúc.</p>
+
+212 mob-wife-aesthetic-la-gi -> maximalist-style [p7]
+<p>Đen là nền dễ nhất nhưng không phải lựa chọn duy nhất. So <a href="/blog/aesthetic-dictionary.html">những phong cách giàu bề mặt</a> giúp bạn nhận ra điểm khác của Mob Wife ngoài riêng họa tiết da thú. Espresso, chocolate, camel ấm, burgundy, cream và gold đều hoạt động tốt vì chúng giữ cảm giác giàu bề mặt. Nếu dùng animal print, hãy xem nó như một màu nhấn chứ không phải pattern thứ hai, thứ ba trong cùng outfit.</p>
+
+213 morute -> gurokawa [p16]
+<p>Morute thường được moodboard bằng cardigan dày, tights và boots, nhưng đó không phải điều kiện. Ở khí hậu nóng, thay cardigan bằng crochet vest mỏng hoặc short-sleeve knit, đổi tights thành lace socks, dùng cotton slip dress có lining và giữ dark anchor ở bag hoặc Mary Jane.</p>
+
+214 mu-beret-nu -> mu-fedora [p13]
+<p>Trong <a href="/blog/phu-kien-thoi-trang-nu-ca-tinh.html">hướng dẫn chọn phụ kiện nữ cá tính</a>, việc nhìn các món theo vùng giúp bạn quyết định nơi cần thu hút ánh nhìn. Với beret, vùng đầu đã có một phụ kiện lớn; vòng cổ, kính và khuyên tai nên được cân nhắc trong cùng một khung thay vì chọn từng món riêng.</p>
+
+215 mu-fedora -> mu-beret-nu [p14]
+<p>Thử áo thun trơn, jeans suông, giày đơn giản và fedora màu trung tính. Mũ tạo khối chính ở phía trên, nên áo không cần hình in lớn. Nếu jeans wash mạnh hoặc có nhiều túi, chọn dải mũ ít chi tiết để giảm cạnh tranh.</p>
+
+216 mu-luoi-trai-nu -> mu-snapback [p15]
+<p><strong>Mũ lưỡi trai nữ màu hồng:</strong> hồng nhạt tạo hiệu ứng khác hồng rực. Nếu muốn thử nhẹ, phối hồng nhạt với áo trơn và denim. Nếu muốn mũ làm điểm chính, giữ phần còn lại trung tính và giảm chi tiết quanh mặt.</p>
+
+217 mu-snapback -> mu-luoi-trai-nu [p9]
+<p>Nếu muốn thay đổi độ cong, chỉ thực hiện theo hướng dẫn của nhà sản xuất cho đúng mẫu. Đừng bẻ mạnh một chiếc vành chưa rõ cấu tạo. Bạn có thể chọn sẵn dáng gần mong muốn để giảm nhu cầu chỉnh sửa sau khi mua, nhất là khi muốn giữ đường vành phẳng và cân đối.</p>
+
+218 new-look-fashion -> 1950s-fashion [p11]
+<p>V&amp;A xem màn ra mắt New Look là điểm mở đầu cho một giai đoạn quan trọng của couture hậu chiến. Dior nhanh chóng trở thành một tên tuổi quốc tế, còn silhouette eo thắt – skirt đầy trở thành một trong những hình ảnh dễ gắn nhất với thời trang cuối 1940s và 1950s. Tuy vậy, bài này không coi toàn bộ 1950s fashion là New Look: thập niên đó có nhiều line, nhà thiết kế và hình dáng khác nhau.</p>
+
+219 nhan-bac-nu -> nhan-nu [p14]
+<p>Nhẫn bản rộng có thể cho cảm giác khác bản mảnh dù cùng đường kính. Vì vậy không tự tăng hoặc giảm một size theo mẹo chung. Hãy hỏi về độ rộng bản, mặt trong và thử một chiếc có cấu trúc gần giống. Khi nhận hàng, thử gập tay, tháo ra và đeo lại trước khi bỏ nhãn.</p>
+
+220 nhan-nu -> nhan-bac-nu [p14]
+<p>Nếu ngày của bạn có nhiều thời gian trên bàn làm việc, hãy thử đặt tay xuống bàn, gõ vài dòng và cầm bút. Mặt nhẫn cao hoặc bản dày có thể khiến bạn đổi tư thế. Một thiết kế nằm gọn thường dễ dùng hơn, nhưng cảm giác thực tế cần được kiểm tra trên chính ngón bạn chọn.</p>
+
+221 nhung-mau-dam-so-mi-dep-nhat -> di-du-dam-hoi-nen-mac-gi-nu [p17]
+<p>Với oversize, có thể chọn giày có khối vừa để cân phần váy rộng. Một chiếc túi vai nhỏ giúp tổng thể bớt cồng kềnh. Nếu muốn mặc kèm quần, hãy xem đó là một công thức nhiều lớp riêng và thử độ rộng của cả hai món; không phải mọi chiếc đầm đều đẹp khi thêm quần bên dưới.</p>
+
+222 nhung-mau-dam-so-mi-dep-nhat -> vay-lien-than-chu-a [p21]
+<p>Thắt lưng dùng để xác định eo hoặc tạo một mảng màu có chủ ý. Không phải chiếc đầm nào cũng cần thắt: dáng suông có thể đẹp nhờ đường rơi, còn một chiếc đã chiết eo có thể bị nhăn nếu thêm đai không phù hợp. Thử cả hai cách và so hình toàn thân trước khi chọn.</p>
+
+223 normcore-la-gi -> phong-cach-basic [p16]
+<p>Một outfit relaxed vẫn cần thứ bậc. Tee rộng có thể đi jeans straight thay vì quần cực baggy; sweatshirt lớn có thể đi bottom gọn vừa; coat dài có thể phủ trên base đơn giản. Nếu mọi món đều oversized tối đa, outfit có thể chuyển sang streetwear rõ hơn.</p>
+
+224 outfit-di-bien-cho-nu-ca-tinh -> ao-ba-lo-nu [p12]
+<p>Dark outfit không đồng nghĩa phải mặc nhiều lớp. Black bikini/top + white overshirt, charcoal tank + grey linen trousers, burgundy slip dress hoặc black one-piece + sheer cover-up đều giữ palette tối nhưng vẫn nhẹ.</p>
+
+225 outfit-di-da-lat-cho-nu -> ao-mangto-nu [p10]
+<p>Cardigan ngắn làm đường cạp hiện rõ hơn, cardigan dài tạo hai mép dọc quanh lớp trong. Cardigan cần đẹp ở cả hai trạng thái mặc và cất; <a href="/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html">cân lớp ngoài theo chuyến đi</a> sẽ giúp chọn chiều dài thuận tiện hơn. Áo nỉ có bo gấu có thể tạo khối khác áo gấu thả. Chọn theo hình dáng bạn muốn và kiểm tra sau khi ngồi, bởi phần vải có thể dồn ở eo hoặc bị kéo lên khi đứng dậy.</p>
+
+226 outfit-di-dam-cuoi-nu-ca-tinh -> bodycon-dress-la-gi-cach-phoi [p13]
+<p>Blazer fitted hoặc cropped + quần tây ống suông + tank/satin top là lựa chọn mạnh cho người không thích váy. Muốn bớt “đi làm”, mở blazer, chọn neckline mềm hơn và đổi loafer công sở sang ankle boots/Mary Jane có thiết kế gọn. Belt nhỏ hoặc earrings bạc có thể đủ; không cần chain lớn.</p>
+
+227 outfit-di-dam-cuoi-nu-ca-tinh -> vay-di-du-tiec-cuoi-sang-chanh [p17]
+<p>Đen vẫn có thể phù hợp ở nhiều đám cưới hiện đại, nhưng dress code và phong tục của gia đình chủ tiệc quan trọng hơn một “luật internet” chung. Nếu không chắc về all-black, charcoal, navy, burgundy, plum hoặc chocolate vẫn giữ cảm giác tối nhưng mềm hơn. Khi dùng màu rất tối, tạo chiều sâu bằng satin + matte, sheer nhẹ + vải đặc, hoặc kim loại nhỏ thay vì thêm nhiều màu.</p>
+
+228 outfit-di-ta-xua -> ao-giu-nhiet-lot-ni [p9]
+<p>Với điều kiện được dự báo lạnh, bắt đầu bằng lớp trong vừa người, thêm áo giữ ấm phù hợp rồi thử cùng áo ngoài. Các hướng <a href="/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html">chọn lớp cho lịch trình lạnh</a> giúp bạn tính chỗ cất áo khi nhiệt độ hoặc hoạt động thay đổi. Cài hoặc kéo khóa đầy đủ, đưa tay ra trước như lúc đeo balô và ngồi xuống. Nếu lớp trong bị kéo lên, cần xem lại chiều dài hoặc độ rộng của cả tổ hợp.</p>
+
+229 outfit-mua-dong-nu -> ao-phao-nu [p14]
+<p>Khi dùng tất và boots, xem khoảng giữa gấu váy và cổ giày trong tư thế đứng lẫn bước. Bạn có thể giữ màu tất gần giày để đường chân liền hơn, hoặc tạo tương phản rõ nếu muốn nhấn vào khoảng đó. Những lựa chọn theo độ xòe và chiều dài nằm trong <a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">guide chân váy và váy nữ</a>; không cần buộc mọi bộ mùa đông phải dùng váy ngắn.</p>
+
+230 outfit-nu-ca-tinh-di-concert -> combat-boots-hay-platform-boots [p5]
+<p>Nếu chỉ thay đổi một quyết định trong outfit, hãy bắt đầu từ giày. Một đôi sneaker, combat boots thấp hoặc platform vừa phải đã được đi nhiều lần thường đáng tin hơn đôi mới đẹp hơn nhưng chưa break-in. Đau chân sau một giờ sẽ ảnh hưởng toàn bộ trải nghiệm, dáng đứng và cả cách bạn di chuyển khi ra về.</p>
+
+231 outfit-san-bay-nu -> outfit-di-da-lat-cho-nu [p10]
+<p>Loafer có thể tốt cho chuyến ngắn nếu đôi giày đã mềm và vừa chân. Phần <a href="/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html">cân trang phục cho hành trình</a> giúp bạn đặt quãng đi bộ cạnh việc tháo mang giày, thay vì chỉ xét diện mạo. Boots hợp thời tiết lạnh nhưng nhiều buckle/lace có thể khiến việc tháo mang lâu hơn. Platform rất đẹp trong ảnh nhưng hãy cân trọng lượng và khoảng cách bạn phải đi trong terminal.</p>
+
+232 outfit-san-bay-nu -> quan-ni-nu-sweatpants [p7]
+<p>Zip hoodie đặc biệt hữu ích vì bạn điều chỉnh được neckline và nhiệt độ. Cardigan mềm nhẹ hơn ở phần hood, dễ tựa ghế. Bomber có form đẹp nhưng nếu quá phồng có thể khó ngồi lâu. Chọn theo độ dài chuyến và cách bạn thường cảm nhận nhiệt độ.</p>
+
+233 outfit-tet -> dam-hoa-nhi [p13]
+<p>Bối cảnh cũng tác động đến cách nhìn bộ đồ. Trước nền trang trí nhiều màu, trang phục ít họa tiết giúp đường nét dễ thấy hơn. Trước tường trơn, bạn có thể dùng họa tiết hoặc phụ kiện nổi. Đây là lựa chọn bố cục ảnh, không phải quy tắc bắt buộc cho mọi địa điểm ngày Tết.</p>
+
+234 parisian-chic -> stockholm-style [p15]
+<p>Phụ kiện hiệu quả nhất thường là thứ có thể lặp lại: leather belt, watch, small earrings, sunglasses, scarf hoặc một bag có form. Tránh dùng beret + scarf + striped tee + red lipstick cùng lúc chỉ để “trông Pháp”; đó là lúc aesthetic chuyển thành costume.</p>
+
+235 phoi-ao-co-lo-nu -> ao-giu-nhiet-lot-ni [p11]
+<p>Với chân váy xòe hoặc có nhiều nếp, áo cổ lọ mỏng giúp vùng cạp bớt dày. Chọn đồ mặc trong ít đường nổi khi áo ôm, rồi kiểm tra dưới ánh sáng ban ngày. Nếu phải giữ một tư thế mới thấy áo phẳng, nên đổi độ ôm hoặc cách sơ vin.</p>
+
+236 phoi-do-nu-ca-tinh-di-choi -> phoi-do-voi-quan-jeans-ong-rong-nu [p18]
+<p>Nếu muốn Dark Feminine nhưng vẫn dễ mặc, hãy để sự nữ tính nằm ở đường cắt và texture thay vì độ hở. Điều này giúp outfit dùng lại được cho nhiều buổi đi chơi khác nhau, không chỉ một bữa tối.</p>
+
+237 phoi-do-nu-ca-tinh-mua-he -> cuban-shirt [p19]
+<p>Đồ đen mùa hè thường “nặng” vì ba thứ chồng lên nhau: màu tối, vải dày và silhouette kín. Bạn không cần loại cả ba; chỉ cần giảm hai trong số đó. Ví dụ, vẫn mặc đen toàn thân nhưng chọn tank + quần rộng vải nhẹ. Hoặc vẫn dùng jeans đen nhưng đổi top thành áo hở vai có khoảng da và neckline rõ.</p>
+
+238 phoi-do-voi-ao-blazer-den-nu -> bo-vest-nu-cong-so [p12]
+<p>Cropped blazer rút ngắn thân trên nên hợp quần cạp cao hoặc mid-rise có đường ly/đường dọc rõ. Bodysuit giữ lớp trong phẳng, không tạo nếp ở eo. Công thức này phù hợp dinner, workshop hoặc những dịp cần gọn nhưng không cần full suit.</p>
+
+239 phoi-do-voi-ao-bomber-nu -> harrington-jacket [p18]
+<p>Graphic tee và bomber là công thức rất dễ đẩy sang Punk/Grunge mà không cần thêm quá nhiều phụ kiện. Chọn tee có graphic rõ, jeans đen hoặc washed charcoal và boots hoặc sneaker cũ sạch. Nếu áo bomber có patch lớn, tee nên bớt graphic để hai món không cạnh tranh.</p>
+
+240 phoi-do-voi-ao-khoac-jean-nu -> outerwear [p10]
+<p>Denim jacket mở + tank/baby tee + short tạo hai đường dọc ở thân trên và giữ chân thoáng. Cropped jacket làm set gọn hơn; oversized jacket cho vibe streetwear nhưng nên chọn short đủ lộ khỏi gấu áo để silhouette không thành “mặc mỗi jacket”.</p>
+
+241 phoi-do-voi-ao-long-cuu -> ao-ni-nu [p14]
+<p>Lớp trong vừa người, bề mặt ít nổi giúp giảm cộm dưới áo lông. Không cần mặc quá chật: thử co tay và đưa tay ra trước để chắc rằng đường may không kéo căng. Nếu áo ngoài đã cổ cao, lớp trong cổ thấp hơn một chút có thể giảm số đường cổ chồng nhau. Khi muốn lộ cổ áo trong, giữ phần lộ đều và có chủ đích.</p>
+
+242 phoi-do-voi-ao-luoi-nu -> phoi-do-voi-corset-top-nu [p12]
+<p><strong>E-Girl:</strong> mesh tay dài + baby tee/crop top + mini/straight jeans + platform. <strong>Goth:</strong> mesh làm top chính với bralette/tank đen + skirt/quần tối + boots, thêm hardware có chọn lọc. <strong>Punk/Grunge:</strong> mesh dưới band tee/overshirt + distressed denim + combat boots. <strong>Dark Feminine:</strong> mesh trơn + corset/waistcoat hoặc midi/leather skirt + ankle boots mũi gọn.</p>
+
+243 phoi-do-voi-ao-luoi-nu -> rave-outfits [p7]
+<p><strong>Tonal layer</strong> — ví dụ mesh đen + tank đen — làm mắt đọc toàn bộ phần thân trên như một khối, hợp khi bạn muốn outfit tối và gọn. <strong>Contrast layer</strong> — mesh đen + tank trắng, xám hoặc đỏ rượu — làm cấu trúc layer hiện rõ hơn; khi đó phụ kiện nên giảm để màu sắc làm focal point. Trước khi thêm vòng cổ, dùng <a href="/blog/phoi-do-theo-ao-nu.html">chọn áo nền theo phom</a> để xác định khoảng che phủ và ranh giới của các lớp. Nếu mục tiêu là mặc ban ngày hoặc trong môi trường cần kín hơn, tank/camisole che phủ nhiều hơn bralette mà vẫn giữ texture của mesh.</p>
+
+244 phoi-do-voi-ao-so-mi-nu -> pyjama [p9]
+<p>Nếu sơ mi trắng hơi xuyên, thử đúng lớp lót dưới ánh sáng mạnh trước khi ra ngoài. Bra/top lót cùng tông da thường ít tạo đường tương phản hơn màu trắng sáng; nếu cố ý layer mesh/tank thì biến nó thành chi tiết thiết kế thay vì “ẩn” một cách nửa vời.</p>
+
+245 phoi-do-voi-ao-tre-vai-nu -> ao-ong-nu-phoi-voi-gi [p13]
+<p><strong>Sneaker</strong> làm áo trễ vai đời thường hơn; <strong>ankle boots</strong> tăng độ sắc cho Dark Feminine; <strong>platform/combat boots</strong> hợp Y2K/Alt; <strong>Mary Jane/loafer</strong> nghiêng preppy; sandal quai mảnh hợp mùa nóng. Chọn theo mức di chuyển và volume của bottom, không chỉ theo màu.</p>
+
+246 phoi-do-voi-boots-da-nu -> platform-shoes [p13]
+<p>Platform boots tăng visual weight ở chân, còn jeans rách và mesh tạo texture ở thân/quần. Để set không quá bận, chỉ nên có một vùng distressed chính: nếu jeans đã rách nhiều, graphic tee và jacket nên sạch hơn; nếu áo lưới/graphic đã phức tạp, chọn jeans washed nhẹ.</p>
+
+247 phoi-do-voi-chan-vay-da -> phoi-do-voi-chan-vay-jean-dai [p10]
+<p>Với midi, để ý khoảng cách giữa gấu và miệng boots. Khi hai đường kết thúc gần nhau ở vùng bắp chân, chân có thể bị “cắt” thị giác; ankle boots thấp hơn hoặc boots cao đủ nằm dưới gấu thường sạch hơn. Không có một chiều cao giày đúng cho tất cả — ưu tiên đường dọc liên tục và cảm giác đi lại thực tế.</p>
+
+248 phoi-do-voi-chan-vay-duoi-ca -> phoi-do-voi-chan-vay-xoe [p19]
+<p>Closet hiện chưa có mermaid skirt được xác nhận. Vì vậy, ba Look dưới đây <strong>không được dùng như ví dụ váy đuôi cá thật</strong>; chúng chỉ giúp quan sát logic top–eo–gấu: khi phần dưới đã có chuyển động hoặc cấu trúc, phần trên càng cần một điểm neo rõ.</p>
+
+249 phoi-do-voi-chan-vay-jean-dai -> phoi-do-voi-chan-vay-da [p4]
+<p>Crop top hợp với chân váy jean dài, nhưng không cần phải rất ngắn. Một crop top kết thúc gần cạp váy thường dễ mặc hơn kiểu hở nhiều. Nếu muốn đào sâu cách chọn form và tỷ lệ, xem <a href="/blog/phoi-do-voi-ao-crop-top-nu.html">áo croptop mặc với quần gì và cách phối crop top</a>; nguyên tắc cạp–độ dài top áp dụng tương tự với chân váy jean.</p>
+
+250 phoi-do-voi-chan-vay-trang-dai -> vay-maxi [p11]
+<p>Không áp quy tắc dáng người nào bị cấm váy trắng. Bạn có thể chọn điểm nhấn ở cạp, đường cổ hoặc giày theo sở thích. Vấn đề thực tế cần giải quyết là độ vừa, chiều dài và khả năng cử động của bộ đồ.</p>
+
+251 phoi-do-voi-chan-vay-xep-ly -> cach-phoi-do-voi-chan-vay-tang-ngan [p11]
+<p>Bài này tập trung vào <strong>cấu trúc nếp ly</strong> ở cả bản ngắn lẫn dài. Nếu câu hỏi của bạn là váy ngắn nói chung, xem <a href="../blog/phoi-do-voi-vay-ngan-nu.html">phối đồ với chân váy ngắn</a>. Nếu item là silhouette chữ A không có ly làm đặc điểm chính, chuyển sang hướng dẫn <a href="../blog/phoi-do-voi-chan-vay-chu-a.html">chân váy chữ A</a>.</p>
+
+252 phoi-do-voi-chan-vay-xoe -> phoi-do-voi-chan-vay-duoi-ca [p4]
+<p>Thay vì chọn áo theo một danh sách cố định, hãy nhìn xem chiếc váy đang tạo <strong>bao nhiêu volume</strong> và volume bắt đầu từ đâu. Năm công thức dưới đây khác nhau ở tỷ lệ, texture và mức độ statement, nên có thể dùng cho nhiều độ dài váy mà không làm mất đặc trưng xòe.</p>
+
+253 phoi-do-voi-corset-top-nu -> outfit-di-choi-dem-badgirl [p18]
+<p>Mùa mưa hoặc mùa lạnh: corset velvet hoặc satin dày + tất thigh-high + mini skirt + áo khoác lông nhân tạo — đây là công thức goth-badgirl mùa lạnh kinh điển. Layer thêm một turtleneck mỏng bên dưới corset nếu cần thêm ấm mà không mất silhouette.</p>
+
+254 phoi-do-voi-corset-top-nu -> phoi-do-voi-ao-luoi-nu [p13]
+<p>Lỗi thứ ba: mặc corset rồi cúi người liên tục hoặc kéo chỉnh suốt buổi. Corset cần được mặc với sự chắc chắn — đứng thẳng, ngồi đúng cách (không khom). Nếu corset không cho bạn ngồi thoải mái thì đó không phải corset bạn cần mặc đi chơi cả ngày. Chọn boning linh hoạt hơn hoặc corset bralette không boning cho những ngày dài.</p>
+
+255 phoi-do-voi-quan-da-nu -> phoi-do-voi-quan-jean-ong-suong-nu [p16]
+<p>Lỗi phổ biến nhất: chọn sai size. Quần da quá bó gây khó chịu khi di chuyển và dễ bai ở gối sau vài lần mặc (đặc biệt với da PU); quần quá rộng lại mất hoàn toàn điểm mạnh của chất liệu — quần da đẹp nhờ đường nét, không phải nhờ độ rộng. Thử và ngồi xuống trước khi mua là bước không nên bỏ qua.</p>
+
+256 phoi-do-voi-quan-jean-ong-suong-nu -> phoi-do-voi-quan-da-nu [p9]
+<p>Ba outfit jeans bên dưới được đặt cạnh một ví dụ quần ống rộng để bạn so sánh tỷ lệ từ đùi, gối tới gấu. Khi chọn quần ống suông, hãy nhìn đường ống thực tế thay vì chỉ dựa vào tên sản phẩm.</p>
+
+257 phoi-do-voi-quan-jeans-ong-rong-nu -> denim-on-denim [p11]
+<p>Công thức này hợp với những ngày muốn outfit có texture rõ. Mesh, denim và da boots tạo ba bề mặt khác nhau, giúp set đồ all-black hoặc gần all-black không bị phẳng. Nếu cần thêm điểm nhấn, chọn dây chuyền dài hoặc túi bạc nhỏ.</p>
+
+258 phoi-do-voi-quan-jeans-ong-rong-nu -> phoi-do-nu-ca-tinh-di-choi [p9]
+<p>Nếu mặc ban ngày, chọn corset vải mềm hoặc top có đường corset giả. Nếu mặc buổi tối, có thể thêm blazer đen hoặc áo khoác da mỏng. Đây là cách đưa quần jeans rộng vào vibe <a href="../style/dark-feminine.html">dark feminine</a> mà vẫn giữ tính ứng dụng.</p>
+
+259 phoi-do-voi-quan-legging-nu -> quan-jeans-skinny [p15]
+<p class="ac-evidence-scope"><strong>Phạm vi ví dụ:</strong> Không Look nào ở đây được gắn nhãn legging; chúng là ví dụ về khung ngoài/top/giày, không phải bằng chứng về form legging.</p>
+
+260 phoi-do-voi-quan-legging-nu -> quan-the-thao-nu [p11]
+<p>Blazer đứng vai là một trong những cách nhanh nhất để legging rời khỏi ngữ cảnh tập luyện. Tank hoặc bodysuit bên trong giữ thân giữa sạch, còn blazer tạo vai, ve và đường gấu có chủ ý. Nếu môi trường làm việc cho phép legging, ưu tiên quần matte, đường may kín, blazer dài vừa qua hông và footwear gọn; đây là lựa chọn về dress code và cấu trúc chứ không phải quy tắc bắt buộc phải “che”.</p>
+
+261 phoi-do-voi-quan-ong-loe-nu -> quan-ke-soc-trang-den-mac-voi-ao-gi [p11]
+<p>Nếu mặc ở Việt Nam ban ngày, ưu tiên bodysuit hoặc top chất liệu nhẹ, co giãn tốt. Buổi tối có thể thêm blazer hoặc jacket mỏng thay vì layer quá dày.</p>
+
+262 phoi-do-voi-quan-short-nu -> quan-bermuda-nu [p6]
+<p>Denim distressed mang texture mạnh, graphic tee tiếp tục ngôn ngữ Grunge/Punk mà không cần nhiều phụ kiện. Khi cần đổi chiều dài mà vẫn giữ tinh thần công thức, <a href="/blog/phoi-do-theo-quan-nu.html">chọn kiểu quần theo tỷ lệ</a> giúp bạn cân phần chân lộ và khối giày. Platform hoặc combat boots bù lại phần visual weight bị mất khi quần dừng ở đùi. Nếu wash denim đã nhiều vết rách, chọn graphic ít màu để hai bề mặt không cạnh tranh.</p>
+
+263 phoi-do-voi-quan-short-nu -> quan-gia-vay-mac-voi-ao-gi [p9]
+<p>Cargo short olive, xám hoặc beige đi với crop hoodie tạo một route Baddie/Y2K dễ mặc. Hem ngắn của hoodie giữ eo đọc được dù cả hai item đều có volume. Bucket hat hoặc sneaker retro nên là điểm phụ; không cần cộng thêm quá nhiều chain và hardware.</p>
+
+264 phoi-do-voi-quan-tay-ong-suong-nu -> quan-kaki-nu [p16]
+<p>Đừng chọn giày tách khỏi chiều dài quần. Với loafer hoặc sneaker đế thấp, gấu có thể break rất nhẹ trên mu giày. Với boots hoặc giày cao hơn, cần kiểm tra lại để vải không chất thành nhiều nếp. Nếu phần upper của giày biến mất hoàn toàn dưới gấu, outfit dễ nhìn nặng; nếu gấu dừng quá cao, ống suông lại mất cảm giác rơi thẳng.</p>
+
+265 phoi-do-voi-quan-tay-ong-suong-nu -> trouser-la-quan-gi [p13]
+<p>Corset mềm hoặc bodysuit tạo bề mặt ôm và một điểm eo rõ, nhờ đó quần suông có thể giữ volume mà outfit vẫn có cấu trúc. Hãy ưu tiên corset ít hardware khi quần đã có pinstripe, ly hoặc belt; quá nhiều tín hiệu cùng lúc làm phần giữa cơ thể rối. Đi chơi tối có thể thêm leather jacket mỏng và boots; ban ngày chỉ cần bodysuit/tank có đường may corset giả để dễ mặc hơn.</p>
+
+266 phong-cach-basic -> normcore-la-gi [p10]
+<p>Sơ mi khoác ngoài, cardigan hay áo khoác nhẹ chỉ cần xuất hiện nếu thời tiết và lịch sinh hoạt cần đến. Mặc thử bên ngoài chiếc áo bạn dùng thường xuyên để xem tay có cử động thuận không. Đừng đánh giá lớp ngoài khi bên trong chỉ có một áo mỏng khác hẳn cách mặc hằng ngày.</p>
+
+267 phong-cach-workwear -> gorpcore-la-gi [p13]
+<p><strong>Muốn mềm hơn:</strong> đổi áo thun thành blouse cổ mở, tay ngắn và ít bèo. Giày bệt màu nâu lặp lại sắc của túi xách nhỏ, còn quần giữ vai trò tạo cấu trúc. Chọn blouse rủ vừa để thân trên chuyển động nhẹ, nhưng thử dưới ánh sáng trước khi quyết định có cần lớp lót. Không bắt buộc thêm nơ hay cao gót để bộ đồ được xem là trang phục nữ.</p>
+
+268 phu-kien-alt-fashion-thiet-yeu -> that-lung-nu [p7]
+<p>Tránh frame quá tròn hoặc quá lớn nếu bạn muốn vibe badgirl hoặc dark feminine thuần túy — frame đó nghiêng về soft aesthetic hơn. Trước khi coi gọng là dấu hiệu quyết định phong cách, <a href="/blog/phu-kien-thoi-trang-nu-ca-tinh.html">xem phụ kiện trong tổng thể</a> để cân nó với tóc, cổ áo và các món gần mặt. Shield glasses (kính một tấm cong) là lựa chọn statement mạnh cho baddie streetwear và egirl. Kính không cần phải có tròng thật — nhiều người dùng kính frame không độ chỉ để có accessory, và không có gì sai ở đó.</p>
+
+269 polyester-la-gi -> cach-khu-mui-boots [p11]
+<p><a href="https://www.rei.com/learn/expert-advice/underwear.html" target="_blank" rel="noopener noreferrer">REI lưu ý trong hướng dẫn base layer</a> rằng một số đồ sợi tổng hợp có thể giữ mùi và có sản phẩm dùng xử lý riêng để hạn chế vấn đề này. Đừng coi tên polyester là lời bảo đảm kháng khuẩn. Sau vận động, xem hướng dẫn giặt và làm khô của chính món đồ; không dùng mùi thơm để thay thế việc làm sạch phù hợp.</p>
+
+270 polyester-la-gi -> chiffon-la-vai-gi [p8]
+<p>Đặc điểm ít nhăn là một lý do polyester được chọn cho trang phục hằng ngày. Trong <a href="/blog/cac-loai-vai.html">cách đọc các loại vải</a>, hãy tách tên sợi khỏi cấu trúc trước khi so độ nhăn của hai món polyester. Nhưng đường may, thiết kế xếp ly, lớp dựng và cách cất giữ vẫn ảnh hưởng hình thức cuối cùng. Khi thử áo, nhìn vai và nẹp trước; khi thử quần, nhìn vùng gối, hông và đường khóa. Một món đồ vừa người sẽ cho bạn nhiều thông tin hữu ích hơn việc chỉ vò một góc vải rồi thả ra.</p>
+
+271 polyester-la-gi -> vai-me [p14]
+<p>Tìm mô tả rõ về dẫn ẩm, cấu trúc thoáng hoặc mục đích vận động. Thử chuyển động đúng với hoạt động dự kiến, kiểm tra đường may có cọ và gấu có bị kéo không. Với lớp áo được thiết kế để dẫn ẩm sát da, độ vừa là một phần chức năng; không nên lấy kinh nghiệm chọn áo sơ mi rộng rồi áp nguyên vào mọi loại đồ tập.</p>
+
+272 punk-makeup-dark-aesthetic -> goth-nails-mau-nail-phong-cach-goth [p14]
+<p>Punk makeup không yêu cầu làm da nhợt đi. Base đúng tông hoặc chỉ concealer ở vùng cần thiết thường giúp eye makeup nổi hơn mà vẫn giữ texture thật. Nếu da dầu, set vùng chữ T và dưới mắt; nếu da khô, giữ finish satin hoặc natural. Với Goth-inspired look, độ tương phản có thể đến từ mắt và môi chứ không cần đổi màu da.</p>
+
+273 pyjama -> phoi-do-voi-ao-so-mi-nu [p14]
+<p>Nếu muốn mặc nguyên bộ, thử màu trầm, độ bóng vừa và họa tiết ít. Giữ đường viền áo rõ, chọn gấu quần không chạm đất, rồi thêm túi có phom tương đối đứng. Đôi sandal quai gọn có thể hợp ngày khô ráo; loafer phù hợp khi bạn muốn cảm giác chỉn chu hơn.</p>
+
+274 qipao -> vay-da-hoi [p11]
+<p>Cổ đứng tạo đường nét rõ quanh mặt, nhưng không nên cấn khi bạn cúi đầu. Người thích phần cổ thoáng có thể thử cổ thấp hoặc cổ cách tân. Đây là lựa chọn về cảm giác và tỷ lệ, không phải quy định rằng một dáng cổ hay khuôn mặt nào bị cấm mặc sườn xám.</p>
+
+275 quan-cargo-la-gi -> quan-yem-nu [p9]
+<p>Hãy kiểm tra chiều dài trong ống và vị trí túi. Túi quá lớn hoặc quá thấp có thể kéo trọng tâm xuống. Cargo cạp vừa/cao, túi gọn và ống không dồn nhiều ở mắt cá sẽ dễ kiểm soát hơn. Nếu quần có dây rút ở gấu, bạn có thể điều chỉnh để lộ giày và tạo điểm kết thúc.</p>
+
+276 quan-den-phoi-ao-mau-gi -> ao-den-phoi-quan-mau-gi [p16]
+<p>Không cần áp dụng quy tắc cứng rằng đen chỉ được đi với màu lạnh. Áo be ấm, nâu caramel hoặc cam đất vẫn là lựa chọn nếu bạn thích. Hãy giữ phần giày và túi đơn giản trong lần thử đầu để biết mình đang đánh giá màu áo hay toàn bộ phụ kiện.</p>
+
+277 quan-gia-vay-mac-voi-ao-gi -> phoi-do-voi-quan-short-nu [p15]
+<p>Với quần gần chạm giày, chiều dài gấu cần được thử bằng đúng đôi định mang. Không cố dùng giày cao để cứu một chiếc quá dài so với lịch sinh hoạt. Chỉnh gấu hoặc chọn độ dài khác thường thực tế hơn nếu bạn thường đi giày thấp.</p>
+
+278 quan-hong-phoi-ao-mau-gi -> ao-hong-phoi-quan-mau-gi [p14]
+<p>Phối áo hồng với quần hồng cũng được, nhưng nên xem chúng như hai sắc riêng. Áo hồng nhạt hơn quần tạo một mức chuyển, còn bộ cùng sắc có thể được tách bằng bề mặt hoặc đường cạp. Nếu chỉ gần giống nhưng không thật sự đồng màu, hãy thử dưới nhiều ánh sáng trước khi quyết định.</p>
+
+279 quan-hong-phoi-ao-mau-gi -> mau-hong-ket-hop-voi-mau-gi [p15]
+<p>Muốn dùng áo xanh lá hoặc đỏ, bắt đầu bằng phiên bản ít họa tiết và để phụ kiện làm nền. Hai mảng màu rõ trên áo và quần đã đủ tạo cá tính. Bạn không cần thêm giày, túi và kính đều khác màu, trừ khi chính sự đa sắc đó là chủ ý và bạn đã thử cả bộ.</p>
+
+280 quan-jeans-skinny -> cach-len-lai-quan-jean [p16]
+<p>Với ankle boots, tránh nhồi phần gấu dày vào cổ giày chật. Bạn có thể chọn quần dài phù hợp để nằm ngoài hoặc quần đủ gọn để nằm trong, nhưng phải thử đi lại. Đường may và nếp gập bị nén có thể làm khó chịu dù ảnh đứng trông ổn. Nếu quần quá dài, sửa gấu đáng cân nhắc hơn gập nhiều lớp.</p>
+
+281 quan-jeans-skinny -> quan-slim-fit [p15]
+<p>Với sneaker hoặc loafer, thử để gấu nằm gọn gần cổ giày. Một khoảng cổ chân lộ là lựa chọn về tỷ lệ, không phải điều kiện bắt buộc. Nếu cần tất kín hơn, chọn chiều dài và màu tất như một phần của bộ đồ thay vì để chúng xuất hiện ngẫu nhiên khi ngồi.</p>
+
+282 quan-jogger-la-gi -> quan-ni-nu-sweatpants [p9]
+<p>Với mẫu unisex, hãy đặc biệt kiểm tra chiều dài đũng và inseam: grading thường được xây cho dải cơ thể rộng hơn nên cùng size chữ có thể dài hoặc sâu hơn mẫu nữ. Mục tiêu không phải ép cơ thể vào “form chuẩn”, mà chọn mức volume bạn muốn ở đùi và điểm gấu kết thúc đúng với đôi giày sẽ mặc.</p>
+
+283 quan-kaki-nu -> phoi-do-voi-quan-tay-ong-suong-nu [p6]
+<p>Trong mô tả cửa hàng, “suông” có thể chỉ nhiều mức rộng. Hỏi chiều rộng đùi, gối và gấu nếu cần phân biệt với mẫu ống đứng hoặc ống rộng. Một chiếc rơi thẳng từ hông xuống sẽ khác mẫu ôm đùi rồi mở ở gấu. Cách <a href="/blog/phoi-do-theo-quan-nu.html">phối theo phom quần nữ</a> giúp bạn đặt tên dáng trước khi chọn công thức.</p>
+
+284 quan-ke-soc-trang-den-mac-voi-ao-gi -> phoi-do-voi-quan-ong-loe-nu [p26]
+<p>Với áo hoa hoặc graphic, chọn một điểm chung như trắng, đen hoặc màu nhấn lặp lại. Giữ một họa tiết chủ đạo và một họa tiết nhẹ hơn trong lượt thử đầu. Đây là cách kiểm soát số vùng nổi, không phải công thức bảo đảm mọi cặp họa tiết đều hợp.</p>
+
+285 quan-mau-be-phoi-ao-mau-gi -> mau-be-la-mau-gi [p15]
+<p>Nếu chưa biết màu nào phù hợp tủ đồ, đặt các áo cạnh cùng một chiếc quần và chụp trong cùng điều kiện. <a href="/blog/cach-tao-moodboard-thoi-trang.html">lưu ảnh phối từ tủ đồ</a> giúp lưu kết quả theo màu, phom và bề mặt, thay vì chỉ lưu ảnh người khác có chiếc quần không giống của bạn.</p>
+
+286 quan-nau-phoi-ao-mau-gi -> ao-nau-phoi-quan-mau-gi [p14]
+<p>Burgundy đi với quần nâu tạo bộ màu đậm, hợp khi bạn thích trang phục trầm nhưng không muốn chỉ mặc đen. Áo olive với quần caramel lại thiên về nhóm màu đất. Hai lựa chọn này nên được thử trực tiếp vì mỗi sắc nâu phản ứng khác nhau với độ đỏ hoặc xanh của áo.</p>
+
+287 quan-nau-phoi-ao-mau-gi -> mau-nau-phoi-voi-mau-gi [p10]
+<p>Sơ mi xanh nhạt với quần nâu là cách phối dễ dùng cho đi học hoặc nơi làm việc có quy định trang phục phù hợp. Phần <a href="/blog/phoi-mau-quan-ao-nu.html">phối từ màu quần có sẵn</a> giúp bạn thử xanh nhạt trên từng sắc nâu thay vì áp một công thức chung. Xanh nhạt tạo khoảng sáng ở thân trên, còn nâu giữ phần dưới trầm hơn. Với quần caramel, sự khác biệt giữa hai màu thường nhìn thấy rõ.</p>
+
+288 quan-ni-nu-sweatpants -> outfit-san-bay-nu [p8]
+<p>Ngồi xuống, bước dài vừa phải và kiểm tra phần đáy quần. Nếp kéo căng ở đùi hoặc cảm giác cạp bị kéo tụt khi ngồi là dấu hiệu cần xem lại size hoặc chiều dài đáy. Tăng cỡ không phải lúc nào cũng sửa được vấn đề: nếu eo đã rộng nhưng đáy vẫn bất tiện, một phom khác có thể phù hợp hơn.</p>
+
+289 quan-ong-con -> quan-ong-cong [p16]
+<p>Trong ngày nóng ẩm, chọn theo cảm giác mặc và lịch trình của bạn. Nếu thường ngồi lâu trong phòng rồi đi bộ ngoài trời, hãy thử đủ các tư thế và xem quần có giữ ẩm khó chịu không. Không cần đánh đổi mọi sự thoải mái chỉ để có đường ống thật sát.</p>
+
+290 quan-ong-cong -> quan-ong-con [p16]
+<p>Chọn độ dài giúp thấy điểm bắt đầu của ống quần. Cardigan cài một phần có thể tạo đường mở phía trước, nhưng cần kiểm tra khi ngồi để áo không kéo lệch. Với quần đứng phom, lớp trên mềm tạo khác biệt bề mặt khá rõ.</p>
+
+291 quan-slim-fit -> quan-jeans-skinny [p11]
+<p>Oversize tạo độ rộng có chủ ý ở các vùng của trang phục. Bài <a href="/blog/form-oversize-la-gi.html">oversize là gì</a> giải thích vì sao lấy một cỡ lớn hơn không tự tạo đúng phom rộng. Tương tự, chọn nhỏ hơn để ép áo regular thành slim có thể làm vai, tay và chiều dài lệch ý định.</p>
+
+292 quan-the-thao-nu -> phoi-do-voi-quan-legging-nu [p13]
+<p>Với nhóm này, ưu tiên công năng trong buổi tập thay vì biến lựa chọn thành một công thức phối legging ra phố. Một chiếc mặc tập tốt chưa chắc đáp ứng độ che phủ, túi hoặc bề mặt bạn muốn cho cả ngày. Có thể dùng riêng quần cho từng nhu cầu nếu một thiết kế không giải quyết được cả hai.</p>
+
+293 quan-tim-phoi-ao-mau-gi -> ao-tim-phoi-quan-mau-gi [p16]
+<p>Áo tím khác sắc cũng là lựa chọn, nhưng nên so bằng món thật. Áo tím nhạt với quần tím đậm phân biệt hai phần qua độ sáng. Nếu hai món gần màu mà khác bề mặt, hãy xem bạn có thích sự chuyển tiếp đó hay muốn một ranh giới rõ hơn.</p>
+
+294 quan-tim-phoi-ao-mau-gi -> mau-tim-phoi-voi-mau-gi [p17]
+<p>Không cần tìm hai màu khớp tuyệt đối để tạo một bộ gần tông. Tuy nhiên, đừng mua theo tên màu rồi kỳ vọng ảnh màn hình thể hiện chính xác. Khi đặt online, hỏi ảnh hai món cạnh nhau hoặc chọn nơi có điều kiện đổi trả phù hợp.</p>
+
+295 quan-trang-phoi-ao-mau-gi -> white-on-white [p17]
+<p>Bắt đầu từ chiều dài quần và vị trí cạp. Quần dài rộng thường cần áo có chiều dài dễ đọc để không che hết cấu trúc phía dưới. Áo gọn, áo ngắn vừa cạp hoặc sơ mi sơ vin là ba hướng thử; không có một kiểu duy nhất dành cho mọi người.</p>
+
+296 quan-vang-phoi-ao-mau-gi -> ao-vang-phoi-quan-mau-gi [p7]
+<p>Áo kem với quần vàng bơ tạo tổng thể sáng, trong đó khác biệt nằm ở sắc độ và bề mặt. Nếu hai món gần nhau quá mức so với ý muốn, dùng giày hoặc túi tối để tạo điểm kết. Bạn cũng có thể chọn áo kem sáng hơn thay vì thêm một màu nổi.</p>
+
+297 quan-vang-phoi-ao-mau-gi -> mau-vang-phoi-voi-mau-gi [p15]
+<p><strong>Nâu:</strong> đi với vàng đất hoặc vàng bò theo hướng ấm màu. Áo nâu đậm và quần vàng sáng hơn làm hai phần phân biệt rõ; áo be nâu nhạt tạo kết quả gần màu hơn. Đừng chỉ nhìn tên nâu, hãy đặt hai món cạnh nhau dưới cùng ánh sáng.</p>
+
+298 quan-xam-phoi-ao-mau-gi -> ao-xam-phoi-quan-mau-gi [p9]
+<p>Nếu toàn bộ bộ đồ sáng và thiếu điểm nhìn, hãy điều chỉnh đường cạp, cổ áo hoặc thêm một phụ kiện đậm nhỏ. Phần <a href="/blog/phoi-mau-quan-ao-nu.html">điều chỉnh vị trí màu nhấn</a> giúp bạn tìm điểm nhìn mà chưa cần bỏ cặp kem xám đang thích. Đừng mặc định rằng áo kem khiến da hay vóc dáng nào đó không hợp; vị trí màu và đường cắt còn nhiều cách thay đổi.</p>
+
+299 quan-xam-phoi-ao-mau-gi -> mau-xam-phoi-voi-mau-gi [p12]
+<p>Đỏ rượu với quần xám vừa tạo màu nhấn sâu hơn. Thử áo ôm vừa, quần có ly và giày đen. Nếu áo có bề mặt bóng, giữ túi và giày ít phản sáng để màu áo vẫn là phần chính.</p>
+
+300 quan-xanh-den-phoi-ao-mau-gi -> mau-xanh-duong-phoi-voi-mau-gi [p15]
+<p>Áo xanh nhạt tạo khoảng cách sáng tối rõ trong cùng họ màu. Sơ mi xanh nhạt với quần xanh đen là một cách thử cho ngày cần gọn gàng; áo thun xanh nhạt tạo cảm giác nhẹ hơn khi phối với jeans. Nhìn sắc xanh thực tế để tránh ghép theo tên rồi thấy hai món lệch điều bạn muốn.</p>
+
+301 quan-xanh-den-phoi-ao-mau-gi -> mau-xanh-navy-la-mau-gi [p16]
+<p>Áo navy gần màu quần tạo một mảng màu liền. Nếu không mua theo bộ, đừng kỳ vọng hai sắc phải giống hệt. Bạn có thể chọn áo sáng hơn rõ ràng hoặc khác bề mặt để sự khác biệt trông có chủ đích. Một khoảng chênh nhỏ đôi khi chỉ lộ dưới đèn hoặc trong ảnh.</p>
+
+302 quan-xanh-reu-phoi-ao-mau-gi -> ao-xanh-reu-phoi-quan-mau-gi [p10]
+<p>Be sáng hợp khi bạn muốn mềm hơn trắng. Nâu đậm tạo cảm giác sâu hơn với quần rêu vừa hoặc sáng. Hãy chọn một món sáng, một món đậm nếu không muốn hai phần hòa vào nhau; chẳng hạn áo be nhạt, quần rêu đậm và giày nâu.</p>
+
+303 quan-yem-nu -> quan-cargo-la-gi [p12]
+<p>Bạn có thể tham khảo <a href="/blog/phoi-do-theo-ao-nu.html">guide áo nữ theo form</a> khi cần chọn lớp trong. Hãy giữ câu hỏi cụ thể: cổ nào lộ đẹp trên mép yếm, tay nào không cộm và gấu nào nằm gọn, thay vì chỉ hỏi một loại áo có hợp yếm hay không.</p>
+
+304 rave-outfits -> phoi-do-voi-ao-luoi-nu [p18]
+<p>Với quần dài, xem gấu có lọt dưới đế khi bước lùi hoặc sang bên không. Với váy, kiểm tra tất có bị kéo tụt hay nhăn trong giày. Các món nhỏ này dễ bị bỏ qua khi thử riêng từng item nhưng lại ảnh hưởng khi mặc cả bộ.</p>
+
+305 rock-chic -> edgy-fashion-style [p17]
+<p>Khi cần trang trọng hơn, thay graphic bằng áo trơn và giữ điểm nhấn ở thắt lưng hoặc giày. Không nên khẳng định một công thức phù hợp mọi văn phòng: quy định trang phục và tính chất buổi gặp vẫn quyết định mức độ phá cách. Kiểm tra cả hình in lẫn chi tiết rách trước khi chọn bộ đồ.</p>
+
+306 romantic-goth-la-gi -> victorian-goth [p17]
+<p><strong>Romantic Goth vs Dark Feminine:</strong> Dark Feminine thường hiện đại, sắc và body-conscious hơn. Romantic Goth ưu tiên atmosphere, movement và texture cổ điển. Một corset giống nhau nhưng styling quanh nó sẽ quyết định đặc trưng.</p>
+
+307 ryousangata -> coquette-la-gi-dark-coquette [p17]
+<p>Để hiểu riêng vai trò của tóc, trang điểm và cách hoàn thiện trong Gyaru, xem <a href="/blog/gyaru.html">bản hướng dẫn các phong cách Gyaru</a>. Sự phân biệt này đặc biệt hữu ích khi hai outfit đều có nơ và màu hồng nhưng tạo ấn tượng rất khác nhau.</p>
+
+308 set-do-nu-ca-tinh-shopee -> outfit-nu-ca-tinh-duoi-500k [p7]
+<p>Tổng giá gồm giá sau voucher, phí vận chuyển, phụ phí, sản phẩm bắt buộc mua kèm và khả năng phải đổi trả. So sánh với phương án dùng một món có sẵn. Một outfit “dưới 500K” trên ảnh có thể vượt ngân sách khi cộng giày và phụ kiện.</p>
+
+309 slip-dress-la-gi-cach-phoi -> chan-vay-lua-phoi-voi-ao-gi [p23]
+<p>Loafer tạo cấu trúc mạnh hơn flats, còn tất biến footwear thành một layer rõ ràng. Đây là lựa chọn hay nếu muốn váy đi sang preppy-dark hoặc academia.</p>
+
+310 solarpunk -> biopunk [p10]
+<p>Ở mức độ thứ nhất là <strong>Concept Thế Giới Tương Lai (Futuristic Concept)</strong>. Đây là nhánh mang tính trình diễn và ý tưởng cao, thường xuất hiện trong các bộ sưu tập thời trang cao cấp (haute couture) hoặc các tác phẩm nghệ thuật số. Trang phục ở mức độ này tập trung vào các chi tiết giả lập công nghệ cao tích hợp năng lượng mặt trời, các phụ kiện in 3D sinh học từ vật liệu tự hủy, hoặc các cấu trúc trang phục mô phỏng hệ sinh thái thực vật. Dù khó mặc ra phố hằng ngày, nhánh này đóng vai trò định hướng nguồn cảm hứng thẩm mỹ chính cho toàn bộ phong trào.</p>
+
+311 sold-out-la-gi -> boutique-la-gi [p16]
+<p>Đặt mốc cần nhận hàng trước, rồi xem người bán có xác nhận thời gian đủ rõ không. Nếu mới chỉ có nút báo hàng, đừng xây toàn bộ outfit cho sự kiện quanh món chưa biết ngày trở lại. Một phương án từ đồ sẵn có giúp bạn chủ động hơn.</p>
+
+312 stockholm-style -> parisian-chic [p17]
+<p>Chọn jacket ngắn khi muốn gấu ngoài kết thúc gần cạp; chọn blazer dài hơn khi thích một đường thân liền. Cả hai đều dùng được với quần rộng nếu chiều dài được kiểm soát. Đừng mặc định rằng người thấp chỉ được mặc áo ngắn hoặc người có vai rộng phải tránh blazer.</p>
+
+313 that-lung-dinh-tan-phoi-do -> that-lung-nu [p16]
+<p>Nếu belt chỉ để trang trí, bạn không cần siết quá chặt. Với low-rise placement, chừa độ thoải mái khi ngồi. Với waist belt trên dress, thử cúi và hít sâu để chắc phần khóa không ép khó chịu.</p>
+
+314 thoi-trang-thap-nien-90-o-viet-nam -> heisei-retro [p15]
+<p>Với jeans, kiểm tra khi ngồi và bước lên bậc. Cạp nên ở vị trí bạn thấy thoải mái, không phải độ cao do một nhãn retro áp đặt. Gấu có thể chạm nhẹ lên giày nhưng không nên kéo lê nếu bạn phải đi bộ ngoài đường. Một chỉnh sửa nhỏ về chiều dài thường hữu ích hơn việc thêm nhiều phụ kiện.</p>
+
+315 tie-dye -> cach-giat-do-den-khong-phai-mau [p14]
+<p>Khi họa tiết nằm ở quần, áo trơn là điểm nghỉ cho mắt. Thử áo trắng ngà, đen hoặc màu gần một mảng trên quần. Độ rộng phần ống và chiều dài gấu đáng quan tâm hơn việc áo phải thật ngắn. Một chiếc áo vừa cạp vẫn tạo được tỷ lệ rõ mà không cần hở bụng.</p>
+
+316 tie-dye -> vai-flannel [p18]
+<p>Hỏi thành phần vải, số đo, độ co giãn và hướng dẫn chăm sóc riêng. Tie dye nói về kỹ thuật hoặc diện mạo, không đảm bảo áo mát, dày hay mềm. Một chiếc áo màu đẹp nhưng vải và phom không phù hợp vẫn khó trở thành món mặc thường xuyên.</p>
+
+317 trouser-la-quan-gi -> phoi-do-voi-quan-tay-ong-suong-nu [p15]
+<p>Ngược lại, nếu muốn quần mặc thường ngày, đừng loại toàn bộ mục trousers chỉ vì nghĩ đây là đồ công sở. Bạn có thể gặp phom rộng, chất vải mềm hoặc thiết kế cạp thoải mái. Điều quan trọng là mẫu cụ thể có đáp ứng lịch sử dụng của bạn hay không.</p>
+
+318 tui-deo-cheo-nu -> tui-messenger [p18]
+<p>Túi cong mềm có thể nằm sát hơn tùy thiết kế, nhưng khi chứa nhiều đồ cứng sẽ đổi dáng. Đừng chọn chỉ từ ảnh túi rỗng ôm người. Hãy xem đáy, nếp gấp và đường dây khi đã có điện thoại, ví cùng các món thường dùng.</p>
+
+319 tui-messenger -> tui-deo-cheo-nu [p6]
+<p>Đừng mua túi thật lớn để dự phòng mọi tình huống nếu phần lớn ngày bạn chỉ mang vài món nhỏ. Thân quá rộng có thể va vào hông và khiến bạn phải tìm đồ sâu trong khoang. Ngược lại, một chiếc quá nhỏ bị nhồi căng sẽ làm nắp lệch và mất dáng vốn khiến bạn thích nó.</p>
+
+320 tui-messenger -> tui-tote [p5]
+<p>Với sổ hoặc tài liệu, kiểm tra chiều cao hữu dụng khi đóng nắp. Một tấm giấy đặt vừa trong thân chưa chắc nằm phẳng sau khi túi đã có chai nước và áo khoác. Nếu thường mang đồ dễ móp, xem cấu trúc ngăn và cách phân chia thay vì chỉ chọn tổng dung tích lớn.</p>
+
+321 tui-tote -> tui-messenger [p15]
+<p>Tote mềm ôm theo đồ bên trong thường tạo cảm giác thả lỏng. Tote có đáy và thành rõ tạo một khối dễ nhìn bên cạnh cơ thể. Không có dáng nào chỉ dành cho người cao hay thấp; hãy xem túi kết thúc ở đâu và có che mất chi tiết bạn muốn giữ trên trang phục không.</p>
+
+322 vai-canvas-la-vai-gi -> cach-khu-mui-boots [p14]
+<p>Đi thử với loại tất dự định dùng và kiểm tra khoảng mũi, hai bên chân cùng phần gót. Một thân giày mềm không có nghĩa mọi điểm đều sẽ thoải mái. Đừng chấp nhận mũi chật chỉ vì nghĩ canvas luôn giãn đủ sau vài lần mang.</p>
+
+323 vai-canvas-la-vai-gi -> da-lon [p16]
+<p>Giày canvas trắng tạo điểm sáng nhưng cũng cần kế hoạch vệ sinh phù hợp. Giày tối dễ nối với quần hoặc áo tối về màu, nhưng không có nghĩa không cần chăm sóc. Chọn màu theo khả năng dùng lại và điều kiện sử dụng, không chỉ theo ảnh sản phẩm mới.</p>
+
+324 vai-canvas-la-vai-gi -> vai-kaki [p6]
+<p>Với trang phục canvas, thử đưa tay, ngồi và bước dài để biết có đủ khoảng cử động không. Không nên mua một chiếc chật với kỳ vọng chắc chắn vải sẽ mềm ra đến mức vừa. Thành phần, cấu trúc và xử lý của từng sản phẩm có thể khác nhau.</p>
+
+325 vai-det-kim -> cach-gap-ao-len [p10]
+<p>Khi thử, vận động bình thường rồi nhìn lại vùng vai, cổ, đầu gối hoặc cạp. Đừng kéo món đồ đến giới hạn để đánh giá tại cửa hàng. Thao tác thử chỉ cho thấy cảm giác và hình dáng tại thời điểm đó, không chứng minh độ bền sau nhiều tháng hoặc thay thế kết quả thử nghiệm của nhà sản xuất.</p>
+
+326 vai-det-kim -> vai-spandex [p21]
+<p>Hãy dùng bảng số đo của mẫu cụ thể, không tự giảm cỡ vì thấy có giãn. Một số thiết kế ôm được tính toán khác áo rộng; số đo thành phẩm có thể không được đọc theo cùng cách. Trong <a href="/blog/cach-chon-size-do-alt-fashion-online.html">phân biệt số đo sản phẩm</a>, việc phân biệt số đo cơ thể và sản phẩm giúp bạn tránh so sánh sai ngay từ đầu.</p>
+
+327 vai-flannel -> cac-loai-vai-len [p8]
+<p>Nếu định mặc áo như lớp khoác ngoài, mặt trong còn ảnh hưởng cảm giác khi trượt lên lớp áo nền. Thử mặc và cởi với chiếc tee bạn thường dùng, xem tay có bị kéo lên hay vùng vai bị dồn không. Một bề mặt rất mềm khi cầm chưa chắc tạo bộ layer thuận tiện với mọi loại áo trong.</p>
+
+328 vai-flannel -> cach-xan-tay-ao-so-mi-nu [p17]
+<p>Kiểm tra túi, nút và chi tiết kim loại; phân loại theo hướng dẫn về màu và chất liệu. Những món có bộ phận dễ móc hoặc cọ mạnh không phải lựa chọn tốt để xử lý chung một cách tùy tiện. Mục tiêu là hạn chế tác động không cần thiết lên bề mặt mềm của vải.</p>
+
+329 vai-flannel -> tie-dye [p14]
+<p>Bài <a href="https://apocalypsecloset.com/blog/cach-chon-size-do-alt-fashion-online.html">chọn size đồ Alt Fashion online</a> hướng dẫn đối chiếu số đo với món đang mặc vừa. Cách đó đặc biệt hữu ích khi bạn không thể sờ vải, vì ít nhất phần kích thước được kiểm tra bằng dữ liệu của sản phẩm thay vì hình người mẫu.</p>
+
+330 vai-kaki -> cach-gap-quan-ao [p14]
+<p>Với quần mặc đi làm, hãy ưu tiên cảm giác ngồi và độ gọn ở cạp, hông, đầu gối. Cho đồ thường mang vào túi để xem thân quần có bị kéo lệch không. Nếu thường sơ vin, thử cùng độ dày áo dự định mặc; cạp vừa khi không có lớp áo chưa chắc cho cùng cảm giác sau khi sơ vin.</p>
+
+331 vai-kaki -> vai-canvas-la-vai-gi [p15]
+<p>Với quần cargo, cấu trúc túi và lượng vải tạo khối đáng được xem cùng chất liệu. Bài <a href="/blog/quan-cargo-vai-du-hay-kaki.html">quần cargo vải dù hay kaki</a> dành riêng cho việc so sánh hai hướng lựa chọn đó. Ở đây, điều cần giữ là đọc chính xác loại vải của từng mẫu trước khi dùng nó để suy độ phồng hoặc cách mặc.</p>
+
+332 vai-kate-silk -> cach-xan-tay-ao-so-mi-nu [p18]
+<p><strong>Tay và cổ tay:</strong> thử khi gập khuỷu và đặt tay lên bàn. Cổ tay quá chật hoặc phần tay bị kéo lên nhiều có thể khiến bạn phải chỉnh suốt ngày. Nếu thường xắn tay, xem nếp xắn có quá cộm không.</p>
+
+333 vai-kate-silk -> chat-vai-umi [p11]
+<p>Với vải để may, hỏi xem mẫu đang nhìn là một lớp hay đã có nền trắng phía sau. Bạn có thể dùng <a href="/blog/cac-loai-vai.html">kiểm tra vải trước khi chọn</a> để nhìn độ xuyên và lớp nền như hai phần của cùng sản phẩm. Một tấm mẫu đặt trên bàn có thể trông kín hơn khi thành áo. Nếu có thể, đặt mẫu cạnh đúng lớp mặc trong để đánh giá trước.</p>
+
+334 vai-lanh -> cach-cham-soc-do-nu [p18]
+<p>Nếu nhãn cho phép là hoặc dùng hơi, chọn mức được hướng dẫn và thử ở vùng khuất trước khi làm phần dễ nhìn. Không coi hướng dẫn cho một chiếc áo 100% linen là hướng dẫn cho mọi món pha, có lót hay đính trang trí. Chính cấu tạo hoàn chỉnh của sản phẩm quyết định cách chăm sóc.</p>
+
+335 vai-lanh -> chat-vai-poplin [p12]
+<p>Một chiếc áo linen không cần phải rộng tối đa mới tạo vẻ thư giãn. Phom vừa ở vai và đủ chỗ cử động có thể phù hợp hơn kiểu áo rất dài mà bạn phải liên tục chỉnh. <a href="/blog/phoi-do-theo-ao-nu.html">chọn áo từ chất liệu</a> giúp đi tiếp từ lựa chọn chất liệu sang kiểu áo cụ thể.</p>
+
+336 vai-me -> cach-giat-do-den-khong-phai-mau [p15]
+<p>Hỏi cách giặt, làm khô và xử lý hình in của đúng mẫu. Một áo có thân vải dễ chăm sóc nhưng hình in hoặc chi tiết dán cần chú ý vẫn đòi quy trình riêng. Nếu bạn không thể duy trì cách chăm sóc đó, nên cân nhắc mẫu khác thay vì mua rồi bỏ qua nhãn ngay từ đầu.</p>
+
+337 vai-me -> polyester-la-gi [p9]
+<p>Nếu người bán nói áo chống nắng, kháng khuẩn hoặc kiểm soát mùi, cần thông tin riêng cho tuyên bố đó. Đối chiếu <a href="/blog/cac-loai-vai.html">cấu trúc vải và tính năng</a> giúp tách hình mắt vải khỏi những công bố cần dữ liệu riêng. Không dùng hình mắt vải để tự xác nhận tính năng. Với áo đen, <a href="https://apocalypsecloset.com/blog/mac-do-den-mua-he-co-nong-khong.html">hướng dẫn chọn đồ đen cho mùa hè</a> giúp nhìn thêm độ rộng, lớp mặc và bối cảnh thay vì chỉ xét màu.</p>
+
+338 vai-oxford -> cach-so-vin-ao-so-mi [p20]
+<p>Thử sơ mi Oxford trắng ngà hoặc xanh nhạt cùng quần suông ít chi tiết. Sơ vin để cạp rõ nếu vải và độ rộng cho phép, hoặc chọn gấu gọn để thả ngoài. Giày và túi theo lịch di chuyển, không cần bắt buộc toàn bộ bộ đồ theo một hình ảnh công sở.</p>
+
+339 vai-spandex -> cach-gap-quan-ao [p15]
+<p>Với áo thun ôm, kiểm tra độ trong ở vùng bị kéo và hình dáng cổ khi vận động. Nếu muốn dùng làm lớp nền, thử dưới chiếc áo khoác thường mặc để xem vải có dồn ở nách hoặc gấu không. Một chiếc đứng riêng vừa có thể trở nên bất tiện khi phối thêm lớp.</p>
+
+340 vai-spandex -> vai-det-kim [p17]
+<p>Với quần dùng cho ngày ngồi nhiều, hãy chú ý cạp, phần đáy và vùng đầu gối sau vài lần đổi tư thế. Bỏ điện thoại vào túi nếu đó là thói quen của bạn. Vải mềm và có giãn vẫn có thể bị kéo lệch bởi đồ trong túi nếu cấu tạo túi không hỗ trợ tốt.</p>
+
+341 vai-tweed-la-vai-gi -> cac-loai-vai-len [p14]
+<p>Nếu vải tiếp xúc trực tiếp ở cổ, tay hoặc eo, thử cảm giác tại những vùng đó. Một bề mặt bạn thấy dễ chịu khi chạm bằng bàn tay vẫn có thể không phù hợp khi cọ vào cổ lâu. Nếu thấy khó chịu ngay lúc thử, chọn lớp lót hoặc thiết kế khác phù hợp hơn thay vì bỏ qua.</p>
+
+342 vai-tweed-la-vai-gi -> cach-cham-soc-do-nu [p13]
+<p>Để đánh giá độ cứng, nhìn món đồ khi treo rồi mặc thử và cử động. Áo có thể giữ vai rõ nhờ cả vải lẫn phần dựng bên trong. Đừng quy toàn bộ hình dáng đứng phom cho mặt vải; đường may, lớp dựng và lớp lót cũng là những phần cần xem.</p>
+
+343 vay-cho-nguoi-beo-bung-lun -> vay-lien-than-chu-a [p12]
+<p>Với chân váy chữ A, thử phối cùng áo có gấu chạm cạp để thấy đường mở. Nếu áo phủ quá dài, bạn có thể không còn nhận ra phần eo và thân váy như lúc thử riêng. Điều này không sai, nhưng cần xem nó có đúng tỷ lệ bạn muốn tạo hay không.</p>
+
+344 vay-da-hoi -> mau-dam-nhung-sang-trong [p6]
+<p>Phom đuôi cá ôm ở thân và mở ra phía dưới, tạo điểm nhấn rõ khi đứng. Vị trí bắt đầu xòe ảnh hưởng lớn đến cảm giác đi lại. Hãy đi bước bình thường, xoay và thử một bậc thấp trong điều kiện an toàn. Nếu chương trình có khiêu vũ hoặc phải di chuyển nhiều, bạn có thể chọn dáng ôm vừa với độ mở sớm hơn thay vì cố thích nghi với một chiếc váy quá hạn chế.</p>
+
+345 vay-da-hoi -> qipao [p8]
+<p>Cổ vuông, cổ tim, lệch vai hay cổ cao đều có thể xuất hiện trên đầm dạ hội. Hãy chọn theo mức độ thoải mái và món trang sức bạn muốn dùng. Với cổ đã có đính kết, một đôi hoa tai nhỏ có thể đủ. Với cổ thoáng, hãy thử dây chuyền ở đúng chiều dài dự kiến; mặt dây không nên liên tục va vào mép áo hoặc bị phần cổ che mất khi ngồi.</p>
+
+346 vay-da-hoi -> vay-tua-rua [p3]
+<p>Để tìm váy dạ hội đẹp, hãy đổi câu hỏi từ “dáng người này phải mặc gì” sang “mình muốn phần nào nổi bật và phần nào cần dễ vận động”. Không cần tự xếp cơ thể vào một nhóm cố định. Bạn có thể thử nhiều phom trên cùng một bộ đồ lót và đôi giày dự kiến sử dụng để nhìn sự khác biệt chính xác hơn.</p>
+
+347 vay-den -> dam-hong [p16]
+<p>Với váy đen suông hoặc phom gọn, thử sneaker đơn giản và túi vừa nhu cầu. Nếu muốn outfit sáng hơn, dùng giày kem hoặc túi màu sáng. Nếu muốn giữ nền tối, chọn giày đen nhưng xem độ dày đế để không vô tình làm phần chân nặng hơn ý định.</p>
+
+348 vay-di-du-tiec-cuoi-sang-chanh -> mau-dam-nhung-sang-trong [p15]
+<p>Bắt đầu bằng bảng màu chủ tiệc đã đưa ra. Nếu không có hướng dẫn, cân nhắc sắc độ trong điều kiện ánh sáng thật và mức độ giống trang phục cô dâu. Những màu rất nhạt có thể đọc khác dưới đèn hoặc khi chụp ảnh; hãy nhìn cả thiết kế, độ phồng và chất liệu, thay vì chỉ kiểm tra tên màu trên nhãn.</p>
+
+349 vay-lien-than-chu-a -> nhung-mau-dam-so-mi-dep-nhat [p12]
+<p>Cách <a href="/blog/phoi-do-theo-chan-vay-vay-nu.html">so sánh các dáng đầm</a> giúp bạn so thêm các dáng khác khi chưa chắc chữ A là điều mình cần. Nếu thích đường rơi thẳng hoặc ôm hơn, đổi cấu trúc có thể hiệu quả hơn cố điều chỉnh phụ kiện cho một mẫu chưa hợp ý.</p>
+
+350 vay-lien-than-chu-a -> vay-cho-nguoi-beo-bung-lun [p10]
+<p>Mẫu đầm chữ A dài qua gối thường tạo một mảng vải lớn hơn ở phần dưới. Vị trí gấu cụ thể quan trọng hơn chữ midi trên nhãn: cùng một chiều dài sản phẩm nhưng mỗi người mặc sẽ có điểm kết thúc khác. Thử cùng đôi giày dự định dùng để nhìn khoảng trống giữa gấu và giày.</p>
+
+351 vay-maxi -> di-hoi-an-mac-gi [p15]
+<p>Với váy sáng màu hoặc có phần xuyên thấu, thử ở ánh sáng ban ngày và xem cả phía sau. Bạn có thể chọn lớp lót phù hợp với mức che phủ mong muốn, nhưng nhớ tính thêm một lớp khi đánh giá cảm giác mặc. Không cần mặc định mọi váy trắng đều trong hoặc mọi váy tối đều kín; hãy kiểm tra đúng sản phẩm.</p>
+
+352 vay-maxi -> phoi-do-voi-chan-vay-trang-dai [p6]
+<p>Khi cần cắt gấu, hỏi người sửa đồ về lớp lót, viền trang trí và họa tiết ở chân váy. Một đường thêu sát gấu hoặc tầng cuối có thể khiến việc sửa phức tạp hơn cắt một đoạn vải thẳng. Chừa thời gian thử lại sau sửa. Mang theo giày dự kiến giúp người sửa hiểu rõ chiều dài bạn muốn giữ.</p>
+
+353 vay-tua-rua -> vay-da-hoi [p11]
+<p>Váy trắng đi với giày kem hoặc ngà tạo chuyển tiếp nhẹ; giày đen tạo điểm dừng rõ ở chân. Chọn theo hiệu ứng bạn muốn rồi kiểm tra sắc trắng thật của váy. Trắng lạnh, ngà và kem có thể khác nhau đáng kể khi đứng cạnh phụ kiện sáng.</p>
+
+354 vay-yem-dai -> babydoll-dress-la-gi-cach-phoi [p8]
+<p>Với tay phồng, khoảng nách yếm cần đủ rộng để tay áo không bị ép. Bạn vẫn có thể chọn blouse có bèo hoặc tay nổi, nhưng hãy để phần yếm và phụ kiện đơn giản hơn. Một chi tiết nổi ở tay thường đã đủ nếu phía trước còn có túi, nút và đường may rõ.</p>
+
+355 vedette-la-gi -> high-fashion [p7]
+<p>Sau chuỗi trình diễn, các người mẫu có thể trở lại cùng nhau và nhà thiết kế có thể xuất hiện chào khán giả. Đừng chỉ đếm người đi cuối trong lượt chào rồi kết luận đó là vedette. Hãy phân biệt lượt giới thiệu từng thiết kế với phần kết tập thể theo kịch bản của chương trình.</p>
+
+356 victorian-goth -> victorian-fashion [p14]
+<p>Phối gile có hàng cúc với blouse tay vừa, quần đen suông và ankle boots. Đây là diễn giải hiện đại, không phải phục dựng nguyên bộ đồ nữ Victoria. Gile giữ cấu trúc ở thân trên, trong khi quần làm outfit thuận tiện hơn cho lịch trình có nhiều đoạn đi bộ.</p>
+
+357 vong-tay-bac-nu -> vong-tay-nu [p11]
+<p>Một vòng đầy charm có thể trở thành điểm nhìn chính của bộ đồ. Khi đó, nhẫn và đồng hồ có thể đơn giản hơn để vùng bàn tay không bị quá nhiều chi tiết. Những ngày cần thao tác nhiều với tay, bạn có thể dùng vòng trơn thay vì cố giữ nguyên bộ trang sức.</p>
+
+358 vong-tay-bac-nu -> vong-tay-titan [p18]
+<p>Vòng kiềng hoặc cuff gọn có thể hiện rõ dưới tay sơ mi xắn. Chừa một khoảng giữa gấu tay áo và vòng để nhìn thấy cấu trúc, đồng thời kiểm tra vải không bị mắc vào phần khóa. Nếu cổ tay áo vốn ôm chặt, hãy thử vòng ở tay còn lại hoặc đổi cách xắn.</p>
+
+359 vong-tay-nu -> vong-tay-bac-nu [p13]
+<p>Bộ vòng không nhất thiết phải giống hoa tai và dây chuyền hoàn toàn. Chỉ cần một nét chung nhỏ cũng có thể đủ. Nếu cổ áo và hoa tai đã nổi bật, một chiếc vòng đơn giản giúp tổng thể có khoảng nghỉ. Hướng dẫn <a href="/blog/phu-kien-thoi-trang-nu-ca-tinh.html">phụ kiện thời trang nữ</a> giúp bạn xem cổ tay trong mối quan hệ với những vùng khác của outfit.</p>
+
+360 vong-tay-titan -> vong-tay-bac-nu [p9]
+<p>Nếu mua online, thói quen phân biệt số đo cơ thể và số đo sản phẩm trong <a href="/blog/cach-chon-size-do-alt-fashion-online.html">đọc số đo khi mua</a> rất hữu ích. Riêng vòng tay, hãy yêu cầu đúng số đo mặt trong hoặc chiều dài đeo của thiết kế. Có thể dùng một chiếc đang vừa làm mốc, miễn là bạn so sánh cùng kiểu cấu trúc.</p>
+
+361 white-on-white -> quan-trang-phoi-ao-mau-gi [p7]
+<p>Việc nắm vững nguyên lý tương phản chất liệu giúp bạn linh hoạt hơn trong việc lựa chọn trang phục theo từng mùa trong năm. Khi cần mở rộng khỏi bộ trắng, <a href="/blog/phoi-mau-quan-ao-nu.html">phối màu theo bề mặt</a> giúp bạn giữ cách tạo chiều sâu rồi thay dần sắc của một món. Vào mùa hè, các chất liệu mỏng nhẹ, thoáng khí như linen, cotton mỏng và lụa tơ tằm là lựa chọn hàng đầu. Trong khi đó, mùa thu đông lại gọi tên các bề mặt dày dặn, ấm áp hơn như len vặn thừng, dạ tweed, da lộn hoặc denim dày dặn.</p>
+
+362 xay-tu-do-dark-aesthetic -> the-art-of-burning-out [p11]
+<p>Đây là lỗi phổ biến nhất: người ta build xong outfit rồi mới nghĩ đến phụ kiện, và lúc đó thường không còn tiền hoặc không còn energy để chọn kỹ. Phụ kiện trong dark aesthetic không phải decoration — chúng là một phần ngữ pháp của outfit. Choker không chỉ là đồ đeo cổ. Nó là dấu chấm câu kết thúc phần trên của silhouette. Belt đinh tán không chỉ giữ quần. Nó là điểm nhấn duy nhất của phần eo.</p>
+
+363 y2k-la-gi-phong-cach-y2k-nu -> mcbling [p16]
+<p>Camisole nhẹ và cargo có túi tạo contrast fitted–utility. Túi kẹp nách nhỏ đưa set về đầu 2000s mà không cần metallic. Với thời tiết nóng ở Việt Nam, chọn cargo vải nhẹ và tank cotton/rib sẽ thực tế hơn layer nhiều lớp.</p>
+
+364 phoi-do-voi-quan-jeans-ong-rong-nu -> badgirl-outfit-di-cafe [p15]
+<p>Nếu đi cafe tối, đi event nhỏ hoặc chụp ảnh phố, công thức blazer đen + top ôm + jeans rộng + boots/sneaker đế cao rất dễ áp dụng. Nó giữ vibe badgirl nhưng không quá phô, đặc biệt hợp với người thích <a href="../style/baddie-streetwear.html">baddie streetwear</a> trưởng thành hơn.</p>

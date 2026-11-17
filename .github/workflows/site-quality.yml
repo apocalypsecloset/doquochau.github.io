@@ -22,7 +22,7 @@ jobs:
       - name: Exact VI link-fix successors and unreleased EN source locks
         run: python scripts/qa_link_fix.py
       - name: Vietnamese internal links
-        run: python tools/internal_link_audit.py --root .
+        run: python scripts/internal_link_audit.py --root .
       - run: npm install --prefix /tmp/ac-shop-tests jsdom@31.0.0 --no-audit --no-fund
       - run: node --test scripts/test_shop.cjs scripts/test_journal.cjs scripts/test_privacy.cjs
         env:

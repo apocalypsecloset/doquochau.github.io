@@ -4,7 +4,7 @@ Repo: apocalypsecloset.com (HTML tĩnh, GitHub Pages/Cloudflare Pages). Chỉ s�
 
 ## 0. Chuẩn bị
 1. Tạo branch `fix/internal-links-topical-map`. Commit sau MỖI pha (pha 1, 2, 3, 4, 5).
-2. Chép `tools/internal_link_audit.py` vào repo và chạy `python tools/internal_link_audit.py --root . --csv tools/audit_before.csv`. Lưu kết quả làm baseline. Script này là **thước đo duy nhất**. Chỉ được báo "xong" khi nó in `ĐẠT TẤT CẢ` (exit code 0).
+2. Chép `scripts/internal_link_audit.py` vào repo và chạy `python scripts/internal_link_audit.py --root . --csv tools/audit_before.csv`. Lưu kết quả làm baseline. Script này là **thước đo duy nhất**. Chỉ được báo "xong" khi nó in `ĐẠT TẤT CẢ` (exit code 0).
 3. Đọc `docs/en-translation-seo-guardrails.md` và `scripts/qa_site.py` (nếu chạy được thì chạy lại ở cuối).
 
 ## 1. Thước đo (đã đo trước khi sửa, 436 bài VI)
@@ -25,7 +25,7 @@ Repo: apocalypsecloset.com (HTML tĩnh, GitHub Pages/Cloudflare Pages). Chỉ s�
 `Phoi-mau`, `Dia-diem-dip`, `Cham-soc`, `Toc-lam-dep`.
 - Mỗi hub: ≥1.200 từ nội dung thật (hướng dẫn cách chọn/nhóm, không phải danh sách trần), trỏ xuống 100% bài con của cụm (tên cụm và danh sách bài con xem cột `cluster` trong `tools/audit_before.csv`), title/H1/meta description/canonical duy nhất, BreadcrumbList, JSON-LD như các bài khác.
 - Thêm hub mới vào `sitemap.xml`, `blog.html` và `search-index.js` theo đúng cách các bài hiện có đang làm.
-- Điền slug hub mới vào dict `HUBS` trong `tools/internal_link_audit.py`.
+- Điền slug hub mới vào dict `HUBS` trong `scripts/internal_link_audit.py`.
 - Slug mới đặt theo ý định tìm kiếm, ví dụ `phoi-mau-quan-ao-nu`, `cach-cham-soc-do-nu`. Không trùng ý định bài đang có.
 
 **Pha 3 – Hub trỏ đủ xuống, con trỏ lên (G4):**
@@ -53,10 +53,10 @@ Repo: apocalypsecloset.com (HTML tĩnh, GitHub Pages/Cloudflare Pages). Chỉ s�
 ## 4. Cách sửa an toàn
 - Sửa bằng script Python áp danh sách `(file, old_str, new_str)` với `old_str` khớp chính xác và duy nhất; không viết lại cả file, không format lại HTML.
 - Làm theo lô ~25 file; sau mỗi lô chạy audit script. Không để lô nào làm tăng số FAIL của gate trước đó.
-- Lưu toàn bộ thay đổi vào `tools/link_changes.csv` với cột: `file, đích, anchor, câu_trước, câu_sau`.
+- Lưu toàn bộ thay đổi vào `data/link-fix-2026-11-17/link_changes.csv` với cột: `file, đích, anchor, câu_trước, câu_sau`.
 
 ## 5. Điều kiện hoàn thành
-1. `python tools/internal_link_audit.py --root .` in **ĐẠT TẤT CẢ**.
+1. `python scripts/internal_link_audit.py --root .` in **ĐẠT TẤT CẢ**.
 2. Không file nào ngoài `/blog/*.html` (+ 4 hub mới, `sitemap.xml`, `blog.html`, `search-index.js`, `tools/`) bị thay đổi: kiểm bằng `git diff --stat`.
 3. Mọi trang giữ nguyên title/H1/canonical/meta description (so với trước). Không có title/H1/description trùng với trang khác.
 4. Chạy lại `scripts/qa_site.py` nếu được.

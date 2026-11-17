@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Internal-link audit for apocalypsecloset.com (VI blog). Read-only.
 
-Usage:  python tools/internal_link_audit.py [--root .] [--csv audit_pages.csv]
+Usage:  python scripts/internal_link_audit.py [--root .] [--csv audit_pages.csv]
 Exit code 1 if any gate FAILS. Requires: beautifulsoup4, lxml.
 Add new hub slugs to HUBS below when you create them.
 """

@@ -37,3 +37,7 @@ Website quality now exposes independent VI/general and English translation jobs.
 - Received the user's revised `internal_link_audit_en (1).py` and copied it byte-for-byte to `scripts/internal_link_audit_en.py` (SHA-256 `446ae17c22190d7de3851af134736dccf774430c528ef1ddaf4b14fabfa40e4c`). E7/E8 exempt each page's own VI original. The original E0 baseline and audit script remain archived unchanged; the revised audit output is recorded separately.
 
 E0 evidence is in `data/en-link-e0-2026-11-17/`; E0b command outputs are in `data/en-link-e0b-2026-11-17/`. Work artifacts have not yet been moved out of `tools/` (E1).
+
+## E1 archive locations
+
+The active audits are now `scripts/internal_link_audit.py` and `scripts/internal_link_audit_en.py`. The VI task is `docs/CODEX_TASK.md`; historical work files and `link_changes.csv` are archived byte-for-byte under `data/link-fix-2026-11-17/`. References to `tools/` inside frozen patch evidence and old reports describe their original Git locations, not runnable current entrypoints. No new `/tools/*` header rule was added. Local dependencies moved to ignored `.venv/site-packages`.

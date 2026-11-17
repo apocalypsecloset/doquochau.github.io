@@ -20,11 +20,11 @@ KHÔNG sửa: `/blog/*.html` (VI), ảnh, title/H1/meta/canonical của trang đ
 Dừng ở đây. Tôi sẽ trả lời "duyệt re-baseline" hoặc hướng khác.
 
 ## Pha E1 — Dọn thư mục (commit riêng, sau khi duyệt)
-- Chuyển `tools/internal_link_audit.py` và `scripts/internal_link_audit_en.py` vào `scripts/` (nếu chưa), `CODEX_TASK*.md` vào `docs/`, mọi file làm việc còn lại trong `tools/` (inventory, patches, plan, batches, baseline, CSV) vào `data/link-fix-2026-11-17/`. Xóa thư mục `tools/` rỗng. Sửa đường dẫn trong tài liệu và docstring. Lý do: `tools/` và gốc repo đang được phục vụ công khai, còn `docs/`, `data/`, `scripts/` đã gắn noindex và loại khỏi GitHub Pages.
+- Chuyển `scripts/internal_link_audit.py` và `scripts/internal_link_audit_en.py` vào `scripts/` (nếu chưa), `CODEX_TASK*.md` vào `docs/`, mọi file làm việc còn lại trong `tools/` (inventory, patches, plan, batches, baseline, CSV) vào `data/link-fix-2026-11-17/`. Xóa thư mục `tools/` rỗng. Sửa đường dẫn trong tài liệu và docstring. Lý do: `tools/` và gốc repo đang được phục vụ công khai, còn `docs/`, `data/`, `scripts/` đã gắn noindex và loại khỏi GitHub Pages.
 - KHÔNG thêm `/tools/*` vào `_headers` (qa_site.py chỉ cho phép noindex trên 4 đường dẫn cố định).
 
-## Pha E2 — 4 hub EN mới (batch39)
-Hub VI mới: Phối màu, Địa điểm/dịp, Chăm sóc đồ, Tóc & làm đẹp. Làm đúng quy trình batch24: template `main.en-hub`, hub-card cho 100% bài con **đã có bản EN**, CollectionPage + ItemList + BreadcrumbList khớp card nhìn thấy, self-canonical, hreflang hai chiều với hub VI, title/H1/meta tiếng Anh duy nhất, đăng ký `sitemap.xml`, `en/blog.html`, `search-index.js` nếu quy trình hiện tại yêu cầu. Tạo `data/en-translations/batch39.json` theo đúng định dạng batch hub. Nội dung là bản chuyển thể thật (≥1.000 từ), không phải dịch máy rồi dán, không bịa dữ kiện. Điền 4 hub vào `VI_HUBS` trong `scripts/internal_link_audit_en.py`. Chạy `qa_en_hubs.py` và `qa_en_translations.py batch39` đến khi pass.
+## Pha E2 — 4 hub EN mới (batch40)
+Hub VI mới: Phối màu, Địa điểm/dịp, Chăm sóc đồ, Tóc & làm đẹp. Làm đúng quy trình batch24: template `main.en-hub`, hub-card cho 100% bài con **đã có bản EN**, CollectionPage + ItemList + BreadcrumbList khớp card nhìn thấy, self-canonical, hreflang hai chiều với hub VI, title/H1/meta tiếng Anh duy nhất, đăng ký `sitemap.xml`, `en/blog.html`, `search-index.js` nếu quy trình hiện tại yêu cầu. Tạo `data/en-translations/batch40.json` theo đúng định dạng batch hub. Nội dung là bản chuyển thể thật (≥1.000 từ), không phải dịch máy rồi dán, không bịa dữ kiện. Điền 4 hub vào `VI_HUBS` trong `scripts/internal_link_audit_en.py`. Chạy `qa_en_hubs.py` và `qa_en_translations.py batch40` đến khi pass.
 
 ## Pha E3 — Phản chiếu link VI sang EN
 Nguồn sự thật: file `link_changes.csv` của lần sửa VI (xem `data/link-fix-2026-11-17/` hoặc `tools/`) và trạng thái hiện tại của các bài VI.
@@ -54,3 +54,7 @@ Nguồn sự thật: file `link_changes.csv` của lần sửa VI (xem `data/lin
 4. Báo cáo cuối: số link EN trước/sau, hub mới, 20 cặp câu mẫu (VI → EN), và mọi chỗ không làm được hoặc phải đoán.
 
 Gặp tình huống không có chỉ dẫn: chọn phương án ít rủi ro nhất, ghi vào báo cáo, không tự mở rộng phạm vi.
+
+## Quyết định đã duyệt sau E0
+
+E1 rồi E2; chưa làm E3 khi chưa được duyệt. Batch40 dùng các slug `womens-color-coordination-guides`, `occasion-destination-outfit-guides`, `womens-clothing-care-guides`, `alternative-hair-makeup-guides`. Bốn hub VI được phép thêm cặp self-hreflang vi/en trong head, giữ nguyên body. Các source_sha256 cũ không được nhận successor trước khi TSV và EN HTML tương ứng được cập nhật ở E3.
