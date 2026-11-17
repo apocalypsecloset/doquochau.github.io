@@ -1,0 +1,11 @@
+{
+  "changed_EN_pages": 9,
+  "promoted_links": 1,
+  "VI_exception_labels_added": 8,
+  "remaining_VI_links_with_EN_twins": 0,
+  "untranslated_prose_links": 0,
+  "EN_pages_scanned": 450,
+  "JSON_LD_changes_needed": 0,
+  "historical_hashes_preserved": true,
+  "errors": []
+}
