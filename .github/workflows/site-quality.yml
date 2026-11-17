@@ -19,16 +19,18 @@ jobs:
         with:
           node-version: '24'
       - run: python -m pip install -r scripts/requirements-en.txt
-      - name: Batch40 complete collections and exact head-only VI successors
-        run: python scripts/qa_batch40.py
-      - name: E15 current English links in every page region and exact TSV proof
-        run: python scripts/qa_en_link_e15.py
-      - name: E4 exact predecessor, immutable anchors and fifteen current link gates
-        run: python scripts/qa_en_link_e4.py
+      - name: Current editorial replay, bilingual topology and all unchanged link gates
+        run: python scripts/qa_topical_editorial.py
+      - name: Historical Batch40 complete collections and exact head-only VI successors
+        run: python scripts/qa_editorial_history.py scripts/qa_batch40.py
+      - name: Historical E15 English links and exact TSV proof
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_e15.py
+      - name: Historical E4 exact predecessor and immutable anchors
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_e4.py
       - name: E3 exact predecessor replay and preserved source locks
-        run: python scripts/qa_en_link_fix.py
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_fix.py
       - name: Exact VI link-fix successors and unreleased EN source locks
-        run: python scripts/qa_link_fix.py
+        run: python scripts/qa_editorial_history.py scripts/qa_link_fix.py
       - name: Vietnamese internal links
         run: python scripts/internal_link_audit.py --root .
       - run: npm install --prefix /tmp/ac-shop-tests jsdom@31.0.0 --no-audit --no-fund
@@ -36,18 +38,18 @@ jobs:
         env:
           NODE_PATH: /tmp/ac-shop-tests/node_modules
       - name: Consent, policy translations and exact editorial preservation
-        run: python scripts/qa_privacy_policies.py
+        run: python scripts/qa_editorial_history.py scripts/qa_privacy_policies.py
       - name: Storefront UX, size guide and immutable SEO
-        run: python scripts/qa_storefront_ux.py
+        run: python scripts/qa_editorial_history.py scripts/qa_storefront_ux.py
       - name: Bilingual blog repairs and immutable SEO
-        run: python scripts/qa_blog_repair.py
+        run: python scripts/qa_editorial_history.py scripts/qa_blog_repair.py
       - run: python scripts/qa_site.py
       - name: Schema, reviewed image alts and performance maintenance
-        run: python scripts/qa_schema_pod_performance.py
+        run: python scripts/qa_editorial_history.py scripts/qa_schema_pod_performance.py
       - name: Audit repair preservation and regression checks
-        run: python scripts/qa_audit_followup.py
+        run: python scripts/qa_editorial_history.py scripts/qa_audit_followup.py
       - name: R2 image SEO and sitemap coverage
-        run: python scripts/qa_r2_image_seo.py
+        run: python scripts/qa_editorial_history.py scripts/qa_r2_image_seo.py
   english-translations:
     runs-on: ubuntu-latest
     steps:
@@ -58,13 +60,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r scripts/requirements-en.txt
-      - name: E15 current HTML and exact TSV proof
-        run: python scripts/qa_en_link_e15.py
+      - name: Actual current bilingual HTML, full topology and unchanged link gates
+        run: python scripts/qa_topical_editorial.py
+      - name: Historical E15 HTML and exact TSV proof
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_e15.py
       - name: E4 exact predecessor and TSV proof
-        run: python scripts/qa_en_link_e4.py
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_e4.py
       - name: E3 exact predecessor and translation-source contracts
-        run: python scripts/qa_en_link_fix.py
-      - name: Full translated article and hub gates (no early successor release)
+        run: python scripts/qa_editorial_history.py scripts/qa_en_link_fix.py
+      - name: Full historical translated article and hub contracts
         run: |
           python - <<'PY'
           import subprocess,sys
@@ -73,7 +77,7 @@ jobs:
           for manifest in sorted(Path('data/en-translations').glob('batch*.json')):
               if manifest.stem == 'batch05b':
                   continue
-              result=subprocess.run([sys.executable,'scripts/qa_en_translations.py',manifest.stem])
+              result=subprocess.run([sys.executable,'scripts/qa_editorial_history.py','scripts/qa_en_translations.py',manifest.stem])
               if result.returncode: failed.append(manifest.stem)
           print('FAILED EN BATCHES:',len(failed),', '.join(failed))
           sys.exit(bool(failed))

@@ -1,0 +1,38 @@
+{
+  "baseline": "97ba710f3e23cde22c9dc72b87052b507049ddaa",
+  "actual_html_pages": 1058,
+  "changed_html_pages": 289,
+  "exact_patch_steps": 565,
+  "explicit_map_urls": 882,
+  "internal_anchor_occurrences": 52537,
+  "minimum_contextual_referrers": 2,
+  "contextual_blog_relationships": {
+    "vi": {
+      "before": 2678,
+      "after": 2820,
+      "new": 142,
+      "removed": 0
+    },
+    "en": {
+      "before": 2696,
+      "after": 2853,
+      "new": 157,
+      "removed": 0
+    }
+  },
+  "VI_to_EN_contextual_parity": "100%",
+  "sitemap_urls": 1043,
+  "maximum_sitemap_depth": 3,
+  "protected_fields": "all unchanged",
+  "current_link_gates": {
+    "internal_link_audit.py": {
+      "exit": 0,
+      "passed": 11
+    },
+    "internal_link_audit_en.py": {
+      "exit": 0,
+      "passed": 15
+    }
+  },
+  "errors": []
+}
