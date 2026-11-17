@@ -58,3 +58,9 @@ Gặp tình huống không có chỉ dẫn: chọn phương án ít rủi ro nh�
 ## Quyết định đã duyệt sau E0
 
 E1 rồi E2; chưa làm E3 khi chưa được duyệt. Batch40 dùng các slug `womens-color-coordination-guides`, `occasion-destination-outfit-guides`, `womens-clothing-care-guides`, `alternative-hair-makeup-guides`. Bốn hub VI được phép thêm cặp self-hreflang vi/en trong head, giữ nguyên body. Các source_sha256 cũ không được nhận successor trước khi TSV và EN HTML tương ứng được cập nhật ở E3.
+
+## Cập nhật phê duyệt và tiến độ E3 — 2026-11-17
+
+Người dùng đã nói “duyệt E3, làm tiếp”. E3 đã hoàn tất tại commit nội dung `59bf0e34903667bb233882195ffe007210886501`: 644 link ngữ cảnh, 203 card và 27 đoạn đồng bộ link có sẵn; 414 file EN, 416 TSV bổ sung, 210 successor nguồn có điều kiện. Hash và TSV/manifest cũ giữ nguyên. Hai job Website quality cùng 38 batch dịch EN đều PASS tại run `44110748229`. Báo cáo: `data/en-link-e3-2026-11-17/E3_REPORT.md` và `CI_REPORT.json`.
+
+Chưa làm E4/E5 hoặc merge. Audit còn E9=31, E11=90, E12=51, E13=1; chờ chỉ dẫn tiếp theo của người dùng trước khi triển khai pha mới.

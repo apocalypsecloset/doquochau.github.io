@@ -29,4 +29,10 @@ The user explicitly approved E3 after E1/E2 and the separate RULES/HUBS alignmen
 
 `twenty_vi_en_examples.json` supplies twenty reproducible randomly selected VI-to-EN examples. The literal prose files, batch ledgers and supplemental TSVs retain the complete editorial/replay trail. Navigation-card counts are separate from the four-link contextual budget; the parent guides' new cards are navigation, matching E3's full child coverage requirement.
 
-E3 is ready for CI review. E4/E5 and merge remain outside this approval.
+## Clean CI result after the content commit
+
+Content commit `59bf0e34903667bb233882195ffe007210886501` passes both Website quality jobs in [run 44110748229](https://github.com/apocalypsecloset/doquochau.github.io/actions/runs/44110748229): static-and-shop and english-translations. All 38 translation batches execute successfully; the log reports `FAILED EN BATCHES: 0`. The independent current-HTML/TSV proof succeeds before historical checks in both jobs. VI exact replay, all seven general QA scripts, batch40 and the nineteen Node tests also pass. See `CI_REPORT.json` for the job and step results.
+
+Cloudflare Pages reports a successful preview build. Workers Builds reports failure, also present at the E2 content commit; that external deployment configuration is outside E3. Automated HTTP byte verification of twelve preview pages was denied with HTTP 403, so this report makes no deployed-byte equality claim. The eighteen local Chrome views and their metrics are complete.
+
+E3 is complete. E4/E5 and merge remain outside this approval.
