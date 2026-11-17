@@ -1,0 +1,226 @@
+{
+  "changed_blog_files": 267,
+  "exact_paragraph_replacements": 364,
+  "new_contextual_links": 365,
+  "metadata_schema_images_headings_and_protected_sections_preserved": true,
+  "reviewed_spans_only": true,
+  "pages_with_two_to_twelve_contextual_destinations": 440,
+  "pages_with_incoming_contextual_links": 440,
+  "pages_with_non_parent_sibling_links": 440,
+  "max_new_links_per_page": 3,
+  "destinations_with_three_anchor_variants": 440,
+  "reciprocal_fabric_care_pairs": [
+    {
+      "fabric": "cac-loai-vai-len",
+      "care": "cach-gap-ao-len"
+    },
+    {
+      "fabric": "chat-vai-poplin",
+      "care": "cach-giat-do-den-khong-phai-mau"
+    },
+    {
+      "fabric": "chat-vai-umi",
+      "care": "cach-gap-quan-ao"
+    },
+    {
+      "fabric": "chiffon-la-vai-gi",
+      "care": "cach-cham-soc-do-nu"
+    },
+    {
+      "fabric": "da-lon",
+      "care": "cach-bao-quan-do-da-nu"
+    },
+    {
+      "fabric": "polyester-la-gi",
+      "care": "cach-khu-mui-boots"
+    },
+    {
+      "fabric": "tie-dye",
+      "care": "cach-giat-do-den-khong-phai-mau"
+    },
+    {
+      "fabric": "vai-canvas-la-vai-gi",
+      "care": "cach-khu-mui-boots"
+    },
+    {
+      "fabric": "vai-det-kim",
+      "care": "cach-gap-ao-len"
+    },
+    {
+      "fabric": "vai-flannel",
+      "care": "cach-xan-tay-ao-so-mi-nu"
+    },
+    {
+      "fabric": "vai-kaki",
+      "care": "cach-gap-quan-ao"
+    },
+    {
+      "fabric": "vai-kate-silk",
+      "care": "cach-xan-tay-ao-so-mi-nu"
+    },
+    {
+      "fabric": "vai-lanh",
+      "care": "cach-cham-soc-do-nu"
+    },
+    {
+      "fabric": "vai-me",
+      "care": "cach-giat-do-den-khong-phai-mau"
+    },
+    {
+      "fabric": "vai-oxford",
+      "care": "cach-so-vin-ao-so-mi"
+    },
+    {
+      "fabric": "vai-spandex",
+      "care": "cach-gap-quan-ao"
+    },
+    {
+      "fabric": "vai-tweed-la-vai-gi",
+      "care": "cach-cham-soc-do-nu"
+    }
+  ],
+  "places_with_reciprocal_item_links": [
+    {
+      "source": "ao-dai-tet",
+      "items": [
+        "ao-dai-tim-phoi-quan-mau-gi"
+      ]
+    },
+    {
+      "source": "badgirl-outfit-di-cafe",
+      "items": [
+        "phoi-do-voi-quan-jeans-ong-rong-nu"
+      ]
+    },
+    {
+      "source": "chup-anh-ao-dai-tet",
+      "items": [
+        "giay-cao-got-trang"
+      ]
+    },
+    {
+      "source": "di-ba-na-hill-mac-gi",
+      "items": [
+        "ao-cardigan-nu"
+      ]
+    },
+    {
+      "source": "di-du-dam-hoi-nen-mac-gi-nu",
+      "items": [
+        "nhung-mau-dam-so-mi-dep-nhat"
+      ]
+    },
+    {
+      "source": "di-ha-giang-mac-gi",
+      "items": [
+        "ao-khoac-gio-nu-han-quoc"
+      ]
+    },
+    {
+      "source": "di-hoi-an-mac-gi",
+      "items": [
+        "vay-maxi"
+      ]
+    },
+    {
+      "source": "di-hue-mac-gi",
+      "items": [
+        "dep-quai-hau-nu"
+      ]
+    },
+    {
+      "source": "mac-ao-dai-di-giay-gi",
+      "items": [
+        "giay-cao-got-de-vuong"
+      ]
+    },
+    {
+      "source": "mac-do-den-mua-he-co-nong-khong",
+      "items": [
+        "vay-chong-nang-jean-tron"
+      ]
+    },
+    {
+      "source": "outfit-di-bien-cho-nu-ca-tinh",
+      "items": [
+        "ao-ba-lo-nu"
+      ]
+    },
+    {
+      "source": "outfit-di-choi-dem-badgirl",
+      "items": [
+        "phoi-do-voi-corset-top-nu"
+      ]
+    },
+    {
+      "source": "outfit-di-da-lat-cho-nu",
+      "items": [
+        "ao-mangto-nu"
+      ]
+    },
+    {
+      "source": "outfit-di-dam-cuoi-nu-ca-tinh",
+      "items": [
+        "bodycon-dress-la-gi-cach-phoi",
+        "phoi-do-voi-ao-blazer-den-nu",
+        "phoi-do-voi-chan-vay-midi"
+      ]
+    },
+    {
+      "source": "outfit-di-ta-xua",
+      "items": [
+        "ao-giu-nhiet-lot-ni"
+      ]
+    },
+    {
+      "source": "outfit-mua-dong-nu",
+      "items": [
+        "ao-phao-nu"
+      ]
+    },
+    {
+      "source": "outfit-nu-ca-tinh-di-concert",
+      "items": [
+        "combat-boots-hay-platform-boots"
+      ]
+    },
+    {
+      "source": "outfit-san-bay-nu",
+      "items": [
+        "quan-ni-nu-sweatpants"
+      ]
+    },
+    {
+      "source": "outfit-tet",
+      "items": [
+        "dam-hoa-nhi"
+      ]
+    },
+    {
+      "source": "phoi-do-nu-ca-tinh-di-choi",
+      "items": [
+        "phoi-do-voi-quan-jeans-ong-rong-nu"
+      ]
+    },
+    {
+      "source": "phoi-do-nu-ca-tinh-mua-he",
+      "items": [
+        "cuban-shirt"
+      ]
+    },
+    {
+      "source": "rave-outfits",
+      "items": [
+        "phoi-do-voi-ao-luoi-nu"
+      ]
+    },
+    {
+      "source": "vay-di-du-tiec-cuoi-sang-chanh",
+      "items": [
+        "mau-dam-nhung-sang-trong"
+      ]
+    }
+  ],
+  "phase3_parent_child_coverage_preserved": true,
+  "change_log_added_rows": 365
+}
