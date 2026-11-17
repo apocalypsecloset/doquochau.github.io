@@ -21,6 +21,7 @@ HUBS = {
     'Phu-kien': 'phu-kien-thoi-trang-nu-ca-tinh',
     'Vai': 'cac-loai-vai',
     'Kinh': 'cach-chon-kinh-phu-hop-voi-khuon-mat-nu',
+    'Outfit-core': 'phoi-do-theo-item',
     'Phoi-mau': 'phoi-mau-quan-ao-nu',
     'Dia-diem-dip': 'chon-trang-phuc-nu-theo-dia-diem-va-dip',
     'Cham-soc': 'cach-cham-soc-do-nu',
