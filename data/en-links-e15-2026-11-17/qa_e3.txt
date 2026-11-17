@@ -1,0 +1,15 @@
+{
+  "phase": "E3",
+  "changed_en_files": 414,
+  "supplemental_tsvs": 416,
+  "authored_contextual_links": 644,
+  "new_navigation_cards": 203,
+  "existing_link_sentence_updates": 27,
+  "contextual_parity": "100%",
+  "paired_articles_checked": 423,
+  "source_successors": 210,
+  "historical_hashes_unchanged": true,
+  "protected_metadata_images_headings_toc_faq_unchanged": true,
+  "replay_from_tsv_exact": true,
+  "errors": []
+}

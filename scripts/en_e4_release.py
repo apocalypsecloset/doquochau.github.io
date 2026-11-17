@@ -28,6 +28,8 @@ def qualified(path,raw):
   if not p.is_file() or digest(p.read_text(encoding='utf-8'))!=row['vi_source_sha256']:return False
  return bool(row['tsvs'])
 def previous(path,raw):
+ from en_e15_release import previous as e15_previous
+ raw=e15_previous(path,raw)
  if not qualified(path,raw):return raw
  before=predecessors()[path];assert digest(before)==manifest()['files'][path]['before_sha256'],path
  return before

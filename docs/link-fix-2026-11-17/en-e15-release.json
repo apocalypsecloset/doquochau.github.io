@@ -1,0 +1,133 @@
+{
+  "phase": "E15",
+  "baseline": "1dd10834efa9aaef5cff197cd2ff298172bbc9a4",
+  "files": {
+    "en/blog/vay-lien-than-chu-a.html": {
+      "before_sha256": "a8def12e0a86863aac12b096ca7780e9e6b3cf02d03ce6ef24946dec3d559b89",
+      "after_sha256": "8c98f24565cc9e12419b840edd038d73c47ae6c154bc94966fe12e28db19b956",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/vay-lien-than-chu-a.tsv"
+      ],
+      "vi_source": "blog/vay-lien-than-chu-a.html",
+      "vi_source_sha256": "c1311e3f6bbfb52d1aa073b567ad283b4f292dcea9063fa92f78e9e453797b12"
+    },
+    "en/blog/ao-cardigan-nu.html": {
+      "before_sha256": "43571a8b54cf55731c331a55318bec729437132e931a45cc5fd61a85d8d28cc4",
+      "after_sha256": "d37d864b7dbf4215331536677acf40d5ef025360c0dec097c1a7d687fc44c90e",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/ao-cardigan-nu.tsv"
+      ],
+      "vi_source": "blog/ao-cardigan-nu.html",
+      "vi_source_sha256": "0438738e98ecd5b0102e932a1b11048628ba74550d1075aa042ac6655b866d2c"
+    },
+    "en/blog/chan-vay-but-chi.html": {
+      "before_sha256": "4b2ceebefac7c8c99d79ed040511e23d2b2d2d13102f51f5607059c7df37a6be",
+      "after_sha256": "9095955c303716f71f4f1329016582d366ccd25304eb04c3b6e849805ac60807",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/chan-vay-but-chi.tsv"
+      ],
+      "vi_source": "blog/chan-vay-but-chi.html",
+      "vi_source_sha256": "3ddf0597e9f50b2425da1863e24c7cade04f026a930f267b1f125acb0600924e"
+    },
+    "en/blog/dep-quai-hau-nu.html": {
+      "before_sha256": "801699cbb45ed001d4f3146cce7fca7f492248b7db8c985f1ae3f786b89c1155",
+      "after_sha256": "a79d052a3b2902ccf6d2efca1a27b7410317c6dd2fb2feafb8efbb64baa9c0e6",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/dep-quai-hau-nu.tsv"
+      ],
+      "vi_source": "blog/dep-quai-hau-nu.html",
+      "vi_source_sha256": "17bffaee94851a6489dbe851bc5140877c7b32d1fdcbfa387ed3cc219c53e9e0"
+    },
+    "en/blog/gong-kinh-titanium.html": {
+      "before_sha256": "6be23db830594512a479a52628c09b011e8b700f8ad473144d1149a564754e96",
+      "after_sha256": "a7547c91c3360ad7ddba0fe85ce3fc67168083495608e4a5a539b23d3855fbaa",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/gong-kinh-titanium.tsv"
+      ],
+      "vi_source": "blog/gong-kinh-titanium.html",
+      "vi_source_sha256": "35cbcb531737014afb56de7f79e3b803c0f5366290e4dbe9262c020f9c633ec8"
+    },
+    "en/blog/how-to-style-womens-boots.html": {
+      "before_sha256": "d311997385eaaf48aa631cd7f4730ea46e07482b4dd4172a5ad58f61bbef8636",
+      "after_sha256": "eb1f55cbf92d0e85799488b673435eac1a43aed3774a893ed584a4dc0043b58e",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/how-to-style-womens-boots.tsv"
+      ],
+      "vi_source": "blog/phoi-do-voi-boots-da-nu.html",
+      "vi_source_sha256": "161371e2d89f4c667b7c5e9c5bcccc2ebd8e745a74316cb0a840d5142c45e884"
+    },
+    "en/blog/nhan-bac-nu.html": {
+      "before_sha256": "81a4ad4629712c2627a726b410ee0b4d12f0bcb2c201ae1542ea0bd3a066bbcd",
+      "after_sha256": "a4836e65f077e01becbfb104df2ac80a9de667b054c023a37c314253b9174b6e",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/nhan-bac-nu.tsv"
+      ],
+      "vi_source": "blog/nhan-bac-nu.html",
+      "vi_source_sha256": "1ccf4932145057ffb6455ec05b7b7794338a2fde768dee41866aefa9ef1c1aaa"
+    },
+    "en/blog/nhan-nu.html": {
+      "before_sha256": "4f7b77119f9526f531eff219afbc8839a14cbc8aecea4f90352b51639e613325",
+      "after_sha256": "4b43f849d229f9f8783dc54f7723e01359aa36d2a08a3b0fc99a992ae28e27b8",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/nhan-nu.tsv"
+      ],
+      "vi_source": "blog/nhan-nu.html",
+      "vi_source_sha256": "f74e59519b478bc7271edfd34a47ba47480590ed037e082186f7dd28df3ef029"
+    },
+    "en/blog/womens-crop-top-outfits.html": {
+      "before_sha256": "6cf23e9d2cf5555543deacd1115816018289738123f2d0b4eb502fd7141e7f23",
+      "after_sha256": "e921af1f96ed7b415a3d4ed99f2917d7eada5d196d575aba67ac11d7f1fcf6cc",
+      "tsvs": [
+        "data/en-translations/internal-links/e15/womens-crop-top-outfits.tsv"
+      ],
+      "vi_source": "blog/phoi-do-voi-ao-crop-top-nu.html",
+      "vi_source_sha256": "3da2624714143dccbe01d376f48cd4d5e00e13a4c3f13e19206b25a4b9c0e188"
+    }
+  },
+  "tables": {
+    "data/en-translations/internal-links/e15/vay-lien-than-chu-a.tsv": {
+      "sha256": "ebfa2ba68354d25f962c8b0f6023ed420a5a1ce47f892ad9ce6f91a33c8124bf",
+      "source": "en/blog/vay-lien-than-chu-a.html"
+    },
+    "data/en-translations/internal-links/e15/ao-cardigan-nu.tsv": {
+      "sha256": "a65a661f31cc442ea4543b85569d8f01fc938d7bb0a1c546056b61a88d4733c8",
+      "source": "en/blog/ao-cardigan-nu.html"
+    },
+    "data/en-translations/internal-links/e15/chan-vay-but-chi.tsv": {
+      "sha256": "5859d9f28ade564c3ee0a2949ab47d351ac52afecb53cc462b049b9590c2b135",
+      "source": "en/blog/chan-vay-but-chi.html"
+    },
+    "data/en-translations/internal-links/e15/dep-quai-hau-nu.tsv": {
+      "sha256": "c9b4ecbc51504662496cb1c0a3b9240fb6753dbe11ff2545dd5c9b4dfe1c6b0e",
+      "source": "en/blog/dep-quai-hau-nu.html"
+    },
+    "data/en-translations/internal-links/e15/gong-kinh-titanium.tsv": {
+      "sha256": "e2423fb1ff3128b27338dcc77d4085203d1c7edcc4960dc935f37f61cda9d558",
+      "source": "en/blog/gong-kinh-titanium.html"
+    },
+    "data/en-translations/internal-links/e15/how-to-style-womens-boots.tsv": {
+      "sha256": "a54cdd3d82cfebdd7546710e63c64a75d3d8419ffa46110b05736172736c21c9",
+      "source": "en/blog/how-to-style-womens-boots.html"
+    },
+    "data/en-translations/internal-links/e15/nhan-bac-nu.tsv": {
+      "sha256": "b88bdba84331f0047751109ed944086e2cc03affd5484f5a86ed00e1b003dd18",
+      "source": "en/blog/nhan-bac-nu.html"
+    },
+    "data/en-translations/internal-links/e15/nhan-nu.tsv": {
+      "sha256": "9779c9c318a4f4b4d493d31a91b1a9b8af078cd95cc27cdc6900e9682ece6fa2",
+      "source": "en/blog/nhan-nu.html"
+    },
+    "data/en-translations/internal-links/e15/womens-crop-top-outfits.tsv": {
+      "sha256": "aafe5c570b95e55c76b1b5e7bd0e9cd6fd5a6aba1c85b346447d7600e33f8da5",
+      "source": "en/blog/womens-crop-top-outfits.html"
+    }
+  },
+  "promoted_links": 1,
+  "labelled_vi_exceptions": 8,
+  "untranslated_prose_unwrapped": 0,
+  "audit": {
+    "path": "scripts/internal_link_audit_en.py",
+    "before_sha256": "4faee38fcdd0660ee090055a66da297c0851684d12ccda90ef3a92f78cb13edd",
+    "after_sha256": "52fc849cc92c148a7349f0ea35753036e9d582142d240da846eac18ea0ccd39e"
+  }
+}

@@ -143,6 +143,16 @@ def main():
     twin = {v for v in vi2en}
     leak = [f'{slug(p)} -> {t}' for p in arts for t, tx, c, hl in en_prose[p] if t in twin and t != en2vi.get(p)]
     gate('E7 link ngữ cảnh EN còn trỏ sang bản VI dù đã có bản EN', leak)
+    # E15: BẤT KỲ link nào (thân bài, hub-card, reading-path, menu, footer...) trong trang EN
+    # trỏ sang /blog/<bài VI> đã có bản EN. Ngoại lệ duy nhất: link về bản VI gốc của chính trang.
+    twin_vi = set(vi2en)
+    e15 = []
+    for p, sp in en.items():
+        for al in sp.find_all('a', href=True):
+            t = resolve(al['href'], p)
+            if t in twin_vi and t != en2vi.get(p):
+                e15.append(f"{slug(p)} -> {t}  [{al.get_text(' ', strip=True)[:40]}]")
+    gate('E15 mọi link EN → bài VI đã có bản EN (mọi vị trí, trừ bản VI gốc của chính trang)', e15)
     PROPER = re.compile(r'áo dài|hội an|huế|đà lạt|đà nẵng|bà nà|hà giang|sa pa|việt nam|tết|hạ long|phú quốc|café|cafe', re.I)
     viet = [f'{slug(p)}: {tx}' for p in arts for t, tx, c, hl in en_prose[p]
             if t != en2vi.get(p) and VNCHARS.search(PROPER.sub('', tx))]

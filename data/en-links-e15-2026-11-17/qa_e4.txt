@@ -1,0 +1,14 @@
+{
+  "phase": "E4",
+  "changed_en_files": 187,
+  "updated_tsvs": 215,
+  "removed_anchor_occurrences": 100,
+  "renamed_anchors": 176,
+  "terminology_paragraphs": 25,
+  "new_contextual_links": 3,
+  "sitewide_destinations_with_three_variants": 442,
+  "contextual_vi_parity": "100%",
+  "all_fourteen_audit_gates": "PASS",
+  "old_hashes_and_protected_fields_unchanged": true,
+  "errors": []
+}

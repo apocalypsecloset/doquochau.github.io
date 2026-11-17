@@ -4,6 +4,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import internal_link_audit_en as A
 import en_e4_release as E4
+from en_e15_release import previous as e15_previous, audit_previous
 from en_link_fix_release import english_previous
 ROOT=E4.ROOT;M=E4.manifest();assert M and M['phase']=='E4'
 assert M['baseline']=='9880f3f07c1b8898590cdd2afa3f323c497e4def'
@@ -11,16 +12,17 @@ errors=[]
 def check(ok,message):
  if not ok:errors.append(message)
 old=E4.predecessors();en=A.parse(str(ROOT),'en/blog');vi=A.parse(str(ROOT),'blog')
+en={p:BeautifulSoup(e15_previous(p,(ROOT/p).read_text(encoding='utf-8')),'lxml') for p in en}
 ep,ea=A.extract(en,['article.editorial','main.en-hub','article']);vp,_=A.extract(vi,['article.article-content'])
 v2e={A.hreflang(s,'vi'):p for p,s in en.items() if A.hreflang(s,'vi') in vi}
 check(set(old)==set(en)==set(M['baseline_en_hashes']),'Complete immutable 442-page EN inventory')
 check({p.relative_to(ROOT).as_posix() for p in (ROOT/'data/en-translations/internal-links/e4').glob('*.tsv')}==set(M['tables']),'Every E4 TSV explicitly pinned')
 for path in en:
  check(E4.digest(old[path])==M['baseline_en_hashes'][path],path+': original E3 baseline hash')
- if path not in M['files']:check((ROOT/path).read_text(encoding='utf-8')==old[path],path+': unchanged outside approved E4 scope')
+ if path not in M['files']:check(e15_previous(path,(ROOT/path).read_text(encoding='utf-8'))==old[path],path+': unchanged outside approved E4 scope')
 renamed=removed=terms=added=0
 for path,row in M['files'].items():
- raw=(ROOT/path).read_text(encoding='utf-8');before=old[path]
+ raw=e15_previous(path,(ROOT/path).read_text(encoding='utf-8'));before=old[path]
  check(E4.digest(before)==row['before_sha256'],path+': immutable predecessor')
  check(E4.qualified(path,raw),path+': actual HTML, TSV and VI hashes')
  check(E4.previous(path,raw)==before,path+': exact successor only')
@@ -97,14 +99,14 @@ for source,links in vp.items():
  check(wanted<=actual,target+': all contextual VI-to-EN relationships retained')
 for script in ['internal_link_audit.py','internal_link_audit_en.py']:
  baseline=subprocess.check_output(['git','show',M['baseline']+':scripts/'+script],cwd=ROOT).decode('utf-8').replace('\r\n','\n')
- check((ROOT/'scripts'/script).read_text(encoding='utf-8')==baseline,script+': every original gate and threshold unchanged')
+ check(audit_previous('scripts/'+script,(ROOT/'scripts'/script).read_text(encoding='utf-8'))==baseline,script+': every original gate and threshold unchanged; exact E15 extension recognized')
 for release in ['release-manifest.json','batch40-release.json','en-e3-release.json']:
  name='docs/link-fix-2026-11-17/'+release
  baseline=subprocess.check_output(['git','show',M['baseline']+':'+name],cwd=ROOT).decode('utf-8').replace('\r\n','\n')
  check((ROOT/name).read_text(encoding='utf-8')==baseline,name+': all earlier release hashes unchanged')
 check(not subprocess.check_output(['git','diff','--name-only',M['baseline'],'--','blog','docs/qa'],cwd=ROOT).strip(),'All VI HTML and historical QA evidence unchanged')
 result=subprocess.run([sys.executable,str(ROOT/'scripts/internal_link_audit_en.py'),'--root',str(ROOT)],capture_output=True,encoding='utf-8')
-check(result.returncode==0 and len(re.findall(r'^\[PASS\] E\d+ ',result.stdout,re.M))==14,'All fourteen actual-current EN gates pass unchanged')
+check(result.returncode==0 and len(re.findall(r'^\[PASS\] E\d+ ',result.stdout,re.M))==15,'All fourteen original gates plus the user-supplied E15 pass on current HTML')
 print(json.dumps({'phase':'E4','changed_en_files':len(M['files']),'updated_tsvs':len(M['tables']),'removed_anchor_occurrences':removed,
  'renamed_anchors':renamed,'terminology_paragraphs':terms,'new_contextual_links':added,'sitewide_destinations_with_three_variants':len(variants),
  'contextual_vi_parity':'100%','all_fourteen_audit_gates':'PASS' if result.returncode==0 else 'FAIL',

@@ -1,0 +1,83 @@
+[
+  {
+    "source": "en/blog/vay-lien-than-chu-a.html",
+    "vi_source": "blog/vay-lien-than-chu-a.html",
+    "kind": "promote",
+    "en_before": "<p>This guide covers one-piece dresses, including styles with a defined waist and looser cuts that flare gently. If you’re pairing a top with a separate skirt, see our guide to <a href=\"/blog/phoi-do-voi-chan-vay-chu-a.html\">styling an A-line skirt</a>. With a dress, check how the bodice and skirt fit together.</p>",
+    "en_after": "<p>This guide covers one-piece dresses, including styles with a defined waist and looser cuts that flare gently. If you’re pairing a top with a separate skirt, see our guide to <a href=\"/en/blog/how-to-style-a-line-skirts.html\" hreflang=\"en\">styling an A-line skirt</a>. With a dress, check how the bodice and skirt fit together.</p>",
+    "old_anchor": "<a href=\"/blog/phoi-do-voi-chan-vay-chu-a.html\">styling an A-line skirt</a>",
+    "new_anchor": "<a href=\"/en/blog/how-to-style-a-line-skirts.html\" hreflang=\"en\">styling an A-line skirt</a>"
+  },
+  {
+    "source": "en/blog/ao-cardigan-nu.html",
+    "vi_source": "blog/ao-cardigan-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/chan-vay-but-chi.html",
+    "vi_source": "blog/chan-vay-but-chi.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/dep-quai-hau-nu.html",
+    "vi_source": "blog/dep-quai-hau-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/gong-kinh-titanium.html",
+    "vi_source": "blog/gong-kinh-titanium.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/how-to-style-womens-boots.html",
+    "vi_source": "blog/phoi-do-voi-boots-da-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>This guide covers one specific styling intent and supports the main <a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide</a>. Also explore <a hreflang=\"en\" href=\"/en/blog/alternative-going-out-outfits-women.html\">going-out outfits</a>, <a hreflang=\"en\" href=\"/en/blog/alternative-summer-outfits-women.html\">summer outfits</a> and <a hreflang=\"en\" href=\"/en/blog/alternative-outfits-vnd-500000.html\">budget outfits under VND 500,000</a>.</p>",
+    "en_after": "<p>This guide covers one specific styling intent and supports the main <a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide (Vietnamese)</a>. Also explore <a hreflang=\"en\" href=\"/en/blog/alternative-going-out-outfits-women.html\">going-out outfits</a>, <a hreflang=\"en\" href=\"/en/blog/alternative-summer-outfits-women.html\">summer outfits</a> and <a hreflang=\"en\" href=\"/en/blog/alternative-outfits-vnd-500000.html\">budget outfits under VND 500,000</a>.</p>",
+    "old_anchor": "<a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide</a>",
+    "new_anchor": "<a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/nhan-bac-nu.html",
+    "vi_source": "blog/nhan-bac-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/nhan-nu.html",
+    "vi_source": "blog/nhan-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>.</p>",
+    "en_after": "<p>Choose a base piece you already own, then experiment with proportions, colors and accessories in the <a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>.</p>",
+    "old_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder</a>",
+    "new_anchor": "<a href=\"/app-phoi-do.html\" hreflang=\"vi\" title=\"Vietnamese reference\">Online Outfit Builder (Vietnamese)</a>"
+  },
+  {
+    "source": "en/blog/womens-crop-top-outfits.html",
+    "vi_source": "blog/phoi-do-voi-ao-crop-top-nu.html",
+    "kind": "label-exception",
+    "en_before": "<p>This article answers a specific styling question and supports the broader <a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide</a>. You can also explore <a hreflang=\"en\" href=\"/en/blog/alternative-going-out-outfits-women.html\">going-out outfit ideas</a>, <a hreflang=\"en\" href=\"/en/blog/alternative-summer-outfits-women.html\">summer outfit ideas</a> and <a hreflang=\"en\" href=\"/en/blog/alternative-outfits-vnd-500000.html\">and outfits under VND 500,000</a>.</p>",
+    "en_after": "<p>This article answers a specific styling question and supports the broader <a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide (Vietnamese)</a>. You can also explore <a hreflang=\"en\" href=\"/en/blog/alternative-going-out-outfits-women.html\">going-out outfit ideas</a>, <a hreflang=\"en\" href=\"/en/blog/alternative-summer-outfits-women.html\">summer outfit ideas</a> and <a hreflang=\"en\" href=\"/en/blog/alternative-outfits-vnd-500000.html\">and outfits under VND 500,000</a>.</p>",
+    "old_anchor": "<a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide</a>",
+    "new_anchor": "<a  href=\"/phoi-do-nu-ca-tinh.html\">women's alternative outfit guide (Vietnamese)</a>"
+  }
+]
