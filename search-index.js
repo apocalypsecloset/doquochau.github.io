@@ -1,5 +1,37 @@
 window.searchIndex = [
   {
+    "title": "Phối màu quần áo nữ: Chọn bảng màu từ tủ đồ đang có",
+    "url": "/blog/phoi-mau-quan-ao-nu.html",
+    "type": "Fashion Basics",
+    "description": "Hướng dẫn phối màu quần áo nữ theo sắc độ, độ tương phản và món chủ đạo; tìm cách ghép áo, quần, chân váy và màu hợp với sở thích.",
+    "image": "/images/blog-covers/fashion-color-wheel.webp",
+    "keywords": "màu sắc & tủ đồ, phối màu quần áo nữ: chọn bảng màu từ tủ đồ đang có"
+  },
+  {
+    "title": "Chọn trang phục nữ theo địa điểm và dịp: Đi chơi, du lịch, dự tiệc",
+    "url": "/blog/chon-trang-phuc-nu-theo-dia-diem-va-dip.html",
+    "type": "Dress Code Desk",
+    "description": "Chọn trang phục nữ theo lịch trình, thời tiết và yêu cầu nơi đến; tìm hướng dẫn đi chơi, du lịch, concert, dự tiệc, Tết và áo dài.",
+    "image": "/images/blog-covers/phoi-do-nu-ca-tinh-di-choi.webp?v=20260807-cover2",
+    "keywords": "mặc theo lịch trình, chọn trang phục nữ theo địa điểm và dịp: đi chơi, du lịch, dự tiệc"
+  },
+  {
+    "title": "Cách chăm sóc đồ nữ: Giặt, cất, giữ phom và chỉnh trang phục",
+    "url": "/blog/cach-cham-soc-do-nu.html",
+    "type": "Care Guide",
+    "description": "Chăm sóc quần áo, đồ da và giày theo nhãn và tình trạng thực tế; chọn cách giặt đồ đen, gấp đồ, giữ phom boots và chỉnh trang phục.",
+    "image": "/images/blog-covers/how-to-fold-clothes.webp",
+    "keywords": "chăm đồ & giữ phom, cách chăm sóc đồ nữ: giặt, cất, giữ phom và chỉnh trang phục"
+  },
+  {
+    "title": "Chọn tóc và makeup theo trang phục: Cân cổ áo, màu và phong cách",
+    "url": "/blog/chon-toc-va-makeup-theo-trang-phuc.html",
+    "type": "Beauty Guide",
+    "description": "Chọn tóc, màu nhuộm, makeup và nail theo cổ áo, hoạt động và gu cá nhân; phân biệt cắt tóc, tạo kiểu và tham khảo Goth, Punk, áo dài, dự tiệc.",
+    "image": "/images/blog-covers/kieu-toc-goth-goth-hairstyle-nu.webp",
+    "keywords": "tóc, makeup & trang phục, chọn tóc và makeup theo trang phục: cân cổ áo, màu và phong cách"
+  },
+  {
     "title": "Gyaru Là Gì? Gyaru Style Và Các Phong Cách Gyaru",
     "url": "/blog/gyaru.html",
     "type": "J-Fashion",

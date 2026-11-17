@@ -21,20 +21,25 @@ HUBS = {
     'Phu-kien': 'phu-kien-thoi-trang-nu-ca-tinh',
     'Vai': 'cac-loai-vai',
     'Kinh': 'cach-chon-kinh-phu-hop-voi-khuon-mat-nu',
-    # 'Phoi-mau': '<new-hub-slug>',
-    # 'Dia-diem-dip': '<new-hub-slug>',
-    # 'Cham-soc': '<new-hub-slug>',
-    # 'Toc-lam-dep': '<new-hub-slug>',
+    'Phoi-mau': 'phoi-mau-quan-ao-nu',
+    'Dia-diem-dip': 'chon-trang-phuc-nu-theo-dia-diem-va-dip',
+    'Cham-soc': 'cach-cham-soc-do-nu',
+    'Toc-lam-dep': 'chon-toc-va-makeup-theo-trang-phuc',
 }
 STYLE_SUBHUBS = ['goth', 'punk-grunge', 'egirl', 'dark-feminine', 'badgirl', 'baddie-streetwear']
 # Hub pages are navigation, so they are exempt from the "child" role in their own cluster.
 
 RULES = [
- ('Cham-soc', r'^(cach-bao-quan|cach-giat|cach-khu-mui|cach-lam-mem|cach-gap|cach-buoc-day|cach-len-lai|cach-so-vin|cach-xan-tay|mieng-lot|giay-loi-nuoc)'),
- ('Phoi-mau', r'(phoi-quan-mau-gi|phoi-ao-mau-gi|phoi-voi-mau-gi|ket-hop-voi-mau-gi|mac-voi-quan-mau-gi|-la-mau-gi|^mau-|phoi-voi-ao-gi$|ket-hop-voi-ao-mau-gi|banh-xe-mau-sac|nhung-mau-dam)'),
- ('Vai', r'^(vai-|cac-loai-vai|chat-vai|polyester|chiffon|da-lon|da-ngam|tie-dye|trouser-la)'),
+ # Reviewed search intents: skin tone is not suede; Vietnamese "mau" can mean mẫu.
+ ('Phoi-mau', r'^(da-ngam-mac-mau-gi|white-on-white)$'),
+ ('Vay-dam', r'^(nhung-mau-dam-so-mi-dep-nhat|mau-dam-nhung-sang-trong)$'),
+ ('Quan', r'^trouser-la-quan-gi$'),
+ ('Outfit-core', r'^phoi-do-dang-(qua-le|tam-giac-nguoc)$'),
+ ('Cham-soc', r'^(cach-bao-quan|cach-giat|cach-khu-mui|cach-lam-mem|cach-gap|cach-buoc-day|cach-len-lai|cach-so-vin|cach-xan-tay|mieng-lot)'),
+ ('Phoi-mau', r'(phoi-quan-mau-gi|phoi-ao-mau-gi|phoi-voi-mau-gi|ket-hop-voi-mau-gi|mac-voi-quan-mau-gi|-la-mau-gi|^mau-|ket-hop-voi-ao-mau-gi|banh-xe-mau-sac)'),
+ ('Vai', r'^(vai-|cac-loai-vai|chat-vai|polyester|chiffon|da-lon|tie-dye)'),
  ('Kinh', r'(kinh-|gong-|chon-kinh)'),
- ('Phu-kien', r'(bong-tai|nhan-|vong-tay|day-chuyen|choker|khuyen-tai|khan-quang|that-khan|that-lung|mu-|tui-|ao-ba-lo|cravat|arm-warmers|leg-warmers|phu-kien|cach-chon-tui|fishnet)'),
+ ('Phu-kien', r'(bong-tai|nhan-|vong-tay|day-chuyen|choker|khuyen-tai|khan-quang|that-khan|that-lung|mu-|tui-|cravat|arm-warmers|leg-warmers|phu-kien|cach-chon-tui|fishnet)'),
  ('Toc-lam-dep', r'(kieu-toc|nhuom-toc|butterfly-haircut|hime-cut|goth-nails|punk-makeup)'),
  ('Dia-diem-dip', r'(^di-|outfit-di-|outfit-san-bay|outfit-tet|ao-dai-tet|chup-anh-ao-dai|mac-ao-dai|outfit-mua-dong|outfit-nu-ca-tinh-di-concert|phoi-do-nu-ca-tinh-di-choi|phoi-do-nu-ca-tinh-mua-he|badgirl-outfit-di-cafe|outfit-di-choi-dem|vay-di-du|rave-outfits|mac-do-den-mua-he)'),
  ('Giay', r'(^giay-|^dep-|boots|platform-shoes|ballet-flats|combat-boots)'),
@@ -44,6 +49,8 @@ RULES = [
  ('Outfit-core', r'(phoi-do-theo-item|outfit-la-gi|ootd-la-gi|moodboard|cach-chup-anh-ootd|capsule-wardrobe|layering|^set-|tu-do-alt|duoi-500k|cho-nguoi|nu-ca-tinh-cho|cach-phoi-do-den|cach-chon-size|mua-sam-alt|local-brand|auth-la-gi|like-auth|sold-out|boutique|unisex|dress-code)'),
 ]
 def cluster(slug):
+    for name, hub_slug in HUBS.items():
+        if slug == hub_slug: return name
     if slug == 'phoi-do-theo-giay-nu': return 'Giay'
     if slug == 'phoi-do-theo-item': return 'Outfit-core'
     for n, r in RULES:
