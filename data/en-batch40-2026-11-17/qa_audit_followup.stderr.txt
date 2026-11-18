@@ -1,7 +1,0 @@
-warning: in the working copy of '.github/workflows/site-quality.yml', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/internal_link_audit_en.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/link_fix_release.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/qa_link_fix.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/internal_link_audit_en.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/link_fix_release.py', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'scripts/qa_link_fix.py', LF will be replaced by CRLF the next time Git touches it

@@ -1,4 +1,0 @@
-{
-  "ui_pages": 2,
-  "errors": []
-}
