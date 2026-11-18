@@ -14,6 +14,7 @@ import internal_link_audit as VI
 import internal_link_audit_en as EN
 import blog_image_release as IMAGE_RELEASE
 import search_metadata_release as SEARCH_METADATA
+import original_image_release as ORIGINAL_IMAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data/topical-editorial-2026-11-17'
@@ -76,7 +77,7 @@ if (ROOT/'data/repository-cleanup-2026-11-18.json').is_file():
     cleanup_report, cleanup_paths = validate_cleanup()
     check(not cleanup_report['errors'], 'Exact repository cleanup: ' + '; '.join(cleanup_report['errors']))
 for path in changed_paths:
-    check(path in changed or path in new_code or path in cleanup_paths or path in IMAGE_RELEASE.additions() or path in IMAGE_RELEASE.release()['files'] or path in SEARCH_METADATA.additions() or path in SEARCH_METADATA.release()['files'] or path == '.github/workflows/site-quality.yml' or path.startswith('data/topical-editorial-2026-11-17/'), path + ': historical evidence, scripts and unrelated assets must remain unchanged')
+    check(path in changed or path in new_code or path in cleanup_paths or path in IMAGE_RELEASE.additions() or path in IMAGE_RELEASE.release()['files'] or path in SEARCH_METADATA.additions() or path in SEARCH_METADATA.release()['files'] or path in ORIGINAL_IMAGES.additions() or path in ORIGINAL_IMAGES.release()['files'] or path == '.github/workflows/site-quality.yml' or path.startswith('data/topical-editorial-2026-11-17/'), path + ': historical evidence, scripts and unrelated assets must remain unchanged')
 soups = {p: BeautifulSoup(raw, 'lxml') for p, raw in actual_current.items()}
 protected = ['title', 'meta', 'link', 'h1', 'h2', 'h3', 'h4', 'img', 'script', '.article-toc', '.ac-reading-path', '.seo-faq', '.ac-sources']
 for p in changed:

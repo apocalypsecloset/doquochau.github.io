@@ -12,10 +12,18 @@ const journalLFHash=require('node:crypto').createHash('sha256').update(journalBy
 const journalPin=englishRelease.files['en/blog.html'];
 let historicalJournalHash=journalHash;
 let imageJournalHash=journalLFHash;
+let metadataJournalHash=journalLFHash;
+const originalImageReleasePath=path.join(root,'data/original-images-2026-11-18/release.json');
+const originalImageRelease=fs.existsSync(originalImageReleasePath)?JSON.parse(fs.readFileSync(originalImageReleasePath,'utf8')):null;
+if(originalImageRelease){
+ const pin=originalImageRelease.files['en/blog.html'];
+ assert.equal(journalLFHash,pin.after,'Only the exact original-image successor is accepted');
+ metadataJournalHash=pin.before;
+}
 const metadataReleasePath=path.join(root,'data/search-metadata-2026-11-18/release.json');
 if(fs.existsSync(metadataReleasePath)){
  const metadataPin=JSON.parse(fs.readFileSync(metadataReleasePath,'utf8')).files['en/blog.html'];
- assert.equal(journalLFHash,metadataPin.after,'Only the exact search metadata successor is accepted');
+ assert.equal(metadataJournalHash,metadataPin.after,'Only the exact search metadata successor is accepted');
  imageJournalHash=metadataPin.before;
 }
 const imageReleasePath=path.join(root,'data/blog-image-seo-2026-11-18/html-changes.json');
@@ -28,17 +36,23 @@ assert.ok([journalPin.after_sha256,journalPin.after_crlf_sha256].includes(histor
 const englishExpected=englishRelease.english_journal;
 assert.equal(englishExpected.count,442);assert.equal(englishExpected.old_count,438);
 
-test('every English catalogue and featured card has a responsive thumbnail without JavaScript',()=>{
+test('every English catalogue and featured card has its reviewed image without JavaScript',()=>{
  const dom=new JSDOM(journalBytes.toString('utf8'));
  try{
   const cards=[...dom.window.document.querySelectorAll('#latest .cards a.card,.journal-featured-card')];
   assert.equal(cards.length,445);
+  const origins=originalImageRelease?new Set(JSON.parse(fs.readFileSync(path.join(root,'data/blog-image-seo-2026-11-18/assets.json'),'utf8')).map(a=>a.origin)):null;
   for(const card of cards){
    const images=card.querySelectorAll('img');assert.equal(images.length,1);
    const image=images[0];assert.ok(image.alt.trim());
    assert.ok(Number(image.width)>0&&Number(image.height)>0);
-   assert.ok(image.getAttribute('srcset').split(',').length>=2);
-   assert.ok(fs.existsSync(path.join(root,image.getAttribute('src'))));
+   if(originalImageRelease){
+    assert.ok(origins.has(image.getAttribute('src')));
+    assert.equal(image.hasAttribute('srcset'),false);
+   }else{
+    assert.ok(image.getAttribute('srcset').split(',').length>=2);
+    assert.ok(fs.existsSync(path.join(root,image.getAttribute('src'))));
+   }
   }
  }finally{dom.window.close();}
 });

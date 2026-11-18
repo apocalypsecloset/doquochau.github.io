@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+import original_image_release as ORIGINAL_IMAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'data/search-metadata-2026-11-18/release.json'
@@ -40,6 +41,7 @@ def originals():
 
 
 def predecessor(path, raw):
+    raw = ORIGINAL_IMAGES.predecessor(path, raw)
     row = release()['files'].get(path)
     if not row:
         return raw
@@ -64,6 +66,6 @@ def validate():
             errors.append(str(exc))
     for path, expected in release()['additions'].items():
         p = ROOT / path
-        if not p.is_file() or digest(p.read_text(encoding='utf8')) != expected:
+        if not p.is_file() or digest(ORIGINAL_IMAGES.predecessor(path, p.read_text(encoding='utf8'))) != expected:
             errors.append('Unreviewed metadata addition: ' + path)
     return errors
