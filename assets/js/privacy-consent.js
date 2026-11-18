@@ -12,7 +12,7 @@
   window.dataLayer=window.dataLayer||[];
   function raw(){window.dataLayer.push(arguments);}
   var denied={analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'};
-  raw('consent','default',denied);
+  if(!window.__acConsentDefault)raw('consent','default',denied);window.__acConsentDefault=true;
   window['ga-disable-'+GA]=!allowed();
   // Legacy callers cannot queue analytics before consent, including shop/login events.
   window.gtag=function(){if(arguments[0]==='consent'||(production&&allowed()))raw.apply(null,arguments);};
