@@ -1,0 +1,4 @@
+/* The same cover assets serve the journal cards and their article pages. */
+#latest .card .journal-thumbnail,.journal-featured-card .journal-thumbnail{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 25%;background:#1e1918}
+#latest .card .journal-thumbnail{margin-bottom:4px}
+.journal-featured-card .journal-thumbnail{aspect-ratio:3/2}

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import blog_image_release as IMAGE_RELEASE
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = '51035256000a09c8879fd1577d6b44a23a025948'
@@ -37,6 +38,7 @@ def checkout_hashes(raw):
 @lru_cache(maxsize=1)
 def validate():
     errors = []
+    errors.extend(IMAGE_RELEASE.validate())
     def check(ok, message):
         if not ok:
             errors.append(message)
@@ -70,10 +72,11 @@ def validate():
         if path == ADAPTER:
             expected = manifest['modified_files'][path]
             check(expected['before_git_blob'] == sha, 'Editorial adapter baseline changed')
-            check(hashlib.sha256(file.read_text(encoding='utf8').encode()).hexdigest() == expected['after_sha256'], 'Unknown editorial adapter change')
+            check(hashlib.sha256(IMAGE_RELEASE.predecessor(path,file.read_text(encoding='utf8')).encode()).hexdigest() == expected['after_sha256'], 'Unknown editorial adapter change')
         else:
-            check(sha in checkout_hashes(file.read_bytes()), 'File changed outside removal scope: ' + path)
-    known = set(tree) - set(deleted) | ADDITIONS
+            raw = IMAGE_RELEASE.predecessor(path,file.read_text(encoding='utf8')).encode('utf8') if path in IMAGE_RELEASE.release()['files'] else file.read_bytes()
+            check(sha in checkout_hashes(raw), 'File changed outside removal scope: ' + path)
+    known = set(tree) - set(deleted) | ADDITIONS | IMAGE_RELEASE.additions()
     listed = subprocess.check_output(['git', 'ls-files', '-z', '--cached', '--others', '--exclude-standard'], cwd=ROOT).decode('utf8').split('\0')
     actual = {p for p in listed if p and (ROOT/p).is_file()}
     check(actual == known, 'Unregistered additions or deletions: ' + ', '.join(sorted(actual ^ known)))
