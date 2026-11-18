@@ -59,7 +59,7 @@ def generate(c):
   elif path!='/':a['lang']='vi';a['hreflang']='vi';a['title']='Vietnamese reference';a.append(' (Vietnamese)')
  template=BeautifulSoup((ROOT/'en/blog/soft-goth-style-outfits.html').read_text(),'html.parser')
  url='https://apocalypsecloset.com/en/blog/'+c['en_slug']+'.html';vi='https://apocalypsecloset.com/blog/'+c['vi_slug']+'.html'
- template.title.string=c['title']+' | Apocalypse Closet'
+ template.title.string=c['title']
  for m in template.select('meta'):
   key=m.get('name',m.get('property',''))
   if key in ['description','og:description','twitter:description']:m['content']=c['description']

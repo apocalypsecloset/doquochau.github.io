@@ -11,10 +11,17 @@ const journalHash=require('node:crypto').createHash('sha256').update(journalByte
 const journalLFHash=require('node:crypto').createHash('sha256').update(journalBytes.toString('utf8').replace(/\r\n/g,'\n')).digest('hex');
 const journalPin=englishRelease.files['en/blog.html'];
 let historicalJournalHash=journalHash;
+let imageJournalHash=journalLFHash;
+const metadataReleasePath=path.join(root,'data/search-metadata-2026-11-18/release.json');
+if(fs.existsSync(metadataReleasePath)){
+ const metadataPin=JSON.parse(fs.readFileSync(metadataReleasePath,'utf8')).files['en/blog.html'];
+ assert.equal(journalLFHash,metadataPin.after,'Only the exact search metadata successor is accepted');
+ imageJournalHash=metadataPin.before;
+}
 const imageReleasePath=path.join(root,'data/blog-image-seo-2026-11-18/html-changes.json');
 if(fs.existsSync(imageReleasePath)){
  const imagePin=JSON.parse(fs.readFileSync(imageReleasePath,'utf8')).files['en/blog.html'];
- assert.equal(journalLFHash,imagePin.after,'Only the exact image release successor is accepted');
+ assert.equal(imageJournalHash,imagePin.after,'Only the exact image release successor is accepted');
  historicalJournalHash=imagePin.before;
 }
 assert.ok([journalPin.after_sha256,journalPin.after_crlf_sha256].includes(historicalJournalHash));

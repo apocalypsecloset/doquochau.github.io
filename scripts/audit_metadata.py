@@ -9,3 +9,9 @@ def approved(path,field,original):
 NEW_FILE=Path(__file__).resolve().parents[1]/'docs/schema-pod-performance-2026-11-15/metadata.json'
 if NEW_FILE.exists():
  for path,fields in json.loads(NEW_FILE.read_text()).items():OVERRIDES.setdefault(path,{}).update(fields)
+
+SEARCH_FILE=Path(__file__).resolve().parents[1]/'data/search-metadata-2026-11-18/release.json'
+if SEARCH_FILE.exists():
+ for path,row in json.loads(SEARCH_FILE.read_text(encoding='utf8'))['files'].items():
+  for field,change in row.get('fields',{}).items():
+   OVERRIDES.setdefault(path,{})[field]=change

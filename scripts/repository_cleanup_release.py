@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import blog_image_release as IMAGE_RELEASE
+import search_metadata_release as SEARCH_METADATA
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = '51035256000a09c8879fd1577d6b44a23a025948'
@@ -74,9 +75,9 @@ def validate():
             check(expected['before_git_blob'] == sha, 'Editorial adapter baseline changed')
             check(hashlib.sha256(IMAGE_RELEASE.predecessor(path,file.read_text(encoding='utf8')).encode()).hexdigest() == expected['after_sha256'], 'Unknown editorial adapter change')
         else:
-            raw = IMAGE_RELEASE.predecessor(path,file.read_text(encoding='utf8')).encode('utf8') if path in IMAGE_RELEASE.release()['files'] else file.read_bytes()
+            raw = IMAGE_RELEASE.predecessor(path,file.read_text(encoding='utf8')).encode('utf8') if path in IMAGE_RELEASE.release()['files'] or path in SEARCH_METADATA.release()['files'] else file.read_bytes()
             check(sha in checkout_hashes(raw), 'File changed outside removal scope: ' + path)
-    known = set(tree) - set(deleted) | ADDITIONS | IMAGE_RELEASE.additions()
+    known = set(tree) - set(deleted) | ADDITIONS | IMAGE_RELEASE.additions() | SEARCH_METADATA.additions()
     listed = subprocess.check_output(['git', 'ls-files', '-z', '--cached', '--others', '--exclude-standard'], cwd=ROOT).decode('utf8').split('\0')
     actual = {p for p in listed if p and (ROOT/p).is_file()}
     check(actual == known, 'Unregistered additions or deletions: ' + ', '.join(sorted(actual ^ known)))

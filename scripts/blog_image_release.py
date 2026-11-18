@@ -8,6 +8,7 @@ from functools import lru_cache
 import hashlib,json,subprocess
 from pathlib import Path
 from fix_blog_image_seo import baseline
+import search_metadata_release as SEARCH_METADATA
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'data/blog-image-seo-2026-11-18/release.json'
 
@@ -19,7 +20,7 @@ def digest(raw):return hashlib.sha256(raw.encode('utf8')).hexdigest()
 def file_digest(path):
  raw=path.read_bytes()
  if path.suffix!='.webp':
-  try:raw=raw.decode('utf8').replace('\r\n','\n').encode('utf8')
+  try:raw=SEARCH_METADATA.predecessor(path.relative_to(ROOT).as_posix(),raw.decode('utf8').replace('\r\n','\n')).encode('utf8')
   except UnicodeDecodeError:pass
  return hashlib.sha256(raw).hexdigest()
 
@@ -29,6 +30,7 @@ def originals():return baseline(list(release()['files']),release()['baseline'])
 def original(path):return originals()[path]
 
 def predecessor(path,raw):
+ raw=SEARCH_METADATA.predecessor(path,raw)
  row=release()['files'].get(path)
  if not row:return raw
  if digest(raw)!=row['after']:raise ValueError('Unreviewed image-release successor: '+path)

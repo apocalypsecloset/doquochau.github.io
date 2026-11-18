@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urljoin,urlsplit
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
+import search_metadata_release as SEARCH_METADATA
 from fix_blog_image_seo import ROOT,DATA,BASE,cover,content_images,getmeta,baseline
 
 errors=[]
@@ -63,10 +64,10 @@ def main():
  print('Verified all generated asset hashes and decoded dimensions',file=sys.stderr,flush=True)
  urls=[];page_count=0;img_count=0;source_count=0
  for path,row in manifest['files'].items():
-  raw=(ROOT/path).read_text(encoding='utf8');check(sha(raw.encode())==row['after'],'Unexpected successor '+path)
+  raw=(ROOT/path).read_text(encoding='utf8');reviewed_image_raw=SEARCH_METADATA.predecessor(path,raw);check(sha(reviewed_image_raw.encode())==row['after'],'Unexpected successor '+path)
   old=predecessors[path];check(sha(old.encode())==row['before'],'Unexpected predecessor '+path)
   if not path.endswith('.html'):continue
-  check(image_only_view(old,path)==image_only_view(raw,path),'Non-image HTML/prose/navigation changed '+path)
+  check(image_only_view(old,path)==image_only_view(reviewed_image_raw,path),'Non-image HTML/prose/navigation changed '+path)
   s=BeautifulSoup(raw,'html.parser');page_count+=1
   if page_count%100==0:print('Verified HTML preservation:',page_count,file=sys.stderr,flush=True)
   old_soup=BeautifulSoup(old,'html.parser')
