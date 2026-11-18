@@ -1,8 +1,0 @@
-{
-  "html_pages": 1058,
-  "sitemap_urls": 1043,
-  "bilingual_pairs": 218,
-  "english_journal_cards": 442,
-  "existing_page_metadata_preserved": 605,
-  "errors": []
-}

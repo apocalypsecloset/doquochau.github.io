@@ -61,8 +61,13 @@ check(expected == current, 'Current HTML must exactly replay all reviewed change
 changed = {p for p in current if current[p] != old.get(p)}
 changed_paths = subprocess.check_output(['git', 'diff', '--name-only', BASE], cwd=ROOT, text=True, stderr=subprocess.DEVNULL).splitlines()
 new_code = {'scripts/qa_topical_editorial.py', 'scripts/qa_editorial_history.py', 'data/topical-map.json', 'docs/topical-editorial-2026-11-17.md'}
+cleanup_paths = set()
+if (ROOT/'data/repository-cleanup-2026-11-18.json').is_file():
+    from repository_cleanup_release import validate as validate_cleanup
+    cleanup_report, cleanup_paths = validate_cleanup()
+    check(not cleanup_report['errors'], 'Exact repository cleanup: ' + '; '.join(cleanup_report['errors']))
 for path in changed_paths:
-    check(path in changed or path in new_code or path == '.github/workflows/site-quality.yml' or path.startswith('data/topical-editorial-2026-11-17/'), path + ': historical evidence, scripts and unrelated assets must remain unchanged')
+    check(path in changed or path in new_code or path in cleanup_paths or path == '.github/workflows/site-quality.yml' or path.startswith('data/topical-editorial-2026-11-17/'), path + ': historical evidence, scripts and unrelated assets must remain unchanged')
 soups = {p: BeautifulSoup(raw, 'lxml') for p, raw in current.items()}
 protected = ['title', 'meta', 'link', 'h1', 'h2', 'h3', 'h4', 'img', 'script', '.article-toc', '.ac-reading-path', '.seo-faq', '.ac-sources']
 for p in changed:
