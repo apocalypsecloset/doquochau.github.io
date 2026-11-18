@@ -9,6 +9,7 @@ import hashlib,json,subprocess
 from pathlib import Path
 from fix_blog_image_seo import baseline
 import search_metadata_release as SEARCH_METADATA
+import original_image_release as ORIGINAL_IMAGES
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'data/blog-image-seo-2026-11-18/release.json'
 
@@ -41,11 +42,12 @@ def predecessor(path,raw):
 def additions():return set(release()['additions']) | ({MANIFEST.relative_to(ROOT).as_posix()} if MANIFEST.exists() else set())
 
 def validate():
- errors=[]
+ errors=ORIGINAL_IMAGES.validate()
  for path,row in release()['files'].items():
   try:predecessor(path,(ROOT/path).read_text(encoding='utf8'))
   except Exception as exc:errors.append(str(exc))
  for path,sha in release()['additions'].items():
+  if path in ORIGINAL_IMAGES.retired():continue
   p=ROOT/path
   if not p.is_file() or file_digest(p)!=sha:errors.append('Unknown image-release addition: '+path)
  return errors

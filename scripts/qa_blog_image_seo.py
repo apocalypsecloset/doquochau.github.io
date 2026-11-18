@@ -154,4 +154,9 @@ def main():
  (DATA/'qa.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  return bool(errors)
 
-if __name__=='__main__':sys.exit(main())
+if __name__=='__main__':
+ import original_image_release as ORIGINAL_IMAGES
+ if ORIGINAL_IMAGES.MANIFEST.exists():
+  from qa_original_images import main as original_images_main
+  sys.exit(original_images_main())
+ sys.exit(main())

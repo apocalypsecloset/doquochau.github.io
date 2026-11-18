@@ -8,6 +8,7 @@ import subprocess
 import sys
 from bs4 import BeautifulSoup
 import search_metadata_release as RELEASE
+import original_image_release as ORIGINAL_IMAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 META = {'description', 'og:title', 'og:description', 'twitter:title', 'twitter:description'}
@@ -76,7 +77,7 @@ def main():
         raw = (ROOT / path).read_text(encoding='utf8')
         old = RELEASE.predecessor(path, raw)
         changed_html += 1
-        check(protected_view(old) == protected_view(raw), path + ': unrelated head/schema/canonical/links/images changed')
+        check(protected_view(old) == protected_view(ORIGINAL_IMAGES.predecessor(path, raw)), path + ': unrelated head/schema/canonical/links/images changed')
         soup = BeautifulSoup(raw, 'html.parser')
         title = soup.title.get_text()
         desc = soup.find('meta', attrs={'name': 'description'})
