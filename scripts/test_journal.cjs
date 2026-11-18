@@ -8,10 +8,33 @@ const root=path.resolve(__dirname,'..');
 const englishRelease=JSON.parse(fs.readFileSync(path.join(root,'docs/link-fix-2026-11-17/batch40-release.json'),'utf8'));
 const journalBytes=fs.readFileSync(path.join(root,'en/blog.html'));
 const journalHash=require('node:crypto').createHash('sha256').update(journalBytes).digest('hex');
+const journalLFHash=require('node:crypto').createHash('sha256').update(journalBytes.toString('utf8').replace(/\r\n/g,'\n')).digest('hex');
 const journalPin=englishRelease.files['en/blog.html'];
-assert.ok([journalPin.after_sha256,journalPin.after_crlf_sha256].includes(journalHash));
+let historicalJournalHash=journalHash;
+const imageReleasePath=path.join(root,'data/blog-image-seo-2026-11-18/html-changes.json');
+if(fs.existsSync(imageReleasePath)){
+ const imagePin=JSON.parse(fs.readFileSync(imageReleasePath,'utf8')).files['en/blog.html'];
+ assert.equal(journalLFHash,imagePin.after,'Only the exact image release successor is accepted');
+ historicalJournalHash=imagePin.before;
+}
+assert.ok([journalPin.after_sha256,journalPin.after_crlf_sha256].includes(historicalJournalHash));
 const englishExpected=englishRelease.english_journal;
 assert.equal(englishExpected.count,442);assert.equal(englishExpected.old_count,438);
+
+test('every English catalogue and featured card has a responsive thumbnail without JavaScript',()=>{
+ const dom=new JSDOM(journalBytes.toString('utf8'));
+ try{
+  const cards=[...dom.window.document.querySelectorAll('#latest .cards a.card,.journal-featured-card')];
+  assert.equal(cards.length,445);
+  for(const card of cards){
+   const images=card.querySelectorAll('img');assert.equal(images.length,1);
+   const image=images[0];assert.ok(image.alt.trim());
+   assert.ok(Number(image.width)>0&&Number(image.height)>0);
+   assert.ok(image.getAttribute('srcset').split(',').length>=2);
+   assert.ok(fs.existsSync(path.join(root,image.getAttribute('src'))));
+  }
+ }finally{dom.window.close();}
+});
 test('journal exposes every article without JavaScript and supports pagination, search and reset',()=>{
  const dom=new JSDOM(fs.readFileSync(path.join(root,'en/blog.html'),'utf8'),{runScripts:'outside-only'});
  try {
