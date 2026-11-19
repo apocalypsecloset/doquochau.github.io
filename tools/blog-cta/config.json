@@ -1,0 +1,118 @@
+{
+  "site": "https://apocalypsecloset.com",
+  "utm": {
+    "source": "blog",
+    "medium_prefix": "cta"
+  },
+  "link_mode": "home",
+  "products": {
+    "silent-chaos": {
+      "name": "Silent Chaos Angel Tee",
+      "price": "From $29.99",
+      "img": "https://imgproxy.fourthwall.dev/6m-viV3upVqxT1pPUwJcAB_KnjZDrhN2v6OGMa_zq7o/w:1920/sm:1/enc/udLnkB1CLTkS8io7/BKw2qAmHByqh7zoh/4rwiBa7Q13dgPkg2/TjJBX_A8b6myISK0/d67_hzHe1BsY_FhD/oM2s-Vs0MpwTSMq5/kijP0WArWE7MMMIY/NcuqQJH19BZ0S0Oi/UBikAjpmpJEoizv9/xn1V5kLoke8RVOj9/jtTTp3svVgo14Gcx/IDJpjwVHN70uNTRE/K651ATKO9tRm1oAm/r_Z6_u_wVksTgu6Z/75zMdSdxm3s.webp",
+      "alt": "Silent Chaos gothic angel graphic tee in black",
+      "home_anchor": "#featured",
+      "fourthwall": "https://shop.apocalypsecloset.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet"
+    },
+    "thorn-heart": {
+      "name": "Thorn Heart Graphic Tee",
+      "price": "From $29.99",
+      "img": "https://imgproxy.fourthwall.dev/XUJgUwA6tofsF-GHsdqUwhOuzsWy5_WdE9LlOiPGfeI/w:1920/sm:1/enc/mqFYpdeldwfdNeGo/1fLoHiFjgulqqQR-/8yBn-JNqqFPFhLnp/30n9WkAiUVLxVwKH/EW8ISRzaL5IbScpc/t6sXdrAvAbr4e9WF/dwB_9383Uu5BO4Qe/t0lnaTOkgzZPSUOC/QN3Sq6KcIQyAVn0M/IKZRS-ZWKHVTjj_8/MFw4iUP7N-Krz3ZF/iRmsP1Y8FuP1PO8E/y4wOs_8euoW32RhC/h5h441_d3IbQOvL6/9r1QEuV92ec.webp",
+      "alt": "Thorn Heart gothic graphic tee in black",
+      "home_anchor": "#shop",
+      "fourthwall": "https://shop.apocalypsecloset.com/products/thorn-heart-gothic-graphic-tee-apocalypse-closet"
+    }
+  },
+  "default_product": "silent-chaos",
+  "product_by_keyword": {
+    "thorn-heart": [
+      "romantic",
+      "rose",
+      "heart",
+      "lace",
+      "dark-feminine",
+      "victorian",
+      "vampire",
+      "goth"
+    ],
+    "silent-chaos": [
+      "grunge",
+      "punk",
+      "angel",
+      "alternative",
+      "streetwear",
+      "baddie",
+      "tee",
+      "graphic"
+    ]
+  },
+  "email_form_action": "",
+  "copy": {
+    "en": {
+      "shop_label": "Apocalypse Closet shop",
+      "top_line": "<b>Drop 001 is live.</b> Two original gothic tees, made to order.",
+      "top_link": "Shop the tees",
+      "mid_kicker": "Original artwork / Drop 001",
+      "mid_text": "Heavyweight cotton, relaxed fit and original artwork. A good place to start a dark wardrobe.",
+      "mid_button": "View the tee",
+      "end_title": "Wear the dark.",
+      "end_text": "Original gothic and grunge graphic tees, designed by us and made to order.",
+      "end_button": "Shop Drop 001",
+      "trust": "Original artwork · Made to order · Secure checkout",
+      "form_label": "Get first access to Drop 002.",
+      "form_placeholder": "your@email.com",
+      "form_button": "Join",
+      "top_sub": "Heavyweight cotton · Relaxed fit · From $29.99"
+    },
+    "vi": {
+      "shop_label": "Cửa hàng Apocalypse Closet",
+      "top_line": "<b>Drop 001 đã mở bán.</b> Áo thun gothic thiết kế gốc, sản xuất theo đơn.",
+      "top_link": "Xem áo",
+      "mid_kicker": "Thiết kế gốc / Drop 001",
+      "mid_text": "Cotton dày, form relaxed, artwork gốc. Một món dễ bắt đầu cho tủ đồ dark.",
+      "mid_button": "Xem áo",
+      "end_title": "Mặc cái tối của bạn.",
+      "end_text": "Áo thun gothic và grunge do Apocalypse Closet thiết kế, sản xuất theo đơn.",
+      "end_button": "Xem Drop 001",
+      "trust": "Thiết kế gốc · Sản xuất theo đơn · Thanh toán an toàn",
+      "form_label": "Nhận thông báo sớm Drop 002.",
+      "form_placeholder": "email@cuaban.com",
+      "form_button": "Đăng ký",
+      "top_sub": "Cotton dày · Form relaxed · Từ $29.99"
+    }
+  },
+  "topic_lines": {
+    "en": [
+      {
+        "keywords": [
+          "goth",
+          "gothic"
+        ],
+        "top_line": "<b>Building a goth wardrobe?</b> Start with an original graphic tee."
+      },
+      {
+        "keywords": [
+          "grunge",
+          "punk"
+        ],
+        "top_line": "<b>Grunge starts with the tee.</b> Original graphics, made to order."
+      },
+      {
+        "keywords": [
+          "black",
+          "dark"
+        ],
+        "top_line": "<b>Dressing in black?</b> Add an original graphic tee."
+      }
+    ],
+    "vi": [
+      {
+        "keywords": [
+          "goth",
+          "gothic"
+        ],
+        "top_line": "<b>Bắt đầu tủ đồ goth?</b> Thử một chiếc áo tee thiết kế gốc."
+      }
+    ]
+  }
+}
