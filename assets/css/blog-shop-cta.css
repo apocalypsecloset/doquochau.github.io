@@ -1,0 +1,106 @@
+/* Apocalypse Closet — blog shop CTAs (top / mid / end)
+   Self-contained: every rule is scoped under .ac-bcta so it can't clash with
+   the compiled article CSS. Tokens mirror pod-shop-home.css. */
+.ac-bcta{
+  --c-black:#0a0a0a;--c-panel:#111;--c-cream:#f0ece4;--c-muted:#aaa49b;
+  --c-red:#c0392b;--c-red-text:#e05444;--c-line:#302a28;
+  box-sizing:border-box;clear:both;margin:32px 0;color:var(--c-cream);
+  font-family:'Space Mono',ui-monospace,monospace;line-height:1.5;
+}
+.ac-bcta *,.ac-bcta *::before,.ac-bcta *::after{box-sizing:border-box}
+.ac-bcta a{text-decoration:none}
+.ac-bcta img{display:block;width:100%;height:100%;object-fit:cover;margin:0;border:0;filter:none;opacity:1}
+.ac-bcta p{margin:0;line-height:1.5}
+
+/* shared button */
+.ac-bcta a.ac-bcta__btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:46px;padding:12px 20px;background:var(--c-red);color:#fff;
+  border:1px solid var(--c-red);font:700 11px/1.3 'Space Mono',monospace;
+  letter-spacing:.12em;text-transform:uppercase;transition:background .18s,border-color .18s;
+}
+.ac-bcta a.ac-bcta__btn:hover{background:#a52f23;border-color:#a52f23}
+.ac-bcta a.ac-bcta__btn--ghost{background:transparent;color:var(--c-cream);border-color:var(--c-line)}
+.ac-bcta a.ac-bcta__btn--ghost:hover{background:transparent;border-color:var(--c-cream)}
+.ac-bcta a:focus-visible,.ac-bcta input:focus-visible,.ac-bcta button:focus-visible{outline:2px solid var(--c-cream);outline-offset:3px}
+
+/* ---------- 1. TOP: compact banner with the two tees ---------- */
+.ac-bcta--top{
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px 18px;
+  margin:22px 0;padding:12px 14px;background:var(--c-panel);
+  border:1px solid var(--c-line);border-left:3px solid var(--c-red);
+}
+.ac-bcta--top .ac-bcta__thumbs{display:flex;flex:none}
+.ac-bcta--top .ac-bcta__thumbs img{width:60px;height:80px;border:1px solid var(--c-line);background:#1a1a1a}
+.ac-bcta--top .ac-bcta__thumbs img+img{margin-left:-16px;box-shadow:-6px 0 0 var(--c-panel)}
+.ac-bcta--top .ac-bcta__line{font-size:13px;letter-spacing:.02em;color:var(--c-cream)}
+.ac-bcta--top .ac-bcta__line b{color:var(--c-red-text);font-weight:700}
+.ac-bcta--top .ac-bcta__sub{margin-top:3px;font-size:11px;color:var(--c-muted);letter-spacing:.04em}
+
+/* ---------- 2. MID: contextual product card ---------- */
+.ac-bcta--mid{
+  display:grid;grid-template-columns:clamp(104px,26%,168px) 1fr;
+  background:var(--c-panel);border:1px solid var(--c-line);
+}
+.ac-bcta--mid .ac-bcta__media{display:block;aspect-ratio:3/4;background:#1a1a1a;overflow:hidden}
+.ac-bcta--mid .ac-bcta__body{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:18px 20px}
+.ac-bcta--mid .ac-bcta__kicker{color:var(--c-red-text);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.ac-bcta--mid .ac-bcta__title{font:600 clamp(22px,3.4vw,30px)/1.1 'Oswald',Impact,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:var(--c-cream)}
+.ac-bcta--mid .ac-bcta__text{color:var(--c-muted);font-size:12px;max-width:46ch}
+.ac-bcta--mid .ac-bcta__meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:4px}
+.ac-bcta--mid .ac-bcta__price{font-weight:700;font-size:13px;letter-spacing:.06em}
+
+/* ---------- 3. END: full shop block ---------- */
+.ac-bcta--end{
+  margin:44px 0;padding:clamp(22px,4vw,38px);background:var(--c-black);
+  border:1px solid var(--c-line);border-top:3px solid var(--c-red);
+}
+.ac-bcta--end .ac-bcta__head{display:flex;flex-direction:column;gap:8px;margin-bottom:22px;max-width:56ch}
+.ac-bcta--end .ac-bcta__title{font:600 clamp(28px,5vw,44px)/1.02 'Oswald',Impact,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:var(--c-cream)}
+.ac-bcta--end .ac-bcta__text{color:var(--c-muted);font-size:12.5px}
+.ac-bcta--end .ac-bcta__tiles{display:grid;grid-template-columns:repeat(2,minmax(0,250px));gap:14px}
+.ac-bcta--end .ac-bcta__tile{display:flex;flex-direction:column;background:var(--c-panel);border:1px solid var(--c-line);color:var(--c-cream);transition:border-color .18s}
+.ac-bcta--end .ac-bcta__tile:hover{border-color:var(--c-red)}
+.ac-bcta--end .ac-bcta__tile-img{aspect-ratio:4/5;overflow:hidden;background:#1a1a1a}
+.ac-bcta--end .ac-bcta__tile-body{display:flex;flex-direction:column;gap:2px;padding:12px 14px}
+.ac-bcta--end .ac-bcta__tile-name{font:600 18px/1.15 'Oswald',Impact,sans-serif;letter-spacing:.03em;text-transform:uppercase}
+.ac-bcta--end .ac-bcta__tile-price{color:var(--c-muted);font-size:12px}
+.ac-bcta--end .ac-bcta__actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:20px}
+.ac-bcta--end .ac-bcta__trust{color:var(--c-muted);font-size:11px;letter-spacing:.06em}
+.ac-bcta--end .ac-bcta__form{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding-top:22px;border-top:1px solid var(--c-line)}
+.ac-bcta--end .ac-bcta__form label{flex:1 1 100%;font-size:12px;color:var(--c-cream)}
+.ac-bcta--end .ac-bcta__form input[type=email]{
+  flex:1 1 220px;min-height:46px;padding:0 14px;background:var(--c-panel);color:var(--c-cream);
+  border:1px solid var(--c-line);border-radius:0;font:400 13px 'Space Mono',monospace;
+}
+.ac-bcta--end .ac-bcta__form button{
+  min-height:46px;padding:0 20px;background:transparent;color:var(--c-cream);cursor:pointer;
+  border:1px solid var(--c-cream);border-radius:0;font:700 11px 'Space Mono',monospace;letter-spacing:.12em;text-transform:uppercase;
+}
+.ac-bcta--end .ac-bcta__form button:hover{background:var(--c-cream);color:var(--c-black)}
+.ac-bcta__lang{margin-top:14px;font-size:11px;color:var(--c-muted)}
+.ac-bcta__lang a{color:var(--c-cream);border-bottom:1px solid var(--c-line)}
+
+/* END block: two columns on desktop (tiles left, copy + button right) */
+@media (min-width:768px){
+  .ac-bcta--end{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);column-gap:clamp(28px,5vw,56px);
+    grid-template-areas:"tiles head" "tiles actions" "tiles form" "tiles lang";grid-template-rows:auto auto auto 1fr}
+  .ac-bcta--end .ac-bcta__tiles{grid-area:tiles;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ac-bcta--end .ac-bcta__head{grid-area:head;margin-bottom:0;align-self:start}
+  .ac-bcta--end .ac-bcta__actions{grid-area:actions;flex-direction:column;align-items:flex-start;align-self:start}
+  .ac-bcta--end .ac-bcta__form{grid-area:form;align-self:start}
+  .ac-bcta--end .ac-bcta__lang{grid-area:lang;align-self:end}
+}
+
+@media (max-width:560px){
+  .ac-bcta--top{grid-template-columns:auto 1fr;gap:10px 14px}
+  .ac-bcta--top .ac-bcta__thumbs img{width:48px;height:64px}
+  .ac-bcta--top a.ac-bcta__btn{grid-column:1/-1}
+  .ac-bcta--top .ac-bcta__sub{display:none}
+  .ac-bcta--mid{grid-template-columns:96px 1fr}
+  .ac-bcta--mid .ac-bcta__body{padding:14px}
+  .ac-bcta--mid .ac-bcta__text{display:none}
+  .ac-bcta--end .ac-bcta__tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .ac-bcta a.ac-bcta__btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.ac-bcta *{transition:none!important}}
