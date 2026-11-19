@@ -540,3 +540,5 @@ input,button,select{font:inherit}
 
 html:has(dialog[open]){overflow:hidden}
 @media(max-width:590px){.ac-size-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.ac-size-choice{max-width:none}}
+
+.ac-hero-buy-actions[hidden],a[href="#lookbook"][hidden]{display:none!important}

@@ -95,7 +95,7 @@ function showLightbox(index){
 function renderLookbook(product,chosenColor,chosenVariant){
   if(!lookbook || !lookbookGallery) return;
   const urls=model.colorPhotos(product,chosenColor||model.colors(product)[0],chosenVariant);
-  if(urls.length<2){lookbook.hidden=true;return;}
+  if(urls.length<2){lookbook.hidden=true;document.querySelectorAll('a[href="#lookbook"]').forEach(a=>a.hidden=true);return;}
   // Use distinct images from different positions in the product media sequence.
   // This is one tee, never mislabel these as separate products.
   const preferred=urls.length>=12?[1,4,8,12,16]:urls.length>=7?[1,3,5,6]:[0,1,2,3,4];
@@ -117,7 +117,7 @@ function renderLookbook(product,chosenColor,chosenVariant){
     button.addEventListener('click',()=>showLightbox(index));
     lookbookGallery.append(button);
   });
-  lookbook.hidden=false;
+  lookbook.hidden=false;document.querySelectorAll('a[href="#lookbook"]').forEach(a=>a.hidden=false);
 }
 lightbox?.querySelector('#ac-lightbox-close')?.addEventListener('click',()=>lightbox.close());
 lightbox?.querySelector('#ac-lightbox-prev')?.addEventListener('click',()=>showLightbox(lightboxIndex-1));
@@ -282,6 +282,9 @@ function paintCatalog(products){
 function paintHero(product){
   if(!product || !heroSize || !heroColor || !heroAdd)return;
   featuredProduct=product;
+  const ready=variants(product).length>0;
+  document.querySelector('.ac-hero-buy-actions').hidden=!ready;
+  if(!ready)return;
   const information=document.querySelector('#ac-product-information');
   if(information){
     information.replaceChildren();
