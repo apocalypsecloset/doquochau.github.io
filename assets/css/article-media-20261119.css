@@ -1,0 +1,4 @@
+/* Article heroes and added illustrations preserve the complete source image. */
+.apcl-standard-cover,.article-body-illustration{width:100%;max-width:640px;margin:28px auto 40px;box-sizing:border-box}
+.apcl-standard-cover img,.article-body-illustration img{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain}
+.article-body-illustration figcaption{margin-top:10px;font-size:14px;line-height:1.6}
