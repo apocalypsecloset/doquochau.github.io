@@ -542,3 +542,16 @@ html:has(dialog[open]){overflow:hidden}
 @media(max-width:590px){.ac-size-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.ac-size-choice{max-width:none}}
 
 .ac-hero-buy-actions[hidden],a[href="#lookbook"][hidden]{display:none!important}
+
+/* Part A additions: reuse the existing brand styles; layout only. */
+.ac-proof-views{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:center;margin-top:34px}
+.ac-proof-views figure{margin:0;min-width:0}
+.ac-proof-views img{display:block;width:100%;height:300px;object-fit:contain}
+.ac-proof-views figcaption,.ac-proof-caption{font:inherit;line-height:1.7;color:var(--muted)}
+.ac-proof-views figcaption{margin-top:12px}
+.ac-proof-caption a,.ac-feature-trust a,.ac-direct-secondary{text-underline-offset:4px}
+.ac-hero-shop-links .ac-direct-secondary{background:none;border:0;padding:0;text-transform:none;text-decoration:underline}
+.ac-final-action{margin:24px 0}
+.ac-cta-strip small{display:block}
+@media(max-width:900px){.ac-proof-views{grid-template-columns:1fr 1fr}.ac-proof-caption{grid-column:1/-1}}
+@media(max-width:590px){.ac-proof-views{gap:16px}.ac-proof-views img{height:210px}.ac-proof-views figcaption{font-size:12px}.ac-final-action .ac-btn{max-width:100%;white-space:normal}}

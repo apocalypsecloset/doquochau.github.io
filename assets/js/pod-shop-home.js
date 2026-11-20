@@ -45,7 +45,28 @@ function track(name,payload){
 }
 function say(element, value){ if(element) element.textContent=value; }
 function money(amount,currency){const n=Number(amount);return Number.isFinite(n) ? new Intl.NumberFormat('en-US',{style:'currency',currency:currency||'USD'}).format(n):'Price at checkout';}
+function purchaseRoute(ready){
+  const direct=document.querySelector('#ac-hero-direct');
+  const final=document.querySelector('#ac-final-buy');
+  if(direct){
+    direct.classList.toggle('ac-btn',!ready);
+    direct.classList.toggle('ac-direct-secondary',ready);
+    say(direct,ready?'Prefer Fourthwall? View this tee ↗':'SHOP SILENT CHAOS ON FOURTHWALL ↗');
+  }
+  if(final){
+    final.href=ready?'#choose-size':SHOP+'/products/'+FEATURED_SLUG;
+    say(final,ready?'CHOOSE YOUR SIZE ↗':'SHOP SILENT CHAOS ON FOURTHWALL ↗');
+    final.toggleAttribute('data-return-to-buy',ready);
+  }
+}
+document.addEventListener('click',event=>{
+  const link=event.target.closest('[data-return-to-buy]');
+  if(!link)return;
+  const choice=document.querySelector('.ac-hero-buy-actions input[type="radio"]:checked') || document.querySelector('.ac-hero-buy-actions input[type="radio"]');
+  if(choice){requestAnimationFrame(()=>choice.focus({preventScroll:true}));}
+});
 function errorFallback(message){
+  purchaseRoute(false);
   say(status,message || 'Products are temporarily unavailable. You can shop securely on Fourthwall.');
   // Preserve the verified static catalog when the live API cannot connect.
   if(grid.querySelector('.ac-static-product')) return;
@@ -284,9 +305,10 @@ function paintHero(product){
   featuredProduct=product;
   const ready=variants(product).length>0;
   document.querySelector('.ac-hero-buy-actions').hidden=!ready;
+  purchaseRoute(ready);
   if(!ready)return;
   const information=document.querySelector('#ac-product-information');
-  if(information){
+  if(information && !information.hasAttribute('data-verified-details')){
     information.replaceChildren();
     (Array.isArray(product.additionalInformation)?product.additionalInformation:[]).forEach(info=>{
       const panel=el('div','ac-product-information-panel');panel.append(el('h3','',info.title||'Product details'));
