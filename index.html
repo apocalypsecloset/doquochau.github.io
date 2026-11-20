@@ -46,6 +46,40 @@
 <script id="ac-product-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Product","@id":"https://apocalypsecloset.com/#product-thorn-heart-gothic-graphic-tee-apocalypse-closet","name":"Thorn Heart Gothic Graphic Tee | Apocalypse Closet","description":"Original Thorn Heart gothic graphic tee, available through the Apocalypse Closet Shop.","url":"https://shop.apocalypsecloset.com/products/thorn-heart-gothic-graphic-tee-apocalypse-closet","image":["https://imgproxy.fourthwall.dev/XUJgUwA6tofsF-GHsdqUwhOuzsWy5_WdE9LlOiPGfeI/w:1920/sm:1/enc/mqFYpdeldwfdNeGo/1fLoHiFjgulqqQR-/8yBn-JNqqFPFhLnp/30n9WkAiUVLxVwKH/EW8ISRzaL5IbScpc/t6sXdrAvAbr4e9WF/dwB_9383Uu5BO4Qe/t0lnaTOkgzZPSUOC/QN3Sq6KcIQyAVn0M/IKZRS-ZWKHVTjj_8/MFw4iUP7N-Krz3ZF/iRmsP1Y8FuP1PO8E/y4wOs_8euoW32RhC/h5h441_d3IbQOvL6/9r1QEuV92ec.webp"],"brand":{"@id":"https://apocalypsecloset.com/#organization"},"color":"Black","size":["S","M","L","XL","2XL","3XL","4XL"],"offers":{"@type":"AggregateOffer","url":"https://shop.apocalypsecloset.com/products/thorn-heart-gothic-graphic-tee-apocalypse-closet","priceCurrency":"USD","lowPrice":"29.99","highPrice":"35.99","offerCount":7,"availability":"https://schema.org/InStock"}},{"@type":"Product","@id":"https://apocalypsecloset.com/#product-silent-chaos-gothic-angel-graphic-tee-apocalypse-closet","name":"Silent Chaos Gothic Angel Graphic Tee | Apocalypse Closet","description":"Original gothic angel graphic tee, made to order. Heavyweight ring-spun cotton with a relaxed fit.","url":"https://shop.apocalypsecloset.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet","image":["https://imgproxy.fourthwall.dev/6m-viV3upVqxT1pPUwJcAB_KnjZDrhN2v6OGMa_zq7o/w:1920/sm:1/enc/udLnkB1CLTkS8io7/BKw2qAmHByqh7zoh/4rwiBa7Q13dgPkg2/TjJBX_A8b6myISK0/d67_hzHe1BsY_FhD/oM2s-Vs0MpwTSMq5/kijP0WArWE7MMMIY/NcuqQJH19BZ0S0Oi/UBikAjpmpJEoizv9/xn1V5kLoke8RVOj9/jtTTp3svVgo14Gcx/IDJpjwVHN70uNTRE/K651ATKO9tRm1oAm/r_Z6_u_wVksTgu6Z/75zMdSdxm3s.webp"],"brand":{"@id":"https://apocalypsecloset.com/#organization"},"color":"Black","size":["S","M","L","XL","2XL","3XL","4XL"],"offers":{"@type":"AggregateOffer","url":"https://shop.apocalypsecloset.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet","priceCurrency":"USD","lowPrice":"29.99","highPrice":"35.99","offerCount":7,"availability":"https://schema.org/InStock"}}]}</script>
 <link rel="preconnect" href="https://imgproxy.fourthwall.dev">
 <link rel="preconnect" href="https://apocalypse-pod-api.doquochau92.workers.dev" crossorigin>
+<style id="ac-motion-style">
+/* Premium / rigid material. Core content stays visible without JavaScript. */
+:root{--ac-motion-settle:cubic-bezier(.4,0,.2,1)}
+.ac-btn,.ac-product-add,.ac-header-cart,.ac-product-image img,.ac-lookbook-shot img{
+ transition-property:transform,opacity;transition-duration:160ms;transition-timing-function:var(--ac-motion-settle)
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .ac-btn:hover,.ac-product-add:enabled:hover{transform:translateY(-1px);transition-duration:120ms}
+}
+@media(prefers-reduced-motion:no-preference){
+ .ac-btn:active,.ac-product-add:enabled:active{transform:translateY(0) scale(.985);transition-duration:120ms}
+ .ac-motion-ready .ac-store-hero-visual::before{animation:ac-frame-arrive 540ms var(--ac-motion-settle) 80ms both}
+ .ac-motion-ready .ac-store-hero-visual::after{animation:ac-frame-arrive 500ms var(--ac-motion-settle) 120ms both}
+ .ac-motion-pending{animation:ac-pending 800ms var(--ac-motion-settle) infinite alternate}
+}
+@keyframes ac-frame-arrive{from{transform:scale(1.008);opacity:.85}to{transform:scale(1);opacity:1}}
+@keyframes ac-pending{from{opacity:.7}to{opacity:1}}
+.ac-motion-dialog::backdrop{animation:ac-backdrop-enter 360ms var(--ac-motion-settle)}
+.ac-motion-dialog.ac-motion-closing::backdrop{animation:ac-backdrop-exit 240ms cubic-bezier(.3,0,1,1) forwards}
+@keyframes ac-backdrop-enter{from{opacity:0}to{opacity:1}}
+@keyframes ac-backdrop-exit{from{opacity:1}to{opacity:0}}
+.ac-motion-ambient{position:absolute;inset:-4px;z-index:0;pointer-events:none;background-repeat:repeat;will-change:transform,opacity}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .ac-btn,.ac-product-add,.ac-header-cart,.ac-product-image img,.ac-lookbook-shot img{transition:none;transform:none}
+ .ac-motion-ready .ac-store-hero-visual::before,.ac-motion-ready .ac-store-hero-visual::after,.ac-motion-pending,.ac-motion-dialog::backdrop{animation:none}
+ .ac-motion-ambient{display:none}
+}
+html[data-ac-motion="reduced"]{scroll-behavior:auto}
+html[data-ac-motion="reduced"] .ac-btn,html[data-ac-motion="reduced"] .ac-product-add,html[data-ac-motion="reduced"] .ac-header-cart,html[data-ac-motion="reduced"] .ac-product-image img,html[data-ac-motion="reduced"] .ac-lookbook-shot img{transition:none;transform:none}
+html[data-ac-motion="reduced"] .ac-store-hero-visual::before,html[data-ac-motion="reduced"] .ac-store-hero-visual::after,html[data-ac-motion="reduced"] .ac-motion-pending,html[data-ac-motion="reduced"] dialog::backdrop{animation:none}
+html[data-ac-motion="reduced"] .ac-motion-ambient{display:none}
+
+</style>
 </head>
 <body class="ac-pod-home">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -240,6 +274,197 @@ if (location.hostname === 'apocalypsecloset.com' || location.hostname === 'www.a
   analytics.src = '/assets/js/analytics-enhancements.min.js?v=20261116privacy';
   document.head.appendChild(analytics);
 }
+</script>
+<script id="ac-motion-script">
+requestAnimationFrame(()=>requestAnimationFrame(()=>{
+/* Presentation layer only: existing storefront code, API and URLs are unchanged. */
+(function(){
+ 'use strict';
+ if(!window.matchMedia)return;
+ const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const demoReduced=new URLSearchParams(location.search).get('motion')==='reduce';
+ const root=document.documentElement;
+ const reduced=()=>preference.matches||demoReduced;
+ const settle='cubic-bezier(.4,0,.2,1)';
+ const leave='cubic-bezier(.3,0,1,1)';
+ const active=new Set();
+ const perElement=new WeakMap();
+ const closing=new Map();
+ const returnFocus=new WeakMap();
+ let ambient=null;
+ let ambientObserver=null;
+ let bagAction=false;
+ let lastBag=document.querySelector('#ac-cart-button')?.textContent||'';
+ const statusTexts=new WeakMap();
+ const observed=new WeakSet();
+ const revealed=new WeakSet();
+ const stopElement=element=>{perElement.get(element)?.forEach(animation=>animation.cancel());};
+ function animate(element,frames,duration=360,options={}){
+  if(!element||reduced()||typeof element.animate!=='function')return null;
+  const animation=element.animate(frames,{duration,easing:settle,...options});
+  active.add(animation);
+  if(!perElement.has(element))perElement.set(element,new Set());
+  perElement.get(element).add(animation);
+  const cleanup=()=>{active.delete(animation);perElement.get(element)?.delete(animation);};
+  animation.finished.then(cleanup,cleanup);
+  return animation;
+ }
+ function stopAmbient(){
+  if(ambient){stopElement(ambient);ambient.remove();ambient=null;}
+  ambientObserver?.disconnect();ambientObserver=null;
+ }
+ function cancelClosing(dialog){
+  const job=closing.get(dialog);if(!job)return;
+  closing.delete(dialog);clearTimeout(job.timer);job.animation?.cancel();
+  dialog.classList.remove('ac-motion-closing');
+ }
+ function restoreFocus(dialog){
+  if(dialog.open||document.querySelector('dialog[open]'))return;
+  const opener=returnFocus.get(dialog);
+  if(opener?.isConnected&&!opener.disabled)opener.focus({preventScroll:true});
+ }
+ function enterDialog(dialog){
+  cancelClosing(dialog);stopElement(dialog);
+  if(reduced())return;
+  dialog.classList.add('ac-motion-dialog');
+  const offset=dialog.id==='ac-cart-dialog'?12:dialog.id==='ac-size-dialog'?8:6;
+  animate(dialog,[{opacity:0,transform:'translateY('+offset+'px)'},{opacity:1,transform:'translateY(0)'}],dialog.id==='ac-image-lightbox'?300:360);
+ }
+ function closeDialog(dialog,returnHash){
+  if(!dialog.open)return;
+  if(reduced()||typeof dialog.animate!=='function'){
+   dialog.close();restoreFocus(dialog);if(returnHash)location.hash=returnHash;return;
+  }
+  if(closing.has(dialog))return;
+  stopElement(dialog);dialog.classList.add('ac-motion-closing');
+  const animation=animate(dialog,[{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(8px)'}],240,{easing:leave,fill:'forwards'});
+  const job={animation,timer:null};closing.set(dialog,job);
+  const finish=()=>{
+   if(closing.get(dialog)!==job)return;
+   closing.delete(dialog);clearTimeout(job.timer);
+   if(dialog.open)dialog.close();
+   restoreFocus(dialog);
+   animation?.cancel();dialog.classList.remove('ac-motion-closing','ac-motion-dialog');
+   if(returnHash)location.hash=returnHash;
+  };
+  job.finish=finish;
+  job.timer=setTimeout(finish,320);
+  animation?.finished.then(finish,()=>{});
+ }
+ const dialogs=Array.from(document.querySelectorAll('#ac-cart-dialog,#ac-size-dialog,#ac-image-lightbox'));
+ dialogs.forEach(dialog=>{
+  new MutationObserver(records=>{
+   // Coalesce repeated attribute mutations; a new native open cancels a prior exit.
+   if(dialog.open){if(records.some(record=>record.oldValue===null))enterDialog(dialog);}
+   else{cancelClosing(dialog);stopElement(dialog);dialog.classList.remove('ac-motion-dialog','ac-motion-closing');}
+  }).observe(dialog,{attributes:true,attributeFilter:['open'],attributeOldValue:true});
+  dialog.addEventListener('cancel',event=>{if(!reduced()){event.preventDefault();closeDialog(dialog);}});
+  dialog.addEventListener('close',()=>{if(dialog.open)return;cancelClosing(dialog);stopElement(dialog);dialog.classList.remove('ac-motion-dialog','ac-motion-closing');restoreFocus(dialog);});
+ });
+ const closeSelectors='#ac-cart-close,#ac-size-close,#ac-lightbox-close,#ac-continue-shopping';
+ document.addEventListener('click',event=>{
+  const target=event.target instanceof Element?event.target:null;if(!target)return;
+  const action=target.closest('#ac-hero-add,.ac-product-add,.ac-cart-quantity button');
+  if(action&&!action.disabled){
+   bagAction=true;
+   if(action.matches('#ac-hero-add,.ac-product-add'))returnFocus.set(document.querySelector('#ac-cart-dialog'),action);
+  }
+  const opener=target.closest('#ac-cart-button,[data-size-guide],.ac-lookbook-shot');
+  if(opener){
+   const dialog=document.querySelector(opener.matches('#ac-cart-button')?'#ac-cart-dialog':opener.matches('[data-size-guide]')?'#ac-size-dialog':'#ac-image-lightbox');
+   if(dialog){returnFocus.set(dialog,opener);if(closing.has(dialog))enterDialog(dialog);}
+  }
+  if(reduced())return;
+  const button=target.closest(closeSelectors);
+  const backdrop=target.tagName==='DIALOG'&&dialogs.includes(target);
+  const dialog=button?.closest('dialog')||(backdrop?target:null);
+  if(dialog?.open){
+   event.preventDefault();event.stopImmediatePropagation();
+   closeDialog(dialog,button?.id==='ac-continue-shopping'?'shop':null);
+  }
+ },true);
+ document.addEventListener('toggle',event=>{
+  const details=event.target;
+  if(!(details instanceof HTMLDetailsElement)||!details.closest('.ac-size-section,.ac-order-faq'))return;
+  details.querySelectorAll(':scope > p,:scope > .ac-size-content').forEach(element=>{
+   stopElement(element);
+   if(details.open)animate(element,[{opacity:.85,transform:'translateY(4px)'},{opacity:1,transform:'translateY(0)'}],220);
+  });
+ },true);
+ let entranceObserver=null;
+ if('IntersectionObserver' in window){
+  entranceObserver=new IntersectionObserver(entries=>{
+   let cardIndex=0;
+   entries.forEach(entry=>{
+    if(!entry.isIntersecting||revealed.has(entry.target))return;
+    const element=entry.target;revealed.add(element);entranceObserver.unobserve(element);
+    const tagline=element.matches('.ac-cta-strip > p');
+    const card=element.matches('.ac-product-card');
+    animate(element,[{opacity:.9,transform:'translateY('+(tagline?6:10)+'px)'},{opacity:1,transform:'translateY(0)'}],tagline?600:360,{delay:card?(cardIndex++%2)*60:0});
+   });
+  },{rootMargin:'40px 0px',threshold:.05});
+ }
+ function observeEntrances(){
+  document.querySelectorAll('#ac-product-grid .ac-product-card,.ac-style-drop .ac-guide-grid,.ac-cta-strip > p,.ac-product-information-panel').forEach(element=>{
+   if(observed.has(element))return;observed.add(element);
+   const rect=element.getBoundingClientRect();
+   // Never replay or delay content already painted in the initial viewport.
+   if(reduced()||(rect.top<innerHeight&&rect.bottom>0)){revealed.add(element);return;}
+   entranceObserver?.observe(element);
+  });
+ }
+ function updateFeedback(){
+  document.querySelectorAll('.ac-hero-buy-status,.ac-product-status,.ac-cart-status').forEach(element=>{
+   const text=element.textContent;if(statusTexts.get(element)===text)return;
+   const initial=!statusTexts.has(element);statusTexts.set(element,text);
+   const pending=/^(ADDING|UPDATING BAG|LOADING BAG)/.test(text.trim());
+   element.classList.toggle('ac-motion-pending',pending&&!reduced());
+   if(!initial&&/^ADDED TO BAG/.test(text.trim()))animate(element,[{opacity:.85,transform:'translateY(2px)'},{opacity:1,transform:'translateY(0)'}],160);
+  });
+  const bag=document.querySelector('#ac-cart-button');
+  if(bag&&bag.textContent!==lastBag){
+   if(bagAction)animate(bag,[{transform:'translateY(0)'},{transform:'translateY(-2px)'},{transform:'translateY(0)'}],180);
+   lastBag=bag.textContent;bagAction=false;
+  }
+ }
+ function motionPreference(){
+  root.dataset.acMotion=reduced()?'reduced':'premium';
+  if(reduced()){
+   active.forEach(animation=>animation.cancel());
+   Array.from(closing.values()).forEach(job=>job.finish());
+   stopAmbient();entranceObserver?.disconnect();
+   document.querySelectorAll('.ac-motion-pending').forEach(element=>element.classList.remove('ac-motion-pending'));
+  }
+ }
+ preference.addEventListener?.('change',motionPreference);
+ motionPreference();observeEntrances();updateFeedback();
+ new MutationObserver(()=>{observeEntrances();updateFeedback();}).observe(document.body,{childList:true,subtree:true,characterData:true});
+ if(!reduced()){
+  root.classList.add('ac-motion-ready');
+  animate(document.querySelector('.ac-store-hero-mark'),[{opacity:.85,transform:'translateY(4px)'},{opacity:1,transform:'translateY(0)'}],280);
+ }
+ async function startAmbient(){
+  if(reduced()||innerWidth<=900||navigator.connection?.saveData||document.hidden)return;
+  const visual=document.querySelector('#ac-store-hero-visual');if(!visual)return;
+  try{await visual.querySelector('img')?.decode();}catch(_){}
+  const idle=window.requestIdleCallback||(callback=>setTimeout(callback,100));
+  idle(()=>{
+   const rect=visual.getBoundingClientRect();
+   if(reduced()||document.hidden||innerWidth<=900||rect.bottom<=0||rect.top>=innerHeight)return;
+   ambient=document.createElement('span');ambient.className='ac-motion-ambient';ambient.setAttribute('aria-hidden','true');
+   ambient.style.backgroundImage=getComputedStyle(document.body,'::before').backgroundImage;
+   visual.prepend(ambient);
+   const layer=ambient;
+   const animation=animate(layer,[{opacity:0,transform:'translate(-1.5px,-1px) scale(1.015)'},{opacity:.16,offset:.3},{opacity:.16,offset:.7},{opacity:0,transform:'translate(1.5px,1px) scale(1.015)'}],4000,{easing:'cubic-bezier(.45,.05,.55,.95)'});
+   animation?.finished.then(()=>{if(ambient===layer)stopAmbient();},()=>{});
+   if('IntersectionObserver' in window){ambientObserver=new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)stopAmbient();});ambientObserver.observe(visual);}
+  });
+ }
+ if(document.readyState==='complete')startAmbient();else window.addEventListener('load',startAmbient,{once:true});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAmbient();});
+})();
+
+}));
 </script>
 </body>
 </html>
