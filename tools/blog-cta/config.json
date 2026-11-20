@@ -4,7 +4,7 @@
     "source": "blog",
     "medium_prefix": "cta"
   },
-  "link_mode": "home",
+  "link_mode": "product",
   "products": {
     "silent-chaos": {
       "name": "Silent Chaos Angel Tee",
