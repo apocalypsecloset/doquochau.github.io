@@ -50,7 +50,7 @@ def pick_product(cfg, slug, title):
 def url(cfg, pid, medium, slug, anchor=None):
     utm = f"utm_source={cfg['utm']['source']}&utm_medium=cta-{medium}&utm_campaign={slug}"
     p = cfg["products"][pid]
-    if cfg.get("link_mode") == "fourthwall":
+    if cfg.get("link_mode") == "fourthwall" or (cfg.get("link_mode") == "product" and anchor is None):
         return f"{p['fourthwall']}?{utm}"
     return f"/?{utm}{anchor or p['home_anchor']}"
 
@@ -101,6 +101,8 @@ def process(path, lang, cfg, tpl, opts):
         return html, {"removed": True}
 
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
+    if not intro and re.search(r'<article\b', html):
+        intro = re.search(r'<p\b[^>]*class="[^"]*\bintro\b[^"]*"[^>]*>.*?</p>', html, re.S)
     if not intro or "</article>" not in html:
         return None, {"skip": "no intro section / no </article> (hub or non-standard page)"}
 
@@ -144,6 +146,8 @@ def process(path, lang, cfg, tpl, opts):
         html = re.sub(r'<a\b[^>]*ac-blog-app-box[^>]*>.*?</a>', "", html, count=1, flags=re.S)
 
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
+    if not intro:
+        intro = re.search(r'<p\b[^>]*class="[^"]*\bintro\b[^"]*"[^>]*>.*?</p>', html, re.S)
     pos_top = intro.end()
     pos_mid = find_mid(html, pos_top)
     rp = html.find('class="ac-reading-path"')
