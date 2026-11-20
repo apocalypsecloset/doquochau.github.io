@@ -51,11 +51,11 @@ function purchaseRoute(ready){
   if(direct){
     direct.classList.toggle('ac-btn',!ready);
     direct.classList.toggle('ac-direct-secondary',ready);
-    say(direct,ready?'Prefer Fourthwall? View this tee ↗':'SHOP SILENT CHAOS ON FOURTHWALL ↗');
+    say(direct,ready?'View product ↗':'BUY NOW ↗');
   }
   if(final){
     final.href=ready?'#choose-size':SHOP+'/products/'+FEATURED_SLUG;
-    say(final,ready?'CHOOSE YOUR SIZE ↗':'SHOP SILENT CHAOS ON FOURTHWALL ↗');
+    say(final,ready?'CHOOSE YOUR SIZE ↗':'BUY NOW ↗');
     final.toggleAttribute('data-return-to-buy',ready);
   }
 }
@@ -67,13 +67,13 @@ document.addEventListener('click',event=>{
 });
 function errorFallback(message){
   purchaseRoute(false);
-  say(status,message || 'Products are temporarily unavailable. You can shop securely on Fourthwall.');
+  say(status,message || 'Products are temporarily unavailable. Visit the Shop to use secure checkout.');
   // Preserve the verified static catalog when the live API cannot connect.
   if(grid.querySelector('.ac-static-product')) return;
   grid.replaceChildren();
   const box=document.createElement('div');box.className='ac-collection-fallback';
   const h=document.createElement('strong');h.textContent='SILENT CHAOS — GOTHIC ANGEL TEE';
-  const p=document.createElement('p');p.textContent='Shop the original drop directly on our Fourthwall storefront while our live catalog reconnects.';
+  const p=document.createElement('p');p.textContent='Shop the original drop while our live catalog reconnects.';
   const a=document.createElement('a');a.className='ac-btn';a.href=SHOP+'/products/'+FEATURED_SLUG;a.textContent='VIEW THE DROP ↗';a.rel='noopener noreferrer';
   box.append(h,p,a);grid.appendChild(box);
 }
@@ -255,7 +255,7 @@ function createCard(p,index){
   const media=el('div','ac-product-media');
   const photo=el('a','ac-product-image');
   photo.href=SHOP+'/products/'+encodeURIComponent(p.slug);
-  photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' on Fourthwall');media.append(photo);
+  photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' in the Shop');media.append(photo);
   const body=el('div','ac-product-body');
   body.append(el('p','ac-product-type','APOCALYPSE CLOSET / ORIGINAL'));
   const title=el('h3','ac-product-title');const link=el('a','',shortName(p.name));link.href=photo.href;title.append(link);body.append(title);
@@ -268,7 +268,7 @@ function createCard(p,index){
   const size=el('select','ac-product-size');size.setAttribute('aria-label','Choose size for '+p.name);sizeLabel.append(size);
   controls.append(colorLabel,sizeLabel);body.append(controls);
   const buy=el('button','ac-product-add','ADD TO BAG');buy.type='button';
-  const note=el('p','ac-product-status','Choose color and size · Checkout by Fourthwall');note.setAttribute('role','status');
+  const note=el('p','ac-product-status','Choose color and size · Secure checkout');note.setAttribute('role','status');
   fillColors(color,p);fillSizes(size,p,color.value);
   colorLabel.hidden=color.options.length===1;
   function refresh(colorChanged){
@@ -344,7 +344,7 @@ function paintHero(product){
     heroAdd.disabled=!v;
     syncSizeChoices(heroSize);
     say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
-    say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product on Fourthwall.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
+    say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product in the Shop.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
     renderLookbook(product,heroColor.value,v);
   }
   heroColor.onchange=()=>refresh(true);heroSize.onchange=()=>refresh(false);
@@ -386,7 +386,7 @@ async function loadCatalog(){
       paintHero(featured);
       }else{
       errorFallback();
-      say(heroStatus,'Live sizes are unavailable. View the product on Fourthwall.');
+      say(heroStatus,'Live sizes are unavailable. View the product in the Shop.');
     }
   }
 }
@@ -478,7 +478,7 @@ async function addToCart(variant,button,note,productName){
     if(!Array.isArray(cart.items))cart=await api('/carts/'+encodeURIComponent(cartId));
     displayCart(cart);say(note,'ADDED TO BAG');showBag();
     track('add_to_cart',model.eventForVariant(variant,1,productName));
-  }catch(e){say(note,'Could not add item. Please retry or open its Fourthwall page.');}
+  }catch(e){say(note,'Could not add item. Please retry or view the product in the Shop.');}
   finally{busy=false;button.disabled=false;}
 }
 async function openCart(){
