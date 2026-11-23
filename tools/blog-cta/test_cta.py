@@ -34,6 +34,8 @@ class BlogCTA(unittest.TestCase):
                     self.assertEqual(first.count('<!-- ac-cta:top -->'),1)
                     self.assertEqual(first.count('<!-- ac-cta:end -->'),1)
                     self.assertEqual(bool(info['mid']),sections==6)
+                    self.assertEqual(first.count('class="ac-bcta__banner-bar"'),3 if sections==6 else 2)
+                    self.assertEqual(first.count('ac-bcta--red"'),2 if sections==6 else 1)
                     self.assertIn('href="/#shop"',first)
                     top=re.search(r'<!-- ac-cta:top -->(.*?)<!-- /ac-cta:top -->',first,re.S).group(1)
                     self.assertIn('href="/#shop"',top)
@@ -47,6 +49,21 @@ class BlogCTA(unittest.TestCase):
                     self.assertNotIn('/?utm_source',first)
                     self.assertIn('Từ $29.99 USD' if lang=='vi' else 'From $29.99 USD',first)
                     self.assertIn('Original advice 0.',first)
+
+    def test_existing_middle_survives_a_shorter_article(self):
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp)/'grunge.html'
+            body=''.join(f'<h2>Section {i}</h2><p>Original advice {i}.</p>' for i in range(6))
+            p.write_text('<html><head></head><body><main><article><h1>Grunge</h1><p class="intro">Intro.</p>'+body+'</article></main></body></html>',encoding='utf8')
+            first,_=cta.process(p,'en',self.cfg,self.tpl,self.opts)
+            for i in range(2,6):first=first.replace(f'<h2>Section {i}</h2><p>Original advice {i}.</p>','')
+            p.write_text(first,encoding='utf8')
+            revised,info=cta.process(p,'en',self.cfg,self.tpl,self.opts)
+            self.assertTrue(info['mid'])
+            self.assertEqual(revised.count('<!-- ac-cta:mid -->'),1)
+            self.assertNotIn(cta.MID_POSITION,revised)
+            p.write_text(revised,encoding='utf8')
+            self.assertEqual(cta.process(p,'en',self.cfg,self.tpl,self.opts)[0],revised)
 
 
 if __name__=='__main__':unittest.main()

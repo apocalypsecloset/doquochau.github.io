@@ -3,8 +3,8 @@
 The three positions now serve different reading stages:
 
 - Top: the first child of main, below the menu and before the H1. A compact banner with the topic-selected tee, localized USD starting price and purchase invitation. Desktop width is capped at 540px; the self-hosted Be Vietnam Pro ExtraBold face keeps English and Vietnamese glyphs consistent. The owner confirmed there is no promotion, so no discount or urgency claim is displayed.
-- Middle: one relevant design, a styling suggestion and localized USD starting price. The description and fit note remain visible on mobile.
-- End: two compact product cards with artwork descriptions and explicit size/price links. The Vietnamese copy is written naturally rather than translated from a slogan. Shipping/tax and made-to-order notes avoid delivery or return promises.
+- Middle: one relevant design, a styling suggestion and localized USD starting price. The description and fit note remain visible on mobile. Its red brand strip, wine background and cream button match the approved first CTA.
+- End: two compact product cards with artwork descriptions and explicit size/price links, using the same red/wine/cream palette. The Vietnamese copy is written naturally rather than translated from a slogan. Shipping/tax and made-to-order notes avoid delivery or return promises.
 
 Product imagery, product names and price amounts are unchanged. Product choice prioritizes specific style topics, and keyword matching respects word boundaries and Vietnamese accents. Broad informational articles use a general invitation rather than a claim that a particular tee is necessary for the article's subject.
 
@@ -24,6 +24,8 @@ python -X utf8 tools/blog-cta/inject_cta.py --lang all --write --keep-app-box
 Edit assets/css/blog-shop-cta.css as the stylesheet source. The generator hashes its normalized content and emits assets/css/blog-shop-cta.<hash>.css, updating article URLs accordingly. This new URL is required because production served an old cached stylesheet even with a new query version. Newline normalization keeps the filename consistent across Windows and other platforms.
 
 The stylesheet URL also includes `?cta-version=<hash>`. Production retained a cached 404 for the bare fingerprinted path, while this versioned URL served the correct asset. Both the filename and parameter are derived from the same content hash.
+
+Existing middle-CTA positions are preserved when regenerating after content cleanup. Standalone Look recommendation modules and their TOC entries have been removed from 64 VI and 66 EN articles; other article examples and guide links are retained.
 
 Font source: https://github.com/google/fonts/tree/main/ofl/bevietnampro . The complete ExtraBold font is converted to WOFF2 without subsetting. Copyright and SIL OFL 1.1 text are included in assets/fonts/BeVietnamPro-OFL.txt.
 
