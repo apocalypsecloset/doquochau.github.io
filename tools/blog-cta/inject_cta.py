@@ -266,9 +266,9 @@ def main():
             d = Path(opts.out) / "assets" / "css"; d.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(css_src, d / css_src.name)
 
-    # New asset paths avoid stale edge/browser CSS caches that ignore query versions.
-    if not opts.remove and (opts.write or opts.out):
-        fingerprinted_css = (Path(opts.out) if opts.out else root) / "assets" / "css" / CSS_FILENAME
+    # Articles embed these rules inline; standalone CSS is only a preview export.
+    if not opts.remove and opts.out:
+        fingerprinted_css = Path(opts.out) / "assets" / "css" / CSS_FILENAME
         fingerprinted_css.parent.mkdir(parents=True, exist_ok=True)
         fingerprinted_css.write_text(CSS_CONTENT, encoding="utf-8", newline="\n")
 

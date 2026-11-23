@@ -1,8 +1,8 @@
 # Own-shop migration — November 20, 2026
 
 All 848 articles (423 Vietnamese and 425 English) promote Apocalypse Closet tees.
-Product images and buttons in the middle and final product cards link to the named
-Fourthwall product. Collection buttons still open the homepage shop section.
+All article CTA images and buttons now open the homepage shop section (/#shop).
+The homepage catalog links onward to the named Fourthwall products.
 Six short articles retain top and final CTAs without a middle block.
 
 Affiliate URLs, disclosures and tags were removed from published HTML, outfit data
@@ -20,6 +20,9 @@ python -X utf8 tools/blog-cta/remove_affiliate.py
 python -X utf8 tools/blog-cta/remove_affiliate.py --write
 python -X utf8 tools/blog-cta/verify_own_shop.py
 ```
+
+Verification prints JSON to stdout. Use --report PATH to save a local report;
+generated reports are not tracked or published with the website.
 
 The migration defaults to a dry run and is idempotent. The CTA injector now
 supports the four English editorial articles with paragraph introductions.

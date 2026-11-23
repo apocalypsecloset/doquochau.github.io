@@ -1,6 +1,7 @@
 # Keep deployment source and dependency directories out of the published site.
 exclude:
   - cloudflare
+  - tools
   # Preserve Jekyll's default dependency-directory exclusions.
   - Gemfile
   - Gemfile.lock
