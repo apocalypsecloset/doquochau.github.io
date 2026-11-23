@@ -21,9 +21,9 @@ python -X utf8 tools/blog-cta/inject_cta.py --lang all --write --keep-app-box
 
 848 articles are eligible: 423 VI and 425 EN. Six short articles keep top/end CTAs without forcing a middle interruption. The 71 hub, archive and nonstandard pages are left unchanged. The generator emits one font preload and loads its component stylesheet after the article styles. Preview exports include the font and license.
 
-Edit assets/css/blog-shop-cta.css as the stylesheet source. The generator hashes its normalized content and emits assets/css/blog-shop-cta.<hash>.css, updating article URLs accordingly. This new URL is required because production served an old cached stylesheet even with a new query version. Newline normalization keeps the filename consistent across Windows and other platforms.
+Edit assets/css/blog-shop-cta.css as the single stylesheet source. The generator hashes its normalized content and embeds the component rules once in each article head as style#ac-blog-cta-style, after article styles. The hash is recorded in data-css-version. Comments/newlines are compacted while spaces inside font-family names are preserved.
 
-The stylesheet URL also includes `?cta-version=<hash>`. Production retained a cached 404 for the bare fingerprinted path, while this versioned URL served the correct asset. Both the filename and parameter are derived from the same content hash.
+This critical CSS is delivered with the HTML because the production edge repeatedly retained stale CSS/404 asset responses, including versioned requests. Articles no longer request an external CTA stylesheet. The self-hosted font still uses one preload. Standalone CSS exports remain available for compatibility; the source stays editable in one place.
 
 Existing middle-CTA positions are preserved when regenerating after content cleanup. Standalone Look recommendation modules and their TOC entries have been removed from 64 VI and 66 EN articles; other article examples and guide links are retained.
 

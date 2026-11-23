@@ -43,6 +43,8 @@ class BlogCTA(unittest.TestCase):
                     self.assertLess(first.index('<main>'),first.index('<!-- ac-cta:top -->'))
                     self.assertLess(first.index('<!-- ac-cta:top -->'),first.index('<article>'))
                     self.assertEqual(first.count(cta.FONT_PRELOAD),1)
+                    self.assertEqual(first.count('<style id="ac-blog-cta-style"'),1)
+                    self.assertNotIn('href="/assets/css/blog-shop-cta.',first)
                     self.assertNotIn('shop.apocalypsecloset.com',first)
                     self.assertNotIn('utm_',first)
                     self.assertIn('Mua mẫu áo này' if lang=='vi' else 'Shop this tee',top)
@@ -64,6 +66,18 @@ class BlogCTA(unittest.TestCase):
             self.assertNotIn(cta.MID_POSITION,revised)
             p.write_text(revised,encoding='utf8')
             self.assertEqual(cta.process(p,'en',self.cfg,self.tpl,self.opts)[0],revised)
+
+    def test_remove_clears_inline_style_and_font_preload(self):
+        with tempfile.TemporaryDirectory() as temp:
+            p=Path(temp)/'grunge.html'
+            p.write_text('<html><head></head><body><main><article><h1>Grunge</h1><p class="intro">Intro.</p></article></main></body></html>',encoding='utf8')
+            rendered,_=cta.process(p,'vi',self.cfg,self.tpl,self.opts)
+            p.write_text(rendered,encoding='utf8')
+            self.opts.remove=True
+            stripped,_=cta.process(p,'vi',self.cfg,self.tpl,self.opts)
+            self.assertNotIn('ac-cta:',stripped)
+            self.assertNotIn('ac-blog-cta-style',stripped)
+            self.assertNotIn(cta.FONT_HREF,stripped)
 
 
 if __name__=='__main__':unittest.main()
