@@ -12,7 +12,11 @@
       "img": "https://imgproxy.fourthwall.dev/6m-viV3upVqxT1pPUwJcAB_KnjZDrhN2v6OGMa_zq7o/w:1920/sm:1/enc/udLnkB1CLTkS8io7/BKw2qAmHByqh7zoh/4rwiBa7Q13dgPkg2/TjJBX_A8b6myISK0/d67_hzHe1BsY_FhD/oM2s-Vs0MpwTSMq5/kijP0WArWE7MMMIY/NcuqQJH19BZ0S0Oi/UBikAjpmpJEoizv9/xn1V5kLoke8RVOj9/jtTTp3svVgo14Gcx/IDJpjwVHN70uNTRE/K651ATKO9tRm1oAm/r_Z6_u_wVksTgu6Z/75zMdSdxm3s.webp",
       "alt": "Silent Chaos gothic angel graphic tee in black",
       "home_anchor": "#featured",
-      "fourthwall": "https://shop.apocalypsecloset.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet"
+      "fourthwall": "https://shop.apocalypsecloset.com/products/silent-chaos-gothic-angel-graphic-tee-apocalypse-closet",
+      "description": {
+        "en": "Angel artwork, thorns and distressed lettering.",
+        "vi": "Hình thiên thần, gai và chữ hiệu ứng cũ."
+      }
     },
     "thorn-heart": {
       "name": "Thorn Heart Graphic Tee",
@@ -20,7 +24,11 @@
       "img": "https://imgproxy.fourthwall.dev/XUJgUwA6tofsF-GHsdqUwhOuzsWy5_WdE9LlOiPGfeI/w:1920/sm:1/enc/mqFYpdeldwfdNeGo/1fLoHiFjgulqqQR-/8yBn-JNqqFPFhLnp/30n9WkAiUVLxVwKH/EW8ISRzaL5IbScpc/t6sXdrAvAbr4e9WF/dwB_9383Uu5BO4Qe/t0lnaTOkgzZPSUOC/QN3Sq6KcIQyAVn0M/IKZRS-ZWKHVTjj_8/MFw4iUP7N-Krz3ZF/iRmsP1Y8FuP1PO8E/y4wOs_8euoW32RhC/h5h441_d3IbQOvL6/9r1QEuV92ec.webp",
       "alt": "Thorn Heart gothic graphic tee in black",
       "home_anchor": "#shop",
-      "fourthwall": "https://shop.apocalypsecloset.com/products/thorn-heart-gothic-graphic-tee-apocalypse-closet"
+      "fourthwall": "https://shop.apocalypsecloset.com/products/thorn-heart-gothic-graphic-tee-apocalypse-closet",
+      "description": {
+        "en": "An anatomical heart framed by thorns and roses.",
+        "vi": "Trái tim giải phẫu, gai và hoa hồng."
+      }
     }
   },
   "default_product": "silent-chaos",
@@ -33,7 +41,9 @@
       "dark-feminine",
       "victorian",
       "vampire",
-      "goth"
+      "ren",
+      "hoa-hong",
+      "lang-man"
     ],
     "silent-chaos": [
       "grunge",
@@ -43,75 +53,105 @@
       "streetwear",
       "baddie",
       "tee",
-      "graphic"
+      "graphic",
+      "ao-thun"
     ]
   },
   "email_form_action": "",
   "copy": {
     "en": {
-      "shop_label": "Apocalypse Closet shop",
-      "top_line": "<b>Drop 001 is live.</b> Two original gothic tees, made to order.",
-      "top_link": "Shop the tees",
-      "mid_kicker": "Original artwork / Drop 001",
-      "mid_text": "Heavyweight cotton, relaxed fit and original artwork. A good place to start a dark wardrobe.",
-      "mid_button": "View the tee",
-      "end_title": "Wear the dark.",
-      "end_text": "Original gothic and grunge graphic tees, designed by us and made to order.",
-      "end_button": "Shop Drop 001",
-      "trust": "Original artwork · Made to order · Secure checkout",
-      "form_label": "Get first access to Drop 002.",
-      "form_placeholder": "your@email.com",
-      "form_button": "Join",
-      "top_sub": "Heavyweight cotton · Relaxed fit · From $29.99"
+      "shop_label": "Original graphic tees by Apocalypse Closet",
+      "top_line": "Original gothic and grunge tees by Apocalypse Closet.",
+      "top_link": "Explore the two designs",
+      "mid_kicker": "A tee to build an outfit around",
+      "mid_text": "If a graphic tee fits the look you have in mind, explore this original design and compare it with pieces you already own.",
+      "mid_button": "See sizes & product details",
+      "product_detail": "S–4XL · Made to order",
+      "fit_note": "Compare garment measurements on the product page before choosing a size.",
+      "end_kicker": "Apocalypse Closet · Original artwork",
+      "end_title": "Which print would you wear?",
+      "end_text": "An angel graphic or a thorn-wrapped heart. Choose the artwork you like, then check the fit and current options in our shop.",
+      "end_product_link": "See sizes & price",
+      "end_button": "Compare both tees",
+      "order_note": "Prices in USD. Shipping and taxes are shown at checkout. Each tee is made after you order."
     },
     "vi": {
-      "shop_label": "Cửa hàng Apocalypse Closet",
-      "top_line": "<b>Drop 001 đã mở bán.</b> Áo thun gothic thiết kế gốc, sản xuất theo đơn.",
-      "top_link": "Xem áo",
-      "mid_kicker": "Thiết kế gốc / Drop 001",
-      "mid_text": "Cotton dày, form relaxed, artwork gốc. Một món dễ bắt đầu cho tủ đồ dark.",
-      "mid_button": "Xem áo",
-      "end_title": "Mặc cái tối của bạn.",
-      "end_text": "Áo thun gothic và grunge do Apocalypse Closet thiết kế, sản xuất theo đơn.",
-      "end_button": "Xem Drop 001",
-      "trust": "Thiết kế gốc · Sản xuất theo đơn · Thanh toán an toàn",
-      "form_label": "Nhận thông báo sớm Drop 002.",
-      "form_placeholder": "email@cuaban.com",
-      "form_button": "Đăng ký",
-      "top_sub": "Cotton dày · Form relaxed · Từ $29.99"
+      "shop_label": "Áo thun thiết kế của Apocalypse Closet",
+      "top_line": "Khám phá áo thun gothic và grunge do Apocalypse Closet thiết kế.",
+      "top_link": "Xem hai mẫu áo",
+      "mid_kicker": "Gợi ý áo để phối cùng đồ bạn có",
+      "mid_text": "Nếu bạn đang tìm một chiếc áo graphic cho outfit của mình, xem thử thiết kế này và cách phối với đồ sẵn có.",
+      "mid_button": "Xem size và chi tiết áo",
+      "product_detail": "Size S–4XL · Sản xuất theo đơn",
+      "fit_note": "So sánh số đo áo trên trang sản phẩm trước khi chọn size.",
+      "end_kicker": "Apocalypse Closet · Thiết kế gốc",
+      "end_title": "Bạn muốn phối đồ với mẫu áo nào?",
+      "end_text": "Hình thiên thần hay trái tim quấn gai? Chọn hình in hợp gu bạn, rồi xem bảng số đo và các tùy chọn hiện có tại shop.",
+      "end_product_link": "Xem size và giá",
+      "end_button": "So sánh hai mẫu áo",
+      "order_note": "Giá tính bằng USD. Phí vận chuyển và thuế hiển thị khi thanh toán. Áo được sản xuất sau khi bạn đặt."
     }
   },
   "topic_lines": {
     "en": [
       {
         "keywords": [
-          "goth",
-          "gothic"
+          "romantic",
+          "victorian",
+          "vampire",
+          "lace"
         ],
-        "top_line": "<b>Building a goth wardrobe?</b> Start with an original graphic tee."
+        "mid_kicker": "A graphic for dark romantic outfits",
+        "mid_text": "Try the Thorn Heart artwork with a dark skirt or a lace layer. Keep the surrounding pieces simple so the heart graphic stays in view."
       },
       {
         "keywords": [
           "grunge",
-          "punk"
+          "punk",
+          "flannel"
         ],
-        "top_line": "<b>Grunge starts with the tee.</b> Original graphics, made to order."
+        "mid_kicker": "A graphic for your next grunge outfit",
+        "mid_text": "Pair the angel graphic with worn denim or an open overshirt. Leave the front print visible and compare the tee measurements before choosing your fit."
       },
       {
         "keywords": [
-          "black",
-          "dark"
+          "goth",
+          "graphic",
+          "tee",
+          "streetwear"
         ],
-        "top_line": "<b>Dressing in black?</b> Add an original graphic tee."
+        "mid_text": "Let the artwork be the focal point, then build around it with your own jeans, trousers or layers. Check the garment measurements for the fit you want."
       }
     ],
     "vi": [
       {
         "keywords": [
-          "goth",
-          "gothic"
+          "romantic",
+          "victorian",
+          "vampire",
+          "lang-man",
+          "hoa-hong"
         ],
-        "top_line": "<b>Bắt đầu tủ đồ goth?</b> Thử một chiếc áo tee thiết kế gốc."
+        "mid_kicker": "Một điểm nhấn cho outfit gothic lãng mạn",
+        "mid_text": "Thử phối Thorn Heart với chân váy tối màu hoặc một lớp ren. Giữ các món còn lại đơn giản để hình trái tim trên áo nổi bật."
+      },
+      {
+        "keywords": [
+          "grunge",
+          "punk",
+          "flannel"
+        ],
+        "mid_kicker": "Gợi ý áo cho outfit grunge",
+        "mid_text": "Phối hình in thiên thần với jeans hoặc sơ mi khoác ngoài mở cúc. Giữ rõ hình in phía trước và xem số đo áo để chọn dáng mặc bạn thích."
+      },
+      {
+        "keywords": [
+          "goth",
+          "ao-thun",
+          "graphic",
+          "streetwear"
+        ],
+        "mid_text": "Để hình in làm điểm nhấn, rồi phối với jeans, quần dài hoặc áo khoác bạn có sẵn. Xem số đo áo trước khi chọn size."
       }
     ]
   }

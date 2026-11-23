@@ -11,12 +11,12 @@ Examples (run from the site root, i.e. the folder that contains index.html):
   python tools/blog-cta/inject_cta.py --lang all --write                  # EN + VI (also removes the app box)
   python tools/blog-cta/inject_cta.py --lang all --remove --write         # rollback: strip every CTA
 """
-import argparse, json, re, shutil, sys
+import argparse, html as html_utils, json, re, shutil, sys, unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
-CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261119"
+CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123cta2"
 BLOCKS = ("top", "mid", "end")
 DEPTH_TAGS = r"div|section|details|table|ul|ol|blockquote|figure|aside|nav|article"
 
@@ -36,13 +36,22 @@ def sub_optional(html, name, keep):
 
 
 def fill(html, values):
-    return re.sub(r"\{\{(\w+)\}\}", lambda m: str(values.get(m.group(1), "")), html)
+    return re.sub(r"\{\{(\w+)\}\}", lambda m: html_utils.escape(str(values.get(m.group(1), "")), quote=True), html)
+
+
+def normalized(value):
+    value = value.lower().replace("đ", "d")
+    return "".join(c for c in unicodedata.normalize("NFD", value) if not unicodedata.combining(c))
+
+
+def matches_keyword(hay, word):
+    return bool(re.search(r"(?<!\w)" + re.escape(normalized(word)) + r"(?!\w)", hay))
 
 
 def pick_product(cfg, slug, title):
-    hay = f"{slug} {title}".lower()
+    hay = normalized(f"{slug} {title}")
     for pid, words in cfg["product_by_keyword"].items():
-        if any(w in hay for w in words):
+        if any(matches_keyword(hay, w) for w in words):
             return pid
     return cfg["default_product"]
 
@@ -52,11 +61,12 @@ def url(cfg, pid, medium, slug, anchor=None):
     p = cfg["products"][pid]
     if cfg.get("link_mode") == "fourthwall" or (cfg.get("link_mode") == "product" and anchor is None):
         return f"{p['fourthwall']}?{utm}"
-    return f"/?{utm}{anchor or p['home_anchor']}"
+    # Same-site links keep the visitor's original acquisition source.
+    return f"/{anchor or p['home_anchor']}"
 
 
 def strip_blocks(html):
-    return re.sub(rf"\s*<!-- {MARK}:(\w+) -->.*?<!-- /{MARK}:\1 -->", "", html, flags=re.S)
+    return re.sub(rf"\s*<!-- {MARK}:(\w+) -->.*?<!-- /{MARK}:\1 -->\s*", "", html, flags=re.S)
 
 
 def wrap(name, body):
@@ -120,15 +130,18 @@ def process(path, lang, cfg, tpl, opts):
             html = html.replace(m.group(0), "", 1)
         html = html.replace(" · ENGLISH TRANSLATION", "", 1)
 
-    hay = f"{slug} {title}".lower()
+    hay = normalized(f"{slug} {title}")
     for rule in cfg.get("topic_lines", {}).get(lang, []):
-        if any(w in hay for w in rule["keywords"]):
-            t = dict(t, top_line=rule["top_line"])
+        if any(matches_keyword(hay, w) for w in rule["keywords"]):
+            t = dict(t, **{k: rule[k] for k in ("top_line", "mid_text", "mid_kicker") if k in rule})
             break
 
-    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=P["price"],
-             a_name=A["name"], a_img=A["img"], a_alt=A["alt"], a_price=A["price"],
-             b_name=B["name"], b_img=B["img"], b_alt=B["alt"], b_price=B["price"],
+    def price(product):
+        amount = re.search(r"\$[\d,.]+", product["price"])
+        return (("Từ " if lang == "vi" else "From ") + amount.group(0) + " USD") if amount else product["price"]
+    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=price(P),
+             a_name=A["name"], a_img=A["img"], a_alt=A["alt"], a_price=price(A), a_description=A["description"][lang],
+             b_name=B["name"], b_img=B["img"], b_alt=B["alt"], b_price=price(B), b_description=B["description"][lang],
              url_top=url(cfg, pid, "top", slug, "#shop"),
              url_mid=url(cfg, pid, "mid", slug),
              url_end=url(cfg, pid, "end", slug, "#shop"),
@@ -162,6 +175,8 @@ def process(path, lang, cfg, tpl, opts):
         html = html[:pos] + out[name] + html[pos:]
     if "blog-shop-cta.css" not in html:
         html = html.replace("</head>", f'<link rel="stylesheet" href="{CSS_HREF}">\n</head>', 1)
+    else:
+        html = re.sub(r'/assets/css/blog-shop-cta\.css(?:\?[^"\s>]*)?', CSS_HREF, html)
     return html, {"product": pid, "mid": bool(pos_mid)}
 
 
