@@ -1,4 +1,4 @@
-/* Blog CTA: discover, consider, choose. Scoped independently of article styles. */
+/* Blog CTA: shop the featured design, consider, choose. Scoped to the component. */
 .ac-bcta{--cta-bg:#111;--cta-line:#403936;--cta-text:#f0ece4;--cta-muted:#c2bbb3;--cta-accent:#e7887d;box-sizing:border-box;clear:both;margin:32px 0;color:var(--cta-text);font:400 15px/1.6 Arial,sans-serif}
 .ac-bcta *,.ac-bcta *::before,.ac-bcta *::after{box-sizing:border-box}
 .ac-bcta p{margin:0;line-height:1.6}
@@ -13,9 +13,20 @@
 .ac-bcta .ac-bcta__title{font:700 clamp(23px,3vw,30px)/1.2 Arial,sans-serif;letter-spacing:-.02em;color:var(--cta-text);overflow-wrap:anywhere}
 .ac-bcta .ac-bcta__text{color:var(--cta-muted);font-size:15px}
 .ac-bcta .ac-bcta__detail,.ac-bcta .ac-bcta__note{color:var(--cta-muted);font-size:12px;line-height:1.6}
-.ac-bcta--top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2px 20px;margin:22px 0 30px;padding:10px 0;border-block:1px solid var(--cta-line)}
-.ac-bcta--top .ac-bcta__line{flex:1 1 230px;color:var(--cta-muted);font-size:14px}
-.ac-bcta--top .ac-bcta__text-link{flex:none;font-size:14px}
+.ac-bcta--top{margin:24px 0 32px;border:1px solid #88423c;background:radial-gradient(ellipse at 0 100%,#4b1b20,transparent 65%),#171213;box-shadow:0 8px 26px #0003}
+.ac-bcta--top .ac-bcta__banner-bar{display:flex;justify-content:space-between;gap:8px;padding:9px 20px;background:#9f3028;color:#fff;font:700 10px/1.5 Arial,sans-serif;letter-spacing:.12em}
+.ac-bcta--top .ac-bcta__banner-grid{display:grid;grid-template-columns:minmax(160px,34%) minmax(0,1fr);gap:24px;align-items:center;padding:24px}
+.ac-bcta--top .ac-bcta__banner-art{display:flex;align-items:center;justify-content:center;min-width:0;aspect-ratio:3/4;background:#211a1b;border:1px solid #73423d;transform:rotate(-3deg);box-shadow:8px 8px 0 #8c2d253d}
+.ac-bcta--top .ac-bcta__banner-art img{width:100%;height:auto;max-height:300px}
+.ac-bcta--top .ac-bcta__banner-body{display:flex;flex-direction:column;gap:9px;min-width:0}
+.ac-bcta--top .ac-bcta__banner-title{font:800 clamp(26px,3.8vw,38px)/1.1 Arial,sans-serif;letter-spacing:-.035em;color:#fff4df;text-wrap:balance}
+.ac-bcta--top .ac-bcta__banner-name{margin-top:5px;font:700 16px/1.35 Arial,sans-serif;color:var(--cta-text)}
+.ac-bcta--top .ac-bcta__banner-description{color:#d8c7c3;font-size:14px}
+.ac-bcta--top .ac-bcta__banner-buy{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin-top:5px}
+.ac-bcta--top .ac-bcta__banner-price{color:#fff4df;font:700 20px/1.3 Arial,sans-serif}
+.ac-bcta--top .ac-bcta__btn{background:#f1e5cc;border-color:#f1e5cc;color:#261410;min-height:48px;padding:12px 22px}
+.ac-bcta--top .ac-bcta__btn:hover{background:#fff7e6;border-color:#fff7e6}
+.ac-bcta--top .ac-bcta__note{color:#cbbab6}
 .ac-bcta--mid{display:grid;grid-template-columns:minmax(110px,28%) minmax(0,1fr);background:var(--cta-bg);border:1px solid var(--cta-line)}
 .ac-bcta--mid .ac-bcta__media{display:flex;align-items:center;padding:12px;background:#191716;min-width:0}
 .ac-bcta--mid .ac-bcta__media img{height:auto;max-height:280px;aspect-ratio:3/4}
@@ -35,7 +46,21 @@
 .ac-bcta--end .ac-bcta__actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin-top:16px}
 .ac-bcta--end .ac-bcta__actions .ac-bcta__note{flex:1 1 300px}
 @media(max-width:700px){.ac-bcta--end .ac-bcta__tiles{grid-template-columns:1fr}.ac-bcta--end .ac-bcta__tile{grid-template-columns:84px minmax(0,1fr)}}
-@media(max-width:480px){.ac-bcta{margin-block:26px}.ac-bcta--top{gap:0;padding-block:8px}.ac-bcta--top .ac-bcta__line{flex-basis:100%}.ac-bcta--mid{grid-template-columns:1fr}.ac-bcta--mid .ac-bcta__media{padding:12px}.ac-bcta--mid .ac-bcta__media img{height:170px;max-height:none;aspect-ratio:auto}.ac-bcta--mid .ac-bcta__body{padding:18px}.ac-bcta--mid .ac-bcta__meta{align-items:stretch;flex-direction:column;gap:10px}.ac-bcta--mid .ac-bcta__btn{width:100%}.ac-bcta--end{padding:18px}.ac-bcta--end .ac-bcta__title{font-size:24px}}
+@media(max-width:480px){.ac-bcta{margin-block:26px}.ac-bcta--mid{grid-template-columns:1fr}.ac-bcta--mid .ac-bcta__media{padding:12px}.ac-bcta--mid .ac-bcta__media img{height:170px;max-height:none;aspect-ratio:auto}.ac-bcta--mid .ac-bcta__body{padding:18px}.ac-bcta--mid .ac-bcta__meta{align-items:stretch;flex-direction:column;gap:10px}.ac-bcta--mid .ac-bcta__btn{width:100%}.ac-bcta--end{padding:18px}.ac-bcta--end .ac-bcta__title{font-size:24px}}
+@media(max-width:560px){
+ .ac-bcta--top .ac-bcta__banner-bar{padding:9px 16px;font-size:9px;letter-spacing:.08em}
+ .ac-bcta--top .ac-bcta__banner-grid{grid-template-columns:112px minmax(0,1fr);gap:10px 16px;padding:20px 18px}
+ .ac-bcta--top .ac-bcta__banner-body{display:contents}
+ .ac-bcta--top .ac-bcta__banner-body>*{grid-column:1/-1}
+ .ac-bcta--top .ac-bcta__banner-title{grid-row:1;font-size:29px;margin-bottom:6px}
+ .ac-bcta--top .ac-bcta__banner-art{grid-column:1;grid-row:2/5;align-self:center;max-width:112px}
+ .ac-bcta--top .ac-bcta__banner-name{grid-column:2;grid-row:2;align-self:end;margin:0;font-size:17px}
+ .ac-bcta--top .ac-bcta__banner-description{grid-column:2;grid-row:3;font-size:13px}
+ .ac-bcta--top .ac-bcta__detail{grid-column:2;grid-row:4;align-self:start}
+ .ac-bcta--top .ac-bcta__banner-buy{margin-top:12px;align-items:stretch;flex-direction:column;gap:10px}
+ .ac-bcta--top .ac-bcta__banner-price{font-size:22px}
+ .ac-bcta--top .ac-bcta__btn{width:100%;font-size:15px}
+}
 @media(prefers-reduced-motion:reduce){.ac-bcta *{transition:none!important}}
 /* Keep the product visible beside its name on narrow screens, then explain below. */
 @media(max-width:480px){

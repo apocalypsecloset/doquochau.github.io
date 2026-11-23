@@ -16,7 +16,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
-CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123cta2"
+CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123cta3"
 BLOCKS = ("top", "mid", "end")
 DEPTH_TAGS = r"div|section|details|table|ul|ol|blockquote|figure|aside|nav|article"
 
@@ -139,10 +139,10 @@ def process(path, lang, cfg, tpl, opts):
     def price(product):
         amount = re.search(r"\$[\d,.]+", product["price"])
         return (("Từ " if lang == "vi" else "From ") + amount.group(0) + " USD") if amount else product["price"]
-    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=price(P),
+    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=price(P), p_description=P["description"][lang],
              a_name=A["name"], a_img=A["img"], a_alt=A["alt"], a_price=price(A), a_description=A["description"][lang],
              b_name=B["name"], b_img=B["img"], b_alt=B["alt"], b_price=price(B), b_description=B["description"][lang],
-             url_top=url(cfg, pid, "top", slug, "#shop"),
+             url_top=url(cfg, pid, "top", slug),
              url_mid=url(cfg, pid, "mid", slug),
              url_end=url(cfg, pid, "end", slug, "#shop"),
              url_end_a=url(cfg, a_id, "end", slug), url_end_b=url(cfg, b_id, "end", slug),

@@ -61,8 +61,9 @@
   "copy": {
     "en": {
       "shop_label": "Original graphic tees by Apocalypse Closet",
-      "top_line": "Original gothic and grunge tees by Apocalypse Closet.",
-      "top_link": "Explore the two designs",
+      "top_title": "Dark artwork. Your kind of statement.",
+      "top_button": "Shop this tee",
+      "top_note": "Choose your size in our shop. Shipping and tax at checkout.",
       "mid_kicker": "A tee to build an outfit around",
       "mid_text": "If a graphic tee fits the look you have in mind, explore this original design and compare it with pieces you already own.",
       "mid_button": "See sizes & product details",
@@ -77,8 +78,9 @@
     },
     "vi": {
       "shop_label": "Áo thun thiết kế của Apocalypse Closet",
-      "top_line": "Khám phá áo thun gothic và grunge do Apocalypse Closet thiết kế.",
-      "top_link": "Xem hai mẫu áo",
+      "top_title": "Hình in gothic. Chất riêng của bạn.",
+      "top_button": "Mua mẫu áo này",
+      "top_note": "Chọn size tại shop. Phí vận chuyển và thuế tính khi thanh toán.",
       "mid_kicker": "Gợi ý áo để phối cùng đồ bạn có",
       "mid_text": "Nếu bạn đang tìm một chiếc áo graphic cho outfit của mình, xem thử thiết kế này và cách phối với đồ sẵn có.",
       "mid_button": "Xem size và chi tiết áo",

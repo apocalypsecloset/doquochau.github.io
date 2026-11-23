@@ -2,6 +2,7 @@
 import argparse
 import json
 import tempfile
+import re
 import unittest
 from pathlib import Path
 import inject_cta as cta
@@ -34,6 +35,11 @@ class BlogCTA(unittest.TestCase):
                     self.assertEqual(first.count('<!-- ac-cta:end -->'),1)
                     self.assertEqual(bool(info['mid']),sections==6)
                     self.assertIn('href="/#shop"',first)
+                    top=re.search(r'<!-- ac-cta:top -->(.*?)<!-- /ac-cta:top -->',first,re.S).group(1)
+                    self.assertNotIn('href="/#shop"',top)
+                    self.assertIn('utm_medium=cta-top',top)
+                    self.assertIn(self.cfg['products']['silent-chaos']['fourthwall'],top)
+                    self.assertIn('Mua mẫu áo này' if lang=='vi' else 'Shop this tee',top)
                     self.assertNotIn('/?utm_source',first)
                     self.assertIn('cta-mid' if sections==6 else 'cta-end',first)
                     self.assertIn('Từ $29.99 USD' if lang=='vi' else 'From $29.99 USD',first)
