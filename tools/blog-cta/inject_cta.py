@@ -16,6 +16,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
+MID_POSITION = "<!-- ac-bcta-mid-position -->"
 CSS_SOURCE = HERE.parents[1] / "assets" / "css" / "blog-shop-cta.css"
 CSS_CONTENT = CSS_SOURCE.read_text(encoding="utf-8")
 CSS_HASH = hashlib.sha256(CSS_CONTENT.encode("utf-8")).hexdigest()[:12]
@@ -114,6 +115,9 @@ def find_mid(html, start):
 
 def process(path, lang, cfg, tpl, opts):
     html = path.read_text(encoding="utf-8")
+    if not opts.remove:
+        # Restyling or removing a related module must not move/drop an existing middle CTA.
+        html = re.sub(r'\s*<!-- ac-cta:mid -->.*?<!-- /ac-cta:mid -->\s*', MID_POSITION, html, count=1, flags=re.S)
     html = strip_blocks(html)
     if opts.remove:
         html = re.sub(CSS_LINK_RE, "", html)
@@ -168,13 +172,16 @@ def process(path, lang, cfg, tpl, opts):
     if lang == "vi" and not opts.keep_app_box:
         html = re.sub(r'<a\b[^>]*ac-blog-app-box[^>]*>.*?</a>', "", html, count=1, flags=re.S)
 
+    preserved_mid = html.find(MID_POSITION)
+    if preserved_mid != -1:
+        html = html.replace(MID_POSITION, "", 1)
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
     if not intro:
         intro = re.search(r'<p\b[^>]*class="[^"]*\bintro\b[^"]*"[^>]*>.*?</p>', html, re.S)
     main = re.search(r'<main\b[^>]*>', html)
     heading = re.search(r'<h1\b', html)
     pos_top = main.end() if main and main.end() < intro.start() else heading.start()
-    pos_mid = find_mid(html, intro.end())
+    pos_mid = preserved_mid if preserved_mid != -1 else find_mid(html, intro.end())
     rp = html.find('class="ac-reading-path"')
     if rp != -1:
         pos_end = html.rfind("<nav", 0, rp + 1)
