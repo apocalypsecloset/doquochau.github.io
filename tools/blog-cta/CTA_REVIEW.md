@@ -19,7 +19,9 @@ python -X utf8 tools/blog-cta/test_cta.py
 python -X utf8 tools/blog-cta/inject_cta.py --lang all --write --keep-app-box
 ```
 
-848 articles are eligible: 423 VI and 425 EN. Six short articles keep top/end CTAs without forcing a middle interruption. The 71 hub, archive and nonstandard pages are left unchanged. CSS version: 20261123final1. The generator emits one font preload and loads its component stylesheet after the article styles. Preview exports include the font and license.
+848 articles are eligible: 423 VI and 425 EN. Six short articles keep top/end CTAs without forcing a middle interruption. The 71 hub, archive and nonstandard pages are left unchanged. The generator emits one font preload and loads its component stylesheet after the article styles. Preview exports include the font and license.
+
+Edit assets/css/blog-shop-cta.css as the stylesheet source. The generator hashes its normalized content and emits assets/css/blog-shop-cta.<hash>.css, updating article URLs accordingly. This new URL is required because production served an old cached stylesheet even with a new query version. Newline normalization keeps the filename consistent across Windows and other platforms.
 
 Font source: https://github.com/google/fonts/tree/main/ofl/bevietnampro . The complete ExtraBold font is converted to WOFF2 without subsetting. Copyright and SIL OFL 1.1 text are included in assets/fonts/BeVietnamPro-OFL.txt.
 

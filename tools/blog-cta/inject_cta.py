@@ -11,12 +11,16 @@ Examples (run from the site root, i.e. the folder that contains index.html):
   python tools/blog-cta/inject_cta.py --lang all --write                  # EN + VI (also removes the app box)
   python tools/blog-cta/inject_cta.py --lang all --remove --write         # rollback: strip every CTA
 """
-import argparse, html as html_utils, json, re, shutil, sys, unicodedata
+import argparse, hashlib, html as html_utils, json, re, shutil, sys, unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
-CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123final1"
+CSS_SOURCE = HERE.parents[1] / "assets" / "css" / "blog-shop-cta.css"
+CSS_CONTENT = CSS_SOURCE.read_text(encoding="utf-8")
+CSS_FILENAME = "blog-shop-cta." + hashlib.sha256(CSS_CONTENT.encode("utf-8")).hexdigest()[:12] + ".css"
+CSS_HREF = "/assets/css/" + CSS_FILENAME
+CSS_LINK_RE = r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta(?:\.[a-f0-9]{12})?\.css[^>]*>\s*'
 FONT_HREF = "/assets/fonts/be-vietnam-pro-extrabold.woff2"
 FONT_PRELOAD = f'<link rel="preload" href="{FONT_HREF}" as="font" type="font/woff2" crossorigin>'
 BLOCKS = ("top", "mid", "end")
@@ -111,7 +115,7 @@ def process(path, lang, cfg, tpl, opts):
     html = path.read_text(encoding="utf-8")
     html = strip_blocks(html)
     if opts.remove:
-        html = re.sub(r'\s*<link rel="stylesheet" href="/assets/css/blog-shop-cta\.css[^>]*>', "", html)
+        html = re.sub(CSS_LINK_RE, "", html)
         html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>', "", html)
         return html, {"removed": True}
 
@@ -181,7 +185,7 @@ def process(path, lang, cfg, tpl, opts):
     for pos, name in inserts:
         html = html[:pos] + out[name] + html[pos:]
     # Load approved component rules after the article styles; one font preload.
-    html = re.sub(r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta\.css[^>]*>\s*', "\n", html)
+    html = re.sub(CSS_LINK_RE, "\n", html)
     html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>\s*', "\n", html)
     html = re.sub(r'\s*</head>', lambda m: '\n' + FONT_PRELOAD + f'\n<link rel="stylesheet" href="{CSS_HREF}">\n</head>', html, count=1)
     return html, {"product": pid, "mid": bool(pos_mid)}
@@ -247,6 +251,12 @@ def main():
         elif opts.out:
             d = Path(opts.out) / "assets" / "css"; d.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(css_src, d / css_src.name)
+
+    # New asset paths avoid stale edge/browser CSS caches that ignore query versions.
+    if not opts.remove and (opts.write or opts.out):
+        fingerprinted_css = (Path(opts.out) if opts.out else root) / "assets" / "css" / CSS_FILENAME
+        fingerprinted_css.parent.mkdir(parents=True, exist_ok=True)
+        fingerprinted_css.write_text(CSS_CONTENT, encoding="utf-8", newline="\n")
 
     # Preview exports and alternate roots need the same self-hosted font assets.
     if not opts.remove:
