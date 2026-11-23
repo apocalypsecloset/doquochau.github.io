@@ -1,4 +1,5 @@
 """Verify the own-shop migration against the current Git HEAD."""
+import argparse
 import io
 import json
 import re
@@ -9,6 +10,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--report', type=Path, help='optional JSON report path; default: stdout only')
+args = parser.parse_args()
 errors = []
 stats = Counter()
 data_files = [ROOT / 'outfits.js', *sorted((ROOT / 'assets/js').glob('style-outfits-*.js'))]
@@ -16,8 +20,6 @@ archive = subprocess.check_output(['git', '-C', str(ROOT), 'archive', 'HEAD', 'b
                                    *[p.relative_to(ROOT).as_posix() for p in data_files]])
 with tarfile.open(fileobj=io.BytesIO(archive)) as tar:
     before = {m.name: tar.extractfile(m).read().decode('utf8') for m in tar if m.isfile()}
-products = json.loads((ROOT / 'tools/blog-cta/config.json').read_text(encoding='utf8'))['products']
-product_urls = {p['fourthwall'] for p in products.values()}
 
 
 class Check(HTMLParser):
@@ -56,8 +58,10 @@ for name in subprocess.check_output(['git', '-C', str(ROOT), 'ls-files'], text=T
         for marker in ('top', 'end'):
             if h.count(f'<!-- ac-cta:{marker} -->') != 1:
                 errors.append(f'{name}: invalid {marker} CTA count')
-        if h.count('blog-shop-cta.css') != 1:
-            errors.append(f'{name}: CTA CSS count')
+        if h.count('id="ac-blog-cta-style"') != 1:
+            errors.append(f'{name}: inline CTA CSS count')
+        if re.search(r'<link\b[^>]*href="[^"]*blog-shop-cta', h):
+            errors.append(f'{name}: obsolete external CTA CSS')
         if '<!-- ac-cta:mid -->' not in h:
             stats['short_articles_without_mid'] += 1
         for tag in ('h1', 'h2', 'h3', 'table', 'details'):
@@ -67,11 +71,11 @@ for name in subprocess.check_output(['git', '-C', str(ROOT), 'ls-files'], text=T
         for pattern in (r'<title>.*?</title>', r'<link\b[^>]*\brel="(?:canonical|alternate)"[^>]*>', r'<link\b[^>]*\bhreflang="[^"]+"[^>]*>'):
             if re.findall(pattern, old, re.S) != re.findall(pattern, h, re.S):
                 errors.append(f'{name}: changed metadata')
-        for block in re.findall(r'<!-- ac-cta:(?:mid|end) -->.*?<!-- /ac-cta:(?:mid|end) -->', h, re.S):
+        for block in re.findall(r'<!-- ac-cta:(?:top|mid|end) -->.*?<!-- /ac-cta:(?:top|mid|end) -->', h, re.S):
             for u in re.findall(r'href="([^"]+)"', block):
-                if not (u.startswith('/?utm_source=blog') or u.split('?')[0] in product_urls):
+                if u != '/#shop':
                     errors.append(f'{name}: unexpected shop target {u}')
-        stats['direct_product_links'] += h.count('href="https://shop.apocalypsecloset.com/products/')
+                stats['homepage_shop_cta_links'] += 1
     if name.startswith('outfits/'):
         stats['outfit_pages'] += 1
         if h.count('class="item-link"') != old.count('class="item-link"'):
@@ -97,6 +101,8 @@ for p in data_files:
             errors.append(f'{p.name}: changed garment count or remaining sales URL')
 
 report = {'stats': dict(stats), 'errors': errors}
-(ROOT / 'tools/blog-cta/own-shop-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf8')
+if args.report:
+    args.report.parent.mkdir(parents=True, exist_ok=True)
+    args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf8')
 print(json.dumps(report, ensure_ascii=False, indent=2))
 raise SystemExit(bool(errors))

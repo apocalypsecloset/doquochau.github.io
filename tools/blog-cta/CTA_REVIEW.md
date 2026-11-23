@@ -23,7 +23,7 @@ python -X utf8 tools/blog-cta/inject_cta.py --lang all --write --keep-app-box
 
 Edit assets/css/blog-shop-cta.css as the single stylesheet source. The generator hashes its normalized content and embeds the component rules once in each article head as style#ac-blog-cta-style, after article styles. The hash is recorded in data-css-version. Comments/newlines are compacted while spaces inside font-family names are preserved.
 
-This critical CSS is delivered with the HTML because the production edge repeatedly retained stale CSS/404 asset responses, including versioned requests. Articles no longer request an external CTA stylesheet. The self-hosted font still uses one preload. Standalone CSS exports remain available for compatibility; the source stays editable in one place.
+This critical CSS is delivered with the HTML because the production edge repeatedly retained stale CSS/404 asset responses, including versioned requests. Articles no longer request an external CTA stylesheet. The self-hosted font still uses one preload. Standalone CSS exports remain available with --out for compatibility; --write does not create unused fingerprinted CSS files in the published site. The source stays editable in one place.
 
 Existing middle-CTA positions are preserved when regenerating after content cleanup. Standalone Look recommendation modules and their TOC entries have been removed from 64 VI and 66 EN articles; other article examples and guide links are retained.
 
