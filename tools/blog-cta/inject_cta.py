@@ -18,8 +18,9 @@ HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
 CSS_SOURCE = HERE.parents[1] / "assets" / "css" / "blog-shop-cta.css"
 CSS_CONTENT = CSS_SOURCE.read_text(encoding="utf-8")
-CSS_FILENAME = "blog-shop-cta." + hashlib.sha256(CSS_CONTENT.encode("utf-8")).hexdigest()[:12] + ".css"
-CSS_HREF = "/assets/css/" + CSS_FILENAME
+CSS_HASH = hashlib.sha256(CSS_CONTENT.encode("utf-8")).hexdigest()[:12]
+CSS_FILENAME = "blog-shop-cta." + CSS_HASH + ".css"
+CSS_HREF = "/assets/css/" + CSS_FILENAME + "?cta-version=" + CSS_HASH
 CSS_LINK_RE = r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta(?:\.[a-f0-9]{12})?\.css[^>]*>\s*'
 FONT_HREF = "/assets/fonts/be-vietnam-pro-extrabold.woff2"
 FONT_PRELOAD = f'<link rel="preload" href="{FONT_HREF}" as="font" type="font/woff2" crossorigin>'

@@ -23,6 +23,8 @@ python -X utf8 tools/blog-cta/inject_cta.py --lang all --write --keep-app-box
 
 Edit assets/css/blog-shop-cta.css as the stylesheet source. The generator hashes its normalized content and emits assets/css/blog-shop-cta.<hash>.css, updating article URLs accordingly. This new URL is required because production served an old cached stylesheet even with a new query version. Newline normalization keeps the filename consistent across Windows and other platforms.
 
+The stylesheet URL also includes `?cta-version=<hash>`. Production retained a cached 404 for the bare fingerprinted path, while this versioned URL served the correct asset. Both the filename and parameter are derived from the same content hash.
+
 Font source: https://github.com/google/fonts/tree/main/ofl/bevietnampro . The complete ExtraBold font is converted to WOFF2 without subsetting. Copyright and SIL OFL 1.1 text are included in assets/fonts/BeVietnamPro-OFL.txt.
 
 The review is a focused CTA/reading-experience use of seo-sxo and seo-content, not a new site-wide SEO ranking audit. Search spot-checks show styling/how-to content around graphic-tee and romantic-goth queries; no controlled Google top-10, PAA or conversion dataset was available. The audience assumptions come from the brand brief and page content, not invented user research.
