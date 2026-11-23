@@ -72,3 +72,44 @@
  .ac-bcta--mid .ac-bcta__kicker{grid-column:2;grid-row:1;align-self:end}
  .ac-bcta--mid .ac-bcta__title{grid-column:2;grid-row:2;align-self:start;font-size:23px}
 }
+
+/* Compact sales banner approved for bilingual articles. */
+.ac-bcta--compact{max-width:860px;margin:22px auto 26px;border-color:#88423c;box-shadow:none}
+.ac-bcta--compact .ac-bcta__banner-bar{padding:6px 14px;font-size:9px;letter-spacing:.08em}
+.ac-bcta--compact .ac-compact-grid{display:grid;grid-template-columns:104px minmax(0,1fr);align-items:center;gap:18px;padding:14px 18px}
+.ac-bcta--compact .ac-compact-art{display:block;min-width:0;aspect-ratio:3/4;background:#211a1b;border:1px solid #73423d}
+.ac-bcta--compact .ac-compact-art img{width:100%;height:100%;object-fit:contain}
+.ac-bcta--compact .ac-compact-copy{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.ac-bcta--compact .ac-compact-title{color:#fff4df;font:800 24px/1.15 Arial,sans-serif;letter-spacing:-.025em;text-wrap:balance}
+.ac-bcta--compact .ac-compact-name{color:#d8c7c3;font:400 13px/1.35 Arial,sans-serif}
+.ac-bcta--compact .ac-compact-purchase{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:3px}
+.ac-bcta--compact .ac-compact-price{color:#fff4df;font:700 17px/1.3 Arial,sans-serif}
+.ac-bcta--compact .ac-compact-price small{font:400 12px/1.4 Arial,sans-serif;color:#d8c7c3;white-space:nowrap}
+.ac-bcta--compact .ac-bcta__btn{min-height:44px;padding:10px 18px;font-size:13px}
+@media(max-width:560px){
+ .ac-bcta--compact .ac-compact-grid{grid-template-columns:86px minmax(0,1fr);gap:14px;padding:14px}
+ .ac-bcta--compact .ac-compact-title{font-size:21px}
+ .ac-bcta--compact .ac-compact-name{font-size:12px}
+ .ac-bcta--compact .ac-compact-price{font-size:16px}
+ .ac-bcta--compact .ac-compact-purchase{width:100%;align-items:stretch;flex-direction:column;gap:7px}
+ .ac-bcta--compact .ac-bcta__btn{width:100%;padding:10px 8px}
+}
+
+/* Approved layout: menu -> first sales CTA -> article heading. */
+body.ac-article-page main{padding-top:16px}
+#ac-bcta-top{margin-top:0;margin-bottom:24px}
+#ac-bcta-top .ac-compact-title{max-width:22ch}
+body.ac-article-page main>.article-hero{padding-top:24px!important;padding-bottom:24px!important}
+@media(min-width:900px){
+ body.ac-article-page main h1{max-width:640px!important;font-size:48px!important;line-height:1.16!important;text-wrap:balance}
+ body.ac-article-page main>.article-hero{max-width:860px!important;width:calc(100% - 32px);margin-inline:auto}
+}
+
+/* Approved layout: close the empty desktop space and use a complete VI font. */
+#ac-bcta-top{width:min(100%,540px);max-width:540px}
+#ac-bcta-top .ac-compact-title{font:700 22px/1.28 Arial,Helvetica,sans-serif;letter-spacing:normal;font-synthesis:none;text-wrap:normal}
+@media(max-width:560px){#ac-bcta-top .ac-compact-title{font-size:20px}}
+
+/* Approved layout: one self-hosted ExtraBold face for English and Vietnamese. */
+@font-face{font-family:"AC CTA Be Vietnam Pro";font-style:normal;font-weight:800;font-display:swap;src:url("/assets/fonts/be-vietnam-pro-extrabold.woff2") format("woff2")}
+#ac-bcta-top .ac-compact-title{font-family:"AC CTA Be Vietnam Pro","Segoe UI",Arial,sans-serif;font-weight:800}

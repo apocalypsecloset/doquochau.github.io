@@ -26,7 +26,7 @@ class BlogCTA(unittest.TestCase):
                 with self.subTest(lang=lang,sections=sections),tempfile.TemporaryDirectory() as temp:
                     p=Path(temp)/'grunge.html'
                     body=''.join(f'<h2>Section {i}</h2><p>Original advice {i}.</p>' for i in range(sections))
-                    p.write_text('<html><head><title>Guide</title></head><body><article><h1>Grunge</h1><p class="intro">Original introduction.</p>'+body+'</article></body></html>',encoding='utf8')
+                    p.write_text('<html><head><title>Guide</title></head><body><header>Menu</header><main><article><h1>Grunge</h1><p class="intro">Original introduction.</p>'+body+'</article></main></body></html>',encoding='utf8')
                     first,info=cta.process(p,lang,self.cfg,self.tpl,self.opts)
                     p.write_text(first,encoding='utf8')
                     again,_=cta.process(p,lang,self.cfg,self.tpl,self.opts)
@@ -36,12 +36,15 @@ class BlogCTA(unittest.TestCase):
                     self.assertEqual(bool(info['mid']),sections==6)
                     self.assertIn('href="/#shop"',first)
                     top=re.search(r'<!-- ac-cta:top -->(.*?)<!-- /ac-cta:top -->',first,re.S).group(1)
-                    self.assertNotIn('href="/#shop"',top)
-                    self.assertIn('utm_medium=cta-top',top)
-                    self.assertIn(self.cfg['products']['silent-chaos']['fourthwall'],top)
+                    self.assertIn('href="/#shop"',top)
+                    self.assertLess(first.index('</header>'),first.index('<!-- ac-cta:top -->'))
+                    self.assertLess(first.index('<main>'),first.index('<!-- ac-cta:top -->'))
+                    self.assertLess(first.index('<!-- ac-cta:top -->'),first.index('<article>'))
+                    self.assertEqual(first.count(cta.FONT_PRELOAD),1)
+                    self.assertNotIn('shop.apocalypsecloset.com',first)
+                    self.assertNotIn('utm_',first)
                     self.assertIn('Mua mẫu áo này' if lang=='vi' else 'Shop this tee',top)
                     self.assertNotIn('/?utm_source',first)
-                    self.assertIn('cta-mid' if sections==6 else 'cta-end',first)
                     self.assertIn('Từ $29.99 USD' if lang=='vi' else 'From $29.99 USD',first)
                     self.assertIn('Original advice 0.',first)
 

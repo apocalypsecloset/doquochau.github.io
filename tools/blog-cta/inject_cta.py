@@ -16,7 +16,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
-CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123cta3"
+CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123final1"
+FONT_HREF = "/assets/fonts/be-vietnam-pro-extrabold.woff2"
+FONT_PRELOAD = f'<link rel="preload" href="{FONT_HREF}" as="font" type="font/woff2" crossorigin>'
 BLOCKS = ("top", "mid", "end")
 DEPTH_TAGS = r"div|section|details|table|ul|ol|blockquote|figure|aside|nav|article"
 
@@ -57,6 +59,8 @@ def pick_product(cfg, slug, title):
 
 
 def url(cfg, pid, medium, slug, anchor=None):
+    if cfg.get("link_mode") == "home":
+        return "/" + cfg.get("home_anchor", "#shop")
     utm = f"utm_source={cfg['utm']['source']}&utm_medium=cta-{medium}&utm_campaign={slug}"
     p = cfg["products"][pid]
     if cfg.get("link_mode") == "fourthwall" or (cfg.get("link_mode") == "product" and anchor is None):
@@ -108,6 +112,7 @@ def process(path, lang, cfg, tpl, opts):
     html = strip_blocks(html)
     if opts.remove:
         html = re.sub(r'\s*<link rel="stylesheet" href="/assets/css/blog-shop-cta\.css[^>]*>', "", html)
+        html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>', "", html)
         return html, {"removed": True}
 
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
@@ -161,8 +166,10 @@ def process(path, lang, cfg, tpl, opts):
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
     if not intro:
         intro = re.search(r'<p\b[^>]*class="[^"]*\bintro\b[^"]*"[^>]*>.*?</p>', html, re.S)
-    pos_top = intro.end()
-    pos_mid = find_mid(html, pos_top)
+    main = re.search(r'<main\b[^>]*>', html)
+    heading = re.search(r'<h1\b', html)
+    pos_top = main.end() if main and main.end() < intro.start() else heading.start()
+    pos_mid = find_mid(html, intro.end())
     rp = html.find('class="ac-reading-path"')
     if rp != -1:
         pos_end = html.rfind("<nav", 0, rp + 1)
@@ -173,10 +180,10 @@ def process(path, lang, cfg, tpl, opts):
     inserts = [(pos_end, "end")] + ([(pos_mid, "mid")] if pos_mid else []) + [(pos_top, "top")]
     for pos, name in inserts:
         html = html[:pos] + out[name] + html[pos:]
-    if "blog-shop-cta.css" not in html:
-        html = html.replace("</head>", f'<link rel="stylesheet" href="{CSS_HREF}">\n</head>', 1)
-    else:
-        html = re.sub(r'/assets/css/blog-shop-cta\.css(?:\?[^"\s>]*)?', CSS_HREF, html)
+    # Load approved component rules after the article styles; one font preload.
+    html = re.sub(r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta\.css[^>]*>\s*', "\n", html)
+    html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>\s*', "\n", html)
+    html = re.sub(r'\s*</head>', lambda m: '\n' + FONT_PRELOAD + f'\n<link rel="stylesheet" href="{CSS_HREF}">\n</head>', html, count=1)
     return html, {"product": pid, "mid": bool(pos_mid)}
 
 
@@ -240,6 +247,15 @@ def main():
         elif opts.out:
             d = Path(opts.out) / "assets" / "css"; d.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(css_src, d / css_src.name)
+
+    # Preview exports and alternate roots need the same self-hosted font assets.
+    if not opts.remove:
+        for filename in ("be-vietnam-pro-extrabold.woff2", "BeVietnamPro-OFL.txt"):
+            src = HERE.parents[1] / "assets" / "fonts" / filename
+            dst = (Path(opts.out) if opts.out else root) / "assets" / "fonts" / filename
+            if src.exists() and src.resolve() != dst.resolve() and (opts.write or opts.out):
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(src, dst)
 
     print(f"\nProcessed: {stats['done']}  Skipped: {stats['skipped']}  Posts without a mid CTA (too few sections): {stats['no_mid']}")
     for p, why in skipped[:12]:

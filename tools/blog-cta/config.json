@@ -4,7 +4,7 @@
     "source": "blog",
     "medium_prefix": "cta"
   },
-  "link_mode": "product",
+  "link_mode": "home",
   "products": {
     "silent-chaos": {
       "name": "Silent Chaos Angel Tee",
@@ -61,7 +61,6 @@
   "copy": {
     "en": {
       "shop_label": "Original graphic tees by Apocalypse Closet",
-      "top_title": "Dark artwork. Your kind of statement.",
       "top_button": "Shop this tee",
       "top_note": "Choose your size in our shop. Shipping and tax at checkout.",
       "mid_kicker": "A tee to build an outfit around",
@@ -74,11 +73,12 @@
       "end_text": "An angel graphic or a thorn-wrapped heart. Choose the artwork you like, then check the fit and current options in our shop.",
       "end_product_link": "See sizes & price",
       "end_button": "Compare both tees",
-      "order_note": "Prices in USD. Shipping and taxes are shown at checkout. Each tee is made after you order."
+      "order_note": "Prices in USD. Shipping and taxes are shown at checkout. Each tee is made after you order.",
+      "top_title_line1": "Dark artwork.",
+      "top_title_line2": "Your kind of statement."
     },
     "vi": {
       "shop_label": "Áo thun thiết kế của Apocalypse Closet",
-      "top_title": "Hình in gothic. Chất riêng của bạn.",
       "top_button": "Mua mẫu áo này",
       "top_note": "Chọn size tại shop. Phí vận chuyển và thuế tính khi thanh toán.",
       "mid_kicker": "Gợi ý áo để phối cùng đồ bạn có",
@@ -91,7 +91,9 @@
       "end_text": "Hình thiên thần hay trái tim quấn gai? Chọn hình in hợp gu bạn, rồi xem bảng số đo và các tùy chọn hiện có tại shop.",
       "end_product_link": "Xem size và giá",
       "end_button": "So sánh hai mẫu áo",
-      "order_note": "Giá tính bằng USD. Phí vận chuyển và thuế hiển thị khi thanh toán. Áo được sản xuất sau khi bạn đặt."
+      "order_note": "Giá tính bằng USD. Phí vận chuyển và thuế hiển thị khi thanh toán. Áo được sản xuất sau khi bạn đặt.",
+      "top_title_line1": "Hình in gothic.",
+      "top_title_line2": "Chất riêng của bạn."
     }
   },
   "topic_lines": {
@@ -156,5 +158,6 @@
         "mid_text": "Để hình in làm điểm nhấn, rồi phối với jeans, quần dài hoặc áo khoác bạn có sẵn. Xem số đo áo trước khi chọn size."
       }
     ]
-  }
+  },
+  "home_anchor": "#shop"
 }
