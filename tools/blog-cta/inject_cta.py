@@ -23,6 +23,10 @@ CSS_HASH = hashlib.sha256(CSS_CONTENT.encode("utf-8")).hexdigest()[:12]
 CSS_FILENAME = "blog-shop-cta." + CSS_HASH + ".css"
 CSS_HREF = "/assets/css/" + CSS_FILENAME + "?cta-version=" + CSS_HASH
 CSS_LINK_RE = r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta(?:\.[a-f0-9]{12})?\.css[^>]*>\s*'
+CSS_INLINE_RE = r'\s*<style\b(?=[^>]*\bid="ac-blog-cta-style")[^>]*>.*?</style>\s*'
+CSS_INLINE_CONTENT = re.sub(r'\s*\n\s*', ' ', re.sub(r'/\*.*?\*/', '', CSS_CONTENT, flags=re.S)).strip()
+assert '</style' not in CSS_INLINE_CONTENT.lower()
+CSS_INLINE = f'<style id="ac-blog-cta-style" data-css-version="{CSS_HASH}">{CSS_INLINE_CONTENT}</style>'
 FONT_HREF = "/assets/fonts/be-vietnam-pro-extrabold.woff2"
 FONT_PRELOAD = f'<link rel="preload" href="{FONT_HREF}" as="font" type="font/woff2" crossorigin>'
 BLOCKS = ("top", "mid", "end")
@@ -121,6 +125,7 @@ def process(path, lang, cfg, tpl, opts):
     html = strip_blocks(html)
     if opts.remove:
         html = re.sub(CSS_LINK_RE, "", html)
+        html = re.sub(CSS_INLINE_RE, "", html, flags=re.S)
         html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>', "", html)
         return html, {"removed": True}
 
@@ -194,8 +199,9 @@ def process(path, lang, cfg, tpl, opts):
         html = html[:pos] + out[name] + html[pos:]
     # Load approved component rules after the article styles; one font preload.
     html = re.sub(CSS_LINK_RE, "\n", html)
+    html = re.sub(CSS_INLINE_RE, "\n", html, flags=re.S)
     html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>\s*', "\n", html)
-    html = re.sub(r'\s*</head>', lambda m: '\n' + FONT_PRELOAD + f'\n<link rel="stylesheet" href="{CSS_HREF}">\n</head>', html, count=1)
+    html = re.sub(r'\s*</head>', lambda m: '\n' + FONT_PRELOAD + '\n' + CSS_INLINE + '\n</head>', html, count=1)
     return html, {"product": pid, "mid": bool(pos_mid)}
 
 
