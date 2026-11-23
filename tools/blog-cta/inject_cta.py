@@ -11,12 +11,14 @@ Examples (run from the site root, i.e. the folder that contains index.html):
   python tools/blog-cta/inject_cta.py --lang all --write                  # EN + VI (also removes the app box)
   python tools/blog-cta/inject_cta.py --lang all --remove --write         # rollback: strip every CTA
 """
-import argparse, json, re, shutil, sys
+import argparse, html as html_utils, json, re, shutil, sys, unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MARK = "ac-cta"
-CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261119"
+CSS_HREF = "/assets/css/blog-shop-cta.css?v=20261123final1"
+FONT_HREF = "/assets/fonts/be-vietnam-pro-extrabold.woff2"
+FONT_PRELOAD = f'<link rel="preload" href="{FONT_HREF}" as="font" type="font/woff2" crossorigin>'
 BLOCKS = ("top", "mid", "end")
 DEPTH_TAGS = r"div|section|details|table|ul|ol|blockquote|figure|aside|nav|article"
 
@@ -36,27 +38,39 @@ def sub_optional(html, name, keep):
 
 
 def fill(html, values):
-    return re.sub(r"\{\{(\w+)\}\}", lambda m: str(values.get(m.group(1), "")), html)
+    return re.sub(r"\{\{(\w+)\}\}", lambda m: html_utils.escape(str(values.get(m.group(1), "")), quote=True), html)
+
+
+def normalized(value):
+    value = value.lower().replace("đ", "d")
+    return "".join(c for c in unicodedata.normalize("NFD", value) if not unicodedata.combining(c))
+
+
+def matches_keyword(hay, word):
+    return bool(re.search(r"(?<!\w)" + re.escape(normalized(word)) + r"(?!\w)", hay))
 
 
 def pick_product(cfg, slug, title):
-    hay = f"{slug} {title}".lower()
+    hay = normalized(f"{slug} {title}")
     for pid, words in cfg["product_by_keyword"].items():
-        if any(w in hay for w in words):
+        if any(matches_keyword(hay, w) for w in words):
             return pid
     return cfg["default_product"]
 
 
 def url(cfg, pid, medium, slug, anchor=None):
+    if cfg.get("link_mode") == "home":
+        return "/" + cfg.get("home_anchor", "#shop")
     utm = f"utm_source={cfg['utm']['source']}&utm_medium=cta-{medium}&utm_campaign={slug}"
     p = cfg["products"][pid]
     if cfg.get("link_mode") == "fourthwall" or (cfg.get("link_mode") == "product" and anchor is None):
         return f"{p['fourthwall']}?{utm}"
-    return f"/?{utm}{anchor or p['home_anchor']}"
+    # Same-site links keep the visitor's original acquisition source.
+    return f"/{anchor or p['home_anchor']}"
 
 
 def strip_blocks(html):
-    return re.sub(rf"\s*<!-- {MARK}:(\w+) -->.*?<!-- /{MARK}:\1 -->", "", html, flags=re.S)
+    return re.sub(rf"\s*<!-- {MARK}:(\w+) -->.*?<!-- /{MARK}:\1 -->\s*", "", html, flags=re.S)
 
 
 def wrap(name, body):
@@ -98,6 +112,7 @@ def process(path, lang, cfg, tpl, opts):
     html = strip_blocks(html)
     if opts.remove:
         html = re.sub(r'\s*<link rel="stylesheet" href="/assets/css/blog-shop-cta\.css[^>]*>', "", html)
+        html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>', "", html)
         return html, {"removed": True}
 
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
@@ -120,16 +135,19 @@ def process(path, lang, cfg, tpl, opts):
             html = html.replace(m.group(0), "", 1)
         html = html.replace(" · ENGLISH TRANSLATION", "", 1)
 
-    hay = f"{slug} {title}".lower()
+    hay = normalized(f"{slug} {title}")
     for rule in cfg.get("topic_lines", {}).get(lang, []):
-        if any(w in hay for w in rule["keywords"]):
-            t = dict(t, top_line=rule["top_line"])
+        if any(matches_keyword(hay, w) for w in rule["keywords"]):
+            t = dict(t, **{k: rule[k] for k in ("top_line", "mid_text", "mid_kicker") if k in rule})
             break
 
-    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=P["price"],
-             a_name=A["name"], a_img=A["img"], a_alt=A["alt"], a_price=A["price"],
-             b_name=B["name"], b_img=B["img"], b_alt=B["alt"], b_price=B["price"],
-             url_top=url(cfg, pid, "top", slug, "#shop"),
+    def price(product):
+        amount = re.search(r"\$[\d,.]+", product["price"])
+        return (("Từ " if lang == "vi" else "From ") + amount.group(0) + " USD") if amount else product["price"]
+    v = dict(t, p_name=P["name"], p_img=P["img"], p_price=price(P), p_description=P["description"][lang],
+             a_name=A["name"], a_img=A["img"], a_alt=A["alt"], a_price=price(A), a_description=A["description"][lang],
+             b_name=B["name"], b_img=B["img"], b_alt=B["alt"], b_price=price(B), b_description=B["description"][lang],
+             url_top=url(cfg, pid, "top", slug),
              url_mid=url(cfg, pid, "mid", slug),
              url_end=url(cfg, pid, "end", slug, "#shop"),
              url_end_a=url(cfg, a_id, "end", slug), url_end_b=url(cfg, b_id, "end", slug),
@@ -148,8 +166,10 @@ def process(path, lang, cfg, tpl, opts):
     intro = re.search(r'<section[^>]*class="[^"]*ac-article-intro[^"]*"[^>]*>.*?</section>', html, re.S)
     if not intro:
         intro = re.search(r'<p\b[^>]*class="[^"]*\bintro\b[^"]*"[^>]*>.*?</p>', html, re.S)
-    pos_top = intro.end()
-    pos_mid = find_mid(html, pos_top)
+    main = re.search(r'<main\b[^>]*>', html)
+    heading = re.search(r'<h1\b', html)
+    pos_top = main.end() if main and main.end() < intro.start() else heading.start()
+    pos_mid = find_mid(html, intro.end())
     rp = html.find('class="ac-reading-path"')
     if rp != -1:
         pos_end = html.rfind("<nav", 0, rp + 1)
@@ -160,8 +180,10 @@ def process(path, lang, cfg, tpl, opts):
     inserts = [(pos_end, "end")] + ([(pos_mid, "mid")] if pos_mid else []) + [(pos_top, "top")]
     for pos, name in inserts:
         html = html[:pos] + out[name] + html[pos:]
-    if "blog-shop-cta.css" not in html:
-        html = html.replace("</head>", f'<link rel="stylesheet" href="{CSS_HREF}">\n</head>', 1)
+    # Load approved component rules after the article styles; one font preload.
+    html = re.sub(r'\s*<link\b[^>]*href="/assets/css/blog-shop-cta\.css[^>]*>\s*', "\n", html)
+    html = re.sub(r'\s*<link\b[^>]*href="/assets/fonts/be-vietnam-pro-extrabold\.woff2"[^>]*>\s*', "\n", html)
+    html = re.sub(r'\s*</head>', lambda m: '\n' + FONT_PRELOAD + f'\n<link rel="stylesheet" href="{CSS_HREF}">\n</head>', html, count=1)
     return html, {"product": pid, "mid": bool(pos_mid)}
 
 
@@ -225,6 +247,15 @@ def main():
         elif opts.out:
             d = Path(opts.out) / "assets" / "css"; d.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(css_src, d / css_src.name)
+
+    # Preview exports and alternate roots need the same self-hosted font assets.
+    if not opts.remove:
+        for filename in ("be-vietnam-pro-extrabold.woff2", "BeVietnamPro-OFL.txt"):
+            src = HERE.parents[1] / "assets" / "fonts" / filename
+            dst = (Path(opts.out) if opts.out else root) / "assets" / "fonts" / filename
+            if src.exists() and src.resolve() != dst.resolve() and (opts.write or opts.out):
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(src, dst)
 
     print(f"\nProcessed: {stats['done']}  Skipped: {stats['skipped']}  Posts without a mid CTA (too few sections): {stats['no_mid']}")
     for p, why in skipped[:12]:

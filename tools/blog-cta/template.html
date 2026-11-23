@@ -1,19 +1,19 @@
 <!--@top-->
-<aside class="ac-bcta ac-bcta--top" aria-label="{{shop_label}}">
-  <a class="ac-bcta__thumbs" href="{{url_top}}" tabindex="-1" aria-hidden="true">
-    <img src="{{a_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async">
-    <img src="{{b_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async">
-  </a>
-  <div class="ac-bcta__copy">
-    <p class="ac-bcta__line">{{top_line}}</p>
-    <p class="ac-bcta__sub">{{top_sub}}</p>
+<aside id="ac-bcta-top" class="ac-bcta ac-bcta--top ac-bcta--compact" aria-label="{{shop_label}}" data-cta-placement="top" style="scroll-margin-top:100px">
+ <div class="ac-bcta__banner-bar"><span>APOCALYPSE CLOSET</span><span>GOTHIC / GRUNGE</span></div>
+ <div class="ac-compact-grid">
+  <a class="ac-compact-art" href="{{url_top}}" tabindex="-1" aria-hidden="true"><img src="{{p_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async"></a>
+  <div class="ac-compact-copy">
+   <p class="ac-compact-title">{{top_title_line1}}<br>{{top_title_line2}}</p>
+   <p class="ac-compact-name">{{p_name}}</p>
+   <div class="ac-compact-purchase"><span class="ac-compact-price">{{p_price}} <small>· S–4XL</small></span><a class="ac-bcta__btn" href="{{url_top}}">{{top_button}} <span aria-hidden="true">↗</span></a></div>
   </div>
-  <a class="ac-bcta__btn" href="{{url_top}}">{{top_link}}</a>
+ </div>
 </aside>
 <!--@/top-->
 
 <!--@mid-->
-<aside class="ac-bcta ac-bcta--mid" aria-label="{{shop_label}}">
+<aside class="ac-bcta ac-bcta--mid" aria-label="{{shop_label}}" data-cta-placement="mid">
   <a class="ac-bcta__media" href="{{url_mid}}" tabindex="-1" aria-hidden="true">
     <img src="{{p_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async">
   </a>
@@ -21,40 +21,26 @@
     <p class="ac-bcta__kicker">{{mid_kicker}}</p>
     <p class="ac-bcta__title">{{p_name}}</p>
     <p class="ac-bcta__text">{{mid_text}}</p>
-    <div class="ac-bcta__meta">
-      <span class="ac-bcta__price">{{p_price}}</span>
-      <a class="ac-bcta__btn" href="{{url_mid}}">{{mid_button}}</a>
-    </div>
+    <p class="ac-bcta__detail">{{product_detail}}</p>
+    <div class="ac-bcta__meta"><span class="ac-bcta__price">{{p_price}}</span><a class="ac-bcta__btn" href="{{url_mid}}">{{mid_button}} <span aria-hidden="true">↗</span></a></div>
+    <p class="ac-bcta__note">{{fit_note}}</p>
   </div>
 </aside>
 <!--@/mid-->
 
 <!--@end-->
-<section class="ac-bcta ac-bcta--end" aria-labelledby="ac-bcta-end-title">
-  <div class="ac-bcta__head">
-    <p class="ac-bcta__title" id="ac-bcta-end-title">{{end_title}}</p>
-    <p class="ac-bcta__text">{{end_text}}</p>
-  </div>
+<section class="ac-bcta ac-bcta--end" aria-labelledby="ac-bcta-end-title" data-cta-placement="end">
+  <div class="ac-bcta__head"><p class="ac-bcta__kicker">{{end_kicker}}</p><p class="ac-bcta__title" id="ac-bcta-end-title">{{end_title}}</p><p class="ac-bcta__text">{{end_text}}</p></div>
   <div class="ac-bcta__tiles">
     <a class="ac-bcta__tile" href="{{url_end_a}}">
-      <span class="ac-bcta__tile-img"><img src="{{a_img}}" alt="{{a_alt}}" width="1536" height="2048" loading="lazy" decoding="async"></span>
-      <span class="ac-bcta__tile-body"><span class="ac-bcta__tile-name">{{a_name}}</span><span class="ac-bcta__tile-price">{{a_price}}</span></span>
+      <span class="ac-bcta__tile-img"><img src="{{a_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async"></span>
+      <span class="ac-bcta__tile-body"><span class="ac-bcta__tile-name">{{a_name}}</span><span class="ac-bcta__tile-description">{{a_description}}</span><span class="ac-bcta__tile-price">{{a_price}}</span><span class="ac-bcta__tile-action">{{end_product_link}} <span aria-hidden="true">↗</span></span></span>
     </a>
     <a class="ac-bcta__tile" href="{{url_end_b}}">
-      <span class="ac-bcta__tile-img"><img src="{{b_img}}" alt="{{b_alt}}" width="1536" height="2048" loading="lazy" decoding="async"></span>
-      <span class="ac-bcta__tile-body"><span class="ac-bcta__tile-name">{{b_name}}</span><span class="ac-bcta__tile-price">{{b_price}}</span></span>
+      <span class="ac-bcta__tile-img"><img src="{{b_img}}" alt="" width="1536" height="2048" loading="lazy" decoding="async"></span>
+      <span class="ac-bcta__tile-body"><span class="ac-bcta__tile-name">{{b_name}}</span><span class="ac-bcta__tile-description">{{b_description}}</span><span class="ac-bcta__tile-price">{{b_price}}</span><span class="ac-bcta__tile-action">{{end_product_link}} <span aria-hidden="true">↗</span></span></span>
     </a>
   </div>
-  <div class="ac-bcta__actions">
-    <a class="ac-bcta__btn" href="{{url_end}}">{{end_button}}</a>
-    <span class="ac-bcta__trust">{{trust}}</span>
-  </div>
-<!--@form-->
-  <form class="ac-bcta__form" action="{{form_action}}" method="post">
-    <label for="ac-bcta-email">{{form_label}}</label>
-    <input id="ac-bcta-email" type="email" name="email" placeholder="{{form_placeholder}}" autocomplete="email" required>
-    <button type="submit">{{form_button}}</button>
-  </form>
-<!--@/form-->
+  <div class="ac-bcta__actions"><a class="ac-bcta__text-link" href="{{url_end}}">{{end_button}} <span aria-hidden="true">↗</span></a><p class="ac-bcta__note">{{order_note}}</p></div>
 </section>
 <!--@/end-->
