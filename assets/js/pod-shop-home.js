@@ -292,7 +292,17 @@ function createCard(p,index){
 }
 function paintCatalog(products){
   const structured=document.getElementById('ac-product-schema');
-  if(structured)structured.textContent=JSON.stringify({'@context':'https://schema.org','@graph':products.map(p=>model.productSchema(p,SHOP+'/products/'+encodeURIComponent(p.slug)))});
+  if(structured)structured.textContent=JSON.stringify({
+    '@context':'https://schema.org',
+    '@type':'ItemList',
+    '@id':'https://apocalypsecloset.com/#catalog',
+    'itemListElement':products.map((p,index)=>({
+      '@type':'ListItem',
+      'position':index+1,
+      'name':p.name,
+      'url':SHOP+'/products/'+encodeURIComponent(p.slug)
+    }))
+  });
   grid.replaceChildren(...products.map(createCard));
   grid.classList.toggle('is-single',products.length===1);
   grid.classList.toggle('is-pair',products.length===2);
