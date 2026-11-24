@@ -4,7 +4,9 @@
 const API = String(window.AC_FOURTHWALL && window.AC_FOURTHWALL.apiBase || '').replace(/\/+$/, '');
 const model = window.ACShopModel;
 const SHOP = 'https://shop.apocalypsecloset.com';
-const FEATURED_SLUG = 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
+const PRODUCT_SLUG = document.body.dataset.productSlug || '';
+const FEATURED_SLUG = PRODUCT_SLUG || 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
+const productPath = slug => '/products/'+encodeURIComponent(slug)+'/';
 const grid = document.querySelector('#ac-product-grid');
 const status = document.querySelector('#ac-catalog-status');
 const heroVisual = document.querySelector('#ac-store-hero-visual');
@@ -54,7 +56,7 @@ function purchaseRoute(ready){
     say(direct,ready?'View product ↗':'BUY NOW ↗');
   }
   if(final){
-    final.href=ready?'#choose-size':SHOP+'/products/'+FEATURED_SLUG;
+    final.href=ready?'#choose-size':productPath(FEATURED_SLUG);
     say(final,ready?'CHOOSE YOUR SIZE ↗':'BUY NOW ↗');
     final.toggleAttribute('data-return-to-buy',ready);
   }
@@ -67,14 +69,14 @@ document.addEventListener('click',event=>{
 });
 function errorFallback(message){
   purchaseRoute(false);
-  say(status,message || 'Products are temporarily unavailable. Visit the Shop to use secure checkout.');
+  say(status,message || 'Live options are temporarily unavailable. Please reload this page to try again.');
   // Preserve the verified static catalog when the live API cannot connect.
   if(grid.querySelector('.ac-static-product')) return;
   grid.replaceChildren();
   const box=document.createElement('div');box.className='ac-collection-fallback';
   const h=document.createElement('strong');h.textContent='SILENT CHAOS — GOTHIC ANGEL TEE';
   const p=document.createElement('p');p.textContent='Shop the original drop while our live catalog reconnects.';
-  const a=document.createElement('a');a.className='ac-btn';a.href=SHOP+'/products/'+FEATURED_SLUG;a.textContent='VIEW THE DROP ↗';a.rel='noopener noreferrer';
+  const a=document.createElement('a');a.className='ac-btn';a.href=productPath(FEATURED_SLUG);a.textContent='VIEW THE PRODUCT';
   box.append(h,p,a);grid.appendChild(box);
 }
 async function api(path, options){
@@ -109,7 +111,7 @@ function showLightbox(index){
   if(!lightbox || !lightboxImages.length) return;
   lightboxIndex = (index + lightboxImages.length) % lightboxImages.length;
   lightboxImg.src = lightboxImages[lightboxIndex];
-  lightboxImg.alt = 'Silent Chaos tee: product view ' + (lightboxIndex+1);
+  lightboxImg.alt = shortName(featuredProduct?.name)+': product view ' + (lightboxIndex+1);
   say(lightboxCounter,(lightboxIndex+1)+' / '+lightboxImages.length);
   if(!lightbox.open && typeof lightbox.showModal==='function') lightbox.showModal();
 }
@@ -126,10 +128,10 @@ function renderLookbook(product,chosenColor,chosenVariant){
   picks.forEach((src,index)=>{
     const button=document.createElement('button');
     button.type='button';button.className='ac-lookbook-shot';
-    button.setAttribute('aria-label','Expand Silent Chaos product view '+(index+1));
+    button.setAttribute('aria-label','Expand '+shortName(product.name)+' product view '+(index+1));
     const photo=document.createElement('img');
     photo.src=src;
-    photo.alt='Silent Chaos Gothic Angel Tee — product photograph '+(index+1);
+    photo.alt=shortName(product.name)+' — product photograph '+(index+1);
     photo.loading='lazy';photo.decoding='async';photo.width=560;photo.height=740;
     const label=document.createElement('span');
     label.className='ac-lookbook-shot-label';
@@ -159,7 +161,7 @@ function shortName(name){return String(name||'Apocalypse Closet item').replace(/
 const chartSlugs=new Set(['silent-chaos-gothic-angel-graphic-tee-apocalypse-closet','thorn-heart-gothic-graphic-tee-apocalypse-closet']);
 function sizeGuideLink(product){
   const a=el('a','ac-size-link','Size guide ↗');
-  a.href=chartSlugs.has(product.slug)?'#size-guide':SHOP+'/products/'+encodeURIComponent(product.slug);
+  a.href=chartSlugs.has(product.slug)?'#size-guide':productPath(product.slug);
   if(chartSlugs.has(product.slug))a.dataset.sizeGuide=product.slug;
   return a;
 }
@@ -254,8 +256,8 @@ function createCard(p,index){
   const card=el('article','ac-product-card');
   const media=el('div','ac-product-media');
   const photo=el('a','ac-product-image');
-  photo.href=SHOP+'/products/'+encodeURIComponent(p.slug);
-  photo.rel='noopener noreferrer';photo.setAttribute('aria-label','View '+p.name+' in the Shop');media.append(photo);
+  photo.href=productPath(p.slug);
+  photo.setAttribute('aria-label','View '+p.name);media.append(photo);
   const body=el('div','ac-product-body');
   body.append(el('p','ac-product-type','APOCALYPSE CLOSET / ORIGINAL'));
   const title=el('h3','ac-product-title');const link=el('a','',shortName(p.name));link.href=photo.href;title.append(link);body.append(title);
@@ -300,7 +302,7 @@ function paintCatalog(products){
       '@type':'ListItem',
       'position':index+1,
       'name':p.name,
-      'url':SHOP+'/products/'+encodeURIComponent(p.slug)
+      'url':'https://apocalypsecloset.com'+productPath(p.slug)
     }))
   });
   grid.replaceChildren(...products.map(createCard));
@@ -313,10 +315,18 @@ function paintCatalog(products){
 function paintHero(product){
   if(!product || !heroSize || !heroColor || !heroAdd)return;
   featuredProduct=product;
+  if(PRODUCT_SLUG){
+    const schema=document.querySelector('#ac-product-detail-schema');
+    const url='https://apocalypsecloset.com'+productPath(product.slug);
+    if(schema){
+      const original=JSON.parse(schema.textContent);
+      schema.textContent=JSON.stringify({...original,...model.productSchema(product,url),'@id':url+'#product',brand:{'@type':'Brand',name:'Apocalypse Closet'}});
+    }
+  }
   const ready=variants(product).length>0;
   document.querySelector('.ac-hero-buy-actions').hidden=!ready;
   purchaseRoute(ready);
-  if(!ready)return;
+  if(!ready){say(heroPrice,'Currently unavailable');say(heroStatus,'No sizes are currently available. Please check back later.');return;}
   const information=document.querySelector('#ac-product-information');
   if(information && !information.hasAttribute('data-verified-details')){
     information.replaceChildren();
@@ -354,7 +364,7 @@ function paintHero(product){
     heroAdd.disabled=!v;
     syncSizeChoices(heroSize);
     say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
-    say(heroStatus,!heroColor.options.length?'Currently unavailable. View the product in the Shop.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
+    say(heroStatus,!heroColor.options.length?'Currently unavailable. Please check back later.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
     renderLookbook(product,heroColor.value,v);
   }
   heroColor.onchange=()=>refresh(true);heroSize.onchange=()=>refresh(false);
@@ -368,6 +378,17 @@ function paintHero(product){
 }
 
 async function loadCatalog(){
+  if(PRODUCT_SLUG){
+    try{
+      const product=await api('/products/'+encodeURIComponent(PRODUCT_SLUG));
+      if(!publicProduct(product) || product.slug!==PRODUCT_SLUG)throw new Error('Product unavailable');
+      paintHero(product);
+    }catch(e){
+      say(heroStatus,'Live options are unavailable. Reload this page to try again.');
+      document.querySelector('#ac-product-retry')?.removeAttribute('hidden');
+    }
+    return;
+  }
   // Load the featured product immediately: buyers should see real size/price
   // before the rest of the catalog has finished loading.
   const featuredPromise=api('/products/'+encodeURIComponent(FEATURED_SLUG))
@@ -396,7 +417,7 @@ async function loadCatalog(){
       paintHero(featured);
       }else{
       errorFallback();
-      say(heroStatus,'Live sizes are unavailable. View the product in the Shop.');
+      say(heroStatus,'Live sizes are unavailable. Reload this page to try again.');
     }
   }
 }
@@ -488,7 +509,7 @@ async function addToCart(variant,button,note,productName){
     if(!Array.isArray(cart.items))cart=await api('/carts/'+encodeURIComponent(cartId));
     displayCart(cart);say(note,'ADDED TO BAG');showBag();
     track('add_to_cart',model.eventForVariant(variant,1,productName));
-  }catch(e){say(note,'Could not add item. Please retry or view the product in the Shop.');}
+  }catch(e){say(note,'Could not add item. Please try again.');}
   finally{busy=false;button.disabled=false;}
 }
 async function openCart(){
@@ -521,5 +542,10 @@ const stored=getStoredCart();
 if(stored){
   api('/carts/'+encodeURIComponent(stored)).then(cart=>{storeCart(stored);updateCount(cart);}).catch(e=>{if(model.expired(e))storeCart('');});
 }
+document.querySelector('#ac-product-retry')?.addEventListener('click',async event=>{
+  const button=event.currentTarget;button.hidden=true;
+  say(heroStatus,'Loading current options…');
+  await loadCatalog();
+});
 loadCatalog();
 })();
