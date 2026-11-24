@@ -2,7 +2,8 @@
 
 All 848 articles (423 Vietnamese and 425 English) promote Apocalypse Closet tees.
 All article CTA images and buttons now open the homepage shop section (/#shop).
-The homepage catalog links onward to the named Fourthwall products.
+The homepage catalog opens the named product pages on apocalypsecloset.com.
+Fourthwall supplies the existing API and checkout; product browsing stays on the main domain.
 Six short articles retain top and final CTAs without a middle block.
 
 Affiliate URLs, disclosures and tags were removed from published HTML, outfit data

@@ -3,7 +3,7 @@
 'use strict';
 const API = String(window.AC_FOURTHWALL && window.AC_FOURTHWALL.apiBase || '').replace(/\/+$/, '');
 const model = window.ACShopModel;
-const SHOP = 'https://shop.apocalypsecloset.com';
+const CHECKOUT_BASE = 'https://shop.apocalypsecloset.com';
 const PRODUCT_SLUG = document.body.dataset.productSlug || '';
 const FEATURED_SLUG = PRODUCT_SLUG || 'silent-chaos-gothic-angel-graphic-tee-apocalypse-closet';
 const productPath = slug => '/products/'+encodeURIComponent(slug)+'/';
@@ -461,7 +461,7 @@ function displayCart(cart){
     li.append(details,el('span','',money(Number(v.unitPrice?.value||0)*q,v.unitPrice?.currency||'USD')));cartList.append(li);
   });
   say(subtotal,money(cartTotal(cart),'USD'));
-  checkout.href=SHOP+'/checkout/?'+new URLSearchParams({cartCurrency:'USD',cartId:cart.id||''}).toString();
+  checkout.href=CHECKOUT_BASE+'/checkout/?'+new URLSearchParams({cartCurrency:'USD',cartId:cart.id||''}).toString();
   checkout.hidden=!cart.id||!countItems(cart);
   document.querySelector('#ac-continue-shopping').hidden=false;
   say(cartStatus,countItems(cart)?'Shipping and any applicable taxes are calculated during secure checkout.':'Your bag is empty.');

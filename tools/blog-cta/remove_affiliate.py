@@ -70,7 +70,8 @@ def product_links(html, cfg):
         return body
     def direct(m, pid):
         u = urlsplit(m.group(1).replace('&amp;', '&'))
-        return 'href="' + cfg['products'][pid]['fourthwall'] + '?' + u.query.replace('&', '&amp;') + '"'
+        query = '?' + u.query.replace('&', '&amp;') if u.query else ''
+        return 'href="' + cfg['products'][pid]['product_url'] + query + '"'
     return re.sub(r'<!-- ac-cta:(\w+) -->.*?<!-- /ac-cta:\1 -->', block, html, flags=re.S)
 
 

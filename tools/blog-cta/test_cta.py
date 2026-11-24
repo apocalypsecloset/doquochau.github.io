@@ -20,6 +20,15 @@ class BlogCTA(unittest.TestCase):
         self.assertFalse(cta.matches_keyword('winter trends','ren'))
         self.assertEqual(cta.fill('{{text}}',{'text':'<script>&"'}),'&lt;script&gt;&amp;&quot;')
 
+    def test_product_and_legacy_modes_keep_product_links_on_main_domain(self):
+        for mode in ['product','fourthwall']:
+            self.cfg['link_mode']=mode
+            for pid, product in self.cfg['products'].items():
+                target=cta.url(self.cfg,pid,'mid','example-guide')
+                self.assertEqual(target,product['product_url'])
+                self.assertTrue(target.startswith('https://apocalypsecloset.com/products/'))
+                self.assertNotIn('utm_',target)
+
     def test_two_locales_repeat_generation_and_short_article(self):
         for lang in ['en','vi']:
             for sections in [1,6]:
