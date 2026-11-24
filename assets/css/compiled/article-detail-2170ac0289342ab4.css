@@ -1,0 +1,41 @@
+.slip-anatomy{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:28px 0 38px}
+.slip-anatomy>div{border:1px solid #2b2b2b;background:#0d0d0d;padding:18px 14px;min-width:0}
+.slip-anatomy b{display:block;font-family:"Oswald",sans-serif;font-size:16px;text-transform:uppercase;margin-bottom:7px}
+.slip-anatomy span{font-size:12px;line-height:1.7;color:#beb8af}
+.slip-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0 40px}
+.slip-path{border-top:3px solid #e05444;background:#0d0d0d;padding:20px 18px;min-width:0}
+.slip-path small{display:block;font-family:"Space Mono",monospace;font-size:8px;letter-spacing:.14em;color:#e05444;text-transform:uppercase;margin-bottom:8px}
+.slip-path h3{margin:0 0 9px!important;font-size:20px!important}
+.slip-path p{margin:0!important;font-size:13px!important;line-height:1.75!important;color:#c8c4bc!important}
+.slip-outfit-stack{margin:28px 0 40px;border-top:1px solid #2a2a2a}
+.slip-outfit{display:grid;grid-template-columns:56px 220px minmax(0,1fr);gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid #2a2a2a}
+.slip-outfit .n{font-family:"Oswald",sans-serif;font-size:34px;line-height:1;color:#e05444}
+.slip-outfit h3{margin:0!important;font-size:18px!important}
+.slip-outfit p{margin:0!important;color:#c8c4bc!important;line-height:1.78!important}
+.slip-decision{margin:30px 0;padding:24px;border:1px solid #333;background:linear-gradient(135deg,#111,#0b0b0b)}
+.slip-decision h3{margin:0 0 14px!important}
+.slip-decision ul{margin:0;padding-left:19px}
+.slip-decision li{margin:8px 0;line-height:1.7}
+.slip-texture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:26px 0 38px}
+.slip-texture{border:1px solid #2a2a2a;padding:18px;background:#0d0d0d}
+.slip-texture strong{display:block;font-family:"Oswald",sans-serif;text-transform:uppercase;font-size:17px;margin-bottom:8px}
+.slip-texture p{margin:0!important;font-size:13px!important;line-height:1.75!important;color:#c8c4bc!important}
+@media(max-width:768px){.slip-anatomy,.slip-paths,.slip-texture-grid{grid-template-columns:1fr!important}.slip-outfit{grid-template-columns:44px minmax(0,1fr)!important}.slip-outfit p{grid-column:2!important}}
+.ac-reading-path{margin:32px 0;padding:22px;border:1px solid #d6cec5;border-radius:8px;line-height:1.65;clear:both}
+.ac-reading-path h2{font-size:1.25rem!important;margin:0 0 14px!important;line-height:1.4}
+.ac-reading-path ul{padding-left:22px;display:grid;gap:10px;margin:12px 0}
+.ac-reading-path a,.ac-topic-route a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.ac-topic-route{font-size:.88rem;line-height:1.6;margin:0 0 20px;color:inherit}
+.article-content>p,.article-content>ul,.article-content>ol,.article-content blockquote,.article-content .seo-faq,.article-content .ac-reading-path,.hub-copy,.hub-section>p{font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.8}
+.article-content figcaption{font-family:Arial,Helvetica,sans-serif;line-height:1.6;font-size:14px}
+.article-content{min-width:0;overflow-wrap:break-word}
+.article-content img,.hub-main img{max-width:100%;height:auto}
+.ac-verified-looks .related-outfit-card img{width:100%;aspect-ratio:9/16;object-fit:contain;background:#ece8e2;height:auto}
+.article-content .ac-v22-cta{margin:16px 0;padding:12px 16px;min-height:0}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #9b2f58;outline-offset:4px}
+@media(max-width:768px){.ac-reading-path{padding:16px;margin:24px 0}.article-content table,.hub-main table{display:block;max-width:100%;overflow-x:auto}.article-content>p,.article-content>ul,.article-content>ol{font-size:16px;line-height:1.75}.ac-verified-looks .related-outfit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related-outfit-copy{min-width:0;overflow-wrap:anywhere}.ac-parent-links{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.apcl-standard-cover:has(>img[src^="https://apocalypsecloset.com/images/blog-covers/"]){flex-direction:column!important}
+.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]{display:block;width:auto;max-width:100%;height:auto;max-height:720px;object-fit:contain;margin:0 auto;min-width:0}
+.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]+figcaption{width:100%;box-sizing:border-box;padding:12px 16px;text-align:center;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:768px){.apcl-standard-cover>img[src^="https://apocalypsecloset.com/images/blog-covers/"]{max-height:none}}

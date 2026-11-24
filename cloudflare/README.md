@@ -16,8 +16,8 @@ CORS allows only apocalypsecloset.com, www and localhost:8000. If the final doma
 ## Site redirects and response headers
 
 `site-delivery.js` is a separate, optional Worker for a GitHub Pages origin. It
-returns real 301 responses for the reviewed legacy blog paths and English home
-aliases, preserves query strings, and adds HTML security headers and versioned
+returns a real 301 response for `/index.html`, preserves query strings,
+and adds HTML security headers and versioned
 asset cache policies. It leaves document bodies and private/no-store responses
 unchanged. HSTS applies to the requested hostname without opting subdomains into
 preload. The CSP enforces framing, object and base restrictions while preserving
@@ -28,5 +28,10 @@ rules, or deploy the separate Worker after checking existing routes. Preserve th
 existing Fourthwall API Worker and the more specific R2 image routes. This file
 does not deploy itself: the production domain currently reads GitHub Pages, so
 GitHub merging `_headers` and `_redirects` alone does not activate those policies.
-After activation, verify a legacy URL returns HTTP 301 and check the root HTML
+After activation, verify `/index.html` returns HTTP 301 and check the root HTML
 response for the configured headers. Test shop, authentication and consent.
+
+The nine malformed Alt Fashion blog aliases have been removed without redirects
+at the owner's request. All site links and the sitemap use only
+`/blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html` for that article.
+The redundant `en/index.html` has also been removed; navigation uses `/`.
