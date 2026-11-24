@@ -28,8 +28,14 @@ const lookbookGallery = document.querySelector('#ac-lookbook-gallery');
 const lightbox = document.querySelector('#ac-image-lightbox');
 const lightboxImg = document.querySelector('#ac-lightbox-image');
 const lightboxCounter = document.querySelector('#ac-lightbox-count');
+const mobileBuy = document.querySelector('#ac-mobile-buy');
+const mobileAdd = document.querySelector('#ac-mobile-add');
+const photoStage = document.querySelector('#ac-photo-stage');
+const photoZoom = document.querySelector('#ac-photo-zoom');
 let lightboxImages = [];
 let lightboxIndex = 0;
+let mainPhotoIndex = 0;
+let photoOpener = null;
 const storageKey = 'ac_fourthwall_cart_id';
 let cartId = '';
 let busy = false;
@@ -109,12 +115,90 @@ function productPhotos(product){
 }
 function showLightbox(index){
   if(!lightbox || !lightboxImages.length) return;
+  resetPhotoZoom();
   lightboxIndex = (index + lightboxImages.length) % lightboxImages.length;
   lightboxImg.src = lightboxImages[lightboxIndex];
   lightboxImg.alt = shortName(featuredProduct?.name)+': product view ' + (lightboxIndex+1);
   say(lightboxCounter,(lightboxIndex+1)+' / '+lightboxImages.length);
-  if(!lightbox.open && typeof lightbox.showModal==='function') lightbox.showModal();
+  if(!lightbox.open && typeof lightbox.showModal==='function'){
+    photoOpener=document.activeElement;
+    lightbox.showModal();
+  }
 }
+function resetPhotoZoom(){
+  photoStage?.classList.remove('is-zoomed');
+  if(photoStage){photoStage.scrollLeft=0;photoStage.scrollTop=0;}
+  photoZoom?.setAttribute('aria-pressed','false');say(photoZoom,'Zoom in');
+}
+function togglePhotoZoom(){
+  if(!photoStage)return;
+  const zoomed=photoStage.classList.toggle('is-zoomed');
+  photoZoom.setAttribute('aria-pressed',String(zoomed));say(photoZoom,zoomed?'Zoom out':'Zoom in');
+  if(zoomed){photoStage.scrollLeft=(photoStage.scrollWidth-photoStage.clientWidth)/2;photoStage.scrollTop=(photoStage.scrollHeight-photoStage.clientHeight)/2;}
+  else{photoStage.scrollLeft=0;photoStage.scrollTop=0;}
+}
+function paintProductPhotos(urls,product,color){
+  const main=document.querySelector('#ac-main-photo');
+  const thumbnails=document.querySelector('#ac-photo-thumbnails');
+  if(!main||!thumbnails)return;
+  lightboxImages=urls;mainPhotoIndex=0;
+  function choose(index){
+    mainPhotoIndex=index;
+    main.querySelector('img,.ac-visual-placeholder')?.remove();
+    if(urls[index]){
+      const img=el('img');img.src=urls[index];img.alt=product.name+' — '+color+' — view '+(index+1);
+      img.width=800;img.height=950;img.decoding='async';main.prepend(img);
+    }else main.prepend(el('span','ac-visual-placeholder','PHOTO PENDING — '+color));
+    main.disabled=!urls.length;
+    thumbnails.querySelectorAll('button').forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+  }
+  thumbnails.replaceChildren();
+  urls.forEach((src,index)=>{
+    const button=el('button');button.type='button';button.setAttribute('aria-label','Show product photo '+(index+1));
+    button.setAttribute('aria-pressed','false');
+    const img=el('img');img.src=src;img.alt='';img.width=68;img.height=68;img.loading='lazy';button.append(img);
+    button.addEventListener('click',()=>choose(index));thumbnails.append(button);
+  });
+  thumbnails.hidden=urls.length<2;
+  choose(0);
+}
+function syncMobileBuy(){
+  if(!mobileBuy||!mobileAdd)return;
+  const available=featuredProduct&&variants(featuredProduct).length>0;
+  mobileBuy.hidden=!featuredProduct;
+  const v=available?model.variant(featuredProduct,heroColor.value,heroSize.value):null;
+  say(document.querySelector('#ac-mobile-price'),heroPrice.textContent);
+  say(document.querySelector('#ac-mobile-selection'),v?model.color(v)+' / '+model.size(v):available?'Choose your size':'Currently unavailable');
+  say(mobileAdd,busy?'ADDING…':!available?'UNAVAILABLE':v?'ADD TO BAG':'CHOOSE SIZE');
+  mobileAdd.disabled=busy||!available;
+}
+document.querySelector('#ac-main-photo')?.addEventListener('click',()=>showLightbox(mainPhotoIndex));
+if(PRODUCT_SLUG){
+  const staticPhoto=document.querySelector('#ac-main-photo img');
+  if(staticPhoto?.src)lightboxImages=[staticPhoto.src];
+}
+photoZoom?.addEventListener('click',togglePhotoZoom);
+photoStage?.addEventListener('dblclick',togglePhotoZoom);
+let swipeStart=null;
+photoStage?.addEventListener('touchstart',event=>{
+  swipeStart=event.touches.length===1&&!photoStage.classList.contains('is-zoomed')?{x:event.touches[0].clientX,y:event.touches[0].clientY}:null;
+},{passive:true});
+photoStage?.addEventListener('touchmove',event=>{if(event.touches.length!==1)swipeStart=null;},{passive:true});
+photoStage?.addEventListener('touchcancel',()=>{swipeStart=null;},{passive:true});
+photoStage?.addEventListener('touchend',event=>{
+  if(!swipeStart||!event.changedTouches.length)return;
+  const dx=event.changedTouches[0].clientX-swipeStart.x,dy=event.changedTouches[0].clientY-swipeStart.y;
+  if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)showLightbox(lightboxIndex+(dx<0?1:-1));
+  swipeStart=null;
+},{passive:true});
+lightbox?.addEventListener('close',()=>{resetPhotoZoom();photoOpener?.focus({preventScroll:true});});
+mobileAdd?.addEventListener('click',()=>{
+  if(busy||!featuredProduct)return;
+  const v=model.variant(featuredProduct,heroColor.value,heroSize.value);
+  if(v){heroAdd.click();return;}
+  document.querySelector('#choose-size').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});
+  document.querySelector('.ac-hero-buy-actions input[type="radio"]:not(:disabled)')?.focus({preventScroll:true});
+});
 function renderLookbook(product,chosenColor,chosenVariant){
   if(!lookbook || !lookbookGallery) return;
   const urls=model.colorPhotos(product,chosenColor||model.colors(product)[0],chosenVariant);
@@ -123,7 +207,7 @@ function renderLookbook(product,chosenColor,chosenVariant){
   // This is one tee, never mislabel these as separate products.
   const preferred=urls.length>=12?[1,4,8,12,16]:urls.length>=7?[1,3,5,6]:[0,1,2,3,4];
   const picks=preferred.filter(i=>i<urls.length).map(i=>urls[i]);
-  lightboxImages=picks;
+  lightboxImages=PRODUCT_SLUG?urls:picks;
   lookbookGallery.replaceChildren();
   picks.forEach((src,index)=>{
     const button=document.createElement('button');
@@ -137,7 +221,7 @@ function renderLookbook(product,chosenColor,chosenVariant){
     label.className='ac-lookbook-shot-label';
     label.textContent='FRAME 0'+(index+1)+' / '+String(picks.length).padStart(2,'0');
     button.append(photo,label);
-    button.addEventListener('click',()=>showLightbox(index));
+    button.addEventListener('click',()=>showLightbox(PRODUCT_SLUG?urls.indexOf(src):index));
     lookbookGallery.append(button);
   });
   lookbook.hidden=false;document.querySelectorAll('a[href="#lookbook"]').forEach(a=>a.hidden=false);
@@ -326,7 +410,7 @@ function paintHero(product){
   const ready=variants(product).length>0;
   document.querySelector('.ac-hero-buy-actions').hidden=!ready;
   purchaseRoute(ready);
-  if(!ready){say(heroPrice,'Currently unavailable');say(heroStatus,'No sizes are currently available. Please check back later.');return;}
+  if(!ready){say(heroPrice,'Currently unavailable');say(heroStatus,'No sizes are currently available. Please check back later.');syncMobileBuy();return;}
   const information=document.querySelector('#ac-product-information');
   if(information && !information.hasAttribute('data-verified-details')){
     information.replaceChildren();
@@ -356,16 +440,20 @@ function paintHero(product){
     if(colorChanged)fillSizes(heroSize,product,heroColor.value,heroSize.value);
     const v=model.variant(product,heroColor.value,heroSize.value);
     const urls=model.colorPhotos(product,heroColor.value,v);
+    if(PRODUCT_SLUG)paintProductPhotos(urls,product,heroColor.value);
+    else{
     heroVisual.querySelectorAll('img,.ac-visual-placeholder').forEach(n=>n.remove());
     if(urls.length){
       const img=el('img');img.src=urls[0];img.alt=product.name+' — '+heroColor.value;
       img.decoding='async';img.fetchPriority='high';img.width=800;img.height=950;heroVisual.append(img);
     }else heroVisual.append(el('div','ac-visual-placeholder','PHOTO PENDING — '+heroColor.value));
+    }
     heroAdd.disabled=!v;
     syncSizeChoices(heroSize);
     say(heroPrice,v?priceOf(v):min?'FROM '+priceOf(min):'Unavailable');
     say(heroStatus,!heroColor.options.length?'Currently unavailable. Please check back later.':v?'Selected '+heroColor.value+' / '+model.size(v):'Choose your size for '+heroColor.value+'.');
     renderLookbook(product,heroColor.value,v);
+    syncMobileBuy();
   }
   heroColor.onchange=()=>refresh(true);heroSize.onchange=()=>refresh(false);
   heroAdd.onclick=async()=>{
@@ -373,6 +461,7 @@ function paintHero(product){
     if(!v){say(heroStatus,'Please choose color and size.');heroSize.focus();return;}
     await addToCart(v,heroAdd,heroStatus,product.name);
     heroAdd.disabled=!model.variant(product,heroColor.value,heroSize.value);
+    syncMobileBuy();
   };
   refresh(false);
 }
@@ -491,6 +580,7 @@ async function addToCart(variant,button,note,productName){
   const variantId=variant.id;
   if(busy)return;
   busy=true;button.disabled=true;say(note,'ADDING…');
+  syncMobileBuy();
   try{
     let cart;
     const stored=cartId||getStoredCart();
@@ -510,7 +600,7 @@ async function addToCart(variant,button,note,productName){
     displayCart(cart);say(note,'ADDED TO BAG');showBag();
     track('add_to_cart',model.eventForVariant(variant,1,productName));
   }catch(e){say(note,'Could not add item. Please try again.');}
-  finally{busy=false;button.disabled=false;}
+  finally{busy=false;button.disabled=false;syncMobileBuy();}
 }
 async function openCart(){
   if(busy)return;

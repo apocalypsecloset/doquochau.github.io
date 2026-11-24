@@ -8,8 +8,10 @@ import tarfile
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
+from inject_cta import pick_product
 
 ROOT = Path(__file__).resolve().parents[2]
+cfg=json.loads((Path(__file__).resolve().parent/'config.json').read_text(encoding='utf8'))
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--report', type=Path, help='optional JSON report path; default: stdout only')
 args = parser.parse_args()
@@ -71,11 +73,15 @@ for name in subprocess.check_output(['git', '-C', str(ROOT), 'ls-files'], text=T
         for pattern in (r'<title>.*?</title>', r'<link\b[^>]*\brel="(?:canonical|alternate)"[^>]*>', r'<link\b[^>]*\bhreflang="[^"]+"[^>]*>'):
             if re.findall(pattern, old, re.S) != re.findall(pattern, h, re.S):
                 errors.append(f'{name}: changed metadata')
-        for block in re.findall(r'<!-- ac-cta:(?:top|mid|end) -->.*?<!-- /ac-cta:(?:top|mid|end) -->', h, re.S):
+        heading=re.search(r'<h1\b[^>]*>(.*?)</h1>',h,re.S)
+        title=re.sub(r'<[^>]+>','',heading.group(1)) if heading else p.stem
+        selected=cfg['products'][pick_product(cfg,p.stem,title)]['product_url']
+        for placement,block in re.findall(r'<!-- ac-cta:(top|mid|end) -->(.*?)<!-- /ac-cta:\1 -->', h, re.S):
+            allowed={selected} if placement!='end' else {'/#shop',*(product['product_url'] for product in cfg['products'].values())}
             for u in re.findall(r'href="([^"]+)"', block):
-                if u != '/#shop':
+                if u not in allowed:
                     errors.append(f'{name}: unexpected shop target {u}')
-                stats['homepage_shop_cta_links'] += 1
+                stats['comparison_cta_links' if u=='/#shop' else 'product_cta_links'] += 1
     if name.startswith('outfits/'):
         stats['outfit_pages'] += 1
         if h.count('class="item-link"') != old.count('class="item-link"'):
