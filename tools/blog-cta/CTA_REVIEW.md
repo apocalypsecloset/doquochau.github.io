@@ -8,7 +8,7 @@ The three positions now serve different reading stages:
 
 Product imagery, product names and price amounts are unchanged. Product choice prioritizes specific style topics, and keyword matching respects word boundaries and Vietnamese accents. Broad informational articles use a general invitation rather than a claim that a particular tee is necessary for the article's subject.
 
-Every link inside all three placements, including images and individual product cards, uses /#shop without internal UTM parameters. The homepage catalog links to product pages on apocalypsecloset.com; only checkout opens Fourthwall. Product URLs in the generator configuration also use the main domain. Desktop H1 width is capped at 640px. This change does not introduce analytics or claim measured conversion lift.
+Top and middle CTA images/buttons open the topic-selected product page on apocalypsecloset.com. Grunge topics select Silent Chaos and romantic gothic topics select Thorn Heart. Each end product card links to its own product page; only the compare-both button uses /#shop. Internal UTM parameters are not added. Only checkout opens Fourthwall. Desktop H1 width is capped at 640px. This change does not introduce analytics or claim measured conversion lift.
 
 ## Regenerate
 

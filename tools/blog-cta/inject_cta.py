@@ -69,10 +69,12 @@ def pick_product(cfg, slug, title):
 
 
 def url(cfg, pid, medium, slug, anchor=None):
+    if anchor is not None:
+        return '/' + anchor
     if cfg.get("link_mode") == "home":
         return "/" + cfg.get("home_anchor", "#shop")
     p = cfg["products"][pid]
-    if cfg.get("link_mode") == "fourthwall" or (cfg.get("link_mode") == "product" and anchor is None):
+    if cfg.get("link_mode") in ("fourthwall", "product"):
         # Legacy mode names must also stay on our own product pages.
         return p['product_url']
     # Same-site links keep the visitor's original acquisition source.

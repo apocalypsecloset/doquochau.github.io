@@ -28,6 +28,7 @@ class BlogCTA(unittest.TestCase):
                 self.assertEqual(target,product['product_url'])
                 self.assertTrue(target.startswith('https://apocalypsecloset.com/products/'))
                 self.assertNotIn('utm_',target)
+                self.assertEqual(cta.url(self.cfg,pid,'end','example-guide','#shop'),'/#shop')
 
     def test_two_locales_repeat_generation_and_short_article(self):
         for lang in ['en','vi']:
@@ -47,7 +48,15 @@ class BlogCTA(unittest.TestCase):
                     self.assertEqual(first.count('ac-bcta--red"'),2 if sections==6 else 1)
                     self.assertIn('href="/#shop"',first)
                     top=re.search(r'<!-- ac-cta:top -->(.*?)<!-- /ac-cta:top -->',first,re.S).group(1)
-                    self.assertIn('href="/#shop"',top)
+                    self.assertIn('href="'+self.cfg['products']['silent-chaos']['product_url']+'"',top)
+                    self.assertNotIn('href="/#shop"',top)
+                    if sections==6:
+                        mid=re.search(r'<!-- ac-cta:mid -->(.*?)<!-- /ac-cta:mid -->',first,re.S).group(1)
+                        self.assertIn('href="'+self.cfg['products']['silent-chaos']['product_url']+'"',mid)
+                    end=re.search(r'<!-- ac-cta:end -->(.*?)<!-- /ac-cta:end -->',first,re.S).group(1)
+                    for product in self.cfg['products'].values():
+                        self.assertIn('href="'+product['product_url']+'"',end)
+                    self.assertEqual(end.count('href="/#shop"'),1)
                     self.assertLess(first.index('</header>'),first.index('<!-- ac-cta:top -->'))
                     self.assertLess(first.index('<main>'),first.index('<!-- ac-cta:top -->'))
                     self.assertLess(first.index('<!-- ac-cta:top -->'),first.index('<article>'))

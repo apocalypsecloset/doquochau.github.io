@@ -1,7 +1,9 @@
 # Own-shop migration — November 20, 2026
 
 All 848 articles (423 Vietnamese and 425 English) promote Apocalypse Closet tees.
-All article CTA images and buttons now open the homepage shop section (/#shop).
+Topic-selected CTA images and buttons open the matching product page on apocalypsecloset.com.
+Grunge topics select Silent Chaos; romantic gothic topics select Thorn Heart.
+End-of-article product tiles each open their own product page. Only the compare-both button opens /#shop.
 The homepage catalog opens the named product pages on apocalypsecloset.com.
 Fourthwall supplies the existing API and checkout; product browsing stays on the main domain.
 Six short articles retain top and final CTAs without a middle block.
