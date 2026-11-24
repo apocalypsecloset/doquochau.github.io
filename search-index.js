@@ -2964,7 +2964,7 @@ window.searchIndex = [
     "url": "/blog/white-on-white.html",
     "type": "Outfit Guide",
     "description": "White on white không phải là mặc một màu phẳng. Khám phá cách phối cả cây trắng có chiều sâu qua chất liệu, sắc độ, tỷ lệ và phụ kiện.",
-    "image": "/images/blog/white-on-white-01.webp",
+    "image": "/images/blog-covers/white-on-white-outfits.webp",
     "keywords": "white on white"
   }
 ];
