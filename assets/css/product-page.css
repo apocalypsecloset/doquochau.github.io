@@ -29,6 +29,11 @@
 .ac-photo-stage img{display:block;width:100%;height:100%;max-width:none;object-fit:contain}
 .ac-photo-stage.is-zoomed img{width:200%;height:200%;object-fit:contain;cursor:zoom-out}
 .ac-mobile-buy{display:none}
+/* A bare 1fr track grows to the thumbnail strip's min-content width on mobile. */
+@media(max-width:900px){
+ .ac-product-page .ac-store-hero{grid-template-columns:minmax(0,1fr)}
+ .ac-product-page .ac-store-hero-visual,.ac-product-page .ac-product-photo,.ac-product-page .ac-photo-thumbnails{min-width:0;max-width:100%}
+}
 @media(max-width:700px){
  .ac-product-page{padding-bottom:calc(124px + env(safe-area-inset-bottom))}
  .ac-product-breadcrumb{font-size:.875rem;padding:16px}

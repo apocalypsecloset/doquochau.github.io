@@ -404,7 +404,7 @@ function paintHero(product){
     const url='https://apocalypsecloset.com'+productPath(product.slug);
     if(schema){
       const original=JSON.parse(schema.textContent);
-      schema.textContent=JSON.stringify({...original,...model.productSchema(product,url),'@id':url+'#product',brand:{'@type':'Brand',name:'Apocalypse Closet'}});
+      schema.textContent=JSON.stringify({...model.productSchema(product,url),description:original.description});
     }
   }
   const ready=variants(product).length>0;
@@ -434,6 +434,13 @@ function paintHero(product){
   fillColors(heroColor,product);
   if(model.colors(product).includes(previousColor))heroColor.value=previousColor;
   fillSizes(heroSize,product,heroColor.value,previousSize);
+  // Offer URLs must open the exact purchasable color/size, including on reload.
+  const requestedID=PRODUCT_SLUG?new URLSearchParams(location.search).get('variant'):null;
+  const requested=requestedID?variants(product).find(v=>String(v.id)===requestedID):null;
+  if(requested&&!previousSize){
+    heroColor.value=model.color(requested);
+    fillSizes(heroSize,product,heroColor.value,model.size(requested));
+  }
   heroColor.closest("label").hidden=heroColor.options.length===1;
   const min=lowest(product);
   function refresh(colorChanged){

@@ -31,6 +31,24 @@ GitHub merging `_headers` and `_redirects` alone does not activate those policie
 After activation, verify `/index.html` returns HTTP 301 and check the root HTML
 response for the configured headers. Test shop, authentication and consent.
 
+### One-hop canonical host redirect
+
+The Worker also normalizes HTTP and `www` directly to `https://apocalypsecloset.com`,
+preserving path and query, and combines `/index.html` normalization in that response.
+Bind it to both hosts and HTTP/HTTPS routes. An earlier Cloudflare "Always Use HTTPS"
+or Redirect Rule can run before a Worker and create another hop; consolidate that
+earlier rule as well. The equivalent first Redirect Rule expression is:
+
+```text
+(http.host in {"apocalypsecloset.com" "www.apocalypsecloset.com"} and
+ (http.request.scheme eq "http" or http.host eq "www.apocalypsecloset.com"))
+```
+
+Use a dynamic target `concat("https://apocalypsecloset.com", http.request.uri.path)`,
+status **301**, and **Preserve query string** enabled. Place it ahead of the separate
+HTTPS-only host rule. This change requires the domain's Cloudflare configuration;
+committing this Worker or `_redirects` does not change active dashboard rules.
+
 The nine malformed Alt Fashion blog aliases have been removed without redirects
 at the owner's request. All site links and the sitemap use only
 `/blog/alt-fashion-la-gi-va-tai-sao-no-quan-trong.html` for that article.

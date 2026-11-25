@@ -4,8 +4,11 @@ export default {
     const url=new URL(request.url);
     if(!['apocalypsecloset.com','www.apocalypsecloset.com'].includes(url.hostname))return fetch(request);
     const path=url.pathname;
-    const destination=path==='/index.html'?'https://apocalypsecloset.com/':null;
-    if(destination){const target=new URL(destination);target.search=url.search;return new Response(null,{status:301,headers:{Location:target.href,'Cache-Control':'public, max-age=3600'}});}
+    if(url.protocol!=='https:'||url.hostname==='www.apocalypsecloset.com'||path==='/index.html'){
+      const target=new URL(url);target.protocol='https:';target.hostname='apocalypsecloset.com';target.port='';
+      if(path==='/index.html')target.pathname='/';
+      return new Response(null,{status:301,headers:{Location:target.href,'Cache-Control':'public, max-age=3600'}});
+    }
     const upstream=await fetch(request);
     const response=new Response(upstream.body,upstream);
     const type=response.headers.get('Content-Type')||'';

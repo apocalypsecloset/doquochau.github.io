@@ -49,17 +49,29 @@
       items:[ecommerceItem(v,quantity,name)]};
   }
   function productSchema(product,url){
-    const list=available(product),currency=list[0]?.unitPrice?.currency;
-    const priced=list.filter(v=>v.unitPrice.currency===currency);
-    const result={'@type':'Product','@id':'https://apocalypsecloset.com/#product-'+product.slug,
-      name:product.name,url,image:photos(product.images),brand:{'@id':'https://apocalypsecloset.com/#organization'},
-      color:colors(product),size:[...new Set(list.map(size))]};
-    if(priced.length&&currency){
-      const prices=priced.map(v=>Number(v.unitPrice.value));
-      result.offers={'@type':'AggregateOffer',url,priceCurrency:currency,
-        lowPrice:String(Math.min(...prices)),highPrice:String(Math.max(...prices)),
-        offerCount:priced.length,availability:'https://schema.org/InStock'};
-    }
+    // Sizes/colors are variants of one design, not offers from multiple sellers.
+    // Preserve sold-out variants with truthful availability; never invent identifiers.
+    const priced=(Array.isArray(product?.variants)?product.variants:[]).filter(v=>
+      v?.id&&v.stock?.type!=='UNAVAILABLE'&&v.unitPrice?.value!=null&&
+      Number.isFinite(Number(v.unitPrice.value))&&Number(v.unitPrice.value)>=0&&
+      /^[A-Z]{3}$/.test(v.unitPrice.currency||''));
+    const result={'@context':'https://schema.org','@type':'ProductGroup','@id':url+'#product-group',
+      name:product.name,url,image:photos(product.images),
+      brand:{'@type':'Brand',name:'Apocalypse Closet'},
+      productGroupID:String(product.id||product.slug),
+      variesBy:['https://schema.org/color','https://schema.org/size'],
+      hasVariant:priced.map(v=>{
+        const target=new URL(url);target.searchParams.set('variant',v.id);
+        const ownPhotos=photos(v.images),sameColor=colorPhotos(product,color(v),v);
+        return {'@type':'Product','@id':url+'#variant-'+encodeURIComponent(v.id),
+          sku:String(v.id),
+          name:product.name+' — '+color(v)+' / '+size(v),url:target.href,
+          image:(ownPhotos.length?ownPhotos:sameColor).slice(0,1),
+          color:color(v),size:size(v),inProductGroupWithID:String(product.id||product.slug),
+          offers:{'@type':'Offer',url:target.href,priceCurrency:v.unitPrice.currency,
+            price:Number(v.unitPrice.value).toFixed(2),
+            availability:'https://schema.org/'+(v.stock?.type==='SOLD_OUT'?'OutOfStock':'InStock')}};
+      })};
     return result;
   }
   const expired=error=>[404,410].includes(Number(error?.status));
